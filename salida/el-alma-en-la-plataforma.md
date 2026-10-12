@@ -4240,8 +4240,9 @@ quien quiera continuar.
 -   Aristóteles, *Política* y *Ética a Nicómaco*.
 -   Diógenes Laercio, *Vidas de los filósofos ilustres*, libro VI (sobre
     Hiparquia) y libro II (sobre Areté de Cirene).
--   Mary Ellen Waithe (ed.), *A History of Women Philosophers*, vol. 1,
-    Dordrecht, Springer, 1987.
+-   Mary Ellen Waithe (ed.), *A History of Women Philosophers*, vol. 1:
+    *Ancient Women Philosophers, 600 B.C.-500 A.D.*, Dordrecht, Martinus
+    Nijhoff, 1987.
 -   Gerda Lerner, *La creación del patriarcado*, Barcelona, Crítica,
     1990.
 -   Michel Foucault, *La hermenéutica del sujeto*, Buenos Aires, Fondo
@@ -4253,10 +4254,11 @@ quien quiera continuar.
 -   Quintiliano, *Institución oratoria*.
 -   Séneca, *Cartas a Lucilio*.
 -   Agustín de Hipona, *Del maestro* (*De magistro*), en *Obras de San
-    Agustín*, vol. III, Madrid, BAC.
+    Agustín*, t. III: *Obras filosóficas*, Madrid, BAC.
 -   Tomás de Aquino, *Cuestiones disputadas sobre la verdad*, cuestión
     11 («Sobre el maestro»).
--   Christine de Pizan, *La ciudad de las damas*, Madrid, Siruela, 2015.
+-   Christine de Pizan, *La ciudad de las damas*, ed. y trad. de
+    Marie-José Lemarchand, Madrid, Siruela.
 -   Carlos Rojas Osorio, *Filosofía de la educación. De los griegos a la
     tardomodernidad*, Medellín, Universidad de Antioquia, 2010.
 
@@ -4265,16 +4267,17 @@ quien quiera continuar.
 -   Giovanni Pico della Mirandola, *Discurso sobre la dignidad del
     hombre*.
 -   Michel de Montaigne, «De la educación de los hijos», en *Ensayos*,
-    libro I, Madrid, Cátedra, 1998.
+    libro I, trad. de M.ª Dolores Picazo y Almudena Montojo, Madrid,
+    Cátedra (Letras Universales).
 -   René Descartes, *Discurso del método*.
 -   Jan Amos Comenio, *Didáctica magna*.
 -   Jean-Jacques Rousseau, *Emilio, o De la educación*.
 -   Mary Wollstonecraft, *Vindicación de los derechos de la mujer*,
-    Madrid, Cátedra, 2018.
+    ed. de Isabel Burdiel, Madrid, Cátedra, 2018.
 -   Véronique Le Ru, *Émilie du Châtelet philosophe*, París, Classiques
     Garnier, 2019.
 -   Immanuel Kant, «Respuesta a la pregunta: ¿Qué es la Ilustración?» y
-    *Sobre pedagogía*, Madrid, Morata, 2003.
+    *Pedagogía*, ed. de Mariano Fernández Enguita, Madrid, Akal, 1983.
 -   Hans-Georg Gadamer, *Verdad y método*, Salamanca, Sígueme (sobre el
     concepto de *Bildung*).
 
@@ -4283,15 +4286,17 @@ quien quiera continuar.
 -   Émile Durkheim, *Educación y sociología*.
 -   Michel Foucault, *Vigilar y castigar. Nacimiento de la prisión*,
     Buenos Aires, Siglo XXI, 2002.
--   John Dewey, *Democracia y educación*, Madrid, Morata, 2009;
-    *Experiencia y educación*, Madrid, Morata, 2004.
+-   John Dewey, *Democracia y educación*, trad. de Lorenzo Luzuriaga,
+    Madrid, Morata, 1995; *Experiencia y educación*, Madrid, Biblioteca
+    Nueva.
 -   Paulo Freire, *Pedagogía del oprimido*.
 -   David Tyack y Larry Cuban, *En busca de la utopía. Un siglo de
-    reformas de las escuelas públicas*, México, FCE / Morata.
+    reformas de las escuelas públicas*, trad. de Mónica Utrilla, México,
+    Fondo de Cultura Económica, 2001.
 -   David Harvey, *Breve historia del neoliberalismo*, Madrid, Akal,
     2007.
--   Neil Selwyn, *Education and Technology: Key Issues and Debates*,
-    Londres, Bloomsbury.
+-   Neil Selwyn, *Education and Technology: Key Issues and Debates*, 3.ª
+    ed., Londres, Bloomsbury, 2022.
 -   Henry A. Giroux, *Neoliberalism's War on Higher Education*, Chicago,
     Haymarket, 2014.
 -   bell hooks, *Enseñar a transgredir. La educación como práctica de la
@@ -4302,8 +4307,8 @@ quien quiera continuar.
 ## 5. ¿Qué es un dispositivo?
 
 -   Giorgio Agamben, *¿Qué es un dispositivo?*, Buenos Aires, Adriana
-    Hidalgo, 2014. Incluye la entrevista de Foucault de 1977 citada en
-    el capítulo.
+    Hidalgo, 2014 (también Barcelona, Anagrama, 2015). Incluye la
+    entrevista de Foucault de 1977 citada en el capítulo.
 -   Gilles Deleuze, «¿Qué es un dispositivo?», en *Michel Foucault,
     filósofo*, Barcelona, Gedisa, 1990.
 -   Michel Foucault, *Vigilar y castigar* y «¿Qué es la Ilustración?».
@@ -4337,7 +4342,7 @@ quien quiera continuar.
     2003.
 -   Gert Biesta, «What is Education For? On Good Education, Teacher
     Judgement, and Educational Professionalism», *European Journal of
-    Education*, 2015.
+    Education*, 50 (1), 2015, pp. 75-87.
 
 ## 8. La nueva razón del mundo
 
@@ -4345,14 +4350,15 @@ quien quiera continuar.
     de France (1978-1979)*, Buenos Aires, FCE.
 -   Pierre Dardot y Christian Laval, *La nueva razón del mundo*,
     Barcelona, Gedisa, 2013.
--   Sherry Ortner, «Sobre el neoliberalismo», *Antrópica*, 1, 2015.
+-   Sherry Ortner, «Sobre el neoliberalismo», *Antrópica. Revista de
+    Ciencias Sociales y Humanidades*, 1 (1), 2015, pp. 126-135.
 -   Stephen J. Ball, «The teacher's soul and the terrors of
     performativity», *Journal of Education Policy*, 18 (2), 2003;
     *Global Education Inc.*, Nueva York, Routledge, 2012.
 -   Pauline Lipman, *The New Political Economy of Urban Education*,
     Nueva York, Routledge, 2011.
--   Pasi Sahlberg, *El cambio educativo en Finlandia*, Barcelona,
-    Paidós.
+-   Pasi Sahlberg, *El cambio educativo en Finlandia. ¿Qué puede
+    aprender el mundo?*, Buenos Aires, Paidós, 2013.
 
 ## 9. El yo que se evalúa
 
@@ -4362,18 +4368,19 @@ quien quiera continuar.
 -   Frédéric Lordon, *Capitalismo, deseo y servidumbre. Marx y Spinoza*,
     Buenos Aires, Tinta Limón, 2015.
 -   Engin Atasay, «Neoliberal schooling and subjectivity: learning to
-    desire lack», *Subjectivity*, 7, 2014.
+    desire lack», *Subjectivity*, 7 (3), 2014, pp. 288-307.
 
 ## 10. Técnica, memoria y veneno
 
 -   Gilbert Simondon, *El modo de existencia de los objetos técnicos*,
-    Buenos Aires, Prometeo, 2008.
+    trad. de Margarita Martínez y Pablo Rodríguez, Buenos Aires,
+    Prometeo, 2007.
 -   Martin Heidegger, «La pregunta por la técnica», en *Conferencias y
     artículos*, Barcelona, Ediciones del Serbal, 1994; *Serenidad*,
     Barcelona, Ediciones del Serbal.
--   Bernard Stiegler, *La técnica y el tiempo*, Hondarribia, Hiru; *Lo
-    que hace que la vida merezca ser vivida. De la farmacología*,
-    Madrid, Avarigani.
+-   Bernard Stiegler, *La técnica y el tiempo*, Hondarribia, Hiru, 2002;
+    *Lo que hace que la vida merezca ser vivida. De la farmacología*,
+    trad. de Nadia Cortés, Avarigani, 2015.
 -   Platón, *Fedro*.
 -   Bruno Latour, *Reensamblar lo social*, Buenos Aires, Manantial,
     2008.
@@ -4392,21 +4399,22 @@ quien quiera continuar.
 -   Shoshana Zuboff, *La era del capitalismo de la vigilancia*,
     Barcelona, Paidós, 2020.
 -   Judith Butler, *El género en disputa*, Barcelona, Paidós.
--   Maurizio Lazzarato, «Trabajo inmaterial» y *La fábrica del hombre
-    endeudado*, Buenos Aires, Amorrortu.
+-   Maurizio Lazzarato, *La fábrica del hombre endeudado*, Buenos Aires,
+    Amorrortu, 2013; con Antonio Negri, *Trabalho imaterial. Formas de
+    vida e produção de subjetividade*, Río de Janeiro, DP&A, 2001.
 -   Jean Baudrillard, *Cultura y simulacro*, Barcelona, Kairós.
 -   Kate Crawford, *Atlas de inteligencia artificial*, Buenos Aires,
     FCE, 2022.
--   Luciano Floridi, *La cuarta revolución. Cómo la infosfera está
-    transformando la realidad humana*.
+-   Luciano Floridi, *The Fourth Revolution: How the Infosphere is
+    Reshaping Human Reality*, Oxford, Oxford University Press, 2014.
 -   UNESCO, *Recomendación sobre la ética de la inteligencia
     artificial*, París, 2021.
 
 ## 12. Vigilar jugando
 
 -   Jeremy Bentham, *El panóptico*.
--   David Lyon, *La cultura de la vigilancia. Mirar y ser mirado en la
-    sociedad contemporánea*.
+-   David Lyon, *The Culture of Surveillance: Watching as a Way of
+    Life*, Cambridge, Polity, 2018.
 -   Hannah Arendt, «La crisis en la educación», en *Entre el pasado y el
     futuro*, Barcelona, Península.
 -   Giorgio Agamben, *Estado de excepción*, Buenos Aires, Adriana
