@@ -14,7 +14,7 @@ pandoc libro/metadata.yaml "${CAPITULOS[@]}" -s -t markdown -o salida/el-alma-en
 
 # EPUB
 pandoc libro/metadata.yaml "${CAPITULOS[@]}" \
-  --toc --toc-depth=1 --split-level=1 \
+  --toc --toc-depth=1 --split-level=1 --reference-location=section \
   -o salida/el-alma-en-la-plataforma.epub
 
 # DOCX (para revisión con control de cambios)
@@ -25,6 +25,7 @@ pandoc libro/metadata.yaml "${CAPITULOS[@]}" \
 # HTML maquetado para impresión
 pandoc libro/metadata.yaml "${CAPITULOS[@]}" \
   -s --toc --toc-depth=1 --embed-resources \
+  --section-divs --reference-location=section \
   --css estilos/libro.css \
   -o salida/el-alma-en-la-plataforma.html
 

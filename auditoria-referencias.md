@@ -200,3 +200,24 @@ Algunas referencias de la bibliografía de la tesis presentan los mismos problem
 - **Notas al pie desplazadas**: el autor no coincide con la cita. Por ejemplo, las notas 103-104 atribuyen a Kant y Durkheim citas de Deleuze y Taub; la 113 atribuye a Lipman la cita del *Fedón*; la 115 atribuye a Gramsci la de *De anima*.
 
 Esta auditoría verifica la **existencia y los datos editoriales** de cada obra. No verifica el número de página de cada cita en la tesis original.
+
+## Referencias añadidas en la revisión académica
+
+Verificadas antes de incorporarlas al libro:
+
+| Referencia | Estado |
+| --- | --- |
+| Fraser, «Foucault on Modern Power», *Praxis International* 1 (3), 1981, pp. 272-287; reimpreso en *Unruly Practices* (1989) | V |
+| Habermas, *El discurso filosófico de la modernidad*, caps. IX-X (crítica a Foucault); ed. castellana Katz | V |
+| OCDE, *Students, Computers and Learning*, 2015 (uso moderado mejor; uso intensivo peor; sin mejoras pese a la inversión) | V (resúmenes secundarios, Banco Mundial y prensa especializada) |
+| UNESCO, *GEM Report 2023. Technology in education: A tool on whose terms?* | V |
+| Biesta, *Beyond Learning* (2006) y *Good Education in an Age of Measurement* (2010) | V |
+| Black y Wiliam, «Inside the Black Box», *Phi Delta Kappan* 80 (2), 1998, pp. 139-148 | V |
+| Garcés, *Un mundo común*, Bellaterra, 2013 (coimplicación) | V |
+| Chile, Ley 20.845 (2015) y Ley 21.040 (2017) | V |
+| Datatilsynet, decisión de julio de 2022 sobre Helsingør (Google Workspace en escuelas) | V (prensa especializada; no se consultó la resolución original) |
+| Prusia, *Generallandschulreglement* (1763), con precedentes en Württemberg y Zweibrücken | V |
+| Derrida, «La farmacia de Platón», en *La diseminación* | Clásico, existencia indiscutible |
+| Cicerón, *Sobre los deberes* I, 150-151 | Clásico |
+
+**Pendiente de cotejo con el texto original:** la cita de Kant sobre los niños enviados a la escuela «para que se acostumbren a estar sentados» (lecciones de *Pedagogía*, introducción). La cita es conocida y se encuentra en la edición de Rink de 1803, pero no pude cotejar la página exacta en línea.

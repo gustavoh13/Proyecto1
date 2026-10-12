@@ -21,7 +21,8 @@ El ensayo no sigue un orden cronológico ni separa teoría y aplicación. Cada c
 | `libro/07-lo-que-no-tiene-precio.md` | 7. Lo que no tiene precio | Artes liberales y sofistas, Chile como laboratorio, PISA, plataformas gratuitas, brechas, gamificación y juego |
 | `libro/08-tiempo-libre.md` | 8. Tiempo libre | Resistencias, cuidado, hooks y Garcés, acción colectiva, *edutropía* |
 | `libro/09-epilogo.md` | Epílogo. Conócete a ti mismo, otra vez | Cierre circular en Delfos |
-| `libro/10-lecturas.md` | Notas y lecturas | Bibliografía por capítulo (auditada, ver `auditoria-referencias.md`) |
+| `libro/10-glosario.md` | Glosario | Los conceptos clave explicados con sencillez |
+| `libro/11-lecturas.md` | Bibliografía | Bibliografía alfabética (auditada, ver `auditoria-referencias.md`) |
 
 ## Versiones compiladas
 
@@ -40,7 +41,8 @@ Requiere `pandoc`; el PDF se genera con Chromium en modo headless.
 - **De tesis a ensayo.** Se eliminaron la metodología, las entrevistas, los proyectos edDIT y USMOV y los anexos. El libro es puramente filosófico.
 - **Voz de autor.** Primera persona y prosa continua. Se conservan el origen chileno del autor, su experiencia docente y la mirada desde Cataluña.
 - **Estilo.** Sin rayas largas para los incisos (se usan comas o paréntesis), sin conectores repetidos ni fórmulas del tipo «no es X, sino Y», y sin enumeraciones de tres en tres en cada párrafo.
-- **Notas mínimas.** Las citas literales se limitan a textos clásicos verificables; el resto se parafrasea. La bibliografía va al final, por capítulo.
+- **Aparato crítico.** Notas al final de cada capítulo con la referencia precisa de cada cita (numeración Stephanus/Bekker para Platón y Aristóteles; capítulo, lección o fecha para los modernos). Bibliografía alfabética al final y glosario.
+- **Objeciones.** Cada capítulo discute al menos una objeción seria a su propio argumento: la crítica de Fraser y Habermas a Foucault, los límites de Han, la investigación sobre evaluación formativa, los datos de la OCDE (2015) y la UNESCO (2023), los defensores de la evaluación estandarizada y la analítica del aprendizaje, el valor de la tecnología para el alumnado con discapacidad.
 - **Título.** *El alma en la plataforma* retoma la idea de la tesis de que la educación neoliberal es un proyecto "para cambiar el alma". Alternativas posibles: *La fábrica del alma*, *El emprendedor de sí mismo va a la escuela*, *Educar en la era de los dispositivos*.
 
 ## Correcciones respecto de la tesis

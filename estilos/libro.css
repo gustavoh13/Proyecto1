@@ -100,3 +100,13 @@ hr + p { text-indent: 0; }
 
 /* Notas y lecturas: lista compacta */
 section.level1:last-of-type li { font-size: 9.5pt; }
+section.level1 > h2 + ul li, #bibliografía li { font-size: 9.5pt; padding-left: 5mm; text-indent: -5mm; list-style: none; }
+
+/* Notas al final de cada capítulo */
+aside.footnotes { font-size: 8.5pt; line-height: 1.35; margin-top: 8mm; text-align: left; hyphens: none; }
+aside.footnotes hr { display: none; }
+aside.footnotes ol { padding-left: 5mm; }
+aside.footnotes li p { text-indent: 0; }
+aside.footnotes::before { content: "Notas"; display: block; font-size: 9pt; font-weight: bold; margin-bottom: 2mm; }
+a.footnote-ref sup, sup { font-size: 0.7em; line-height: 0; }
+a.footnote-back { display: none; }
