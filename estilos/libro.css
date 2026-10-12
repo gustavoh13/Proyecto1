@@ -1,0 +1,92 @@
+/* Estilos de impresión para "El alma en la plataforma" (formato 148 × 210 mm) */
+
+@page {
+  size: 148mm 210mm;
+  margin: 20mm 18mm 22mm 20mm;
+  @bottom-center { content: counter(page); font-size: 9pt; }
+}
+
+html { font-size: 10.5pt; }
+
+body {
+  font-family: "Charter", "Bitstream Charter", "Caladea", "Liberation Serif", Georgia, serif;
+  line-height: 1.45;
+  color: #1a1a1a;
+  background: #fff;
+  margin: 0;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  text-align: justify;
+  orphans: 3;
+  widows: 3;
+}
+
+p { margin: 0; text-indent: 1.3em; }
+h1 + p, h2 + p, blockquote + p, ul + p { text-indent: 0; }
+
+/* Portada generada por pandoc */
+header#title-block-header {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 45mm;
+}
+header#title-block-header .title {
+  font-size: 26pt; font-weight: normal; letter-spacing: 0.02em; margin: 0 0 6mm;
+  page-break-before: avoid;
+}
+header#title-block-header .subtitle { font-size: 12pt; font-style: italic; margin: 0 0 30mm; }
+header#title-block-header .author { font-size: 12pt; text-transform: uppercase; letter-spacing: 0.15em; }
+
+/* Índice */
+nav#TOC { page-break-after: always; text-align: left; }
+nav#TOC::before { content: "Índice"; display: block; font-size: 16pt; margin-bottom: 8mm; }
+nav#TOC ul { list-style: none; padding-left: 0; margin: 0; }
+nav#TOC ul ul { display: none; }
+nav#TOC li { margin: 1.2mm 0; }
+nav#TOC a { color: inherit; text-decoration: none; }
+
+/* Capítulos y partes */
+h1 {
+  page-break-before: always;
+  font-weight: normal;
+  font-size: 17pt;
+  line-height: 1.25;
+  margin: 18mm 0 10mm;
+  text-align: left;
+  hyphens: none;
+}
+h1.parte {
+  font-size: 20pt;
+  text-align: center;
+  margin-top: 60mm;
+  letter-spacing: 0.03em;
+}
+h1.parte + blockquote {
+  text-align: center;
+  font-style: italic;
+  border: none;
+  margin: 10mm 8mm 0;
+  page-break-after: always;
+}
+h2 {
+  font-size: 11.5pt;
+  font-weight: bold;
+  margin: 7mm 0 3mm;
+  text-align: left;
+  hyphens: none;
+  page-break-after: avoid;
+}
+
+blockquote {
+  margin: 4mm 6mm;
+  font-size: 9.8pt;
+}
+blockquote p { text-indent: 0; }
+
+ul { padding-left: 5mm; margin: 2mm 0; }
+li { margin: 1mm 0; text-align: left; }
+
+a { color: inherit; text-decoration: none; }
+
+/* Notas y lecturas: lista compacta */
+section.level1:last-of-type li { font-size: 9.5pt; }

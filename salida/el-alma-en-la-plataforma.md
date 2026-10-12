@@ -1,0 +1,4458 @@
+---
+author: Gustavo Herrera Urízar
+description: |
+  Un ensayo filosófico sobre cómo la educación ha fabricado, a lo largo
+  de la historia, el alma de cada época, y sobre lo que ocurre cuando
+  ese trabajo pasa a manos de las plataformas digitales y de la razón
+  neoliberal.
+lang: es
+rights: © Gustavo Herrera Urízar. Todos los derechos reservados.
+subtitle: Ensayo sobre educación, técnica y subjetividad en tiempos
+  neoliberales
+title: El alma en la plataforma
+---
+
+# Prólogo. Una inquietud {#prólogo.-una-inquietud .unnumbered}
+
+Este libro nace de una incomodidad. No de una certeza, que es como
+suelen nacer los manuales, sino de una serie de preguntas que durante
+años se me fueron acumulando en el aula, como se acumula el polvo de
+tiza en el borde de la pizarra. ¿Qué significa enseñar? ¿Es la educación
+algo intrínsecamente bueno, o solo lo damos por supuesto porque nos
+cuesta imaginar lo contrario? ¿Puede existir un acto educativo que no
+sea, al mismo tiempo, un acto de poder? ¿Qué le ocurre a la voluntad de
+una persona cuando la institución que debía enseñarle a pensar se
+convierte en un engranaje de producción? ¿Y qué le ocurre a esa misma
+voluntad cuando el engranaje ya no es de hierro, sino de datos, y cabe
+en el bolsillo?
+
+Ninguna de estas preguntas es nueva. Atraviesan la historia de la
+filosofía desde que Sócrates decidió que la vida sin examen no merecía
+ser vivida y que examinarla era, en el fondo, una forma de educarse.
+Pero hoy adquieren un matiz particular, porque vivimos en un mundo en el
+que las tecnologías digitales impregnan cada rincón de la existencia, y
+la escuela no es una excepción: es, más bien, uno de los lugares donde
+esa impregnación se vuelve más intensa y más silenciosa. Los niños
+aprenden a leer con una tableta antes de aprender a sostener un lápiz.
+Las tareas llegan como notificaciones. Las calificaciones se consultan
+en una aplicación que también sabe a qué hora se conectó cada
+estudiante, cuánto tiempo pasó en cada página y qué otras cosas buscó
+mientras tanto.
+
+Escribo este libro desde varios lugares a la vez, y creo que es honesto
+decirlo desde el principio. Escribo como profesor de filosofía, después
+de más de una década en aulas escolares y universitarias. Escribo como
+chileno, nacido en un país que sirvió de laboratorio del neoliberalismo
+y cuyos efectos modelaron no solo la educación, sino la vida entera de
+quienes crecimos allí: la manera de pensar el futuro, la deuda, el
+mérito, la vergüenza de fracasar. Escribo desde Cataluña, donde he
+podido observar cómo las mismas lógicas de mercado atraviesan también
+los sistemas educativos europeos, con otros acentos y otras
+resistencias, pero con una gramática reconocible. Y escribo, como
+cualquiera, desde la condición de ciudadano de la sociedad digital,
+alguien cuya relación con el conocimiento, con la enseñanza y con su
+propia identidad ha sido reconfigurada por pantallas que no eligió del
+todo.
+
+## La pregunta por el alma
+
+El título de este libro puede parecer extraño. Hablar del *alma* en un
+ensayo sobre plataformas digitales suena a anacronismo, casi a
+provocación. Lo hago a propósito. Durante dos mil quinientos años, la
+educación occidental se pensó a sí misma como un trabajo sobre el alma:
+la *paideia* griega quería un alma ordenada por la razón; la
+escolástica, un alma orientada hacia Dios; la *Bildung* ilustrada, un
+alma que se diera forma a sí misma. Cada época tuvo su idea de lo que el
+ser humano debía llegar a ser, y cada época construyó instituciones,
+rituales, saberes y castigos para conseguirlo.
+
+Hoy casi nadie habla del alma en las escuelas. Se habla de competencias,
+de indicadores, de resultados de aprendizaje, de evidencias, de
+rendimiento. Y, sin embargo, mi hipótesis es que el trabajo sobre el
+alma no ha desaparecido: ha cambiado de manos y de vocabulario. Cuando
+Margaret Thatcher declaró en 1981 que la economía era el método y que el
+objetivo era cambiar «el corazón y el alma», no estaba usando una
+metáfora. Estaba describiendo, con una franqueza poco habitual, un
+programa de transformación subjetiva. La educación neoliberal es, en
+buena medida, la ejecución de ese programa. Y las plataformas digitales
+se han convertido en su herramienta más eficaz, precisamente porque no
+parecen herramientas de nada: parecen simplemente el mundo, la manera
+normal en que hoy se hacen las cosas.
+
+La paradoja que recorre este libro es la siguiente. ¿Son las tecnologías
+digitales en la educación instrumentos de emancipación o instrumentos de
+control? La respuesta honesta es que pueden ser ambas cosas, y que con
+frecuencia lo son al mismo tiempo. Han servido para cuantificar el
+aprendizaje, para incentivar la cultura del rendimiento y para reducir
+la enseñanza a la transmisión mecánica de información. Pero también han
+abierto espacios de colaboración, de experimentación y de construcción
+colectiva de conocimiento. Lo que me interesa no es decidir de una vez
+por todas de qué lado de la balanza caen, sino entender el mecanismo por
+el cual producen, en quienes las usan, ciertas formas de ser. A ese
+mecanismo la filosofía contemporánea le ha dado un nombre:
+*dispositivo*.
+
+## Una lupa sobre los nudos
+
+Me gusta pensar este libro con la metáfora del tejido. La educación es
+una trama hecha de muchos hilos: ideas sobre lo que es una persona,
+instituciones que las encarnan, objetos que las vuelven cotidianas,
+palabras que las justifican. Desde lejos, el tejido parece liso y
+natural, como si siempre hubiera estado ahí. Solo cuando se acerca la
+lupa aparecen los nudos: los lugares donde los hilos se cruzan con
+fuerza, donde algo se decidió y pudo haberse decidido de otro modo. Este
+ensayo intenta poner la lupa sobre algunos de esos nudos para ver en qué
+nos estamos convirtiendo bajo los procesos de subjetivación que
+despliega la razón neoliberal, y también bajo esa servidumbre cultural
+heredada que, como ha mostrado Marina Garcés, nos hace confundir la
+obediencia con la sensatez.
+
+El recorrido tiene cuatro partes.
+
+La primera, *Cómo se fabrica un alma*, es una genealogía. Recorre la
+historia de la educación occidental, de la *paideia* griega a la escuela
+de masas, no como una sucesión de pedagogías cada vez mejores, sino como
+una sucesión de dispositivos que produjeron ideales de ser humano ---el
+ciudadano virtuoso, el orador prudente, el creyente obediente, el
+individuo autónomo, el trabajador disciplinado--- y que, al hacerlo,
+decidieron también quién quedaba fuera. En ese recorrido aparecen,
+porque deben aparecer, las mujeres que pensaron la educación a
+contracorriente de una tradición que las excluyó.
+
+La segunda, *La máquina sin rostro*, es conceptual. Se pregunta qué es
+exactamente un dispositivo, siguiendo a Michel Foucault y a Giorgio
+Agamben, y qué tipo de sujeto se produce cuando dejamos de pensar al ser
+humano como una sustancia y empezamos a pensarlo como un efecto de
+relaciones. Es la parte más abstracta del libro, pero también la que da
+las herramientas para todo lo demás.
+
+La tercera, *El alma neoliberal*, es un diagnóstico del presente.
+Examina cómo la racionalidad neoliberal reorganiza la escuela, cómo
+produce un sujeto que se piensa a sí mismo como empresa, y cómo las
+tecnologías digitales ---la plataforma, el algoritmo, la gamificación,
+la inteligencia artificial generativa--- intensifican ese proceso hasta
+volverlo casi imperceptible.
+
+La cuarta, *Grietas*, se ocupa de lo que el diagnóstico no puede cerrar:
+las resistencias. Porque donde hay poder hay resistencia, y la historia
+de la educación es también la historia de quienes enseñaron y
+aprendieron de otra manera. Allí propongo una idea, la de *edutropía*,
+que no es una utopía sino un giro: una orientación posible para la
+educación en un mundo que no vamos a desconectar.
+
+## Lo que este libro no es
+
+Este no es un libro contra la tecnología. Sería tan ingenuo como inútil.
+Tampoco es un manual de buenas prácticas digitales, ni un tratado de
+pedagogía, ni un informe de política educativa. Es un ensayo filosófico,
+lo cual significa que su ambición es más modesta y, a la vez, más
+exigente: no pretende resolver el problema, sino formularlo mejor.
+Pensar, sugería Hannah Arendt, exige detenerse, interrumpir por un
+momento todo hacer. En una época que ha hecho de la velocidad un valor y
+del rendimiento una moral, detenerse a preguntar qué estamos haciendo
+cuando educamos me parece ya un pequeño acto de resistencia.
+
+Si algo espero de quien lea estas páginas ---sea docente, estudiante,
+madre, padre, o simplemente alguien que alguna vez se sentó en un
+pupitre y salió de allí convertido en otra persona--- es que, al
+terminar, mire su propia escuela, su propio teléfono y su propia manera
+de evaluarse a sí mismo con un poco más de extrañeza. La extrañeza es el
+comienzo de la filosofía. Y quizá también el comienzo de otra educación.
+
+# Primera parte. Cómo se fabrica un alma {#primera-parte.-cómo-se-fabrica-un-alma .unnumbered .parte}
+
+> *Cada época ha producido su propio ideal de ser humano, y cada ideal
+> necesitó una escuela para hacerse carne.*
+
+# 1. Conócete a ti mismo: la *paideia* y el ciudadano virtuoso
+
+## La inscripción del templo
+
+En el pronaos del templo de Apolo en Delfos, según cuenta la tradición,
+estaba grabada una frase: *gnothi seauton*, «conócete a ti mismo». En su
+origen era probablemente una advertencia religiosa dirigida a quienes
+acudían a consultar al oráculo: recuerda que eres mortal, recuerda tu
+medida, no te creas un dios. Fue Sócrates quien le dio un giro decisivo,
+transformando una advertencia sobre los límites humanos en un programa
+de vida. Conocerse a uno mismo dejó de ser un recordatorio de la propia
+pequeñez para convertirse en la condición de toda sabiduría.
+
+Pero conviene notar algo que con frecuencia se olvida. El
+autoconocimiento socrático no era un ejercicio solitario. Sócrates no se
+encerraba en una habitación a mirar dentro de sí; bajaba al ágora,
+interrogaba a zapateros, a políticos, a poetas, a jóvenes ricos y a
+esclavos. El examen de uno mismo pasaba siempre por otro: por alguien
+que pregunta, que incomoda, que obliga a dar razones. En el lenguaje que
+muchos siglos después recuperaría Michel Foucault, el autoconocimiento
+requería la presencia de un maestro que dijera la verdad con franqueza,
+un *parrhesiastés*. Conocerse a sí mismo era, por lo tanto, algo que se
+aprendía. Era educación.
+
+Esta es la primera tesis de este libro, y conviene enunciarla con
+claridad: la pregunta por la educación es siempre, en el fondo, la
+pregunta por lo que somos. No solo por lo que sabemos, sino por lo que
+se ha construido de nosotros, por el modo en que llegamos a reconocernos
+en una imagen de ser humano que otros pensaron antes que nosotros.
+Cuando un niño aprende a leer, a callar cuando habla el adulto, a
+levantar la mano, a competir por una nota, no está adquiriendo
+únicamente habilidades. Está siendo introducido en una forma de vida. Y
+esa forma de vida, como el sello que se imprime sobre la cera, deja una
+marca que tiende a perdurar.
+
+Los griegos tenían una palabra para ese proceso: *paideia*.
+
+## La *paideia* como proyecto de sociedad
+
+*Paideia* se traduce habitualmente como «educación» o «crianza», pero el
+término es mucho más amplio. Designa a la vez la formación del niño, la
+cultura de un pueblo y el ideal de humanidad que esa cultura persigue.
+Werner Jaeger, en su monumental estudio, mostró que el siglo IV antes de
+nuestra era fue el momento en que los griegos tomaron plena conciencia
+de ese ideal, y que esa conciencia surgió, precisamente, de una crisis:
+la bancarrota moral y política que siguió al brillante siglo de
+Pericles. Es una idea que vale la pena retener. La reflexión sobre la
+educación suele nacer cuando una sociedad siente que algo se ha roto,
+cuando ya no puede dar por supuesto que los jóvenes llegarán a ser lo
+que debían ser. La pedagogía es hija de la inquietud.
+
+Lo que distingue a la *paideia* griega no es solo su contenido ---la
+gimnasia, la música, la lectura de Homero, más tarde la retórica y la
+filosofía---, sino su orientación pública. La educación no era un asunto
+de enriquecimiento personal ni de entretenimiento privado. Era un asunto
+de la comunidad, porque de ella dependía el tipo de ciudadanos que la
+*polis* tendría. Educar era formar la ciudad.
+
+Aristóteles lo expresó en un pasaje célebre de la *Política*: la *polis*
+nace para que los hombres puedan vivir, pero existe para que puedan
+vivir bien. La ciudad no es un mero acuerdo de supervivencia ni un
+mercado para intercambiar bienes; es la forma de vida en común orientada
+a la excelencia. Y si su fin es vivir bien, entonces la educación es su
+asunto más serio, porque es allí donde se forma la disposición de cada
+cual hacia ese bien compartido. Para Aristóteles, la virtud no es algo
+con lo que se nace, sino un hábito que se adquiere practicándolo. Nos
+volvemos justos haciendo cosas justas, valientes haciendo cosas
+valientes. La educación es el lugar donde esas prácticas se repiten
+hasta convertirse en carácter.
+
+El nombre griego de esa excelencia era *areté*. Traducirla por «virtud»
+la empobrece, porque nuestra palabra se ha cargado de resonancias
+morales y religiosas que el término griego no tenía del todo. La *areté*
+de un cuchillo es cortar bien; la de un caballo, correr; la del ser
+humano, vivir conforme a lo que lo hace propiamente humano, es decir,
+conforme a la razón y en comunidad con otros. La *areté* funcionaba así
+como el horizonte que ordenaba todo el edificio educativo: los
+contenidos, los ejercicios, los rituales, los maestros. En el lenguaje
+de este libro, la *areté* era el centro de un dispositivo.
+
+Hoy la *areté* no figura en ningún currículo. Nadie diría que el
+objetivo de la escuela es producir ciudadanos virtuosos en el sentido
+griego. Pero hay algo que se mantiene, dos milenios y medio después, con
+una persistencia asombrosa: la educación sigue apuntando a un proyecto
+de sociedad. Sigue decidiendo, aunque no lo diga, qué tipo de ser humano
+vale la pena producir. Cambiaron los fines; la estructura permanece.
+
+## Sócrates, Platón, Aristóteles: tres maneras de formar
+
+Dentro de la tradición clásica conviven, sin embargo, maneras muy
+distintas de entender esa formación.
+
+Sócrates hizo del diálogo un método. Su célebre mayéutica ---el arte de
+la partera, en homenaje a su madre, Fenarete--- consistía en ayudar al
+otro a dar a luz las ideas que llevaba dentro, desmontando primero las
+falsas certezas mediante preguntas. Sócrates no transmitía doctrinas;
+producía perplejidad. Por eso fue condenado: una educación que enseña a
+dudar es siempre sospechosa para el orden establecido. En la *Apología*,
+Platón le hace decir que una vida sin examen no merece ser vivida. Es
+probablemente la frase más radical de toda la filosofía de la educación,
+porque implica que la tarea educativa no termina nunca y que su fin no
+es la adaptación, sino la interrogación permanente.
+
+Platón, su discípulo, convirtió esa intuición en un sistema. En la
+*República* diseñó con minuciosidad la educación de los guardianes de la
+ciudad ideal: primero la música y la gimnasia, para armonizar el alma y
+el cuerpo; después las matemáticas, para habituar el pensamiento a lo
+invisible; finalmente la dialéctica, para que los mejores pudieran
+contemplar la Idea del Bien y gobernar en consecuencia. La alegoría de
+la caverna es, entre otras cosas, una teoría de la educación: educar es
+girar el alma entera, sacarla de la oscuridad de las sombras y
+orientarla hacia la luz. Pero la ciudad platónica es también una ciudad
+jerárquica, en la que cada uno ocupa el lugar que corresponde a su
+naturaleza, y en la que la educación sirve para distribuir a los
+individuos en funciones. El rey filósofo es el producto más alto de un
+dispositivo que también fabrica, en sus escalones inferiores, a quienes
+deben obedecer.
+
+Aristóteles, por su parte, ofreció una visión más empírica y menos
+vertical. Para él, la virtud es un término medio entre dos excesos ---el
+valor entre la cobardía y la temeridad, la generosidad entre la avaricia
+y el despilfarro--- y se adquiere mediante la práctica y la
+deliberación. Su currículo incluía la gimnasia, la música, la lectura y
+la formación cívica, porque el objetivo era preparar a los ciudadanos
+para participar activamente en la vida política. La felicidad, la
+*eudaimonía*, no estaba en la contemplación solitaria de las Ideas, sino
+en el florecimiento de las capacidades humanas dentro de una comunidad.
+
+Las diferencias son importantes, pero hay un punto en el que los tres
+coinciden: la educación es formación moral y política del ser humano, y
+su sentido último está fuera de ella misma. No se educa para aprobar, ni
+para acumular conocimientos, ni siquiera para ser feliz en privado. Se
+educa para la ciudad.
+
+## El precio de la virtud
+
+Y, sin embargo, ¿quién era exactamente ese ciudadano al que se educaba?
+
+La respuesta es incómoda. La *paideia* griega estaba reservada a los
+varones libres, nacidos de padres ciudadanos y con medios suficientes
+para disponer de tiempo. Las mujeres, los esclavos y los extranjeros
+residentes ---los metecos--- quedaban fuera. En Atenas, las mujeres no
+podían participar en la vida política y eran legalmente menores de edad
+durante toda su vida, bajo la tutela de un varón. La historiadora Gerda
+Lerner ha descrito cómo la práctica de casar a hombres de treinta años
+con muchachas adolescentes reforzaba la dominación masculina en el
+matrimonio, y cómo la función principal de la esposa era producir
+herederos varones y administrar la casa del marido.
+
+No se trata de juzgar a los griegos con nuestras categorías, sino de
+advertir algo que será una constante a lo largo de este libro: todo
+ideal educativo produce, al mismo tiempo que su figura ejemplar, una
+zona de exclusión. Para que existiera el ciudadano que dedicaba su
+tiempo a la gimnasia y a la filosofía, tenía que existir alguien que
+trabajara por él. La palabra griega *skholé*, de la que deriva nuestra
+«escuela», significaba precisamente «ocio», tiempo libre, tiempo
+liberado de la necesidad. La escuela nació como el privilegio de quienes
+no tenían que ganarse la vida. Esta paradoja recorre toda la historia de
+la educación y reaparece, transformada, en nuestro presente: ¿quién
+tiene hoy tiempo para pensar, y quién lo tiene ocupado, segundo a
+segundo, por las exigencias de la productividad y la conexión?
+
+La virtud griega, además, se pensó en masculino. La propia palabra
+latina que heredaría su sentido, *virtus*, deriva de *vir*, «varón».
+Aristóteles llegó a sostener que la mujer tenía una facultad
+deliberativa, pero «sin autoridad». La excelencia humana, en esta
+tradición, era la excelencia de un tipo particular de ser humano que se
+presentaba como universal.
+
+## Las que pensaron desde el margen
+
+Por eso es necesario, en este breve recorrido, nombrar a las mujeres que
+pensaron y enseñaron en esa misma tradición, a menudo a contracorriente
+de ella. Sus nombres nos llegan fragmentados, envueltos en anécdotas y a
+veces en leyendas, porque quienes escribieron la historia de la
+filosofía no consideraron necesario conservar sus obras. Pero su
+presencia basta para desmentir la imagen de una sabiduría griega
+exclusivamente masculina.
+
+Aspasia de Mileto fue una de las figuras más influyentes de la Atenas de
+Pericles, de quien fue compañera. Extranjera en la ciudad y, por lo
+tanto, excluida de la ciudadanía, se convirtió sin embargo en una
+presencia central de su vida intelectual. En el *Menéxeno* de Platón,
+Sócrates afirma ---con una ironía que los estudiosos todavía discuten---
+que fue ella quien le enseñó retórica, y que muchos atenienses
+aprendieron de Aspasia el arte de hablar. Que una mujer extranjera
+aparezca, aunque sea en clave de broma, como maestra del maestro de
+Occidente dice mucho de lo que la tradición prefirió olvidar.
+
+Diotima de Mantinea es otra figura cuya historicidad se discute, pero
+cuya importancia filosófica es indiscutible. En el *Banquete*, cuando
+llega el turno de Sócrates para hablar del amor, este no ofrece una
+teoría propia: dice repetir lo que le enseñó Diotima, una sabia de
+Mantinea. Y lo que enseña Diotima es, en el fondo, una teoría de la
+educación. El amor, *eros*, no es un dios, sino un intermediario, un ser
+carente que desea lo que no tiene; y la vida filosófica es un ascenso
+guiado por ese deseo, desde el amor a un cuerpo bello hasta el amor a la
+belleza misma. Aprender, según Diotima, es desear. Ninguna pedagogía que
+olvide el deseo podrá formar de verdad a nadie.
+
+Hiparquia de Maronea, filósofa cínica del siglo IV antes de nuestra era,
+eligió a Crates de Tebas como compañero contra la voluntad de su familia
+y adoptó su modo de vida: el manto raído, la vida a la intemperie, el
+desprecio por las convenciones. Diógenes Laercio cuenta que, en un
+banquete, el filósofo Teodoro intentó humillarla recordándole que había
+abandonado el telar, la tarea propia de las mujeres. Hiparquia le
+respondió preguntándole si le parecía que había tomado una mala decisión
+al dedicar a su educación el tiempo que habría gastado en tejer. Un
+epigrama antiguo, atribuido a Antípatro de Sidón, le hace decir que no
+siguió las costumbres de su sexo y que prefirió el bastón y la dura
+tierra por lecho al peplo sujeto con broche. En esa escena está
+condensado un gesto que se repetirá durante siglos: el de las mujeres
+que reclaman para sí el tiempo de la *skholé* que les había sido negado.
+
+Areté de Cirene, hija de Aristipo, el fundador de la escuela cirenaica,
+enseñó filosofía a su propio hijo, que por eso fue conocido como
+*metrodidaktos*, «el educado por su madre». La escuela cirenaica
+sostenía que el placer era el bien supremo, y es significativo que haya
+sido una mujer quien transmitiera esa doctrina, tan sospechosa para la
+severidad de otras escuelas.
+
+Más tarde, ya en la Alejandría de la Antigüedad tardía, Hipatia,
+matemática, astrónoma y filósofa neoplatónica, dirigió una escuela a la
+que acudían estudiantes de muy diversas procedencias. Su asesinato en el
+año 415, a manos de una turba cristiana, se ha convertido en un símbolo
+del fin de una época. Pero lo que interesa aquí no es su martirio, sino
+su enseñanza: Hipatia comentó las obras de Diofanto, de Apolonio y de
+Ptolomeo, y organizó un programa de estudios con contenidos precisos. Es
+decir, contribuyó a lo que hoy llamaríamos un currículo, y con ello a la
+forma misma del dispositivo escolar.
+
+Estas mujeres no son una nota al pie de la historia de la *paideia*. Son
+la prueba de que el ideal griego de formación podía ser pensado de otra
+manera, y de que su exclusividad masculina no era una necesidad de la
+razón, sino una decisión de la ciudad.
+
+## Del orador bueno al plan de estudios
+
+Junto a la tradición filosófica, Grecia desarrolló otra corriente
+educativa que acabaría siendo igual de influyente: la retórica. Los
+sofistas, maestros itinerantes que cobraban por enseñar el arte de
+persuadir, fueron despreciados por Platón, que los acusaba de vender
+apariencias de sabiduría. Pero fueron ellos quienes inventaron algo que
+hoy damos por supuesto: la enseñanza como oficio y la educación como un
+conjunto de técnicas transmisibles.
+
+En un principio, el ideal del buen orador era realista y pragmático: se
+trataba de hablar con eficacia, de ganar en la asamblea y en los
+tribunales. Con Isócrates, sin embargo, ese ideal adquirió una dimensión
+moral. Un buen orador, sostenía, debía ser también una buena persona,
+porque nadie confía en la palabra de quien no tiene carácter. Esta
+fusión entre elocuencia y virtud sería recogida siglos después por
+Cicerón y Quintiliano, y se convertiría en el núcleo de la educación
+romana.
+
+Al mismo tiempo, empezó a perfilarse una organización de los saberes que
+tendría un destino extraordinario: la gramática, la retórica y la
+dialéctica, junto a la aritmética, la geometría, la astronomía y la
+música. Lo que más tarde se llamaría el *trivium* y el *quadrivium*
+tiene aquí su origen. Y con ese plan de estudios aparece algo nuevo: la
+idea de que la formación de una persona puede organizarse en una
+secuencia de materias, distribuirse en el tiempo y prescribirse de
+antemano. El currículo es un invento antiguo, y es también uno de los
+dispositivos más poderosos jamás creados, porque determina no solo qué
+se aprende, sino cuánto tiempo de la vida de cada sujeto debe dedicarse
+a la instrucción.
+
+## Lo que queda de Grecia
+
+¿Qué nos dice todo esto sobre nuestro presente? Al menos tres cosas.
+
+La primera es que la educación nunca ha sido neutral. Desde su
+nacimiento como reflexión consciente, ha estado ligada a una idea de la
+buena vida y de la buena ciudad. Cuando hoy se presenta la educación
+como una mera transmisión de competencias técnicas, desligada de
+cualquier proyecto de sociedad, no estamos ante una educación más
+neutral que la griega, sino ante una que ha decidido no decir cuál es su
+proyecto.
+
+La segunda es que todo ideal educativo produce exclusiones. El ciudadano
+virtuoso de la *polis* existía gracias al trabajo de quienes no podían
+aspirar a serlo. Cada vez que una época define lo que es un ser humano
+bien formado, define también, por omisión, a quienes no lo son o no
+pueden llegar a serlo.
+
+La tercera, quizá la más importante, es que la tradición griega contenía
+ya en su interior una fuerza que la desbordaba: el examen socrático, la
+pregunta que no se detiene, el deseo de Diotima, el gesto de Hiparquia.
+La educación es un dispositivo de formación, pero es también, desde el
+principio, el lugar donde se aprende a interrogar a ese mismo
+dispositivo. Esa ambivalencia, esa doble cara, no nos abandonará en
+ningún momento de este libro.
+
+# 2. Del orador al creyente: *humanitas*, maestro interior y escolástica
+
+## Aprender es un honor, enseñar es una vergüenza
+
+Cuando la cultura griega llegó a Roma, llegó en buena medida como botín
+y como servidumbre. Las familias patricias compraban esclavos griegos
+para que educaran a sus hijos, y el oficio de maestro quedó asociado
+durante mucho tiempo a una condición social baja. Hay en la cultura
+romana una paradoja que todavía hoy resulta familiar: aprender era un
+honor, pero enseñar era casi una vergüenza. Los salarios de los maestros
+de primeras letras eran miserables, y quienes enseñaban eran con
+frecuencia esclavos o libertos. Cicerón, que tanto admiraba la cultura,
+distinguía entre las profesiones dignas de un hombre libre y aquellas
+que, como la del artesano, apenas merecían consideración. Los más
+prestigiosos eran los ciudadanos que se dedicaban a la administración de
+los asuntos públicos.
+
+Uno podría preguntarse si esa paradoja ha desaparecido. En muchos
+países, la sociedad celebra la educación como el bien más preciado
+mientras paga a quienes la imparten como si su trabajo fuera
+prescindible, y somete su labor a una desconfianza burocrática
+permanente. El docente contemporáneo, evaluado y auditado sin descanso,
+no es un esclavo, desde luego. Pero hereda algo de esa ambigüedad
+romana: se le exige que forme lo más valioso de la sociedad, y al mismo
+tiempo se lo trata como un ejecutor de programas diseñados por otros.
+
+## La invención de la *humanitas*
+
+Fue Cicerón, sin embargo, quien dio a la herencia griega una forma
+propia y duradera. Tomó la *paideia* y la tradujo, no solo de lengua,
+sino de mundo. El término que eligió fue *humanitas*. Con él designaba a
+la vez la cultura literaria y filosófica, la cortesía en el trato y la
+conciencia de pertenecer a una comunidad humana que trascendía las
+fronteras de los pueblos. La *humanitas* no era un placer privado de
+erudito: apuntaba a la formación integral de la persona en cuanto ser
+educado en la cultura humana. En el discurso en defensa del poeta
+Arquías, Cicerón sostiene que las letras alimentan la juventud, deleitan
+la vejez, adornan la prosperidad y consuelan en la adversidad. La
+cultura, para él, era lo que hacía al ser humano plenamente humano.
+
+En esa noción confluyen varias corrientes. Del estoicismo, Roma tomó la
+idea de una naturaleza común a todos los seres racionales y de una ley
+natural que los obligaba por igual. Del derecho romano, la vocación de
+universalizar normas. El resultado fue una concepción de la persona que,
+por primera vez, aspiraba a ser válida más allá de una ciudad concreta.
+De allí procede, por un camino largo y sinuoso, nuestra idea moderna de
+derechos comunes a todos los seres humanos.
+
+Pero conviene no idealizar. La *humanitas* fue también el lenguaje
+cultural de un imperio. El derecho romano universalizó un tipo de
+sociedad y, con ella, un tipo de educación. Sus dispositivos ---los
+contenidos, los procedimientos, las estrategias de enseñanza, los modos
+de evaluar--- servían para garantizar la coherencia entre el discurso
+del poder y lo que cada sujeto debía llegar a ser. El ideal era el
+orador ilustrado, dotado de *prudentia* y de responsabilidad cívica,
+cuya educación debía perfeccionar su alma para el servicio de la
+república y, más tarde, del imperio. La virtud dejó de ser solamente
+ética para volverse también estratégica: el dominio de sí era la
+condición para el dominio de los otros.
+
+## Las artes del hombre libre
+
+Cicerón llamó «artes liberales» a ese conjunto de saberes que los
+griegos habían organizado como educación general: las disciplinas
+propias del hombre libre, por oposición a las artes serviles o
+mecánicas. Con el tiempo se fijarían en siete, agrupadas en dos bloques.
+El *trivium* reunía las artes del lenguaje: gramática, retórica y
+dialéctica. El *quadrivium*, las artes del número: aritmética,
+geometría, música y astronomía.
+
+De todas ellas, la retórica fascinaba especialmente a los romanos. Era
+el arte que hacía consciente el poder del lenguaje, la capacidad de
+mover a otros con la palabra. Quintiliano, en su *Institución oratoria*,
+recogió la vieja fórmula atribuida a Catón el Viejo según la cual el
+orador debía ser *vir bonus dicendi peritus*, un hombre bueno experto en
+hablar. La fusión griega entre elocuencia y virtud se convirtió así en
+programa escolar. Y la literatura ---Virgilio y su *Eneida*, que narraba
+el destino glorioso de Roma--- se incorporó a la gramática y a la
+retórica como materia de estudio y como vehículo de identidad. Aprender
+a leer era aprender a ser romano.
+
+Hay un detalle que interesa especialmente. En el mundo griego, la
+filosofía se había organizado en escuelas: comunidades de vida y de
+estudio, como la Academia de Platón o el Jardín de Epicuro, en las que
+maestro y discípulos compartían algo más que lecciones. En Roma, en
+cambio, la orientación filosófica tomó a menudo la forma del consejero
+personal. El maestro estoico no era un maestro de la memoria, alguien
+que se limita a decir lo que los otros ignoran; era alguien que
+acompañaba la formación del sujeto, que intervenía en su vida, que lo
+ayudaba a gobernarse a sí mismo. Las cartas de Séneca a Lucilio son el
+mejor ejemplo: no transmiten un sistema, sino que acompañan, día tras
+día, la transformación de una persona. El maestro aparece así como un
+mediador en la construcción del aprendizaje, alguien que trabaja sobre
+la relación del discípulo consigo mismo.
+
+Foucault dedicó sus últimos cursos a estas prácticas antiguas, que llamó
+«técnicas de sí»: ejercicios de escritura, de examen de conciencia, de
+meditación sobre la muerte, de preparación para la adversidad. Lo que le
+interesaba de ellas era que mostraban una forma de subjetivación que no
+consistía en obedecer una ley externa, sino en darse a uno mismo una
+forma. Volveremos sobre esto al final del libro, porque en esas técnicas
+antiguas se esconde quizá una clave para pensar la resistencia en
+nuestro presente.
+
+## El maestro interior
+
+Con el cristianismo irrumpió en el mundo antiguo una fuerza cultural de
+naturaleza muy distinta. El entusiasmo por difundir una nueva fe y
+persuadir a los demás de su verdad dio un impulso enorme a la enseñanza,
+pero también transformó su sentido. Las artes del lenguaje, que habían
+sido el corazón de la educación clásica, quedaron subordinadas a la
+doctrina.
+
+Agustín de Hipona encarna como nadie esa transición. Había sido profesor
+de retórica, conocía a fondo la dialéctica antigua y dominaba el
+lenguaje con una maestría que sus *Confesiones* todavía muestran. Y, sin
+embargo, escribió un pequeño diálogo, *De magistro*, conversando con su
+hijo Adeodato, cuya conclusión es asombrosa: ningún ser humano enseña
+verdaderamente a otro. Las palabras, dice Agustín, solo nos invitan a
+buscar; no nos dan las cosas mismas. Cuando aprendemos algo verdadero,
+no es porque el maestro externo nos lo haya transferido, sino porque lo
+hemos visto en nuestro interior, iluminados por la verdad que habita en
+nosotros. Y esa verdad interior es Cristo, el único maestro.
+
+La idea tiene una profundidad filosófica que va más allá de su marco
+teológico. Agustín intuyó que el aprendizaje no es una transferencia de
+información de una cabeza a otra, sino un acontecimiento que ocurre en
+quien aprende. El maestro humano guía, dirige la atención, señala; pero
+no puede comprender por el otro. Hay en esta tesis una dignidad del
+aprendiz que muchas pedagogías posteriores olvidarán.
+
+Pero hay también otra cara. Si la verdad está en el interior y procede
+de Dios, el interior se convierte en el lugar donde se libra la batalla
+decisiva por el alma. La educación cristiana inventó una interioridad
+que había que vigilar, examinar, confesar. La figura del pastor que
+conoce a cada una de sus ovejas, que vela por la salvación de cada alma
+en particular, será para Foucault el origen de una forma de poder
+específicamente occidental, el poder pastoral, que gobierna a los
+individuos conociendo sus pensamientos más íntimos. Muchos siglos
+después, ese poder se secularizará en la escuela, en el hospital, en la
+psicología. Y hoy reaparece, transfigurado, en plataformas que pretenden
+conocernos mejor que nosotros mismos y guiarnos, recomendación tras
+recomendación, hacia nuestro propio bien.
+
+Con su teoría de la enseñanza, Agustín se convirtió en algo así como el
+gran diseñador curricular de la cultura cristiana medieval. Su
+pensamiento filosófico, teológico y político fijó durante siglos el
+estándar de lo que debía ser la educación. Los sabios cristianos se
+inspiraban en él y obedecían su autoridad. La educación dejó de formar
+ciudadanos para formar creyentes.
+
+## Razón, fe y universidad
+
+Algunos siglos más tarde, Tomás de Aquino propuso un nuevo equilibrio.
+Las verdades más altas, las que se refieren a la salvación del alma, se
+conocen por revelación. Pero existe también un vasto dominio de verdades
+que la razón humana puede alcanzar por sí misma, a partir de la
+experiencia sensible y del razonamiento. Entre ambos órdenes no puede
+haber contradicción, porque Dios es el autor de los dos. La consecuencia
+pedagógica de esta tesis es importante: si hay un mundo que la
+inteligencia puede conocer, entonces hay también una tarea educativa
+legítima en ese mundo, y los maestros tienen un campo propio de trabajo.
+
+En el siglo XIII, esa tarea encontró una institución nueva: la
+universidad. París, Bolonia, Oxford, Salamanca. La universidad medieval
+organizó el saber en facultades, estableció grados, exámenes y disputas
+reguladas, y creó una corporación de maestros y estudiantes con sus
+propios privilegios. Fue una invención extraordinaria, y muchas de sus
+formas siguen vivas: la lección magistral, el examen oral, la jerarquía
+de los títulos, la toga. Pero fue también un dispositivo orientado a la
+salvación más que a la emancipación, marcado por una jerarquía a la vez
+divina y epistemológica que dejaba fuera el conocimiento de las mujeres,
+de los herejes y de las culturas no cristianas.
+
+Con el tiempo, la escolástica fue perdiendo vigor. Las disputas se
+volvieron cada vez más verbales, más formalistas, más alejadas de la
+experiencia. Y fue ese agotamiento, unido a una revitalización de la
+vida cívica en las ciudades italianas, lo que abrió el camino al
+Renacimiento.
+
+## La ciudad de las damas
+
+Antes de cruzar ese umbral, sin embargo, hay que detenerse en una figura
+que, desde el corazón de la cultura medieval tardía, formuló una de las
+críticas más lúcidas a la exclusión de las mujeres de la educación.
+
+Christine de Pizan nació en Venecia en 1364 y pasó casi toda su vida en
+Francia, donde su padre fue astrólogo y médico de la corte de Carlos V.
+Viuda a los veinticinco años y con hijos a su cargo, se ganó la vida
+escribiendo, lo que la convierte en una de las primeras escritoras
+profesionales de Europa. En 1405 publicó *La ciudad de las damas*, una
+obra en la que imagina, guiada por tres figuras alegóricas ---Razón,
+Rectitud y Justicia---, la construcción de una ciudad fortificada
+habitada por mujeres ilustres de todos los tiempos.
+
+El libro comienza con una escena que no ha perdido actualidad. Christine
+está sentada en su estudio, rodeada de libros, y se da cuenta de que
+todos los autores que lee, filósofos, poetas y moralistas, hablan mal de
+las mujeres. Empieza a dudar de sí misma. ¿Y si tienen razón? ¿Y si las
+mujeres son, por naturaleza, inferiores? Es entonces cuando aparece
+Razón para decirle que el problema no está en las mujeres, sino en
+quienes han escrito sobre ellas sin conocerlas. Y añade algo decisivo:
+si las niñas recibieran la misma educación que los niños, aprenderían
+las ciencias con la misma perfección.
+
+La tesis de Christine es sencilla y, para su época, revolucionaria: la
+supuesta inferioridad intelectual de las mujeres no es un dato de la
+naturaleza, sino un efecto de la educación que se les niega. Es, si se
+quiere, una de las primeras formulaciones de la idea que articula este
+libro: que los sujetos no preexisten a los dispositivos que los forman,
+sino que son, en buena medida, su producto.
+
+## Del ciudadano al creyente
+
+Si miramos el recorrido de estos dos capítulos en su conjunto, vemos
+dibujarse una transformación de fondo. La educación griega formaba
+ciudadanos para la *polis*; la romana, oradores para la república y el
+imperio; la cristiana, creyentes para la Iglesia. En cada caso, la
+educación produjo un ideal de ser humano y organizó un conjunto de
+prácticas para alcanzarlo. Y en cada caso esa producción tuvo un
+reverso: los excluidos de la *polis*, los esclavos que enseñaban sin ser
+respetados, las mujeres a quienes se negaba el estudio, los herejes que
+debían ser corregidos.
+
+Lo que cambió con el cristianismo, sin embargo, fue algo más que el
+contenido del ideal. Cambió el lugar donde la educación operaba. La
+*paideia* trabajaba sobre el carácter público del ciudadano; la
+educación cristiana descubrió la interioridad y la convirtió en su
+territorio. A partir de entonces, educar no será solamente formar
+hábitos visibles, sino gobernar lo que ocurre dentro: las intenciones,
+los deseos, los pensamientos. Esta interiorización del gobierno es, como
+veremos, una de las claves para entender el sujeto contemporáneo, que ya
+no necesita un confesor para examinarse, porque ha aprendido a hacerlo
+solo, con la ayuda de una aplicación que le recuerda cuántos pasos ha
+dado, cuántas horas ha dormido y cuántos objetivos le faltan por
+cumplir.
+
+# 3. Darse forma: Renacimiento, Ilustración y *Bildung*
+
+## Un ser sin naturaleza fija
+
+En 1486, un joven de veintitrés años llamado Giovanni Pico della
+Mirandola escribió un discurso que debía servir de introducción a un
+debate público sobre novecientas tesis filosóficas. El debate nunca se
+celebró ---el papa lo prohibió---, pero el discurso sobrevivió y llegó a
+conocerse como la *Oración sobre la dignidad del hombre*. En él, Pico
+imagina a Dios dirigiéndose a Adán después de la creación. A los demás
+seres, le dice, les he dado una naturaleza definida, contenida dentro de
+leyes que yo mismo he prescrito. A ti no te he dado ni un lugar fijo, ni
+un rostro propio, ni una función particular. Podrás degenerar hasta las
+formas inferiores, que son las bestias, o regenerarte hasta las
+superiores, que son divinas. Eres, en suma, el escultor de ti mismo.
+
+Esta imagen condensa el giro que el humanismo renacentista introdujo en
+la manera de pensar la educación. Si el ser humano no tiene una
+naturaleza fija, si es una personalidad dinámica que cambia, entonces la
+educación ya no puede limitarse a imprimir sobre él una forma
+preestablecida, sea la del ciudadano o la del creyente. Educar se
+convierte en *autoformación*. La virtud deja de ser la conformidad con
+un modelo para convertirse en el resultado más logrado de un trabajo
+sobre uno mismo, y la libertad de la voluntad aparece como coherente con
+la existencia individual.
+
+Los griegos se educaban para la *polis*, los romanos para la república,
+los cristianos para la Iglesia. Con el Renacimiento, por primera vez, la
+educación empieza a orientarse hacia la individualidad particular de
+cada persona. Es un cambio inmenso, y su ambivalencia nos acompañará
+hasta hoy. Porque la misma idea que libera al individuo de un destino
+prefijado lo deja también solo frente a la tarea de construirse,
+responsable de su propio éxito o de su propio fracaso. El emprendedor de
+sí mismo que celebra el neoliberalismo es, en cierto sentido, un
+descendiente lejano y degradado del escultor de sí mismo de Pico.
+
+## Una cabeza bien hecha
+
+Los humanistas volvieron a los clásicos griegos y latinos con una pasión
+nueva. Leían a Cicerón, a Quintiliano, a Plutarco, y encontraban en
+ellos un ideal de formación integral que la escolástica parecía haber
+olvidado: el cultivo armonioso de las letras, las artes, el cuerpo y el
+carácter. La educación debía proporcionar la capacidad de hablar con
+elocuencia y de escribir con corrección, pero sobre todo la de juzgar
+con criterio.
+
+Nadie expresó mejor ese ideal que Michel de Montaigne. En su ensayo
+sobre la educación de los niños, escrito hacia 1580, propone que al
+joven se le busque un preceptor que tenga «la cabeza bien hecha antes
+que bien llena». No se trata de acumular conocimientos, sino de formar
+el juicio. Montaigne desconfía de la erudición que se repite sin
+digerir, del saber que se lleva prestado como quien lleva un abrigo
+ajeno. Quiere que el niño sea despertado a una noble curiosidad, que se
+informe de todo, que observe lo singular que hay a su alrededor, que
+viaje, que converse, que aprenda a dudar. Y, sobre todo, quiere que lo
+aprendido se convierta en propio: que la abeja, que liba aquí y allá las
+flores, haga después con ellas una miel que ya no es tomillo ni
+mejorana, sino suya.
+
+Es difícil leer a Montaigne sin pensar en nuestras escuelas, donde la
+presión por cubrir el temario, por preparar los exámenes estandarizados
+y por demostrar resultados medibles convierte a menudo la educación en
+un ejercicio de llenado. La cabeza bien llena es fácil de evaluar. La
+cabeza bien hecha, no.
+
+## Enseñar todo a todos
+
+Con el desarrollo de la ciencia moderna en los siglos XVI y XVII, el
+humanismo encontró un nuevo interlocutor. René Descartes, formado por
+los jesuitas en el colegio de La Flèche, relata en el *Discurso del
+método* su decepción ante una educación que, a pesar de su prestigio, lo
+había dejado lleno de dudas y de errores. Decidió entonces deshacerse de
+todo el saber heredado y reconstruir el conocimiento sobre bases firmes,
+siguiendo el modelo de la matemática. La filosofía moderna comienza, de
+algún modo, con un gesto de rechazo a la escuela.
+
+Pero fue Jan Amos Comenio, un obispo checo de la Unidad de los Hermanos
+Moravos, quien convirtió la pedagogía en un campo de conocimiento
+autónomo. En su *Didáctica magna* se propuso nada menos que un método
+universal para «enseñar todo a todos». Comenio partía de la convicción
+de que todo ser humano lleva en sí la semilla del conocimiento, la
+virtud y la piedad, y de que la educación debe desarrollarla. Defendió
+una escuela para todos los niños, ricos y pobres, varones y mujeres;
+diseñó una secuencia de grados adaptada a las edades; escribió uno de
+los primeros libros escolares ilustrados, el *Orbis sensualium pictus*;
+y concibió la escuela como un taller de humanidad que debía funcionar
+con la regularidad de un reloj.
+
+Esta última imagen merece atención. Comenio admiraba los mecanismos de
+relojería, la precisión con que cada pieza encaja en las demás para
+producir un movimiento uniforme. Quería que la enseñanza tuviera esa
+misma exactitud: un orden, un tiempo, un método que, aplicado
+correctamente, produjera siempre el mismo resultado. Es una aspiración
+generosa, porque nace del deseo de que nadie quede sin educación. Pero
+en ella está ya el germen de algo que, siglos después, se volverá
+inquietante: la idea de la escuela como máquina y del alumno como
+materia que el método transforma de manera previsible. La didáctica
+moderna nace universalista y mecánica a la vez.
+
+## *Bildung*
+
+La *paideia* griega, la *humanitas* romana y la *umanità* renacentista
+desembocaron, en la Alemania de finales del siglo XVIII, en un concepto
+que sintetiza y transforma a todos los anteriores: la *Bildung*.
+
+La palabra es difícil de traducir. Contiene *Bild*, «imagen», y remite a
+la acción de dar forma, de configurar, como se da forma a una escultura.
+Pero, a diferencia de la *paideia*, que imprimía en el alma la forma de
+un ideal colectivo, la *Bildung* designa un proceso en el que el ser
+humano se da forma a sí mismo desarrollando las disposiciones que lleva
+dentro. Es formación en el sentido de imprimir a la cosa el carácter de
+su propio desarrollo. Wilhelm von Humboldt, que la convirtió en el
+principio de su reforma educativa y en el fundamento de la Universidad
+de Berlín, la entendía como el despliegue más alto y proporcionado de
+todas las fuerzas humanas en un todo armónico. Goethe le dio forma
+novelesca en el *Wilhelm Meister*, la historia de un joven que se busca
+a sí mismo a través de errores, encuentros y aprendizajes, y que dio
+nombre a todo un género: la novela de formación.
+
+La *Bildung* no es, entonces, instrucción ni adiestramiento. Es un
+destino a la vez individual y de la especie, una apertura sin
+determinismos hacia la metamorfosis de la cultura. Y es, también, una
+respuesta crítica a cierta Ilustración utilitarista y positivista que
+pretendía reducir la educación a la ciencia y a las técnicas útiles.
+Hans-Georg Gadamer, al reconstruir la historia del concepto, insistió en
+que la *Bildung* no tiene objetivos exteriores a sí misma: uno no se
+forma *para* algo, sino que la formación es su propio fin. Esta idea,
+tan contraria a la lógica de las competencias y de la empleabilidad que
+domina hoy los sistemas educativos, es quizá el legado más subversivo de
+la tradición ilustrada.
+
+## Rousseau y la naturaleza del niño
+
+En el trasfondo de la *Bildung* está la figura de Jean-Jacques Rousseau.
+Su *Emilio*, publicado en 1762 y condenado de inmediato por el
+Parlamento de París, comienza con una frase que es todo un programa:
+todo está bien al salir de las manos del Autor de las cosas; todo
+degenera entre las manos del hombre. La sociedad corrompe, deforma,
+impone convenciones artificiales. La buena educación debe, por lo tanto,
+proteger al niño de esa corrupción y permitir que su naturaleza se
+desarrolle libremente, respetando sus ritmos, sus intereses, su
+curiosidad.
+
+Rousseau descubrió la infancia como una edad con sentido propio, no como
+una simple preparación para la adultez. Exigió que se tratara al niño
+como niño y que la educación partiera de la experiencia sensible antes
+que de los libros. En esto fue el precursor de toda la pedagogía activa
+de los siglos siguientes. La formación integral, tal como él la
+entendía, no debía limitarse a la adquisición de conocimientos, sino
+incluir el desarrollo de la moralidad, de la sensibilidad y de la
+autonomía.
+
+Pero el *Emilio* tiene un quinto libro, el que trata de Sofía, la futura
+esposa de Emilio. Y allí el tono cambia por completo. Toda la educación
+de las mujeres, escribe Rousseau, debe ser relativa a los hombres:
+agradarles, serles útiles, hacerse amar y honrar por ellos, educarlos de
+niños, cuidarlos de mayores, aconsejarlos, consolarlos, hacerles la vida
+agradable. La autonomía que se celebra en Emilio se le niega a Sofía. La
+naturaleza que la educación debía respetar resulta ser, en el caso de
+las mujeres, una naturaleza de subordinación.
+
+## Vindicación
+
+Fue Mary Wollstonecraft quien respondió a Rousseau con más fuerza. En su
+*Vindicación de los derechos de la mujer*, de 1792, dedica páginas
+enteras a desmontar el retrato de Sofía. Si las mujeres parecen
+frívolas, débiles o dependientes, argumenta, no es por naturaleza, sino
+porque se las ha educado para serlo: se les ha enseñado a cultivar la
+apariencia en lugar del entendimiento, a buscar la protección de un
+hombre en lugar de desarrollar su propia razón. Wollstonecraft toma los
+ideales ilustrados ---la razón, la virtud, la autonomía--- y exige que
+se apliquen sin excepción. No pide una educación especial para las
+mujeres, sino la misma: escuelas mixtas, nacionales y gratuitas, donde
+niños y niñas aprendan juntos.
+
+Es el mismo gesto de Christine de Pizan, cuatro siglos después, pero
+ahora con el lenguaje de los derechos. Y es también la prueba de que la
+Ilustración contenía en su interior una contradicción que no podía
+resolver sin transformarse: proclamaba la universalidad de la razón
+mientras excluía de ella a la mitad de la humanidad. Por las mismas
+fechas, el marqués de Condorcet defendía ante la Asamblea revolucionaria
+una instrucción pública igual para mujeres y hombres. Su propuesta no
+prosperó.
+
+Unos decenios antes, Émilie du Châtelet había demostrado con su propia
+obra lo que Wollstonecraft defendería en teoría. Matemática y física,
+autora de unas *Instituciones de física* en las que dialogaba con
+Leibniz y con Newton, Du Châtelet emprendió la traducción al francés de
+los *Principia mathematica* de Newton, escritos en latín, acompañada de
+un comentario propio. Murió en 1749, poco después de dar a luz, y la
+obra se publicó póstumamente. Durante mucho tiempo fue la única
+traducción francesa del libro fundador de la física moderna. Du
+Châtelet, que se había formado gracias a la excepcional apertura de su
+padre y a su propia obstinación, escribió que, si fuera rey, permitiría
+a las mujeres participar de todos los derechos de la humanidad, y sobre
+todo de los del espíritu.
+
+## La salida de la minoría de edad
+
+En 1784, Immanuel Kant respondió a la pregunta «¿Qué es la Ilustración?»
+con una definición que todavía hoy se cita en las escuelas: la
+Ilustración es la salida del ser humano de su minoría de edad, de la
+cual él mismo es culpable. Minoría de edad es la incapacidad de servirse
+del propio entendimiento sin la guía de otro. Y esa minoría es culpable
+cuando su causa no es la falta de entendimiento, sino la falta de
+decisión y de valor. *Sapere aude*: atrévete a servirte de tu propio
+entendimiento.
+
+La educación ilustrada es, por lo tanto, una educación para la
+autonomía. Pero Kant, que también escribió unas lecciones sobre
+pedagogía, sabía que esa autonomía no surge espontáneamente. «El hombre
+solo puede hacerse hombre por la educación», escribe. «No es más que lo
+que la educación hace de él». Y la primera etapa de esa educación es la
+disciplina, que debe transformar la animalidad en humanidad, someter al
+niño a las leyes de la razón, enseñarle, por ejemplo, a permanecer
+sentado y atento. Solo después vendrán la instrucción, la civilización y
+la moralización.
+
+Aquí aparece la tensión que la modernidad educativa no logrará nunca
+resolver del todo. Se quiere un sujeto autónomo, capaz de pensar por sí
+mismo; pero para producirlo se recurre a un proceso de disciplinamiento
+que lo somete. La libertad debe ser fabricada por medio de la coerción.
+Kant formuló la paradoja con toda claridad: ¿cómo cultivar la libertad
+bajo la coacción? No dio una respuesta definitiva. Tal vez no la haya.
+
+## La promesa y su sombra
+
+Con la Ilustración, la idea de la educación como derecho universal y
+como medio para el desarrollo del individuo alcanzó su formulación más
+ambiciosa. La *Bildung* propuso el ideal de un ciudadano autónomo,
+instruido y moralmente responsable. Y el sistema escolar que comenzaba a
+organizarse en los Estados europeos se presentó como el medio para
+universalizar ese ideal.
+
+Pero esa universalización se hizo bajo una racionalidad normalizadora
+que excluía a quienes no se ajustaban a sus cánones de progreso, de
+género o de raza. La razón ilustrada fue también la razón colonial; el
+sujeto autónomo se pensó como varón, blanco, europeo y propietario. Las
+filósofas y pedagogas que reclamaron su lugar en esa tradición no solo
+pidieron ser incluidas: mostraron que la exclusión no era un accidente,
+sino una pieza del dispositivo.
+
+Lo que la Ilustración nos legó, en definitiva, es una promesa y su
+sombra. La promesa de una educación que haga a cada ser humano capaz de
+pensar por sí mismo, que no tenga más fin que la formación de la persona
+entera. Y la sombra de una maquinaria disciplinaria que, en nombre de
+esa misma promesa, se dedicará durante los dos siglos siguientes a
+producir cuerpos dóciles y mentes útiles. De esa maquinaria trata el
+próximo capítulo.
+
+# 4. La escuela-máquina: del Estado al mercado
+
+## El nacimiento de la escuela obligatoria
+
+A partir del siglo XVIII, el proyecto educativo moderno se anuda
+estrechamente con el surgimiento del Estado nacional. La educación
+empieza a concebirse como un instrumento de civilización, de
+racionalización y de formación del ciudadano, y la escuela aparece como
+el pilar de la república ilustrada. Detrás de esta concepción hay una
+antropología filosófica que postula la perfectibilidad del ser humano
+mediante la instrucción, y un imaginario político que confía en que un
+pueblo instruido será un pueblo libre, próspero y leal.
+
+Durante el siglo XIX, ese proyecto se convierte en sistema. Se establece
+la escolarización obligatoria, se profesionaliza la docencia, se
+centraliza el currículo, se construyen edificios escolares según planos
+uniformes, se imprimen manuales para todo el territorio. Prusia fue
+pionera, y su modelo fue imitado en buena parte de Europa y de América.
+Los Estados que acababan de inventar sus himnos, sus banderas y sus
+historias nacionales necesitaban ciudadanos que se reconocieran en
+ellos, y la escuela fue el lugar donde ese reconocimiento se produjo.
+Aprender la lengua nacional, la historia patria y la geografía del
+territorio era aprender a pertenecer.
+
+Émile Durkheim, uno de los fundadores de la sociología, definió la
+educación como la acción ejercida por las generaciones adultas sobre
+aquellas que todavía no han alcanzado la madurez necesaria para la vida
+social, con el objeto de suscitar y desarrollar en el niño un cierto
+número de estados físicos, intelectuales y morales que exigen de él la
+sociedad política en su conjunto y el medio específico al que está
+destinado. La definición es de una franqueza admirable. La educación no
+desarrolla una naturaleza humana abstracta; produce el tipo de ser
+humano que una sociedad determinada necesita. Durkheim no lo decía como
+una denuncia, sino como una constatación. Pero basta con leerla después
+de Rousseau para advertir hasta qué punto el énfasis se ha desplazado:
+ya no se trata de proteger al niño de la sociedad, sino de prepararlo
+para ella.
+
+## La disciplina
+
+Esta arquitectura respondía a una racionalidad estatal que entendía la
+educación como herramienta de cohesión social, de disciplinamiento de
+los cuerpos y de reproducción de las estructuras económicas emergentes.
+El conocimiento escolar se organizó según un paradigma
+científico-positivista, con una estructura jerárquica que segmentaba los
+saberes en asignaturas, los tiempos en horarios, los sujetos en cursos y
+niveles.
+
+Michel Foucault dedicó a este proceso algunas de las páginas más
+célebres de *Vigilar y castigar*. Allí muestra cómo, entre los siglos
+XVII y XIX, se desarrolló en Europa un conjunto de técnicas que llamó
+«disciplinas»: métodos que permiten el control minucioso de las
+operaciones del cuerpo, que garantizan la sujeción constante de sus
+fuerzas y le imponen una relación de docilidad y utilidad. Las
+disciplinas no nacieron en un solo lugar. Se formaron en los conventos,
+en los ejércitos, en los talleres, en los hospitales, y encontraron en
+la escuela uno de sus terrenos más fértiles.
+
+Foucault describe con detalle la escuela de los Hermanos de las Escuelas
+Cristianas en la Francia del siglo XVIII. Las clases debían
+desarrollarse con pocas palabras, sin explicaciones, en un silencio casi
+total interrumpido solo por señales: campanas, palmadas, gestos, una
+simple mirada del maestro. Los hermanos utilizaban incluso un pequeño
+utensilio de madera al que llamaban, por excelencia, «la Señal», y que
+debía unir en su brevedad maquinal la técnica de la orden con la moral
+de la obediencia. Cada alumno ocupaba un lugar fijo en el aula,
+determinado por su rendimiento y su conducta. El tiempo se dividía en
+segmentos cada vez más pequeños, y a cada segmento correspondía un gesto
+prescrito. El cuerpo del escolar era descompuesto, ejercitado,
+recompuesto.
+
+Pero lo más importante de la disciplina no es que reprima, sino que
+produce. Produce individuos. La escuela disciplinaria inventó una serie
+de instrumentos que hoy nos parecen evidentes y que, sin embargo, tienen
+una historia: la clasificación por edades y por niveles, la lista de
+asistencia, el registro escrito de las faltas y los méritos, la
+calificación numérica y, sobre todo, el examen. El examen, dice
+Foucault, combina las técnicas de la jerarquía que vigila y las de la
+sanción que normaliza. Hace de cada individuo un caso, con su
+expediente, sus notas, su historia documentada. Permite compararlo con
+los demás, situarlo en una escala, medir su desviación respecto de la
+norma. Con el examen, el individuo se vuelve visible y descriptible, y
+por eso mismo gobernable.
+
+Uno no puede leer estas páginas sin pensar en las plataformas que hoy
+registran cada entrega, cada nota, cada minuto de conexión, y que
+generan automáticamente informes sobre el progreso de cada estudiante.
+El expediente disciplinario se ha vuelto digital, continuo e
+instantáneo. Volveremos sobre ello.
+
+## Promesas de otra escuela
+
+El siglo XX conoció una expansión masiva de los sistemas educativos,
+sobre todo después de las dos guerras mundiales y al ritmo de la
+industrialización. La escolaridad se extendió a capas cada vez más
+amplias de la población y se prolongó en el tiempo. Y con esa expansión
+surgieron corrientes pedagógicas que cuestionaron el modelo tradicional:
+la Escuela Nueva, la pedagogía activa, los métodos de Maria Montessori,
+de Célestin Freinet, de Ovide Decroly. Todas ellas, con sus diferencias,
+reivindicaban una educación centrada en el estudiante, en su
+experiencia, en su actividad y en su formación integral.
+
+John Dewey fue quizá su pensador más profundo. Para Dewey, la educación
+no es una preparación para la vida, sino la vida misma. La escuela debía
+ser una comunidad democrática en miniatura, un lugar donde se aprendiera
+haciendo, resolviendo problemas reales, cooperando con otros. Y la
+democracia, a su vez, no era solo una forma de gobierno, sino una forma
+de vida asociada, de experiencia compartida, que la educación debía
+cultivar. *Democracia y educación* es el título de su gran obra, y la
+conjunción no es casual: para Dewey, una no podía existir sin la otra.
+
+En América Latina, Paulo Freire llevó esta crítica todavía más lejos. En
+la *Pedagogía del oprimido* denunció la «educación bancaria», aquella en
+la que el educador deposita contenidos en la cabeza vacía del educando,
+como quien deposita dinero en una cuenta. Frente a ella, Freire propuso
+una educación problematizadora, dialógica, en la que educador y educando
+aprenden juntos a leer el mundo para transformarlo. Para Freire, enseñar
+a leer a un campesino era enseñarle a nombrar su opresión.
+
+Estas propuestas transformaron el lenguaje de la pedagogía. Pero, en la
+práctica, convivieron con una creciente tecnificación de la educación y
+con la consolidación de nuevos mecanismos de control. La evaluación
+estandarizada, que nació a comienzos del siglo XX al calor de la
+psicometría y de los test de inteligencia, se fue imponiendo como el
+instrumento privilegiado para medir la eficacia de los sistemas
+escolares. La retórica de la escuela activa y la realidad de la escuela
+medida avanzaron en paralelo, a menudo en el mismo edificio.
+
+## El giro neoliberal
+
+A partir de la década de 1970 se produce un giro decisivo. En el marco
+de una reestructuración profunda del capitalismo global, las políticas
+educativas empiezan a reorganizarse según criterios de eficiencia,
+descentralización administrativa y competencia. El sector privado gana
+terreno en la gestión escolar. Las escuelas compiten entre sí por
+estudiantes y por recursos. Los estudiantes pasan a ser concebidos como
+capital humano en formación. El éxito educativo se mide mediante
+indicadores cuantificables, y la calidad se convierte en sinónimo de
+resultados en pruebas comparables.
+
+Mi país, Chile, fue uno de los primeros laboratorios de esta
+transformación. A comienzos de los años ochenta, bajo la dictadura de
+Pinochet y con el asesoramiento de economistas formados en la
+Universidad de Chicago, se municipalizó la educación pública, se
+introdujo un sistema de financiamiento por subvención a la demanda ---un
+*voucher* que sigue al estudiante---, se fomentó la creación de escuelas
+privadas subvencionadas y, poco después, se instauró una prueba nacional
+estandarizada cuyos resultados terminarían publicándose para que las
+familias pudieran «elegir». La educación se convirtió en un mercado, y
+la familia, en una consumidora. Las consecuencias ---una segregación
+escolar de las más altas entre los países de la OCDE, el endeudamiento
+masivo de los estudiantes universitarios, la precarización docente---
+alimentaron décadas después las movilizaciones estudiantiles de 2006 y
+2011, que llenaron las calles con una consigna que entonces parecía
+ingenua y hoy parece profética: la educación no es una mercancía.
+
+Lo que ocurrió en Chile de manera brutal ocurrió en otros lugares de
+manera gradual. La Nueva Gestión Pública en el Reino Unido y en
+Australia, la proliferación de rankings, la presión de los organismos
+internacionales, la generalización de la rendición de cuentas como modo
+de gobierno de las escuelas. David Harvey ha descrito el neoliberalismo
+como un proyecto de restauración del poder de clase que se presenta como
+una teoría de la libertad. En la educación, esa libertad se tradujo en
+la libertad de elegir escuela, de competir, de invertir en uno mismo. Y
+su reverso fue la responsabilización individual del fracaso.
+
+## La plataforma
+
+Simultáneamente, la digitalización creciente de los entornos escolares
+transformó radicalmente las prácticas educativas. La incorporación de
+dispositivos móviles, de software educativo y de sistemas de gestión del
+aprendizaje ha configurado lo que podríamos llamar nuevas ecologías de
+enseñanza, caracterizadas por la conectividad permanente, la
+personalización algorítmica y la datificación de las trayectorias
+escolares.
+
+En este marco, las grandes corporaciones tecnológicas ---Google,
+Microsoft, Apple, Amazon--- no actúan solo como proveedoras de
+servicios. Actúan como agentes que modelan los modos de enseñar, de
+aprender y de evaluar. Su influencia va mucho más allá de lo técnico:
+constituye un poder epistémico y axiológico, un poder de definir qué
+cuenta como conocimiento y qué vale la pena aprender, que redefine los
+fines de la educación en clave de gobernanza digital. Ofrecen sus
+herramientas de manera «gratuita» a escuelas y universidades, y a cambio
+obtienen algo que vale más que cualquier licencia: el acceso cotidiano a
+millones de niños y jóvenes que aprenden, desde muy temprano, a vivir
+dentro de sus ecosistemas.
+
+Estos procesos no son neutros. Responden a racionalidades políticas y
+económicas que buscan modelar subjetividades flexibles, autorreguladas y
+orientadas al rendimiento. Operan mediante la captura de datos, la
+vigilancia ubicua y la reconfiguración de las temporalidades del
+aprendizaje. La escuela se convierte así en un laboratorio potencial de
+experimentación algorítmica y en un campo de disputa por el sentido del
+conocimiento, de la autonomía y de la vida misma.
+
+El ideal de ser humano que se desprende de esta nueva configuración ya
+no es el ciudadano ilustrado ni el trabajador disciplinado. Es el
+emprendedor de sí mismo: autogestionado, transparente, competitivo, en
+constante optimización. Un sujeto que no necesita ser vigilado porque se
+vigila solo, que no necesita ser evaluado porque se evalúa
+permanentemente, que no necesita ser obligado a rendir porque ha hecho
+del rendimiento su forma de vida.
+
+## La filosofía después de las grandes certezas
+
+En esta condición contemporánea, que algunos han llamado posmoderna, la
+filosofía no desaparece, pero se transforma. Ya no busca necesariamente
+verdades universales ni fundamentos últimos. Se dedica más bien a
+desmontar totalidades, a hacer visibles las fisuras, a pensar la
+pluralidad de lo real. Autoras y autores como Judith Butler, Achille
+Mbembe, bell hooks, Marina Garcés o Byung-Chul Han han recuperado, desde
+lugares muy distintos, la capacidad crítica de la filosofía para
+diagnosticar el presente y sus dilemas.
+
+Marina Garcés ha propuesto una filosofía de la implicación: una manera
+de pensar que asume su responsabilidad en un mundo compartido y que
+rechaza tanto el repliegue individualista como el escepticismo
+paralizante. Educar filosóficamente, en este sentido, es implicarse con
+el otro, con el presente, con las condiciones materiales del mundo. bell
+hooks, desde una tradición crítica feminista y antirracista, entendió la
+enseñanza como una práctica de la libertad, un acto profundamente
+político y afectivo orientado a la emancipación de quienes han sido
+históricamente excluidos del conocimiento legítimo. Enseñar, decía, es
+un acto de esperanza.
+
+Ambas, desde horizontes distintos pero convergentes, proponen una
+educación que no reproduzca la lógica de la competencia, la eficiencia y
+la rentabilidad, sino que apueste por una formación crítica, situada y
+transformadora. Y ambas muestran que la filosofía contemporánea no ha
+abandonado la pregunta por la identidad, sino que ha desplazado su eje:
+de la metafísica a la ética, la política y la pedagogía. Hoy, la
+pregunta por quiénes somos ya no puede separarse de los contextos
+históricos, tecnológicos y afectivos que habitamos. Y es en la escuela,
+en la universidad y en los demás espacios educativos donde esa pregunta
+adquiere su relevancia más concreta, porque es allí donde se decide, a
+menudo en silencio, qué formas de vida son posibles y cuáles no.
+
+## Una genealogía, no una historia
+
+Al final de esta primera parte conviene precisar qué hemos hecho. No
+hemos escrito una historia de la educación, con sus fechas, sus reformas
+y sus grandes nombres. Hemos intentado una genealogía en el sentido que
+Nietzsche y Foucault dieron a la palabra: un recorrido que no busca el
+origen puro de lo que somos, sino las contingencias, los conflictos y
+las decisiones que nos han hecho así.
+
+Desde la *paideia* hasta la plataforma, la educación ha operado como un
+dispositivo de subjetivación profundamente arraigado en contextos de
+valores, poderes y luchas determinados. Los modelos han sido diversos en
+sus fines y en sus fundamentos, pero comparten una estructura común:
+producir sujetos adecuados a los ideales normativos de su tiempo. Y han
+delimitado, al mismo tiempo, quién podía participar de ellos y en qué
+condiciones. La escolarización masiva, la estandarización curricular y
+la digitalización reciente no son rupturas absolutas, sino fases de un
+mismo proceso: la fabricación de subjetividades funcionales a los
+órdenes hegemónicos.
+
+El paso de la *paideia* al sujeto neoliberal no es, por tanto, una
+simple evolución. Es una transformación del régimen de dispositivos: de
+la formación del ciudadano virtuoso de la *polis* a la producción del
+sujeto autorregulado y competitivo del mercado. Para entender esa
+transformación no basta con describirla. Hay que preguntarse qué es
+exactamente un dispositivo, cómo funciona, por qué es tan difícil de
+ver. A eso dedicaremos la segunda parte.
+
+# Segunda parte. La máquina sin rostro {#segunda-parte.-la-máquina-sin-rostro .unnumbered .parte}
+
+> *El dispositivo no es una cosa, sino la red que se tiende entre las
+> cosas.*
+
+# 5. ¿Qué es un dispositivo?
+
+## Una palabra de uso corriente
+
+En el castellano de todos los días, «dispositivo» es una palabra técnica
+y anodina. Un teléfono es un dispositivo; una tableta, un reloj
+inteligente, un mando a distancia, también. Las escuelas compran
+dispositivos, los planes de digitalización reparten dispositivos, los
+estudiantes llevan dispositivos en la mochila. La palabra designa un
+aparato, un objeto con una función, algo que se enchufa, se enciende y
+se usa.
+
+Este libro utiliza la palabra en otro sentido, y conviene explicarlo
+bien, porque de esa explicación depende todo lo demás. En la filosofía
+contemporánea, sobre todo a partir de la obra de Michel Foucault,
+«dispositivo» ---en francés, *dispositif*--- no designa un objeto, sino
+una red. Y lo interesante es que, en nuestra época, el sentido técnico y
+el sentido filosófico de la palabra han terminado por coincidir. El
+aparato que llevamos en el bolsillo es, literalmente, un dispositivo;
+pero es también el punto de anclaje de una red de relaciones de poder y
+de saber que atraviesa nuestras vidas. Lo que este capítulo intenta es
+aprender a ver la red detrás del aparato.
+
+## La definición de Foucault
+
+Foucault nunca escribió un tratado sobre el dispositivo. Usó la palabra
+con frecuencia a partir de mediados de los años setenta ---el
+dispositivo disciplinario, el dispositivo de sexualidad, el dispositivo
+carcelario---, pero no se detuvo a definirla de manera sistemática. La
+formulación más precisa la dio en una entrevista de 1977, y vale la pena
+citarla porque contiene, en germen, todo lo que necesitamos:
+
+> Lo que trato de determinar con este término es ante todo un conjunto
+> absolutamente heterogéneo que implica discursos, instituciones,
+> estructuras arquitectónicas, decisiones regulativas, leyes, medidas
+> administrativas, enunciados científicos, proposiciones filosóficas,
+> morales y filantrópicas, en breve: tanto lo dicho como lo no-dicho,
+> estos son los elementos del dispositivo. El dispositivo es la red que
+> se establece entre estos elementos.
+
+Y un poco más adelante añade que el dispositivo es una formación que, en
+un momento histórico determinado, tuvo como función principal responder
+a una urgencia; que tiene, por lo tanto, una función esencialmente
+estratégica; que implica una cierta manipulación de relaciones de
+fuerza, ya sea para desarrollarlas en una dirección, para bloquearlas,
+para estabilizarlas o para utilizarlas; y que está siempre inscrito en
+un juego de poder, pero ligado también a los límites del saber que
+derivan de él y que, en la misma medida, lo condicionan.
+
+Detengámonos en tres rasgos de esta definición.
+
+El primero es la heterogeneidad. Un dispositivo no está hecho de una
+sola materia. Mezcla cosas que solemos pensar por separado: palabras y
+edificios, leyes y costumbres, teorías científicas y muebles. La
+escuela, por ejemplo, es un dispositivo en el que se entrelazan el
+currículo oficial, los manuales, los discursos de los expertos en
+educación, pero también la disposición de los pupitres, la tarima del
+profesor, el timbre que marca el fin de la clase, el boletín de notas,
+el reglamento de convivencia, el uniforme. Una tarima es tan tecnología
+como una pizarra digital: eleva al que habla, lo hace visible a todos y
+le da a su palabra una autoridad física. Ninguno de estos elementos, por
+sí solo, es el dispositivo. El dispositivo es la red que los conecta y
+les da sentido.
+
+El segundo rasgo es la función estratégica. Los dispositivos no existen
+porque sí, ni son el resultado del despliegue natural de alguna esencia.
+Surgen para responder a una urgencia histórica: la necesidad de gobernar
+una población que crece, de disciplinar una fuerza de trabajo, de formar
+ciudadanos para un Estado nuevo, de gestionar una epidemia. Y operan
+manipulando relaciones de fuerza. Esto no quiere decir que haya alguien,
+en algún despacho, que haya diseñado cada dispositivo con un plan
+maestro. Foucault insiste en que las estrategias de poder no tienen
+sujeto: son intencionales y no subjetivas. Tienen una lógica, una
+dirección, un efecto de conjunto, pero no un autor.
+
+El tercer rasgo es la relación entre poder y saber. Los dispositivos
+producen conocimientos ---la pedagogía, la psicología del desarrollo, la
+ciencia de la evaluación, hoy la analítica del aprendizaje--- y esos
+conocimientos, a su vez, refuerzan y legitiman al dispositivo. No hay
+poder sin un saber que lo justifique, ni saber que no tenga efectos de
+poder. Cuando una plataforma educativa produce un gráfico que muestra el
+«riesgo de abandono» de un estudiante, está generando un saber. Y ese
+saber, inmediatamente, se convierte en una forma de actuar sobre ese
+estudiante.
+
+## Hacer ver y hacer hablar
+
+Gilles Deleuze, en una conferencia dedicada precisamente a la pregunta
+«¿Qué es un dispositivo?», propuso una imagen muy útil. Un dispositivo,
+dijo, es una especie de madeja, un conjunto multilineal compuesto por
+líneas de distinta naturaleza que no rodean sistemas homogéneos, sino
+que siguen direcciones diferentes, se acercan, se alejan, se cruzan.
+
+Hay, en primer lugar, líneas de visibilidad. Cada dispositivo tiene su
+régimen de luz, su manera de hacer visibles ciertas cosas e invisibles
+otras. El panóptico de Bentham, la cárcel ideal en la que un vigilante
+situado en una torre central puede ver a todos los presos sin ser visto,
+es el ejemplo clásico. Pero la escuela tiene también el suyo: el aula
+organizada para que el profesor vea a todos, el boletín de notas que
+hace visible el rendimiento, el expediente que hace visible la conducta.
+Y la plataforma digital tiene el suyo: el panel de control, el
+*dashboard* que muestra en colores quién entregó la tarea, quién se
+conectó, quién está por debajo de la media.
+
+Hay, en segundo lugar, líneas de enunciación. Cada dispositivo determina
+qué se puede decir, quién puede decirlo y con qué autoridad. En la
+escuela disciplinaria, el profesor habla y el alumno responde cuando se
+le pregunta. En la escuela neoliberal, se habla el lenguaje de las
+competencias, de los estándares, de los resultados de aprendizaje. Hay
+frases que, dentro de ese dispositivo, simplemente no tienen sentido.
+Prueben a decir en una reunión de evaluación que un estudiante ha
+crecido como persona, pero que eso no se refleja en ningún indicador.
+
+Hay, en tercer lugar, líneas de fuerza, que recorren el dispositivo y lo
+tensan, que rectifican las curvas de visibilidad y de enunciación y las
+orientan en una dirección. Y hay, finalmente, líneas de subjetivación:
+el proceso por el cual el dispositivo produce sujetos, formas de
+relación consigo mismo.
+
+Pero Deleuze añadió algo más, y es quizá lo más importante. Todo
+dispositivo tiene también líneas de fractura, de fisura, de fuga. Ningún
+dispositivo es una máquina perfecta que funciona sin resto. Las líneas
+de subjetivación pueden escapar a las líneas de poder que las
+produjeron, y es por esas fisuras por donde surge lo nuevo. Pertenecemos
+a dispositivos y actuamos en ellos, pero no estamos condenados a ser
+solamente su efecto. La tarea de una filosofía de los dispositivos no es
+solo describir cómo nos capturan, sino también localizar esas líneas de
+fuga.
+
+## Cualquier cosa puede ser un dispositivo
+
+Giorgio Agamben, que dedicó al tema un breve ensayo, llevó la noción
+todavía más lejos. Llamaré dispositivo, escribe, literalmente a
+cualquier cosa que tenga de algún modo la capacidad de capturar,
+orientar, determinar, interceptar, modelar, controlar y asegurar los
+gestos, las conductas, las opiniones y los discursos de los seres
+vivientes. Y la lista que propone es deliberadamente desconcertante: no
+solo las prisiones, los manicomios, el panóptico, las escuelas, la
+confesión, las fábricas, las disciplinas y las medidas jurídicas, cuya
+conexión con el poder es evidente, sino también la pluma, la escritura,
+la literatura, la filosofía, la agricultura, el cigarrillo, la
+navegación, los ordenadores, los teléfonos móviles y, por qué no, el
+lenguaje mismo, que es quizá el más antiguo de los dispositivos.
+
+Esta ampliación tiene un efecto saludable: nos obliga a abandonar la
+idea de que hay objetos neutros y objetos políticos. No hay un objeto
+que sea un dispositivo por naturaleza. Cualquier cosa, dependiendo de su
+uso, de la estrategia en que se inscribe, de la red de relaciones que la
+sostiene, puede devenir dispositivo. Un lápiz es un instrumento de
+escritura; pero el lápiz con el que se rellena una hoja de respuestas de
+opción múltiple en una prueba estandarizada forma parte de un
+dispositivo de clasificación de la población escolar. Una tableta es una
+herramienta de lectura; pero la tableta que la escuela entrega a cada
+alumno con una cuenta corporativa ya configurada, con aplicaciones
+preinstaladas y con un sistema de registro de actividad, forma parte de
+un dispositivo de captura de datos y de fidelización.
+
+Agamben propone dividir lo existente en dos grandes clases: por un lado,
+los seres vivientes; por otro, los dispositivos en los que estos son
+incesantemente capturados. Y entre ambos, como un tercero, el sujeto: lo
+que resulta de la relación, del cuerpo a cuerpo, entre los vivientes y
+los dispositivos. Un mismo individuo puede ser el lugar de múltiples
+procesos de subjetivación: el usuario de teléfonos móviles, el navegante
+de internet, el escritor de cuentos, el aficionado al tango, el
+estudiante, el docente. A la proliferación ilimitada de dispositivos en
+nuestra época le corresponde una proliferación igualmente ilimitada de
+procesos de subjetivación.
+
+## Del sujeto a la desubjetivación
+
+Pero hay un punto del análisis de Agamben que resulta particularmente
+inquietante para quien piensa la educación. En las sociedades
+disciplinarias que describió Foucault, los dispositivos producían
+sujetos: el preso, el soldado, el obrero, el escolar. Eran identidades
+reconocibles, con contornos claros, y por eso mismo podían ser también
+puntos de resistencia. El obrero podía organizarse como obrero, el
+estudiante como estudiante.
+
+En la fase actual del capitalismo, sostiene Agamben, los dispositivos ya
+no actúan tanto mediante la producción de un sujeto como mediante
+procesos de desubjetivación. Quien se deja capturar por el dispositivo
+del teléfono móvil, sea cual sea la intensidad del deseo que lo empuja,
+no adquiere por ello una nueva subjetividad, sino solamente un número a
+través del cual puede, eventualmente, ser controlado. El sujeto se
+disuelve en un perfil, en un conjunto de datos, en una traza. Y esa
+disolución lo vuelve, paradójicamente, más gobernable y menos capaz de
+resistir, porque ya no hay una identidad sólida desde la cual oponerse.
+
+No hace falta compartir del todo el pesimismo de Agamben para reconocer
+que algo de esto está ocurriendo. Un estudiante que pasa por una
+plataforma educativa no se convierte en un sujeto nuevo, con una forma
+de vida propia, como ocurría, para bien o para mal, con quien pasaba por
+la escuela disciplinaria. Se convierte más bien en un registro: tantas
+horas de conexión, tantas tareas entregadas, tal porcentaje de aciertos,
+tal probabilidad de abandono. Su subjetividad no es tanto moldeada como
+descompuesta en variables. Veremos en la tercera parte que Deleuze tenía
+un nombre para este nuevo tipo de sujeto descompuesto: el *dividuo*.
+
+## Lo discursivo y lo no discursivo
+
+Una de las ventajas de la noción de dispositivo es que nos permite
+superar una vieja oposición que ha empobrecido mucho la reflexión sobre
+la educación: la oposición entre las ideas y las cosas, entre los
+discursos y las prácticas materiales.
+
+Hay quien piensa que para transformar la educación basta con cambiar los
+discursos: escribir un nuevo currículo, adoptar un nuevo vocabulario
+pedagógico, proclamar nuevos valores en el proyecto educativo del
+centro. Y hay quien piensa, en el extremo opuesto, que lo único que
+importa son las condiciones materiales: los recursos, los edificios, los
+salarios, la tecnología. El dispositivo muestra que ambas cosas están
+entrelazadas de tal modo que no pueden separarse.
+
+El sistema educativo se apoya en discursos que legitiman ciertos
+conocimientos, valores y prácticas pedagógicas. Los currículos, los
+manuales y los discursos de los expertos son formaciones discursivas que
+inciden en la construcción de la identidad y de las capacidades de los
+estudiantes. Pero el dispositivo educativo incluye también prácticas no
+discursivas: las normas escolares, los métodos de evaluación, la
+organización de los espacios, las relaciones jerárquicas entre docentes
+y estudiantes. Y es precisamente esta dimensión no discursiva la que
+permite al poder extenderse de manera casi invisible. Un discurso puede
+ser discutido, refutado, rechazado. Una disposición de los pupitres, un
+horario, una interfaz de usuario, en cambio, rara vez se discuten:
+simplemente se habitan.
+
+En el ámbito tecnológico ocurre lo mismo. Hay dispositivos discursivos
+---los discursos sobre la innovación, la eficiencia, la seguridad, el
+progreso, la inevitabilidad de la transformación digital--- que influyen
+en la adopción de tecnologías en la escuela. Pero hay también prácticas
+no discursivas mucho más eficaces: los algoritmos de recomendación, los
+sistemas de registro de actividad, las infraestructuras de
+almacenamiento de datos, los términos de servicio que nadie lee. El
+discurso de la innovación puede ser criticado en un artículo. El diseño
+de una plataforma, en cambio, se impone por el simple hecho de que no
+hay otra manera de entregar la tarea.
+
+## Una ontología del presente
+
+¿Para qué sirve, entonces, pensar en términos de dispositivos?
+
+Foucault describió su propio trabajo como una «ontología histórica de
+nosotros mismos» o una «ontología del presente». La expresión puede
+sonar pomposa, pero su sentido es sencillo. Se trata de preguntarse cómo
+hemos llegado a ser lo que somos: qué combinación de saberes,
+tecnologías, instituciones y prácticas ha producido ciertos tipos de
+personas y ha configurado las condiciones de existencia de nuestra
+época. Se trata de interrogar aquello que se ha vuelto parte de nuestro
+paisaje natural, lo que damos por supuesto, lo que parece que siempre
+estuvo ahí.
+
+Una ontología del presente no busca explicaciones simples ni
+deterministas. No dice que la tecnología nos hace de tal o cual manera,
+ni que el capitalismo lo explica todo. Busca más bien las
+interrelaciones complejas entre elementos heterogéneos y los efectos de
+conjunto que producen. Y su objetivo no es solo comprender, sino también
+desnaturalizar: mostrar que lo que parece necesario es contingente, que
+lo que parece eterno tiene una fecha de nacimiento, que lo que parece
+obvio fue alguna vez una decisión.
+
+En el caso de la educación, esto significa preguntar, por ejemplo, por
+qué nos parece evidente que el aprendizaje deba medirse con números, que
+los estudiantes deban compararse entre sí, que las escuelas deban
+competir por resultados, que los docentes deban rendir cuentas mediante
+indicadores, que la innovación educativa consista en incorporar
+tecnología. Ninguna de estas evidencias es natural. Todas tienen una
+historia, y esa historia es la historia de un dispositivo.
+
+Este es, en el fondo, el propósito de este libro: desenmascarar los
+dispositivos que operan en la educación neoliberal, poner en evidencia
+cómo estas estrategias de saber y poder se tejen en el ámbito educativo
+para producir formas de subjetivación específicas. Pero para hacerlo con
+rigor necesitamos dar un paso más atrás. Agamben sostiene que la palabra
+«dispositivo» tiene una genealogía teológica, y que en esa genealogía se
+esconde la clave de su funcionamiento. A ella dedicaremos el próximo
+capítulo.
+
+# 6. *Oikonomía*: gobernar sin fundamento
+
+## La administración de la casa
+
+La palabra griega *oikonomía* significa, literalmente, la administración
+del *oikos*, de la casa. Para Aristóteles, la economía era el arte de
+gestionar el hogar: la relación entre el amo y los esclavos, entre el
+marido y la esposa, entre el padre y los hijos, y la adquisición de los
+bienes necesarios para la vida. No era una ciencia de los mercados, sino
+una práctica de gobierno doméstico, distinta de la política, que se
+ocupaba de los asuntos comunes de los ciudadanos libres en la *polis*.
+
+Lo que nadie hubiera imaginado es que esta palabra modesta, ligada a la
+gestión de la casa, terminaría ocupando un lugar central en la teología
+cristiana, y que desde allí, por un largo rodeo, llegaría a nombrar la
+racionalidad que gobierna nuestro mundo. Giorgio Agamben ha reconstruido
+esta genealogía en *El Reino y la Gloria*, y su hallazgo arroja una luz
+extraña y reveladora sobre lo que hoy llamamos dispositivo.
+
+## Un Dios que administra
+
+En los primeros siglos del cristianismo, los teólogos se enfrentaron a
+un problema delicado. Si Dios es uno, ¿cómo es posible que sea a la vez
+Padre, Hijo y Espíritu Santo? ¿Cómo evitar que la Trinidad se
+convirtiera en un politeísmo encubierto, con tres dioses en lugar de
+uno?
+
+La solución que encontraron padres de la Iglesia como Tertuliano o
+Hipólito pasó por la palabra *oikonomía*. Dios es uno en su sustancia,
+en su ser; pero es trino en su *oikonomía*, es decir, en la manera en
+que administra y gobierna el mundo. El Padre confía al Hijo la gestión
+de la creación y la redención, como un señor confía a un administrador
+la gestión de su casa. La Trinidad no divide el ser de Dios; organiza su
+actividad. Con el tiempo, la palabra *oikonomía* pasó a designar también
+el plan divino de salvación y su despliegue a lo largo de la historia
+humana, el modo en que Dios guía el destino de sus criaturas: lo que la
+teología llamará providencia.
+
+Agamben subraya un detalle filológico que resulta decisivo. Cuando los
+padres latinos tradujeron el término griego *oikonomía*, utilizaron la
+palabra *dispositio*. Y de *dispositio* deriva, a través del francés,
+nuestro «dispositivo». La palabra que Foucault eligió para nombrar las
+redes de poder modernas tiene, sin que él lo supiera del todo, una
+genealogía teológica.
+
+## La fractura entre el ser y la acción
+
+¿Qué importancia tiene esto? Mucha más de la que parece a primera vista.
+
+La doctrina de la *oikonomía* introdujo en el corazón de la teología una
+fractura entre el ser de Dios y su acción, entre su naturaleza y el modo
+en que gobierna el mundo. Dios, en su ser, es uno, inmutable, perfecto.
+Pero su gobierno, su administración, su economía, no se deriva
+necesariamente de ese ser: es una praxis que tiene su propia lógica, sus
+propios mediadores, su propia racionalidad. Agamben dice que el gobierno
+divino del mundo es *anárquico*, en el sentido etimológico de la
+palabra: no tiene *arkhé*, no tiene fundamento, no tiene principio en el
+ser. Es pura operatividad.
+
+Y aquí está la clave que nos interesa. Según Agamben, el término
+dispositivo nombra aquello en lo cual y a través de lo cual se realiza
+una actividad pura de gobierno sin ningún fundamento en el ser. Por esta
+razón, añade, los dispositivos siempre deben implicar un proceso de
+subjetivación, es decir, deben producir su sujeto.
+
+La lógica del argumento es sutil, pero fundamental. Si un gobierno
+estuviera fundado en el ser ---si se derivara, por ejemplo, de la
+naturaleza humana, de una verdad sobre lo que el ser humano es y debe
+llegar a ser---, entonces no necesitaría producir a sus sujetos: los
+encontraría ya hechos y se limitaría a acompañar su desarrollo. Pero un
+gobierno sin fundamento, una pura gestión, tiene que fabricar a aquellos
+sobre quienes se ejerce. No puede apoyarse en una naturaleza dada, de
+modo que tiene que crear una. El dispositivo produce su sujeto porque no
+tiene nada más en lo que apoyarse.
+
+## La economía sin fines
+
+Hagamos ahora un salto, que no es tan grande como parece, desde la
+teología trinitaria hasta la escuela contemporánea.
+
+Durante siglos, la educación se pensó a partir de fines. La *paideia* se
+orientaba a la *areté*; la educación cristiana, a la salvación; la
+*Bildung*, a la formación plena de la persona; la escuela republicana, a
+la formación del ciudadano. Esos fines podían ser discutibles,
+excluyentes, incluso opresivos, pero existían. Había una respuesta,
+explícita o implícita, a la pregunta «¿para qué educamos?». La educación
+tenía, por decirlo así, un fundamento en el ser: una idea de lo que el
+ser humano es y debe llegar a ser.
+
+La educación neoliberal tiene otra estructura. Su vocabulario dominante
+no es el de los fines, sino el de la gestión: calidad, eficacia,
+eficiencia, mejora continua, resultados, estándares, indicadores,
+evidencias, rendición de cuentas. Son términos que se refieren a cómo se
+hace algo, no a para qué se hace. La calidad es un concepto vacío: no
+dice qué es lo valioso, sino que mide cuánto de algo se ha conseguido.
+La mejora continua no tiene un punto de llegada: es un movimiento sin
+destino, una optimización que nunca termina. La gestión educativa se ha
+vuelto, en el sentido que Agamben da a la palabra, *anárquica*: una pura
+operatividad que ya no necesita preguntarse por su fundamento.
+
+Cuando alguien pregunta para qué sirve la escuela, la respuesta habitual
+hoy es: para desarrollar competencias. ¿Y para qué sirven las
+competencias? Para ser empleable, para adaptarse a un mundo cambiante,
+para aprender a aprender. ¿Y para qué hay que adaptarse? La cadena de
+respuestas no termina en ningún lugar. No hay un bien último, una idea
+de la vida buena, un proyecto de sociedad. Hay un movimiento perpetuo de
+adaptación a un entorno que se presenta como dado, como natural, como
+inevitable. La escuela administra, gestiona, optimiza. Pero ya no sabe
+decir para qué.
+
+Y precisamente porque no tiene fundamento, la escuela neoliberal
+necesita producir intensamente a sus sujetos. Necesita que estudiantes y
+docentes deseen la mejora continua, que se identifiquen con sus
+indicadores, que se evalúen a sí mismos según los parámetros del
+sistema. Un dispositivo sin fines no puede contentarse con disciplinar
+los cuerpos: tiene que capturar los deseos. Tiene que fabricar sujetos
+que quieran por sí mismos lo que el dispositivo necesita que quieran.
+
+## La providencia algorítmica
+
+Hay otro aspecto de la genealogía teológica que ilumina nuestro presente
+de una manera casi inquietante.
+
+La teología cristiana desarrolló una compleja teoría de la providencia:
+el modo en que Dios, sin violentar la libertad de sus criaturas, las
+guía hacia su bien. La providencia no actúa mediante órdenes directas,
+sino mediante la disposición de las circunstancias, de los encuentros,
+de las ocasiones. Dios gobierna el mundo no imponiéndose, sino
+orientando suavemente el curso de las cosas, de modo que cada criatura,
+actuando según su propia naturaleza y su propia voluntad, contribuya sin
+saberlo al plan general.
+
+Es difícil leer esta descripción sin pensar en el funcionamiento de las
+plataformas digitales. Los algoritmos de recomendación tampoco dan
+órdenes. No obligan a nadie a ver un vídeo, a leer un texto, a comprar
+un producto. Disponen las circunstancias: deciden qué aparece primero en
+la pantalla, qué contenido se sugiere a continuación, qué notificación
+llega en qué momento. Cada usuario actúa libremente, según sus propias
+preferencias; pero esas preferencias han sido anticipadas, modeladas y
+orientadas por un sistema que conoce sus hábitos mejor que él mismo. La
+plataforma es una providencia secularizada, un gobierno de las conductas
+que no necesita imponerse porque ha aprendido a disponer el mundo de tal
+manera que el usuario elija lo que debía elegir.
+
+Y, como la providencia teológica, la providencia algorítmica es
+inescrutable. Sus designios no son accesibles a quienes los padecen.
+Nadie sabe exactamente por qué el sistema ha decidido mostrarle esto y
+no aquello, por qué ha clasificado a un estudiante como «en riesgo», por
+qué ha recomendado un itinerario y no otro. Los caminos del algoritmo,
+como los del Señor, son misteriosos. Y, como en el caso de la
+providencia, se nos pide confiar en que, en el fondo, todo está
+dispuesto para nuestro bien.
+
+## El gobierno de la casa global
+
+La genealogía de la *oikonomía* revela también algo sobre el
+desplazamiento de la política por la gestión. En el mundo griego, la
+economía era el gobierno de la casa, un ámbito privado y jerárquico,
+mientras que la política era el ámbito de la deliberación entre iguales
+sobre los asuntos comunes. Hannah Arendt dedicó páginas memorables a
+describir cómo la modernidad había ido borrando esa distinción, hasta
+convertir la sociedad entera en una gran casa administrada, en la que la
+política se reduce a la gestión de las necesidades vitales de la
+población.
+
+La educación neoliberal es un capítulo de esa historia. Las decisiones
+sobre qué se enseña, cómo se enseña y para qué se enseña, que en una
+democracia deberían ser objeto de deliberación pública, se presentan
+cada vez más como cuestiones técnicas que deben resolver los expertos,
+los gestores, los diseñadores de plataformas. ¿Qué competencias necesita
+el mercado laboral? ¿Qué herramienta digital mejora el rendimiento? ¿Qué
+indicador mide mejor la calidad? Son preguntas de gestión, de
+*oikonomía*. La pregunta política ---qué tipo de sociedad queremos y qué
+tipo de educación necesita--- queda fuera del marco. No porque alguien
+la haya prohibido, sino porque el dispositivo no tiene lugar para ella.
+
+Las grandes corporaciones tecnológicas son, en este sentido, los nuevos
+administradores de la casa. No gobiernan en el sentido político del
+término: no legislan, no se someten a elecciones, no rinden cuentas ante
+la ciudadanía. Administran. Proveen la infraestructura sobre la que se
+apoya la vida escolar, establecen las condiciones de uso, deciden qué
+funciones están disponibles y cuáles no. Su poder es económico en el
+sentido más antiguo y más literal de la palabra: es el poder de quien
+gestiona la casa.
+
+## Profanar
+
+Si el análisis de Agamben terminara aquí, sería una descripción
+desoladora. Pero Agamben propone también una estrategia frente a los
+dispositivos, y vale la pena enunciarla ahora, aunque la desarrollaremos
+en la última parte del libro.
+
+En el derecho romano, las cosas sagradas eran aquellas que pertenecían
+de algún modo a los dioses y que, por eso mismo, habían sido sustraídas
+al libre uso y al comercio de los seres humanos. Consagrar era separar
+algo de la esfera humana y ponerlo en una esfera aparte. Profanar, a la
+inversa, era restituir algo al libre uso de los seres humanos,
+devolverlo a la esfera común.
+
+Agamben sugiere que los dispositivos funcionan como una forma
+secularizada de lo sagrado: separan, capturan, sustraen al uso común
+ciertas actividades humanas ---hablar, aprender, comunicarse, jugar--- y
+las someten a una lógica que no es la de quienes las practican. Frente a
+ellos, la tarea no es destruirlos, cosa que sería imposible, ni usarlos
+«correctamente», cosa que sería ingenua, sino profanarlos: restituir al
+uso común lo que ha sido capturado.
+
+Profanar un dispositivo educativo significaría, por ejemplo, devolver la
+evaluación a su sentido formativo, sustrayéndola a la lógica de la
+clasificación; devolver la tecnología al uso de las comunidades que
+aprenden, sustrayéndola a la lógica de la captura de datos; devolver el
+juego a su libertad, sustrayéndolo a la lógica de la gamificación. No es
+una tarea sencilla, ni se cumple de una vez para siempre. Pero indica
+una dirección. Y nos recuerda que, aunque los dispositivos produzcan a
+sus sujetos, esos sujetos no son simples marionetas. Son seres vivientes
+que pueden, en ciertas condiciones, hacer otro uso de lo que los
+captura.
+
+## Lo que nos enseña la teología
+
+Puede resultar sorprendente que un libro sobre educación y tecnología
+digital dedique un capítulo entero a la teología trinitaria. Pero creo
+que el rodeo valía la pena. La genealogía de la *oikonomía* nos enseña
+al menos tres cosas.
+
+Primero, que los dispositivos no tienen fundamento en el ser: son pura
+operatividad, praxis de gobierno que no se deriva de ninguna naturaleza.
+Por eso mismo, no son necesarios ni eternos. Podrían ser de otra manera.
+
+Segundo, que precisamente porque no tienen fundamento, los dispositivos
+tienen que producir a sus sujetos. La subjetivación no es un efecto
+secundario del dispositivo, sino su condición de funcionamiento. Un
+sistema educativo sin fines, que solo sabe gestionar y optimizar,
+necesita con más urgencia que ningún otro fabricar sujetos que deseen
+ser gestionados y optimizados.
+
+Tercero, que el gobierno moderno de las conductas tiene una estructura
+providencial: actúa disponiendo las circunstancias y orientando las
+elecciones, no imponiendo órdenes. Por eso es tan difícil de percibir y
+de resistir. No se presenta como poder, sino como ayuda, como servicio,
+como personalización.
+
+Pero si el dispositivo produce sujetos, la pregunta siguiente es
+inevitable: ¿qué es, entonces, un sujeto? Si no es una sustancia dada de
+antemano, una esencia que el dispositivo encuentra ya hecha, ¿qué clase
+de cosa es? Esa pregunta nos obliga a volver, una vez más, a la vieja
+cuestión filosófica del alma y del cuerpo.
+
+# 7. El sujeto no es una sustancia
+
+## Dos sentidos de una palabra
+
+La palabra «sujeto» tiene en nuestra lengua una ambigüedad reveladora.
+Por un lado, el sujeto es el que actúa, el que piensa, el que dice «yo»:
+el sujeto de la oración, el sujeto del conocimiento, el sujeto de
+derechos. Por otro lado, estar sujeto es estar atado, sometido,
+dependiente: sujeto a una ley, sujeto a una condición, sujeto a la
+voluntad de otro.
+
+Esta doble cara tiene una historia. En latín, *subjectum* traducía el
+término griego *hypokeimenon*, que en Aristóteles designaba lo que
+subyace, lo que está debajo y sirve de soporte a las cualidades: la
+sustancia. El sujeto, en este sentido, era el sustrato permanente que
+permanece idéntico a sí mismo bajo los cambios. Pero en el latín
+medieval, *subjectus* era también sinónimo de *subditus*, el súbdito, el
+que está sometido a un señor. El sujeto era, a la vez, el fundamento y
+el sometido.
+
+La filosofía moderna, desde Descartes, privilegió el primer sentido. El
+sujeto se convirtió en el *cogito*, en la conciencia que se piensa a sí
+misma y que es el fundamento de toda certeza. El yo, la mente, el alma
+racional: algo que existe por sí mismo, anterior a toda relación, y que
+luego entra en relación con el mundo. Foucault, en cambio, recuperó el
+segundo sentido y lo convirtió en el centro de su análisis. El sujeto no
+es un soporte esencial, una sustancia dada de antemano, sino el
+resultado de un proceso: el proceso por el cual un individuo es
+sujetado, atado a una identidad, constituido por relaciones de poder y
+de saber. El sujeto sigue siendo un soporte, pero ya no el soporte de
+una esencia, sino el soporte de relaciones que lo construyen. Frente al
+esencialismo de la sustancia, Foucault inscribe una lógica materialista.
+Ahí radica el cambio de sentido.
+
+Para entender el alcance de este desplazamiento, conviene volver a la
+historia de una de las preguntas más antiguas de la filosofía: ¿qué
+relación hay entre el alma y el cuerpo?
+
+## El cuerpo, cárcel del alma
+
+En el *Fedón*, Platón pone en boca de Sócrates, en las horas previas a
+su muerte, una de las descripciones más influyentes del cuerpo que ha
+producido la cultura occidental. Sócrates pregunta a sus amigos si el
+cuerpo es un obstáculo o una ayuda para la adquisición de la sabiduría.
+¿Nos garantizan alguna verdad la vista y el oído? ¿No es cierto que,
+cuando el alma intenta examinar algo en compañía del cuerpo, es engañada
+por él? El alma, concluye, razona mejor cuando no la perturba nada de
+eso, ni el oído, ni la vista, ni el dolor, ni el placer, sino cuando
+queda a solas consigo misma, mandando a paseo al cuerpo y, en la medida
+de lo posible, sin comunicarse ni tener contacto con él, tiende hacia lo
+que realmente es.
+
+La filosofía, en esta visión, es un ejercicio de purificación: alejarse
+todo lo posible de las afecciones corporales, no concederles
+satisfacción, mantenerlas bajo riguroso control. El cuerpo es la sede de
+las percepciones engañosas, de las pasiones, de los deseos, del placer.
+Es, según la célebre fórmula órfica que Platón recoge, la cárcel del
+alma, o incluso su tumba: *soma*, cuerpo, *sema*, sepulcro.
+
+Este dualismo tiene consecuencias pedagógicas directas. Si el verdadero
+conocimiento reside en un ámbito suprasensible, en el mundo de las Ideas
+que el alma contempló antes de nacer y que olvidó al encarnarse,
+entonces aprender es recordar. La educación no enseña nada nuevo;
+despierta lo que ya estaba en el alma. De ahí la mayéutica, el arte de
+hacer que el otro dé a luz lo que ya llevaba dentro. La educación tiene
+un papel cardinal para la moral y para la política, como muestra la
+*República*, pero su objeto no es el cuerpo vivido, sino el alma
+desembarazada del cuerpo. El cuerpo, en el mejor de los casos, es algo
+que hay que disciplinar para que no estorbe.
+
+## El alma como forma del cuerpo
+
+Aristóteles, discípulo de Platón, propuso una visión muy distinta. En su
+tratado *Acerca del alma* define el alma como la forma de un cuerpo
+natural que tiene la vida en potencia. Distingue tres tipos o funciones
+del alma en orden ascendente: la vegetativa, responsable de la nutrición
+y el crecimiento, que comparten todos los seres vivos; la sensitiva,
+responsable de la percepción y el movimiento, propia de los animales; y
+la racional, responsable del pensamiento, propia del ser humano.
+
+Lo decisivo es que, para Aristóteles, el alma no es una sustancia
+separada que habita en el cuerpo como un piloto en su nave. Están en lo
+cierto, escribe, quienes opinan que el alma ni se da sin un cuerpo ni es
+en sí misma un cuerpo. No es un cuerpo, pero es algo del cuerpo. El alma
+es la forma, y el cuerpo, la materia; y así como no tiene sentido
+preguntar si la cera y la figura impresa en ella son una sola cosa,
+tampoco tiene sentido preguntar si el alma y el cuerpo lo son. En esta
+teoría, que se conoce como hilemorfismo, el cuerpo deja de ser la cárcel
+del alma para convertirse en su condición de realización. El cuerpo es
+potencia, pura posibilidad; el alma es el principio que la actualiza y
+le da su forma específica, como el artesano da forma a la cera.
+
+Cuerpo y alma, en Aristóteles, se co-constituyen. El cuerpo da acción al
+alma; lo pensado se vuelve *praxis*. El ser humano no es una idea
+abstracta, sino acto y potencia a la vez. Y la educación, en
+consecuencia, no es un despertar de recuerdos, sino un proceso de
+formación de hábitos en el que el cuerpo participa plenamente. Nos
+hacemos virtuosos practicando la virtud, del mismo modo que nos hacemos
+citaristas tocando la cítara.
+
+## La máquina y el fantasma
+
+En el siglo XVII, René Descartes volvió a separar radicalmente lo que
+Aristóteles había unido. El mundo, según Descartes, está compuesto por
+dos sustancias completamente distintas: la sustancia pensante, *res
+cogitans*, inextensa, libre, indivisible; y la sustancia extensa, *res
+extensa*, que ocupa un lugar en el espacio, se mueve según leyes
+mecánicas y puede dividirse indefinidamente. El cuerpo humano pertenece
+a la segunda. Es una máquina, un autómata hecho de huesos, nervios,
+músculos y fluidos, que funciona según los mismos principios que un
+reloj o una fuente de jardín. El alma, en cambio, es pura conciencia, y
+es en ella donde reside la esencia del ser humano.
+
+Pero si el alma y el cuerpo son sustancias tan radicalmente distintas,
+¿cómo se comunican? ¿Cómo es posible que una decisión de mi voluntad
+mueva mi brazo, o que un golpe en mi cuerpo produzca dolor en mi
+conciencia? Descartes propuso que el punto de contacto era una pequeña
+glándula situada en el centro del cerebro, la glándula pineal, donde los
+movimientos de los espíritus animales del cuerpo y las voliciones del
+alma se influían mutuamente.
+
+Fue una mujer, la princesa Isabel de Bohemia, quien señaló en 1643, en
+una carta a Descartes, la contradicción fundamental de esta solución. Si
+el alma es inextensa e inmaterial, ¿cómo puede mover algo material? Todo
+movimiento, razonaba Isabel, parece requerir contacto, y el contacto
+parece requerir extensión. O bien el alma tiene alguna clase de
+extensión, o bien no puede actuar sobre el cuerpo. Descartes respondió
+con evasivas, apelando a que la unión del alma y el cuerpo es algo que
+se conoce mejor viviendo que pensando. La objeción de Isabel nunca fue
+verdaderamente resuelta, y muchos consideran que señala el talón de
+Aquiles de todo el dualismo moderno.
+
+## Lo que puede un cuerpo
+
+Fue Spinoza quien ofreció la alternativa más radical. En la *Ética*,
+cuerpo y alma no son dos sustancias, sino dos expresiones de una misma
+realidad, que puede comprenderse bajo el atributo del pensamiento o bajo
+el atributo de la extensión. El alma es la idea del cuerpo; lo que
+ocurre en uno se expresa en el otro. No hay jerarquía entre ellos, ni
+interacción misteriosa, ni glándula pineal. Hay una sola vida que piensa
+y que se extiende a la vez.
+
+Y Spinoza lanza una frase que todavía hoy resuena como un desafío: nadie
+ha determinado hasta ahora lo que puede un cuerpo. Llevamos siglos
+despreciando el cuerpo, sometiéndolo, considerándolo un obstáculo, y no
+sabemos todavía de qué es capaz. El cuerpo no es una máquina que
+obedece, ni una cárcel que encierra. Es una potencia, una capacidad de
+afectar y de ser afectado, y la libertad no consiste en escapar de él,
+sino en comprender y aumentar esa potencia.
+
+Pero Spinoza fue también un pensador lúcido de la servidumbre. En el
+prefacio del *Tratado teológico-político* plantea una pregunta que
+atraviesa toda la filosofía política posterior: ¿cómo es posible que los
+seres humanos luchen por su esclavitud como si se tratara de su
+salvación? El gran secreto del régimen monárquico, escribe, consiste en
+mantener engañados a los hombres y disfrazar con el nombre de religión
+el miedo que los debe controlar, de modo que luchen por su servidumbre
+como si lucharan por su libertad. El poder no necesita solo fuerza:
+necesita afectos. Necesita que los sometidos deseen su sometimiento.
+
+Un siglo antes, un joven amigo de Montaigne, Étienne de La Boétie, había
+escrito un breve *Discurso sobre la servidumbre voluntaria* que
+planteaba la misma pregunta con otra formulación. ¿Cómo es posible que
+tantos hombres, tantas ciudades, tantas naciones soporten a un solo
+tirano, que no tiene más poder que el que ellos mismos le dan? La
+respuesta de La Boétie era inquietante: la primera razón de la
+servidumbre voluntaria es la costumbre. Los hombres nacen siervos y son
+educados como tales, y no imaginan otra cosa. La servidumbre se aprende.
+
+Estas dos preguntas ---cómo es que deseamos aquello que nos somete, y
+cómo se aprende la servidumbre--- son, en el fondo, preguntas sobre la
+educación. Y serán centrales para entender el sujeto neoliberal, que no
+se vive a sí mismo como sometido, sino como libre, emprendedor y dueño
+de su destino.
+
+## El alma, prisión del cuerpo
+
+Volvamos a Foucault. En una de las frases más citadas de *Vigilar y
+castigar*, Foucault invierte la fórmula platónica. Para Platón, el
+cuerpo era la prisión del alma. Para Foucault, es el alma la que se ha
+convertido en la prisión del cuerpo.
+
+¿Qué quiere decir esto? Que el alma moderna ---la interioridad, la
+conciencia, la psique, la personalidad--- no es una sustancia eterna que
+habita en el cuerpo, sino el producto histórico de un conjunto de
+técnicas que actúan sobre los cuerpos. El alma, dice Foucault, existe,
+tiene una realidad, se produce permanentemente en torno, en la
+superficie y en el interior del cuerpo, por el funcionamiento de un
+poder que se ejerce sobre los que son castigados, vigilados, educados,
+corregidos. Es el efecto y el instrumento de una anatomía política.
+
+Para que este análisis fuera posible, paradójicamente, había sido
+necesaria la concepción mecanicista del cuerpo de Descartes. Si el
+cuerpo es una máquina, entonces puede ser analizado en sus partes,
+descompuesto en sus movimientos, medido en su eficacia, manipulado según
+las necesidades de una función. Las disciplinas modernas trataron al
+cuerpo exactamente así: como un mecanismo cuyos gestos podían ser
+cronometrados, corregidos y optimizados. Lo que les importa, escribe
+Foucault, no son ya los elementos significantes de la conducta o el
+lenguaje del cuerpo, sino la economía, la eficacia de los movimientos,
+su organización interna. La única ceremonia que realmente importa es la
+del ejercicio.
+
+Y aquí aparece una de las fórmulas más precisas de Foucault, que merece
+ser citada casi entera, porque describe con exactitud el funcionamiento
+de la escuela moderna: la disciplina aumenta las fuerzas del cuerpo en
+términos económicos de utilidad y disminuye esas mismas fuerzas en
+términos políticos de obediencia. Disocia el poder del cuerpo: por un
+lado, hace de él una aptitud, una capacidad que trata de aumentar; por
+otro, invierte la energía que podría resultar de ella y la convierte en
+una relación de sujeción estricta.
+
+Es decir: la escuela disciplinaria hace a los individuos más capaces y,
+al mismo tiempo, más dóciles. Les enseña a leer, a escribir, a calcular,
+a trabajar con precisión, pero les enseña también a obedecer, a esperar
+su turno, a no cuestionar la autoridad. Aumenta su potencia productiva y
+disminuye su potencia política. Y el resultado de este proceso no es un
+cuerpo sin alma, sino un cuerpo dotado de un alma muy particular: un
+alma que ha interiorizado la norma, que se vigila a sí misma, que siente
+culpa cuando no rinde.
+
+## La educación de las cosas
+
+Hay un texto de Pier Paolo Pasolini, en sus *Cartas luteranas*, que
+expresa esta idea de una manera conmovedora. Pasolini escribe a un
+muchacho imaginario, Gennariello, y le explica que la educación más
+profunda que recibe un joven no es la que le dan sus padres, sus
+maestros o sus libros, sino la que le dan las cosas: los objetos, los
+espacios, la realidad física que lo rodea. Esa educación, dice,
+convierte al muchacho en lo que es y en lo que será durante toda su
+vida. Es su carne la que es educada como forma de su espíritu.
+
+La fórmula es extraordinaria porque deshace la oposición entre el cuerpo
+y el alma desde dentro de la experiencia educativa. No hay un alma que
+se educa por un lado y un cuerpo que se adiestra por otro. Hay una carne
+que, al habitar ciertas cosas, ciertos espacios, ciertos ritmos,
+adquiere una forma, y esa forma es su espíritu. Lo que Pasolini temía,
+en la Italia de los años setenta, era que la sociedad de consumo
+estuviera educando a los jóvenes a través de sus objetos de un modo
+mucho más eficaz y profundo que cualquier ideología explícita. Lo que
+hoy podríamos temer es que el teléfono móvil, la plataforma escolar y la
+red social sean las cosas que están educando la carne de nuestros
+estudiantes.
+
+## La identidad como problema sin salida
+
+Si el sujeto no es una sustancia, sino un efecto de relaciones, ¿qué
+ocurre con la identidad? ¿Quiénes somos, si lo que somos ha sido
+producido por dispositivos que no elegimos?
+
+La pregunta no tiene una respuesta sencilla. La identidad, podría
+decirse, es una categoría aporética, un problema sin salida. Podemos
+definirnos, decir quiénes somos y distinguirnos de los demás; pero al
+mismo tiempo estamos siendo constantemente transformados. La identidad
+es un concepto circunstancial, en continua subjetivación. Como ha
+escrito Stuart Hall, las identidades están cada vez más fragmentadas y
+fracturadas; nunca son singulares, sino que se construyen de múltiples
+maneras a través de discursos, prácticas y posiciones diferentes, a
+menudo cruzados y antagónicos.
+
+Cornelius Castoriadis ofreció una manera de pensar esta paradoja. Toda
+sociedad, sostenía, se instituye a través de un conjunto de
+significaciones imaginarias sociales ---ideas sobre lo que es valioso,
+lo que es real, lo que es un ser humano--- que no derivan de ninguna
+necesidad natural, sino de la creación colectiva y anónima de la propia
+sociedad. La subjetividad de cada individuo es, en buena medida, el
+resultado de la incorporación de esas significaciones. Pero los sujetos
+no son solo receptores pasivos: son también parte del colectivo que
+crea, sostiene y puede transformar el imaginario. Hay un imaginario
+instituido, que se presenta como natural y eterno, y un imaginario
+instituyente, que es la capacidad de la sociedad de crear nuevas formas.
+La autonomía, para Castoriadis, no consiste en liberarse de toda
+institución, sino en reconocer que las instituciones son obra nuestra y
+que, por lo tanto, podemos cambiarlas.
+
+Antonio Gramsci, desde la cárcel fascista, había llegado a una
+conclusión parecida por otro camino. Distinguía entre el sentido común
+---el conjunto de creencias heredadas, fragmentarias y contradictorias
+que cada uno absorbe de su entorno--- y el buen sentido, el núcleo de
+racionalidad crítica que existe en toda persona. La hegemonía de una
+clase dominante consiste en lograr que su visión del mundo se convierta
+en el sentido común de toda la sociedad, de modo que los dominados
+piensen el mundo con las categorías de quienes los dominan. La educación
+neoliberal, en este sentido, es un proyecto de construcción de un nuevo
+sentido común: una manera de significar y valorar los aspectos más
+básicos de la existencia ---el éxito, el fracaso, el tiempo, el trabajo,
+la libertad--- desde la lógica del mercado. Y su eficacia consiste en
+que ese sentido común no se percibe como ideología, sino como realismo.
+
+## Calificar, socializar, subjetivar
+
+El filósofo de la educación Gert Biesta ha propuesto distinguir tres
+dimensiones del propósito educativo. La primera es la calificación: la
+transmisión y adquisición de conocimientos, habilidades y disposiciones.
+La segunda es la socialización: la iniciación de niños y jóvenes en
+tradiciones y formas de ser y de hacer, culturales, profesionales,
+políticas, religiosas. La tercera es la subjetivación: el desarrollo de
+los jóvenes como sujetos de iniciativa y responsabilidad, capaces de
+actuar por sí mismos y no solo como ejemplares de un orden.
+
+Lo interesante de esta distinción es que la tercera dimensión no puede
+reducirse a las otras dos. Un estudiante puede estar perfectamente
+calificado y perfectamente socializado, y sin embargo no haber llegado
+nunca a ser un sujeto en sentido pleno, alguien capaz de interrumpir el
+orden en que fue formado. La subjetivación, en el sentido de Biesta, es
+precisamente lo que el dispositivo no puede producir directamente: es el
+momento en que alguien responde de un modo que no estaba previsto.
+
+Aquí está, creo, la clave de todo lo que sigue. La educación es un arma
+de doble filo. Puede darnos las herramientas para construir
+conscientemente una subjetividad propia, y puede, al mismo tiempo,
+objetivarnos para disciplinar nuestro cuerpo hacia los fines del
+capital. Disciplina y personalización son dos caras de la misma moneda.
+Lo que este libro intenta hacer es abrir las puertas y ventanas de algo
+que se ha dado por bueno, para mirar con atención qué está haciendo la
+educación con nosotros. Y eso nos lleva, ahora sí, al presente: a la
+escuela neoliberal y a sus plataformas.
+
+# Tercera parte. El alma neoliberal {#tercera-parte.-el-alma-neoliberal .unnumbered .parte}
+
+> *La economía es el método; el objetivo es cambiar el alma.*
+
+# 8. La nueva razón del mundo
+
+## Más que una política económica
+
+Solemos pensar el neoliberalismo como un conjunto de políticas
+económicas: privatizaciones, reducción del gasto público, desregulación
+de los mercados, flexibilización laboral, apertura comercial. Todo eso
+es cierto, pero es insuficiente. Si el neoliberalismo fuera solo eso,
+sería una doctrina entre otras, que se aplica o se deja de aplicar según
+quién gane las elecciones. Lo que lo hace tan difícil de pensar, y tan
+difícil de resistir, es que se ha convertido en algo mucho más profundo:
+una racionalidad, una manera de entender el mundo, la sociedad y a uno
+mismo, que ha desbordado la economía para impregnar todos los ámbitos de
+la existencia.
+
+Michel Foucault fue uno de los primeros en advertirlo. En su curso de
+1979 en el Collège de France, *Nacimiento de la biopolítica*, analizó el
+neoliberalismo alemán y norteamericano no como una teoría económica,
+sino como un arte de gobernar. Lo que le llamaba la atención era que el
+neoliberalismo no se limitaba a liberar el mercado de la intervención
+del Estado, como había hecho el liberalismo clásico. Hacía algo más
+ambicioso: convertía el mercado en el principio de organización de la
+sociedad entera y en el modelo de todas las relaciones humanas. El
+Estado ya no debía apartarse del mercado, sino trabajar activamente para
+crear las condiciones de la competencia en todos los dominios de la
+vida.
+
+En ese curso, Foucault analizó también la teoría del capital humano de
+economistas como Theodore Schultz y Gary Becker. Para estos autores,
+cada individuo es poseedor de un capital ---sus habilidades, sus
+conocimientos, su salud, incluso su atractivo--- que puede invertir y
+hacer rendir. La educación, en esta perspectiva, es una inversión: los
+padres invierten en sus hijos, el individuo invierte en sí mismo, y el
+rendimiento de esa inversión se mide en ingresos futuros. Foucault
+extrajo de aquí una conclusión vertiginosa: el *homo oeconomicus* del
+neoliberalismo ya no es el socio del intercambio, como en el liberalismo
+clásico, sino un empresario, y un empresario de sí mismo. Es su propio
+capital, su propio productor, la fuente de sus propios ingresos.
+
+Pierre Dardot y Christian Laval retomaron este análisis en *La nueva
+razón del mundo* y lo llevaron hasta sus últimas consecuencias. El
+neoliberalismo, sostienen, no es solo una ideología ni una política
+económica, sino un sistema normativo que ha ampliado su influencia al
+mundo entero, extendiendo la lógica del capital a todas las relaciones
+sociales y a todas las esferas de la vida. Su efecto más profundo es la
+producción de una subjetividad: la del sujeto empresarial, que se
+relaciona consigo mismo como con una empresa, que gestiona su vida como
+un portafolio de inversiones, que se evalúa permanentemente según
+criterios de rendimiento.
+
+## El capitalismo hecho consciente
+
+La antropóloga Sherry Ortner ha sugerido que el neoliberalismo es, en
+muchos sentidos, simplemente el capitalismo tardío hecho consciente,
+llevado a sus extremos y con efectos más visibles. Lo interesante de su
+observación es el cambio de nombre. Cuando en los años ochenta y noventa
+se hablaba de «capitalismo tardío», el término formaba parte de una
+narrativa de la globalización que tenía aspectos tanto positivos como
+negativos. Desde el año 2000, en cambio, la palabra dominante es
+«neoliberalismo», y está inmersa en una narrativa mucho más oscura: la
+de una cruzada alimentada por la ideología y la codicia para inclinar
+todavía más la economía política mundial a favor de las naciones y
+clases dominantes.
+
+La educación neoliberal no es, por tanto, un estadio nuevo e
+independiente del capitalismo, sino una fase de su desarrollo. Y se
+sostiene en un modelo antropológico que rara vez se explicita, pero que
+puede reconstruirse a partir de sus prácticas. En ese modelo, la
+propiedad privada se eleva a rasgo esencial de la naturaleza humana; los
+seres humanos se conciben como naturalmente desiguales, de modo que solo
+puede haber igualdad ante el mercado y ante la ley; y la libertad se
+entiende como algo individual, negativo y fundamentalmente económico: la
+libertad de elegir, de comprar, de competir. Hay en este modelo una
+contradicción que lo atraviesa de parte a parte: exalta al individuo
+como fuente de todo valor, pero exige de él una sumisión completa a las
+leyes del mercado. Es un individualismo que se niega a sí mismo.
+
+## La escuela como mercado
+
+¿Qué ocurre cuando esta racionalidad entra en la escuela?
+
+En primer lugar, la escuela se reorganiza como un mercado. Las familias
+se convierten en consumidoras que eligen entre una oferta de centros;
+las escuelas, en proveedoras que compiten por atraer clientes; el
+Estado, en un regulador que garantiza la información necesaria para que
+la elección sea racional. Para que ese mercado funcione, hace falta una
+moneda común que permita comparar a los proveedores. Esa moneda son los
+resultados de las pruebas estandarizadas, publicados en rankings y en
+mapas de la calidad educativa.
+
+La investigación internacional ha documentado desde hace décadas la
+estrecha relación entre la elección de escuela, la clase social y la
+segregación. Las familias con más recursos, más información y más
+capital cultural eligen mejor, o al menos eligen escuelas donde sus
+hijos se encontrarán con otros niños como ellos. Las escuelas, por su
+parte, tienen incentivos para seleccionar a los estudiantes que
+mejorarán sus resultados y para evitar a los que podrían bajarlos. El
+resultado es un sistema que clasifica a la población escolar según su
+origen social, y que luego presenta esa clasificación como el resultado
+del mérito.
+
+En segundo lugar, la evaluación cambia de naturaleza. Ya no sirve
+principalmente para que el docente conozca lo que sus estudiantes han
+aprendido y ajuste su enseñanza, sino para que el sistema conozca el
+rendimiento de cada escuela, de cada docente, de cada estudiante, y
+pueda actuar en consecuencia. Las pruebas estandarizadas se convierten
+en tecnologías de poder: establecen criterios uniformes de logro, dan
+forma a la enseñanza, determinan la asignación de recursos y el
+prestigio institucional. Se las ha criticado por restringir el currículo
+a lo que se puede medir, por incentivar la atención a ciertos
+estudiantes a expensas de otros y por carecer de cualquier deliberación
+democrática sobre sus contenidos y sus criterios. Pero su poder no
+depende de que sean buenas. Depende de que produzcan números, y de que
+esos números circulen.
+
+A escala internacional, la prueba PISA de la OCDE ha generado la ilusión
+de que la calidad educativa puede medirse numéricamente y compararse
+entre países y regiones. Cada tres años, la publicación de sus
+resultados provoca titulares alarmados, reformas apresuradas, viajes de
+estudio a Finlandia o a Singapur. Se argumenta que esa comparación
+estimula la mejora de los sistemas. Pero también limita la diversidad
+cultural y el potencial creativo de la educación, al alinear todo el
+proceso formativo con metas que pueden no responder a las necesidades de
+cada lugar.
+
+## La fabricación de lo problemático
+
+Hay un aspecto del funcionamiento de los dispositivos que merece
+especial atención, porque explica cómo se justifican y se extienden.
+Recordemos que, según Foucault, los dispositivos surgen para responder a
+una urgencia. Pero las urgencias no son datos naturales: tienen que ser
+construidas como tales. Antes de que un dispositivo intervenga sobre
+algo, ese algo tiene que haber sido definido como un problema.
+
+La educación contemporánea está llena de problemas: el abandono escolar,
+el bajo rendimiento, la violencia en las aulas, el acoso, la
+desmotivación, el uso excesivo del móvil, la falta de competencias
+digitales, la brecha de género en las ciencias. No digo que estos
+problemas no existan. Digo que la manera en que se definen ---qué se
+considera normal y qué se considera desviado, qué se mide y qué se
+ignora, a quién se señala como responsable--- no es neutral. Toda
+problematización se apoya en normas, valores y criterios que definen lo
+que es aceptable, deseable o normal. Y a partir de esa definición se
+despliega un conjunto de saberes, de estrategias y de prácticas
+destinadas a gestionar el problema.
+
+Tomemos el abandono escolar. Puede definirse como un fracaso individual
+del estudiante, al que habrá que motivar, acompañar o reconducir
+mediante programas de apoyo socioemocional. Puede definirse como un
+fracaso de la escuela, que no ha sabido ofrecer una experiencia
+significativa a ciertos jóvenes. O puede definirse como el síntoma de
+una estructura social que distribuye desigualmente las oportunidades y
+que luego responsabiliza a los individuos de no aprovecharlas. Cada una
+de estas definiciones activa un dispositivo diferente. Y la racionalidad
+neoliberal tiende sistemáticamente a privilegiar la primera: a
+individualizar los problemas, a convertirlos en déficits personales que
+deben corregirse mediante intervenciones sobre el individuo.
+
+Por eso, una tarea crítica fundamental es cuestionar las bases
+normativas sobre las que se construyen las problematizaciones
+educativas. Preguntar, ante cada nuevo problema que se anuncia, quién lo
+ha definido, desde qué criterios, con qué consecuencias. Y preguntar
+también qué problemas no se plantean: qué cosas no se miden, qué
+sufrimientos no se ven, qué injusticias no aparecen en los indicadores.
+
+## Docentes eficaces, estudiantes emprendedores
+
+Las tecnologías de poder de la educación neoliberal no se limitan a
+organizar instituciones. Producen tipos específicos de personas. El
+estudiante emprendedor, el docente eficaz, el padre implicado: son
+figuras ideales que circulan en los discursos oficiales, en los
+programas de formación, en los manuales de buenas prácticas, y que
+funcionan como modelos a los que cada uno debe ajustarse.
+
+El sociólogo Stephen Ball ha descrito con precisión lo que le ocurre al
+docente en este régimen. Lo llama performatividad: una tecnología, una
+cultura y un modo de regulación que utiliza juicios, comparaciones y
+exhibiciones como medios de incentivo, de control y de cambio. El
+rendimiento de los individuos y de las organizaciones sirve como medida
+de productividad o como demostración de calidad. El docente ya no es
+juzgado por lo que hace en el aula, que es difícil de ver y de medir,
+sino por los resultados que puede exhibir: las calificaciones de sus
+estudiantes, su posición en las pruebas externas, el cumplimiento de los
+plazos, la cantidad de evidencias registradas en la plataforma.
+
+Ball tituló uno de sus artículos más conocidos «El alma del docente y
+los terrores de la performatividad». La elección de la palabra no es
+casual. Lo que está en juego, sostiene, no es solo la organización del
+trabajo docente, sino la identidad misma de quien enseña. El docente
+sometido a la performatividad vive en una incertidumbre permanente sobre
+si está haciendo lo suficiente, si está haciendo lo correcto, si está a
+la altura. Interioriza los criterios del sistema hasta el punto de no
+saber ya si actúa por convicción o por miedo a la evaluación. Y
+experimenta a menudo una escisión dolorosa entre lo que considera
+valioso en su trabajo ---la relación con los estudiantes, el cuidado, la
+conversación que no lleva a ningún resultado medible--- y lo que el
+sistema reconoce y premia.
+
+Al estudiante le ocurre algo parecido. Desde muy temprano aprende que lo
+que cuenta es lo que se mide, y que lo que se mide es su rendimiento
+individual comparado con el de los demás. Aprende a gestionar su
+currículo como una cartera de activos, a acumular credenciales, a
+presentarse de manera atractiva, a pensar su formación como una
+inversión cuyo rendimiento se verá en el mercado laboral. Aprende, en
+suma, a ser empresario de sí mismo antes de saber qué quiere hacer con
+su vida.
+
+## Un nuevo sentido común
+
+La socióloga Pauline Lipman ha escrito que la transformación de las
+subjetividades está dialécticamente relacionada con la reestructuración
+de las políticas sociales, y que la educación es una pieza fundamental
+de ese proceso. Las políticas son, en parte, discursos: valores,
+prácticas, maneras de hablar y de actuar que dan forma a la conciencia y
+producen identidades sociales. La educación neoliberal es, en este
+sentido, un proyecto ideológico para reconstruir valores, relaciones e
+identidades sociales, para producir un nuevo imaginario.
+
+Volvemos aquí a la intuición de Gramsci. Lo que la educación neoliberal
+construye no es tanto una doctrina explícita como un nuevo sentido
+común: una manera de significar y de valorar los aspectos más básicos de
+la existencia que se impone sobre el espacio público y que se vive como
+evidente. Que el éxito es el resultado del esfuerzo individual. Que la
+competencia saca lo mejor de cada uno. Que lo que no se puede medir no
+existe. Que la educación es una inversión. Que cada uno es responsable
+de su propia empleabilidad. Que no hay alternativa.
+
+Estas ideas no se enseñan en ninguna asignatura. Se aprenden en la forma
+misma de la escuela: en sus rituales de evaluación, en sus sistemas de
+premios y castigos, en sus rankings, en sus plataformas. Forman parte de
+lo que se ha llamado el currículo oculto: aquello que la escuela enseña
+sin proponérselo, a través de su organización, de sus prácticas y de sus
+silencios. Y precisamente porque no se enseñan explícitamente, son muy
+difíciles de cuestionar.
+
+El cambio en la manera de ejercer el poder es lo que explica la eficacia
+del neoliberalismo en un terreno que excede con mucho la esfera
+económica. Ya no se trata del poder como contrato jurídico, ni del poder
+como represión directa sobre los cuerpos, como en épocas anteriores. Se
+trata de un poder que se ejerce a través de la libertad de los
+individuos, que no prohíbe sino que incita, que no castiga sino que
+evalúa, que no encierra sino que conecta. Un poder que ha comprendido
+que es mucho más eficaz conseguir que los sujetos quieran por sí mismos
+lo que el sistema necesita que quieran.
+
+De cómo se produce ese querer, de la ética del yo que la escuela
+neoliberal enseña a sus estudiantes y a sus docentes, trata el próximo
+capítulo.
+
+# 9. El yo que se evalúa: ética del rendimiento
+
+## Del deber al poder
+
+Byung-Chul Han abre *La sociedad del cansancio* con una tesis que se ha
+vuelto célebre: la sociedad disciplinaria que describió Foucault, la
+sociedad de los hospitales, los psiquiátricos, las cárceles, los
+cuarteles y las fábricas, ya no es la nuestra. En su lugar ha surgido
+otra sociedad, hecha de gimnasios, torres de oficinas, bancos, aviones,
+grandes centros comerciales y laboratorios genéticos. La sociedad del
+siglo XXI ya no es disciplinaria, sino una sociedad del rendimiento. Y
+sus habitantes ya no se llaman sujetos de obediencia, sino sujetos de
+rendimiento: emprendedores de sí mismos.
+
+La diferencia, según Han, está en el verbo modal que organiza cada
+sociedad. La sociedad disciplinaria estaba regida por el *deber* y por
+el *no deber*: la prohibición, el mandato, la ley. Producía locos y
+criminales. La sociedad del rendimiento está regida por el *poder hacer*
+sin límites: el proyecto, la iniciativa, la motivación. Su lema es el
+*Yes, we can*. Y produce depresivos y fracasados.
+
+La paradoja es que el sujeto de rendimiento se cree libre. Nadie le
+obliga a trabajar, a rendir, a optimizarse. Lo hace por sí mismo, porque
+quiere, porque es lo que le dicta su ambición, su deseo de realización
+personal. Pero esa libertad es, según Han, una forma más eficaz de
+coerción. El sujeto de rendimiento se explota a sí mismo, y lo hace con
+más intensidad de la que ningún amo externo podría exigirle, porque la
+explotación de sí va acompañada de un sentimiento de libertad. El
+explotador es al mismo tiempo el explotado. Víctima y verdugo ya no se
+distinguen. La autoexplotación es más eficaz que la explotación ajena
+porque no encuentra resistencia.
+
+No es necesario suscribir todos los diagnósticos de Han, a veces
+demasiado tajantes, para reconocer que describe algo que cualquier
+docente ha visto en sus aulas: estudiantes que se exigen a sí mismos
+hasta el agotamiento, que viven cada nota como un juicio sobre su valor
+personal, que no soportan el error porque lo experimentan como un
+fracaso de su proyecto de vida, que no descansan porque descansar les
+produce culpa. Y docentes que, del mismo modo, se queman intentando
+cumplir con todo, convencidos de que, si no llegan, es porque no se
+esfuerzan lo suficiente.
+
+## La tecnología del yo neoliberal
+
+En sus últimos trabajos, Foucault dedicó mucha atención a lo que llamó
+«tecnologías del yo»: las técnicas que permiten a los individuos
+efectuar, por sí mismos o con ayuda de otros, operaciones sobre su
+cuerpo, su alma, sus pensamientos y su conducta, con el fin de
+transformarse y alcanzar cierto estado de felicidad, de pureza, de
+sabiduría o de perfección. El examen de conciencia de los estoicos, la
+confesión cristiana, el diario íntimo, la dirección espiritual: todas
+ellas son tecnologías del yo.
+
+La educación neoliberal ha desarrollado sus propias tecnologías del yo,
+y algunas de ellas tienen una apariencia tan benévola que resulta
+difícil reconocerlas como tales. Pensemos en tres prácticas que hoy se
+consideran parte de cualquier buena pedagogía: la autoevaluación, la
+autorreflexión y la superación personal.
+
+La autoevaluación aparece en la investigación educativa estadounidense
+hacia los años treinta y cuarenta del siglo pasado. En las reformas
+curriculares de los años setenta, en países como el Reino Unido, Noruega
+o Suecia, cobra un vigor nuevo asociada a un discurso sobre la autonomía
+de los estudiantes, y en los años noventa se generaliza. Su intención
+declarada es irreprochable: que el estudiante tome conciencia de su
+propio aprendizaje, que identifique sus fortalezas y debilidades, que
+asuma la responsabilidad de su progreso. ¿Quién podría oponerse a algo
+así?
+
+El problema no está en la práctica misma, sino en el dispositivo en que
+se inscribe. Cuando la autoevaluación se hace en un sistema orientado al
+rendimiento, su función cambia. Ya no se trata de que el estudiante
+reflexione críticamente sobre el proceso de aprendizaje, sobre lo que ha
+comprendido y lo que no, sobre lo que le ha interesado y lo que le ha
+resultado indiferente. Se trata de que interiorice los criterios de
+evaluación del sistema y se mida a sí mismo con ellos. La rúbrica que el
+estudiante aplica a su propio trabajo no es suya: es la del sistema. La
+autoevaluación se convierte en una forma de autovigilancia. El
+estudiante aprende a mirarse con los ojos del evaluador.
+
+Algo parecido ocurre con la autorreflexión. Los diarios de aprendizaje,
+los portafolios, las rutinas de pensamiento, las preguntas
+metacognitivas, pretenden dar al estudiante un espacio para pensar sobre
+sí mismo, sobre sus emociones, sobre su entorno, sobre cómo responde a
+él. Pero en un contexto neoliberal, esa reflexión tiende a orientarse
+hacia el autoconocimiento, el autocontrol y la autoafirmación en función
+del éxito. Se fomenta la adaptabilidad, la gestión del cambio, la toma
+de decisiones informadas: todas ellas competencias muy útiles para un
+mercado laboral flexible. Lo que no se fomenta es la reflexión sobre las
+condiciones que hacen necesaria esa adaptación, sobre la justicia o la
+injusticia del orden al que hay que adaptarse.
+
+Y está, por último, la superación personal: la idea de que cada uno debe
+mejorar continuamente, desarrollar al máximo su potencial, alcanzar sus
+metas. Es un discurso que se alinea perfectamente con los principios del
+rendimiento y la meritocracia, y que modela identidades orientadas al
+individualismo y a la competencia, en detrimento de los enfoques
+colaborativos y participativos. Si cada uno es responsable de su propia
+superación, entonces cada uno es también responsable de su propio
+estancamiento.
+
+Lo inquietante de estos mecanismos es que, a primera vista, parecen
+inocuos, e incluso parecen fomentar una mejora del individuo. Pero esta
+forma de gobierno mediante la autooptimización, la autoevaluación y la
+superación personal responde a una nueva forma de poder. Ya no se busca
+solo disciplinar los cuerpos, como en la escuela del siglo XIX, sino
+gobernar la relación que los sujetos tienen consigo mismos: sus afectos,
+sus aspiraciones, su manera de juzgarse. Y se hace desde una perspectiva
+reductiva y meramente económica.
+
+## Aprender a desear la carencia
+
+¿Cómo es posible que los sujetos deseen esta forma de gobierno? ¿Por qué
+el estudiante y el docente no la viven como una imposición, sino como
+una aspiración propia?
+
+Frédéric Lordon, en un libro que lee a Marx a través de Spinoza, propone
+una respuesta. El capitalismo, sostiene, no funciona solo mediante la
+coacción económica ---la necesidad de ganarse la vida---, sino mediante
+la movilización de los deseos. Su gran logro histórico ha sido conseguir
+que los asalariados deseen lo que la empresa necesita que deseen: que se
+identifiquen con sus objetivos, que encuentren en el trabajo su
+realización personal, que vivan la productividad como una alegría.
+Lordon habla de un *enrolamiento* de los deseos, de una colonización de
+los afectos que hace que la servidumbre se viva como libertad. Es, en el
+fondo, la vieja pregunta de Spinoza y de La Boétie, llevada al terreno
+de la empresa contemporánea: ¿cómo es que luchamos por nuestra
+servidumbre como si fuera nuestra salvación?
+
+En la escuela, este enrolamiento de los deseos opera de un modo
+particular. El investigador Engin Atasay ha sugerido que la
+escolarización neoliberal enseña a los estudiantes a desear la carencia.
+Nunca se es suficientemente competente, nunca se ha aprendido lo
+suficiente, nunca se está suficientemente preparado para un futuro que
+se presenta como incierto y competitivo. La educación se convierte en
+una carrera sin línea de llegada, en la que el estudiante aprende a
+sentirse siempre en falta, siempre necesitado de una credencial más, de
+una habilidad más, de un curso más. El aprendizaje permanente, que
+podría ser una promesa de libertad, se transforma en una obligación
+perpetua de actualización.
+
+Este deseo de la carencia tiene una afinidad profunda con la estructura
+del consumo. El consumidor ideal es aquel que nunca está satisfecho, que
+siempre desea el siguiente producto. El estudiante ideal de la escuela
+neoliberal es aquel que nunca considera terminada su formación, que
+siempre busca la siguiente competencia. Y en ambos casos, lo que se
+produce no es la satisfacción, sino el cansancio.
+
+## La psicopolítica
+
+En un libro posterior, *Psicopolítica*, Byung-Chul Han da un paso más.
+El neoliberalismo, sostiene, ha descubierto la psique como fuerza
+productiva. Ya no le interesa tanto el cuerpo, como a la biopolítica que
+analizó Foucault, sino la mente: las emociones, las motivaciones, los
+deseos, las decisiones. Y para gobernarla ha desarrollado una
+psicopolítica que no se impone mediante la prohibición, sino que seduce,
+que no reprime, sino que estimula. Es un poder amable, que se presenta
+como libertad.
+
+Han observa que el teléfono inteligente funciona hoy como un objeto de
+devoción, casi como un rosario que se pasa entre los dedos, y que el «me
+gusta» es el amén digital. Mientras pulsamos, nos sometemos al entramado
+de dominación. La comparación con la religión no es gratuita: la
+psicopolítica neoliberal, como el poder pastoral que describió Foucault,
+gobierna a través de la confesión. Solo que ahora la confesión es
+voluntaria, permanente y pública: nos exponemos, contamos nuestra vida,
+compartimos nuestros datos, y lo hacemos creyendo que es una forma de
+expresión libre.
+
+En la escuela, la psicopolítica adopta la forma de la gestión emocional.
+Se enseñan competencias socioemocionales, se miden niveles de bienestar,
+se organizan talleres de resiliencia, de mentalidad de crecimiento, de
+inteligencia emocional. De nuevo, nada de esto es malo en sí mismo. Pero
+cuando se inscribe en un dispositivo orientado al rendimiento, su
+sentido se desplaza. La resiliencia se convierte en la capacidad de
+soportar condiciones adversas sin cuestionarlas. La mentalidad de
+crecimiento, en la convicción de que todo depende del esfuerzo personal.
+La gestión de las emociones, en el control de aquellos afectos ---la
+rabia, la tristeza, el desánimo--- que podrían ser señales legítimas de
+que algo anda mal en el entorno. Se enseña a los estudiantes a regular
+su malestar en lugar de enseñarles a preguntarse por sus causas.
+
+## El docente como *coach*
+
+En este régimen, la figura del docente también se transforma. El maestro
+que transmitía un saber, que encarnaba una autoridad intelectual y
+moral, que se interponía entre el estudiante y el mundo para mostrarle
+algo que valía la pena conocer, cede su lugar a otra figura: el
+facilitador, el guía, el acompañante, el *coach*. Su función ya no es
+enseñar algo, sino ayudar a cada estudiante a desarrollar su propio
+potencial, a gestionar su aprendizaje, a alcanzar sus metas.
+
+Hay en este desplazamiento una parte de verdad. La crítica a la
+educación bancaria, a la autoridad autoritaria, al docente que lo sabe
+todo y no escucha a nadie, era necesaria. Pero en el contexto
+neoliberal, el docente-*coach* corre el riesgo de convertirse en algo
+muy distinto de lo que Freire o Dewey imaginaban. Ya no es alguien que
+acompaña al estudiante en la lectura crítica del mundo, sino alguien que
+lo entrena para rendir en él. Su tarea consiste en alinear los procesos
+de aprendizaje con las metas de productividad definidas por las
+instituciones y, cada vez más, por las corporaciones que proveen las
+plataformas en las que ese aprendizaje se registra.
+
+Y el propio docente está sometido a la misma lógica. También él debe
+evaluarse, reflexionar sobre su práctica, buscar la mejora continua,
+acumular formación, demostrar resultados. También él es un emprendedor
+de sí mismo, responsable de su empleabilidad en un sistema que lo somete
+a evaluaciones constantes. La carga de trabajo se multiplica: no basta
+con enseñar, hay que documentar lo enseñado, registrar las evidencias,
+completar los informes, responder a las familias por la plataforma a
+cualquier hora. Y cuando no llega, la culpa es suya.
+
+## Una ética sin otro
+
+Lo que caracteriza a esta ética del rendimiento, en el fondo, es que es
+una ética sin otro. Las tecnologías del yo de la Antigüedad que estudió
+Foucault, como el examen de conciencia estoico o la escritura de sí, se
+practicaban a menudo en relación con un maestro, con un amigo, con una
+comunidad. El cuidado de sí era inseparable del cuidado de los otros y
+de la ciudad. La ética del rendimiento, en cambio, encierra al individuo
+en una relación exclusiva consigo mismo. El otro solo aparece como
+competidor, como referencia para la comparación, como obstáculo o como
+recurso.
+
+Por eso el sujeto de rendimiento es, al mismo tiempo, un sujeto
+profundamente solitario. Puede estar hiperconectado, rodeado de
+seguidores, inmerso en una red de interacciones constantes, pero su
+relación fundamental es consigo mismo: con su proyecto, con sus
+métricas, con su imagen. Y esa soledad tiene consecuencias políticas. Un
+sujeto que se vive como responsable único de su destino no tiene razones
+para unirse a otros. Si fracasa, se culpa a sí mismo; no se rebela
+contra el sistema, sino que se deprime. Han lo dice con una fórmula
+precisa: en la sociedad del rendimiento, quien fracasa se hace a sí
+mismo responsable y se avergüenza, en lugar de cuestionar a la sociedad
+o al sistema.
+
+La escuela neoliberal, en este sentido, no solo produce sujetos
+competitivos. Produce sujetos despolitizados: sujetos que han aprendido
+a convertir los problemas colectivos en problemas individuales, y que,
+por lo tanto, ya no saben imaginar soluciones colectivas. Y ese proceso,
+como veremos en los capítulos siguientes, se intensifica de manera
+extraordinaria cuando entra en escena la tecnología digital.
+
+# 10. Técnica, memoria y veneno
+
+## La técnica no es un instrumento
+
+Hay una manera muy extendida de pensar la tecnología en la educación que
+podríamos llamar instrumental. Según ella, las tecnologías son
+herramientas, medios neutros al servicio de fines que se definen en otro
+lugar. Una pizarra digital, una plataforma de gestión del aprendizaje,
+un programa de inteligencia artificial, son como un martillo: pueden
+usarse bien o mal, para construir o para destruir, pero en sí mismas no
+son ni buenas ni malas. Lo que importa es el uso que se hace de ellas, y
+ese uso depende de las intenciones de quien las utiliza.
+
+Esta concepción tiene la ventaja de la sencillez y el atractivo del
+sentido común. Pero es, filosóficamente, insostenible. Y es, además,
+políticamente peligrosa, porque nos impide ver de qué manera las
+tecnologías transforman a quienes las usan, organizan sus relaciones,
+configuran sus percepciones y orientan sus posibilidades. Si la técnica
+es un mero instrumento, entonces la única pregunta pertinente es cómo
+usarla mejor. Si la técnica es algo más, entonces la pregunta es qué
+está haciendo de nosotros.
+
+La filosofía del siglo XX ofreció varias maneras de pensar ese «algo
+más». En este capítulo quiero recorrer algunas de ellas, porque nos dan
+las herramientas conceptuales para entender por qué las tecnologías
+digitales no son simples medios en la escuela, sino dispositivos que
+producen subjetividad.
+
+## Simondon: individuarse con los objetos
+
+Gilbert Simondon fue un filósofo francés que dedicó buena parte de su
+obra a pensar el modo de existencia de los objetos técnicos. Su punto de
+partida era una crítica a la cultura de su época, que según él había
+establecido una oposición ruinosa entre la cultura y la técnica. La
+cultura, decía, se comporta con los objetos técnicos como el hombre con
+el extranjero cuando se deja llevar por la xenofobia primitiva: los
+desconoce, los teme, los desprecia o los idolatra, pero no los
+comprende. Y esa incomprensión es la fuente de una alienación profunda.
+No estamos alienados por las máquinas, sino por nuestra ignorancia de
+ellas.
+
+Para Simondon, la técnica no es un conjunto de artefactos exteriores al
+ser humano, sino un proceso en el que el ser humano y los objetos
+técnicos se constituyen mutuamente. Los seres humanos se individúan, es
+decir, llegan a ser lo que son, en relación con los objetos técnicos que
+producen y utilizan. Y los objetos técnicos, a su vez, tienen su propia
+génesis, su propia evolución, su propio modo de existencia.
+
+Simondon llamó «concretización» al proceso por el cual un objeto técnico
+evoluciona desde una forma abstracta, en la que cada pieza cumple una
+función separada, hacia una forma concreta, en la que las piezas se
+integran y se sostienen mutuamente, formando un sistema coherente. El
+objeto técnico concreto se parece cada vez más a un ser natural: está
+más adaptado a su función y más integrado en su medio.
+
+En la escuela se puede seguir algo parecido. De la tiza y la pizarra se
+pasó al proyector, de ahí a la pizarra digital, y de ahí a los sistemas
+de gestión del aprendizaje que integran en un solo entorno la
+comunicación, la entrega de tareas, la evaluación, el registro de
+asistencia y el seguimiento del progreso. Cada etapa supone una mayor
+integración, una mayor coherencia interna del sistema técnico, una mayor
+adaptación al medio escolar. Pero también, y esto es lo que la mirada
+instrumental no ve, una transformación de ese medio. La plataforma no se
+limita a facilitar las prácticas escolares que ya existían: las
+reorganiza según su propia lógica, define qué es una tarea, cómo se
+entrega, cuándo vence, cómo se califica, quién puede ver qué.
+
+Lo más importante de Simondon, para nosotros, es su propuesta. Frente a
+la alienación técnica, no propone rechazar la técnica ni someterse a
+ella, sino comprenderla. Una cultura técnica, decía, debe permitir a las
+personas conocer la génesis, el funcionamiento y las potencialidades de
+los objetos con los que viven. Solo así es posible una relación libre
+con ellos: no la del usuario pasivo que consume, ni la del propietario
+que explota, sino la de quien entiende y puede, por lo tanto,
+intervenir. Esta idea será fundamental cuando hablemos de resistencias:
+una alfabetización digital crítica no consiste en aprender a usar
+herramientas, sino en comprender lo que esas herramientas hacen.
+
+## Heidegger: el mundo como existencias
+
+Martin Heidegger abordó la técnica desde un ángulo muy distinto. En su
+conferencia «La pregunta por la técnica», de 1953, sostiene que la
+esencia de la técnica no es nada técnico. No se trata de máquinas ni de
+aparatos, sino de un modo de desocultamiento, una manera en que el mundo
+se nos muestra.
+
+La técnica antigua, la del artesano o la del campesino, desocultaba el
+mundo como algo que se cuida, que se acompaña, que se deja crecer. El
+molino de viento se entrega al viento sin acumular su energía; el
+campesino siembra y espera. La técnica moderna, en cambio, desoculta el
+mundo como algo que se emplaza, que se provoca, que se exige. El río ya
+no es un río, sino una fuente de energía hidráulica; el bosque, una
+reserva de madera; la tierra, un yacimiento de minerales. Todo aparece
+como *Bestand*, como existencias, como fondo disponible que está ahí
+para ser extraído, almacenado, distribuido y consumido. Heidegger llama
+*Gestell*, que suele traducirse como «estructura de emplazamiento» o
+«dispositivo», a esa manera de desocultar que convierte todo lo que
+existe en recurso.
+
+Lo inquietante es que este modo de desocultamiento alcanza también al
+ser humano. El ser humano se convierte en recurso humano, en material
+humano, en capital humano. Y lo más peligroso, según Heidegger, no es
+que la técnica pueda destruirnos, sino que este modo de ver el mundo se
+imponga como el único posible, de modo que ya no podamos experimentar
+las cosas de otra manera. El peligro supremo es que el desocultamiento
+calculador se vuelva tan evidente que olvidemos que es un modo entre
+otros.
+
+Es difícil no reconocer en este diagnóstico el funcionamiento de la
+educación neoliberal digital. El aprendizaje se convierte en datos, el
+estudiante en un perfil de rendimiento, el docente en un recurso que
+debe optimizarse, el tiempo escolar en una cantidad que debe
+aprovecharse al máximo. Todo se vuelve mensurable, comparable,
+gestionable. La educación aparece como existencias. Y la pregunta que
+importa ya no es qué significa aprender, sino cuánto se ha aprendido y a
+qué coste.
+
+Heidegger no proponía una huida de la técnica, sino una relación
+distinta con ella, que llamó serenidad: la capacidad de decir a la vez
+sí y no a los objetos técnicos, de utilizarlos sin dejarse absorber por
+ellos, de mantenerse abierto a otros modos de desocultamiento. Citaba
+unos versos de Hölderlin: allí donde está el peligro, crece también lo
+que salva. Solo cuando vemos el peligro como peligro podemos empezar a
+pensar de otra manera.
+
+## Stiegler: la memoria fuera de nosotros
+
+Bernard Stiegler, heredero de Simondon y de Heidegger, pero también de
+Derrida, llevó la reflexión sobre la técnica hasta una tesis radical: el
+ser humano es un ser técnico desde el principio. No hay un ser humano
+natural que luego adquiera técnicas, sino que la humanidad se constituye
+en y por la técnica. Desde las primeras herramientas de piedra, el ser
+humano ha exteriorizado sus capacidades en objetos, y esos objetos han
+conservado y transmitido experiencias que la biología sola no podría
+transmitir.
+
+Stiegler llama «memoria terciaria» a esta memoria exteriorizada en los
+objetos técnicos. Junto a la memoria genética, que transmite la especie,
+y la memoria individual, que se pierde con la muerte de cada uno, existe
+una memoria técnica que se acumula en las herramientas, en la escritura,
+en los libros, en los archivos, y hoy en los servidores y las bases de
+datos. Es esa memoria la que hace posible la cultura, la transmisión
+entre generaciones, la educación misma. Enseñar es transmitir una
+memoria que no está en los genes, sino en los objetos.
+
+Pero Stiegler insistió también en que esta exteriorización es
+ambivalente. Para pensarla recuperó una palabra griega que Platón había
+utilizado en el *Fedro* para referirse a la escritura: *pharmakon*, que
+significa a la vez remedio y veneno. En el diálogo, el dios egipcio
+Theuth presenta la escritura al rey Thamus como un remedio para la
+memoria. Thamus responde que, por el contrario, producirá olvido en las
+almas de quienes la aprendan, porque dejarán de ejercitar la memoria
+confiando en lo escrito. La escritura, como toda técnica, es un
+*pharmakon*: amplía nuestras capacidades y, al mismo tiempo, puede
+atrofiarlas.
+
+Las tecnologías digitales son el *pharmakon* de nuestra época. Nos
+permiten acceder a una cantidad de información sin precedentes,
+comunicarnos instantáneamente, colaborar a distancia, crear y difundir
+conocimiento. Pero también pueden destruir la atención, fragmentar la
+experiencia, sustituir la memoria propia por la consulta permanente, y
+entregar el control de nuestra memoria colectiva a corporaciones
+privadas. Stiegler habló de una «proletarización» del saber: así como el
+obrero de la industria fue despojado de su saber hacer, incorporado a
+las máquinas, el usuario contemporáneo corre el riesgo de ser despojado
+de su saber pensar, incorporado a los algoritmos.
+
+Lo que Stiegler nos enseña es que la pregunta no es si las tecnologías
+son buenas o malas, sino qué tipo de cuidado exigen. Todo *pharmakon*
+requiere una terapéutica, una manera de administrarlo para que sea
+remedio y no veneno. Y esa terapéutica es, precisamente, la tarea de la
+educación.
+
+## Mediadores, símbolos, redes
+
+Otros pensadores han aportado matices importantes a esta reflexión.
+
+Bruno Latour, con su teoría del actor-red, insistió en que las
+tecnologías no son simples intermediarios que transmiten fielmente una
+intención, sino mediadores que transforman lo que transmiten. Cuando una
+plataforma educativa se introduce en un aula, no se limita a vehicular
+las intenciones pedagógicas del docente: modifica la relación entre
+docentes, estudiantes y conocimiento, redistribuye la autoridad, crea
+nuevas obligaciones y nuevas posibilidades. Un sistema de gestión del
+aprendizaje no solo facilita la enseñanza; también permite monitorear el
+comportamiento de los estudiantes, registrando cada interacción. Los
+objetos, para Latour, también actúan.
+
+Jean Baudrillard, por su parte, señaló que en la sociedad de consumo los
+objetos técnicos se convierten en signos antes que en herramientas. Su
+valor no reside tanto en su función como en lo que significan:
+modernidad, estatus, pertenencia. En la escuela esto se ve con claridad.
+Muchas veces, la adopción de tecnologías costosas y sofisticadas tiene
+más que ver con la necesidad de exhibir una imagen de innovación que con
+un compromiso real con la mejora del aprendizaje. La pizarra digital que
+nadie sabe usar, la tableta que se reparte sin proyecto pedagógico, el
+aula del futuro que se inaugura con fotos para la prensa: son signos de
+modernidad, no herramientas de enseñanza.
+
+Manuel Castells describió la sociedad red como un espacio en el que la
+información y el conocimiento se han convertido en las principales
+fuentes de poder, y en el que la tecnología es un terreno de lucha entre
+intereses democratizadores y excluyentes. Sherry Turkle, tras décadas
+estudiando la relación de las personas con las máquinas, advirtió que la
+conectividad constante puede producir una nueva forma de soledad: estar
+juntos pero solos, esperando más de la tecnología y menos de los demás.
+Henry Jenkins, en cambio, subrayó el potencial de la cultura
+participativa, en la que los jóvenes dejan de ser consumidores pasivos
+para convertirse en creadores. Y Byung-Chul Han, en *En el enjambre*,
+contrapuso a ese optimismo la imagen de una multitud digital que no
+forma un nosotros, sino un enjambre de individuos aislados, incapaz de
+la acción colectiva y de la reflexión profunda.
+
+Estas perspectivas no se excluyen. Describen las distintas caras de un
+mismo fenómeno. La tecnología digital puede democratizar el acceso al
+conocimiento y empoderar a quienes lo usan, y puede también intensificar
+las desigualdades, fragmentar la atención y someter la experiencia a
+nuevas formas de control. Su carácter de *pharmakon* hace que sea las
+dos cosas a la vez.
+
+## Lo que la técnica hace con la escuela
+
+Si reunimos estas perspectivas, podemos formular algunas tesis sobre la
+técnica en la educación que orientarán los capítulos siguientes.
+
+Primera: la técnica no es neutral. No porque esté al servicio de
+intereses particulares, que también, sino porque toda técnica abre
+ciertas posibilidades y cierra otras, hace visibles ciertas cosas y
+oculta otras, favorece ciertas relaciones y dificulta otras. Una
+plataforma que organiza el aprendizaje en tareas con fecha de entrega,
+calificación numérica y registro de actividad, ya ha decidido qué es
+aprender antes de que ningún docente la use.
+
+Segunda: la técnica es constitutiva de lo humano. No hay una educación
+natural, anterior a la técnica, a la que podamos volver. La escritura,
+el libro, la pizarra, el cuaderno, son tecnologías. La pregunta no es si
+debe haber tecnología en la escuela, sino qué tecnologías, al servicio
+de qué fines y bajo el control de quién.
+
+Tercera: la técnica es un *pharmakon*. Cada tecnología digital que entra
+en el aula es, a la vez, remedio y veneno, y su efecto depende del
+cuidado con que se administre. Ese cuidado no puede delegarse en las
+empresas que las fabrican.
+
+Cuarta: la relación libre con la técnica exige comprenderla. Ni el
+rechazo tecnofóbico ni el entusiasmo acrítico son actitudes adecuadas.
+Lo que se necesita es una cultura técnica en el sentido de Simondon: un
+conocimiento de la génesis, el funcionamiento y los efectos de los
+objetos con los que vivimos.
+
+Con estas tesis en mente, podemos examinar ahora con más detalle lo que
+las tecnologías digitales están haciendo con la subjetividad de quienes
+aprenden y enseñan.
+
+# 11. El dividuo: personalización, performatividad e inteligencia artificial
+
+## Las sociedades de control
+
+En 1990, pocos años antes de su muerte, Gilles Deleuze publicó un texto
+de apenas unas páginas que se ha convertido en una de las piezas más
+proféticas de la filosofía del siglo XX: el «Post-scriptum sobre las
+sociedades de control». Allí sostenía que las sociedades disciplinarias
+descritas por Foucault, que habían alcanzado su apogeo a comienzos del
+siglo XX, estaban entrando en crisis, y que en su lugar estaba surgiendo
+otro tipo de sociedad.
+
+Las sociedades disciplinarias funcionaban mediante espacios de encierro:
+la familia, la escuela, el cuartel, la fábrica, el hospital, la prisión.
+El individuo pasaba de uno a otro, y en cada uno empezaba de cero. Cada
+espacio tenía sus propias reglas, su propio tiempo, su propia
+vigilancia. Las disciplinas eran moldes: daban forma a los individuos de
+una vez, según un modelo fijo.
+
+Las sociedades de control, en cambio, funcionan mediante modulaciones.
+Ya no hay moldes fijos, sino algo así como un molde autodeformante que
+cambia continuamente, de un momento a otro, como un tamiz cuya malla
+varía de un punto a otro. La fábrica es sustituida por la empresa, que
+es un alma, un gas. La escuela es sustituida por la formación
+permanente, y el examen, por el control continuo. En las sociedades
+disciplinarias nunca se terminaba de empezar; en las sociedades de
+control nunca se termina nada. La empresa, la formación y el servicio
+son estados metaestables y coexistentes de una misma modulación, como un
+deformador universal.
+
+Y aquí aparece la intuición más célebre del texto. Las sociedades
+disciplinarias tenían dos polos: la firma, que indicaba al individuo, y
+el número de matrícula, que indicaba su posición en una masa. En las
+sociedades de control, lo esencial ya no es una firma ni un número, sino
+una cifra: una contraseña. El lenguaje numérico del control está hecho
+de cifras que marcan el acceso a la información o su rechazo. Ya no nos
+encontramos ante el par masa-individuo. Los individuos se han convertido
+en «dividuos», y las masas, en muestras, datos, mercados o bancos.
+
+El dividuo es un ser divisible: un conjunto de datos que pueden
+separarse, recombinarse, analizarse por separado. No es una persona con
+una identidad coherente, sino un haz de variables: hábitos de consumo,
+historial de navegación, patrones de sueño, rendimiento académico,
+preferencias políticas, perfil de riesgo. Cada una de estas variables
+puede ser tratada independientemente, cruzada con las de otros dividuos,
+convertida en una predicción.
+
+Deleuze terminaba su texto con una frase dirigida a los jóvenes que
+parecía escrita para nuestras escuelas: muchos jóvenes reclaman
+extrañamente ser motivados, piden más cursos, más formación permanente.
+Les corresponde a ellos descubrir para qué se les usa, como sus mayores
+descubrieron, no sin esfuerzo, la finalidad de las disciplinas. Los
+anillos de una serpiente, decía, son aún más complicados que los
+agujeros de una topera.
+
+## La personalización
+
+Treinta años después, el diagnóstico de Deleuze se ha cumplido en buena
+medida, y la educación es uno de los terrenos donde se ve con más
+claridad. La palabra clave es «personalización».
+
+La personalización es quizá la promesa más seductora de la tecnología
+educativa. Gracias a algoritmos que analizan grandes cantidades de
+datos, se nos dice, cada estudiante podrá recibir una educación adaptada
+a su ritmo, a sus intereses, a sus necesidades. Se acabó la clase
+uniforme en la que todos aprenden lo mismo al mismo tiempo; cada uno
+tendrá su propio itinerario, su propio tutor virtual, sus propios
+contenidos. Es una promesa que recoge ideas pedagógicas muy valiosas
+---el respeto por la diversidad, la atención a cada estudiante, la
+crítica a la homogeneización---, y por eso resulta tan atractiva.
+
+Pero hay que mirar con atención lo que la personalización realmente
+hace. Un sistema personalizado no responde simplemente a las elecciones
+del estudiante: las anticipa, las orienta, las condiciona. Para
+personalizar, necesita conocer al estudiante, y para conocerlo, necesita
+registrar todo lo que hace. Cada respuesta, cada error, cada vacilación,
+cada clic se convierte en un dato que alimenta un modelo, y ese modelo
+decide qué se le mostrará a continuación. La personalización es
+inseparable de la vigilancia.
+
+Shoshana Zuboff ha descrito este mecanismo con el nombre de capitalismo
+de la vigilancia. Su tesis es que las grandes corporaciones digitales
+han descubierto una nueva materia prima: la experiencia humana
+convertida en datos de comportamiento. Una parte de esos datos se
+utiliza para mejorar los servicios que ofrecen; pero otra parte, que
+Zuboff llama excedente conductual, se utiliza para fabricar productos de
+predicción que se venden en mercados de comportamientos futuros. Y lo
+más inquietante es que, para que las predicciones sean más precisas, no
+basta con observar el comportamiento: hay que modificarlo, empujarlo
+suavemente en la dirección deseada. El capitalismo de la vigilancia no
+se limita a conocer nuestro comportamiento; lo produce.
+
+Cuando una plataforma educativa personaliza el aprendizaje, ¿qué está
+haciendo exactamente? Está construyendo un perfil de cada estudiante,
+prediciendo su rendimiento futuro, orientando sus elecciones hacia los
+caminos que el modelo considera más probables o más rentables. Y está,
+en el mismo movimiento, fragmentando su experiencia. El estudiante ya no
+forma parte de una clase que aprende junta, que comparte un mismo texto,
+una misma pregunta, una misma conversación. Está solo frente a su
+pantalla, recibiendo contenidos a medida, en un itinerario que nadie más
+recorre exactamente igual.
+
+## La burbuja
+
+La fragmentación tiene consecuencias que van más allá del aula. Al
+adaptarse a nuestras preferencias, los sistemas personalizados tienden a
+mostrarnos lo que ya nos gusta, lo que ya creemos, lo que ya sabemos.
+Crean burbujas informativas que refuerzan nuestras creencias y deseos
+preexistentes y que limitan nuestra exposición a la alteridad, al
+disenso, a la complejidad del mundo.
+
+Esto es especialmente grave en la educación, porque educar consiste
+precisamente en exponer a alguien a lo que no conoce, a lo que no
+esperaba, a lo que lo desafía. Una buena clase no es la que confirma lo
+que el estudiante ya pensaba, sino la que lo desconcierta. Un buen libro
+no es el que se parece a los que ya leímos, sino el que nos abre un
+mundo nuevo. La educación es el encuentro con lo otro. Y un sistema
+diseñado para mostrar a cada uno lo que corresponde a su perfil es, en
+ese sentido, profundamente antieducativo, por muy adaptado que esté a
+sus necesidades.
+
+Hay además una dimensión política. Un sujeto fragmentado, encerrado en
+su burbuja, es más fácil de gobernar. Su identidad se vuelve difusa, y
+su capacidad de acción colectiva se debilita. Si cada estudiante vive
+una experiencia escolar distinta, ¿qué tienen en común? ¿Desde dónde
+podrían reconocerse como un nosotros y actuar juntos? La fragmentación
+de la subjetividad es también una forma de despolitización: convierte al
+sujeto en un consumidor de experiencias prefabricadas, que se siente
+libre porque elige, sin advertir que las opciones entre las que elige
+han sido seleccionadas para él.
+
+Han lo dijo con su habitual contundencia: la personalización es también
+una forma de autoexplotación, porque los individuos participan
+activamente en su propia fragmentación al compartir datos e información
+personal, creyendo que eso les otorga libertad y autonomía. La ilusión
+de libertad intensifica el control.
+
+## La performatividad digital
+
+Hay otra dimensión de la subjetividad digital que merece atención, y
+para pensarla resulta útil la obra de Judith Butler. En *El género en
+disputa*, Butler sostuvo que el género no es una esencia que se expresa
+en ciertos comportamientos, sino el efecto de la repetición estilizada
+de actos, gestos y discursos regulados por normas sociales. No hacemos
+lo que hacemos porque seamos hombres o mujeres; llegamos a ser hombres o
+mujeres porque repetimos ciertos actos. La identidad es performativa: se
+produce en su propia actuación.
+
+Esta idea, que Butler desarrolló a propósito del género, tiene un
+alcance mucho más amplio, y el espacio digital lo pone de manifiesto de
+manera casi caricaturesca. En las redes sociales, la identidad se
+construye literalmente mediante la repetición de actos: publicaciones,
+fotos, historias, comentarios, reacciones. Y esos actos están regulados
+por normas que las plataformas no solo reflejan, sino que imponen y
+refuerzan mediante su arquitectura, sus algoritmos de visibilidad y sus
+sistemas de recompensa. Plataformas como Instagram o TikTok no solo
+facilitan la expresión; imponen también estándares estéticos, éticos y
+de comportamiento. Invitan, y a veces fuerzan, a repetir ciertas formas
+de ser, alineadas con ideales de productividad, de belleza o de éxito.
+
+Los jóvenes que crecen en este entorno aprenden muy pronto que su
+identidad es algo que se exhibe y se valora en público, que se mide en
+«me gusta», en seguidores, en visualizaciones. El yo proyectado en la
+pantalla se constituye a la vez como mercancía y como espectáculo. Y la
+búsqueda de reconocimiento a través de métricas cuantificables se
+convierte en una fuente permanente de ansiedad: nunca se tiene
+suficiente visibilidad, nunca se es suficientemente atractivo, nunca se
+ha publicado lo suficiente.
+
+Desde una perspectiva foucaultiana, esta performatividad puede
+entenderse como una forma de biopolítica: las plataformas digitales
+regulan no solo nuestras acciones, sino nuestras formas de ser, nuestras
+emociones, nuestros deseos. Maurizio Lazzarato ha mostrado que el
+capitalismo contemporáneo no solo organiza el trabajo y el consumo, sino
+que produce subjetividades acordes con sus exigencias. Y lo hace,
+precisamente, no mediante la imposición directa, sino mediante la
+repetición constante de prácticas que inducen a interiorizar y
+reproducir las normas.
+
+## El simulacro
+
+Jean Baudrillard ofrece todavía otra clave. En sus trabajos sobre el
+simulacro, sostuvo que en la sociedad contemporánea las representaciones
+ya no remiten a una realidad que las precede, sino que la producen y la
+sustituyen. Vivimos en una hiperrealidad en la que lo representado es
+más real que lo real.
+
+La personalización digital produce algo parecido. La información que
+recibimos y las decisiones que tomamos se basan en representaciones
+algorítmicas de nuestras preferencias, en modelos que el sistema ha
+construido a partir de nuestros datos. Ese modelo de nosotros mismos,
+ese doble digital, termina por condicionar nuestras interacciones y
+nuestras percepciones del mundo. Nos relacionamos con una versión de
+nosotros mismos que no hemos elegido y que, sin embargo, nos define. El
+estudiante que recibe un informe automático sobre su «estilo de
+aprendizaje», su «nivel de competencia» o su «riesgo de abandono» se
+enfrenta a un simulacro de sí mismo que tiene más autoridad que su
+propia experiencia.
+
+## La inteligencia artificial generativa
+
+En los últimos años, la irrupción de la inteligencia artificial
+generativa ha abierto un escenario inédito en la relación entre técnica,
+subjetividad y poder. A diferencia de las tecnologías anteriores,
+centradas en la personalización o la distribución de contenidos, los
+modelos generativos ---los grandes modelos de lenguaje, de imagen o de
+código--- no se limitan a adaptar: producen, de forma colaborativa con
+el usuario, textos, imágenes, argumentos, soluciones.
+
+Esto introduce un giro profundo en la relación con el saber. Los sujetos
+ya no solo delegan tareas, sino que externalizan aspectos fundamentales
+de su agencia creativa, cognitiva y expresiva. En términos de Stiegler,
+estamos ante una nueva fase de la exteriorización técnica, en la que la
+memoria, la imaginación y la producción simbólica se ven reconfiguradas
+por dispositivos que no funcionan solo como depósitos de conocimiento,
+sino como agentes que anticipan, completan y modelan la acción humana.
+
+Desde la perspectiva de Deleuze, se trata de una intensificación de la
+dividualización. El sujeto deja de ser una unidad coherente y se
+convierte en un nodo dentro de flujos de datos constantemente
+analizados, modulados y completados por sistemas automatizados. Al
+intervenir en procesos como la escritura, el diseño o el razonamiento,
+la inteligencia artificial convierte al sujeto en un ensamblaje técnico
+de entradas y salidas, en el que la agencia humana se entrelaza con la
+performatividad algorítmica.
+
+Esta coproducción no es neutral. Los modelos han sido entrenados con
+enormes corpus culturales seleccionados según lógicas editoriales y
+económicas específicas, y reproducen sus sesgos epistémicos, estéticos y
+axiológicos. Kate Crawford ha mostrado que la inteligencia artificial no
+es ni artificial ni inteligente en el sentido en que solemos imaginarla:
+es una industria material que depende de la extracción de minerales, de
+enormes cantidades de energía, del trabajo mal pagado de miles de
+personas que etiquetan datos, y de la apropiación de la producción
+cultural de millones. Es un instrumento de poder cultural que refleja y
+amplifica desigualdades estructurales bajo una apariencia de neutralidad
+creativa.
+
+Y en este contexto, la noción misma de aprendizaje adquiere una
+ambigüedad radical. ¿Qué significa aprender, escribir o crear cuando una
+parte del proceso está mediada por sistemas que anticipan, completan o
+directamente sustituyen la acción del sujeto? ¿Qué es un ensayo escrito
+por un estudiante cuando un modelo puede generarlo en segundos? ¿Qué es
+la originalidad, la competencia, la responsabilidad? Luciano Floridi ha
+sugerido que estas tecnologías exigen una redefinición profunda de estos
+conceptos. La coescritura con modelos generativos no es solo una
+cuestión técnica, sino un dilema ético y político que redefine quién
+puede hablar, qué voces se legitiman y bajo qué condiciones se produce
+el conocimiento.
+
+Hay incluso una nueva forma de gobierno algorítmico en juego. Las
+instrucciones que damos a la inteligencia artificial, los *prompts*,
+funcionan como actos performativos que generan discursos en conformidad
+con las lógicas internas del modelo. Creemos que somos nosotros quienes
+dirigimos a la máquina, pero la máquina define el espacio de lo que
+puede ser dicho, el tono, la estructura, los argumentos plausibles.
+Nuestra creatividad se vuelve una creatividad dirigida, y nuestra
+agencia, una agencia condicionada por sistemas que operan bajo lógicas
+opacas, corporativas, inscritas en valores de rentabilidad y eficiencia.
+
+## Más allá del pánico
+
+No quiero terminar este capítulo con una nota apocalíptica. Las
+tecnologías digitales, incluida la inteligencia artificial, también
+pueden ser utilizadas para expandir las capacidades humanas, para
+facilitar el acceso al conocimiento, para liberar tiempo de tareas
+mecánicas y dedicarlo a la conversación, la reflexión y la creación. Su
+carácter de *pharmakon* no desaparece.
+
+Pero precisamente por eso es imprescindible pensarlas con rigor. La
+alfabetización digital crítica adquiere aquí un espesor nuevo. No se
+trata solo de aprender a usar las herramientas, ni siquiera de aprender
+a detectar la desinformación o a proteger la privacidad. Se trata de
+comprender los ensamblajes sociotécnicos que estructuran nuestras
+prácticas: quién diseña los sistemas, con qué datos, con qué fines, con
+qué efectos sobre nuestra manera de pensar y de ser. Se trata, en el
+sentido de Simondon, de construir una cultura técnica que nos permita
+relacionarnos libremente con estos objetos.
+
+Y esto nos lleva a la cuestión de la vigilancia, que ha aparecido una y
+otra vez en estas páginas y que merece un capítulo propio. Porque la
+personalización, la performatividad y la inteligencia artificial tienen
+un denominador común: todas ellas dependen de que cada uno de nuestros
+actos sea registrado, almacenado y analizado.
+
+# 12. Vigilar jugando: datos, privacidad y gamificación
+
+## Del panóptico al panel de control
+
+En 1791, el filósofo inglés Jeremy Bentham publicó el proyecto de un
+edificio al que llamó Panóptico. Era una construcción circular, con
+celdas dispuestas en anillo alrededor de una torre central. Desde la
+torre, un vigilante podía ver el interior de cada celda, iluminada a
+contraluz, sin ser visto por quienes las ocupaban. Los presos nunca
+sabían si estaban siendo observados en un momento dado, pero sabían que
+podían estarlo en cualquier momento. Y esa incertidumbre bastaba para
+que se comportaran como si lo estuvieran siempre.
+
+Bentham pensaba que su diseño podía aplicarse a cárceles, pero también a
+fábricas, hospitales, manicomios y escuelas. Foucault vio en el
+panóptico el diagrama perfecto del poder disciplinario: un mecanismo que
+induce en el sujeto un estado consciente y permanente de visibilidad que
+garantiza el funcionamiento automático del poder. Lo esencial no es que
+haya alguien mirando, sino que el sujeto sepa que puede ser mirado. A
+partir de ese momento, el vigilante ya no es necesario: el propio sujeto
+se convierte en su vigilante. Interioriza la mirada y se corrige a sí
+mismo.
+
+Lo que Bentham soñaba con piedra y cristal, las tecnologías digitales lo
+han realizado con una eficacia que él no podía imaginar. Ya no hace
+falta una torre central ni celdas iluminadas. Cada clic, cada búsqueda,
+cada interacción, cada minuto de conexión es registrado y almacenado. La
+vigilancia ya no está concentrada en un edificio, sino distribuida por
+todos los aspectos de la vida cotidiana. Y es, además, invisible: no
+vemos la torre, no vemos al vigilante, ni siquiera sabemos qué se
+registra exactamente ni quién tiene acceso a ello.
+
+El sociólogo David Lyon ha hablado de una «cultura de la vigilancia»
+para describir esta situación. La vigilancia ya no es algo que ocurre en
+lugares específicos, ejercido por instituciones identificables. Es una
+dimensión constitutiva de las tecnologías que utilizamos, cuyo propósito
+central es recopilar y analizar datos. Y es también algo en lo que
+participamos activamente: vigilamos a otros, nos dejamos vigilar, nos
+exponemos voluntariamente, y lo hacemos a menudo con placer.
+
+## La escuela datificada
+
+En la escuela, este proceso tiene un nombre: datificación. La palabra
+designa la transformación de las prácticas educativas en datos
+susceptibles de ser registrados, cuantificados, analizados y utilizados
+para tomar decisiones.
+
+Pensemos en lo que registra hoy una plataforma escolar estándar. La
+asistencia, por supuesto, y las calificaciones. Pero también la hora a
+la que cada estudiante se conecta, cuánto tiempo pasa en cada actividad,
+cuántas veces abre un documento, cuándo entrega las tareas, cuántos
+intentos necesita para resolver un ejercicio, qué errores comete y con
+qué frecuencia. Los sistemas de detección de plagio registran los
+hábitos de escritura. Las aplicaciones de gestión de la conducta
+registran los comportamientos en clase. Los paneles de control presentan
+toda esta información en gráficos de colores que clasifican y comparan a
+estudiantes y grupos.
+
+Toda esta información se presenta como una ayuda para el docente, que
+podría así conocer mejor a sus estudiantes e intervenir a tiempo cuando
+alguno se queda atrás. Y en algunos casos puede serlo. Pero la
+datificación no es un proceso neutro de recopilación de información para
+la mejora pedagógica. Supone la transformación de interacciones íntimas,
+de procesos complejos de aprendizaje, de errores formativos y aciertos
+individuales, en información controlable y analizable, susceptible de
+ser utilizada para fines que exceden con mucho el ámbito educativo. El
+saber acumulado en forma de datos se convierte en un instrumento de
+poder capaz de generar perfiles detallados, predecir trayectorias
+académicas y profesionales, y ejercer nuevas formas de categorización y
+discriminación, a menudo invisibles para quienes son objeto de ellas.
+
+El examen, que Foucault había identificado como la técnica central de la
+escuela disciplinaria, se ha vuelto continuo. Ya no hay momentos de
+evaluación separados de momentos de aprendizaje: todo es evaluación,
+todo es registro. El expediente ya no se actualiza al final del
+trimestre, sino en tiempo real. Y el estudiante, consciente o
+inconscientemente de estar siendo monitoreado, interioriza la lógica de
+la comparación constante y la autooptimización. Ajusta su
+comportamiento, sus estrategias de estudio, sus procesos de aprendizaje
+a lo que es medible y valorado por el sistema, a menudo en detrimento de
+la curiosidad genuina, de la exploración, del pensamiento divergente.
+
+Hay una pregunta que conviene hacerse con insistencia: ¿hasta qué punto
+el profesorado y la propia administración educativa tienen control real
+sobre estos datos? ¿Conocen los algoritmos que los procesan? ¿Saben
+dónde se almacenan, durante cuánto tiempo, con qué otros datos se
+cruzan? En muchos casos, los datos de toda una comunidad educativa
+residen en servidores que no son auditables por ninguna entidad pública
+independiente, y que pertenecen a empresas cuyo modelo de negocio
+fundamental es la publicidad segmentada y la comercialización de
+perfiles.
+
+## Por qué importa lo privado
+
+Ante esta situación, una respuesta frecuente es la indiferencia: «No
+tengo nada que esconder». Si no hago nada malo, ¿qué me importa que
+registren lo que hago?
+
+Esta respuesta malinterpreta lo que está en juego. La privacidad no es
+solo un derecho individual a ocultar ciertas cosas, ni una protección
+para quienes tienen algo que esconder. Es una condición de la autonomía
+y del desarrollo de la subjetividad. Necesitamos espacios en los que no
+estemos siendo observados para poder pensar, ensayar, equivocarnos,
+cambiar de opinión, ser otros. Hannah Arendt hablaba de la necesidad de
+una zona de oscuridad, protegida de la luz implacable del espacio
+público, en la que puedan crecer las cosas que necesitan sombra para
+madurar. Los niños, decía, necesitan esa protección de manera especial.
+
+Aprender es, en buena medida, equivocarse. Y equivocarse requiere un
+espacio en el que el error no quede registrado para siempre, no se
+convierta en dato, no se integre en un perfil que podrá ser utilizado en
+el futuro. Un estudiante que sabe que cada uno de sus errores está
+siendo registrado y analizado aprenderá a evitar el riesgo, a no
+explorar, a hacer solo lo que sabe que hará bien. La vigilancia
+permanente produce sujetos prudentes, conformistas, que se autocensuran.
+Es el efecto disciplinario del panóptico, amplificado por la
+invisibilidad y la omnipresencia de la vigilancia digital.
+
+La constante recopilación de datos reduce el ámbito de lo privado,
+convirtiendo incluso las actividades más íntimas en datos susceptibles
+de ser monitoreados. Y al hacerlo, erosiona la capacidad de
+autorreflexión, que necesita, paradójicamente, de un espacio donde no se
+esté siendo reflejado. Una subjetividad permanentemente supervisada es
+una subjetividad que nunca está del todo a solas consigo misma, y que
+por eso mismo tiene dificultades para llegar a ser propia.
+
+Giorgio Agamben ha hablado del estado de excepción como paradigma de
+gobierno en nuestra época: la suspensión de derechos que se justifica
+por razones de seguridad y se vuelve permanente. La vigilancia digital
+tiene algo de esto. Se justifica en nombre de la seguridad, de la
+eficiencia, de la mejora del aprendizaje, de la protección de los
+menores. Y en ese nombre se suspenden, sin debate, garantías que en
+otros ámbitos consideraríamos fundamentales. Lo que sería escandaloso si
+lo hiciera un Estado ---registrar cada movimiento de cada niño y
+almacenarlo en servidores extranjeros--- se acepta con naturalidad
+cuando lo hace una plataforma escolar gratuita.
+
+## La rendición de cuentas convertida en control
+
+La cultura de la rendición de cuentas, convertida en pilar de las
+reformas educativas de corte neoliberal en todo el mundo, se ve
+intensificada y transformada por las tecnologías de vigilancia. Lo que
+pudo concebirse originalmente como un mecanismo legítimo para asegurar
+la transparencia en el uso de recursos públicos se ha instrumentalizado
+en muchos contextos, priorizando el control burocrático y la conformidad
+con indicadores cuantitativos sobre el aprendizaje significativo.
+
+Cuando los datos educativos más íntimos se transforman en etiquetas de
+riesgo ---cuando un estudiante es clasificado como «potencialmente
+problemático» o «en riesgo de abandono» a partir de patrones de datos,
+sin una comprensión de sus circunstancias---, o cuando el desempeño
+docente se evalúa según aspectos numéricos irrelevantes, como la
+cantidad de comentarios registrados en una plataforma con independencia
+de su calidad, estamos ante manifestaciones claras de un poder que
+normaliza, clasifica y jerarquiza. Los docentes se ven presionados a
+enseñar para el indicador. Los estudiantes aprenden a rendir para el
+registro.
+
+Algunos han llamado «auditocracia» a esta obsesión por medir y evaluar
+todos los aspectos de la vida institucional. La evaluación puede ser un
+recurso valioso para la mejora. Pero el énfasis excesivo en lo
+cuantitativo distorsiona los procesos educativos, generando un clima de
+estrés y de competencia que es exactamente lo contrario de lo que el
+aprendizaje necesita.
+
+## El control como juego
+
+Si la vigilancia es la cara visible del control digital, la gamificación
+es su cara amable. La palabra designa la aplicación de elementos propios
+de los juegos ---puntos, niveles, insignias, tablas de clasificación,
+recompensas, desafíos--- a contextos que no son lúdicos, como el trabajo
+o la educación. Se presenta como una herramienta innovadora para motivar
+a los estudiantes, para hacer el aprendizaje más divertido, para
+aumentar la participación.
+
+Plataformas como ClassDojo, que asigna puntos positivos y negativos a
+los comportamientos de los estudiantes y los comunica en tiempo real a
+las familias, o Kahoot, que convierte las preguntas de clase en
+concursos con clasificación, son hoy habituales en muchas aulas. Los
+estudiantes acumulan puntos, suben de nivel, desbloquean logros. Y
+efectivamente participan más, se esfuerzan más, se divierten más.
+
+Pero conviene preguntarse qué se está enseñando en realidad. La
+antropóloga Natasha Dow Schüll estudió durante años el diseño de las
+máquinas tragamonedas de Las Vegas, y mostró cómo estaban concebidas
+para inducir en los jugadores un estado de absorción, que ellos mismos
+llamaban «la zona», en el que perdían la noción del tiempo y seguían
+jugando de manera compulsiva. Los mecanismos que utilizaban
+---recompensas variables e imprevisibles, retroalimentación inmediata,
+sensación de progreso, eliminación de los momentos de pausa--- son
+exactamente los mismos que hoy se utilizan en las aplicaciones de redes
+sociales y, en versiones más suaves, en muchas herramientas de
+gamificación educativa. La gamificación condiciona a los usuarios para
+actuar de acuerdo con expectativas predeterminadas.
+
+Desde una perspectiva filosófica, la gamificación es una forma de
+gubernamentalidad: una técnica para dirigir la conducta de los
+individuos, convirtiendo el aprendizaje en un proceso de acumulación de
+puntos, recompensas y logros, orientado hacia objetivos que no han sido
+definidos por quienes juegan. Deleuze había señalado que en las
+sociedades de control el poder opera mediante modulaciones continuas en
+lugar de restricciones cerradas. La gamificación es un ejemplo perfecto:
+un control suave que utiliza recompensas para moldear las conductas de
+modo que parezcan voluntarias. En las sociedades disciplinarias, el
+poder imponía reglas y castigaba su incumplimiento. En las sociedades de
+control, el poder seduce y recompensa, y logra que los individuos deseen
+actuar según las normas establecidas.
+
+Herbert Marcuse abrió *El hombre unidimensional*, en 1964, con una frase
+que parece escrita para describir la gamificación: una ausencia de
+libertad cómoda, suave, razonable y democrática prevalece en la
+civilización industrial avanzada. Las sociedades avanzadas, sostenía
+Marcuse, generan formas de control que los propios sujetos perciben como
+placenteras o necesarias. La gamificación convierte el control en una
+experiencia lúdica y gratificante, de modo que los individuos
+interiorizan normas y objetivos sin cuestionarlos, con la ilusión de
+estar participando libremente.
+
+Hay, además, un efecto sobre los valores. La gamificación fomenta una
+cultura de competencia constante, en la que el valor del individuo se
+mide por la acumulación de puntos y logros. Las tablas de clasificación
+enseñan que lo importante es estar por encima de los demás. Los sistemas
+de recompensa enseñan que lo que vale la pena hacer es lo que se
+recompensa. Y al convertir el aprendizaje en un juego de puntos, se
+trivializa su importancia, reduciendo su valor a lo que puede
+cuantificarse e ignorando sus dimensiones éticas, políticas y
+culturales. Un estudiante que lee para ganar puntos no está aprendiendo
+a amar la lectura; está aprendiendo a ganar puntos.
+
+## Jugar de verdad
+
+Y, sin embargo, sería un error confundir la gamificación con el juego.
+De hecho, la gamificación es, en cierto sentido, la negación del juego.
+
+Johan Huizinga, en *Homo ludens*, definió el juego como una actividad
+libre, que se desarrolla dentro de unos límites de tiempo y espacio,
+según reglas libremente aceptadas, y que tiene su fin en sí misma. El
+juego no sirve para nada fuera de sí. Se juega por jugar. Y precisamente
+por eso es un espacio de libertad: durante el juego se suspenden las
+reglas del mundo ordinario y se exploran otras posibilidades. Huizinga
+sostenía que buena parte de la cultura humana ---el derecho, la poesía,
+la filosofía, el arte--- había nacido del juego.
+
+La gamificación toma la forma del juego, pero le arranca su esencia.
+Convierte una actividad libre en un instrumento al servicio de fines
+externos. Los puntos no se ganan por el placer de jugar, sino para
+obtener una recompensa o evitar un castigo. Las reglas no son libremente
+aceptadas, sino impuestas por el diseñador del sistema. Y el fin no está
+en el juego mismo, sino en la conducta que se quiere producir.
+
+Por eso es necesario distinguir entre la lógica instrumental de la
+gamificación y otras prácticas pedagógicas basadas en el juego que
+emergen desde perspectivas críticas, creativas e incluso filosóficas.
+Estas prácticas no buscan controlar el comportamiento, sino abrir la
+imaginación, crear mundos alternativos, ensayar otras formas de ser y de
+estar juntos. El juego, entendido así, no es una técnica de motivación,
+sino un espacio de experimentación en el que se suspende el orden del
+mundo para explorar sus alternativas. Y puede convertirse en una forma
+de resistencia frente al individualismo competitivo y al conductismo
+tecnocrático que caracterizan muchas propuestas de innovación educativa.
+
+Devolver el juego al juego, sustraerlo a la lógica de la gamificación,
+sería un buen ejemplo de lo que Agamben llamaba profanación: restituir
+al uso libre lo que había sido capturado por un dispositivo.
+
+# 13. El saber como mercancía y la desigualdad que no se ve
+
+## Un bien de consumo
+
+La mercantilización de la educación es el proceso por el cual la
+escolarización y la formación se conciben cada vez más como servicios
+que responden a dinámicas de oferta y demanda, en lugar de como derechos
+o bienes comunes. El fenómeno no es nuevo, pero se ha intensificado de
+manera notable en la era digital.
+
+El conocimiento se comercializa y se percibe como un producto que mejora
+la empleabilidad. Plataformas de cursos en línea ofrecen certificaciones
+que prometen abrir puertas en el mercado laboral. Las universidades
+compiten en rankings internacionales por atraer estudiantes que pagan.
+Las escuelas se publicitan con sus resultados en pruebas estandarizadas
+y con la lista de tecnologías de las que disponen. Las familias eligen,
+comparan, invierten. Y los estudiantes aprenden a pensar su formación
+como la acumulación de credenciales que tendrán valor en un mercado.
+
+Esta lógica transforma las relaciones pedagógicas en transacciones. El
+estudiante se convierte en cliente, el docente en proveedor de un
+servicio, el conocimiento en un producto. Y una transacción tiene una
+estructura muy distinta de una relación educativa. En una transacción,
+cada parte busca su propio beneficio, y la relación termina cuando el
+intercambio se completa. En una relación educativa, en cambio, algo se
+transforma en ambas partes, y lo que se intercambia no puede medirse ni
+devolverse. Un cliente insatisfecho puede pedir que le devuelvan su
+dinero. Un estudiante que no ha comprendido algo no puede pedir que le
+devuelvan su tiempo, pero puede, si la relación es verdaderamente
+educativa, volver a intentarlo junto a alguien que no lo trata como un
+cliente.
+
+## Lo que el dinero no puede comprar
+
+Martha Nussbaum ha criticado con fuerza esta visión mercantilista. En
+*Sin fines de lucro*, sostiene que la educación orientada exclusivamente
+al crecimiento económico tiende a desatender las capacidades que una
+democracia necesita para sobrevivir: el pensamiento crítico, la
+capacidad de trascender las lealtades locales y pensar como ciudadanos
+del mundo, la imaginación narrativa que permite ponerse en el lugar del
+otro. Estas capacidades se cultivan sobre todo a través de las
+humanidades y las artes, precisamente las disciplinas que los sistemas
+educativos orientados al mercado consideran prescindibles. Una educación
+que solo forma para el empleo, advierte Nussbaum, produce generaciones
+de máquinas útiles en lugar de ciudadanos capaces de pensar por sí
+mismos, de criticar la tradición y de comprender el significado de los
+sufrimientos y logros ajenos.
+
+Michael Sandel, en otro registro, ha señalado que hay bienes que se
+corrompen cuando se convierten en mercancías. Pagar a los niños por leer
+libros puede aumentar el número de libros leídos, pero enseña a los
+niños a ver la lectura como un trabajo que se hace por dinero, y no como
+una actividad valiosa en sí misma. Cuando la lógica del mercado entra en
+ámbitos que se regían por otras normas, no solo cambia la distribución
+de esos bienes: cambia su naturaleza.
+
+Marina Garcés ha insistido en que la educación debe ser un espacio para
+la construcción colectiva del conocimiento y para el desarrollo de una
+ciudadanía crítica, y no un proceso de acumulación de credenciales. Y
+bell hooks recordó que la educación como práctica de la libertad exige
+un compromiso con la transformación de las comunidades, no solo con el
+éxito individual de quienes logran salir de ellas.
+
+## La economía de las plataformas
+
+En el contexto digital, la mercantilización adopta formas nuevas. Las
+grandes corporaciones tecnológicas ofrecen sus herramientas a las
+escuelas de manera gratuita o a precios muy reducidos. Correo
+electrónico, almacenamiento en la nube, procesadores de texto, aulas
+virtuales, todo integrado en un ecosistema coherente y fácil de usar.
+Para administraciones educativas con presupuestos ajustados, la oferta
+es difícil de rechazar.
+
+Pero, como suele decirse, cuando el producto es gratuito, el producto
+eres tú. Lo que estas empresas obtienen a cambio no es dinero, o no solo
+dinero. Obtienen datos, y obtienen algo todavía más valioso: el hábito.
+Millones de niños y jóvenes aprenden a trabajar, a comunicarse y a
+organizar su vida dentro de un ecosistema tecnológico concreto. Cuando
+terminen su escolaridad, ese ecosistema les resultará natural, y
+seguirán usándolo. La escuela se convierte así en un canal de captación
+de usuarios.
+
+Este modelo genera además una dependencia institucional. Las escuelas
+que adoptan un ecosistema tecnológico privativo quedan atadas a él: sus
+documentos, sus procesos, su organización interna dependen de
+herramientas que no controlan. Cambiar de proveedor se vuelve costoso y
+complicado. Es lo que se conoce como efecto de cautividad tecnológica, o
+*lock-in*. Y con esa dependencia se pierde algo que podríamos llamar
+soberanía educativa: la capacidad de las comunidades educativas de
+decidir sobre las herramientas con las que trabajan, de adaptarlas a sus
+necesidades, de conocer y controlar lo que hacen.
+
+Richard Stallman, fundador del movimiento del software libre, lleva
+décadas advirtiendo que las escuelas tienen una responsabilidad especial
+en este terreno. Si la escuela enseña a usar software privativo, está
+formando a los estudiantes en la dependencia; si enseña a usar software
+libre, puede formarlos en la autonomía y la cooperación. El software
+libre permite estudiar cómo funciona un programa, modificarlo,
+compartirlo. Es, en este sentido, una tecnología coherente con lo que la
+educación debería ser: un bien común que se transmite y se transforma.
+
+## El currículo oculto de la eficiencia
+
+Hay un aspecto de la mercantilización que es particularmente difícil de
+percibir, porque no se expresa en ningún contenido explícito. Aunque las
+instituciones no declaren la promoción de valores mercantiles, la
+implantación de pruebas estandarizadas, la formación en competencias
+orientadas a la empleabilidad o la adopción acrítica de plataformas
+diseñadas con mentalidad empresarial pueden reproducir la idea de que la
+educación es, ante todo, una inversión personal. Es el currículo oculto:
+lo que la escuela enseña sin proponérselo, a través de su organización y
+de sus rutinas.
+
+Las herramientas digitales tienen su propio currículo oculto. Detrás de
+cada programa hay criterios de diseño que orientan la manera de
+interactuar y de concebir el aprendizaje. Cuando se privilegia la
+inmediatez, la comparación de resultados y la retroalimentación
+automatizada, la educación corre el peligro de reducirse a un
+intercambio instrumental de contenidos, dejando de lado la reflexión
+profunda y la formación ética. La plataforma enseña, sin decirlo, que
+aprender es completar tareas, que el conocimiento es algo que se entrega
+en un plazo, que el valor de un trabajo se expresa en una cifra.
+
+## La brecha digital es más que una brecha
+
+La mercantilización tiene un reverso inevitable: la desigualdad. Si la
+educación es un bien de consumo, quienes tienen más recursos pueden
+consumir más y mejor. Y la digitalización, que se presentó a menudo como
+una herramienta para democratizar el acceso al conocimiento, ha tendido
+en la práctica a reproducir, amplificar y transformar las desigualdades
+preexistentes.
+
+La expresión «brecha digital» suele entenderse en un sentido muy
+limitado: hay quienes tienen acceso a dispositivos e internet, y quienes
+no. Esta es, sin duda, la primera capa de la desigualdad, y no ha
+desaparecido. Hay hogares sin ordenador, escuelas sin conexión estable,
+estudiantes que hacen las tareas en un teléfono compartido con toda la
+familia. La pandemia de 2020, cuando de un día para otro la escuela se
+trasladó a las pantallas, lo hizo dolorosamente visible: millones de
+estudiantes en todo el mundo quedaron sencillamente desconectados de su
+educación.
+
+Pero el sociólogo Jan van Dijk y otros investigadores han mostrado que
+la brecha digital tiene varias capas más. Está la brecha de uso,
+relacionada con las habilidades efectivas para utilizar las tecnologías.
+Y está la brecha de apropiación, que alude a la capacidad de comprender,
+transformar y aprovechar la tecnología de manera crítica y emancipadora.
+Dos estudiantes pueden tener el mismo dispositivo y la misma conexión, y
+sin embargo uno lo usará para crear, investigar y participar en la vida
+pública, y el otro para consumir pasivamente contenidos diseñados para
+retener su atención. Y esa diferencia no depende de la tecnología, sino
+del capital cultural, del acompañamiento familiar, de la calidad de la
+escuela. Es decir: de las mismas desigualdades de siempre.
+
+Los programas que reparten ordenadores a gran escala sin acompañamiento
+pedagógico ni enfoque crítico suelen caer en lo que podríamos llamar
+fetichismo tecnológico: la creencia de que la mera presencia de los
+aparatos producirá automáticamente mejoras en el aprendizaje. La
+experiencia de muchos de esos programas ha mostrado que no es así. La
+tecnología sin un proyecto pedagógico no transforma la educación; en el
+mejor de los casos, la decora.
+
+## La responsabilización del desigual
+
+La desigualdad digital se relaciona de manera muy estrecha con la
+autorresponsabilización que promueve el neoliberalismo. Cuando el acceso
+a la tecnología y su buen aprovechamiento se presentan como una cuestión
+de esfuerzo individual o de buena gestión de los recursos, se
+invisibilizan las carencias estructurales y la necesidad de políticas
+públicas robustas. Se culpa a los estudiantes y a los docentes que no
+logran buenos resultados en entornos digitales, sin reconocer los
+condicionantes socioeconómicos que limitan sus posibilidades.
+
+La meritocracia, en este contexto, funciona como una ideología de
+legitimación. Si el sistema es justo y las oportunidades son iguales,
+entonces quien fracasa es porque no se ha esforzado lo suficiente. Y
+quien triunfa merece su triunfo. Pero las oportunidades no son iguales,
+y el sistema no es justo. La meritocracia convierte las ventajas
+heredadas en méritos personales, y las desventajas heredadas en fracasos
+personales. Y lo hace con la ayuda de instrumentos de medición que
+parecen objetivos, pero que miden, en buena medida, el origen social de
+quienes son medidos.
+
+## Algoritmos que discriminan
+
+A todo esto se suma una forma más sutil de desigualdad: la que producen
+los propios sistemas tecnológicos. Investigadoras como Safiya Umoja
+Noble o Ruha Benjamin han mostrado que los algoritmos no son neutrales.
+Se entrenan con datos que reflejan las desigualdades y los prejuicios
+del mundo social, y tienden a reproducirlos, a menudo amplificándolos.
+Benjamin habla de un «nuevo código Jim Crow», en referencia a las leyes
+de segregación racial de los Estados Unidos: un conjunto de tecnologías
+que codifican la discriminación bajo una apariencia de objetividad
+técnica.
+
+En la educación, esto puede significar sistemas de predicción del
+rendimiento que penalizan a estudiantes de ciertos barrios, de ciertos
+orígenes, de ciertas lenguas maternas, simplemente porque los datos
+históricos muestran que estudiantes como ellos han tenido peores
+resultados. El algoritmo no discrimina por maldad, sino por eficiencia:
+predice el futuro a partir del pasado, y al hacerlo, ayuda a que el
+futuro se parezca al pasado. Las tecnologías educativas, advierte
+Benjamin, refuerzan jerarquías y privilegian a quienes ya tienen
+ventajas estructurales.
+
+Hay, por último, una desigualdad epistémica y cultural que pasa casi
+siempre desapercibida. Cuando toda la socialización digital de una
+comunidad educativa ocurre a través de una única plataforma o ecosistema
+tecnológico, como resultado de decisiones institucionales centralizadas
+o de la posición dominante de ciertas corporaciones, se limita la
+exposición de estudiantes y docentes a una diversidad de recursos, de
+perspectivas pedagógicas, de formas de conocimiento y de interacción. Se
+consolida la dependencia respecto de unos pocos actores hegemónicos y se
+reduce la capacidad de desarrollar soluciones más contextualizadas y
+soberanas. El dispositivo digital neoliberal no solo distribuye
+desigualmente el acceso a los recursos materiales: moldea también las
+maneras de conocer, de aprender y de relacionarse con el saber.
+
+## La justicia como criterio
+
+¿Qué haría falta para que la educación digital fuera justa? Desde luego,
+no basta con repartir dispositivos. Haría falta una formación integral
+para su uso, que incluyera la comprensión crítica de lo que hacen. Haría
+falta adaptar los contenidos a las realidades locales. Haría falta que
+las comunidades educativas participaran en el diseño y la implementación
+de las políticas, en lugar de recibirlas ya hechas. Haría falta, en
+suma, someter la integración de tecnologías privadas en el ámbito
+público a un examen crítico, preguntando en cada caso quién se beneficia
+y qué valores se promueven o se desplazan.
+
+Y haría falta, sobre todo, recuperar una idea que la racionalidad
+neoliberal ha ido erosionando: que la educación es un derecho y un bien
+común, y no un servicio que se compra. Esa idea no es nueva. Es la que
+defendieron, cada una en su época, Christine de Pizan y Mary
+Wollstonecraft, Comenio y Condorcet, Dewey y Freire. Es la que gritaron
+los estudiantes chilenos en las calles. Y es, como veremos en la última
+parte de este libro, el punto de partida de toda resistencia.
+
+# Cuarta parte. Grietas {#cuarta-parte.-grietas .unnumbered .parte}
+
+> *Donde hay poder, hay resistencia.*
+
+# 14. Donde hay poder, hay resistencia
+
+## La resistencia no está fuera
+
+Después de once capítulos dedicados a describir cómo los dispositivos
+educativos fabrican sujetos, podría parecer que no queda espacio para
+nada más. Si el poder produce incluso nuestros deseos, si nos gobierna a
+través de nuestra propia libertad, si se ha vuelto invisible y
+omnipresente, ¿desde dónde podríamos resistirlo? ¿No es la resistencia
+misma un efecto del dispositivo, una ilusión de autonomía que el sistema
+tolera porque no lo amenaza?
+
+Esta objeción es seria, y muchos lectores de Foucault la han formulado.
+Pero descansa en un malentendido sobre lo que es el poder. Foucault
+nunca pensó el poder como una sustancia que alguien posee y otro padece,
+ni como una estructura cerrada que lo controla todo. Lo pensó como una
+red de relaciones de fuerza, móviles, inestables, siempre en tensión. Y
+en esa red, la resistencia no es algo que venga de fuera, sino algo que
+forma parte del poder mismo.
+
+En el primer volumen de la *Historia de la sexualidad*, Foucault lo dice
+con una claridad que no deja lugar a dudas: donde hay poder, hay
+resistencia, y no obstante, o mejor dicho, por eso mismo, esta nunca
+está en posición de exterioridad respecto del poder. Las relaciones de
+poder solo pueden existir en función de una multiplicidad de puntos de
+resistencia, que desempeñan el papel de adversario, de blanco, de apoyo,
+de saliente para una aprehensión. No hay un lugar del gran Rechazo, un
+alma de la revuelta, un foco de todas las rebeliones. Hay resistencias,
+en plural, que son casos únicos: posibles, necesarias, improbables,
+espontáneas, salvajes, solitarias, concertadas, rastreras, violentas,
+irreconciliables, rápidas para la transacción, interesadas o
+sacrificiales.
+
+Esto tiene una consecuencia importante. Si la resistencia no está fuera
+del poder, entonces no hay que buscarla en un lugar puro, incontaminado,
+ajeno al dispositivo. Hay que buscarla dentro, en los pliegues, en las
+fisuras, en los puntos donde el dispositivo no termina de cerrar. Como
+decía Deleuze, todo dispositivo tiene líneas de fuga. La tarea es
+aprender a verlas y a trazarlas.
+
+## El arte de no ser gobernado así
+
+En una conferencia de 1978, titulada «¿Qué es la crítica?», Foucault
+propuso una definición de la actitud crítica que me parece especialmente
+valiosa para pensar la educación. La crítica, dijo, es el arte de no ser
+gobernado de tal modo, por tales personas, en nombre de tales
+principios, con miras a tales objetivos y por medio de tales
+procedimientos. No es el rechazo de todo gobierno, que sería una
+fantasía, sino el rechazo de una forma particular de gobierno. No es
+decir «no quiero ser gobernado», sino «no quiero ser gobernado así».
+
+Esta definición tiene la virtud de ser precisa y modesta a la vez. La
+crítica no necesita una alternativa total ya elaborada para empezar a
+actuar. Le basta con identificar un modo de gobierno concreto y negarse
+a él. Un docente que decide no utilizar una herramienta de seguimiento
+conductual porque considera que convierte su clase en un sistema de
+premios y castigos está ejerciendo la crítica en este sentido. Un
+estudiante que se niega a que su ensayo sea reducido a una puntuación
+automática, también. Una comunidad escolar que decide debatir
+públicamente qué plataforma digital adoptar, en lugar de aceptar la que
+viene impuesta, también.
+
+Foucault habló también de «contraconductas»: formas de conducirse que se
+oponen a las maneras en que se pretende conducir a los individuos. Las
+contraconductas no son necesariamente grandes actos heroicos. Pueden ser
+pequeños desvíos, usos imprevistos, rechazos discretos, maneras de hacer
+las cosas que no coinciden exactamente con lo que el dispositivo espera.
+La historia está llena de ellas, aunque rara vez quedan registradas.
+
+## Resistencias cotidianas
+
+En la escuela, estas contraconductas adoptan formas muy diversas.
+Algunas son individuales y apenas visibles. El docente que no se adapta
+a ciertas imposiciones tecnológicas porque las percibe como
+pedagógicamente irrelevantes o incluso perjudiciales. El rechazo a la
+tecnología banal, que se experimenta como una distracción, una
+sobrecarga de trabajo sin valor añadido o una moda pasajera. La decisión
+de seguir dedicando tiempo a la conversación lenta, a la lectura en
+papel, a la escritura a mano, aunque no generen ningún dato.
+
+Estas actitudes son fácilmente descalificadas como «resistencia al
+cambio» o «tecnofobia». Y a veces lo son. Pero pueden interpretarse
+también, desde una perspectiva más atenta, como una defensa legítima de
+la autonomía profesional, de un saber pedagógico acumulado y de un
+sentido humanista de la labor educativa. Quien ha visto durante años lo
+que funciona y lo que no en un aula tiene derecho a desconfiar de la
+última herramienta que promete revolucionarlo todo.
+
+Hay también tácticas más sutiles e ingeniosas. Docentes que encuentran
+maneras de cumplir formalmente con las exigencias burocráticas de
+registro y evaluación sin dejar que esas exigencias determinen lo que
+ocurre realmente en clase. Que rellenan los indicadores para que el
+sistema los deje en paz, y luego hacen lo que consideran valioso. El
+historiador Michel de Certeau llamaba «tácticas» a estas maneras de
+hacer de los débiles, que no tienen un lugar propio desde el cual
+oponerse al poder, pero que aprovechan las ocasiones, juegan con el
+terreno del otro, introducen pequeñas desviaciones en el uso de lo que
+se les impone. Las tácticas no transforman el sistema, pero crean
+márgenes de libertad, de creatividad y de sentido dentro de él.
+
+Y hay, por último, resistencias que utilizan la propia tecnología contra
+la lógica que la domina. Los estudiantes chilenos de 2006 y 2011
+organizaron una de las mayores movilizaciones de la historia reciente de
+su país en buena medida a través de las redes sociales y los teléfonos
+móviles. Los mismos dispositivos que la escuela concebía como
+instrumentos de distracción o de control se convirtieron en herramientas
+para coordinar ocupaciones, convocar marchas, articular demandas y
+comunicar al país lo que estaba ocurriendo. La tecnología, en sus manos,
+fue reapropiada para fines contrahegemónicos. Algo parecido ocurre, a
+otra escala, con colectivos de docentes que utilizan software libre, que
+crean y comparten recursos educativos abiertos, que construyen redes de
+intercambio entre pares sin depender de plataformas corporativas.
+Hackear, en este sentido, no significa necesariamente violar la ley,
+sino encontrar usos alternativos, imprevistos o subversivos para las
+herramientas disponibles.
+
+## Contra la medición
+
+Una de las formas de resistencia más visibles de las últimas décadas ha
+sido la oposición a la cultura de la medición. En distintos países,
+comunidades educativas y organizaciones han impulsado boicots a las
+pruebas estandarizadas. En Estados Unidos, el movimiento de *opt-out*
+llevó a cientos de miles de familias a negarse a que sus hijos
+realizaran los exámenes estatales. En Chile, la campaña «Alto al SIMCE»,
+impulsada por académicos, docentes y estudiantes, cuestionó la prueba
+nacional que durante décadas había servido para clasificar a las
+escuelas y alimentar el mercado educativo.
+
+Estas resistencias no rechazan la evaluación en sí misma. Reclaman otra
+evaluación: más holística, orientada al desarrollo humano, formativa en
+lugar de clasificatoria. Hay proyectos que exploran la evaluación
+cualitativa, que reconocen la diversidad de contextos y la riqueza de
+procesos de aprendizaje que ningún test numérico puede capturar. Y abren
+un debate sobre cómo articular una rendición de cuentas que, en lugar de
+ejercer una presión unilateral desde arriba, fortalezca la
+responsabilidad compartida y la participación democrática de todos los
+actores.
+
+## La ética del cuidado
+
+Muchas de estas resistencias se inscriben en un debate más amplio sobre
+la ética del cuidado en la educación. Desde la perspectiva feminista de
+autoras como Carol Gilligan o Nel Noddings, el cuidado se concibe como
+una actitud moral que da prioridad a la atención, a la reciprocidad y a
+la protección de los más vulnerables, frente a una ética abstracta de
+principios y derechos. Noddings sostuvo que la tarea principal de la
+escuela debería ser cuidar a los estudiantes y enseñarles a cuidar: de
+sí mismos, de los otros, de los animales y las plantas, del mundo, de
+las ideas.
+
+Trasladar esta ética a la educación digital implica, por un lado,
+rechazar la lógica de la sobreexposición, de la hiperconexión y de la
+inmediatez extrema, y promover tiempos de desconexión y de reflexión.
+Por otro, implica repensar las plataformas y las metodologías de tal
+modo que la dignidad de las personas y las relaciones de confianza
+ocupen el centro del acto educativo. En la práctica, esto puede
+traducirse en iniciativas muy concretas: reducir la carga de tareas en
+línea, establecer horarios en los que la comunicación digital entre la
+escuela y las familias se interrumpe, introducir pausas que cuiden la
+salud mental de toda la comunidad escolar.
+
+Algunas instituciones han empezado a cuestionar incluso el mantra de la
+productividad continua, dando cabida a algo que parecía impensable: el
+aburrimiento. El aburrimiento creativo, la contemplación, el tiempo
+vacío en el que no pasa nada, son condiciones necesarias para la
+maduración intelectual y afectiva. Byung-Chul Han, citando a Walter
+Benjamin, recordaba que el aburrimiento profundo es el pájaro de sueño
+que incuba el huevo de la experiencia, y que el más leve susurro en el
+bosque de hojas lo ahuyenta. Una escuela sin aburrimiento es una escuela
+sin experiencia.
+
+Aunque estas corrientes son todavía minoritarias frente al discurso
+hegemónico, representan semillas de cambio que podrían alimentar un
+paradigma educativo distinto.
+
+## Los límites de la resistencia individual
+
+Pero hay que ser honestos sobre los límites de todas estas prácticas.
+Las resistencias individuales, por valiosas que sean, se enfrentan a una
+asimetría de fuerzas abrumadora. Un docente que se niega a utilizar una
+plataforma corporativa puede ser sancionado, o simplemente quedarse
+aislado, sin poder comunicarse con sus colegas ni con las familias que
+sí la usan. Una familia que se niega a que su hijo use una cuenta de una
+gran empresa tecnológica puede descubrir que, sin ella, el niño no puede
+acceder a sus tareas. La dependencia institucional de las plataformas
+privativas, las inercias del sistema, la presión de las políticas
+educativas a gran escala, hacen que la resistencia aislada tenga un
+alcance muy limitado.
+
+Además, la resistencia individual corre el riesgo de reproducir la misma
+lógica que pretende combatir. Si cada uno resiste por su cuenta, si la
+resistencia se convierte en una elección personal de estilo de vida
+---desconectarse, educar a los propios hijos sin pantallas, elegir una
+escuela alternativa---, entonces se convierte en un privilegio de
+quienes pueden permitírselo, y deja intacto el sistema para todos los
+demás. La desconexión puede convertirse en un nuevo bien de lujo.
+
+Por eso, la resistencia más eficaz y con mayor potencial transformador
+tiene que ser colectiva. La revitalización de los sindicatos docentes,
+la creación de redes de educadores críticos, el fortalecimiento de
+movimientos estudiantiles autónomos, la conformación de comunidades de
+práctica que exploren alternativas pedagógicas y tecnológicas: estas son
+las vías que permiten cuestionar las políticas hegemónicas, negociar de
+manera más equitativa las condiciones de uso de la tecnología en las
+escuelas y promover alternativas más democráticas, inclusivas y
+soberanas. Lo que un docente no puede hacer solo, puede hacerlo un
+claustro. Lo que una escuela no puede decidir sola, puede decidirlo una
+red de escuelas. Lo que una comunidad no puede conseguir sola, puede
+exigirlo un movimiento.
+
+## Una ciudadanía digital crítica
+
+Esta necesidad de acción colectiva se vincula estrechamente con la idea
+de una ciudadanía digital crítica. La expresión «ciudadanía digital» se
+ha vuelto habitual en los documentos oficiales, pero suele entenderse en
+un sentido muy pobre: un conjunto de buenas prácticas en el uso de
+internet, de normas de cortesía en línea, de precauciones de seguridad.
+Una ciudadanía digital crítica es algo muy distinto.
+
+Implica, en primer lugar, comprender las dimensiones económicas del
+entorno digital: quién es propietario de las infraestructuras y las
+plataformas, quién se beneficia de la extracción y el análisis de los
+datos educativos, cómo funcionan los modelos de negocio de las grandes
+corporaciones. Implica, en segundo lugar, comprender sus dimensiones
+políticas: cómo se utilizan las tecnologías para el control social, la
+vigilancia, la influencia en la opinión pública, la participación o la
+restricción de libertades. E implica, en tercer lugar, comprender sus
+dimensiones éticas: la privacidad, la equidad en el acceso y el uso, la
+responsabilidad y la transparencia de los algoritmos, los sesgos
+discriminatorios de los sistemas de inteligencia artificial.
+
+Esta ciudadanía digital crítica es, en el fondo, la condición de
+posibilidad de la reapropiación de la técnica que proponía Simondon.
+Solo quien comprende los objetos técnicos puede relacionarse libremente
+con ellos: no como un efecto pasivo del dispositivo, sino como un agente
+capaz de modificarlo, adaptarlo y orientarlo hacia fines más humanos y
+más justos. Y por eso su lugar natural es la escuela. Dado que el
+mercado no suele fomentar este tipo de cuestionamiento, recae en la
+escuela la responsabilidad, y también la oportunidad, de cultivar la
+autonomía y la sensibilidad ante la manipulación digital.
+
+Donna Haraway, en su célebre *Manifiesto cíborg*, propuso pensar las
+tecnologías no solo como instrumentos de dominación, sino también como
+posibilidades de reconfiguración. Los dispositivos tecnológicos, aunque
+profundamente incrustados en estructuras de poder, contienen también la
+posibilidad de ser utilizados de otro modo. Haraway no proponía rechazar
+la tecnología, sino habitarla críticamente, apropiársela, torcerla,
+ponerla al servicio de otras alianzas y otros mundos. Es, de nuevo, la
+lógica de la profanación.
+
+## Cuidar de sí, cuidar de los otros
+
+Quiero terminar este capítulo volviendo a los antiguos, como prometí al
+hablar de Roma. En sus últimos años, Foucault estudió las prácticas de
+cuidado de sí de la filosofía griega y romana: los ejercicios
+espirituales, la escritura de sí, el examen de conciencia, la
+preparación para la adversidad. Lo que le interesaba de ellas era que
+mostraban una forma de subjetivación distinta de la obediencia a una
+norma externa. El cuidado de sí no consistía en ajustarse a un modelo,
+sino en darse a uno mismo una forma, en hacer de la propia vida una
+obra.
+
+Algunos críticos han visto en este interés tardío de Foucault una
+retirada hacia lo individual, una renuncia a la política. Creo que es al
+revés. El cuidado de sí antiguo era inseparable del cuidado de los otros
+y de la ciudad. Y practicarlo requería tiempo, atención, conversación
+con otros, un maestro que dijera la verdad con franqueza. Es decir,
+requería exactamente aquello que la escuela neoliberal digital tiende a
+destruir: el tiempo libre de la *skholé*, la atención sostenida, la
+conversación sin fin productivo, la relación con un maestro que no sea
+un *coach*.
+
+Recuperar el cuidado de sí, en este sentido, no es encerrarse en uno
+mismo, sino resistir la captura de la propia relación consigo mismo por
+parte de los dispositivos de rendimiento. Es negarse a medirse con las
+métricas del sistema, a juzgarse con sus rúbricas, a desear lo que
+necesita que deseemos. Y es, al mismo tiempo, abrirse a una relación con
+los otros que no sea de competencia. Ese es, quizá, el gesto fundamental
+de toda resistencia educativa. Y es el punto de partida de lo que, en el
+próximo capítulo, llamaré *edutropía*.
+
+# 15. Edutropía
+
+## Un giro, no un lugar
+
+Todo libro crítico se enfrenta, tarde o temprano, a la misma pregunta:
+¿y entonces qué? Después de describir cómo funcionan los dispositivos,
+de mostrar sus efectos, de señalar sus grietas, el lector tiene derecho
+a preguntar qué se puede hacer, hacia dónde se puede ir, qué otra
+educación es posible.
+
+La tradición tiene una respuesta clásica a esta pregunta: la utopía.
+Desde la *República* de Platón hasta las comunidades educativas
+imaginadas por los socialistas del siglo XIX, pasando por la isla de
+Tomás Moro, la filosofía ha imaginado sociedades perfectas con sus
+escuelas perfectas. Pero la palabra «utopía», inventada precisamente por
+Moro, significa literalmente «ningún lugar». Es un lugar que no existe.
+Y esa inexistencia es su fuerza y su debilidad a la vez: permite
+imaginar lo que no hay, pero corre el riesgo de convertirse en un modelo
+cerrado, en una imagen fija de la perfección que, cuando se intenta
+realizar, termina a menudo por traicionar la libertad que prometía.
+
+Quiero proponer otra palabra. La he llamado *edutropía*. Está compuesta
+por *edu*, de educación, y *tropía*, del griego *tropos*, que significa
+giro, vuelta, dirección, modo. A diferencia de la utopía, la edutropía
+no designa un lugar, sino un movimiento. No es un modelo de escuela
+ideal, sino una orientación. No dice cómo debe ser la educación, sino
+hacia dónde puede girar.
+
+La palabra *tropos* tiene en griego una riqueza de sentidos que me
+parece valiosa. Es el giro, el cambio de dirección. Es también el modo,
+la manera de ser o de hacer algo. Y es, en la retórica, el tropo: la
+figura que desplaza el sentido de una palabra hacia otro sentido, como
+la metáfora. La edutropía es las tres cosas: un giro en la dirección de
+la educación, un modo distinto de practicarla, y un desplazamiento del
+sentido de las palabras con las que la pensamos ---calidad, éxito,
+rendimiento, libertad, responsabilidad--- hacia otros sentidos posibles.
+
+Hay, además, una imagen que me acompaña desde que empecé a pensar en
+esta palabra. En botánica se habla de tropismos para designar los
+movimientos con los que las plantas se orientan hacia un estímulo: el
+heliotropismo es el giro de las plantas hacia la luz. Ninguna planta
+llega al sol. Pero todas crecen orientándose hacia él, y esa orientación
+da forma a su crecimiento. La edutropía es algo así: no una meta que se
+alcanza, sino una luz hacia la cual se crece.
+
+## Hacer lo pedagógico más político
+
+Henry Giroux formuló hace décadas una consigna que resume el espíritu de
+la pedagogía crítica: se trata de conseguir que lo pedagógico sea más
+político y lo político más pedagógico. Hacer lo pedagógico más político
+significa reconocer que la enseñanza es siempre una lucha por el
+significado y por las relaciones de poder, y que toda práctica docente
+es, implícitamente, una práctica política. Hacer lo político más
+pedagógico significa utilizar formas de enseñanza que traten a los
+estudiantes como agentes críticos, que hagan problemático el
+conocimiento, que recurran al diálogo crítico y afirmativo, y que
+apuesten por la lucha por un mundo cualitativamente mejor para todas las
+personas.
+
+La edutropía recoge esta consigna, pero la sitúa en el contexto que
+hemos analizado en este libro: un mundo en el que la educación está
+atravesada por dispositivos digitales que operan según la racionalidad
+neoliberal. En ese mundo, hacer lo pedagógico más político significa,
+entre otras cosas, hacer visible la política de las plataformas, de los
+algoritmos, de los datos. Y hacer lo político más pedagógico significa
+convertir la pregunta por la tecnología en una pregunta educativa: no
+qué herramienta usar, sino qué tipo de seres humanos queremos formar y
+qué tipo de sociedad queremos construir.
+
+## Algunas orientaciones
+
+La edutropía no es un programa, ni una receta. Pero tampoco es una
+abstracción vacía. Se nutre de las resistencias plurales y creativas que
+ya existen en el tejido social y educativo, y de la aspiración
+persistente a una formación más justa, más crítica y más emancipadora.
+Quiero señalar algunas orientaciones que me parecen centrales, no como
+un decálogo cerrado, sino como direcciones en las que girar.
+
+**Volver a preguntar por los fines.** La primera orientación es
+recuperar la pregunta que la educación neoliberal ha borrado: ¿para qué
+educamos? Hemos visto que la escuela contemporánea se ha convertido en
+una *oikonomía* sin fundamento, una gestión que solo sabe optimizar.
+Girar hacia otra educación exige volver a discutir públicamente sus
+fines. No para imponer una respuesta única, como hacía la *paideia* o la
+escuela confesional, sino para que la pregunta vuelva a estar abierta y
+sea objeto de deliberación democrática. Una escuela que no sabe para qué
+existe está a merced de quien quiera decidirlo por ella.
+
+**Recuperar el tiempo.** La segunda orientación tiene que ver con el
+tiempo. Recordemos que *skholé* significaba ocio, tiempo libre. La
+escuela nació como el lugar donde se suspende la urgencia de la
+producción para dedicarse a algo que no tiene utilidad inmediata:
+pensar, estudiar, conversar, jugar. Los filósofos Jan Masschelein y
+Maarten Simons han defendido precisamente esta idea de la escuela como
+tiempo liberado, como un lugar donde el mundo se pone sobre la mesa para
+ser estudiado por sí mismo, sin la presión de su aplicación. La
+educación neoliberal digital ha colonizado ese tiempo: lo ha llenado de
+tareas, de notificaciones, de métricas, de urgencias. Girar hacia otra
+educación exige defender el tiempo vacío, el tiempo lento, el tiempo sin
+rendimiento. Exige promover espacios de desconexión reflexiva como
+contrapunto a la hiperconectividad y a la cultura de la prisa.
+
+**Profanar la evaluación.** La tercera orientación se refiere a la
+evaluación. No se trata de abolirla, sino de restituirla a su sentido
+formativo, sustrayéndola a la lógica de la clasificación, la comparación
+y el control. Una evaluación que sirva para que el estudiante comprenda
+su propio proceso y para que el docente ajuste su enseñanza, y no para
+alimentar rankings, plataformas y expedientes. Una evaluación que
+reconozca lo que no se puede medir.
+
+**Construir soberanía tecnológica.** La cuarta orientación tiene que ver
+con las herramientas. Las comunidades educativas necesitan recuperar el
+control sobre las tecnologías con las que trabajan. Esto significa
+fomentar el software libre y los recursos educativos abiertos, como una
+forma de promover la soberanía tecnológica, la colaboración entre pares
+y el conocimiento como bien común. Significa exigir transparencia sobre
+los datos y los algoritmos. Significa que las decisiones sobre qué
+infraestructuras tecnológicas se adoptan, en qué condiciones, con qué
+fines y quién participa en ellas, sean decisiones públicas y no
+imposiciones comerciales.
+
+**Cultivar una cultura técnica.** La quinta orientación es la
+alfabetización digital crítica, entendida en el sentido amplio de
+Simondon. No basta con aprender a usar herramientas; hay que aprender a
+comprenderlas: su génesis, su funcionamiento, sus efectos, sus
+intereses. Y esto debe hacerse desde edades tempranas y más allá de los
+entornos formales, integrando también a las familias. La escuela es
+quizá el único lugar donde esta comprensión puede cultivarse
+sistemáticamente, porque el mercado no tiene ningún interés en que los
+usuarios entiendan lo que usan.
+
+**Poner el cuidado en el centro.** La sexta orientación es la ética del
+cuidado. Frente a una educación que trata a los estudiantes como capital
+humano y a los docentes como recursos, la edutropía propone una
+educación centrada en el cuidado mutuo: de las personas, de las
+relaciones, del entorno, de las ideas. Esto implica atender a la salud
+mental de las comunidades escolares, reducir la presión del rendimiento,
+crear condiciones de confianza.
+
+**Hacerlo juntos.** La séptima orientación, quizá la más importante, es
+la dimensión colectiva. La edutropía no es un proyecto individual. No se
+trata de que cada docente o cada familia encuentre su propia salida,
+sino de construir colectivamente otra educación. Esto requiere
+organización, redes, alianzas entre docentes, estudiantes, familias,
+investigadores y movimientos sociales. Requiere sistematizar y compartir
+las experiencias que hoy permanecen aisladas. Requiere
+investigación-acción en la que quienes viven la escuela participen en su
+transformación.
+
+**No olvidar la justicia.** Y la octava orientación es la justicia
+social. Ninguna transformación educativa merece ese nombre si deja
+intactas las desigualdades estructurales. La edutropía no puede ser un
+lujo para quienes pueden permitirse escuelas alternativas, ni una
+pedagogía refinada para las élites. Tiene que ser, ante todo, una lucha
+por la igualdad: por que todos los niños y jóvenes tengan acceso no solo
+a los dispositivos, sino al tiempo, al cuidado, a la comprensión crítica
+y a la participación.
+
+## Ni tecnofobia ni tecnofilia
+
+Quiero insistir en algo que he dicho varias veces a lo largo del libro,
+porque es fácil malinterpretarlo. La edutropía no es una propuesta de
+desconexión, ni un rechazo nostálgico de la tecnología. Ese rechazo
+sería tan ingenuo como impracticable. Vivimos en un mundo
+irreversiblemente mediado por la técnica, y la educación no puede ni
+debe sustraerse a él.
+
+La tarea no consiste, por tanto, en rechazar las herramientas digitales,
+sino en interrogarlas críticamente en cada contexto específico: desvelar
+sus mecanismos de poder, identificar sus sesgos, analizar honestamente
+sus efectos sobre la subjetividad. Y, a partir de ese análisis, disputar
+su sentido. Disputar quién las controla, para qué se usan, qué tipo de
+sujetos producen. Lo que está en juego es que la tecnología deje de ser
+predominantemente un instrumento de control, de estandarización y de
+producción de subjetividades funcionales al mercado, para convertirse en
+una herramienta de emancipación intelectual y social, de justicia
+epistémica, de creatividad colaborativa.
+
+Esto no ocurrirá por sí solo. La tecnología no tiene una dirección
+inscrita en su naturaleza. Su orientación depende de las luchas, de las
+decisiones y de las prácticas de quienes la usan, la diseñan y la
+regulan. El futuro de la tecnología digital en la educación no está
+escrito. Dependerá de cómo decidamos habitarla, de las prácticas que
+construyamos y de las resistencias que estemos dispuestos a sostener.
+
+## Preguntas abiertas
+
+La edutropía, en definitiva, no ofrece respuestas cerradas, sino que
+abre preguntas. ¿Cómo podemos usar las tecnologías digitales sin caer en
+la lógica de la mercantilización? ¿Es posible una educación digital que
+promueva la autonomía y el pensamiento crítico en lugar de la vigilancia
+y el rendimiento? ¿Cómo podemos profanar los dispositivos educativos
+para que sirvan a la emancipación en lugar del control? ¿Qué significa
+enseñar a pensar en una época en la que las máquinas producen textos?
+¿Qué lugar queda para el error, para la lentitud, para el aburrimiento,
+para la conversación sin fin productivo?
+
+No tengo respuestas definitivas para estas preguntas. Creo que nadie las
+tiene, y desconfío de quien diga tenerlas. Pero creo que formularlas ya
+es un comienzo. Porque mientras sigamos preguntando, la educación
+seguirá siendo un espacio abierto, y no un dispositivo cerrado.
+
+La edutropía no es una fantasía utópica. Es una apuesta que nace desde
+las grietas del sistema, allí donde todavía se lucha por una educación
+más justa, más crítica y más profundamente humana. Es un camino
+colectivo, siempre en construcción, que exige compromiso crítico,
+práctica compartida y voluntad de reimaginar la educación. Y se alimenta
+de cada gesto, por modesto que sea, que interrumpe la normalización de
+la mercantilización educativa. Toda práctica que cuestione la
+naturalización de la lógica neoliberal, por pequeña que parezca, abre
+una grieta por donde imaginar una educación centrada en el bien común,
+la justicia social y la autonomía crítica.
+
+# Epílogo. Conócete a ti mismo, otra vez {#epílogo.-conócete-a-ti-mismo-otra-vez .unnumbered}
+
+Este libro empezó en Delfos, ante una inscripción grabada en la piedra
+de un templo: *conócete a ti mismo*. Quiero terminarlo allí también,
+porque creo que esa vieja frase tiene hoy un sentido nuevo e
+inquietante.
+
+Durante dos mil quinientos años, conocerse a sí mismo fue una tarea que
+exigía tiempo, atención, conversación con otros y una cierta valentía.
+Sócrates bajaba al ágora a interrogar a sus conciudadanos; los estoicos
+escribían cada noche el examen de su jornada; Agustín buscaba en su
+interior la verdad que lo trascendía; Montaigne se pintaba a sí mismo en
+sus ensayos, con sus contradicciones y sus caprichos. Conocerse era un
+trabajo, un ejercicio, una forma de vida. Y era, sobre todo, algo que
+uno hacía.
+
+Hoy existe una industria que nos ofrece hacerlo por nosotros. Las
+plataformas digitales nos conocen. Saben qué nos gusta, qué tememos, qué
+deseamos, a qué hora estamos más vulnerables, qué contenido nos retendrá
+un minuto más ante la pantalla. Las plataformas educativas conocen a
+nuestros estudiantes: su ritmo de aprendizaje, sus errores recurrentes,
+su probabilidad de abandonar. Los sistemas de inteligencia artificial
+pueden escribir con nuestra voz, completar nuestras frases, anticipar
+nuestras preguntas. Por primera vez en la historia, el autoconocimiento
+parece haberse convertido en un servicio externo. Ya no tenemos que
+conocernos: alguien nos conoce mejor que nosotros mismos y nos devuelve
+una imagen de quiénes somos.
+
+Pero esa imagen no es un conocimiento de sí. Es un perfil. Y la
+diferencia entre ambas cosas es, en el fondo, la diferencia entre la
+educación y el dispositivo. El perfil es lo que el sistema sabe de
+nosotros para gobernarnos. El conocimiento de sí es lo que nosotros
+llegamos a saber para gobernarnos a nosotros mismos, y para no ser
+gobernados de cualquier manera. El perfil nos fija en lo que hemos sido,
+porque predice el futuro a partir del pasado. El conocimiento de sí nos
+abre a lo que todavía podemos llegar a ser.
+
+## Un arma de doble filo
+
+He dicho a lo largo de estas páginas que la educación es un arma de
+doble filo, y quiero repetirlo para terminar. Puede darnos las
+herramientas para construir conscientemente nuestra subjetividad, y
+puede, al mismo tiempo, objetivarnos para disciplinarnos hacia los fines
+del mercado. Ninguna época ha escapado a esta ambivalencia. La *paideia*
+formaba ciudadanos libres y excluía a la mayoría. La escuela ilustrada
+prometía la autonomía y la producía mediante la disciplina. La escuela
+neoliberal promete la libertad de elegir y produce sujetos que eligen lo
+que se espera que elijan.
+
+Lo que ha cambiado en nuestra época no es la ambivalencia, sino la
+escala y la sutileza del dispositivo. Nunca antes los mecanismos de
+subjetivación habían sido tan íntimos, tan continuos, tan invisibles.
+Nunca antes habían estado tan concentrados en tan pocas manos privadas.
+Y nunca antes se habían presentado de un modo tan amable, tan útil, tan
+aparentemente neutral.
+
+Pero tampoco hay que caer en el determinismo. La tecnología puede ser
+una herramienta de control y normalización, pero también puede abrir
+vías para la expresión diversa, la construcción compartida del
+conocimiento y la autonomía política. La clave está en el sentido que
+las comunidades educativas decidan darle, en su voluntad de
+problematizar los discursos dominantes y en las alianzas que sean
+capaces de construir frente al poder creciente de las corporaciones
+tecnológicas. La subjetividad no es un producto cerrado. Se construye,
+se moldea y se reconfigura en la relación con los otros. Y por eso un
+uso crítico y solidario de lo digital puede contribuir a forjar
+identidades colectivas más inclusivas y menos sometidas a la lógica del
+mercado.
+
+## Lo que está en juego
+
+Si tuviera que resumir en una sola frase lo que este libro ha intentado
+decir, sería esta: es necesario replantearse qué entendemos por
+libertad, por responsabilidad y por éxito en la experiencia educativa.
+Si dejamos que esos conceptos se definan únicamente según los parámetros
+del mercado, corremos el riesgo de vaciar la educación de su potencial
+transformador y convertirla en un simple apéndice del mercado laboral.
+Si, en cambio, logramos incorporar la solidaridad, la justicia y el
+pensamiento crítico como sus pilares, las tecnologías digitales podrían
+convertirse en aliadas de una formación verdaderamente emancipadora.
+
+Esto no será sencillo. Exige renunciar a la pasividad y comprometerse en
+la creación de espacios comunitarios de aprendizaje donde los intereses
+comerciales no estén por encima del derecho a la educación. Exige que
+ninguna innovación tecnológica se imponga en las escuelas sin una
+discusión profunda sobre sus implicaciones éticas y políticas, porque el
+conocimiento es también una cuestión de poder. Exige, en fin, que
+dejemos de pensar la educación como un servicio y volvamos a pensarla
+como lo que siempre fue: el lugar donde una sociedad decide qué tipo de
+seres humanos quiere ser.
+
+La educación es el escenario donde se libran algunas de las tensiones
+fundamentales de nuestra época: entre libertad e imposición, entre
+cooperación y competencia, entre reflexión y automatismo, entre
+comunidad e individualismo. Lo que hagamos con nuestras escuelas y
+universidades decidirá, en buena medida, la forma en que asumamos la
+responsabilidad común de un futuro más justo.
+
+## Mientras haya preguntas
+
+Escribí al comienzo que este libro nacía de una inquietud. Termino sin
+haberla resuelto, y creo que es mejor así. La inquietud es el estado
+propio de la filosofía, y quizá también el de la buena educación. Una
+escuela inquieta es una escuela viva.
+
+Incluso ante la sofisticación creciente del control digital, la
+cooperación, el pensamiento crítico y la autonomía siguen siendo
+recursos de resistencia de un valor incalculable. Y mientras existan
+docentes comprometidos con la pregunta por el sentido y estudiantes
+dispuestos a cuestionar lo establecido, la educación seguirá siendo un
+espacio de posibilidades abiertas, capaz de enfrentarse a la hegemonía
+del mercado y de proponer otras formas de ser y de aprender que liberen
+la imaginación colectiva.
+
+Conócete a ti mismo, decía la inscripción. Quizá hoy habría que añadir:
+no dejes que nadie lo haga por ti.
+
+# Notas y lecturas {#notas-y-lecturas .unnumbered}
+
+Este libro procede de la tesis doctoral *Las tecnologías digitales en la
+educación neoliberal como dispositivo en la construcción de
+subjetividad*, realizada en el programa de doctorado en Filosofía
+Contemporánea y Estudios Clásicos bajo la dirección de Marina Garcés y
+Raquel Miño, con la tutoría de Josep Maria Esquirol. Para convertirla en
+un ensayo se ha prescindido del aparato metodológico y del trabajo
+empírico, y se ha reducido al mínimo el sistema de notas. Las páginas
+que siguen indican, capítulo por capítulo, las obras de las que proceden
+las ideas y las citas, y sirven también como sugerencias de lectura para
+quien quiera continuar.
+
+## Prólogo
+
+-   Marina Garcés, *Nueva ilustración radical*, Barcelona, Anagrama,
+    2017.
+-   Christian Laval y Pierre Dardot, *La nueva razón del mundo. Ensayo
+    sobre la sociedad neoliberal*, Barcelona, Gedisa, 2013.
+-   Hannah Arendt, *La vida del espíritu*, Barcelona, Paidós, 2002.
+
+## 1. Conócete a ti mismo
+
+-   Werner Jaeger, *Paideia: los ideales de la cultura griega*, México,
+    Fondo de Cultura Económica.
+-   Platón, *Apología de Sócrates*, *Menéxeno*, *Banquete*, *República*.
+-   Aristóteles, *Política* y *Ética a Nicómaco*.
+-   Diógenes Laercio, *Vidas de los filósofos ilustres*, libro VI (sobre
+    Hiparquia) y libro II (sobre Areté de Cirene).
+-   Mary Ellen Waithe (ed.), *A History of Women Philosophers*, vol. 1,
+    Dordrecht, Springer, 1987.
+-   Gerda Lerner, *La creación del patriarcado*, Barcelona, Crítica,
+    1990.
+-   Michel Foucault, *La hermenéutica del sujeto*, Buenos Aires, Fondo
+    de Cultura Económica, 2002.
+
+## 2. Del orador al creyente
+
+-   Cicerón, *Defensa del poeta Arquías*.
+-   Quintiliano, *Institución oratoria*.
+-   Séneca, *Cartas a Lucilio*.
+-   Agustín de Hipona, *Del maestro* (*De magistro*), en *Obras de San
+    Agustín*, vol. III, Madrid, BAC.
+-   Tomás de Aquino, *Cuestiones disputadas sobre la verdad*, cuestión
+    11 («Sobre el maestro»).
+-   Christine de Pizan, *La ciudad de las damas*, Madrid, Siruela, 2015.
+-   Carlos Rojas Osorio, *Filosofía de la educación. De los griegos a la
+    tardomodernidad*, Medellín, Universidad de Antioquia, 2010.
+
+## 3. Darse forma
+
+-   Giovanni Pico della Mirandola, *Discurso sobre la dignidad del
+    hombre*.
+-   Michel de Montaigne, «De la educación de los hijos», en *Ensayos*,
+    libro I, Madrid, Cátedra, 1998.
+-   René Descartes, *Discurso del método*.
+-   Jan Amos Comenio, *Didáctica magna*.
+-   Jean-Jacques Rousseau, *Emilio, o De la educación*.
+-   Mary Wollstonecraft, *Vindicación de los derechos de la mujer*,
+    Madrid, Cátedra, 2018.
+-   Véronique Le Ru, *Émilie du Châtelet philosophe*, París, Classiques
+    Garnier, 2019.
+-   Immanuel Kant, «Respuesta a la pregunta: ¿Qué es la Ilustración?» y
+    *Sobre pedagogía*, Madrid, Morata, 2003.
+-   Hans-Georg Gadamer, *Verdad y método*, Salamanca, Sígueme (sobre el
+    concepto de *Bildung*).
+
+## 4. La escuela-máquina
+
+-   Émile Durkheim, *Educación y sociología*.
+-   Michel Foucault, *Vigilar y castigar. Nacimiento de la prisión*,
+    Buenos Aires, Siglo XXI, 2002.
+-   John Dewey, *Democracia y educación*, Madrid, Morata, 2009;
+    *Experiencia y educación*, Madrid, Morata, 2004.
+-   Paulo Freire, *Pedagogía del oprimido*.
+-   David Tyack y Larry Cuban, *En busca de la utopía. Un siglo de
+    reformas de las escuelas públicas*, México, FCE / Morata.
+-   David Harvey, *Breve historia del neoliberalismo*, Madrid, Akal,
+    2007.
+-   Neil Selwyn, *Education and Technology: Key Issues and Debates*,
+    Londres, Bloomsbury.
+-   Henry A. Giroux, *Neoliberalism's War on Higher Education*, Chicago,
+    Haymarket, 2014.
+-   bell hooks, *Enseñar a transgredir. La educación como práctica de la
+    libertad*, Madrid, Capitán Swing, 2021.
+-   Marina Garcés, *Filosofía inacabada*, Barcelona, Galaxia Gutenberg,
+    2015.
+
+## 5. ¿Qué es un dispositivo?
+
+-   Giorgio Agamben, *¿Qué es un dispositivo?*, Buenos Aires, Adriana
+    Hidalgo, 2014. Incluye la entrevista de Foucault de 1977 citada en
+    el capítulo.
+-   Gilles Deleuze, «¿Qué es un dispositivo?», en *Michel Foucault,
+    filósofo*, Barcelona, Gedisa, 1990.
+-   Michel Foucault, *Vigilar y castigar* y «¿Qué es la Ilustración?».
+
+## 6. *Oikonomía*
+
+-   Giorgio Agamben, *El Reino y la Gloria. Por una genealogía teológica
+    de la economía y del gobierno*, Valencia, Pre-Textos, 2008.
+-   Giorgio Agamben, *Profanaciones*, Barcelona, Anagrama, 2005.
+-   Hannah Arendt, *La condición humana*, Barcelona, Paidós.
+
+## 7. El sujeto no es una sustancia
+
+-   Platón, *Fedón*.
+-   Aristóteles, *Acerca del alma*.
+-   René Descartes, *Meditaciones metafísicas* y *Las pasiones del
+    alma*; *Correspondencia con Isabel de Bohemia*.
+-   Baruch Spinoza, *Ética demostrada según el orden geométrico*,
+    Madrid, Alianza, 2006; *Tratado teológico-político*, Madrid,
+    Alianza, 2008.
+-   Étienne de La Boétie, *Discurso de la servidumbre voluntaria*.
+-   Michel Foucault, *Vigilar y castigar*.
+-   Sandro Mezzadra, *La cocina de Marx. El sujeto y su producción*,
+    Buenos Aires, Tinta Limón, 2014.
+-   Pier Paolo Pasolini, *Cartas luteranas*, Madrid, Trotta.
+-   Cornelius Castoriadis, *La institución imaginaria de la sociedad*,
+    Barcelona, Tusquets, 1989.
+-   Antonio Gramsci, *Cuadernos de la cárcel*, México, Era.
+-   Stuart Hall, «¿Quién necesita "identidad"?», en S. Hall y P. du Gay
+    (eds.), *Cuestiones de identidad cultural*, Buenos Aires, Amorrortu,
+    2003.
+-   Gert Biesta, «What is Education For? On Good Education, Teacher
+    Judgement, and Educational Professionalism», *European Journal of
+    Education*, 2015.
+
+## 8. La nueva razón del mundo
+
+-   Michel Foucault, *Nacimiento de la biopolítica. Curso en el Collège
+    de France (1978-1979)*, Buenos Aires, FCE.
+-   Pierre Dardot y Christian Laval, *La nueva razón del mundo*,
+    Barcelona, Gedisa, 2013.
+-   Sherry Ortner, «Sobre el neoliberalismo», *Antrópica*, 1, 2015.
+-   Stephen J. Ball, «The teacher's soul and the terrors of
+    performativity», *Journal of Education Policy*, 18 (2), 2003;
+    *Global Education Inc.*, Nueva York, Routledge, 2012.
+-   Pauline Lipman, *The New Political Economy of Urban Education*,
+    Nueva York, Routledge, 2011.
+-   Pasi Sahlberg, *El cambio educativo en Finlandia*, Barcelona,
+    Paidós.
+
+## 9. El yo que se evalúa
+
+-   Byung-Chul Han, *La sociedad del cansancio*, Barcelona, Herder,
+    2012; *Psicopolítica*, Barcelona, Herder, 2014.
+-   Michel Foucault, *Tecnologías del yo*, Barcelona, Paidós.
+-   Frédéric Lordon, *Capitalismo, deseo y servidumbre. Marx y Spinoza*,
+    Buenos Aires, Tinta Limón, 2015.
+-   Engin Atasay, «Neoliberal schooling and subjectivity: learning to
+    desire lack», *Subjectivity*, 7, 2014.
+
+## 10. Técnica, memoria y veneno
+
+-   Gilbert Simondon, *El modo de existencia de los objetos técnicos*,
+    Buenos Aires, Prometeo, 2008.
+-   Martin Heidegger, «La pregunta por la técnica», en *Conferencias y
+    artículos*, Barcelona, Ediciones del Serbal, 1994; *Serenidad*,
+    Barcelona, Ediciones del Serbal.
+-   Bernard Stiegler, *La técnica y el tiempo*, Hondarribia, Hiru; *Lo
+    que hace que la vida merezca ser vivida. De la farmacología*,
+    Madrid, Avarigani.
+-   Platón, *Fedro*.
+-   Bruno Latour, *Reensamblar lo social*, Buenos Aires, Manantial,
+    2008.
+-   Jean Baudrillard, *El sistema de los objetos*, México, Siglo XXI.
+-   Manuel Castells, *La era de la información*, Madrid, Alianza.
+-   Sherry Turkle, *En defensa de la conversación* y *Alone Together*,
+    Nueva York, Basic Books, 2011.
+-   Henry Jenkins, *Convergence Culture. La cultura de la convergencia
+    de los medios de comunicación*, Barcelona, Paidós, 2008.
+-   Byung-Chul Han, *En el enjambre*, Barcelona, Herder, 2014.
+
+## 11. El dividuo
+
+-   Gilles Deleuze, «Post-scriptum sobre las sociedades de control», en
+    *Conversaciones*, Valencia, Pre-Textos, 1999.
+-   Shoshana Zuboff, *La era del capitalismo de la vigilancia*,
+    Barcelona, Paidós, 2020.
+-   Judith Butler, *El género en disputa*, Barcelona, Paidós.
+-   Maurizio Lazzarato, «Trabajo inmaterial» y *La fábrica del hombre
+    endeudado*, Buenos Aires, Amorrortu.
+-   Jean Baudrillard, *Cultura y simulacro*, Barcelona, Kairós.
+-   Kate Crawford, *Atlas de inteligencia artificial*, Buenos Aires,
+    FCE, 2022.
+-   Luciano Floridi, *La cuarta revolución. Cómo la infosfera está
+    transformando la realidad humana*.
+-   UNESCO, *Recomendación sobre la ética de la inteligencia
+    artificial*, París, 2021.
+
+## 12. Vigilar jugando
+
+-   Jeremy Bentham, *El panóptico*.
+-   David Lyon, *La cultura de la vigilancia. Mirar y ser mirado en la
+    sociedad contemporánea*.
+-   Hannah Arendt, «La crisis en la educación», en *Entre el pasado y el
+    futuro*, Barcelona, Península.
+-   Giorgio Agamben, *Estado de excepción*, Buenos Aires, Adriana
+    Hidalgo, 2004.
+-   Natasha Dow Schüll, *Addiction by Design: Machine Gambling in Las
+    Vegas*, Princeton University Press, 2012.
+-   Herbert Marcuse, *El hombre unidimensional*.
+-   Johan Huizinga, *Homo ludens*, Madrid, Alianza.
+-   Ben Williamson, *Big Data in Education*, Londres, SAGE, 2017.
+
+## 13. El saber como mercancía
+
+-   Martha Nussbaum, *Sin fines de lucro. Por qué la democracia necesita
+    de las humanidades*, Buenos Aires, Katz, 2010.
+-   Michael J. Sandel, *Lo que el dinero no puede comprar*, Barcelona,
+    Debate, 2013.
+-   Richard M. Stallman, *Software libre para una sociedad libre*,
+    Madrid, Traficantes de Sueños, 2004.
+-   Jan van Dijk, *The Network Society*, Londres, SAGE, 2020; *The
+    Digital Divide*, Cambridge, Polity, 2020.
+-   Safiya Umoja Noble, *Algorithms of Oppression*, Nueva York, NYU
+    Press, 2018.
+-   Ruha Benjamin, *Race After Technology*, Cambridge, Polity, 2019.
+-   Audrey Watters, *Teaching Machines*, Cambridge (MA), MIT Press,
+    2021.
+
+## 14. Donde hay poder, hay resistencia
+
+-   Michel Foucault, *Historia de la sexualidad, 1. La voluntad de
+    saber*, México, Siglo XXI; «¿Qué es la crítica?»; *Seguridad,
+    territorio, población*, México, FCE, 2006.
+-   Michel de Certeau, *La invención de lo cotidiano. 1. Artes de
+    hacer*, México, Universidad Iberoamericana.
+-   Nel Noddings, *Caring: A Relational Approach to Ethics and Moral
+    Education*, Berkeley, University of California Press, 2013.
+-   Carol Gilligan, *La moral y la teoría. Psicología del desarrollo
+    femenino*, México, FCE.
+-   Donna Haraway, *Ciencia, cyborgs y mujeres. La reinvención de la
+    naturaleza*, Madrid, Cátedra, 1995.
+
+## 15. Edutropía
+
+-   Henry A. Giroux, *Los profesores como intelectuales*, Barcelona,
+    Paidós, 1990.
+-   Jan Masschelein y Maarten Simons, *Defensa de la escuela. Una
+    cuestión pública*, Buenos Aires, Miño y Dávila, 2014.
+-   Paulo Freire, *Pedagogía de la esperanza*.
+-   Marina Garcés, *Escuela de aprendices*, Barcelona, Galaxia
+    Gutenberg, 2020.
