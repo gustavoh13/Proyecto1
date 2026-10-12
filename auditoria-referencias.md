@@ -1,6 +1,8 @@
 # Auditoría de referencias — «El alma en la plataforma»
 
-Fecha: 12 de octubre de 2026. Alcance: las 106 entradas de `libro/17-lecturas.md` (Notas y lecturas).
+Fecha: 12 de octubre de 2026. Alcance: las 106 entradas de la bibliografía (Notas y lecturas).
+
+> Después de la auditoría el libro se reorganizó en ocho capítulos temáticos y la bibliografía pasó a `libro/10-lecturas.md`, agrupada según los capítulos nuevos. Solo contiene entradas ya verificadas aquí. El inventario de abajo conserva la agrupación por capítulos de la versión anterior.
 
 **Resultado:** todas las obras citadas existen. Ninguna referencia es inventada. Se corrigieron 19 entradas con datos editoriales erróneos o incompletos (año, editorial, traductor, título de la edición) y dos que remitían a ediciones en castellano que no se pudieron localizar.
 

@@ -1,0 +1,75 @@
+# 3. El alma, prisión del cuerpo
+
+Hay una frase de Kant que casi nunca se cita en clase de filosofía y que dice sobre la escuela moderna más que muchos tratados. En sus lecciones de pedagogía explica que a los niños se los manda a la escuela, al principio, no para que aprendan algo, sino para que se acostumbren a estar sentados tranquilos y a cumplir puntualmente lo que se les ordena. La disciplina, añade, tiene que ir antes que la instrucción, porque es lo que convierte la animalidad en humanidad.
+
+La leo hoy y siento un pequeño escalofrío. El filósofo de la autonomía, el que definió la Ilustración como la salida de la minoría de edad, sabía muy bien que esa autonomía empezaba con un cuerpo inmóvil en un banco. Primero la silla y el silencio, y solo después el *sapere aude*.
+
+Cualquiera que haya ido a la escuela conserva ese aprendizaje en el cuerpo. Las horas sentado, la espalda cansada, las piernas que no se están quietas, la mano levantada para pedir ir al baño. En un aula de hoy la escena ha cambiado sin desaparecer. Los cuerpos siguen sentados, ahora inclinados sobre pantallas, y la mirada ya no va solo a la pizarra sino a un rectángulo luminoso que también los mira a ellos. La disciplina del cuerpo sigue ahí con otro objeto.
+
+Para entender qué se juega en ese cambio conviene volver a una pregunta muy antigua, la de cómo se relacionan el alma y el cuerpo. No lo hago por afición a la metafísica. Lo hago porque la escuela ha respondido a esa pregunta todos los días de su historia, casi siempre sin formularla.
+
+* * *
+
+La palabra «sujeto» es ambigua en castellano, y su ambigüedad enseña mucho. Sujeto es quien actúa, quien piensa, quien dice «yo». Y estar sujeto es estar atado, depender de algo o de alguien. El latín *subjectum* traducía el griego *hypokeimenon*, lo que está debajo y sostiene las cualidades, la sustancia. En el latín medieval, en cambio, *subjectus* también quería decir *subditus*, súbdito. El sujeto era a la vez fundamento y sometido.
+
+Desde Descartes, la filosofía moderna se quedó con el primer sentido y pensó el sujeto como una conciencia que se conoce a sí misma antes de cualquier relación. Foucault recuperó el segundo. Para él, el sujeto resulta de un proceso por el que alguien queda atado a una identidad, constituido por relaciones de poder y de saber. Sigue siendo un soporte, solo que ahora sostiene las relaciones que lo forman en lugar de una esencia. La idea de un dispositivo que produce a su sujeto, de la que hablábamos en el capítulo anterior, solo se sostiene si el sujeto puede producirse. Hay que soltar, por tanto, la imagen de un alma que existe antes de toda educación y espera a ser descubierta.
+
+* * *
+
+En el *Fedón*, Platón pone en boca de Sócrates, pocas horas antes de beber la cicuta, una de las descripciones del cuerpo que más han pesado en Occidente. Sócrates se pregunta si el cuerpo ayuda o estorba a la hora de buscar la sabiduría, si la vista y el oído garantizan alguna verdad. Su conclusión es que el alma, cuando intenta examinar algo en compañía del cuerpo, sale engañada. Razona mejor cuando no la perturban ni el oído ni la vista, ni el dolor ni el placer, cuando se queda a solas consigo misma, manda a paseo al cuerpo y, en la medida de lo posible, sin tocarlo, se dirige a lo que de verdad es.
+
+Filosofar se vuelve así un ejercicio de purificación, y el cuerpo, una cárcel. Las consecuencias para la enseñanza son inmediatas. Si el conocimiento verdadero está en un mundo de Ideas que el alma contempló antes de nacer y olvidó al encarnarse, aprender es recordar, y el maestro solo despierta lo que ya estaba dentro. El cuerpo, con sus sentidos y sus pasiones, en el mejor de los casos molesta, y hay que tenerlo a raya para que el alma trabaje.
+
+Aristóteles, que fue alumno de Platón, lo vio de otra manera. En *Acerca del alma* la define como la forma de un cuerpo natural que tiene vida en potencia. Tienen razón, escribe, quienes piensan que el alma ni existe sin un cuerpo ni es ella misma un cuerpo: es algo del cuerpo. Igual que no tiene sentido preguntar si la cera y la figura grabada en ella son una sola cosa, tampoco lo tiene preguntarlo del alma y el cuerpo. Vuelve la imagen del sello, ahora con otro significado: el alma ya no está presa en la cera, es la forma que la cera toma. Cuerpo y alma se hacen el uno al otro, lo pensado pasa a la práctica y la persona deja de ser una abstracción para ser acto y potencia a la vez. Educar, desde aquí, es formar hábitos, y en esa formación el cuerpo participa entero.
+
+* * *
+
+En el siglo XVII Descartes volvió a separar lo que Aristóteles había juntado. El mundo, según él, está hecho de dos sustancias que no tienen nada en común: una que piensa, sin extensión, libre e indivisible, y otra extensa, que ocupa espacio y se mueve según las leyes de la mecánica. El cuerpo humano pertenece a la segunda. Es una máquina, un autómata de huesos, nervios y humores que funciona como un reloj. Lo esencial de la persona está en el alma, que es pura conciencia. Para explicar cómo se comunican, Descartes situó un punto de contacto en el centro del cerebro, la glándula pineal.
+
+En 1643 una mujer, la princesa Isabel de Bohemia, le escribió una carta que señalaba la grieta del edificio. Si el alma no tiene extensión ni materia, ¿cómo puede mover algo material? Cualquier movimiento parece pedir contacto, y el contacto, extensión. O el alma tiene algo de extensa o no puede actuar sobre el cuerpo. Descartes contestó con rodeos, diciendo que la unión de alma y cuerpo se entiende mejor viviéndola que pensándola. La objeción de Isabel nunca quedó resuelta, y muchos la consideran el punto débil de todo el dualismo moderno. No deja de tener su ironía que la formulara alguien a quien la educación de su tiempo no reservaba ningún lugar en la filosofía.
+
+El dualismo cartesiano tuvo, además, consecuencias que van mucho más allá de la metafísica. Si el cuerpo es una máquina, se puede desmontar en piezas, descomponer en movimientos, medir, corregir y mejorar. Foucault vio ahí la condición de posibilidad de las disciplinas modernas, las técnicas que entre los siglos XVII y XIX se aplicaron en cuarteles, talleres, hospitales y escuelas para conseguir cuerpos útiles y obedientes a la vez. En *Vigilar y castigar* escribe que a esas técnicas ya no les importaban los signos del cuerpo, sino la economía y la eficacia de sus movimientos, su organización interna. La única ceremonia que contaba era el ejercicio.
+
+La niña de Kant, obligada a quedarse quieta, no está siendo educada contra su naturaleza. Se la trata según la naturaleza que el mecanicismo le había asignado: la de una máquina que se puede ajustar.
+
+* * *
+
+Foucault resumió el efecto de las disciplinas en una fórmula que conviene leer despacio, porque retrata con exactitud la escuela moderna. La disciplina aumenta las fuerzas del cuerpo en términos económicos de utilidad y las disminuye en términos políticos de obediencia. Convierte el cuerpo en una aptitud, una capacidad que procura aumentar, y al mismo tiempo invierte la energía que podría salir de ahí y la transforma en una relación de sujeción estricta.
+
+Dicho de otro modo, la escuela disciplinaria hace a la gente más capaz y más dócil a la vez. Enseña a leer, escribir, calcular y trabajar con precisión, y enseña también a obedecer, esperar turno y no discutir. Sube la potencia productiva y baja la política. Lo que sale de ahí tiene alma, y un alma muy particular.
+
+Aquí Foucault da la vuelta a la frase de Platón. Para Platón el cuerpo era la cárcel del alma, y para Foucault el alma se ha convertido en la cárcel del cuerpo. El alma moderna, esa interioridad hecha de conciencia, personalidad y psique, es un producto histórico de técnicas aplicadas sobre los cuerpos. Existe y es real, dice Foucault, y se produce sin cesar alrededor, en la superficie y en el interior del cuerpo, por obra de un poder que se ejerce sobre quienes son vigilados, educados y corregidos. Es efecto e instrumento de una anatomía política. La escuela produce un alma que después vigila al cuerpo desde dentro, que siente culpa cuando no rinde, que se corrige antes de que nadie la corrija, que ha hecho suyas las normas hasta confundirlas con sus deseos.
+
+* * *
+
+Pier Paolo Pasolini lo dijo de un modo que me emociona cada vez que lo releo. En las *Cartas luteranas*, escritas en el último año de su vida, se dirige a un muchacho inventado, Gennariello, y le explica que la educación más honda no se la dan sus padres ni sus maestros ni sus libros, sino las cosas: los objetos, los lugares, la realidad física que lo rodea. Esa educación lo hace ser lo que es y lo que será toda la vida. Es su carne, escribe Pasolini, la que es educada como forma de su espíritu.
+
+La frase deshace desde dentro de la experiencia la oposición entre cuerpo y alma. No hay por un lado un alma que se educa y por otro un cuerpo que se adiestra. Hay una carne que, al vivir entre ciertas cosas, en ciertos espacios y a ciertos ritmos, toma una forma, y esa forma es su espíritu. A Pasolini le preocupaba que la sociedad de consumo estuviera educando a los jóvenes italianos de los setenta, a través de sus objetos, con más eficacia que cualquier ideología declarada. A nosotros podría preocuparnos que el móvil, la plataforma escolar y la red social estén educando la carne de nuestros alumnos: el pulgar que desliza, la atención que salta cada pocos segundos, la espalda encorvada, el sueño cortado, la ansiedad que despierta con una vibración. No figura en ningún currículo y ningún profesor lo enseña. Probablemente es lo que más a fondo se está aprendiendo.
+
+* * *
+
+Hubo un filósofo moderno que se negó a separar alma y cuerpo y que, quizá por eso, pensó la servidumbre con una lucidez extraordinaria. Para Spinoza no son dos sustancias. Son dos expresiones de una misma realidad: el alma es la idea del cuerpo y lo que pasa en uno se expresa en el otro. Y dejó escrita una frase que todavía suena a desafío: nadie ha determinado hasta ahora lo que puede un cuerpo. Llevamos siglos despreciándolo, sometiéndolo, tratándolo como estorbo o como máquina, y seguimos sin saber de qué es capaz. Para Spinoza el cuerpo es potencia, capacidad de afectar y de ser afectado, y ser libre consiste en entender esa potencia y aumentarla, no en huir de ella.
+
+Precisamente porque pensaba en términos de potencias y afectos, Spinoza vio muy claro cómo pueden capturarse. En el prefacio del *Tratado teológico-político* escribe que el gran secreto del régimen monárquico es mantener engañados a los hombres y disfrazar con el nombre de religión el miedo que los controla, para que luchen por su servidumbre como si fuera su salvación. Al poder no le basta la fuerza. Necesita afectos, necesita que los sometidos deseen su sometimiento.
+
+Un siglo antes, Étienne de La Boétie, el gran amigo de Montaigne, se había hecho la misma pregunta en su *Discurso de la servidumbre voluntaria*. ¿Cómo es posible que tantos hombres, ciudades y naciones aguanten a un solo tirano que no tiene más poder que el que ellos le dan? Su primera respuesta es la costumbre. Los hombres nacen siervos, se crían como tales y no imaginan otra cosa. La servidumbre se aprende.
+
+Las dos preguntas, por qué deseamos lo que nos somete y cómo se aprende a servir, son preguntas sobre educación, y van a ser la clave de lo que sigue. El sujeto que sale de la escuela actual no se siente sometido. Se siente libre.
+
+* * *
+
+Si lo que somos ha sido producido por dispositivos que no elegimos, ¿quiénes somos? La pregunta no tiene una respuesta limpia. La identidad es una categoría que da vueltas sobre sí misma: podemos definirnos y distinguirnos de los demás mientras seguimos transformándonos. Stuart Hall escribió que las identidades están cada vez más fragmentadas y fracturadas, que nunca son singulares y que se construyen de muchas maneras a través de discursos, prácticas y posiciones que se cruzan y a menudo chocan.
+
+Cornelius Castoriadis ofreció una manera de vivir con esa paradoja sin caer en el fatalismo. Toda sociedad, decía, se sostiene sobre significaciones imaginarias, ideas sobre lo valioso, lo real o lo humano, que no vienen de ninguna necesidad natural y que la propia sociedad crea de forma colectiva y anónima. Cada uno de nosotros incorpora buena parte de esas significaciones. Pero también formamos parte del colectivo que las crea, las mantiene y puede cambiarlas. Hay un imaginario instituido, que se presenta como natural y eterno, y un imaginario instituyente, que es la capacidad de inventar formas nuevas. Para Castoriadis, ser autónomo no es librarse de toda institución, sino reconocer que las instituciones son obra nuestra y que podemos cambiarlas.
+
+Desde la cárcel fascista, Antonio Gramsci había llegado a algo parecido. Distinguía entre el sentido común, ese conjunto de creencias heredadas, fragmentarias y contradictorias que cada uno absorbe de su entorno, y el buen sentido, el núcleo de racionalidad crítica que todos llevamos dentro. Hay hegemonía cuando la visión del mundo de un grupo dominante se vuelve el sentido común de todos, cuando los dominados piensan con las categorías de quienes los dominan. Lo eficaz de ese sentido común es que no se percibe como ideología. Se vive como realismo.
+
+* * *
+
+Gert Biesta, filósofo de la educación, distingue tres propósitos en cualquier proceso educativo. Está la calificación, que es adquirir conocimientos, destrezas y disposiciones. Está la socialización, la entrada en tradiciones y maneras de ser y de hacer. Y está la subjetivación, que es la aparición de alguien capaz de iniciativa y de responsabilidad, alguien que no es un simple ejemplar de un orden.
+
+Lo interesante es que la tercera no se deja reducir a las otras dos. Un alumno puede estar perfectamente calificado y perfectamente socializado sin haber llegado nunca a ser sujeto en sentido pleno, sin haber sido capaz de interrumpir el orden en que lo formaron o de responder de una manera que nadie esperaba. Esa subjetivación es justo lo que ningún dispositivo puede fabricar a voluntad. Es la línea de fuga de Deleuze, Isabel de Bohemia escribiendo a Descartes, el cuerpo de Spinoza cuya potencia nadie ha medido.
+
+Por eso la educación corta por los dos lados. Puede darnos herramientas para construirnos con cierta conciencia y puede moldearnos el cuerpo para fines que no son los nuestros. Disciplina y personalización, como veremos, son dos caras de la misma moneda.
+
+Algo ha cambiado, de todos modos, desde la escuela que describió Foucault. A la niña de Kant la obligaban a estar sentada. El alumno de hoy, en buena medida, se obliga solo. No lo vigila el maestro sino su propio deseo de rendir, de mejorar, de no quedarse atrás. La servidumbre voluntaria de La Boétie ha encontrado su forma más acabada, una servidumbre que se vive como libertad. Para entender cómo se llegó hasta aquí hay que seguir una idea que nació como la más liberadora de la modernidad, la de que el ser humano puede darse forma a sí mismo, y ver en qué se ha convertido.

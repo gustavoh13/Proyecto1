@@ -3,34 +3,25 @@
 *Ensayo sobre educación, técnica y subjetividad en tiempos neoliberales*
 Gustavo Herrera Urízar
 
-Libro de filosofía (ensayo para público culto) escrito a partir de la tesis doctoral *Las tecnologías digitales en la educación neoliberal como dispositivo en la construcción de subjetividad*. El manuscrito tiene unas 39.000 palabras (unas 150 páginas en formato A5).
+Libro de filosofía (ensayo para público culto) escrito a partir de la tesis doctoral *Las tecnologías digitales en la educación neoliberal como dispositivo en la construcción de subjetividad*. Unas 24.000 palabras.
 
 ## Estructura
 
-| Archivo | Contenido |
-| --- | --- |
-| `libro/00-prologo.md` | Prólogo. Una inquietud |
-| **Primera parte. Cómo se fabrica un alma** | Genealogía de la educación como dispositivo |
-| `libro/01-parte-primera.md` | 1. Conócete a ti mismo: la *paideia* y el ciudadano virtuoso |
-| `libro/02-humanitas-y-fe.md` | 2. Del orador al creyente: *humanitas*, maestro interior y escolástica |
-| `libro/03-bildung.md` | 3. Darse forma: Renacimiento, Ilustración y *Bildung* |
-| `libro/04-escuela-maquina.md` | 4. La escuela-máquina: del Estado al mercado |
-| **Segunda parte. La máquina sin rostro** | El concepto de dispositivo y de sujeto |
-| `libro/05-dispositivo.md` | 5. ¿Qué es un dispositivo? (Foucault, Deleuze, Agamben) |
-| `libro/06-oikonomia.md` | 6. *Oikonomía*: gobernar sin fundamento |
-| `libro/07-sujeto.md` | 7. El sujeto no es una sustancia |
-| **Tercera parte. El alma neoliberal** | Diagnóstico del presente |
-| `libro/08-razon-neoliberal.md` | 8. La nueva razón del mundo |
-| `libro/09-etica-del-rendimiento.md` | 9. El yo que se evalúa: ética del rendimiento |
-| `libro/10-tecnica.md` | 10. Técnica, memoria y veneno (Simondon, Heidegger, Stiegler) |
-| `libro/11-dividuo.md` | 11. El dividuo: personalización, performatividad e IA |
-| `libro/12-vigilar-jugando.md` | 12. Vigilar jugando: datos, privacidad y gamificación |
-| `libro/13-mercancia-desigualdad.md` | 13. El saber como mercancía y la desigualdad que no se ve |
-| **Cuarta parte. Grietas** | Resistencias y alternativa |
-| `libro/14-resistencias.md` | 14. Donde hay poder, hay resistencia |
-| `libro/15-edutropia.md` | 15. Edutropía |
-| `libro/16-epilogo.md` | Epílogo. Conócete a ti mismo, otra vez |
-| `libro/17-lecturas.md` | Notas y lecturas (bibliografía comentada por capítulo) |
+El ensayo no sigue un orden cronológico ni separa teoría y aplicación. Cada capítulo toma un tema y lo sigue a través de las épocas (de Sócrates a la plataforma escolar y de vuelta), y termina abriendo la pregunta del siguiente. No hay partes ni subtítulos internos, solo pausas (`* * *`).
+
+| Archivo | Capítulo | Hilo |
+| --- | --- | --- |
+| `libro/00-prologo.md` | Prólogo. Una inquietud | Desde dónde se escribe y cómo se lee el libro |
+| `libro/01-el-sello-en-la-cera.md` | 1. El sello en la cera | La educación como fabricación del alma: *paideia*, Durkheim, *skholé*, Hiparquia, Aspasia, Diotima, el currículo |
+| `libro/02-una-red-sin-dueno.md` | 2. Una red sin dueño | El dispositivo (Foucault, Deleuze, Agamben), la «Señal» y la notificación, *oikonomía*, providencia algorítmica, profanar |
+| `libro/03-el-alma-prision-del-cuerpo.md` | 3. El alma, prisión del cuerpo | Kant y la silla, Platón, Aristóteles, Descartes e Isabel de Bohemia, disciplina, Pasolini, Spinoza, La Boétie, identidad |
+| `libro/04-escultores-de-si-mismos.md` | 4. Escultores de sí mismos | De Pico y la *Bildung* al emprendedor de sí: Rousseau y Sofía, Pizan, Wollstonecraft, Du Châtelet, capital humano, Han, Ball |
+| `libro/05-ser-visto.md` | 5. Ser visto | De la confesión agustiniana al panel de control: poder pastoral, panóptico, datificación, dividuo, personalización, privacidad |
+| `libro/06-la-memoria-fuera-de-nosotros.md` | 6. La memoria fuera de nosotros | El *pharmakon* del *Fedro*, Stiegler, Comenio, Simondon, Heidegger, IA generativa |
+| `libro/07-lo-que-no-tiene-precio.md` | 7. Lo que no tiene precio | Artes liberales y sofistas, Chile como laboratorio, PISA, plataformas gratuitas, brechas, gamificación y juego |
+| `libro/08-tiempo-libre.md` | 8. Tiempo libre | Resistencias, cuidado, hooks y Garcés, acción colectiva, *edutropía* |
+| `libro/09-epilogo.md` | Epílogo. Conócete a ti mismo, otra vez | Cierre circular en Delfos |
+| `libro/10-lecturas.md` | Notas y lecturas | Bibliografía por capítulo (auditada, ver `auditoria-referencias.md`) |
 
 ## Versiones compiladas
 
@@ -47,7 +38,8 @@ Requiere `pandoc`; el PDF se genera con Chromium en modo headless.
 ## Decisiones editoriales
 
 - **De tesis a ensayo.** Se eliminaron la metodología, las entrevistas, los proyectos edDIT y USMOV y los anexos. El libro es puramente filosófico.
-- **Voz de autor.** Primera persona, prosa continua, sin "este capítulo tiene por objetivo…", sin resúmenes de cierre repetitivos. Se conservan el origen chileno del autor, su experiencia docente y la mirada desde Cataluña.
+- **Voz de autor.** Primera persona y prosa continua. Se conservan el origen chileno del autor, su experiencia docente y la mirada desde Cataluña.
+- **Estilo.** Sin rayas largas para los incisos (se usan comas o paréntesis), sin conectores repetidos ni fórmulas del tipo «no es X, sino Y», y sin enumeraciones de tres en tres en cada párrafo.
 - **Notas mínimas.** Las citas literales se limitan a textos clásicos verificables; el resto se parafrasea. La bibliografía va al final, por capítulo.
 - **Título.** *El alma en la plataforma* retoma la idea de la tesis de que la educación neoliberal es un proyecto "para cambiar el alma". Alternativas posibles: *La fábrica del alma*, *El emprendedor de sí mismo va a la escuela*, *Educar en la era de los dispositivos*.
 

@@ -88,5 +88,15 @@ li { margin: 1mm 0; text-align: left; }
 
 a { color: inherit; text-decoration: none; }
 
+/* Pausas entre secciones (* * * en el manuscrito) */
+hr {
+  border: none;
+  text-align: center;
+  margin: 6mm 0;
+  page-break-after: avoid;
+}
+hr::after { content: "*  *  *"; letter-spacing: 0.3em; font-size: 9pt; }
+hr + p { text-indent: 0; }
+
 /* Notas y lecturas: lista compacta */
 section.level1:last-of-type li { font-size: 9.5pt; }
