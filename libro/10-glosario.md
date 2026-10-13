@@ -22,7 +22,7 @@ Explico aquí, de la forma más sencilla que he sabido, los conceptos que más s
 
 ***Paideia*** (1). Palabra griega que designaba a la vez la educación de los jóvenes, la cultura de un pueblo y el ideal de ser humano al que aspiraba esa cultura.
 
-**Pedagogía de la huella** (prólogo, 2, 5 y 6). Nombre que doy a la lección que la escuela de las plataformas enseña sin decirlo: que hay que dejar rastro de cada paso (entregar, conectarse, completar) y que lo que no deja rastro no cuenta.
+**Pedagogía de la huella** (prólogo, 2, 4 y 5). Nombre que doy a una inversión, no a cualquier enseñanza que pide trabajos o guarda registros. La escuela siempre produjo evidencias para conversar sobre lo aprendido y registró actividad para organizarse. Hay pedagogía de la huella cuando lo que puede registrarse empieza a decidir qué se reconoce como aprendizaje, el registro se convierte en criterio para valorar a la persona y producir rastros pasa a ser una obligación permanente.
 
 **Performatividad** (4). En el sentido de Stephen Ball, una cultura de trabajo en la que se juzga a las personas, sobre todo a los docentes, por los resultados que pueden exhibir.
 

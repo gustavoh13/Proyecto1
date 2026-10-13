@@ -10,7 +10,7 @@ La idea que sostiene este libro cabe en una frase. La escuela no ha sido sustitu
 
 Lo digo así porque los dos relatos más habituales me parecen equivocados. Uno anuncia que la escuela está a punto de desaparecer, que el aprendizaje será personal, continuo y en línea, y que las aulas son una reliquia. El otro presenta la tecnología como una herramienta más, un lápiz sofisticado que cada profesor usará bien o mal. Ninguno ve lo que a mí me parece decisivo. La escuela sigue ahí, con sus edificios, sus horarios y su autoridad, y precisamente por eso resulta tan valiosa para las plataformas. Les ofrece algo que no podrían conseguir solas: millones de niños que tienen que estar allí, durante diez o doce años, haciendo lo que se les pide porque se lo pide la escuela. En ningún otro lugar se aprende un hábito con tanta constancia ni con tanta legitimidad.
 
-Durante siglos, la escuela imprimió su sello en los alumnos, como se imprime una forma en la cera. Hoy les pide además otra cosa: que dejen huella. Que entreguen a tiempo, que se conecten, que completen, que respondan, que cada paso quede registrado. Lo que no deja rastro no cuenta. A esa lección, que ninguna asignatura enseña y que todas practican, la llamaré en este libro *pedagogía de la huella*, y gran parte de lo que sigue intenta describir cómo funciona y qué hace con nosotros.
+Durante siglos, la escuela imprimió su sello en los alumnos, como se imprime una forma en la cera. Hoy les pide además otra cosa: que dejen huella. Que entreguen a tiempo, que se conecten, que completen, que respondan, que cada paso quede registrado. La escuela siempre pidió pruebas de lo aprendido, y no hay nada sospechoso en un cuaderno o en un examen. Lo que me ocupa es una inversión más reciente: el momento en que lo que puede registrarse empieza a decidir qué se reconoce como aprendizaje, y producir rastros se vuelve una obligación permanente. A esa inversión la llamaré *pedagogía de la huella*. En el capítulo 2 explico con precisión dónde empieza, y gran parte del libro intenta describir cómo funciona y qué hace con nosotros.
 
 * * *
 
@@ -22,7 +22,7 @@ No todas funcionan igual ni pertenecen a los mismos dueños. Un Moodle que manti
 
 El ensayo defiende cuatro tesis, y prefiero enunciarlas aquí para que el lector sepa a qué atenerse.
 
-La primera es que la educación nunca ha sido neutral: siempre forma un tipo de persona, y lo preocupante no es que lo haga sino que hoy lo haga sin decir para qué.
+La primera es que la educación nunca ha sido neutral: siempre forma un tipo de persona. Lo preocupante es que hoy los fines que de verdad orientan muchas prácticas escolares, como competir, adaptarse y rendir, se presentan como cuestiones técnicas, a salvo de la discusión pública, mientras las leyes siguen declarando otros.
 
 La segunda es que las plataformas no son meras herramientas. Organizan tiempos, visibilidades, relaciones y métricas, y con eso enseñan una manera de estar en el mundo.
 
@@ -30,6 +30,16 @@ La tercera es que la racionalidad neoliberal convierte a estudiantes y docentes 
 
 La cuarta es que la alternativa no pasa por rechazar la técnica, sino por democratizarla, comprenderla y devolver a la escuela cuatro cosas que se le han ido quitando: tiempo, cuidado, privacidad y deliberación colectiva.
 
-No he escrito un libro contra la tecnología, que sería tan ingenuo como inútil, ni un manual de buenas prácticas digitales. Tampoco es un informe técnico, aunque cuando hablo de datos, de leyes o de estudios intento ser preciso y digo de dónde los saco. Es un ensayo de filosofía, y su ambición es formular mejor un problema que nos afecta a todos. Explico cada concepto la primera vez que aparece, hay un glosario al final y las notas están al final del libro, para quien quiera comprobar las fuentes sin interrumpir la lectura.
+No he escrito un libro contra la tecnología, que sería tan ingenuo como inútil, ni un manual de buenas prácticas digitales. Es un ensayo de filosofía, y su ambición es formular mejor un problema que nos afecta a todos.
+
+* * *
+
+Conviene que el lector sepa en cada momento desde dónde le hablo, porque lo hago desde tres lugares distintos.
+
+A veces hablo como profesor que ha visto algo, y entonces lo digo así. Otras veces hablo como investigador que interpreta documentos: estudios, leyes, decisiones de autoridades públicas y también las entrevistas de mi propia investigación. Entre 2022 y 2023 participé en el proyecto edDIT, que estudió el uso de plataformas digitales corporativas en seis centros educativos de Cataluña, y en 2025 entrevisté a nueve docentes y especialistas de Cataluña y de Chile. Cuando cito sus palabras lo hago tal como quedaron registradas, sin nombres y con el perfil de cada persona. Y otras veces, por último, hablo como ensayista que construye una escena para pensar. La chica que abre la aplicación de su instituto en el primer capítulo o la madre que recibe un aviso a las nueve y veinte de la noche son composiciones de ese tipo: verosímiles, hechas con rasgos de aplicaciones que existen, pero no retratos de personas concretas. Cuando una escena es inventada, lo advierto.
+
+Hago una distinción parecida con la historia. Este libro junta épocas muy alejadas, y no siempre afirma que una cosa haya llevado a la otra. Unas veces señalo una transmisión histórica, con sus mediaciones; otras, una semejanza que sirve para pensar; otras, una lectura filosófica que propongo yo. Intento que el lector sepa cuál de las tres está leyendo.
+
+Explico cada concepto la primera vez que aparece, hay un glosario al final y las notas están al final del libro, para quien quiera comprobar las fuentes sin interrumpir la lectura.
 
 Me daría por satisfecho si quien lea estas páginas (docente, estudiante, madre, padre o cualquiera que alguna vez salió de un pupitre siendo otra persona) termina mirando su escuela, su teléfono y su forma de juzgarse a sí mismo con un poco más de extrañeza. Con la extrañeza empieza la filosofía, y a lo mejor también otra educación.

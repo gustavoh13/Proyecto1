@@ -13,7 +13,7 @@ La escuela no ha sido sustituida por las plataformas: se ha vuelto uno de los lu
 
 Una chica de quince años abre la aplicación de su instituto y, antes de llegar a la tarea, encuentra un gráfico con su rendimiento comparado con la media del grupo. A las nueve y veinte de la noche, una madre recibe un aviso: su hijo ha perdido dos puntos por hablar en clase. Nadie ha decidido que la escuela funcione así, y sin embargo funciona así en casi todas partes.
 
-*El alma en la plataforma* sostiene que la educación nunca ha sido neutral, porque siempre forma un tipo de persona. Muestra que las plataformas digitales no son simples herramientas: ordenan el tiempo, deciden qué se ve, organizan las relaciones y convierten la actividad en medida. Explica cómo la racionalidad neoliberal ha convertido a estudiantes y docentes en gestores de su propio rendimiento, y cómo las plataformas les han dado los instrumentos para hacerlo sin descanso.
+*El alma en la plataforma* sostiene que la educación nunca ha sido neutral, porque siempre forma un tipo de persona, aunque hoy los fines que de verdad la orientan se escondan en los indicadores. Muestra que las plataformas digitales no son simples herramientas: ordenan el tiempo, deciden qué se ve, organizan las relaciones y convierten la actividad en medida. Explica cómo la racionalidad neoliberal ha convertido a estudiantes y docentes en gestores de su propio rendimiento, y cómo las plataformas les han dado los instrumentos para hacerlo sin descanso.
 
 De Sócrates a la inteligencia artificial, de Foucault a la autoridad danesa de protección de datos y de las calles de Santiago a los estudiantes ingleses que se rebelaron contra un algoritmo, Gustavo Herrera Urízar propone una salida que no pasa por rechazar la técnica, sino por comprenderla, democratizarla y devolver a la escuela lo que se le ha ido quitando: tiempo, cuidado, privacidad y deliberación colectiva.
 
@@ -29,7 +29,7 @@ El cierre propone una *edutropía*, un giro posible y no una utopía, con cuatro
 
 ## Cuatro ideas que el libro defiende
 
-1. La educación no es neutral: siempre forma un tipo de persona, y lo preocupante es que hoy lo haga sin decir para qué.
+1. La educación no es neutral: siempre forma un tipo de persona. Hoy las leyes declaran unos fines, pero los que orientan muchas prácticas (competir, adaptarse, rendir) viajan dentro de los indicadores y se presentan como cuestiones técnicas, a salvo de la discusión.
 2. Las plataformas no son meras herramientas: organizan tiempos, visibilidades, relaciones y métricas, y con eso enseñan una manera de estar en el mundo.
 3. La racionalidad neoliberal convierte a estudiantes y docentes en gestores de su propio rendimiento, y las plataformas le dan una eficacia que la escuela disciplinaria nunca tuvo.
 4. La alternativa no es rechazar la técnica sino democratizarla, comprenderla y devolver a la escuela tiempo, cuidado, privacidad y deliberación colectiva.

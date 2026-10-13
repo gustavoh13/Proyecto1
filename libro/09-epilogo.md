@@ -18,9 +18,9 @@ Ninguna de estas redefiniciones es inevitable. Todas se han producido por decisi
 
 * * *
 
-A lo largo del libro he repetido que la educación tiene doble filo, y lo sostengo al final. Puede darnos herramientas para construirnos con cierta conciencia y puede, al mismo tiempo, moldearnos para fines que no son los nuestros. Ninguna época se libró de esa ambigüedad. La *paideia* formaba hombres libres y dejaba fuera a la mayoría. La escuela ilustrada prometía autonomía y la fabricaba con disciplina. La escuela de mercado ofrece libertad de elección y produce personas que eligen lo que se espera de ellas.
+A lo largo del libro he repetido que la educación tiene doble filo, y lo sostengo al final. Puede darnos herramientas para construirnos con cierta conciencia y puede, al mismo tiempo, moldearnos para fines que no son los nuestros. Ninguna época se libró de esa ambigüedad. La *paideia* formaba hombres libres y dejaba fuera a la mayoría. La escuela ilustrada prometía autonomía y la fabricaba con disciplina. La escuela de mercado ofrece libertad de elección y tiende a producir personas que eligen lo que se espera de ellas.
 
-Lo nuevo de nuestra época está en la escala y en la finura del mecanismo. Nunca había sido tan íntimo, tan continuo y tan difícil de ver, y nunca se había presentado con una cara tan amable y tan aparentemente neutra. Buena parte de su infraestructura pertenece, además, a unas pocas empresas que no responden ante ninguna comunidad educativa.
+Lo nuevo de nuestra época está en la escala y en la finura del mecanismo. Nunca había sido tan íntimo, tan continuo y tan difícil de ver, y nunca se había presentado con una cara tan amable y tan aparentemente neutra. Buena parte de su infraestructura pertenece, además, a unas pocas empresas que no responden ante las comunidades educativas que las usan.
 
 Tampoco quiero caer en el fatalismo. La misma técnica que registra puede servir para que una alumna con discapacidad lea, para que dos escuelas lejanas trabajen juntas o para que unos estudiantes se organicen. Lo que haga depende del sentido que le den las comunidades educativas, de su disposición a discutir lo que se les presenta como inevitable y de su capacidad de juntarse frente a poderes mucho mayores. La subjetividad nunca está terminada. Se hace y se rehace con otros, y eso deja siempre un margen.
 
