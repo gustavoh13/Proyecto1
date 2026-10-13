@@ -19,7 +19,10 @@ FUENTES+=("$TMP/notas.md" "${APENDICES[@]}")
 # Markdown único para revisar (conserva las notas al pie)
 pandoc libro/metadata.yaml "${CAPITULOS[@]}" "${APENDICES[@]}" -s -t markdown -o salida/el-alma-en-la-plataforma.md
 
-pandoc libro/metadata.yaml "${FUENTES[@]}" \
+# Las URL escritas en el texto se convierten en enlaces activos
+LECTURA=(-f markdown+autolink_bare_uris)
+
+pandoc libro/metadata.yaml "${FUENTES[@]}" "${LECTURA[@]}" \
   --toc --toc-depth=1 --split-level=1 \
   -o salida/el-alma-en-la-plataforma.epub
 
@@ -29,17 +32,29 @@ python3 herramientas/plantilla_word.py estilos/plantilla.docx
 python3 herramientas/fuentes_docx.py "$TMP/docx" "${CAPITULOS[@]}" "${APENDICES[@]}"
 DOCX=("$TMP/docx/indice.md")
 for c in "${CAPITULOS[@]}" "${APENDICES[@]}"; do DOCX+=("$TMP/docx/$(basename "$c")"); done
-pandoc libro/metadata.yaml "${DOCX[@]}" \
+pandoc libro/metadata.yaml "${DOCX[@]}" "${LECTURA[@]}" \
   --reference-doc=estilos/plantilla.docx \
   -o salida/el-alma-en-la-plataforma.docx
 
-pandoc libro/metadata.yaml "${FUENTES[@]}" \
+# PDF. Chromium no parte palabras en español: si una línea justificada
+# queda estirada, se añade partición a la palabra que no cupo y se repite.
+pandoc libro/metadata.yaml "${FUENTES[@]}" "${LECTURA[@]}" \
   -s --toc --toc-depth=1 --embed-resources --section-divs \
-  --css estilos/libro.css \
-  -o salida/el-alma-en-la-plataforma.html
-
-"$CHROME" --headless --no-sandbox --disable-gpu --no-pdf-header-footer \
-  --print-to-pdf="$PWD/salida/el-alma-en-la-plataforma.pdf" \
-  "file://$PWD/salida/el-alma-en-la-plataforma.html" 2>/dev/null
+  --css estilos/libro.css --lua-filter estilos/cortes-url.lua \
+  -o "$TMP/libro.html"
+: > "$TMP/particion.tsv"
+for intento in 1 2 3 4 5 6; do
+  cp "$TMP/libro.html" salida/el-alma-en-la-plataforma.html
+  python3 herramientas/guionado.py salida/el-alma-en-la-plataforma.html "$TMP/particion.tsv"
+  "$CHROME" --headless --no-sandbox --disable-gpu --no-pdf-header-footer \
+    --print-to-pdf="$PWD/salida/el-alma-en-la-plataforma.pdf" \
+    "file://$PWD/salida/el-alma-en-la-plataforma.html" 2>/dev/null
+  NUEVAS="$(python3 herramientas/lineas_estiradas.py salida/el-alma-en-la-plataforma.pdf)"
+  [ -z "$NUEVAS" ] && break
+  echo "Líneas estiradas en la pasada $intento: $(echo "$NUEVAS" | wc -l)"
+  echo "$NUEVAS" >> "$TMP/particion.tsv"
+done
+# Chromium sitúa los destinos de los enlaces internos sin contar los márgenes
+python3 herramientas/destinos_pdf.py salida/el-alma-en-la-plataforma.pdf estilos/libro.css
 
 echo "Listo: $(ls salida)"

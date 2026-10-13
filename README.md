@@ -38,7 +38,13 @@ Para regenerarlas después de editar los capítulos:
 ./compilar.sh
 ```
 
-Requiere `pandoc` y `python3`; el PDF se genera con Chromium en modo headless. La plantilla de Word la genera `herramientas/plantilla_word.py`. El script `herramientas/notas_finales.py` convierte las notas al pie de cada capítulo en notas finales agrupadas por capítulo, con la numeración reiniciada en cada uno. En los archivos de `libro/` las notas siguen escritas como notas al pie (`[^c3-kant]`), que es lo más cómodo para editar.
+Requiere `pandoc` y `python3` con `pyphen` y `pypdf` (`pip install pyphen pypdf`); el PDF se genera con Chromium en modo headless. La plantilla de Word la genera `herramientas/plantilla_word.py`. El script `herramientas/notas_finales.py` convierte las notas al pie de cada capítulo en notas finales agrupadas por capítulo, con la numeración reiniciada en cada uno. En los archivos de `libro/` las notas siguen escritas como notas al pie (`[^c3-kant]`), que es lo más cómodo para editar.
+
+Ajustes del PDF que hace `compilar.sh` por su cuenta:
+
+- **Partición de palabras.** Chromium no sabe partir palabras en español, y en un texto justificado una palabra larga que no cabe estira la línea anterior. `herramientas/lineas_estiradas.py` localiza esas líneas en el PDF y `herramientas/guionado.py` añade puntos de partición (con `pyphen`) solo a la palabra que no cupo; el ciclo se repite hasta que no queda ninguna. Así el resto del texto se puede copiar y buscar sin caracteres invisibles.
+- **Enlaces internos.** `herramientas/destinos_pdf.py` corrige la posición de los destinos de las llamadas de nota y de sus retornos, que Chromium calcula sin los márgenes de la página.
+- **URL.** Las URL de la bibliografía son enlaces activos en todas las versiones. En el PDF, `estilos/cortes-url.lua` solo permite cortarlas después de una barra o antes de un punto o un guion, nunca en mitad de una palabra o de un número.
 
 ## Decisiones editoriales
 

@@ -55,8 +55,7 @@ Uso una palabra deliberadamente antigua, alma, sin suponer una sustancia
 separada del cuerpo. Me interesa porque durante siglos nombró aquello
 que la educación aspiraba a formar: una manera de percibir, de desear,
 de juzgar y de relacionarse con otros. Hoy hablamos de competencias y de
-perfiles, pero esa formación no ha desaparecido. Ha cambiado de
-instrumentos, y este libro trata de algunos de ellos.
+perfiles, pero esa formación no ha desaparecido.
 
 Durante siglos, la escuela imprimió su sello en los alumnos, como se
 imprime una forma en la cera. Hoy les pide además otra cosa: que dejen

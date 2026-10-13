@@ -14,8 +14,8 @@ body {
   color: #1a1a1a;
   background: #fff;
   margin: 0;
-  hyphens: auto;
-  -webkit-hyphens: auto;
+  hyphens: manual;
+  -webkit-hyphens: manual;
   text-align: justify;
   orphans: 3;
   widows: 3;
@@ -112,3 +112,5 @@ sup { font-size: 0.68em; line-height: 0; vertical-align: super; }
 
 /* Las URL largas de las referencias se cortan para no desbordar la página */
 #bibliografia li, #notas p { overflow-wrap: anywhere; word-break: break-word; }
+/* cortes-url.lua marca dónde puede partirse una URL; el guion va unido a lo que sigue */
+.sin-corte { white-space: nowrap; }
