@@ -59,9 +59,8 @@ pruebas de lo aprendido, y no hay nada sospechoso en un cuaderno o en un
 examen. Lo que me ocupa es una inversión más reciente: el momento en que
 lo que puede registrarse empieza a decidir qué se reconoce como
 aprendizaje, y producir rastros se vuelve una obligación permanente. A
-esa inversión la llamaré *pedagogía de la huella*. En el capítulo 2
-explico con precisión dónde empieza, y gran parte del libro intenta
-describir cómo funciona y qué hace con nosotros.
+esa inversión la llamo *pedagogía de la huella*, y buena parte del libro
+intenta entender qué hace con nosotros.
 
 ------------------------------------------------------------------------
 
@@ -116,40 +115,25 @@ por democratizarla, comprenderla y devolver a la escuela cuatro cosas
 que se le han ido quitando: tiempo, cuidado, privacidad y deliberación
 colectiva.
 
-No he escrito un libro contra la tecnología, que sería tan ingenuo como
-inútil, ni un manual de buenas prácticas digitales. Es un ensayo de
-filosofía, y su ambición es formular mejor un problema que nos afecta a
-todos.
+Es un ensayo de filosofía, y su ambición es formular mejor un problema
+que nos afecta a todos.
 
 ------------------------------------------------------------------------
 
-Conviene que el lector sepa en cada momento desde dónde le hablo, porque
-lo hago desde tres lugares distintos.
+Hablo desde varios lugares y procuro que se note cuándo cambio de uno a
+otro. A veces lo hago como profesor que ha visto algo. Otras, como
+investigador que interpreta estudios, leyes, decisiones públicas y el
+material de mi propia investigación: el proyecto edDIT, que entre 2022 y
+2023 estudió el uso de plataformas corporativas en seis centros de
+Cataluña, y nueve entrevistas a docentes y especialistas de Cataluña y
+de Chile hechas en 2025, que cito sin nombres. Y otras, como ensayista
+que construye una escena para pensar, que presento entonces como tal.
 
-A veces hablo como profesor que ha visto algo, y entonces lo digo así.
-Otras veces hablo como investigador que interpreta documentos: estudios,
-leyes, decisiones de autoridades públicas y también las entrevistas de
-mi propia investigación. Entre 2022 y 2023 participé en el proyecto
-edDIT, que estudió el uso de plataformas digitales corporativas en seis
-centros educativos de Cataluña, y en 2025 entrevisté a nueve docentes y
-especialistas de Cataluña y de Chile. Cuando cito sus palabras lo hago
-tal como quedaron registradas, sin nombres y con el perfil de cada
-persona. Y otras veces, por último, hablo como ensayista que construye
-una escena para pensar. La chica que abre la aplicación de su instituto
-en el primer capítulo o la madre que recibe un aviso a las nueve y
-veinte de la noche son composiciones de ese tipo: verosímiles, hechas
-con rasgos de aplicaciones que existen, pero no retratos de personas
-concretas. Cuando una escena es inventada, lo advierto.
-
-Hago una distinción parecida con la historia. Este libro junta épocas
-muy alejadas, y no siempre afirma que una cosa haya llevado a la otra.
-Unas veces señalo una transmisión histórica, con sus mediaciones; otras,
-una semejanza que sirve para pensar; otras, una lectura filosófica que
-propongo yo. Intento que el lector sepa cuál de las tres está leyendo.
-
-Explico cada concepto la primera vez que aparece, hay un glosario al
-final y las notas están al final del libro, para quien quiera comprobar
-las fuentes sin interrumpir la lectura.
+Con la historia hago algo parecido. Junto épocas lejanas para señalar
+unas veces una transmisión, otras una semejanza y otras una lectura
+propia, y procuro que se vea cuál es cada una. Las notas, al final del
+libro, permiten comprobar las fuentes sin interrumpir la lectura, y un
+glosario recoge los conceptos principales.
 
 Me daría por satisfecho si quien lea estas páginas (docente, estudiante,
 madre, padre o cualquiera que alguna vez salió de un pupitre siendo otra
@@ -176,13 +160,12 @@ números, y esos números pesan más que cualquier oráculo porque no
 parecen una profecía. Parecen un dato.
 
 Juntar un templo griego con una aplicación escolar puede parecer un
-truco retórico, y en parte lo es. No afirmo que una cosa venga de la
-otra, y las diferencias de escala, de técnica y de propósito son
-enormes. Lo que me interesa es una semejanza. En los dos casos alguien
-se encuentra con una imagen de lo que es, o de lo que debería ser, que
-le llega de fuera. Los griegos habrían dicho sin rodeos que en esos
-encuentros se forma un alma. Nosotros hemos perdido la costumbre de
-decirlo, y eso no quiere decir que haya dejado de ocurrir.
+truco retórico, y en parte lo es. Las diferencias de escala, de técnica
+y de propósito son enormes. Lo que me interesa es una semejanza. En los
+dos casos alguien se encuentra con una imagen de lo que es, o de lo que
+debería ser, que le llega de fuera. Los griegos habrían dicho sin rodeos
+que en esos encuentros se forma un alma. Nosotros hemos perdido la
+costumbre de decirlo, y eso no quiere decir que haya dejado de ocurrir.
 
 ------------------------------------------------------------------------
 
@@ -216,9 +199,8 @@ gráfico de barras no solo recibe una forma: está obligada a producir
 rastros. Que la escuela pida pruebas de lo aprendido no tiene nada de
 nuevo, porque un cuaderno, una redacción o un examen también son
 huellas. Lo nuevo es que el rastro empiece a ocupar el lugar de lo que
-debía mostrar. Esa inversión, que delimitaré con cuidado en el capítulo
-siguiente, es para mí la novedad más importante de la escuela
-contemporánea.
+debía mostrar. Esa inversión es, para mí, la novedad más importante de
+la escuela contemporánea.
 
 ------------------------------------------------------------------------
 
@@ -271,7 +253,7 @@ criterios que se discuten en organismos internacionales, en un centro
 que compite con otros para atraer familias. Cuesta decir quién decide
 qué estados físicos, intelectuales y morales tiene que desarrollar. Esa
 dificultad para nombrar al que encarga es, creo, uno de los rasgos que
-mejor definen nuestra época, y el capítulo siguiente intenta explicarla.
+mejor definen nuestra época.
 
 ------------------------------------------------------------------------
 
@@ -350,10 +332,10 @@ lo que le enseñó es una teoría de la educación: *eros* es un ser al que
 algo le falta y que desea lo que no tiene, y la vida filosófica es un
 ascenso movido por ese deseo.[^8] Para Diotima, aprender era desear.
 
-Volveré sobre esta idea, porque es clave para entender lo que hacen hoy
-las plataformas. Toda educación trabaja con el deseo. La diferencia
-entre una que libera y otra que somete está en hacia dónde lo dirige y
-en quién decide la dirección.
+La idea es clave para entender lo que hacen hoy las plataformas. Toda
+educación trabaja con el deseo. La diferencia entre una que libera y
+otra que somete está en hacia dónde lo dirige y en quién decide la
+dirección.
 
 ------------------------------------------------------------------------
 
@@ -501,26 +483,22 @@ algo que hay que regular, el tiempo como algo que hay que cortar en
 pedazos, la obediencia como respuesta inmediata. La Señal no explicaba
 nada ni lo pretendía. Apuntaba al reflejo.
 
-No hay una línea directa entre aquel trozo de madera y nuestros
-teléfonos, pero la semejanza me parece reveladora. La notificación
-cumple el papel de una Señal de otra época: el sonido, la vibración en
-la mesa, el punto rojo de una tarea pendiente, el aviso de que el plazo
-vence en dos horas. Tampoco explica nada y también funciona por reflejo,
-aunque con un alcance que los hermanos no podían soñar, porque ya no se
-queda en el aula ni en el horario escolar. Acompaña al alumno a casa, a
-su cuarto, a la cama.
+La notificación se parece de un modo inquietante a aquella Señal: el
+sonido, la vibración en la mesa, el punto rojo de una tarea pendiente,
+el aviso de que el plazo vence en dos horas. Tampoco explica nada y
+también funciona por reflejo, aunque con un alcance que los hermanos no
+podían soñar, porque ya no se queda en el aula ni en el horario escolar.
+Acompaña al alumno a casa, a su cuarto, a la cama.
 
 ------------------------------------------------------------------------
 
-En el prólogo propuse una definición de plataforma educativa: una
-infraestructura digital que organiza o condiciona la comunicación, los
-contenidos, las tareas, la evaluación, el seguimiento y los datos de una
-escuela. Ahora puedo decir algo más. Una plataforma es la forma que
-adopta el dispositivo escolar cuando buena parte de sus hilos pasan por
-un mismo programa. Lo que antes estaba repartido entre la tarima, el
-boletín, la agenda, el tablón de anuncios y el despacho del tutor se
-reúne en una sola interfaz, con un mismo inicio de sesión. Y esa
-interfaz hace, con mayor o menor intensidad según el caso, cuatro cosas.
+Ahora puedo precisar lo que en el prólogo llamé plataforma educativa. Es
+la forma que adopta el dispositivo escolar cuando buena parte de sus
+hilos pasan por un mismo programa. Lo que antes estaba repartido entre
+la tarima, el boletín, la agenda, el tablón de anuncios y el despacho
+del tutor se reúne en una sola interfaz, con un mismo inicio de sesión.
+Y esa interfaz hace, con mayor o menor intensidad según el caso, cuatro
+cosas.
 
 Ordena el tiempo. Pone plazos con hora y minuto, envía recordatorios,
 marca en rojo lo que se ha retrasado. Su reloj ya no coincide con el del
@@ -546,9 +524,9 @@ canal que pertenece a otro, guarda copia de todo y tiene sus propias
 reglas.
 
 Y convierte la actividad en medida. Porcentajes de entrega, minutos de
-conexión, puntuaciones, insignias, medias del grupo. Lo que se mide se
-compara, y lo que se compara acaba ordenándose en una clasificación
-aunque nadie lo haya pedido.
+conexión, puntuaciones, insignias, medias del grupo. Lo que se mide
+invita a comparar, y en muchos usos la comparación termina en
+clasificación sin que nadie la haya pedido.
 
 Tiempo, visibilidad, relación y medida no son inventos de la era
 digital. La escuela disciplinaria también ordenaba el tiempo con el
@@ -556,9 +534,8 @@ timbre, hacía visibles a los alumnos con la disposición de los pupitres,
 organizaba las relaciones con la tarima y medía con el examen. Lo nuevo
 es que ahora las cuatro operaciones se hacen a la vez, de forma
 continua, en un mismo sitio y quedan registradas. Esa reunión crea las
-condiciones de lo que en el prólogo llamé pedagogía de la huella, y
-antes de seguir tengo que delimitar el concepto, porque se presta a una
-objeción evidente.
+condiciones de lo que llamo pedagogía de la huella, un concepto que
+necesita límites porque se presta a una objeción evidente.
 
 ------------------------------------------------------------------------
 
@@ -639,11 +616,14 @@ Hay que matizar en seguida, porque no todas las plataformas reciben ese
 préstamo en las mismas condiciones. Un Moodle alojado en los servidores
 de una consejería de educación, gestionado por técnicos públicos y sin
 otro negocio que el servicio educativo, también ordena el tiempo y
-produce medidas, pero no convierte los rastros de los alumnos en materia
-prima para otra cosa. Las cuatro operaciones son comunes. Lo que cambia
-de un caso a otro es quién se queda con la huella, para qué la usa y
-ante quién responde. Esa diferencia es política, y recorrerá todo el
-libro.
+produce medidas, pero no tiene ningún negocio en convertir los rastros
+de los alumnos en materia prima para otra cosa. Que no lo haga depende,
+de todos modos, de cómo se gobierne: de quién decide qué se guarda, para
+qué y con qué control. La titularidad pública es una condición
+favorable, no una garantía. Las cuatro operaciones son comunes. Lo que
+cambia de un caso a otro es quién se queda con la huella, para qué la
+usa y ante quién responde. Esa diferencia es política, y recorrerá todo
+el libro.
 
 ------------------------------------------------------------------------
 
@@ -1021,10 +1001,11 @@ haber respondido nunca de una manera que nadie esperaba, y eso es justo
 lo que ningún dispositivo puede fabricar a voluntad. Una plataforma
 puede medir la calificación y empujar la socialización. Puede incluso
 registrar el gesto con que alguien se sale del guion: una respuesta
-inesperada queda anotada como cualquier otra. Lo que no puede es
-comprender su significado educativo, porque ese significado depende de
-una historia, de una relación y de un juicio que no estaban previstos
-entre los datos. Para eso hace falta alguien que mire.
+inesperada queda anotada como cualquier otra. Lo que el registro no
+basta para captar es su significado educativo, que depende de una
+historia, de una relación y de un juicio que no estaban previstos entre
+los datos. Ningún registro sustituye el juicio de alguien que mire y
+responda de lo que ve.
 
 ------------------------------------------------------------------------
 
@@ -1046,8 +1027,8 @@ La comparación no sirve, por tanto, para echar de menos nada. Sirve para
 ver qué ha cambiado en la forma del poder. A la niña de Kant la
 obligaban a estar sentada. El alumno de hoy, en buena medida, se obliga
 solo. Lo empuja menos la mirada del maestro que su propio deseo de
-rendir, de mejorar, de no quedarse atrás. Si se me permite leer a La
-Boétie desde hoy, su servidumbre voluntaria encuentra aquí una forma
+rendir, de mejorar, de no quedarse atrás. Leída desde hoy, la
+servidumbre voluntaria de La Boétie encuentra aquí una forma
 especialmente acabada, una servidumbre que se vive como libertad, y para
 entenderla hay que seguir la historia de una idea que nació para
 liberar.
@@ -1189,9 +1170,9 @@ Más tarde, la apropiación, el momento en que el alumno hace suya esa
 interpretación, la discute o la ignora. Y al final, la relación consigo
 mismo, lo que el alumno termina creyendo que el número dice de él.
 
-La escena que sigue es una composición, construida para pensar y no para
-documentar. No describe a ninguna alumna concreta, aunque cada uno de
-sus elementos existe en plataformas y centros reales.
+La escena que sigue es una composición: no describe a ninguna alumna
+concreta, pero cada uno de sus elementos existe en plataformas y centros
+reales.
 
 Clara está en primero de bachillerato. Un martes por la noche abre la
 aplicación del instituto y ve que su media de matemáticas ha bajado de
@@ -1220,6 +1201,16 @@ la ha hecho suya.
 Un día, hablando con una amiga de qué carrera estudiar, dice: «Yo es que
 soy de seis». La frase ya no habla de una media. Habla de lo que ella
 cree ser, y el último eslabón se ha cerrado.
+
+En Clara aparecen juntas dos cosas que hay que distinguir. «Soy de seis»
+es una identidad cuantificada: alguien que se reconoce en una cifra,
+como tantos alumnos han hecho siempre con sus notas. El empresario de sí
+es otra figura. Aparece cuando el alumno empieza a administrar sus
+indicadores de forma continua, a anticipar riesgos y a elegir sus
+actividades según el rendimiento que espera de ellas, que es lo que hace
+Clara cuando revisa la aplicación cada noche, sube a última hora lo que
+tiene y escoge el tema más seguro. La primera puede darse sin la
+segunda. Lo que la plataforma favorece es que vayan juntas.
 
 Cada paso podía haber sido distinto. Si la profesora de matemáticas le
 hubiera dicho en clase que ese cero era una tarea pendiente y que el
@@ -1348,16 +1339,18 @@ invisible, la conversación con un alumno que lo estaba pasando mal o la
 clase que salió bien porque se apartó del guion, no deja huella.
 
 Lo oí decir con precisión a varias de las personas que entrevisté para
-mi investigación.[^41] Una maestra de primaria que hoy enseña en la
-Universidad de Barcelona me explicó que en Moodle puede ver si sus
-alumnos han entrado o no, «pero creo que hay un riesgo en valorar la
-calidad académica del profesorado por aspectos numéricos irrelevantes,
-como la cantidad de feedback dado». Un profesor de filosofía de un
-instituto catalán lo dijo a propósito de la formación permanente: «Mucha
-gente hace formación solo para tener puntos... tengo certificaciones
-digitales que nunca me sirvieron en el aula». En los dos casos aparece
-la tercera operación del capítulo 2: un registro pensado para seguir un
-proceso que acaba sirviendo para valorar a la persona.
+mi investigación.[^41] Una docente universitaria que antes fue maestra
+me explicó que en Moodle puede ver si sus alumnos han entrado o no,
+«pero creo que hay un riesgo en valorar la calidad académica del
+profesorado por aspectos numéricos irrelevantes, como la cantidad de
+feedback dado». Un profesor de secundaria catalán lo dijo a propósito de
+la formación permanente: «Mucha gente hace formación solo para tener
+puntos... tengo certificaciones digitales que nunca me sirvieron en el
+aula». La primera describe un riesgo: que la actividad registrada en la
+plataforma acabe sirviendo para juzgar a quien enseña. El segundo, una
+práctica que ya ocurre: formarse por los puntos que da la formación más
+que por lo que enseña. Entre el riesgo y la práctica se ve la pendiente
+hacia la tercera operación del capítulo 2.
 
 ```{=html}
 <!-- ESCENA DEL AUTOR: lugar para una experiencia propia como docente con este tipo de rastros (subir evidencias, plazos de corrección en la plataforma, mensajes de familias fuera de horario). Solo si es real y se puede contar sin identificar a nadie. -->
@@ -1385,10 +1378,10 @@ por «hablar en clase» y ha ganado uno por «participación». Hay un
 gráfico circular con los colores de la semana. Nadie le ha pedido a la
 madre que vigile a su hijo, y tampoco nadie le ha pedido al niño que se
 sepa vigilado. La información simplemente llega, a cualquier hora, con
-la naturalidad de un parte meteorológico. La escena es inventada, pero
-su mecanismo no lo es: aplicaciones como ClassDojo, muy extendidas en la
-primaria de muchos países, permiten que el docente sume o reste puntos
-de conducta y que la familia los consulte en su teléfono.
+la naturalidad de un parte meteorológico. Aplicaciones como ClassDojo,
+muy extendidas en la primaria de muchos países, permiten exactamente
+eso: el docente suma o resta puntos de conducta y la familia los
+consulta en su teléfono.
 
 Lo que esa notificación tiene de nuevo es la técnica. Lo que tiene de
 viejo es el deseo de conocer el interior de alguien para conducirlo. Ese
@@ -1490,49 +1483,47 @@ gesto pase por la plataforma.
 
 Esa mirada no se queda en la pantalla del alumno. Llega a las
 instituciones, y ahí se ve con más claridad cómo un registro cambia de
-función. Las entrevistas que hice en 2025 para mi investigación dejan
-una secuencia que me parece reveladora, y la reconstruyo con las
-palabras de quienes la vivieron.[^47]
+función. Tres de las entrevistas que hice en 2025 no describen un mismo
+caso. Leídas juntas, permiten reconocer tres desplazamientos del
+registro.[^47]
 
 En Chile, el libro de clases en papel, donde cada profesor anota la
 asistencia, los contenidos tratados y las calificaciones, ha ido dejando
-paso a sistemas digitales. Un profesor de historia de un liceo público,
-con dieciséis años de oficio, lo resumió así: «El ministerio nos impone
-plataformas para reemplazar los libros de clases físicos, pero en
-realidad seguimos rindiendo cuentas del mismo modo, solo que ahora de
-forma digital». La decisión parecía técnica, un simple cambio de
-soporte. Lo que no cambió fue el sentido del registro.
+paso a sistemas digitales. Un profesor de un liceo público lo resumió
+así: «El ministerio nos impone plataformas para reemplazar los libros de
+clases físicos, pero en realidad seguimos rindiendo cuentas del mismo
+modo, solo que ahora de forma digital». El primer desplazamiento es ese:
+una decisión que parece técnica, un simple cambio de soporte, deja
+intacto el sentido del registro.
 
-Un sociólogo que enseña en una universidad chilena me describió hasta
-dónde puede llegar ese sentido. «El cumplimiento se reduce a hacer
-clic», dijo. «Voy a la sala, inicio sesión, paso asistencia y me voy.
-Nadie verifica si efectivamente se hizo la clase.» Y comparaba dos tipos
-de universidad. En la pública, «subimos asistencia, notas, bitácoras...
-pero nadie lo revisa». En la privada, en cambio, «todo se mide y se
-reporta, lo que resulta agobiante».
+El segundo aparece cuando el registro se separa de lo que debía
+registrar. Un profesor universitario chileno me lo describió así. «El
+cumplimiento se reduce a hacer clic», dijo. «Voy a la sala, inicio
+sesión, paso asistencia y me voy. Nadie verifica si efectivamente se
+hizo la clase.» Y comparaba dos tipos de universidad. En la pública,
+«subimos asistencia, notas, bitácoras... pero nadie lo revisa». En la
+privada, en cambio, «todo se mide y se reporta, lo que resulta
+agobiante».
 
-El desacuerdo que aparece aquí no enfrenta a dos personas. Enfrenta dos
-usos del mismo registro: para unos es un trámite vacío y para otros una
-vigilancia que asfixia. En ninguno de los dos casos sirve para conversar
-sobre lo que pasó en clase, que es lo único que justificaría tomarse la
-molestia de anotarlo.
+Lo que se enfrenta aquí son dos usos del mismo registro: en un sitio, un
+trámite vacío; en otro, una vigilancia que asfixia. En estos relatos, el
+registro aparece desvinculado de cualquier devolución pedagógica sobre
+lo ocurrido en clase.
 
-Una filósofa chilena especializada en ética aplicada señaló la
-consecuencia más seria, la que afecta a los alumnos: «transformar datos
-educativos extremadamente íntimos en etiquetas de riesgo personal cambia
-la perspectiva de la persona». Y añadió una comparación que no he podido
-olvidar. Muchas veces, dijo, se entiende que los datos de aprendizaje
-son «como tomarte la presión, pero no es así». La tensión arterial no
-cambia porque el paciente la mire. Un dato de aprendizaje convertido en
-etiqueta, en cambio, transforma cómo miran al alumno sus profesores y
-cómo se mira él.
+El tercer desplazamiento afecta a los alumnos, y una filósofa chilena lo
+formuló con precisión: «transformar datos educativos extremadamente
+íntimos en etiquetas de riesgo personal cambia la perspectiva de la
+persona». Y añadió una comparación que no he podido olvidar. Muchas
+veces, dijo, se entiende que los datos de aprendizaje son «como tomarte
+la presión, pero no es así». La tensión arterial no cambia porque el
+paciente la mire. Un dato de aprendizaje convertido en etiqueta, en
+cambio, transforma cómo miran al alumno sus profesores y cómo se mira
+él.
 
-La secuencia tiene los tres elementos que me interesan. Hay una decisión
-institucional, digitalizar el registro. Hay un desacuerdo sobre su
-sentido, trámite o vigilancia. Y hay una consecuencia: el registro ocupa
-el lugar de lo que debía registrar, y la etiqueta, el de la persona. No
-hace falta suponer mala fe en nadie. Basta con que el registro esté
-siempre disponible y la conversación no.
+Son tres desplazamientos distintos, que no tienen por qué darse juntos.
+Lo que comparten es que el registro se aleja de una conversación sobre
+lo aprendido. No hace falta suponer mala fe en nadie. Basta con que el
+registro esté siempre disponible y la conversación no.
 
 ```{=html}
 <!-- ESCENA DEL AUTOR: si tienes una junta de evaluación real mediada por una tabla o un panel, este es su lugar. Qué se proyectaba, quién hablaba primero, qué dato decidió algo y qué quedó sin decir. Sin nombres de alumnos ni de centro. -->
@@ -1572,9 +1563,9 @@ la reducción de las diferencias por origen étnico y por renta.[^49]
 
 Hay que leer estos casos con cautela. Las cifras de Purdue no
 resistieron el examen, y las de Georgia State proceden de la propia
-universidad, que tiene buenas razones para contar bien sus éxitos. La
-única evaluación experimental independiente de un modelo parecido, un
-ensayo aleatorizado en once universidades estadounidenses que probó un
+universidad, que tiene buenas razones para contar bien sus éxitos. Una
+evaluación experimental independiente de un modelo parecido, un ensayo
+aleatorizado en once universidades estadounidenses que probó un
 asesoramiento proactivo apoyado en analítica, no encontró efectos
 promedio sobre la graduación ni la permanencia; solo los encontró,
 precisamente, en Georgia State.[^50] Nada de esto demuestra que la
@@ -1677,10 +1668,10 @@ pedagógicas valiosas, y por eso resulta tan atractiva. Conviene
 distinguir aquí dos cosas que llevan el mismo nombre. Un buen maestro
 siempre ha personalizado: mira a cada alumno, ajusta una explicación,
 propone otra lectura. Esa atención no necesita ningún registro continuo.
-La personalización algorítmica es otra cosa. Para ajustar
-automáticamente la enseñanza a cada perfil, el sistema necesita seguir
-sin pausa la actividad de cada alumno, y en ese modelo personalizar y
-vigilar son dos caras de la misma operación.
+La personalización algorítmica es otra cosa. En los modelos que ajustan
+automáticamente la enseñanza a partir de un seguimiento intensivo de la
+actividad de cada alumno, personalizar y vigilar son dos caras de la
+misma operación.
 
 Shoshana Zuboff llama capitalismo de la vigilancia al modelo de negocio
 de las empresas que convierten la experiencia humana en datos de
@@ -1744,12 +1735,10 @@ una parte de su formación que no le pertenece a nadie más.
 ------------------------------------------------------------------------
 
 Entre el maestro interior de Agustín y la notificación de las nueve y
-veinte hay una continuidad que no borra sus diferencias: la de un poder
-que quiere conocer el alma para gobernarla. No la presento como una
-línea recta, porque en medio hay siglos de transformaciones, sino como
-una manera de leer el presente. El confesor escuchaba, el examen
-registraba y la plataforma calcula. Con cada cambio, la mirada se ha
-vuelto más precisa y más difícil de esquivar.
+veinte hay una continuidad que no borra siglos de diferencias: la de un
+poder que quiere conocer el alma para gobernarla. El confesor escuchaba,
+el examen registraba y la plataforma calcula. Con cada cambio, la mirada
+se ha vuelto más precisa y más difícil de esquivar.
 
 La técnica, de todos modos, hace algo más que mirar. Desde hace mucho es
 también el lugar donde dejamos lo que sabemos y lo que recordamos, y
@@ -1829,11 +1818,10 @@ resultado.[^60]
 Es una aspiración generosa, nacida del deseo de que nadie se quedara sin
 educación, y contiene también el germen de algo más inquietante: la
 escuela como máquina y el alumno como materia que el método transforma
-de manera previsible. No digo que las plataformas desciendan de Comenio,
-pero se parecen mucho a su sueño. Secuencian contenidos, cronometran,
-comprueban resultados y ajustan el paso siguiente con una precisión que
-Comenio solo podía imaginar. Lo que él no previó es que el reloj podía
-tener dueño.
+de manera previsible. Su sueño encuentra una semejanza inesperada en las
+plataformas. Secuencian contenidos, cronometran, comprueban resultados y
+ajustan el paso siguiente con una precisión que Comenio solo podía
+imaginar. Lo que él no previó es que el reloj podía tener dueño.
 
 ------------------------------------------------------------------------
 
@@ -2274,7 +2262,7 @@ uso de las huellas para mantener y mejorar sus productos y, sobre todo,
 el hábito. Millones de niños aprenden a trabajar y comunicarse dentro de
 un ecosistema concreto, y cuando terminen la escuela seguirán en él
 porque les parecerá lo natural. La escuela presta su autoridad y su
-público, como dije al principio, y la empresa cobra en costumbre.
+público, y la empresa cobra en costumbre.
 
 Las escuelas, además, quedan atadas. Sus documentos y sus procesos
 dependen de herramientas que no controlan, y cambiar de proveedor
@@ -2307,25 +2295,26 @@ todavía con Classroom. Y en la escuela rural, Google Classroom aparecía
 como una herramienta que ayudaba a desarrollar el proyecto educativo del
 centro y facilitaba el trabajo cooperativo.
 
-El desacuerdo atravesaba a todos los actores. Una activista de Xnet
-sostenía que la administración catalana había promovido activamente la
-entrada de Google en el sistema educativo mediante un convenio que no
-pasó por un concurso público. Un representante de Microsoft defendía que
-«las herramientas sólo tienen sentido si sirven para cumplir los
-objetivos pedagógicos que establecen los docentes» y que el alumnado
-tiene que familiarizarse con el mundo en el que vive. Ninguna de las dos
+El desacuerdo atravesaba a todos los actores. Una activista por los
+derechos digitales sostenía que la administración catalana había
+promovido activamente la entrada de Google en el sistema educativo
+mediante un convenio que no pasó por un concurso público. Un
+representante de una de las grandes tecnológicas defendía que «las
+herramientas sólo tienen sentido si sirven para cumplir los objetivos
+pedagógicos que establecen los docentes» y que el alumnado tiene que
+familiarizarse con el mundo en el que vive. Ninguna de las dos
 posiciones era absurda, y las dos tenían intereses.
 
 La consecuencia más clara la encontré después, en las entrevistas de
-2025, y no tenía que ver con ninguna gran decisión. Una investigadora de
-la Universidad de Barcelona, muy crítica con las plataformas
-corporativas, me dijo: «Yo, siendo consciente de que Google extrae mis
-datos y los de mis estudiantes, sigo utilizando sus herramientas,
-básicamente por la comodidad». Una socióloga de la misma universidad fue
-más lejos: «Hace siete años dejé de utilizar en mi ordenador de trabajo
-software libre porque no podía trabajar con nadie». Y añadió la frase
-que mejor resume el problema: «tú no vas a usar una cosa que solo usas
-tú para comunicarte, porque entonces ¿con quién te vas a comunicar?».
+2025, y no tenía que ver con ninguna gran decisión. Una investigadora
+universitaria muy crítica con las plataformas corporativas me dijo: «Yo,
+siendo consciente de que Google extrae mis datos y los de mis
+estudiantes, sigo utilizando sus herramientas, básicamente por la
+comodidad». Otra investigadora fue más lejos: «Hace siete años dejé de
+utilizar en mi ordenador de trabajo software libre porque no podía
+trabajar con nadie». Y añadió la frase que mejor resume el problema: «tú
+no vas a usar una cosa que solo usas tú para comunicarte, porque
+entonces ¿con quién te vas a comunicar?».
 
 Ahí está la atadura. Nadie tiene que obligar a nadie. Basta con que la
 mayoría de los colegas, las familias y la administración usen la misma
@@ -2365,7 +2354,7 @@ que las comerciales. Requiere mantenimiento: servidores,
 actualizaciones, copias de seguridad y técnicos que respondan cuando
 algo falla un lunes a las ocho. Plantea problemas de interoperabilidad,
 porque las familias, las universidades y otras administraciones usan
-otros formatos y otras plataformas, y ya vimos que una socióloga muy
+otros formatos y otras plataformas, y ya vimos que una investigadora
 convencida acabó abandonándolo porque no podía trabajar con nadie. Tiene
 sus propios riesgos de seguridad, y un servidor público mal mantenido
 puede proteger peor los datos que una gran empresa con equipos
@@ -2472,11 +2461,9 @@ vuelve valiosa.
 
 Pienso en la chica del primer capítulo, la que abre la aplicación del
 instituto y encuentra un gráfico de barras antes que la tarea. A ella
-nadie le ha liberado el tiempo. Se lo han llenado. Si este libro ha
-seguido varios hilos (el sello, la red, el cuerpo, el empresario de sí
-mismo, la mirada, la memoria, el precio), todos acaban en el mismo nudo:
-de las cuatro operaciones de la plataforma, la que más ha transformado
-la escuela es la que ordena el tiempo. Por ahí empieza, creo, cualquier
+nadie le ha liberado el tiempo. Se lo han llenado. De las cuatro
+operaciones de la plataforma, la que más ha transformado la escuela es,
+creo, la que ordena el tiempo. Por ahí empieza, creo, cualquier
 resistencia que valga la pena.
 
 ------------------------------------------------------------------------
@@ -2718,25 +2705,16 @@ inclinación da forma a su tallo. Pienso la edutropía así, como una
 orientación que va dando forma al crecimiento sin prometer que alguna
 vez se llegue.
 
-Antes de concretarla, tengo que recordar los tres límites que este libro
-ha ido encontrando, porque marcan lo que la edutropía no puede ser. No
-puede ser nostalgia de una escuela anterior a las pantallas, que también
-pegaba, clasificaba y excluía. No puede despreciar a las comunidades que
-eligen herramientas digitales por razones de accesibilidad, de
-continuidad, de colaboración o de pura falta de recursos, porque esas
-razones son buenas y son, a menudo, las de quienes menos tienen. Y no
-puede confiar en que el software libre resuelva por sí solo lo que exige
-formación, mantenimiento, seguridad e inversión pública sostenida. Una
-crítica que ignore estos límites se vuelve un lujo de quien ya tiene
-asegurado lo demás.
+Esa orientación hereda los límites que el libro ha ido encontrando: no
+puede ser nostalgia de la escuela anterior a las pantallas, ni desdén
+hacia quienes eligen la técnica por buenas razones, ni confianza en que
+el software libre resuelva solo lo que exige inversión pública.
 
 ------------------------------------------------------------------------
 
-Se me dirá que todo esto es vago, que una palabra nueva no arregla nada
-y que hablar de giros y de luz es una manera elegante de no proponer
-nada concreto. Acepto el riesgo, y por eso quiero bajar a tierra el giro
-en cuatro direcciones, las mismas cuatro cosas que, a mi juicio, se le
-han ido quitando a la escuela.
+Una palabra nueva no arregla nada si no baja a tierra. Propongo cuatro
+direcciones, que son las cuatro cosas que, a mi juicio, se le han ido
+quitando a la escuela.
 
 La primera es el tiempo. Defender la *skholé* hoy significa proteger
 horas sin pantalla y ritmos lentos, poner límites horarios a las tareas
@@ -2814,13 +2792,18 @@ Un conflicto parecido aparece entre la privacidad y el cuidado. Si la
 escuela deja de registrar las ausencias en la plataforma para no
 acumular datos, puede perder la señal que le habría permitido llamar a
 tiempo a una familia. Para estos casos propongo un criterio que se
-deriva de las tres operaciones del capítulo 2: toda huella que la
+deriva de las tres operaciones del capítulo 2: cada huella que la
 escuela recoja debería tener un lector, un propósito y una fecha de
 caducidad. Un lector, es decir, alguien concreto que la mira para hacer
 algo por ese alumno. Un propósito que se pueda explicar al alumno y a su
 familia. Y una fecha a partir de la cual el registro desaparece en lugar
 de acumularse en un perfil. Un registro que nadie lee no protege a
-nadie, y uno que no caduca acaba convirtiéndose en juicio.
+nadie, y uno que no caduca acaba convirtiéndose en juicio. La fórmula no
+obliga a borrar sin más: un expediente académico o un registro que la
+ley manda conservar tienen sus propias razones y sus propios plazos. La
+conservación de cada registro debe justificarse por su finalidad, por
+las obligaciones que lo rigen y por el tiempo durante el que sigue
+siendo necesario. Lo que se rechaza es acumular por defecto.
 
 El tercer conflicto es el más prosaico y quizá el más decisivo.
 Cualquier transición tecnológica, también hacia herramientas libres o
@@ -2843,11 +2826,9 @@ trimestre. Eso también es deliberación colectiva.
 
 ------------------------------------------------------------------------
 
-Nada de esto supone desconectar la escuela. Vivimos en un mundo
-irreversiblemente atravesado por la técnica, y la educación no puede
-quedar fuera de él. Lo que sí puede hacer es negarse a recibir la
-tecnología como un destino, interrogarla en cada caso y discutir quién
-la controla y para qué.
+Nada de esto supone desconectar la escuela, sino negarse a recibir la
+técnica como un destino, interrogarla en cada caso y discutir quién la
+controla y para qué.
 
 Me quedan muchas preguntas sin responder. No sé cómo se enseña a pensar
 en una época en que las máquinas producen textos. Tampoco sé del todo
@@ -2892,13 +2873,9 @@ otro.
 
 ------------------------------------------------------------------------
 
-He sostenido a lo largo de estas páginas que la escuela no ha sido
-sustituida por las plataformas, y que se ha convertido en uno de los
-lugares donde las plataformas aprenden a formar personas. Les presta un
-público que no puede marcharse, una autoridad que convierte cada hábito
-en virtud y diez o doce años de práctica diaria. A cambio recibe
-herramientas que de verdad ayudan, y una manera de entender la educación
-que casi nadie ha elegido.
+La escuela que presta a las plataformas su público, su autoridad y su
+tiempo recibe a cambio herramientas que de verdad ayudan, y también una
+manera de entender la educación que casi nadie ha elegido.
 
 Entre la nota, el algoritmo, el ranking, la notificación y la
 inteligencia artificial generativa se están redefiniendo cuatro palabras
@@ -2920,14 +2897,13 @@ no» y que, a veces, se consigue.
 
 ------------------------------------------------------------------------
 
-A lo largo del libro he repetido que la educación tiene doble filo, y lo
-sostengo al final. Puede darnos herramientas para construirnos con
-cierta conciencia y puede, al mismo tiempo, moldearnos para fines que no
-son los nuestros. Ninguna época se libró de esa ambigüedad. La *paideia*
-formaba hombres libres y dejaba fuera a la mayoría. La escuela ilustrada
-prometía autonomía y la fabricaba con disciplina. La escuela de mercado
-ofrece libertad de elección y tiende a producir personas que eligen lo
-que se espera de ellas.
+La educación tiene doble filo. Puede darnos herramientas para
+construirnos con cierta conciencia y puede, al mismo tiempo, moldearnos
+para fines que no son los nuestros. Ninguna época se libró de esa
+ambigüedad. La *paideia* formaba hombres libres y dejaba fuera a la
+mayoría. La escuela ilustrada prometía autonomía y la fabricaba con
+disciplina. La escuela de mercado ofrece libertad de elección y tiende a
+producir personas que eligen lo que se espera de ellas.
 
 Lo nuevo de nuestra época está en la escala y en la finura del
 mecanismo. Nunca había sido tan íntimo, tan continuo y tan difícil de
@@ -3065,13 +3041,10 @@ por sí mismo y se sale del molde.
 
 # Bibliografía {#bibliografia .unnumbered}
 
-Las notas citan con el sistema autor-año de APA 7, con el año de la
-edición original y el de la edición utilizada cuando no coinciden. Las
-obras clásicas griegas y latinas indican además la numeración canónica
-(Stephanus para Platón, Bekker para Aristóteles), que permite encontrar
-el pasaje en cualquier edición. Las citas de las entrevistas de mi
-investigación no figuran en la lista, como establece APA 7 para los
-participantes de una investigación propia.
+Las notas citan cada obra por autor y año; cuando hay traducción, el
+primer año es el de la edición original. Las obras clásicas indican
+además la numeración canónica (Stephanus para Platón, Bekker para
+Aristóteles), que permite encontrar el pasaje en cualquier edición.
 
 ## Lecturas comentadas
 
@@ -3468,7 +3441,8 @@ lo que encontré en ellas.
 -   Tribunal de Justicia de la Unión Europea. (2025). *Recurso de
     casación interpuesto el 31 de octubre de 2025 por Philippe Latombe
     contra la sentencia del Tribunal General en el asunto T-553/23*
-    (C-703/25 P). https://curia.europa.eu/juris/liste.jsf?num=C-703/25
+    (C-703/25 P). *Diario Oficial de la Unión Europea*, C, 2025/6610.
+    https://eur-lex.europa.eu/eli/C/2025/6610/oj
 -   Tribunal General de la Unión Europea. (2025, 3 de septiembre).
     *Sentencia Latombe/Comisión* (T-553/23).
     https://curia.europa.eu/juris/liste.jsf?num=T-553/23
@@ -3618,9 +3592,8 @@ libertad.
 [^41]: Entrevistas semiestructuradas realizadas por el autor en febrero
     de 2025, para su investigación doctoral, a cinco especialistas y
     cuatro docentes de secundaria de Cataluña y Chile. Las personas
-    entrevistadas dieron su consentimiento informado y se citan por su
-    perfil, sin nombres. Como establece APA 7 para los participantes de
-    una investigación propia, no figuran en la lista de referencias.
+    entrevistadas dieron su consentimiento informado y se citan sin
+    nombres.
 
 [^42]: Agustín de Hipona (ca. 389/1947).
 
@@ -3634,9 +3607,8 @@ libertad.
 [^46]: Williamson (2017).
 
 [^47]: Entrevistas realizadas por el autor en febrero de 2025 (véanse
-    las notas del capítulo 4). Hablan un profesor de historia de un
-    liceo público chileno, un sociólogo de una universidad chilena y una
-    filósofa de una universidad chilena.
+    las notas del capítulo 4). Hablan un profesor de un liceo público
+    chileno y dos docentes universitarios chilenos.
 
 [^48]: La afirmación institucional, en Purdue University (2013); el
     sistema, en Arnold y Pistilli (2012). Las críticas, en Caulfield

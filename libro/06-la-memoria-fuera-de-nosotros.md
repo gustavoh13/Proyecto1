@@ -20,7 +20,7 @@ De ahí se sigue algo decisivo para la escuela. Si educar es transmitir esa memo
 
 En el siglo XVII, Jan Amos Comenio, obispo de los Hermanos Moravos, se propuso encontrar un método universal para «enseñar todo a todos». Defendió una escuela para todos los niños, ricos y pobres, chicos y chicas, organizó una secuencia de cursos según las edades y escribió uno de los primeros libros escolares con ilustraciones. Y pensó la escuela como un mecanismo que debía marchar con la regularidad de un reloj, con un orden y un método que, bien aplicados, dieran siempre el mismo resultado.[^c6-comenio]
 
-Es una aspiración generosa, nacida del deseo de que nadie se quedara sin educación, y contiene también el germen de algo más inquietante: la escuela como máquina y el alumno como materia que el método transforma de manera previsible. No digo que las plataformas desciendan de Comenio, pero se parecen mucho a su sueño. Secuencian contenidos, cronometran, comprueban resultados y ajustan el paso siguiente con una precisión que Comenio solo podía imaginar. Lo que él no previó es que el reloj podía tener dueño.
+Es una aspiración generosa, nacida del deseo de que nadie se quedara sin educación, y contiene también el germen de algo más inquietante: la escuela como máquina y el alumno como materia que el método transforma de manera previsible. Su sueño encuentra una semejanza inesperada en las plataformas. Secuencian contenidos, cronometran, comprueban resultados y ajustan el paso siguiente con una precisión que Comenio solo podía imaginar. Lo que él no previó es que el reloj podía tener dueño.
 
 * * *
 

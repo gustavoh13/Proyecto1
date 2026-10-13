@@ -30,11 +30,11 @@ Uno de los ejemplos más elocuentes de Foucault viene de las escuelas de los Her
 
 Me conmueve un poco la modestia de ese objeto, un trozo de madera que hacía clic. En él se resumía un régimen entero: el cuerpo infantil como algo que hay que regular, el tiempo como algo que hay que cortar en pedazos, la obediencia como respuesta inmediata. La Señal no explicaba nada ni lo pretendía. Apuntaba al reflejo.
 
-No hay una línea directa entre aquel trozo de madera y nuestros teléfonos, pero la semejanza me parece reveladora. La notificación cumple el papel de una Señal de otra época: el sonido, la vibración en la mesa, el punto rojo de una tarea pendiente, el aviso de que el plazo vence en dos horas. Tampoco explica nada y también funciona por reflejo, aunque con un alcance que los hermanos no podían soñar, porque ya no se queda en el aula ni en el horario escolar. Acompaña al alumno a casa, a su cuarto, a la cama.
+La notificación se parece de un modo inquietante a aquella Señal: el sonido, la vibración en la mesa, el punto rojo de una tarea pendiente, el aviso de que el plazo vence en dos horas. Tampoco explica nada y también funciona por reflejo, aunque con un alcance que los hermanos no podían soñar, porque ya no se queda en el aula ni en el horario escolar. Acompaña al alumno a casa, a su cuarto, a la cama.
 
 * * *
 
-En el prólogo propuse una definición de plataforma educativa: una infraestructura digital que organiza o condiciona la comunicación, los contenidos, las tareas, la evaluación, el seguimiento y los datos de una escuela. Ahora puedo decir algo más. Una plataforma es la forma que adopta el dispositivo escolar cuando buena parte de sus hilos pasan por un mismo programa. Lo que antes estaba repartido entre la tarima, el boletín, la agenda, el tablón de anuncios y el despacho del tutor se reúne en una sola interfaz, con un mismo inicio de sesión. Y esa interfaz hace, con mayor o menor intensidad según el caso, cuatro cosas.
+Ahora puedo precisar lo que en el prólogo llamé plataforma educativa. Es la forma que adopta el dispositivo escolar cuando buena parte de sus hilos pasan por un mismo programa. Lo que antes estaba repartido entre la tarima, el boletín, la agenda, el tablón de anuncios y el despacho del tutor se reúne en una sola interfaz, con un mismo inicio de sesión. Y esa interfaz hace, con mayor o menor intensidad según el caso, cuatro cosas.
 
 Ordena el tiempo. Pone plazos con hora y minuto, envía recordatorios, marca en rojo lo que se ha retrasado. Su reloj ya no coincide con el del timbre. Una tarea que vence a las 23:59 extiende la jornada escolar hasta la medianoche, y un mensaje del profesor a las diez de la noche convierte el domingo en tiempo disponible para la escuela.
 
@@ -42,9 +42,9 @@ Decide qué se ve. El panel de una plataforma muestra quién entregó, quién ab
 
 Organiza las relaciones. Por la plataforma pasan los mensajes entre el docente y las familias, los comentarios a los trabajos, los documentos compartidos entre compañeros. Fija quién puede hablar con quién, por qué canal y con qué registro. Una relación que antes dependía de una cita en el despacho o de una charla a la salida del colegio queda mediada por un canal que pertenece a otro, guarda copia de todo y tiene sus propias reglas.
 
-Y convierte la actividad en medida. Porcentajes de entrega, minutos de conexión, puntuaciones, insignias, medias del grupo. Lo que se mide se compara, y lo que se compara acaba ordenándose en una clasificación aunque nadie lo haya pedido.
+Y convierte la actividad en medida. Porcentajes de entrega, minutos de conexión, puntuaciones, insignias, medias del grupo. Lo que se mide invita a comparar, y en muchos usos la comparación termina en clasificación sin que nadie la haya pedido.
 
-Tiempo, visibilidad, relación y medida no son inventos de la era digital. La escuela disciplinaria también ordenaba el tiempo con el timbre, hacía visibles a los alumnos con la disposición de los pupitres, organizaba las relaciones con la tarima y medía con el examen. Lo nuevo es que ahora las cuatro operaciones se hacen a la vez, de forma continua, en un mismo sitio y quedan registradas. Esa reunión crea las condiciones de lo que en el prólogo llamé pedagogía de la huella, y antes de seguir tengo que delimitar el concepto, porque se presta a una objeción evidente.
+Tiempo, visibilidad, relación y medida no son inventos de la era digital. La escuela disciplinaria también ordenaba el tiempo con el timbre, hacía visibles a los alumnos con la disposición de los pupitres, organizaba las relaciones con la tarima y medía con el examen. Lo nuevo es que ahora las cuatro operaciones se hacen a la vez, de forma continua, en un mismo sitio y quedan registradas. Esa reunión crea las condiciones de lo que llamo pedagogía de la huella, un concepto que necesita límites porque se presta a una objeción evidente.
 
 * * *
 
@@ -70,7 +70,7 @@ Les presta un público obligatorio. Una red social tiene que seducir a sus usuar
 
 Este préstamo es lo que me hace decir que la escuela se ha convertido en uno de los lugares donde las plataformas aprenden a formar personas. Ahí ensayan su manera de ordenar el tiempo, la visibilidad, las relaciones y la medida sobre un público cautivo y bajo la protección de una institución que casi todos consideran benéfica.
 
-Hay que matizar en seguida, porque no todas las plataformas reciben ese préstamo en las mismas condiciones. Un Moodle alojado en los servidores de una consejería de educación, gestionado por técnicos públicos y sin otro negocio que el servicio educativo, también ordena el tiempo y produce medidas, pero no convierte los rastros de los alumnos en materia prima para otra cosa. Las cuatro operaciones son comunes. Lo que cambia de un caso a otro es quién se queda con la huella, para qué la usa y ante quién responde. Esa diferencia es política, y recorrerá todo el libro.
+Hay que matizar en seguida, porque no todas las plataformas reciben ese préstamo en las mismas condiciones. Un Moodle alojado en los servidores de una consejería de educación, gestionado por técnicos públicos y sin otro negocio que el servicio educativo, también ordena el tiempo y produce medidas, pero no tiene ningún negocio en convertir los rastros de los alumnos en materia prima para otra cosa. Que no lo haga depende, de todos modos, de cómo se gobierne: de quién decide qué se guarda, para qué y con qué control. La titularidad pública es una condición favorable, no una garantía. Las cuatro operaciones son comunes. Lo que cambia de un caso a otro es quién se queda con la huella, para qué la usa y ante quién responde. Esa diferencia es política, y recorrerá todo el libro.
 
 * * *
 

@@ -4,7 +4,7 @@ Los griegos llamaban *skholé* al tiempo que no estaba ocupado por la necesidad.
 
 Los filósofos belgas Jan Masschelein y Maarten Simons han escrito una defensa de la escuela que parte de esa etimología.[^c8-masschelein] Para ellos, lo propio de lo escolar es suspender por un rato las urgencias del mundo: la familia, el trabajo, la utilidad, el origen social. En el aula, durante unas horas, un texto, una ecuación o una pregunta histórica se ponen sobre la mesa para ser estudiados por sí mismos, sin que tengan que servir de inmediato para nada. Lo que muchas reformas le reprochan a la escuela, su lentitud y su distancia del mercado, es justo lo que la vuelve valiosa.
 
-Pienso en la chica del primer capítulo, la que abre la aplicación del instituto y encuentra un gráfico de barras antes que la tarea. A ella nadie le ha liberado el tiempo. Se lo han llenado. Si este libro ha seguido varios hilos (el sello, la red, el cuerpo, el empresario de sí mismo, la mirada, la memoria, el precio), todos acaban en el mismo nudo: de las cuatro operaciones de la plataforma, la que más ha transformado la escuela es la que ordena el tiempo. Por ahí empieza, creo, cualquier resistencia que valga la pena.
+Pienso en la chica del primer capítulo, la que abre la aplicación del instituto y encuentra un gráfico de barras antes que la tarea. A ella nadie le ha liberado el tiempo. Se lo han llenado. De las cuatro operaciones de la plataforma, la que más ha transformado la escuela es, creo, la que ordena el tiempo. Por ahí empieza, creo, cualquier resistencia que valga la pena.
 
 * * *
 
@@ -72,11 +72,11 @@ Para nombrar la dirección hacia la que apuntan estas prácticas propongo una pa
 
 En botánica se llama tropismo al movimiento con que una planta se orienta hacia un estímulo, y heliotropismo al giro hacia la luz. Ninguna planta llega al sol, pero todas crecen inclinadas hacia él, y esa inclinación da forma a su tallo. Pienso la edutropía así, como una orientación que va dando forma al crecimiento sin prometer que alguna vez se llegue.
 
-Antes de concretarla, tengo que recordar los tres límites que este libro ha ido encontrando, porque marcan lo que la edutropía no puede ser. No puede ser nostalgia de una escuela anterior a las pantallas, que también pegaba, clasificaba y excluía. No puede despreciar a las comunidades que eligen herramientas digitales por razones de accesibilidad, de continuidad, de colaboración o de pura falta de recursos, porque esas razones son buenas y son, a menudo, las de quienes menos tienen. Y no puede confiar en que el software libre resuelva por sí solo lo que exige formación, mantenimiento, seguridad e inversión pública sostenida. Una crítica que ignore estos límites se vuelve un lujo de quien ya tiene asegurado lo demás.
+Esa orientación hereda los límites que el libro ha ido encontrando: no puede ser nostalgia de la escuela anterior a las pantallas, ni desdén hacia quienes eligen la técnica por buenas razones, ni confianza en que el software libre resuelva solo lo que exige inversión pública.
 
 * * *
 
-Se me dirá que todo esto es vago, que una palabra nueva no arregla nada y que hablar de giros y de luz es una manera elegante de no proponer nada concreto. Acepto el riesgo, y por eso quiero bajar a tierra el giro en cuatro direcciones, las mismas cuatro cosas que, a mi juicio, se le han ido quitando a la escuela.
+Una palabra nueva no arregla nada si no baja a tierra. Propongo cuatro direcciones, que son las cuatro cosas que, a mi juicio, se le han ido quitando a la escuela.
 
 La primera es el tiempo. Defender la *skholé* hoy significa proteger horas sin pantalla y ritmos lentos, poner límites horarios a las tareas y a los mensajes, aceptar actividades que no dejan registro y conversaciones que no llegan a ninguna conclusión. Es la dirección que da título a este capítulo, y la que las prohibiciones del móvil no alcanzan.
 
@@ -96,7 +96,7 @@ Pensemos en un claustro que decide proteger el tiempo de sus alumnos. Acuerda qu
 
 El dilema no se resuelve renunciando a una de las dos cosas. Se resuelve, creo, distinguiendo entre lo que la institución exige y lo que el alumno puede hacer. El límite tiene que caer sobre las exigencias: ningún plazo vence de noche, ningún aviso de la escuela llega a las diez, ningún docente está obligado a contestar el sábado. Lo que no debe cerrarse es el acceso. Los materiales y las entregas siguen disponibles para quien los necesite cuando pueda, sin que la hora quede anotada ni cuente a favor o en contra. Proteger el tiempo significa liberar a todos de la obligación de estar disponibles, y no impedir que alguien use el suyo como le haga falta.
 
-Un conflicto parecido aparece entre la privacidad y el cuidado. Si la escuela deja de registrar las ausencias en la plataforma para no acumular datos, puede perder la señal que le habría permitido llamar a tiempo a una familia. Para estos casos propongo un criterio que se deriva de las tres operaciones del capítulo 2: toda huella que la escuela recoja debería tener un lector, un propósito y una fecha de caducidad. Un lector, es decir, alguien concreto que la mira para hacer algo por ese alumno. Un propósito que se pueda explicar al alumno y a su familia. Y una fecha a partir de la cual el registro desaparece en lugar de acumularse en un perfil. Un registro que nadie lee no protege a nadie, y uno que no caduca acaba convirtiéndose en juicio.
+Un conflicto parecido aparece entre la privacidad y el cuidado. Si la escuela deja de registrar las ausencias en la plataforma para no acumular datos, puede perder la señal que le habría permitido llamar a tiempo a una familia. Para estos casos propongo un criterio que se deriva de las tres operaciones del capítulo 2: cada huella que la escuela recoja debería tener un lector, un propósito y una fecha de caducidad. Un lector, es decir, alguien concreto que la mira para hacer algo por ese alumno. Un propósito que se pueda explicar al alumno y a su familia. Y una fecha a partir de la cual el registro desaparece en lugar de acumularse en un perfil. Un registro que nadie lee no protege a nadie, y uno que no caduca acaba convirtiéndose en juicio. La fórmula no obliga a borrar sin más: un expediente académico o un registro que la ley manda conservar tienen sus propias razones y sus propios plazos. La conservación de cada registro debe justificarse por su finalidad, por las obligaciones que lo rigen y por el tiempo durante el que sigue siendo necesario. Lo que se rechaza es acumular por defecto.
 
 El tercer conflicto es el más prosaico y quizá el más decisivo. Cualquier transición tecnológica, también hacia herramientas libres o públicas, cuesta horas de trabajo docente: aprender, migrar materiales, resolver incidencias, explicar los cambios a las familias. Si esas horas no se reconocen ni se pagan, la opción más cómoda, que suele ser la corporativa y gratuita, volverá a ganar, como les pasó a las investigadoras que cité en el capítulo anterior, y el cuidado de los alumnos se pagará con el agotamiento de los profesores. Una política que defienda la privacidad a costa del tiempo de quien enseña contradice la primera de sus propias direcciones.
 
@@ -104,7 +104,7 @@ Estos criterios no resuelven todos los casos. Dan, eso sí, una manera de decidi
 
 * * *
 
-Nada de esto supone desconectar la escuela. Vivimos en un mundo irreversiblemente atravesado por la técnica, y la educación no puede quedar fuera de él. Lo que sí puede hacer es negarse a recibir la tecnología como un destino, interrogarla en cada caso y discutir quién la controla y para qué.
+Nada de esto supone desconectar la escuela, sino negarse a recibir la técnica como un destino, interrogarla en cada caso y discutir quién la controla y para qué.
 
 Me quedan muchas preguntas sin responder. No sé cómo se enseña a pensar en una época en que las máquinas producen textos. Tampoco sé del todo cómo usar lo digital sin entrar en su lógica comercial, ni qué hacer para que la evaluación vuelva a ser un diálogo. Desconfío de quien diga tener esas respuestas. Mientras sigan siendo preguntas, la escuela sigue siendo un lugar abierto.
 

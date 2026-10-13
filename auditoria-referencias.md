@@ -299,5 +299,12 @@ En esta revisión se hizo una auditoría documental de cada cifra, norma y resul
 - Traductores de Agamben (Adriana Hidalgo) y de Masschelein y Simons, y si Pablo Rodríguez figura como cotraductor de Simondon.
 - Ediciones de los clásicos: las de Gredos y otras son ediciones de referencia propuestas; si el autor usó otras, hay que cambiarlas.
 - Texto literal del art. 2 de la Ley General de Educación chilena y del art. 27.2 de la Constitución española (se parafrasean).
-- Número oficial y título del Reglamento (UE) 2026/1744 en EUR-Lex; condiciones del convenio entre el Departament d'Educació y Google, que el libro solo menciona como afirmación de una activista; autoría del reportaje de NPR (2016).
+- Reglamento (UE) 2026/1744: número, publicación (24 de julio de 2026), entrada en vigor (27 de julio de 2026) y aplazamiento del anexo III al 2 de diciembre de 2027 confirmados en varias fuentes jurídicas concordantes (Hunton, Mayer Brown, National Law Review); falta cotejar el texto en EUR-Lex. La casación C-703/25 P consta en el DOUE (C/2025/6610) y seguía pendiente en junio de 2026; condiciones del convenio entre el Departament d'Educació y Google, que el libro solo menciona como afirmación de una activista; autoría del reportaje de NPR (2016).
 - Black y Wiliam (1998) no tiene DOI.
+
+## Tercera revisión (depuración): cambios en la presentación de las fuentes
+
+- Las entrevistas del capítulo 5 se presentan como tres testimonios independientes que permiten reconocer tres desplazamientos del registro, no como una secuencia observada.
+- Los perfiles de las personas entrevistadas y de los informantes de edDIT se han hecho menos específicos para reducir el riesgo de identificación (sin universidad, años de oficio, organización ni empresa concreta).
+- En el capítulo 4 se distingue el testimonio que expresa un riesgo (evaluar al docente por la cantidad de comentarios en Moodle) del que describe una práctica (formarse por los puntos).
+- «La única evaluación experimental independiente» de Georgia State pasa a «una evaluación experimental independiente», porque no se ha hecho una revisión exhaustiva que respalde la exclusividad.

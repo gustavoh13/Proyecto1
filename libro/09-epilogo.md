@@ -10,7 +10,7 @@ Lo que esos sistemas nos devuelven, sin embargo, es un perfil, y la distancia en
 
 * * *
 
-He sostenido a lo largo de estas páginas que la escuela no ha sido sustituida por las plataformas, y que se ha convertido en uno de los lugares donde las plataformas aprenden a formar personas. Les presta un público que no puede marcharse, una autoridad que convierte cada hábito en virtud y diez o doce años de práctica diaria. A cambio recibe herramientas que de verdad ayudan, y una manera de entender la educación que casi nadie ha elegido.
+La escuela que presta a las plataformas su público, su autoridad y su tiempo recibe a cambio herramientas que de verdad ayudan, y también una manera de entender la educación que casi nadie ha elegido.
 
 Entre la nota, el algoritmo, el ranking, la notificación y la inteligencia artificial generativa se están redefiniendo cuatro palabras que la escuela siempre tuvo a su cargo. Aprender se parece cada vez más a dejar huella: entregar, completar, conectarse, producir el rastro que el sistema sabe leer. Ser libre se confunde con elegir entre opciones que alguien ha dispuesto antes. Fracasar es quedar por debajo de la media en un gráfico que se consulta a solas, y vivirlo como una culpa privada. Y conocerse a uno mismo empieza a significar consultar el propio perfil.
 
@@ -18,7 +18,7 @@ Ninguna de estas redefiniciones es inevitable. Todas se han producido por decisi
 
 * * *
 
-A lo largo del libro he repetido que la educación tiene doble filo, y lo sostengo al final. Puede darnos herramientas para construirnos con cierta conciencia y puede, al mismo tiempo, moldearnos para fines que no son los nuestros. Ninguna época se libró de esa ambigüedad. La *paideia* formaba hombres libres y dejaba fuera a la mayoría. La escuela ilustrada prometía autonomía y la fabricaba con disciplina. La escuela de mercado ofrece libertad de elección y tiende a producir personas que eligen lo que se espera de ellas.
+La educación tiene doble filo. Puede darnos herramientas para construirnos con cierta conciencia y puede, al mismo tiempo, moldearnos para fines que no son los nuestros. Ninguna época se libró de esa ambigüedad. La *paideia* formaba hombres libres y dejaba fuera a la mayoría. La escuela ilustrada prometía autonomía y la fabricaba con disciplina. La escuela de mercado ofrece libertad de elección y tiende a producir personas que eligen lo que se espera de ellas.
 
 Lo nuevo de nuestra época está en la escala y en la finura del mecanismo. Nunca había sido tan íntimo, tan continuo y tan difícil de ver, y nunca se había presentado con una cara tan amable y tan aparentemente neutra. Buena parte de su infraestructura pertenece, además, a unas pocas empresas que no responden ante las comunidades educativas que las usan.
 

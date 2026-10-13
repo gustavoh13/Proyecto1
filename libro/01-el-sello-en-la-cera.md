@@ -4,7 +4,7 @@ Cuenta la tradición que en la entrada del templo de Apolo, en Delfos, había un
 
 Veinticinco siglos después, imaginemos a una chica de quince años que abre en el móvil la aplicación de su instituto. Antes de llegar a la tarea del día, la pantalla le enseña un gráfico de barras con su progreso semanal comparado con la media del grupo, el porcentaje de entregas a tiempo y una insignia que todavía no ha conseguido. La aplicación no le pide que se conozca. Le informa de quién es, con números, y esos números pesan más que cualquier oráculo porque no parecen una profecía. Parecen un dato.
 
-Juntar un templo griego con una aplicación escolar puede parecer un truco retórico, y en parte lo es. No afirmo que una cosa venga de la otra, y las diferencias de escala, de técnica y de propósito son enormes. Lo que me interesa es una semejanza. En los dos casos alguien se encuentra con una imagen de lo que es, o de lo que debería ser, que le llega de fuera. Los griegos habrían dicho sin rodeos que en esos encuentros se forma un alma. Nosotros hemos perdido la costumbre de decirlo, y eso no quiere decir que haya dejado de ocurrir.
+Juntar un templo griego con una aplicación escolar puede parecer un truco retórico, y en parte lo es. Las diferencias de escala, de técnica y de propósito son enormes. Lo que me interesa es una semejanza. En los dos casos alguien se encuentra con una imagen de lo que es, o de lo que debería ser, que le llega de fuera. Los griegos habrían dicho sin rodeos que en esos encuentros se forma un alma. Nosotros hemos perdido la costumbre de decirlo, y eso no quiere decir que haya dejado de ocurrir.
 
 * * *
 
@@ -14,7 +14,7 @@ De ahí saco la idea que recorre este libro: preguntarse por la educación es pr
 
 Platón tiene una imagen para esto. En el *Teeteto* compara la memoria con un bloque de cera que llevamos en el alma, donde las cosas que percibimos se graban como el sello de un anillo.[^c1-cera] La tradición pedagógica hizo suya la imagen sin decirlo: educar consistía en imprimir una forma. De una época a otra cambió la forma que se quería imprimir y la mano que sostenía el sello.
 
-Me interesa mucho lo que le ha pasado a esa imagen en nuestro tiempo, porque se ha dado la vuelta. La escuela sigue imprimiendo su sello, pero ahora exige también lo contrario: que sea el alumno quien deje huella en ella. Que se conecte, que entregue, que complete, que responda, y que cada uno de esos gestos quede grabado en algún sitio. La chica del gráfico de barras no solo recibe una forma: está obligada a producir rastros. Que la escuela pida pruebas de lo aprendido no tiene nada de nuevo, porque un cuaderno, una redacción o un examen también son huellas. Lo nuevo es que el rastro empiece a ocupar el lugar de lo que debía mostrar. Esa inversión, que delimitaré con cuidado en el capítulo siguiente, es para mí la novedad más importante de la escuela contemporánea.
+Me interesa mucho lo que le ha pasado a esa imagen en nuestro tiempo, porque se ha dado la vuelta. La escuela sigue imprimiendo su sello, pero ahora exige también lo contrario: que sea el alumno quien deje huella en ella. Que se conecte, que entregue, que complete, que responda, y que cada uno de esos gestos quede grabado en algún sitio. La chica del gráfico de barras no solo recibe una forma: está obligada a producir rastros. Que la escuela pida pruebas de lo aprendido no tiene nada de nuevo, porque un cuaderno, una redacción o un examen también son huellas. Lo nuevo es que el rastro empiece a ocupar el lugar de lo que debía mostrar. Esa inversión es, para mí, la novedad más importante de la escuela contemporánea.
 
 * * *
 
@@ -28,7 +28,7 @@ En ningún currículo actual aparece la *areté*. Ocupan su sitio palabras como 
 
 Hace poco más de un siglo, Émile Durkheim escribió una definición que hoy suena casi escandalosa por lo directa. La educación, decía, es la acción que las generaciones adultas ejercen sobre las que aún no están maduras para la vida social, con el fin de suscitar en el niño ciertos estados físicos, intelectuales y morales que le exigen la sociedad en su conjunto y el medio concreto al que está destinado.[^c1-durkheim]
 
-Durkheim describía, sin escandalizarse, un taller que forma cuerpos y almas por encargo. La pregunta que me hago es quién hace hoy el encargo. En Atenas estaba claro que era la ciudad; en la Edad Media, la Iglesia; en el siglo XIX, el Estado. Pensemos ahora en una niña que pasa varias horas al día ante una plataforma diseñada en California, evaluada con criterios que se discuten en organismos internacionales, en un centro que compite con otros para atraer familias. Cuesta decir quién decide qué estados físicos, intelectuales y morales tiene que desarrollar. Esa dificultad para nombrar al que encarga es, creo, uno de los rasgos que mejor definen nuestra época, y el capítulo siguiente intenta explicarla.
+Durkheim describía, sin escandalizarse, un taller que forma cuerpos y almas por encargo. La pregunta que me hago es quién hace hoy el encargo. En Atenas estaba claro que era la ciudad; en la Edad Media, la Iglesia; en el siglo XIX, el Estado. Pensemos ahora en una niña que pasa varias horas al día ante una plataforma diseñada en California, evaluada con criterios que se discuten en organismos internacionales, en un centro que compite con otros para atraer familias. Cuesta decir quién decide qué estados físicos, intelectuales y morales tiene que desarrollar. Esa dificultad para nombrar al que encarga es, creo, uno de los rasgos que mejor definen nuestra época.
 
 * * *
 
@@ -54,7 +54,7 @@ Hiparquia de Maronea vivió en el siglo IV antes de nuestra era. Se unió al fil
 
 De Diotima de Mantinea no sabemos si existió. En el *Banquete*, cuando le toca hablar del amor, Sócrates dice repetir lo que ella le enseñó, y lo que le enseñó es una teoría de la educación: *eros* es un ser al que algo le falta y que desea lo que no tiene, y la vida filosófica es un ascenso movido por ese deseo.[^c1-diotima] Para Diotima, aprender era desear.
 
-Volveré sobre esta idea, porque es clave para entender lo que hacen hoy las plataformas. Toda educación trabaja con el deseo. La diferencia entre una que libera y otra que somete está en hacia dónde lo dirige y en quién decide la dirección.
+La idea es clave para entender lo que hacen hoy las plataformas. Toda educación trabaja con el deseo. La diferencia entre una que libera y otra que somete está en hacia dónde lo dirige y en quién decide la dirección.
 
 * * *
 

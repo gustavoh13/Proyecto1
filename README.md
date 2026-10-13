@@ -3,7 +3,7 @@
 *Escuela, datos y libertad en la era de las plataformas*
 Gustavo Herrera Urízar
 
-Ensayo de filosofía para público culto. Unas 27.500 palabras de texto principal, con notas finales en APA 7, glosario y bibliografía (lecturas comentadas y referencias).
+Ensayo de filosofía para público culto. Unas 27.300 palabras de texto principal, con notas finales en APA 7, glosario y bibliografía (lecturas comentadas y referencias).
 
 > La escuela no ha sido sustituida por las plataformas: se ha vuelto uno de los lugares donde las plataformas aprenden a formar sujetos.
 
@@ -53,6 +53,7 @@ Requiere `pandoc` y `python3`; el PDF se genera con Chromium en modo headless. E
 - **Pedagogía de la huella, delimitada.** El capítulo 2 distingue tres operaciones (evidencia para conversar, registro para gestionar, registro como sustituto y criterio de valor); el concepto designa solo la tercera.
 - **Fines.** La tesis no es que la escuela carezca de fines, sino que la gestión los desplaza y los sustrae a la discusión (fines declarados, objetivos administrativos y orientaciones incorporadas).
 - **Desde dónde se habla.** El prólogo distingue el registro del profesor, el del investigador y el del ensayista; las escenas compuestas se presentan como tales. Las escenas situadas proceden del trabajo de campo del autor (entrevistas de 2025, proyectos edDIT y USMOV).
+- **Depuración.** Tras la segunda revisión se aligeró el andamiaje: prólogo metodológico en dos párrafos, escenas compuestas identificadas una sola vez, cautelas históricas integradas en la frase, menos anuncios y recapitulaciones, y perfiles de entrevistados menos identificables.
 - **Trazabilidad.** Cada cifra se ha auditado por fuente, localizador, tipo de fuente, población y alcance causal (`editorial/auditoria/`).
 - **Estilo.** Sin rayas largas para los incisos, sin conectores repetidos ni fórmulas en serie.
 

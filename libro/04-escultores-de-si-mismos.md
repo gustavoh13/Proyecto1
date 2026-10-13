@@ -38,7 +38,7 @@ Hasta aquí, la figura podría quedarse en una metáfora. Lo que las plataformas
 
 Primero está el registro: la plataforma anota una entrega, una nota, un retraso. Luego viene la interpretación institucional, porque alguien, o una regla programada por alguien, decide qué significa ese registro, si es una alerta, un dato más o nada. Después llegan las consecuencias: un aviso a la familia, una reunión, un plan de mejora, un cambio de grupo. Más tarde, la apropiación, el momento en que el alumno hace suya esa interpretación, la discute o la ignora. Y al final, la relación consigo mismo, lo que el alumno termina creyendo que el número dice de él.
 
-La escena que sigue es una composición, construida para pensar y no para documentar. No describe a ninguna alumna concreta, aunque cada uno de sus elementos existe en plataformas y centros reales.
+La escena que sigue es una composición: no describe a ninguna alumna concreta, pero cada uno de sus elementos existe en plataformas y centros reales.
 
 Clara está en primero de bachillerato. Un martes por la noche abre la aplicación del instituto y ve que su media de matemáticas ha bajado de 6,8 a 6,1. No ha hecho un examen peor: una tarea que no subió a tiempo figura con un cero automático. Hasta aquí, solo hay un registro.
 
@@ -49,6 +49,8 @@ Esa misma tarde la familia recibe un aviso. En la cena, el padre pregunta qué h
 En las semanas siguientes Clara cambia. Consulta la aplicación cada noche. Sube las tareas a las 23:58 aunque estén a medias, porque una tarea a medias cuenta y una tarea pensada con calma pero tardía no. En el proyecto voluntario elige el tema más seguro. Ha entendido la regla y la ha hecho suya.
 
 Un día, hablando con una amiga de qué carrera estudiar, dice: «Yo es que soy de seis». La frase ya no habla de una media. Habla de lo que ella cree ser, y el último eslabón se ha cerrado.
+
+En Clara aparecen juntas dos cosas que hay que distinguir. «Soy de seis» es una identidad cuantificada: alguien que se reconoce en una cifra, como tantos alumnos han hecho siempre con sus notas. El empresario de sí es otra figura. Aparece cuando el alumno empieza a administrar sus indicadores de forma continua, a anticipar riesgos y a elegir sus actividades según el rendimiento que espera de ellas, que es lo que hace Clara cuando revisa la aplicación cada noche, sube a última hora lo que tiene y escoge el tema más seguro. La primera puede darse sin la segunda. Lo que la plataforma favorece es que vayan juntas.
 
 Cada paso podía haber sido distinto. Si la profesora de matemáticas le hubiera dicho en clase que ese cero era una tarea pendiente y que el último problema que resolvió mostraba una manera de pensar que la media no recoge, el registro se habría quedado en registro. Si el color del panel hubiera abierto una conversación en lugar de cerrarla, si el aviso a la familia hubiera llegado después de esa conversación y no antes, si el plan de seguimiento hubiera preguntado qué le pasaba en lugar de contar entregas, Clara habría tenido otros materiales para pensarse.
 
@@ -86,7 +88,7 @@ El profesor, además, vive bajo la misma lógica. El sociólogo Stephen Ball la 
 
 Las plataformas han dado también a esta cultura sus instrumentos. El docente deja huella igual que sus alumnos: cuándo publicó la tarea, cuánto tardó en corregir, cuántos mensajes de familias tiene sin contestar, qué porcentaje de su programación ha subido al aula virtual. A menudo nadie le ha dicho que se le evalúa por eso, y sin embargo aprende pronto que esos rastros son lo que se ve de su trabajo. Lo invisible, la conversación con un alumno que lo estaba pasando mal o la clase que salió bien porque se apartó del guion, no deja huella.
 
-Lo oí decir con precisión a varias de las personas que entrevisté para mi investigación.[^c4-entrevistas] Una maestra de primaria que hoy enseña en la Universidad de Barcelona me explicó que en Moodle puede ver si sus alumnos han entrado o no, «pero creo que hay un riesgo en valorar la calidad académica del profesorado por aspectos numéricos irrelevantes, como la cantidad de feedback dado». Un profesor de filosofía de un instituto catalán lo dijo a propósito de la formación permanente: «Mucha gente hace formación solo para tener puntos… tengo certificaciones digitales que nunca me sirvieron en el aula». En los dos casos aparece la tercera operación del capítulo 2: un registro pensado para seguir un proceso que acaba sirviendo para valorar a la persona.
+Lo oí decir con precisión a varias de las personas que entrevisté para mi investigación.[^c4-entrevistas] Una docente universitaria que antes fue maestra me explicó que en Moodle puede ver si sus alumnos han entrado o no, «pero creo que hay un riesgo en valorar la calidad académica del profesorado por aspectos numéricos irrelevantes, como la cantidad de feedback dado». Un profesor de secundaria catalán lo dijo a propósito de la formación permanente: «Mucha gente hace formación solo para tener puntos… tengo certificaciones digitales que nunca me sirvieron en el aula». La primera describe un riesgo: que la actividad registrada en la plataforma acabe sirviendo para juzgar a quien enseña. El segundo, una práctica que ya ocurre: formarse por los puntos que da la formación más que por lo que enseña. Entre el riesgo y la práctica se ve la pendiente hacia la tercera operación del capítulo 2.
 
 <!-- ESCENA DEL AUTOR: lugar para una experiencia propia como docente con este tipo de rastros (subir evidencias, plazos de corrección en la plataforma, mensajes de familias fuera de horario). Solo si es real y se puede contar sin identificar a nadie. -->
 
@@ -116,6 +118,6 @@ Para evaluarse sin descanso, este sujeto necesita verse; para compararse, medirs
 
 [^c4-atasay]: Atasay (2014).
 
-[^c4-entrevistas]: Entrevistas semiestructuradas realizadas por el autor en febrero de 2025, para su investigación doctoral, a cinco especialistas y cuatro docentes de secundaria de Cataluña y Chile. Las personas entrevistadas dieron su consentimiento informado y se citan por su perfil, sin nombres. Como establece APA 7 para los participantes de una investigación propia, no figuran en la lista de referencias.
+[^c4-entrevistas]: Entrevistas semiestructuradas realizadas por el autor en febrero de 2025, para su investigación doctoral, a cinco especialistas y cuatro docentes de secundaria de Cataluña y Chile. Las personas entrevistadas dieron su consentimiento informado y se citan sin nombres.
 
 [^c4-ball]: Ball (2003).

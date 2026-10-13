@@ -1,6 +1,6 @@
 # Bibliografía {.unnumbered #bibliografia}
 
-Las notas citan con el sistema autor-año de APA 7, con el año de la edición original y el de la edición utilizada cuando no coinciden. Las obras clásicas griegas y latinas indican además la numeración canónica (Stephanus para Platón, Bekker para Aristóteles), que permite encontrar el pasaje en cualquier edición. Las citas de las entrevistas de mi investigación no figuran en la lista, como establece APA 7 para los participantes de una investigación propia.
+Las notas citan cada obra por autor y año; cuando hay traducción, el primer año es el de la edición original. Las obras clásicas indican además la numeración canónica (Stephanus para Platón, Bekker para Aristóteles), que permite encontrar el pasaje en cualquier edición.
 
 ## Lecturas comentadas
 
@@ -134,7 +134,7 @@ Las obras que de verdad han dado forma al argumento, con una línea sobre lo que
 - The Clinic. (2025, 26 de septiembre). *El 66 % de los deudores del CAE se encuentran morosos por más de tres cuotas impagas y en más de la mitad de los casos el Estado tuvo que hacerse cargo de la deuda*. https://www.theclinic.cl/2025/09/26/el-66-de-los-deudores-del-cae-se-encuentran-morosos-por-mas-de-tres-cuotas-impagas-y-en-mas-de-la-mitad-de-los-casos-el-estado-tuvo-que-hacerse-cargo-de-la-deuda/
 - Tribunal de Justicia de la Unión Europea. (2015, 6 de octubre). *Sentencia Schrems* (C-362/14). https://curia.europa.eu/juris/liste.jsf?num=C-362/14
 - Tribunal de Justicia de la Unión Europea. (2020, 16 de julio). *Sentencia Facebook Ireland y Schrems* (C-311/18). https://curia.europa.eu/juris/liste.jsf?num=C-311/18
-- Tribunal de Justicia de la Unión Europea. (2025). *Recurso de casación interpuesto el 31 de octubre de 2025 por Philippe Latombe contra la sentencia del Tribunal General en el asunto T-553/23* (C-703/25 P). https://curia.europa.eu/juris/liste.jsf?num=C-703/25
+- Tribunal de Justicia de la Unión Europea. (2025). *Recurso de casación interpuesto el 31 de octubre de 2025 por Philippe Latombe contra la sentencia del Tribunal General en el asunto T-553/23* (C-703/25 P). *Diario Oficial de la Unión Europea*, C, 2025/6610. https://eur-lex.europa.eu/eli/C/2025/6610/oj
 - Tribunal General de la Unión Europea. (2025, 3 de septiembre). *Sentencia Latombe/Comisión* (T-553/23). https://curia.europa.eu/juris/liste.jsf?num=T-553/23
 - UNESCO. (2023a). *Global education monitoring report 2023: Technology in education: A tool on whose terms?* https://doi.org/10.54676/UZQV8501
 - UNESCO. (2023b, 7 de septiembre). *UNESCO: Governments must quickly regulate generative AI in schools* [Comunicado de prensa]. https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools
