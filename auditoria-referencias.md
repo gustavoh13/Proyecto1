@@ -308,3 +308,10 @@ En esta revisión se hizo una auditoría documental de cada cifra, norma y resul
 - Los perfiles de las personas entrevistadas y de los informantes de edDIT se han hecho menos específicos para reducir el riesgo de identificación (sin universidad, años de oficio, organización ni empresa concreta).
 - En el capítulo 4 se distingue el testimonio que expresa un riesgo (evaluar al docente por la cantidad de comentarios en Moodle) del que describe una práctica (formarse por los puntos).
 - «La única evaluación experimental independiente» de Georgia State pasa a «una evaluación experimental independiente», porque no se ha hecho una revisión exhaustiva que respalde la exclusividad.
+
+## Cuarta revisión: ajustes finales
+
+- El Reglamento (UE) 2026/1744 consta en EUR-Lex (adoptado el 8 de julio de 2026, vigente) según comprobación del revisor; la nota del capítulo 5 identifica ahora la disposición que sustenta el calendario (fechas de aplicación del art. 113 del Reglamento de IA) y distingue publicación (24 de julio) y entrada en vigor (27 de julio).
+- Las leyes chilenas enlazan ahora a su documento en LeyChile (`navegar?idLey=`), no al portal general.
+- El estudio del CIAE se presenta solo como asociación estadística informada en su presentación pública, sin valorar su solidez metodológica.
+- La conclusión sobre analítica del aprendizaje se limita a lo que permiten los casos citados.

@@ -15,13 +15,13 @@ title: El alma en la plataforma
 # Prólogo. Una inquietud {#prólogo.-una-inquietud .unnumbered}
 
 Este libro no nació de una certeza. Nació de unas cuantas preguntas que
-se me fueron quedando pegadas durante años de clases, como el polvo de
-tiza que se acumula en el borde de la pizarra. ¿Qué significa enseñar?
-¿Es la educación buena por definición o lo damos por hecho porque no
-sabemos imaginar otra cosa? ¿Qué le pasa a la voluntad de alguien cuando
-la institución que debía enseñarle a pensar se convierte en una cadena
-de producción? ¿Y qué le pasa cuando esa cadena ya no es de hierro sino
-de datos, y cabe en el bolsillo?
+se me fueron quedando pegadas durante años de clases, como se le quedan
+a uno las preguntas de alumnos que no supo contestar. ¿Qué significa
+enseñar? ¿Es la educación buena por definición o lo damos por hecho
+porque no sabemos imaginar otra cosa? ¿Qué le pasa a la voluntad de
+alguien cuando la institución que debía enseñarle a pensar se convierte
+en una cadena de producción? ¿Y qué le pasa cuando esa cadena ya no es
+de hierro sino de datos, y cabe en el bolsillo?
 
 Escribo desde varios sitios y prefiero decirlo de entrada. Soy profesor
 de filosofía y llevo más de diez años dando clase en colegios y
@@ -51,6 +51,13 @@ haciendo lo que se les pide porque se lo pide la escuela. En ningún otro
 lugar se aprende un hábito con tanta constancia ni con tanta
 legitimidad.
 
+Uso una palabra deliberadamente antigua, alma, sin suponer una sustancia
+separada del cuerpo. Me interesa porque durante siglos nombró aquello
+que la educación aspiraba a formar: una manera de percibir, de desear,
+de juzgar y de relacionarse con otros. Hoy hablamos de competencias y de
+perfiles, pero esa formación no ha desaparecido. Ha cambiado de
+instrumentos, y este libro trata de algunos de ellos.
+
 Durante siglos, la escuela imprimió su sello en los alumnos, como se
 imprime una forma en la cera. Hoy les pide además otra cosa: que dejen
 huella. Que entreguen a tiempo, que se conecten, que completen, que
@@ -77,8 +84,9 @@ administración, como Google Workspace for Education o Microsoft 365; las
 aplicaciones de gestión de aula y de comunicación con las familias; los
 sistemas de detección de plagio y los paneles de seguimiento. Y están,
 rodeando todo esto, las plataformas comerciales que entran en la escuela
-sin que nadie las haya contratado: el teléfono móvil, las redes sociales
-y, desde hace poco, la inteligencia artificial generativa.
+sin que nadie las haya contratado, casi siempre a través del teléfono
+móvil: las redes sociales y, desde hace poco, la inteligencia artificial
+generativa.
 
 No todas funcionan igual ni pertenecen a los mismos dueños. Un Moodle
 que mantiene una consejería de educación no es lo mismo que una suite
@@ -163,9 +171,10 @@ Juntar un templo griego con una aplicación escolar puede parecer un
 truco retórico, y en parte lo es. Las diferencias de escala, de técnica
 y de propósito son enormes. Lo que me interesa es una semejanza. En los
 dos casos alguien se encuentra con una imagen de lo que es, o de lo que
-debería ser, que le llega de fuera. Los griegos habrían dicho sin rodeos
-que en esos encuentros se forma un alma. Nosotros hemos perdido la
-costumbre de decirlo, y eso no quiere decir que haya dejado de ocurrir.
+debería ser, que le llega de fuera. Platón o Aristóteles habrían dicho
+sin rodeos que en esos encuentros se forma un alma. Nosotros hemos
+perdido la costumbre de decirlo, y eso no quiere decir que haya dejado
+de ocurrir.
 
 ------------------------------------------------------------------------
 
@@ -217,7 +226,7 @@ más serio.
 La excelencia que se buscaba se llamaba *areté*, que traducimos mal por
 «virtud». La *areté* de un cuchillo es cortar bien y la de un caballo,
 correr. La de una persona era vivir de acuerdo con lo que la hace
-humana, y para los griegos eso significaba vivir según la razón y en
+humana, y para Aristóteles eso significaba vivir según la razón y en
 compañía de otros. Aristóteles añadía que nadie nace con ella: uno se
 hace justo haciendo cosas justas, igual que se hace citarista tocando la
 cítara.[^3]
@@ -230,10 +239,10 @@ es el lugar donde lo dice. Las leyes siguen declarando fines generosos,
 como el pleno desarrollo de la personalidad o la formación de ciudadanos
 críticos, pero lo que orienta la vida diaria de muchas escuelas aparece
 en otra parte, en los indicadores y en las clasificaciones, con el
-aspecto de una cuestión técnica. Los griegos sabían que estaban formando
-almas. Nosotros creemos a menudo que solo desarrollamos competencias, y
-esa distancia entre lo que declaramos y lo que hacemos me inquieta más
-que cualquier ideal confesado, por discutible que fuera.
+aspecto de una cuestión técnica. Platón y Aristóteles sabían que estaban
+formando almas. Nosotros creemos a menudo que solo desarrollamos
+competencias, y esa distancia entre lo que declaramos y lo que hacemos
+me inquieta más que cualquier ideal confesado, por discutible que fuera.
 
 ------------------------------------------------------------------------
 
@@ -374,11 +383,11 @@ dentro desde el comienzo algo que la desbordaba, el examen de Sócrates,
 el deseo de Diotima, la respuesta de Hiparquia. La escuela fabrica
 almas, y en ella se aprende también a interrogar a la fábrica.
 
-Los griegos sabían quién sostenía el sello. Nosotros tenemos
-ministerios, agencias de evaluación, empresas tecnológicas, familias y
-docentes que empujan más o menos en la misma dirección sin que nadie
-parezca haberlo decidido. Un taller así, sin dueño a la vista, exige
-otra herramienta para pensarlo.
+Quienes pensaron la *paideia* sabían quién sostenía el sello. Nosotros
+tenemos ministerios, agencias de evaluación, empresas tecnológicas,
+familias y docentes que empujan más o menos en la misma dirección sin
+que nadie parezca haberlo decidido. Un taller así, sin dueño a la vista,
+exige otra herramienta para pensarlo.
 
 # 2. Una red sin dueño
 
@@ -607,7 +616,11 @@ de práctica diaria, en la edad en que se forman los hábitos más
 duraderos.
 
 Este préstamo es lo que me hace decir que la escuela se ha convertido en
-uno de los lugares donde las plataformas aprenden a formar personas. Ahí
+uno de los lugares donde las plataformas aprenden a formar personas. No
+hablo solo del aprendizaje automático, que muchas de estas herramientas
+ni siquiera usan. Hablo también de empresas e instituciones que
+perfeccionan sus maneras de organizar la actividad a medida que ven,
+curso tras curso, cómo se usan sus servicios en millones de aulas. Ahí
 ensayan su manera de ordenar el tiempo, la visibilidad, las relaciones y
 la medida sobre un público cautivo y bajo la protección de una
 institución que casi todos consideran benéfica.
@@ -723,12 +736,12 @@ garantiza que las prácticas institucionales las favorezcan, y a veces
 las contradicen sin que se note, porque la contradicción no está escrita
 en ningún documento. Está en lo que se cuenta cada trimestre.
 
-Con esta corrección, la idea de Agamben me parece muy útil. La escuela
-funciona en buena medida como una *oikonomía* cuyos fines efectivos no
-se exponen a deliberación: se presentan como exigencias técnicas, como
-lo que hay que hacer para mejorar. Un gobierno así no puede limitarse a
-disciplinar cuerpos, porque no puede justificar en público todo lo que
-pide. Necesita que alumnos y docentes deseen la mejora continua, se
+Así entendida, la idea de Agamben resulta muy útil. La escuela funciona
+en buena medida como una *oikonomía* cuyos fines efectivos no se exponen
+a deliberación: se presentan como exigencias técnicas, como lo que hay
+que hacer para mejorar. Un gobierno así no puede limitarse a disciplinar
+cuerpos, porque no puede justificar en público todo lo que pide.
+Necesita que alumnos y docentes deseen la mejora continua, se
 identifiquen con sus indicadores y se juzguen con las medidas del
 sistema. Tiene que apoderarse de los deseos.
 
@@ -1112,7 +1125,7 @@ también puede fabricar deseos y aspiraciones que parecen espontáneos.
 ------------------------------------------------------------------------
 
 En 1784 Kant respondió a la pregunta «¿Qué es la Ilustración?» con una
-definición que todavía se copia en las pizarras. La Ilustración es la
+definición que todavía se repite en las aulas. La Ilustración es la
 salida del ser humano de su minoría de edad, de la que él mismo es
 culpable, y ser menor de edad es no poder servirse del propio
 entendimiento sin la guía de otro. *Sapere aude*: atrévete a pensar por
@@ -1177,14 +1190,17 @@ reales.
 Clara está en primero de bachillerato. Un martes por la noche abre la
 aplicación del instituto y ve que su media de matemáticas ha bajado de
 6,8 a 6,1. No ha hecho un examen peor: una tarea que no subió a tiempo
-figura con un cero automático. Hasta aquí, solo hay un registro.
+figura con un cero automático. Hasta aquí, el registro ya incorpora una
+primera interpretación: no entregar equivale a obtener un cero. Algunas
+decisiones llegan incorporadas al registro, y por eso cuesta
+reconocerlas como decisiones.
 
 El miércoles, el panel de la tutora la pinta en ámbar. El color no lo ha
 elegido la tutora. Lo produce una regla configurada a principio de
 curso, que marca a quien baja de cierta media y acumula dos entregas
 tardías, y que convierte un retraso en una señal de riesgo. Es el
-segundo eslabón, y casi nadie lo percibe como una interpretación, porque
-llega con apariencia de dato.
+segundo eslabón, la interpretación institucional propiamente dicha, y
+también llega con apariencia de dato.
 
 Esa misma tarde la familia recibe un aviso. En la cena, el padre
 pregunta qué ha pasado. Al día siguiente el centro propone un plan de
@@ -1568,17 +1584,18 @@ evaluación experimental independiente de un modelo parecido, un ensayo
 aleatorizado en once universidades estadounidenses que probó un
 asesoramiento proactivo apoyado en analítica, no encontró efectos
 promedio sobre la graduación ni la permanencia; solo los encontró,
-precisamente, en Georgia State.[^50] Nada de esto demuestra que la
-analítica funcione. Permiten, eso sí, formular una hipótesis que el
-debate suele pasar por alto: lo decisivo puede no ser el indicador, sino
-lo que ocurre después de que se enciende la luz roja. Cuando la alerta
-abre una conversación con una persona que tiene tiempo, la analítica
-puede servir a la justicia. Cuando se convierte en una etiqueta, un
-correo automático o una derivación sin diálogo, corre el riesgo de
-fabricar aquello que predice: el estudiante marcado como probable
-abandono es tratado como tal, y empieza a comportarse en consecuencia.
-El riesgo, además, se calcula con datos del pasado, y los datos del
-pasado traen consigo las desigualdades del pasado.
+precisamente, en Georgia State.[^50] Estos resultados no permiten
+atribuir a la analítica, por sí sola, una mejora general de la
+graduación o la permanencia. Permiten, eso sí, formular una hipótesis
+que el debate suele pasar por alto: lo decisivo puede no ser el
+indicador, sino lo que ocurre después de que se enciende la luz roja.
+Cuando la alerta abre una conversación con una persona que tiene tiempo,
+la analítica puede servir a la justicia. Cuando se convierte en una
+etiqueta, un correo automático o una derivación sin diálogo, corre el
+riesgo de fabricar aquello que predice: el estudiante marcado como
+probable abandono es tratado como tal, y empieza a comportarse en
+consecuencia. El riesgo, además, se calcula con datos del pasado, y los
+datos del pasado traen consigo las desigualdades del pasado.
 
 Mi objeción tiene que ver, por tanto, con las condiciones en que se
 recogen y usan los datos y con quién los controla, mucho más que con los
@@ -2025,9 +2042,9 @@ sesgos con apariencia de neutralidad.
 
 Thamus temía alumnos con aire de sabios. Lo de hoy es más raro: textos
 que parecen pensados sin que nadie los haya pensado. Prohibir no basta,
-igual que no sirvió abolir la escritura para responder a Theuth. Platón
-escribió, aunque eligió el diálogo, la forma que más se parece a una
-conversación viva y que obliga a pensar con los personajes en vez de
+igual que la respuesta a Theuth no consiste en abolir la escritura.
+Platón escribió, aunque eligió el diálogo, la forma que más se parece a
+una conversación viva y que obliga a pensar con los personajes en vez de
 recibir una doctrina hecha. Tal vez la escuela tenga que hacer algo
 parecido con las máquinas que escriben: devolver valor a lo que ocurre
 en presencia, a la conversación, al borrador comentado, a la defensa
@@ -2066,11 +2083,11 @@ de historia detrás.
 
 La cultura griega llegó a Roma en buena parte como botín. Las familias
 patricias compraban esclavos griegos para que educaran a sus hijos, y
-durante mucho tiempo enseñar fue un oficio de poca categoría. Los
-romanos vivían con una paradoja que todavía reconocemos: aprender daba
-honra y enseñar casi daba vergüenza. Cicerón distinguía las artes
-propias de un hombre libre, las *artes liberales*, de las serviles, que
-eran las de quien trabajaba con las manos o por un sueldo.[^72]
+durante mucho tiempo enseñar fue un oficio de poca categoría. Roma vivió
+con una paradoja que todavía reconocemos: aprender daba honra y enseñar
+casi daba vergüenza. Cicerón distinguía las artes propias de un hombre
+libre, las *artes liberales*, de las serviles, que eran las de quien
+trabajaba con las manos o por un sueldo.[^72]
 
 No estoy seguro de que la paradoja haya desaparecido. Muchas sociedades
 dicen que la educación es su bien más preciado y tratan a quienes la
@@ -2161,18 +2178,19 @@ presentado en julio de 2026 con datos de 2,7 millones de estudiantes,
 estima que la segregación escolar se redujo cerca de un 10 % desde 2015
 hasta sus niveles más bajos en veinte años, y asocia esa reducción sobre
 todo a dos políticas: la subvención preferente para alumnos vulnerables,
-vigente desde 2008, y la Ley de Inclusión Escolar. Es una asociación
-estadística sólida, no una prueba concluyente. El efecto del sistema de
-admisión sigue en discusión, el Gobierno impulsa en 2026 una reforma de
-ese mismo sistema, y nadie discute que la segregación sigue siendo
-alta.[^78] El traspaso a los servicios locales avanza más despacio de lo
-previsto. Desde enero de 2026 funcionan treinta y seis de los setenta
-servicios que preveía la ley, y el calendario se ha alargado varias
-veces; cuando terminé este libro, el Senado discutía un proyecto para
-reprogramar los servicios pendientes con un límite en 2030. La reforma
-del crédito universitario seguía sin resolverse: a mediados de 2025, dos
-de cada tres deudores estaban en mora y, en más de la mitad de los
-casos, el Estado había tenido que hacerse cargo de la deuda.[^79]
+vigente desde 2008, y la Ley de Inclusión Escolar. La presentación
+pública del estudio informa de una asociación estadística, no de una
+prueba causal concluyente. El efecto del sistema de admisión sigue en
+discusión, el Gobierno impulsa en 2026 una reforma de ese mismo sistema,
+y nadie discute que la segregación sigue siendo alta.[^78] El traspaso a
+los servicios locales avanza más despacio de lo previsto. Desde enero de
+2026 funcionan treinta y seis de los setenta servicios que preveía la
+ley, y el calendario se ha alargado varias veces; cuando terminé este
+libro, el Senado discutía un proyecto para reprogramar los servicios
+pendientes con un límite en 2030. La reforma del crédito universitario
+seguía sin resolverse: a mediados de 2025, dos de cada tres deudores
+estaban en mora y, en más de la mitad de los casos, el Estado había
+tenido que hacerse cargo de la deuda.[^79]
 
 Lo que una generación había aprendido a ver como natural resultó ser una
 decisión política que otra generación pudo empezar a deshacer. El
@@ -2406,35 +2424,40 @@ futuro con el pasado, y al hacerlo ayuda a que el futuro se le parezca.
 
 Queda una forma de mercantilización que se disfraza de lo contrario de
 un mercado, el juego. La gamificación lleva a la escuela puntos,
-niveles, insignias, clasificaciones y premios. Se presenta como una
-manera de motivar, y abundan las aplicaciones que dan y quitan puntos
-por la conducta o que convierten las preguntas de clase en concursos con
-clasificación. Funcionan, en el sentido de que los alumnos participan
-más.
+niveles, insignias, clasificaciones y premios, y se presenta como una
+manera de motivar. No me refiero a cualquier práctica que use elementos
+de juego, que muchos maestros han usado siempre con sentido, sino a una
+gamificación que organiza la actividad mediante recompensas externas,
+clasificaciones y presión por completar: aplicaciones que dan y quitan
+puntos por la conducta o que convierten las preguntas de clase en
+concursos con ranking.
 
 La antropóloga Natasha Dow Schüll pasó años estudiando el diseño de las
 tragaperras de Las Vegas y mostró que estaban pensadas para meter al
 jugador en un estado de absorción que los propios jugadores llamaban «la
 zona», donde perdían la noción del tiempo.[^89] Las recompensas
 variables, la respuesta inmediata y la ausencia de pausas son los mismos
-recursos que usan las redes sociales y, en versión más suave, muchas
-herramientas de gamificación escolar. La gamificación enseña que merece
-la pena lo que tiene premio. Un chico que lee para sumar puntos aprende
-a sumar puntos, igual que el niño de Sandel al que pagaban por leer.
+recursos que usan las redes sociales y, en versión más suave, algunas
+herramientas de gamificación escolar. Cuando el premio se convierte en
+la razón principal para participar, la actividad corre el riesgo de
+valer solo por la recompensa. Un chico que lee únicamente para sumar
+puntos aprende sobre todo a sumar puntos, como el niño de Sandel al que
+pagaban por leer.
 
 El juego es otra cosa. Johan Huizinga lo definió en *Homo ludens* como
 una actividad libre, con reglas aceptadas libremente, que tiene su fin
 en sí misma.[^90] Se juega por jugar, y por eso abre un espacio donde
-las reglas del mundo ordinario quedan en suspenso. La gamificación copia
-la forma del juego y le quita lo esencial. Como el sofista que vendía
-apariencia de sabiduría, vende apariencia de juego.
+las reglas del mundo ordinario quedan en suspenso. Esa gamificación
+copia la forma del juego y puede quitarle lo esencial: cuando todo
+cuenta para algo, ya no se juega por jugar. Como el sofista que vendía
+apariencia de sabiduría, corre el riesgo de vender apariencia de juego.
 
 ------------------------------------------------------------------------
 
-Lo que no tiene precio, pensaban los romanos, es lo que hace libre a una
-persona. El juego de Huizinga, la *Bildung* de Gadamer y el examen de
-Sócrates tienen eso en común: su fin está en ellos mismos. Por eso
-forman.
+Lo que no tiene precio, decía la vieja distinción de las artes
+liberales, es lo que hace libre a una persona. El juego de Huizinga, la
+*Bildung* de Gadamer y el examen de Sócrates tienen eso en común: su fin
+está en ellos mismos. Por eso forman.
 
 Al mercado le cuesta soportar lo que no sirve para nada, y de todo lo
 que la escuela ha convertido en mercancía hay un bien que arrastra a los
@@ -2463,8 +2486,8 @@ Pienso en la chica del primer capítulo, la que abre la aplicación del
 instituto y encuentra un gráfico de barras antes que la tarea. A ella
 nadie le ha liberado el tiempo. Se lo han llenado. De las cuatro
 operaciones de la plataforma, la que más ha transformado la escuela es,
-creo, la que ordena el tiempo. Por ahí empieza, creo, cualquier
-resistencia que valga la pena.
+creo, la que ordena el tiempo. Por ahí empieza cualquier resistencia que
+valga la pena.
 
 ------------------------------------------------------------------------
 
@@ -2783,10 +2806,10 @@ el alumno puede hacer. El límite tiene que caer sobre las exigencias:
 ningún plazo vence de noche, ningún aviso de la escuela llega a las
 diez, ningún docente está obligado a contestar el sábado. Lo que no debe
 cerrarse es el acceso. Los materiales y las entregas siguen disponibles
-para quien los necesite cuando pueda, sin que la hora quede anotada ni
-cuente a favor o en contra. Proteger el tiempo significa liberar a todos
-de la obligación de estar disponibles, y no impedir que alguien use el
-suyo como le haga falta.
+para quien los necesite cuando pueda, sin que la hora se convierta en un
+indicador de compromiso o de esfuerzo. Proteger el tiempo significa
+liberar a todos de la obligación de estar disponibles, y no impedir que
+alguien use el suyo como le haga falta.
 
 Un conflicto parecido aparece entre la privacidad y el cuidado. Si la
 escuela deja de registrar las ausencias en la plataforma para no
@@ -2863,13 +2886,14 @@ nuestra voz y terminan nuestras frases. Por primera vez, el conocimiento
 de uno mismo parece un servicio que se contrata fuera.
 
 Lo que esos sistemas nos devuelven, sin embargo, es un perfil, y la
-distancia entre un perfil y el conocimiento de sí es la misma que separa
-al dispositivo de la educación. El perfil es lo que el sistema sabe de
-nosotros para gobernarnos. El conocimiento de sí es lo que llegamos a
-saber para gobernarnos nosotros y para no dejarnos gobernar de cualquier
-manera. El perfil predice el futuro a partir del pasado y por eso nos
-fija en lo que fuimos. Conocerse deja abierta la posibilidad de ser
-otro.
+distancia entre un perfil y el conocimiento de sí es la que separa un
+saber utilizado para conducir nuestra conducta de un conocimiento que
+nos permite interrogar esa conducción. El perfil es lo que el sistema
+sabe de nosotros para gobernarnos. El conocimiento de sí es lo que
+llegamos a saber para gobernarnos nosotros y para no dejarnos gobernar
+de cualquier manera. El perfil predice el futuro a partir del pasado y
+por eso nos fija en lo que fuimos. Conocerse deja abierta la posibilidad
+de ser otro.
 
 ------------------------------------------------------------------------
 
@@ -2879,12 +2903,12 @@ manera de entender la educación que casi nadie ha elegido.
 
 Entre la nota, el algoritmo, el ranking, la notificación y la
 inteligencia artificial generativa se están redefiniendo cuatro palabras
-que la escuela siempre tuvo a su cargo. Aprender se parece cada vez más
-a dejar huella: entregar, completar, conectarse, producir el rastro que
-el sistema sabe leer. Ser libre se confunde con elegir entre opciones
-que alguien ha dispuesto antes. Fracasar es quedar por debajo de la
-media en un gráfico que se consulta a solas, y vivirlo como una culpa
-privada. Y conocerse a uno mismo empieza a significar consultar el
+que la escuela ha tenido largamente a su cargo. Aprender se parece cada
+vez más a dejar huella: entregar, completar, conectarse, producir el
+rastro que el sistema sabe leer. Ser libre se confunde con elegir entre
+opciones que alguien ha dispuesto antes. Fracasar es quedar por debajo
+de la media en un gráfico que se consulta a solas, y vivirlo como una
+culpa privada. Y conocerse a uno mismo empieza a significar consultar el
 propio perfil.
 
 Ninguna de estas redefiniciones es inevitable. Todas se han producido
@@ -2940,9 +2964,10 @@ teniendo algo de imprevisible, y en ese margen cabe todavía otra manera
 de aprender.
 
 La escuela imprimió durante siglos su sello en la cera. Hoy nos pide que
-dejemos huella. Tal vez la tarea sea aprender de nuevo a hacer algo que
-no deje rastro y que, sin embargo, nos cambie: una conversación, una
-lectura, una pregunta que no se entrega a nadie.
+dejemos huella. Tal vez la tarea sea recuperar también el derecho a
+hacer algo que no tenga que dejar un registro y que, sin embargo, nos
+cambie: una conversación, una lectura, una pregunta que no se entrega a
+nadie.
 
 *Conócete a ti mismo*, decía la piedra de Delfos. Hoy quizá habría que
 grabar debajo una línea más: y no dejes que nadie lo haga por ti.
@@ -2952,6 +2977,13 @@ grabar debajo una línea más: y no dejes que nadie lo haga por ti.
 Explico aquí, de la forma más sencilla que he sabido, los conceptos que
 más se repiten en el libro. Entre paréntesis indico el capítulo donde se
 tratan con más detalle.
+
+**Alma** (prólogo, 1 y 3). En este libro no designa una sustancia
+separada del cuerpo. Es el nombre antiguo de aquello que la educación
+aspira a formar: una manera de percibir, de desear, de juzgar y de
+relacionarse con otros. El libro la encuentra en varios sentidos, como
+ideal de persona, como interioridad, como producto de las disciplinas y
+como relación consigo mismo.
 
 **Capital humano** (4). Idea de algunos economistas de la escuela de
 Chicago, como Theodore Schultz y Gary Becker, según la cual las
@@ -3291,21 +3323,22 @@ lo que encontré en ellas.
     Lomba, Ed. y Trad.). Trotta. (Obra original publicada en 1576)
 -   Ley 20.370. (2009, 12 de septiembre). Establece la Ley General de
     Educación. *Diario Oficial de la República de Chile*.
-    https://www.bcn.cl/leychile
+    https://www.bcn.cl/leychile/navegar?idLey=20370
 -   Ley 20.845. (2015, 8 de junio). De inclusión escolar que regula la
     admisión de los y las estudiantes, elimina el financiamiento
     compartido y prohíbe el lucro en establecimientos educacionales que
     reciben aportes del Estado. *Diario Oficial de la República de
-    Chile*. https://www.bcn.cl/leychile
+    Chile*. https://www.bcn.cl/leychile/navegar?idLey=20845
 -   Ley 20.903. (2016, 1 de abril). Crea el Sistema de Desarrollo
     Profesional Docente y modifica otras normas. *Diario Oficial de la
-    República de Chile*. https://www.bcn.cl/leychile
+    República de Chile*. https://www.bcn.cl/leychile/navegar?idLey=20903
 -   Ley 21.040. (2017, 24 de noviembre). Crea el Sistema de Educación
     Pública. *Diario Oficial de la República de Chile*.
-    https://www.bcn.cl/leychile
+    https://www.bcn.cl/leychile/navegar?idLey=21040
 -   Ley 21.728. (2025). \[Ley que da solución a la denominada deuda
     histórica docente, promulgada el 31 de enero de 2025\]. *Diario
-    Oficial de la República de Chile*. https://www.bcn.cl/leychile
+    Oficial de la República de Chile*.
+    https://www.bcn.cl/leychile/navegar?idLey=21728
 -   Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., y Zou, J. (2023). GPT
     detectors are biased against non-native English writers. *Patterns*,
     *4*(7), Artículo 100779.
@@ -3382,7 +3415,7 @@ lo que encontré en ellas.
 -   Reglamento (UE) 2026/1744 del Parlamento Europeo y del Consejo.
     (2026, 8 de julio). Por el que se modifican, entre otros, el
     Reglamento (UE) 2024/1689 \[Ómnibus Digital sobre IA\]. *Diario
-    Oficial de la Unión Europea*, L, 2026/1744.
+    Oficial de la Unión Europea*, L, 2026/1744, de 24 de julio de 2026.
     http://data.europa.eu/eli/reg/2026/1744/oj
 -   Rivera-Vargas, P., Jacovkis, J., Herrera-Urizar, G.,
     Calderón-Garrido, D., Miño-Puigcercós, R., Parcerisa, L., Folguera,
@@ -3645,8 +3678,10 @@ libertad.
 [^54]: Zuboff (2019/2020), primera parte.
 
 [^55]: Reglamento (UE) 2024/1689 (2024), art. 5.1.f y anexo III, punto
-    3. El aplazamiento procede del Reglamento (UE) 2026/1744 (2026), en
-    vigor desde el 27 de julio de 2026.
+    3. El aplazamiento procede del Reglamento (UE) 2026/1744 (2026), que
+    modifica las fechas de aplicación del art. 113 del Reglamento de IA;
+    se publicó en el *Diario Oficial* el 24 de julio de 2026 y entró en
+    vigor el 27 de julio.
 
 [^56]: Arendt (1961/1996), «La crisis en la educación».
 

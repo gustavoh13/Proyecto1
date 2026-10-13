@@ -2,6 +2,8 @@
 
 Explico aquí, de la forma más sencilla que he sabido, los conceptos que más se repiten en el libro. Entre paréntesis indico el capítulo donde se tratan con más detalle.
 
+**Alma** (prólogo, 1 y 3). En este libro no designa una sustancia separada del cuerpo. Es el nombre antiguo de aquello que la educación aspira a formar: una manera de percibir, de desear, de juzgar y de relacionarse con otros. El libro la encuentra en varios sentidos, como ideal de persona, como interioridad, como producto de las disciplinas y como relación consigo mismo.
+
 **Capital humano** (4). Idea de algunos economistas de la escuela de Chicago, como Theodore Schultz y Gary Becker, según la cual las habilidades, los conocimientos y la salud de una persona son un capital que puede invertirse y dar rendimiento. Aplicada a la educación, convierte estudiar en una inversión.
 
 **Datificación** (5). Proceso por el que actividades humanas, como aprender, se convierten en datos que pueden registrarse, medirse y analizarse.

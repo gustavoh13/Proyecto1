@@ -20,7 +20,7 @@ Ese descubrimiento vale para mucho más que la historia de las mujeres. Buena pa
 
 * * *
 
-En 1784 Kant respondió a la pregunta «¿Qué es la Ilustración?» con una definición que todavía se copia en las pizarras. La Ilustración es la salida del ser humano de su minoría de edad, de la que él mismo es culpable, y ser menor de edad es no poder servirse del propio entendimiento sin la guía de otro. *Sapere aude*: atrévete a pensar por tu cuenta.[^c4-aufklarung]
+En 1784 Kant respondió a la pregunta «¿Qué es la Ilustración?» con una definición que todavía se repite en las aulas. La Ilustración es la salida del ser humano de su minoría de edad, de la que él mismo es culpable, y ser menor de edad es no poder servirse del propio entendimiento sin la guía de otro. *Sapere aude*: atrévete a pensar por tu cuenta.[^c4-aufklarung]
 
 Ya vimos que el mismo Kant sabía que esa autonomía empezaba en una silla. En sus lecciones de pedagogía planteó sin disimulo la paradoja que la escuela moderna nunca resolvió: cómo cultivar la libertad bajo coacción. Durante dos siglos esa tensión se sostuvo, porque la escuela disciplinaba en nombre de una autonomía futura. Lo que vino después no lo podían prever ni Kant ni Pico. La paradoja se resolvió hacia el otro lado, y la libertad misma pasó a ser la herramienta de la sujeción.
 
@@ -40,9 +40,9 @@ Primero está el registro: la plataforma anota una entrega, una nota, un retraso
 
 La escena que sigue es una composición: no describe a ninguna alumna concreta, pero cada uno de sus elementos existe en plataformas y centros reales.
 
-Clara está en primero de bachillerato. Un martes por la noche abre la aplicación del instituto y ve que su media de matemáticas ha bajado de 6,8 a 6,1. No ha hecho un examen peor: una tarea que no subió a tiempo figura con un cero automático. Hasta aquí, solo hay un registro.
+Clara está en primero de bachillerato. Un martes por la noche abre la aplicación del instituto y ve que su media de matemáticas ha bajado de 6,8 a 6,1. No ha hecho un examen peor: una tarea que no subió a tiempo figura con un cero automático. Hasta aquí, el registro ya incorpora una primera interpretación: no entregar equivale a obtener un cero. Algunas decisiones llegan incorporadas al registro, y por eso cuesta reconocerlas como decisiones.
 
-El miércoles, el panel de la tutora la pinta en ámbar. El color no lo ha elegido la tutora. Lo produce una regla configurada a principio de curso, que marca a quien baja de cierta media y acumula dos entregas tardías, y que convierte un retraso en una señal de riesgo. Es el segundo eslabón, y casi nadie lo percibe como una interpretación, porque llega con apariencia de dato.
+El miércoles, el panel de la tutora la pinta en ámbar. El color no lo ha elegido la tutora. Lo produce una regla configurada a principio de curso, que marca a quien baja de cierta media y acumula dos entregas tardías, y que convierte un retraso en una señal de riesgo. Es el segundo eslabón, la interpretación institucional propiamente dicha, y también llega con apariencia de dato.
 
 Esa misma tarde la familia recibe un aviso. En la cena, el padre pregunta qué ha pasado. Al día siguiente el centro propone un plan de seguimiento: cada viernes se revisará cuántas tareas ha entregado. Las consecuencias ya no dependen de lo que Clara sepa de matemáticas. Dependen de lo que ha quedado registrado.
 

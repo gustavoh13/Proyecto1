@@ -45,7 +45,7 @@ Siguen siendo bienvenidos **dos episodios tuyos como profesor**, con una decisi�
 
 ## Referencias pendientes de cotejo
 
-La lista completa está al final de `auditoria-referencias.md`, y el detalle en `editorial/auditoria/`. Lo principal: paginación de algunos capítulos, tres años de edición, dos traductores, el texto literal de la Constitución española y de la ley chilena (se parafrasean) y el número oficial del Reglamento (UE) 2026/1744 en EUR-Lex.
+La lista completa está al final de `auditoria-referencias.md`, y el detalle en `editorial/auditoria/`. Lo principal: paginación de algunos capítulos, tres años de edición, dos traductores, el texto literal de la Constitución española y de la ley chilena (se parafrasean) y la correspondencia exacta entre el calendario citado y el art. 113 del Reglamento de IA modificado por el Reglamento (UE) 2026/1744 (cuya existencia y vigencia ya se ha comprobado en EUR-Lex).
 
 ## Otras tareas
 
