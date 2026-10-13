@@ -98,15 +98,14 @@ hr {
 hr::after { content: "*  *  *"; letter-spacing: 0.3em; font-size: 9pt; }
 hr + p { text-indent: 0; }
 
-/* Notas y lecturas: lista compacta */
-section.level1:last-of-type li { font-size: 9.5pt; }
-section.level1 > h2 + ul li, #bibliografía li { font-size: 9.5pt; padding-left: 5mm; text-indent: -5mm; list-style: none; }
+/* Bibliografía comentada */
+#bibliografia h2 { margin-top: 6mm; }
+#bibliografia li { font-size: 9.5pt; padding-left: 5mm; text-indent: -5mm; list-style: none; }
+#bibliografia > p:last-child { margin-top: 6mm; font-style: italic; text-indent: 0; }
 
-/* Notas al final de cada capítulo */
-aside.footnotes { font-size: 8.5pt; line-height: 1.35; margin-top: 8mm; text-align: left; hyphens: none; }
-aside.footnotes hr { display: none; }
-aside.footnotes ol { padding-left: 5mm; }
-aside.footnotes li p { text-indent: 0; }
-aside.footnotes::before { content: "Notas"; display: block; font-size: 9pt; font-weight: bold; margin-bottom: 2mm; }
-a.footnote-ref sup, sup { font-size: 0.7em; line-height: 0; }
-a.footnote-back { display: none; }
+/* Llamadas de nota */
+sup { font-size: 0.68em; line-height: 0; vertical-align: super; }
+
+/* Notas finales, agrupadas por capítulo */
+#notas p { font-size: 8.8pt; line-height: 1.35; text-indent: 0; text-align: left; hyphens: none; margin: 0 0 1.4mm; padding-left: 5mm; text-indent: -5mm; }
+#notas h2 { font-size: 10pt; margin: 6mm 0 2.5mm; }

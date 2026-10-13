@@ -10,13 +10,11 @@ Explico aquí, de la forma más sencilla que he sabido, los conceptos que más s
 
 **Dividuo** (5). Término de Gilles Deleuze para el sujeto de las sociedades de control: alguien que ya no se trata como una persona entera, sino como un conjunto de datos que pueden separarse y analizarse por partes.
 
-**Edutropía** (8). Palabra que propongo, formada con *edu* (educación) y *tropos* (giro). A diferencia de una utopía, no describe una escuela perfecta, sino una orientación posible: hacia la pregunta por los fines, el tiempo, el cuidado, el control democrático de la tecnología y la igualdad.
+**Edutropía** (8). Palabra que propongo, formada con *edu* (educación) y *tropos* (giro). A diferencia de una utopía, no describe una escuela perfecta, sino una orientación posible: devolver a la escuela tiempo, cuidado, privacidad y deliberación colectiva, sin perder de vista la igualdad.
 
-**Emprendedor de sí mismo** (4). Figura descrita por Foucault y desarrollada por Dardot y Laval: la persona que se trata a sí misma como una empresa, gestiona su vida como una cartera de inversiones y se evalúa según su rendimiento.
+**Empresario de sí mismo** (4). Figura descrita por Foucault a partir de la teoría del capital humano: la persona que se trata a sí misma como una empresa, gestiona su vida como una inversión y se evalúa según su rendimiento. Las plataformas le dan los instrumentos para hacerlo de forma continua.
 
 **Gamificación** (7). Uso de elementos propios de los juegos (puntos, niveles, insignias, clasificaciones) en actividades que no son juegos, como aprender o trabajar, para dirigir la conducta.
-
-**Gubernamentalidad** (2 y 4). Término de Foucault para el conjunto de técnicas con que se dirige la conducta de las personas sin necesidad de imponerse por la fuerza, a menudo a través de su propia libertad.
 
 **Neoliberalismo** (4 y 7). En este libro, la idea de que el mercado y la competencia deben organizar no solo la economía sino el conjunto de la vida social, y de que el Estado debe crear activamente las condiciones para ello. Más que una política económica, una manera de entender a las personas.
 
@@ -24,9 +22,13 @@ Explico aquí, de la forma más sencilla que he sabido, los conceptos que más s
 
 ***Paideia*** (1). Palabra griega que designaba a la vez la educación de los jóvenes, la cultura de un pueblo y el ideal de ser humano al que aspiraba esa cultura.
 
-**Performatividad** (4 y 5). Tiene dos sentidos en el libro. En Judith Butler, la idea de que la identidad se produce al repetir ciertos actos regulados por normas. En Stephen Ball, una cultura de trabajo en la que se juzga a las personas por los resultados que pueden exhibir.
+**Pedagogía de la huella** (prólogo, 2, 5 y 6). Nombre que doy a la lección que la escuela de las plataformas enseña sin decirlo: que hay que dejar rastro de cada paso (entregar, conectarse, completar) y que lo que no deja rastro no cuenta.
+
+**Performatividad** (4). En el sentido de Stephen Ball, una cultura de trabajo en la que se juzga a las personas, sobre todo a los docentes, por los resultados que pueden exhibir.
 
 ***Pharmakon*** (6). Palabra griega que significa a la vez remedio y veneno. Platón la aplica a la escritura; Derrida y Stiegler, a toda técnica.
+
+**Plataforma educativa** (prólogo y 2). Infraestructura digital que organiza o condiciona lo que ocurre en la escuela: la comunicación, los contenidos, las tareas, la evaluación, el seguimiento de los alumnos y los datos que se recogen sobre ellos. Todas ordenan el tiempo, deciden qué se ve, organizan las relaciones y convierten la actividad en medida, pero no todas pertenecen a los mismos dueños ni usan las huellas para lo mismo.
 
 ***Skholé*** (1 y 8). Palabra griega que significaba ocio, tiempo libre de la necesidad, y de la que deriva «escuela».
 

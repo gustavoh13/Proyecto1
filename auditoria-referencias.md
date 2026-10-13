@@ -2,7 +2,7 @@
 
 Fecha: 12 de octubre de 2026. Alcance: las 106 entradas de la bibliografía (Notas y lecturas).
 
-> Después de la auditoría el libro se reorganizó en ocho capítulos temáticos y la bibliografía pasó a `libro/10-lecturas.md`, agrupada según los capítulos nuevos. Solo contiene entradas ya verificadas aquí. El inventario de abajo conserva la agrupación por capítulos de la versión anterior.
+> Después de la auditoría el libro se reorganizó en ocho capítulos temáticos. En la revisión editorial de octubre de 2026 la bibliografía se sustituyó por una bibliografía comentada (`libro/11-lecturas.md`) y las referencias exactas pasaron a las notas finales. El inventario de abajo conserva la agrupación por capítulos de la primera versión; las fuentes nuevas están en la última sección.
 
 **Resultado:** todas las obras citadas existen. Ninguna referencia es inventada. Se corrigieron 19 entradas con datos editoriales erróneos o incompletos (año, editorial, traductor, título de la edición) y dos que remitían a ediciones en castellano que no se pudieron localizar.
 
@@ -221,3 +221,45 @@ Verificadas antes de incorporarlas al libro:
 | Cicerón, *Sobre los deberes* I, 150-151 | Clásico |
 
 **Pendiente de cotejo con el texto original:** la cita de Kant sobre los niños enviados a la escuela «para que se acostumbren a estar sentados» (lecciones de *Pedagogía*, introducción). La cita es conocida y se encuentra en la edición de Rink de 1803, pero no pude cotejar la página exacta en línea.
+
+## Revisión editorial (13 de octubre de 2026): datos empíricos y fuentes nuevas
+
+En esta revisión se podaron referencias que solo reforzaban el argumento (Deleuze sobre la madeja, Hall, Gramsci, Castoriadis, Mezzadra, Montaigne, Humboldt, Goethe, Dardot y Laval, Lordon, *Psicopolítica* y *En el enjambre* de Han, Butler, *Estado de excepción* de Agamben, Latour, Baudrillard, Turkle, Jenkins, Floridi, Dewey, Harvey, Ortner, Marcuse, Nussbaum, Sahlberg, Noble, Haraway, Giroux, Gilligan, Du Châtelet y Arendt sobre la casa). Siguen verificadas en las secciones anteriores por si el autor quiere recuperarlas.
+
+Cada dato nuevo se comprobó en la fuente primaria o, cuando no fue posible, en al menos dos fuentes secundarias fiables. La columna «Uso en el libro» resume lo que se afirma.
+
+| Fuente | Uso en el libro | Estado |
+| --- | --- | --- |
+| OCDE, *Students, Computers and Learning*, 2015 | Uso moderado algo mejor; uso muy frecuente bastante peor incluso descontando el origen social; sin mejoras en los países que más invirtieron | V |
+| OCDE, *PISA 2022 Results (Volume II)*, 2023 | 65 % se distrae con dispositivos en al menos algunas clases de matemáticas; −15 puntos si distraen los dispositivos de otros (ajustado por nivel socioeconómico); uso para aprender hasta 1 h/día asociado a mejores resultados; uso recreativo de 5-7 h muy por debajo de hasta 1 h | V (cifras en el comunicado de la OCDE y en el volumen II; no se cita el capítulo) |
+| UNESCO, *GEM Report 2023* (26 de julio de 2023) | Evidencia escasa y en buena parte de los vendedores; algunas tecnologías ayudan a algunos aprendizajes en algunos contextos; costes subestimados; menos de uno de cada cuatro países prohibía el móvil; preguntar si la tecnología es adecuada, equitativa, escalable y sostenible | V |
+| UNESCO, *Guidance for Generative AI in Education and Research*, septiembre de 2023 | Edad mínima de 13 años para el uso en el aula; regulación previa | V |
+| UNICEF, *Remote Learning Reachability*, agosto de 2020 | Al menos 463 millones de niños sin acceso a enseñanza a distancia | V |
+| Cierres escolares 2020 (UNESCO) | Más de 1.500 millones de estudiantes afectados | V (cifra de seguimiento de la UNESCO) |
+| Arnold y Pistilli, «Course Signals at Purdue», LAK '12 (2012); comunicado de Purdue de 2013; críticas de Caulfield y Essa (2013, recogidas en *Inside Higher Ed* y *Times Higher Education*) | Semáforo; anuncio de +21 % en la graduación a seis años con dos o más asignaturas; sesgo de selección | V |
+| Georgia State University, GPS Advising | Más de 700 alertas a partir de millones de calificaciones, más de 40 asesores nuevos, unos 300 estudiantes por asesor; cierre de brechas según la propia universidad | V (datos institucionales, se advierte en la nota) |
+| Datatilsynet, 14 de julio de 2022 (Helsingør) | Queja de un padre en 2019 por una cuenta de YouTube creada desde un Chromebook escolar; prohibición provisional por falta de evaluación de riesgos, incluidas las transferencias a EE. UU. | V (prensa especializada; la prohibición se suspendió después con órdenes de corrección) |
+| Datatilsynet, 30 de enero de 2024 (53 municipios) | Sin base legal para ceder datos a Google para sus propios fines (mantener y mejorar Workspace, ChromeOS y Chrome, desarrollar funciones); sí para prestar el servicio, seguridad y obligaciones legales; plazo hasta el 1 de agosto de 2024; los municipios siguen usando Google | V |
+| Decisión de ejecución (UE) 2023/1795 (Marco de Privacidad de Datos) y Tribunal General, T-553/23, *Latombe*, 3 de septiembre de 2025 | Transferencias a EE. UU. permitidas; recurso desestimado; acuerdos anteriores anulados en 2015 y 2020 | V |
+| Reglamento (UE) 2024/1689 de IA, art. 5.1.f y anexo III.3 | Prohibición del reconocimiento de emociones en centros educativos desde el 2 de febrero de 2025; sistemas educativos de alto riesgo con obligaciones aplazadas a diciembre de 2027 por el Ómnibus Digital | V |
+| Reglamento (UE) 2016/679, art. 22 | Límite a las decisiones basadas únicamente en tratamiento automatizado | V |
+| Google Workspace for Education (condiciones y aviso de privacidad) | Servicios principales sin publicidad ni uso de datos para publicidad; servicios adicionales con condiciones generales | V |
+| Liang et al., *Patterns* 4 (7), 2023 | 7 detectores; 61 % de falsos positivos de media en redacciones TOEFL de no nativos | V |
+| Vanderbilt University, 16 de agosto de 2023 | Desactiva el detector de IA de Turnitin: 1 % de 75.000 trabajos ≈ 750 falsos positivos; menos de 24 h de aviso; opacidad | V |
+| Bastani et al., *PNAS* 122 (26), 2025 | ~1.000 alumnos turcos; asistente corriente +48 % en práctica y −17 % en examen; versión tutor +127 % en práctica sin daño apreciable | V |
+| Ofqual, informe de agosto de 2020 y prensa (13-17 de agosto de 2020) | Casi 40 % de las notas propuestas rebajadas; modelo basado en resultados históricos del centro; grupos pequeños con notas del profesor; protestas; rectificación el 17 de agosto | V |
+| Francia: respuesta a la pregunta escrita n.º 971 de Philippe Latombe, *JO* 15 de noviembre de 2022 | Instrucción de octubre de 2021 a los rectores para detener Office 365 y Google; doctrina «cloud au centre», contratación pública y RGPD | V (prensa y texto de la pregunta) |
+| Barcelona, proyecto DD (Xnet, Ayuntamiento, Consorci d'Educació, AFFAC) | Origen en familias en 2018; piloto en 11 centros desde 2021; herramientas libres y auditables | V (web municipal y prensa; sin datos de 2025-2026) |
+| EducaMadrid | Plataforma pública en servidores propios, con Moodle, Nextcloud y otras herramientas libres | V (fuentes oficiales) |
+| Cataluña, móviles | Restricción en enero de 2024; prohibición total en etapas obligatorias desde 2025-2026, anunciada en junio de 2025; retirada progresiva de pizarras digitales y tabletas en infantil | V (prensa catalana; no se consultó el texto oficial) |
+| Valenzuela, Bellei y De los Ríos, *Journal of Education Policy* 29 (2), 2014 | Segregación escolar chilena entre las más altas de la OCDE | V |
+| CIAE (Universidad de Chile), estudio de julio de 2026 | Caída de la segregación de ~10 % entre 2015 y 2024, mínimo en veinte años, asociada al SAE; discutido por Libertad y Desarrollo | V (prensa; **confirmar título exacto del estudio antes de imprimir**) |
+| Ley 20.845 (2015), Ley 20.903 (2016), Ley 21.040 (2017) | Fin del lucro, la selección y el copago; tiempo no lectivo hasta 35 %; 70 servicios locales | V |
+| Ley 21.728 (31 de enero de 2025), deuda histórica docente | ~57.000 docentes vivos, pagos hasta 2031, más de 20.000 fallecidos sin cobrar | V |
+| Servicios Locales de Educación Pública | 36 de 70 en funcionamiento a mediados de 2026; propuesta de 2026 de alargar el calendario a 2040, en discusión | V (prensa; **cifras que cambian, revisar antes de imprimir**) |
+| CAE y proyecto FES | FES aprobado por la Cámara en agosto de 2025 y detenido en el Senado; más de medio millón de deudores con garantía ejecutada | V (prensa; **revisar antes de imprimir**) |
+| Noddings, *The Challenge to Care in Schools*, Teachers College Press, 1992 | Cuidar de sí, de los demás, del mundo y de las ideas | V |
+| Benjamin, Walter, «El narrador», sección VIII | El aburrimiento como «pájaro de sueño» | V (ahora se cita directamente a Benjamin, sin pasar por Han) |
+
+**Cita de Kant.** La paráfrasis del capítulo 3 corresponde al texto alemán de *Über Pädagogik* (Ak. IX, 441-442): «damit sie sich daran gewöhnen mögen, still zu sitzen und pünktlich das zu beobachten, was ihnen vorgeschrieben wird». Si se quiere citar la edición de Akal, hay que añadir la página.
+

@@ -1,32 +1,36 @@
 # El alma en la plataforma
 
-*Ensayo sobre educación, técnica y subjetividad en tiempos neoliberales*
+*Escuela, datos y libertad en la era de las plataformas*
 Gustavo Herrera Urízar
 
-Libro de filosofía (ensayo para público culto) escrito a partir de la tesis doctoral *Las tecnologías digitales en la educación neoliberal como dispositivo en la construcción de subjetividad*. Unas 24.000 palabras.
+Ensayo de filosofía para público culto. Unas 25.000 palabras de texto principal, con notas finales, glosario y bibliografía comentada.
+
+> La escuela no ha sido sustituida por las plataformas: se ha vuelto uno de los lugares donde las plataformas aprenden a formar sujetos.
 
 ## Estructura
 
-El ensayo no sigue un orden cronológico ni separa teoría y aplicación. Cada capítulo toma un tema y lo sigue a través de las épocas (de Sócrates a la plataforma escolar y de vuelta), y termina abriendo la pregunta del siguiente. No hay partes ni subtítulos internos, solo pausas (`* * *`).
+Cada capítulo toma un tema y lo sigue a través de las épocas, de Sócrates a la plataforma escolar, sostenido por una lectura propia que recorre todo el libro: la *pedagogía de la huella* y las cuatro operaciones de la plataforma (tiempo, visibilidad, relación y medida). No hay partes ni subtítulos internos, solo pausas (`* * *`).
 
 | Archivo | Capítulo | Hilo |
 | --- | --- | --- |
-| `libro/00-prologo.md` | Prólogo. Una inquietud | Desde dónde se escribe y cómo se lee el libro |
-| `libro/01-el-sello-en-la-cera.md` | 1. El sello en la cera | La educación como fabricación del alma: *paideia*, Durkheim, *skholé*, Hiparquia, Aspasia, Diotima, el currículo |
-| `libro/02-una-red-sin-dueno.md` | 2. Una red sin dueño | El dispositivo (Foucault, Deleuze, Agamben), la «Señal» y la notificación, *oikonomía*, providencia algorítmica, profanar |
-| `libro/03-el-alma-prision-del-cuerpo.md` | 3. El alma, prisión del cuerpo | Kant y la silla, Platón, Aristóteles, Descartes e Isabel de Bohemia, disciplina, Pasolini, Spinoza, La Boétie, identidad |
-| `libro/04-escultores-de-si-mismos.md` | 4. Escultores de sí mismos | De Pico y la *Bildung* al emprendedor de sí: Rousseau y Sofía, Pizan, Wollstonecraft, Du Châtelet, capital humano, Han, Ball |
-| `libro/05-ser-visto.md` | 5. Ser visto | De la confesión agustiniana al panel de control: poder pastoral, panóptico, datificación, dividuo, personalización, privacidad |
-| `libro/06-la-memoria-fuera-de-nosotros.md` | 6. La memoria fuera de nosotros | El *pharmakon* del *Fedro*, Stiegler, Comenio, Simondon, Heidegger, IA generativa |
-| `libro/07-lo-que-no-tiene-precio.md` | 7. Lo que no tiene precio | Artes liberales y sofistas, Chile como laboratorio, PISA, plataformas gratuitas, brechas, gamificación y juego |
-| `libro/08-tiempo-libre.md` | 8. Tiempo libre | Resistencias, cuidado, hooks y Garcés, acción colectiva, *edutropía* |
-| `libro/09-epilogo.md` | Epílogo. Conócete a ti mismo, otra vez | Cierre circular en Delfos |
-| `libro/10-glosario.md` | Glosario | Los conceptos clave explicados con sencillez |
-| `libro/11-lecturas.md` | Bibliografía | Bibliografía alfabética (auditada, ver `auditoria-referencias.md`) |
+| `libro/00-prologo.md` | Prólogo. Una inquietud | Desde dónde se escribe, definición de plataforma, las cuatro tesis |
+| `libro/01-el-sello-en-la-cera.md` | 1. El sello en la cera | *Paideia*, Durkheim, Sócrates y Platón, *skholé*, Hiparquia, Diotima; del sello a la huella |
+| `libro/02-una-red-sin-dueno.md` | 2. Una red sin dueño | Dispositivo, la Señal, las cuatro operaciones, lo que la escuela presta a las plataformas, *oikonomía*, profanar |
+| `libro/03-el-alma-prision-del-cuerpo.md` | 3. El alma, prisión del cuerpo | Kant y la silla, disciplina, objeción de Fraser, Pasolini, Spinoza y La Boétie, contra la nostalgia |
+| `libro/04-escultores-de-si-mismos.md` | 4. Escultores de sí mismos | Pico, Rousseau y Sofía, Wollstonecraft, capital humano, el cuadro de mando del alumno, Ball y el docente |
+| `libro/05-ser-visto.md` | 5. Ser visto | Poder pastoral, panóptico, datificación, Purdue y Georgia State, Helsingør 2022-2024, Reglamento de IA, privacidad |
+| `libro/06-la-memoria-fuera-de-nosotros.md` | 6. La memoria fuera de nosotros | *Pharmakon*, Stiegler, Simondon, PISA 2015 y 2022, UNESCO 2023, quienes eligen la pantalla, IA generativa |
+| `libro/07-lo-que-no-tiene-precio.md` | 7. Lo que no tiene precio | Chile hasta 2026, qué significa «gratis», Francia y Barcelona, límites del software libre, gamificación |
+| `libro/08-tiempo-libre.md` | 8. Tiempo libre | Prohibición del móvil, crítica y contraconductas, Ofqual 2020, cuidado, *edutropía* en cuatro direcciones |
+| `libro/09-epilogo.md` | Epílogo. Conócete a ti mismo, otra vez | Idea-fuerza y cierre en Delfos |
+| `libro/10-glosario.md` | Glosario | Conceptos clave, incluidos *pedagogía de la huella* y *plataforma educativa* |
+| `libro/11-lecturas.md` | Bibliografía comentada | Obras decisivas por capítulo e informes y leyes citados |
+
+Material editorial en `editorial/`: sinopsis, contracubierta, índice comentado y subtítulos alternativos (`sinopsis.md`), y lo que queda pendiente para el autor (`notas-para-el-autor.md`).
 
 ## Versiones compiladas
 
-En `salida/`: PDF maquetado (A5), EPUB, DOCX (para revisar con control de cambios) y un Markdown único.
+En `salida/`: PDF maquetado (A5), EPUB, DOCX (para revisar con control de cambios), HTML y un Markdown único.
 
 Para regenerarlas después de editar los capítulos:
 
@@ -34,34 +38,31 @@ Para regenerarlas después de editar los capítulos:
 ./compilar.sh
 ```
 
-Requiere `pandoc`; el PDF se genera con Chromium en modo headless.
+Requiere `pandoc` y `python3`; el PDF se genera con Chromium en modo headless. El script `herramientas/notas_finales.py` convierte las notas al pie de cada capítulo en notas finales agrupadas por capítulo, con la numeración reiniciada en cada uno. En los archivos de `libro/` las notas siguen escritas como notas al pie (`[^c3-kant]`), que es lo más cómodo para editar.
 
 ## Decisiones editoriales
 
-- **De tesis a ensayo.** Se eliminaron la metodología, las entrevistas, los proyectos edDIT y USMOV y los anexos. El libro es puramente filosófico.
-- **Voz de autor.** Primera persona y prosa continua. Se conservan el origen chileno del autor, su experiencia docente y la mirada desde Cataluña.
-- **Estilo.** Sin rayas largas para los incisos (se usan comas o paréntesis), sin conectores repetidos ni fórmulas del tipo «no es X, sino Y», y sin enumeraciones de tres en tres en cada párrafo.
-- **Aparato crítico.** Notas al final de cada capítulo con la referencia precisa de cada cita (numeración Stephanus/Bekker para Platón y Aristóteles; capítulo, lección o fecha para los modernos). Bibliografía alfabética al final y glosario.
-- **Objeciones.** Cada capítulo discute al menos una objeción seria a su propio argumento: la crítica de Fraser y Habermas a Foucault, los límites de Han, la investigación sobre evaluación formativa, los datos de la OCDE (2015) y la UNESCO (2023), los defensores de la evaluación estandarizada y la analítica del aprendizaje, el valor de la tecnología para el alumnado con discapacidad.
-- **Título.** *El alma en la plataforma* retoma la idea de la tesis de que la educación neoliberal es un proyecto "para cambiar el alma". Alternativas posibles: *La fábrica del alma*, *El emprendedor de sí mismo va a la escuela*, *Educar en la era de los dispositivos*.
+- **Ensayo original.** El libro se presenta como ensayo, no como tesis adaptada. El origen doctoral se menciona en una sola línea al final de la bibliografía.
+- **Voz de autor.** Primera persona y una lectura propia sostenida: la escuela presta a las plataformas un público obligatorio, autoridad y tiempo largo; la *pedagogía de la huella*; las cuatro operaciones; la prohibición del móvil que deja intacta la infraestructura; la IA generativa como crisis de un sistema que solo sabía leer huellas.
+- **Menos autores.** Se conservan las referencias que cambian el argumento y se podaron las que solo lo reforzaban (lista en `auditoria-referencias.md`).
+- **Plataforma, definida.** El prólogo define «plataforma educativa» y distingue tipos y dueños; el capítulo 2 lo desarrolla.
+- **Casos verificables.** Purdue y Georgia State, Helsingør, Vanderbilt y los detectores de IA, el experimento de Bastani, Ofqual 2020, Francia 2021-2022, el proyecto DD de Barcelona, la prohibición del móvil en Cataluña y las reformas chilenas. Donde encaja una escena propia del autor hay un comentario invisible `<!-- ESCENA DEL AUTOR -->`.
+- **Objeciones con peso.** La crítica de Fraser a Foucault; la evaluación formativa; los defensores de la analítica; las pruebas estandarizadas; y, con más espacio, las tres objeciones que pedía la revisión: no idealizar la escuela anterior (cap. 3), las comunidades que eligen herramientas digitales por accesibilidad, continuidad, colaboración o falta de recursos (cap. 6) y los límites del software libre (cap. 7).
+- **Generalizaciones matizadas.** «Cuando el producto es gratis…», la «providencia» algorítmica y el «precio cero» se aplican solo a los modelos a los que corresponden, distinguiendo plataformas públicas, académicas, cooperativas y corporativas.
+- **Notas.** Notas finales reducidas y agrupadas por capítulo, y bibliografía comentada en lugar de la lista alfabética.
+- **Estilo.** Sin rayas largas para los incisos, sin conectores repetidos ni fórmulas en serie.
 
 ## Correcciones respecto de la tesis
 
 Al reescribir se corrigieron algunos datos que conviene revisar también en la tesis:
 
-- Aspasia aparece en el *Menéxeno* como maestra de retórica de **Sócrates** (no de Platón), y era de Mileto.
 - "Hiparquía de Marne" → **Hiparquia de Maronea**.
-- Areté de Cirene era **hija** de Aristipo y enseñó a **su hijo**, Aristipo el Joven (*metrodidaktos*).
-- Hipatia pertenece a la Alejandría de la **Antigüedad tardía** (siglos IV-V), no a la Grecia clásica.
-- Du Châtelet tradujo los *Principia* de Newton **del latín** al francés, no del inglés.
 - Wollstonecraft escribió la *Vindicación* **contra** la educación de Sofía en el *Emilio* de Rousseau, no en consonancia con él.
 - Christine de Pizan es medieval tardía (1364-c. 1430), no de la Ilustración.
-- La cita sobre identidades "fragmentadas y fracturadas" es de **Stuart Hall** ("Who needs identity?", 1996).
+- La decisión de Datatilsynet de 2022 no expulsó a Google de las escuelas danesas: en 2024 se resolvió limitando los fines para los que la empresa puede usar los datos.
 - La *Recomendación sobre la ética de la IA* de la UNESCO es de **2021**.
-- En la tesis hay notas al pie desplazadas (por ejemplo, la cita del *Fedón* atribuida a Lipman, o la de Aristóteles a Gramsci). Además, varias citas entrecomilladas de Simondon, Heidegger, Stiegler, Latour, Castells, Turkle, Jenkins y Han no parecen literales; en el libro se han parafraseado.
+- En la tesis hay notas al pie desplazadas (por ejemplo, la cita del *Fedón* atribuida a Lipman, o la de Aristóteles a Gramsci). Además, varias citas entrecomilladas de Simondon, Heidegger, Stiegler, Latour, Castells, Turkle, Jenkins y Han no parecen literales; en el libro se han parafraseado o eliminado.
 
 ## Pendiente para el autor
 
-- Revisar el tono y añadir, si se quiere, anécdotas reales del aula (no se inventó ninguna).
-- Escribir los agradecimientos.
-- Completar los datos editoriales de la bibliografía con las ediciones que realmente se usaron.
+Ver `editorial/notas-para-el-autor.md`: escenas propias, frases biográficas, datos de 2026 que hay que revisar antes de imprimir y agradecimientos.
