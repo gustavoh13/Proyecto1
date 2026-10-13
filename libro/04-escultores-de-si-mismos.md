@@ -96,26 +96,26 @@ En esta ética del rendimiento falta el otro. El cuidado de sí que practicaban 
 
 Para evaluarse sin descanso, este sujeto necesita verse; para compararse, medirse. Esa mirada que lo acompaña a todas partes tiene una historia más larga de lo que parece, y empieza en un alma que aprendió a confesarse.
 
-[^c4-pico]: Giovanni Pico della Mirandola, *Discurso sobre la dignidad del hombre* (1486).
+[^c4-pico]: Pico della Mirandola (1496/1988).
 
-[^c4-gadamer]: Hans-Georg Gadamer, *Verdad y método*, primera parte, cap. 1, sobre el concepto de formación.
+[^c4-gadamer]: Gadamer (1960/1977), primera parte, cap. 1, sobre el concepto de formación.
 
-[^c4-sofia]: Jean-Jacques Rousseau, *Emilio, o De la educación*, libro V.
+[^c4-sofia]: Rousseau (1762/2011), libro V.
 
-[^c4-pizan]: Christine de Pizan, *La ciudad de las damas*, primera parte, caps. 1-2.
+[^c4-pizan]: Pizan (ca. 1405/1995), primera parte, caps. 1-2.
 
-[^c4-wollstonecraft]: Mary Wollstonecraft, *Vindicación de los derechos de la mujer*, caps. 5 y 12.
+[^c4-wollstonecraft]: Wollstonecraft (1792/2018), caps. 5 y 12.
 
-[^c4-aufklarung]: Immanuel Kant, «Respuesta a la pregunta: ¿Qué es la Ilustración?» (1784). La paradoja de la libertad bajo coacción está en la introducción a la *Pedagogía*.
+[^c4-aufklarung]: Kant (1784/2004). La paradoja de la libertad bajo coacción, en Kant (1803/1983), introducción.
 
-[^c4-biopolitica]: Michel Foucault, *Nacimiento de la biopolítica*, lección del 14 de marzo de 1979.
+[^c4-biopolitica]: Foucault (2004/2007), lección del 14 de marzo de 1979.
 
-[^c4-han]: Byung-Chul Han, *La sociedad del cansancio*, Barcelona, Herder, 2012.
+[^c4-han]: Han (2010/2012).
 
-[^c4-blackwiliam]: Paul Black y Dylan Wiliam, «Inside the Black Box», *Phi Delta Kappan*, 80 (2), 1998, pp. 139-148.
+[^c4-blackwiliam]: Black y Wiliam (1998).
 
-[^c4-atasay]: Engin Atasay, «Neoliberal schooling and subjectivity: learning to desire lack», *Subjectivity*, 7 (3), 2014, pp. 288-307.
+[^c4-atasay]: Atasay (2014).
 
-[^c4-entrevistas]: Entrevistas semiestructuradas realizadas por el autor en febrero de 2025 a cinco especialistas y cuatro docentes de secundaria de Cataluña y Chile. Las personas entrevistadas dieron su consentimiento informado y se citan por su perfil, sin nombres.
+[^c4-entrevistas]: Entrevistas semiestructuradas realizadas por el autor en febrero de 2025, para su investigación doctoral, a cinco especialistas y cuatro docentes de secundaria de Cataluña y Chile. Las personas entrevistadas dieron su consentimiento informado y se citan por su perfil, sin nombres. Como establece APA 7 para los participantes de una investigación propia, no figuran en la lista de referencias.
 
-[^c4-ball]: Stephen J. Ball, «The teacher's soul and the terrors of performativity», *Journal of Education Policy*, 18 (2), 2003, pp. 215-228.
+[^c4-ball]: Ball (2003).

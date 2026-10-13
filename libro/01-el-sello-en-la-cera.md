@@ -64,22 +64,22 @@ Con el tiempo los saberes se ordenaron en una lista que la Antigüedad tardía f
 
 * * *
 
-De este recorrido me quedo con tres cosas. La educación nunca fue neutral: desde que se pensó a sí misma estuvo ligada a una idea de vida buena, y una educación que se presenta como pura transmisión de competencias no carece de proyecto, sino que lo ha dejado fuera de la discusión. Todo ideal educativo excluye, y esa exclusión forma parte de su funcionamiento. Y la tradición llevaba dentro desde el comienzo algo que la desbordaba, el examen de Sócrates, el deseo de Diotima, la respuesta de Hiparquia. La escuela fabrica almas, y en ella se aprende también a interrogar a la fábrica.
+De este recorrido me quedo con tres cosas. La educación nunca fue neutral: desde que se pensó a sí misma estuvo ligada a una idea de vida buena, y una educación que se presenta como pura transmisión de competencias tiene un proyecto igual que las demás, solo que lo ha dejado fuera de la discusión. Todo ideal educativo excluye, y esa exclusión forma parte de su funcionamiento. Y la tradición llevaba dentro desde el comienzo algo que la desbordaba, el examen de Sócrates, el deseo de Diotima, la respuesta de Hiparquia. La escuela fabrica almas, y en ella se aprende también a interrogar a la fábrica.
 
 Los griegos sabían quién sostenía el sello. Nosotros tenemos ministerios, agencias de evaluación, empresas tecnológicas, familias y docentes que empujan más o menos en la misma dirección sin que nadie parezca haberlo decidido. Un taller así, sin dueño a la vista, exige otra herramienta para pensarlo.
 
-[^c1-cera]: Platón, *Teeteto*, 191c-d.
+[^c1-cera]: Platón (ca. 369 a. e. c./1988), *Teeteto*, 191c-d.
 
-[^c1-vivirbien]: Aristóteles, *Política*, I, 2, 1252b29-30.
+[^c1-vivirbien]: Aristóteles (ca. 335-323 a. e. c./1988), *Política*, I, 2, 1252b29-30.
 
-[^c1-citara]: Aristóteles, *Ética a Nicómaco*, II, 1, 1103a33-b2.
+[^c1-citara]: Aristóteles (ca. 335-323 a. e. c./1985), *Ética nicomáquea*, II, 1, 1103a33-b2.
 
-[^c1-durkheim]: Émile Durkheim, *Educación y sociología*, cap. 1.
+[^c1-durkheim]: Durkheim (1922/1975), cap. 1.
 
-[^c1-examen]: Platón, *Apología de Sócrates*, 38a.
+[^c1-examen]: Platón (ca. 399-390 a. e. c./1981), *Apología*, 38a.
 
-[^c1-akuron]: Aristóteles, *Política*, I, 13, 1260a12-13.
+[^c1-akuron]: Aristóteles (ca. 335-323 a. e. c./1988), *Política*, I, 13, 1260a12-13.
 
-[^c1-hiparquia]: Diógenes Laercio, *Vidas de los filósofos ilustres*, VI, 96-98.
+[^c1-hiparquia]: Diógenes Laercio (ca. siglo III/2007), VI, 96-98.
 
-[^c1-diotima]: Platón, *Banquete*, 201d-212a.
+[^c1-diotima]: Platón (ca. 385-370 a. e. c./1986a), *Banquete*, 201d-212a.

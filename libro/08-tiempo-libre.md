@@ -8,7 +8,7 @@ Pienso en la chica del primer capítulo, la que abre la aplicación del institut
 
 * * *
 
-En los últimos años muchos gobiernos han decidido actuar sobre el objeto más visible de todos, el teléfono móvil. El informe de la UNESCO de 2023 constataba que menos de uno de cada cuatro países lo había prohibido en las escuelas, y recomendaba hacerlo cuando no sirviera al aprendizaje. En Cataluña, donde vivo, el Departament d'Educació lo restringió en enero de 2024 y en junio de 2025 anunció su prohibición total en todas las etapas obligatorias a partir del curso siguiente, en las aulas y fuera de ellas, junto con la retirada progresiva de pizarras digitales y tabletas en la educación infantil.[^c8-moviles]
+En los últimos años muchos gobiernos han decidido actuar sobre el objeto más visible de todos, el teléfono móvil. El informe de la UNESCO de 2023 constataba que menos de uno de cada cuatro países lo había prohibido en las escuelas, y defendía que la tecnología, móviles incluidos, solo estuviera en el aula cuando sirviera al aprendizaje. El panorama cambió deprisa: a finales de 2024, según el seguimiento del propio equipo del informe, el 40 % de los sistemas educativos tenía ya alguna prohibición. En Cataluña, donde vivo, el Departament d'Educació lo restringió en enero de 2024 y en junio de 2025 anunció su prohibición total en todas las etapas obligatorias a partir del curso siguiente, en las aulas y fuera de ellas, junto con la retirada progresiva de pizarras digitales y tabletas en la educación infantil.[^c8-moviles]
 
 No me opongo a estas medidas. Las distracciones que mide PISA son reales, y muchos docentes las han recibido con alivio. Tampoco nacieron solo de los gobiernos. En el proyecto USMOV, que estudió entre 2020 y 2022 el uso del móvil en institutos españoles y cuyos materiales de Barcelona analicé, el director de un instituto público explicaba así la presión que recibía: «Como la familia no puede controlar el uso de ocio en el móvil, le pasan a la escuela la responsabilidad de prohibirlo, de actuar disciplinariamente». La prohibición responde a un problema real y, a la vez, traslada a la escuela una tarea que la sociedad no sabe resolver en otra parte.[^c8-usmov]
 
@@ -28,9 +28,9 @@ En una conferencia de 1978, Foucault propuso una definición de la crítica de l
 
 El caso más claro que conozco de un «así no» dicho en voz alta ocurrió en Inglaterra en agosto de 2020.
 
-Con los exámenes suspendidos por la pandemia, el organismo que regula las calificaciones, Ofqual, decidió que las notas finales de bachillerato no serían las que proponían los profesores, que consideraba demasiado generosas, sino las que calculara un algoritmo. El modelo tomaba como punto de partida los resultados históricos de cada centro en cada asignatura y ajustaba a ellos las notas de los alumnos de ese año. Cuando se publicaron los resultados, casi el 40 % de las notas propuestas por los docentes había bajado al menos un grado. Los centros con muy pocos alumnos por asignatura, muchos de ellos privados, conservaban con más frecuencia las notas de sus profesores, porque el modelo no podía aplicarse con fiabilidad a grupos tan pequeños. Una alumna brillante de un instituto con malos resultados en el pasado podía ver su nota rebajada por lo que habían hecho otros antes que ella.[^c8-ofqual]
+Con los exámenes suspendidos por la pandemia, el organismo que regula las calificaciones, Ofqual, decidió que las notas finales de bachillerato no serían las que proponían los profesores, que consideraba infladas respecto de años anteriores, sino las que calculara un modelo estadístico. El modelo tomaba como punto de partida los resultados históricos de cada centro en cada asignatura y ajustaba a ellos las notas de los alumnos de ese año. Cuando se publicaron los resultados de A level en Inglaterra, el 39 % de las notas propuestas por los docentes había bajado al menos un grado. En las asignaturas con cinco alumnos o menos se mantenía la nota del profesor, porque el modelo no podía aplicarse con fiabilidad a grupos tan pequeños, y esos grupos abundaban en los centros privados. Una alumna brillante de un instituto con malos resultados en el pasado podía ver su nota rebajada por lo que habían hecho otros antes que ella.[^c8-ofqual]
 
-Los estudiantes salieron a la calle. Frente al Ministerio de Educación, en Londres, corearon un lema que dio la vuelta al mundo y que aquí traduzco con decoro: «al diablo con el algoritmo». En pocos días el Gobierno rectificó, y el 17 de agosto anunció que se usarían las notas de los profesores.
+Los estudiantes salieron a la calle. Frente al Ministerio de Educación, en Londres, corearon un lema que dio la vuelta al mundo y que aquí traduzco con decoro: «al diablo con el algoritmo». En pocos días el Gobierno rectificó: el 17 de agosto anunció que cada estudiante recibiría la nota propuesta por su centro o la calculada, la que fuera más alta.
 
 El episodio condensa casi todo lo que este libro ha intentado decir. Muestra un algoritmo que predice el futuro con el pasado y convierte el origen en destino. Muestra un poder que se presentaba como técnico y neutral y resultó profundamente político. Y muestra que esas decisiones pueden discutirse y deshacerse cuando la gente afectada entiende lo que está pasando y actúa junta. Los estudiantes ingleses no rechazaron la evaluación. Rechazaron que la decidiera una fórmula opaca en lugar de alguien que los conocía.
 
@@ -110,28 +110,28 @@ Me quedan muchas preguntas sin responder. No sé cómo se enseña a pensar en un
 
 La edutropía nace de las grietas del sistema y se alimenta de gestos pequeños: un claustro que discute, una profesora que lee en voz alta, unos estudiantes que se organizan. Cada uno de esos gestos rompe un poco la idea de que las cosas solo pueden ser como son.
 
-[^c8-masschelein]: Jan Masschelein y Maarten Simons, *Defensa de la escuela. Una cuestión pública*, Buenos Aires, Miño y Dávila, 2014.
+[^c8-masschelein]: Masschelein y Simons (2012/2014).
 
-[^c8-moviles]: UNESCO, *Informe de seguimiento de la educación en el mundo 2023*, op. cit.; Departament d'Educació de la Generalitat de Catalunya, instrucciones de enero de 2024 y anuncio de junio de 2025 dentro del Pla de Digitalització Responsable.
+[^c8-moviles]: UNESCO (2023a); Global Education Monitoring Report (2025), para el dato de 2024; sobre Cataluña, VilaWeb (2025).
 
-[^c8-usmov]: Proyecto USMOV, *Jóvenes y móviles en el aula. Discursos y dinámicas de prohibición, promoción e indeterminación* (Agencia Estatal de Investigación, PID2019-108041RB-I00, 2020-2022), informe de trabajo de campo de los centros de Barcelona.
+[^c8-usmov]: USMOV (s. f.). El proyecto, financiado por la Agencia Estatal de Investigación (PID2019-108041RB-I00), estudió el uso del móvil en institutos españoles entre 2020 y 2022.
 
-[^c8-resistencia]: Michel Foucault, *Historia de la sexualidad, 1. La voluntad de saber*, cap. IV, «Método».
+[^c8-resistencia]: Foucault (1976/2008), cap. IV, «Método».
 
-[^c8-critica]: Michel Foucault, «¿Qué es la crítica?», conferencia ante la Sociedad Francesa de Filosofía, 27 de mayo de 1978.
+[^c8-critica]: Foucault (1990/1995). Es la conferencia pronunciada ante la Sociedad Francesa de Filosofía el 27 de mayo de 1978.
 
-[^c8-ofqual]: Ofqual, *Awarding GCSE, AS, A level, advanced extension awards and extended project qualifications in summer 2020: interim report*, agosto de 2020, y la cobertura de *The Guardian* y la BBC entre el 13 y el 17 de agosto de 2020.
+[^c8-ofqual]: Ofqual (2020) y Department for Education y Ofqual (2020). La rebaja se mide respecto de la nota propuesta por el centro.
 
-[^c8-contraconductas]: Michel Foucault, *Seguridad, territorio, población*, lección del 1 de marzo de 1978.
+[^c8-contraconductas]: Foucault (2004/2006), lección del 1 de marzo de 1978.
 
-[^c8-certeau]: Michel de Certeau, *La invención de lo cotidiano. 1. Artes de hacer*, México, Universidad Iberoamericana.
+[^c8-certeau]: Certeau (1980/2000).
 
-[^c8-cuidado]: Nel Noddings, *The Challenge to Care in Schools*, Nueva York, Teachers College Press, 1992.
+[^c8-cuidado]: Noddings (2005).
 
-[^c8-pajaro]: Walter Benjamin, «El narrador», sección 8.
+[^c8-pajaro]: Benjamin (1936/2008), sección VIII.
 
-[^c8-hooks]: bell hooks, *Enseñar a transgredir. La educación como práctica de la libertad*, Madrid, Capitán Swing, 2021, introducción.
+[^c8-hooks]: hooks (1994/2021), introducción.
 
-[^c8-garces]: Marina Garcés, *Un mundo común*, Barcelona, Bellaterra, 2013, y *Escuela de aprendices*, Barcelona, Galaxia Gutenberg, 2020.
+[^c8-garces]: Garcés (2013, 2020).
 
-[^c8-rgpd]: Reglamento (UE) 2016/679, General de Protección de Datos, art. 22.
+[^c8-rgpd]: Reglamento (UE) 2016/679 (2016), art. 22.

@@ -34,11 +34,11 @@ Martin Heidegger miró la técnica desde otro lado. Sostuvo que la técnica mode
 
 ¿Qué dicen los datos? Los que existen son menos concluyentes de lo que suponen tanto los entusiastas como los apocalípticos, y vale la pena citarlos con precisión.
 
-En 2015 la OCDE publicó un estudio basado en las pruebas PISA de 2012. Los alumnos que usaban el ordenador en la escuela con moderación obtenían resultados algo mejores que los que apenas lo usaban, y los que lo usaban con mucha frecuencia los obtenían bastante peores, incluso teniendo en cuenta su origen social. Los países que más habían invertido en tecnología educativa no mostraban mejoras apreciables en lectura, matemáticas o ciencias.[^c6-ocde] El propio informe advertía que estas correlaciones no prueban que la tecnología cause peores resultados. Muestran, como mínimo, que la inversión masiva no garantiza nada.
+En 2015 la OCDE publicó un estudio basado en las pruebas PISA de 2012. Los alumnos de quince años que usaban el ordenador en la escuela con moderación obtenían resultados algo mejores que los que apenas lo usaban, y los que lo usaban con mucha frecuencia los obtenían bastante peores en la mayoría de las pruebas, incluso teniendo en cuenta su origen social. Los países que más habían invertido en tecnología educativa no mostraban mejoras apreciables en lectura, matemáticas o ciencias.[^c6-ocde] El propio informe advertía que estas correlaciones no prueban que la tecnología cause peores resultados. Muestran, como mínimo, que la inversión masiva no garantiza nada.
 
-Los datos de PISA 2022 dibujan un cuadro parecido y más matizado. En el conjunto de la OCDE, el 65 % de los alumnos de quince años dijo distraerse con dispositivos digitales en al menos algunas clases de matemáticas, y quienes se distraían con los dispositivos de sus compañeros obtenían 15 puntos menos, una vez descontado su nivel socioeconómico. Al mismo tiempo, quienes usaban dispositivos para aprender en la escuela hasta una hora al día puntuaban más que quienes no los usaban nada, y la diferencia más grande aparecía en el uso recreativo: hasta una hora diaria se asociaba a resultados muy superiores a los de quienes pasaban entre cinco y siete horas.[^c6-pisa2022] La conclusión razonable es que el problema rara vez es el dispositivo en sí. Es la dosis, el propósito y el contexto.
+Los datos de PISA 2022 dibujan un cuadro parecido y más matizado. En el conjunto de la OCDE, el 65 % de los alumnos de quince años dijo distraerse con dispositivos digitales en al menos algunas clases de matemáticas, y quienes se distraían con los dispositivos de sus compañeros obtenían 15 puntos menos, una vez descontado su nivel socioeconómico. Al mismo tiempo, quienes usaban dispositivos para aprender en la escuela hasta una hora al día obtenían unos 14 puntos más que quienes no los usaban nada, también con el ajuste socioeconómico. Y en un informe posterior la OCDE mostró que quienes dedicaban en la escuela hasta una hora diaria al ocio digital obtenían 49 puntos más que quienes le dedicaban entre cinco y siete.[^c6-pisa2022] Son asociaciones, no efectos demostrados, y apuntan en una misma dirección: el problema rara vez es el dispositivo en sí. Es la dosis, el propósito y el contexto.
 
-En 2023 la UNESCO dedicó su informe de seguimiento de la educación en el mundo a la tecnología, con un título que es ya una toma de posición: *La tecnología en la educación: ¿una herramienta en los términos de quién?* Sus conclusiones son prudentes. Hay pruebas de que algunas tecnologías ayudan a algunos aprendizajes en algunos contextos, pero la evidencia sólida e independiente escasea, y buena parte de la disponible procede de quienes venden los productos. Los productos cambian tan deprisa que su evaluación no da abasto, y los costes a largo plazo se subestiman. El informe pide que, antes de adoptar una tecnología, se pregunte si es adecuada al contexto, equitativa, escalable y sostenible, y que nunca sustituya a la enseñanza presencial guiada por docentes.[^c6-unesco]
+En 2023 la UNESCO dedicó su informe de seguimiento de la educación en el mundo a la tecnología, con un título que es ya una toma de posición: *La tecnología en la educación: ¿una herramienta en los términos de quién?* Sus conclusiones son prudentes. Alguna tecnología puede mejorar algunos aprendizajes en algunos contextos, pero la evidencia buena e imparcial sobre su impacto escasea, y los costes a corto y largo plazo parecen subestimarse. El informe propone hacerse cuatro preguntas antes de adoptar una tecnología: si es adecuada al contexto, si es equitativa, si es escalable y si es sostenible.[^c6-unesco]
 
 * * *
 
@@ -46,7 +46,7 @@ Hasta aquí podría parecer que la crítica tiene todas las de ganar. Hay razone
 
 La primera es la accesibilidad. Para muchos alumnos con discapacidad, la tecnología es la diferencia entre poder estudiar o no: lectores de pantalla, sistemas de comunicación aumentativa, subtítulos, programas que leen en voz alta, materiales que se pueden ampliar o adaptar. Una crítica de la pantalla que no lo tenga en cuenta cae en una nostalgia que solo pueden permitirse quienes nunca necesitaron esas ayudas.
 
-La segunda es la continuidad. En la primavera de 2020 los cierres de escuelas por la pandemia afectaron a más de mil quinientos millones de estudiantes en todo el mundo. Allí donde hubo conexión, las plataformas mantuvieron el contacto entre docentes y alumnos y, para algunos, fueron el único hilo con la escuela durante meses. La misma experiencia mostró el reverso: UNICEF calculó que al menos 463 millones de niños no pudieron seguir ninguna forma de enseñanza a distancia.[^c6-unicef] La continuidad que da la técnica depende de quién tiene acceso a ella.
+La segunda es la continuidad. En la primavera de 2020 los cierres de escuelas por la pandemia afectaron a más de mil quinientos millones de estudiantes en todo el mundo. Allí donde hubo conexión, las plataformas mantuvieron el contacto entre docentes y alumnos y, para algunos, fueron el único hilo con la escuela durante meses. La misma experiencia mostró el reverso: UNICEF calculó, con datos de cien países, que al menos 463 millones de niños, un tercio de los escolares afectados, quedaron fuera del alcance de cualquier forma de enseñanza a distancia.[^c6-unicef] La continuidad que da la técnica depende de quién tiene acceso a ella.
 
 La tercera es la colaboración. Docentes de escuelas pequeñas o rurales comparten materiales y proyectos con colegas de otros lugares, alumnos que nunca coincidirían trabajan en un mismo documento, una clase se conecta con otra en otro país. Nada de eso es menor, y en muchos casos rompe el aislamiento que ha caracterizado siempre el trabajo docente.
 
@@ -60,7 +60,7 @@ En los últimos años la historia de Theuth y Thamus ha cobrado una actualidad q
 
 Vista desde la pedagogía de la huella, esta técnica tiene algo de paradoja. Allí donde la escuela se había acostumbrado a reconocer el aprendizaje por sus rastros (la tarea entregada, el texto subido, el ejercicio resuelto), es decir, allí donde había llegado a la tercera operación que distinguí en el capítulo 2, la técnica nueva golpea en el centro. La inteligencia artificial generativa produce esos rastros sin que nadie haya recorrido el camino que se suponía detrás. La huella se ha independizado del paso. Una escuela que había aprendido a leer sobre todo huellas se encuentra de pronto con que ya no puede fiarse de ellas.
 
-La primera reacción fue buscar otra máquina que vigilara a la máquina. En 2023 se popularizaron los detectores de textos generados por inteligencia artificial, y enseguida aparecieron sus problemas. Un estudio dirigido por Weixin Liang en la Universidad de Stanford sometió a siete detectores a redacciones escritas por estudiantes no nativos de inglés para el examen TOEFL y encontró que, de media, los detectores clasificaban como generadas por una máquina el 61 % de ellas, aunque las habían escrito personas.[^c6-liang] La escritura más sencilla y previsible, la de quien aprende una lengua, era la que más se parecía a la de la máquina. En agosto de 2023 la Universidad Vanderbilt desactivó el detector de Turnitin con argumentos que cualquier escuela debería leer. Incluso con la tasa de falsos positivos del 1 % que anunciaba la empresa, eso habría supuesto unas setecientas cincuenta acusaciones injustas sobre los setenta y cinco mil trabajos que la universidad había revisado el año anterior. La herramienta se había activado con menos de un día de aviso y no explicaba cómo llegaba a sus conclusiones.[^c6-vanderbilt]
+La primera reacción fue buscar otra máquina que vigilara a la máquina. En 2023 se popularizaron los detectores de textos generados por inteligencia artificial, y enseguida aparecieron sus problemas. Un estudio dirigido por Weixin Liang en la Universidad de Stanford sometió a siete detectores de 2023 a noventa y una redacciones escritas por estudiantes no nativos de inglés para el examen TOEFL y encontró que, de media, los detectores clasificaban como generadas por una máquina el 61 % de ellas, aunque las habían escrito personas. Con redacciones de estudiantes nativos, los mismos detectores apenas se equivocaban.[^c6-liang] La escritura más sencilla y previsible, la de quien aprende una lengua, era la que más se parecía a la de la máquina. En agosto de 2023 la Universidad Vanderbilt desactivó el detector de Turnitin con argumentos que cualquier escuela debería leer. La universidad calculó que, con la tasa de falsos positivos del 1 % que anunciaba la empresa, unos setecientos cincuenta de los setenta y cinco mil trabajos que había enviado a Turnitin el año anterior podrían haberse etiquetado por error como escritos por una máquina. Era un cálculo hipotético, pero bastaba para ver la escala del riesgo. La herramienta, además, se había activado con menos de un día de aviso y no explicaba cómo llegaba a sus conclusiones.[^c6-vanderbilt]
 
 <!-- ESCENA DEL AUTOR: lugar para una situación real de entrega, sospecha de plagio o uso de IA en un trabajo de alumno, y cómo se resolvió (o no). Sin datos que permitan identificar a nadie. -->
 
@@ -68,9 +68,9 @@ La lección va más allá de la técnica. Cuando el sistema de huellas falla, la
 
 * * *
 
-Los primeros estudios rigurosos sobre su efecto en el aprendizaje apuntan en la misma dirección. En un experimento con cerca de mil estudiantes de secundaria en Turquía, publicado en 2025, Hamsa Bastani y su equipo dieron a unos alumnos acceso a un asistente de inteligencia artificial corriente durante las clases de práctica de matemáticas, a otros una versión diseñada como tutor, que daba pistas sin dar las respuestas, y a otros ninguno. Con el asistente corriente, los alumnos resolvían un 48 % mejor los ejercicios de práctica, pero en el examen posterior, ya sin ayuda, rendían un 17 % peor que quienes no lo habían usado. Con el tutor, la mejora en la práctica era aún mayor y el daño en el examen prácticamente desaparecía.[^c6-bastani]
+Los primeros estudios rigurosos sobre su efecto en el aprendizaje apuntan en la misma dirección. En un experimento aleatorizado con cerca de mil alumnos de un instituto de Turquía, publicado en 2025, Hamsa Bastani y su equipo dieron a unos alumnos acceso a un asistente de inteligencia artificial corriente durante las clases de práctica de matemáticas, a otros una versión diseñada como tutor, que daba pistas sin dar las respuestas, y a otros ninguno. Con el asistente corriente, los alumnos resolvían un 48 % mejor los ejercicios de práctica, pero en el examen posterior, ya sin ayuda, rendían un 17 % peor que quienes no lo habían usado. Con el tutor, la mejora en la práctica era aún mayor y el daño en el examen prácticamente desaparecía.[^c6-bastani] Es un solo centro, una sola materia y cuatro sesiones, y no autoriza a decir que la inteligencia artificial perjudica el aprendizaje en general.
 
-El resultado me parece una versión experimental del mito de Theuth. La misma técnica cura o envenena según cómo esté diseñada y cómo se use. Un asistente que da la respuesta ahorra el esfuerzo que constituye el aprendizaje, y uno que obliga a pensar puede ayudar. La diferencia no está en la potencia de la máquina, sino en lo que se le pide y en quién decide qué se le pide.
+El resultado me parece una versión experimental del mito de Theuth. La misma técnica cura o envenena según cómo esté diseñada y cómo se use. Un asistente que da la respuesta ahorra el esfuerzo que constituye el aprendizaje, y uno que obliga a pensar puede ayudar. Lo que decide es lo que se le pide y quién decide qué se le pide, mucho más que la potencia de la máquina.
 
 La UNESCO publicó en septiembre de 2023 una guía sobre inteligencia artificial generativa en educación que proponía, entre otras cosas, fijar en trece años la edad mínima para usar estas herramientas en el aula y pedía a los gobiernos que regularan su uso antes de que las escuelas se encontraran con hechos consumados.[^c6-unescoia] Mientras tanto, la industria que las produce sigue su propio calendario. Kate Crawford ha mostrado que la inteligencia artificial es una industria muy material, que necesita minerales, cantidades enormes de energía, el trabajo mal pagado de miles de personas que etiquetan datos y la apropiación de lo que han escrito millones.[^c6-crawford] Los modelos se entrenan con textos elegidos según criterios editoriales y económicos y reproducen sus sesgos con apariencia de neutralidad.
 
@@ -82,32 +82,32 @@ Junto estos hilos en unas pocas convicciones. Ninguna técnica es neutral. Una p
 
 Comenio soñó con un reloj, y hoy el reloj existe y tiene propietarios, unos públicos y otros privados, unos que responden ante una comunidad y otros ante sus accionistas. Las técnicas que llegan a las escuelas traen consigo un modelo de negocio, o un modelo de servicio público, y la diferencia entre los dos importa más de lo que parece. Hay que hablar de dinero.
 
-[^c6-fedro]: Platón, *Fedro*, 274c-275b.
+[^c6-fedro]: Platón (ca. 385-370 a. e. c./1986a), *Fedro*, 274c-275b.
 
-[^c6-derrida]: Jacques Derrida, «La farmacia de Platón», en *La diseminación*, Madrid, Fundamentos, 1975.
+[^c6-derrida]: Derrida (1972/1975), «La farmacia de Platón».
 
-[^c6-stiegler]: Bernard Stiegler, *La técnica y el tiempo*, Hondarribia, Hiru, 2002, y *Lo que hace que la vida merezca ser vivida. De la farmacología*, Avarigani, 2015.
+[^c6-stiegler]: Stiegler (1994/2002) y Stiegler (2010/2015).
 
-[^c6-comenio]: Jan Amos Comenio, *Didáctica magna*, caps. XIII y XIV.
+[^c6-comenio]: Comenio (1657/1986), caps. XIII y XIV.
 
-[^c6-simondon]: Gilbert Simondon, *El modo de existencia de los objetos técnicos*, Buenos Aires, Prometeo, 2007, introducción.
+[^c6-simondon]: Simondon (1958/2007), introducción.
 
-[^c6-heidegger]: Martin Heidegger, «La pregunta por la técnica», en *Conferencias y artículos*, Barcelona, Ediciones del Serbal, 1994, y *Serenidad*, Barcelona, Ediciones del Serbal.
+[^c6-heidegger]: Heidegger (1954/1994), «La pregunta por la técnica», y Heidegger (1959/1989).
 
-[^c6-ocde]: OCDE, *Students, Computers and Learning: Making the Connection*, París, OECD Publishing, 2015.
+[^c6-ocde]: OECD (2015), p. 3. Los datos son de PISA 2012 y muestran asociaciones, no efectos causales.
 
-[^c6-pisa2022]: OCDE, *PISA 2022 Results (Volume II): Learning During – and From – Disruption*, París, OECD Publishing, 2023.
+[^c6-pisa2022]: OECD (2023a, 2023b), con datos de PISA 2022 para alumnos de quince años; la comparación del ocio digital en la escuela, en OECD (2024). Todas las diferencias están ajustadas por perfil socioeconómico.
 
-[^c6-unesco]: UNESCO, *Informe de seguimiento de la educación en el mundo 2023. La tecnología en la educación: ¿una herramienta en los términos de quién?*, París, UNESCO, 2023.
+[^c6-unesco]: UNESCO (2023a), mensajes clave y recomendaciones.
 
-[^c6-unicef]: UNESCO, datos de seguimiento de los cierres escolares por la COVID-19, 2020; UNICEF, *Remote Learning Reachability* (ficha informativa), Nueva York, agosto de 2020, con datos de cien países.
+[^c6-unicef]: Sobre los cierres, United Nations (2020); sobre el alcance de la enseñanza a distancia, UNICEF (2020a, 2020b). Es una estimación del alcance potencial que UNICEF considera optimista.
 
-[^c6-liang]: Weixin Liang et al., «GPT detectors are biased against non-native English writers», *Patterns*, 4 (7), 2023.
+[^c6-liang]: Liang et al. (2023). La muestra es pequeña y los detectores son de 2023.
 
-[^c6-vanderbilt]: Vanderbilt University, «Guidance on AI Detection and Why We're Disabling Turnitin's AI Detector», 16 de agosto de 2023.
+[^c6-vanderbilt]: Coley (2023).
 
-[^c6-bastani]: Hamsa Bastani et al., «Generative AI without guardrails can harm learning: Evidence from high school mathematics», *Proceedings of the National Academy of Sciences*, 122 (26), 2025.
+[^c6-bastani]: Bastani et al. (2025). Experimento de campo aleatorizado por aulas, con unos cincuenta grupos de 9.º a 11.º grado.
 
-[^c6-unescoia]: UNESCO, *Guidance for Generative AI in Education and Research*, París, UNESCO, 2023.
+[^c6-unescoia]: Miao y Holmes (2023) y UNESCO (2023b). La guía propone la edad mínima; no la impone.
 
-[^c6-crawford]: Kate Crawford, *Atlas de inteligencia artificial*, Buenos Aires, Fondo de Cultura Económica, 2022.
+[^c6-crawford]: Crawford (2021/2022).

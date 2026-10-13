@@ -263,3 +263,41 @@ Cada dato nuevo se comprobó en la fuente primaria o, cuando no fue posible, en 
 
 **Cita de Kant.** La paráfrasis del capítulo 3 corresponde al texto alemán de *Über Pädagogik* (Ak. IX, 441-442): «damit sie sich daran gewöhnen mögen, still zu sitzen und pünktlich das zu beobachten, was ihnen vorgeschrieben wird». Si se quiere citar la edición de Akal, hay que añadir la página.
 
+
+## Segunda revisión (13 de octubre de 2026): trazabilidad y APA 7
+
+En esta revisión se hizo una auditoría documental de cada cifra, norma y resultado del libro, y se unificaron las referencias en APA 7. Los informes completos están en `editorial/auditoria/`:
+
+- `trazabilidad-cifras.md`: para cada dato, fuente exacta y fecha, localizador, tipo de fuente (institucional, independiente, jurídica o periodística), población y comparación, asociación o causalidad, y veredicto.
+- `referencias-apa-verificacion.md`: verificación de las ediciones (traductor, año, editorial, año original) y referencia APA 7 de cada obra.
+
+### Cambios en el texto derivados de la auditoría
+
+| Dato | Problema | Cómo queda |
+| --- | --- | --- |
+| Georgia State | Las cifras son institucionales | Se atribuyen a la universidad y se añade el ensayo aleatorizado MAAPS (Ithaka S+R, 2021 y 2023): sin efectos promedio en once universidades, con efectos solo en Georgia State |
+| Purdue | El 21 % es una afirmación institucional | Se presenta como anuncio de la universidad, con la crítica de Caulfield y la simulación de Essa |
+| Vanderbilt | «750 acusaciones injustas» | Ahora es un cálculo hipotético de trabajos que podrían haberse etiquetado por error |
+| PISA 2022 | El dato de 49 puntos no está en el volumen II | Se atribuye a OECD (2024) y se precisa «ocio digital en la escuela»; todas las cifras se presentan como asociaciones ajustadas |
+| OCDE 2015 | Faltaban matices | «En la mayoría de las pruebas», datos de PISA 2012, asociaciones |
+| UNESCO 2023 | «Buena parte de la evidencia procede de quienes venden» no aparece en el informe; el informe no «recomienda prohibir» los móviles | Se suprime la primera frase; los móviles solo cuando sirvan al aprendizaje; se añade el dato de 2024 (40 % de los sistemas con prohibición) |
+| UNICEF 2020 | Precisión | Alcance potencial estimado con datos de cien países |
+| Dinamarca | Descripción imprecisa del incidente de 2019; faltaba la suspensión de septiembre de 2022 | Corregido; se omite el cierre de enero de 2026 porque solo consta en prensa |
+| Marco de Privacidad UE-EE. UU. | Faltaba la casación | Se añade el recurso C-703/25 P, pendiente |
+| Reglamento de IA | Faltaba la norma del aplazamiento | Reglamento (UE) 2026/1744, en vigor el 27 de julio de 2026 (verificado en fuentes jurídicas secundarias; cotejar en EUR-Lex) |
+| Ofqual | Precisiones | 39 % de las notas de A level en Inglaterra; grupos de cinco o menos; la rectificación concedía la nota más alta |
+| Liang et al. | Alcance | Noventa y una redacciones y detectores de 2023 |
+| Bastani et al. | Alcance | Un solo instituto, una materia, cuatro sesiones; sin generalizar |
+| Chile, segregación | El estudio del CIAE es de 2026 y su informe completo no estaba disponible | Se cita su presentación pública (El Mostrador y Universidad de Chile, julio de 2026) como asociación, no como prueba |
+| Chile, SLEP y CAE | Cifras de prensa difíciles de rastrear | 36 SLEP desde enero de 2026 (Mineduc); proyecto en el Senado con límite en 2030 (Diario Estrategia); deudores del CAE según The Clinic (2025) |
+| Chile, deuda histórica | Atribución | La cifra de docentes fallecidos se atribuye al Colegio de Profesores |
+| Capital humano y Freire | Error de cronología (la teoría del capital humano es anterior a Freire) | Corregido |
+
+### Pendiente de cotejo antes de imprimir
+
+- Paginación de algunos capítulos (Agustín en la BAC, Foucault en *Saber y verdad*, Deleuze en Gedisa) y año de *Diálogos III* de Gredos, de *La ciudad de las damas* y de *El narrador*.
+- Traductores de Agamben (Adriana Hidalgo) y de Masschelein y Simons, y si Pablo Rodríguez figura como cotraductor de Simondon.
+- Ediciones de los clásicos: las de Gredos y otras son ediciones de referencia propuestas; si el autor usó otras, hay que cambiarlas.
+- Texto literal del art. 2 de la Ley General de Educación chilena y del art. 27.2 de la Constitución española (se parafrasean).
+- Número oficial y título del Reglamento (UE) 2026/1744 en EUR-Lex; condiciones del convenio entre el Departament d'Educació y Google, que el libro solo menciona como afirmación de una activista; autoría del reportaje de NPR (2016).
+- Black y Wiliam (1998) no tiene DOI.

@@ -3,7 +3,7 @@
 **Escuela, datos y libertad en la era de las plataformas**
 Gustavo Herrera Urízar
 
-Ensayo · unas 25.000 palabras (texto principal) · notas finales, glosario y bibliografía comentada
+Ensayo · unas 27.500 palabras (texto principal) · notas finales, glosario y bibliografía
 
 ## Idea-fuerza
 
@@ -23,7 +23,7 @@ Durante siglos la escuela imprimió su sello en los alumnos. Hoy les pide ademá
 
 El libro parte de una tesis sencilla y poco habitual en el debate público. Ni la escuela está a punto de desaparecer ni la tecnología es un lápiz sofisticado. La escuela sigue ahí, y precisamente por eso resulta tan valiosa para las plataformas: les presta un público obligatorio, una autoridad que convierte cada hábito en virtud y diez o doce años de práctica diaria en la edad en que se forman las costumbres más duraderas.
 
-A lo largo de ocho capítulos, el ensayo sigue esa idea por la historia de la filosofía y por la actualidad más concreta. Recorre la *paideia* griega y el dispositivo de Foucault, la disciplina del cuerpo y el empresario de sí mismo, la confesión cristiana y la analítica del aprendizaje, el *pharmakon* de Platón y los detectores de textos generados por inteligencia artificial, el mercado escolar chileno y las suites gratuitas de las grandes tecnológicas. Lo hace con datos verificados y actualizados (PISA 2022, el informe de la UNESCO de 2023, las decisiones danesas sobre Google, el Reglamento europeo de Inteligencia Artificial, las reformas chilenas hasta 2026) y discutiendo en serio las objeciones: que la escuela anterior a las pantallas no fue ningún paraíso, que muchas comunidades eligen la tecnología con buenas razones y que el software libre no resuelve por sí solo los problemas de mantenimiento, seguridad y desigualdad.
+A lo largo de ocho capítulos, el ensayo sigue esa idea por la historia de la filosofía y por la actualidad más concreta. Recorre la *paideia* griega y el dispositivo de Foucault, la disciplina del cuerpo y el empresario de sí mismo, la confesión cristiana y la analítica del aprendizaje, el *pharmakon* de Platón y los detectores de textos generados por inteligencia artificial, el mercado escolar chileno y las suites gratuitas de las grandes tecnológicas. Lo hace con material de la propia investigación del autor, en escuelas catalanas y con docentes chilenos, y con datos verificados y actualizados (PISA 2022, el informe de la UNESCO de 2023, las decisiones danesas sobre Google, el Reglamento europeo de Inteligencia Artificial, las reformas chilenas hasta 2026) y discutiendo en serio las objeciones: que la escuela anterior a las pantallas no fue ningún paraíso, que muchas comunidades eligen la tecnología con buenas razones y que el software libre no resuelve por sí solo los problemas de mantenimiento, seguridad y desigualdad.
 
 El cierre propone una *edutropía*, un giro posible y no una utopía, con cuatro direcciones concretas: tiempo, cuidado, privacidad y deliberación colectiva.
 

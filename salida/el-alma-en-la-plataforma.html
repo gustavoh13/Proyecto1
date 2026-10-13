@@ -120,6 +120,8 @@ sup { font-size: 0.68em; line-height: 0; vertical-align: super; }
 
 #notas p { font-size: 8.8pt; line-height: 1.35; text-indent: 0; text-align: left; hyphens: none; margin: 0 0 1.4mm; padding-left: 5mm; text-indent: -5mm; }
 #notas h2 { font-size: 10pt; margin: 6mm 0 2.5mm; }
+
+#bibliografia li, #notas p { overflow-wrap: anywhere; word-break: break-word; }
 </style>
 </head>
 <body>
@@ -150,8 +152,7 @@ libre</a></li>
 mismo, otra vez</a></li>
 <li><a href="#notas" id="toc-notas">Notas</a></li>
 <li><a href="#glosario" id="toc-glosario">Glosario</a></li>
-<li><a href="#bibliografia" id="toc-bibliografia">Bibliografía
-comentada</a></li>
+<li><a href="#bibliografia" id="toc-bibliografia">Bibliografía</a></li>
 </ul>
 </nav>
 <section id="prólogo.-una-inquietud" class="level1 unnumbered">
@@ -481,12 +482,12 @@ personal para revisarlo, ni contratos que le den ese derecho.</p>
 <p>De este recorrido me quedo con tres cosas. La educación nunca fue
 neutral: desde que se pensó a sí misma estuvo ligada a una idea de vida
 buena, y una educación que se presenta como pura transmisión de
-competencias no carece de proyecto, sino que lo ha dejado fuera de la
-discusión. Todo ideal educativo excluye, y esa exclusión forma parte de
-su funcionamiento. Y la tradición llevaba dentro desde el comienzo algo
-que la desbordaba, el examen de Sócrates, el deseo de Diotima, la
-respuesta de Hiparquia. La escuela fabrica almas, y en ella se aprende
-también a interrogar a la fábrica.</p>
+competencias tiene un proyecto igual que las demás, solo que lo ha
+dejado fuera de la discusión. Todo ideal educativo excluye, y esa
+exclusión forma parte de su funcionamiento. Y la tradición llevaba
+dentro desde el comienzo algo que la desbordaba, el examen de Sócrates,
+el deseo de Diotima, la respuesta de Hiparquia. La escuela fabrica
+almas, y en ella se aprende también a interrogar a la fábrica.</p>
 <p>Los griegos sabían quién sostenía el sello. Nosotros tenemos
 ministerios, agencias de evaluación, empresas tecnológicas, familias y
 docentes que empujan más o menos en la misma dirección sin que nadie
@@ -1493,37 +1494,44 @@ respuesta, y los mejores casos merecen contarse.</p>
 llamado Course Signals. Combinaba notas, uso del aula virtual y datos
 previos de cada estudiante y le asignaba un semáforo: verde, amarillo o
 rojo. Los profesores podían enviar mensajes a quienes aparecían en rojo
-y animarlos a pedir ayuda. En 2013 la universidad anunció que cursar al
-menos dos asignaturas con semáforo aumentaba en un 21 % la tasa de
-graduación a seis años. Poco después, varios analistas, entre ellos
-Michael Caulfield y Alfred Essa, señalaron un problema de método: quien
-permanece más tiempo en la universidad cursa más asignaturas, y por
-tanto más asignaturas con semáforo. Parte del efecto podía deberse a esa
-simple correlación.<sup><span id="ref-05-7"><a href="#nota-05-7">7</a></span></sup> El semáforo, tan nítido en la
-pantalla, no demostraba lo que parecía.</p>
+y animarlos a pedir ayuda. En 2013 la universidad anunció que el sistema
+había elevado un 21 % la tasa de graduación a seis años de quienes
+cursaban al menos dos asignaturas con semáforo. Poco después, varios
+analistas, entre ellos Michael Caulfield y Alfred Essa, señalaron un
+problema de método: quien permanece más tiempo en la universidad cursa
+más asignaturas, y por tanto más asignaturas con semáforo. Parte del
+efecto podía deberse a esa simple correlación, y Essa lo mostró con una
+simulación en la que sustituía «cursar una asignatura con semáforo» por
+«recibir un bombón»: el efecto aparecía igual.<sup><span id="ref-05-7"><a href="#nota-05-7">7</a></span></sup> El semáforo, tan
+nítido en la pantalla, no demostraba lo que parecía.</p>
 <p>La Universidad Estatal de Georgia, en Atlanta, siguió un camino
-distinto. A partir de 2012 analizó millones de calificaciones de
-antiguos estudiantes para definir más de setecientas señales de alerta,
-como suspender una asignatura clave para la carrera elegida. Cada alerta
-no producía un mensaje automático sino una conversación con un asesor.
-Para que eso fuera posible la universidad contrató a más de cuarenta
-asesores nuevos y redujo la carga de cada uno a unos trescientos
-estudiantes. Según sus propios informes, la tasa de graduación subió y
-se cerraron las diferencias por origen étnico y por renta.<sup><span id="ref-05-8"><a href="#nota-05-8">8</a></span></sup></p>
+distinto. Según la propia universidad, a partir de 2012 analizó unos dos
+millones y medio de calificaciones de antiguos estudiantes para definir
+cientos de señales de alerta (hoy dice tener más de ochocientas), como
+suspender una asignatura clave para la carrera elegida. Cada alerta
+debía abrir una conversación con un asesor, y para que eso fuera posible
+la universidad contrató a cuarenta y dos asesores nuevos y redujo la
+carga de cada uno a unos trescientos estudiantes. La universidad
+atribuye a este conjunto de medidas la subida de su tasa de graduación y
+la reducción de las diferencias por origen étnico y por renta.<sup><span id="ref-05-8"><a href="#nota-05-8">8</a></span></sup></p>
 <p>Hay que leer estos casos con cautela. Las cifras de Purdue no
-resistieron el examen, y las de Georgia State proceden sobre todo de la
-propia universidad, que tiene buenas razones para contar bien sus
-éxitos. No demuestran que la analítica funcione. Permiten, eso sí,
-formular una hipótesis que el debate suele pasar por alto: lo decisivo
-puede no ser el indicador, sino lo que ocurre después de que se enciende
-la luz roja. Cuando la alerta abre una conversación con una persona que
-tiene tiempo, la analítica puede servir a la justicia. Cuando se
-convierte en una etiqueta, un correo automático o una derivación sin
-diálogo, corre el riesgo de fabricar aquello que predice: el estudiante
-marcado como probable abandono es tratado como tal, y empieza a
-comportarse en consecuencia. El riesgo, además, se calcula con datos del
-pasado, y los datos del pasado traen consigo las desigualdades del
-pasado.</p>
+resistieron el examen, y las de Georgia State proceden de la propia
+universidad, que tiene buenas razones para contar bien sus éxitos. La
+única evaluación experimental independiente de un modelo parecido, un
+ensayo aleatorizado en once universidades estadounidenses que probó un
+asesoramiento proactivo apoyado en analítica, no encontró efectos
+promedio sobre la graduación ni la permanencia; solo los encontró,
+precisamente, en Georgia State.<sup><span id="ref-05-9"><a href="#nota-05-9">9</a></span></sup> Nada de esto demuestra que la
+analítica funcione. Permiten, eso sí, formular una hipótesis que el
+debate suele pasar por alto: lo decisivo puede no ser el indicador, sino
+lo que ocurre después de que se enciende la luz roja. Cuando la alerta
+abre una conversación con una persona que tiene tiempo, la analítica
+puede servir a la justicia. Cuando se convierte en una etiqueta, un
+correo automático o una derivación sin diálogo, corre el riesgo de
+fabricar aquello que predice: el estudiante marcado como probable
+abandono es tratado como tal, y empieza a comportarse en consecuencia.
+El riesgo, además, se calcula con datos del pasado, y los datos del
+pasado traen consigo las desigualdades del pasado.</p>
 <p>Mi objeción tiene que ver, por tanto, con las condiciones en que se
 recogen y usan los datos y con quién los controla, mucho más que con los
 datos en sí. Una tutora que consulta la asistencia para preocuparse por
@@ -1536,15 +1544,19 @@ tiempo y para qué más se usa.</p>
 <hr />
 <p>En Europa esta pregunta ya ha pasado por las autoridades de
 protección de datos, y el caso más instructivo es el de Dinamarca.</p>
-<p>En 2019 un padre de Helsingør, al norte de Copenhague, presentó una
-queja porque desde el Chromebook que la escuela había dado a su hijo se
-había creado una cuenta de YouTube con el nombre del niño. La autoridad
-danesa de protección de datos, Datatilsynet, investigó, y en julio de
-2022 prohibió provisionalmente al municipio usar Google Workspace y los
-Chromebooks en sus escuelas, porque no había evaluado como exige el
-reglamento europeo los riesgos de ese tratamiento, entre ellos la
-posible transferencia de datos de los alumnos a Estados
-Unidos.<sup><span id="ref-05-9"><a href="#nota-05-9">9</a></span></sup></p>
+<p>En diciembre de 2019 un padre de Helsingør, al norte de Copenhague,
+presentó una queja. Las cuentas escolares de Google de los alumnos se
+habían creado con su nombre completo y daban acceso a servicios como
+YouTube, y el nombre, el curso y el colegio de su hijo habían quedado a
+la vista en un comentario publicado desde el Chromebook del niño. La
+autoridad danesa de protección de datos, Datatilsynet, investigó, y en
+julio de 2022 prohibió al municipio usar Google Workspace y los
+Chromebooks en sus escuelas mientras no demostrara que el tratamiento
+cumplía el reglamento europeo: su evaluación de riesgos no abordaba los
+riesgos concretos de la relación con Google, y el contrato permitía
+transferir datos a terceros países sin garantías suficientes. En
+septiembre suspendió la prohibición a cambio de una serie de
+requerimientos.<sup><span id="ref-05-10"><a href="#nota-05-10">10</a></span></sup></p>
 <p>Lo interesante vino después. En enero de 2024, tras examinar los
 contratos de cincuenta y tres municipios, Datatilsynet distinguió entre
 dos usos de los datos. Los municipios podían cederlos a Google para
@@ -1552,11 +1564,11 @@ prestar el servicio, mantener la seguridad o cumplir obligaciones
 legales. No tenían base legal, en cambio, para cederlos para fines
 propios de la empresa, como mantener y mejorar Workspace, ChromeOS o
 Chrome, o desarrollar funciones nuevas. Les dio de plazo hasta el 1 de
-agosto de 2024 para corregirlo. Los municipios renegociaron las
-condiciones y las escuelas danesas siguen usando Google.</p>
+agosto de 2024 para corregirlo. Los municipios renegociaron el contrato
+y las escuelas danesas siguen usando Google.</p>
 <p>El caso me parece ejemplar precisamente porque no acaba en una
-expulsión. Muestra que la pregunta decisiva no era si usar o no una
-plataforma, sino para qué se usan las huellas que deja quien la usa. La
+expulsión. Muestra que la pregunta decisiva era para qué se usan las
+huellas que deja quien usa una plataforma, más que si usarla o no. La
 escuela puede necesitar un servicio. Lo que una autoridad pública le
 dijo a la empresa es que la huella de los niños no forma parte del
 precio.</p>
@@ -1564,7 +1576,9 @@ precio.</p>
 entre la Unión Europea y Estados Unidos, el Marco de Privacidad de
 Datos, permite transferir datos personales a empresas estadounidenses
 adheridas a él, y en septiembre de 2025 el Tribunal General de la Unión
-rechazó un recurso que pedía anularlo.<sup><span id="ref-05-10"><a href="#nota-05-10">10</a></span></sup> Los dos acuerdos anteriores
+rechazó un recurso que pedía anularlo. El demandante recurrió ante el
+Tribunal de Justicia, y el asunto seguía pendiente cuando terminé este
+libro.<sup><span id="ref-05-11"><a href="#nota-05-11">11</a></span></sup> Los dos acuerdos anteriores
 habían sido anulados por el Tribunal de Justicia, en 2015 y en 2020, por
 las facultades de vigilancia de las agencias estadounidenses. Que una
 escuela pueda hoy alojar legalmente los datos de sus alumnos al otro
@@ -1573,7 +1587,7 @@ que ya se ha roto dos veces.</p>
 <hr />
 <p>En 1990 Gilles Deleuze publicó un texto de apenas unas páginas, el
 «Post-scriptum sobre las sociedades de control», que hoy parece una
-profecía.<sup><span id="ref-05-11"><a href="#nota-05-11">11</a></span></sup> Las disciplinas, decía,
+profecía.<sup><span id="ref-05-12"><a href="#nota-05-12">12</a></span></sup> Las disciplinas, decía,
 funcionaban con espacios de encierro por los que uno iba pasando y en
 cada uno empezaba de cero. Eran moldes. Las sociedades de control
 funcionan con modulaciones, como un molde que se deforma solo y cambia
@@ -1604,7 +1618,7 @@ vigilar son dos caras de la misma operación.</p>
 negocio de las empresas que convierten la experiencia humana en datos de
 comportamiento, usan una parte para mejorar sus servicios y aprovechan
 el resto, lo que ella llama excedente conductual, para fabricar
-predicciones que se venden a terceros.<sup><span id="ref-05-12"><a href="#nota-05-12">12</a></span></sup> El diagnóstico no se puede
+predicciones que se venden a terceros.<sup><span id="ref-05-13"><a href="#nota-05-13">13</a></span></sup> El diagnóstico no se puede
 aplicar sin más a cualquier plataforma. Las versiones educativas de las
 grandes suites, por ejemplo, prometen por contrato no usar los datos de
 los servicios principales para publicidad, y un aula virtual pública no
@@ -1622,7 +1636,7 @@ educativos, salvo por razones médicas o de seguridad, y clasifica como
 de alto riesgo los que deciden admisiones, evalúan resultados de
 aprendizaje o vigilan a los alumnos durante los exámenes, aunque las
 obligaciones para estos últimos se han aplazado hasta diciembre de
-2027.<sup><span id="ref-05-13"><a href="#nota-05-13">13</a></span></sup>
+2027.<sup><span id="ref-05-14"><a href="#nota-05-14">14</a></span></sup>
 El legislador europeo llegó a la misma conclusión que este capítulo por
 otro camino: hay una parte del alumno que la escuela no tiene derecho a
 leer.</p>
@@ -1641,7 +1655,7 @@ probar, equivocarnos, cambiar de opinión.</p>
 <p>En un ensayo sobre la crisis de la educación, Hannah Arendt defendió
 que a los niños hay que protegerlos de la luz implacable de lo público.
 Todo lo que vive, escribió, necesita la seguridad de un lugar oculto
-para crecer.<sup><span id="ref-05-14"><a href="#nota-05-14">14</a></span></sup> Aprender es en buena parte
+para crecer.<sup><span id="ref-05-15"><a href="#nota-05-15">15</a></span></sup> Aprender es en buena parte
 equivocarse, y equivocarse requiere un sitio donde el error no quede
 guardado para siempre. El riesgo no está en que el error se anote, que
 es lo que hace cualquier profesor al corregir, sino en lo que ocurre con
@@ -1768,12 +1782,13 @@ objetos técnicos, de usarlos sin dejarse tragar por ellos.</p>
 que suponen tanto los entusiastas como los apocalípticos, y vale la pena
 citarlos con precisión.</p>
 <p>En 2015 la OCDE publicó un estudio basado en las pruebas PISA de
-2012. Los alumnos que usaban el ordenador en la escuela con moderación
-obtenían resultados algo mejores que los que apenas lo usaban, y los que
-lo usaban con mucha frecuencia los obtenían bastante peores, incluso
-teniendo en cuenta su origen social. Los países que más habían invertido
-en tecnología educativa no mostraban mejoras apreciables en lectura,
-matemáticas o ciencias.<sup><span id="ref-06-7"><a href="#nota-06-7">7</a></span></sup> El propio informe advertía que
+2012. Los alumnos de quince años que usaban el ordenador en la escuela
+con moderación obtenían resultados algo mejores que los que apenas lo
+usaban, y los que lo usaban con mucha frecuencia los obtenían bastante
+peores en la mayoría de las pruebas, incluso teniendo en cuenta su
+origen social. Los países que más habían invertido en tecnología
+educativa no mostraban mejoras apreciables en lectura, matemáticas o
+ciencias.<sup><span id="ref-06-7"><a href="#nota-06-7">7</a></span></sup> El propio informe advertía que
 estas correlaciones no prueban que la tecnología cause peores
 resultados. Muestran, como mínimo, que la inversión masiva no garantiza
 nada.</p>
@@ -1783,24 +1798,22 @@ distraerse con dispositivos digitales en al menos algunas clases de
 matemáticas, y quienes se distraían con los dispositivos de sus
 compañeros obtenían 15 puntos menos, una vez descontado su nivel
 socioeconómico. Al mismo tiempo, quienes usaban dispositivos para
-aprender en la escuela hasta una hora al día puntuaban más que quienes
-no los usaban nada, y la diferencia más grande aparecía en el uso
-recreativo: hasta una hora diaria se asociaba a resultados muy
-superiores a los de quienes pasaban entre cinco y siete horas.<sup><span id="ref-06-8"><a href="#nota-06-8">8</a></span></sup> La conclusión
-razonable es que el problema rara vez es el dispositivo en sí. Es la
-dosis, el propósito y el contexto.</p>
+aprender en la escuela hasta una hora al día obtenían unos 14 puntos más
+que quienes no los usaban nada, también con el ajuste socioeconómico. Y
+en un informe posterior la OCDE mostró que quienes dedicaban en la
+escuela hasta una hora diaria al ocio digital obtenían 49 puntos más que
+quienes le dedicaban entre cinco y siete.<sup><span id="ref-06-8"><a href="#nota-06-8">8</a></span></sup> Son asociaciones, no efectos
+demostrados, y apuntan en una misma dirección: el problema rara vez es
+el dispositivo en sí. Es la dosis, el propósito y el contexto.</p>
 <p>En 2023 la UNESCO dedicó su informe de seguimiento de la educación en
 el mundo a la tecnología, con un título que es ya una toma de posición:
 <em>La tecnología en la educación: ¿una herramienta en los términos de
-quién?</em> Sus conclusiones son prudentes. Hay pruebas de que algunas
-tecnologías ayudan a algunos aprendizajes en algunos contextos, pero la
-evidencia sólida e independiente escasea, y buena parte de la disponible
-procede de quienes venden los productos. Los productos cambian tan
-deprisa que su evaluación no da abasto, y los costes a largo plazo se
-subestiman. El informe pide que, antes de adoptar una tecnología, se
-pregunte si es adecuada al contexto, equitativa, escalable y sostenible,
-y que nunca sustituya a la enseñanza presencial guiada por
-docentes.<sup><span id="ref-06-9"><a href="#nota-06-9">9</a></span></sup></p>
+quién?</em> Sus conclusiones son prudentes. Alguna tecnología puede
+mejorar algunos aprendizajes en algunos contextos, pero la evidencia
+buena e imparcial sobre su impacto escasea, y los costes a corto y largo
+plazo parecen subestimarse. El informe propone hacerse cuatro preguntas
+antes de adoptar una tecnología: si es adecuada al contexto, si es
+equitativa, si es escalable y si es sostenible.<sup><span id="ref-06-9"><a href="#nota-06-9">9</a></span></sup></p>
 <hr />
 <p>Hasta aquí podría parecer que la crítica tiene todas las de ganar.
 Hay razones de peso, sin embargo, por las que muchas comunidades
@@ -1817,8 +1830,9 @@ escuelas por la pandemia afectaron a más de mil quinientos millones de
 estudiantes en todo el mundo. Allí donde hubo conexión, las plataformas
 mantuvieron el contacto entre docentes y alumnos y, para algunos, fueron
 el único hilo con la escuela durante meses. La misma experiencia mostró
-el reverso: UNICEF calculó que al menos 463 millones de niños no
-pudieron seguir ninguna forma de enseñanza a distancia.<sup><span id="ref-06-10"><a href="#nota-06-10">10</a></span></sup> La continuidad
+el reverso: UNICEF calculó, con datos de cien países, que al menos 463
+millones de niños, un tercio de los escolares afectados, quedaron fuera
+del alcance de cualquier forma de enseñanza a distancia.<sup><span id="ref-06-10"><a href="#nota-06-10">10</a></span></sup> La continuidad
 que da la técnica depende de quién tiene acceso a ella.</p>
 <p>La tercera es la colaboración. Docentes de escuelas pequeñas o
 rurales comparten materiales y proyectos con colegas de otros lugares,
@@ -1860,19 +1874,22 @@ ellas.</p>
 máquina. En 2023 se popularizaron los detectores de textos generados por
 inteligencia artificial, y enseguida aparecieron sus problemas. Un
 estudio dirigido por Weixin Liang en la Universidad de Stanford sometió
-a siete detectores a redacciones escritas por estudiantes no nativos de
-inglés para el examen TOEFL y encontró que, de media, los detectores
-clasificaban como generadas por una máquina el 61 % de ellas, aunque las
-habían escrito personas.<sup><span id="ref-06-11"><a href="#nota-06-11">11</a></span></sup> La escritura más sencilla y
+a siete detectores de 2023 a noventa y una redacciones escritas por
+estudiantes no nativos de inglés para el examen TOEFL y encontró que, de
+media, los detectores clasificaban como generadas por una máquina el 61
+% de ellas, aunque las habían escrito personas. Con redacciones de
+estudiantes nativos, los mismos detectores apenas se
+equivocaban.<sup><span id="ref-06-11"><a href="#nota-06-11">11</a></span></sup> La escritura más sencilla y
 previsible, la de quien aprende una lengua, era la que más se parecía a
 la de la máquina. En agosto de 2023 la Universidad Vanderbilt desactivó
 el detector de Turnitin con argumentos que cualquier escuela debería
-leer. Incluso con la tasa de falsos positivos del 1 % que anunciaba la
-empresa, eso habría supuesto unas setecientas cincuenta acusaciones
-injustas sobre los setenta y cinco mil trabajos que la universidad había
-revisado el año anterior. La herramienta se había activado con menos de
-un día de aviso y no explicaba cómo llegaba a sus
-conclusiones.<sup><span id="ref-06-12"><a href="#nota-06-12">12</a></span></sup></p>
+leer. La universidad calculó que, con la tasa de falsos positivos del 1
+% que anunciaba la empresa, unos setecientos cincuenta de los setenta y
+cinco mil trabajos que había enviado a Turnitin el año anterior podrían
+haberse etiquetado por error como escritos por una máquina. Era un
+cálculo hipotético, pero bastaba para ver la escala del riesgo. La
+herramienta, además, se había activado con menos de un día de aviso y no
+explicaba cómo llegaba a sus conclusiones.<sup><span id="ref-06-12"><a href="#nota-06-12">12</a></span></sup></p>
 <!-- ESCENA DEL AUTOR: lugar para una situación real de entrega, sospecha de plagio o uso de IA en un trabajo de alumno, y cómo se resolvió (o no). Sin datos que permitan identificar a nadie. -->
 <p>La lección va más allá de la técnica. Cuando el sistema de huellas
 falla, la tentación es multiplicar la vigilancia, y la vigilancia cae
@@ -1881,22 +1898,24 @@ inteligencia artificial pone en crisis es una manera de evaluar que
 había confiado demasiado en el producto y muy poco en el proceso.</p>
 <hr />
 <p>Los primeros estudios rigurosos sobre su efecto en el aprendizaje
-apuntan en la misma dirección. En un experimento con cerca de mil
-estudiantes de secundaria en Turquía, publicado en 2025, Hamsa Bastani y
-su equipo dieron a unos alumnos acceso a un asistente de inteligencia
-artificial corriente durante las clases de práctica de matemáticas, a
-otros una versión diseñada como tutor, que daba pistas sin dar las
-respuestas, y a otros ninguno. Con el asistente corriente, los alumnos
-resolvían un 48 % mejor los ejercicios de práctica, pero en el examen
-posterior, ya sin ayuda, rendían un 17 % peor que quienes no lo habían
-usado. Con el tutor, la mejora en la práctica era aún mayor y el daño en
-el examen prácticamente desaparecía.<sup><span id="ref-06-13"><a href="#nota-06-13">13</a></span></sup></p>
+apuntan en la misma dirección. En un experimento aleatorizado con cerca
+de mil alumnos de un instituto de Turquía, publicado en 2025, Hamsa
+Bastani y su equipo dieron a unos alumnos acceso a un asistente de
+inteligencia artificial corriente durante las clases de práctica de
+matemáticas, a otros una versión diseñada como tutor, que daba pistas
+sin dar las respuestas, y a otros ninguno. Con el asistente corriente,
+los alumnos resolvían un 48 % mejor los ejercicios de práctica, pero en
+el examen posterior, ya sin ayuda, rendían un 17 % peor que quienes no
+lo habían usado. Con el tutor, la mejora en la práctica era aún mayor y
+el daño en el examen prácticamente desaparecía.<sup><span id="ref-06-13"><a href="#nota-06-13">13</a></span></sup> Es un solo
+centro, una sola materia y cuatro sesiones, y no autoriza a decir que la
+inteligencia artificial perjudica el aprendizaje en general.</p>
 <p>El resultado me parece una versión experimental del mito de Theuth.
 La misma técnica cura o envenena según cómo esté diseñada y cómo se use.
 Un asistente que da la respuesta ahorra el esfuerzo que constituye el
-aprendizaje, y uno que obliga a pensar puede ayudar. La diferencia no
-está en la potencia de la máquina, sino en lo que se le pide y en quién
-decide qué se le pide.</p>
+aprendizaje, y uno que obliga a pensar puede ayudar. Lo que decide es lo
+que se le pide y quién decide qué se le pide, mucho más que la potencia
+de la máquina.</p>
 <p>La UNESCO publicó en septiembre de 2023 una guía sobre inteligencia
 artificial generativa en educación que proponía, entre otras cosas,
 fijar en trece años la edad mínima para usar estas herramientas en el
@@ -2005,9 +2024,9 @@ pasó a los municipios en 1981, los nuevos empleadores dejaron de aplicar
 a los docentes un reajuste salarial que les correspondía. Esa «deuda
 histórica» tardó más de cuarenta años en reconocerse: la ley que la
 repara se promulgó en enero de 2025, prevé pagos a unos cincuenta y
-siete mil docentes hasta 2031 y llega tarde para más de veinte mil que
-murieron esperándola.<sup><span id="ref-07-5"><a href="#nota-07-5">5</a></span></sup> Pocas imágenes dicen mejor lo que
-significa precarizar una profesión.</p>
+siete mil docentes hasta 2031 y, según el Colegio de Profesores, llega
+tarde para más de veinte mil que murieron esperándola.<sup><span id="ref-07-5"><a href="#nota-07-5">5</a></span></sup> Pocas imágenes
+dicen mejor lo que significa precarizar una profesión.</p>
 <p>Crecí dentro de ese experimento y sé que el neoliberalismo, además de
 un paquete de políticas, es una forma de vida. Uno aprende a pensar el
 futuro como una deuda, los estudios como una inversión y el fracaso como
@@ -2030,19 +2049,23 @@ de los municipios para trasladarla a setenta servicios locales
 dependientes de un sistema nacional.<sup><span id="ref-07-6"><a href="#nota-07-6">6</a></span></sup></p>
 <p>Los resultados son reales y parciales. Un estudio del Centro de
 Investigación Avanzada en Educación de la Universidad de Chile,
-publicado en 2026, estima que la segregación escolar cayó en torno a un
-10 % entre 2015 y 2024 y alcanzó su nivel más bajo en dos décadas, y
-relaciona esa caída con el nuevo sistema de admisión; otros centros de
-estudio discuten que el efecto pueda atribuirse a la ley, y todos
-coinciden en que la segregación sigue siendo alta.<sup><span id="ref-07-7"><a href="#nota-07-7">7</a></span></sup> El traspaso a los
-servicios locales avanza más despacio de lo previsto: a mediados de 2026
-funcionaban treinta y seis de los setenta, el calendario original, que
-debía terminar en 2025, ya se había alargado, y el Congreso discutía
-cuando terminé este libro una propuesta para extenderlo hasta 2040. La
-reforma del crédito universitario, que pretende sustituir el sistema
-bancario por un fondo público, seguía detenida en el Senado mientras más
-de medio millón de deudores tenían la garantía estatal ya ejecutada por
-impago.<sup><span id="ref-07-8"><a href="#nota-07-8">8</a></span></sup></p>
+presentado en julio de 2026 con datos de 2,7 millones de estudiantes,
+estima que la segregación escolar se redujo cerca de un 10 % desde 2015
+hasta sus niveles más bajos en veinte años, y asocia esa reducción sobre
+todo a dos políticas: la subvención preferente para alumnos vulnerables,
+vigente desde 2008, y la Ley de Inclusión Escolar. Es una asociación
+estadística sólida, no una prueba concluyente. El efecto del sistema de
+admisión sigue en discusión, el Gobierno impulsa en 2026 una reforma de
+ese mismo sistema, y nadie discute que la segregación sigue siendo
+alta.<sup><span id="ref-07-7"><a href="#nota-07-7">7</a></span></sup> El
+traspaso a los servicios locales avanza más despacio de lo previsto.
+Desde enero de 2026 funcionan treinta y seis de los setenta servicios
+que preveía la ley, y el calendario se ha alargado varias veces; cuando
+terminé este libro, el Senado discutía un proyecto para reprogramar los
+servicios pendientes con un límite en 2030. La reforma del crédito
+universitario seguía sin resolverse: a mediados de 2025, dos de cada
+tres deudores estaban en mora y, en más de la mitad de los casos, el
+Estado había tenido que hacerse cargo de la deuda.<sup><span id="ref-07-8"><a href="#nota-07-8">8</a></span></sup></p>
 <p>Lo que una generación había aprendido a ver como natural resultó ser
 una decisión política que otra generación pudo empezar a deshacer. El
 mercado, sin embargo, deja sedimentos: hábitos, expectativas,
@@ -2101,12 +2124,12 @@ difícil de rechazar.</p>
 tú. La frase tiene su parte de verdad, aunque «gratis» no significa lo
 mismo en todas partes. Hay plataformas públicas, como EducaMadrid, que
 una administración mantiene con dinero de los impuestos, en servidores
-propios y con programas mayoritariamente libres; su coste es real,
-aunque la familia no lo vea, y no tiene otro negocio que el servicio.
-Hay infraestructuras académicas, como los campus virtuales que muchas
-universidades gestionan por su cuenta. Hay iniciativas cooperativas y
-comunitarias que ofrecen servicios a escuelas a cambio de cuotas
-modestas y con reglas que deciden sus miembros. Y hay suites
+propios y con programas mayoritariamente libres;<sup><span id="ref-07-10"><a href="#nota-07-10">10</a></span></sup> su coste es
+real, aunque la familia no lo vea, y no tiene otro negocio que el
+servicio. Hay infraestructuras académicas, como los campus virtuales que
+muchas universidades gestionan por su cuenta. Hay iniciativas
+cooperativas y comunitarias que ofrecen servicios a escuelas a cambio de
+cuotas modestas y con reglas que deciden sus miembros. Y hay suites
 corporativas gratuitas para la educación, como Google Workspace for
 Education o Microsoft 365, cuyo precio cero forma parte de una
 estrategia comercial.</p>
@@ -2114,7 +2137,7 @@ estrategia comercial.</p>
 sus contratos educativos entre servicios principales, como Gmail, Drive
 o Classroom, en los que se compromete a no mostrar publicidad ni usar
 los datos para fines publicitarios, y servicios adicionales, como
-YouTube o Maps, que se rigen por condiciones más generales.<sup><span id="ref-07-10"><a href="#nota-07-10">10</a></span></sup> La empresa no
+YouTube o Maps, que se rigen por condiciones más generales.<sup><span id="ref-07-11"><a href="#nota-07-11">11</a></span></sup> La empresa no
 gana dinero vendiendo anuncios a los alumnos en Classroom. Lo que
 obtiene es otra cosa, y el caso danés del capítulo 5 ayuda a verlo: el
 uso de las huellas para mantener y mejorar sus productos y, sobre todo,
@@ -2132,7 +2155,7 @@ herramientas y saber qué hacen.</p>
 2023 participé en el proyecto edDIT, que estudió con entrevistas y
 grupos de discusión el uso de plataformas digitales en seis centros
 educativos de Cataluña, desde un instituto de máxima complejidad en
-Tarragona hasta una escuela rural del Solsonès.<sup><span id="ref-07-11"><a href="#nota-07-11">11</a></span></sup> Lo que
+Tarragona hasta una escuela rural del Solsonès.<sup><span id="ref-07-12"><a href="#nota-07-12">12</a></span></sup> Lo que
 encontramos no fue una historia de imposición ni una de libre elección.
 Fueron decisiones pequeñas, tomadas por razones comprensibles, que
 acaban teniendo consecuencias que nadie decidió.</p>
@@ -2183,19 +2206,19 @@ gratuitas de esas empresas no se ajustaban a la doctrina del Estado
 sobre la nube ni a las reglas de la contratación pública, que no admiten
 que una empresa regale lo que otras tendrían que vender, y el ministerio
 las consideraba contrarias al reglamento europeo de protección de
-datos.<sup><span id="ref-07-12"><a href="#nota-07-12">12</a></span></sup> En Barcelona, la inquietud de un
+datos.<sup><span id="ref-07-13"><a href="#nota-07-13">13</a></span></sup> En Barcelona, la inquietud de un
 grupo de familias por los datos de sus hijos dio origen en 2018 al
 proyecto de Digitalización Democrática de la Educación, que la
 organización Xnet desarrolló con el Ayuntamiento, el Consorci d’Educació
 y la federación de asociaciones de familias. Desde 2021 se ha probado en
 once centros públicos de la ciudad, con un conjunto de herramientas
 libres y auditables alojadas en servidores bajo control
-público.<sup><span id="ref-07-13"><a href="#nota-07-13">13</a></span></sup></p>
+público.<sup><span id="ref-07-14"><a href="#nota-07-14">14</a></span></sup></p>
 <p>Richard Stallman lleva décadas diciendo que la escuela tiene aquí una
 responsabilidad especial. Enseñar con programas privativos educa en la
 dependencia, mientras que el software libre, que se puede estudiar,
 modificar y compartir, permite educar en la autonomía y la
-cooperación.<sup><span id="ref-07-14"><a href="#nota-07-14">14</a></span></sup> Estoy de acuerdo con él en lo
+cooperación.<sup><span id="ref-07-15"><a href="#nota-07-15">15</a></span></sup> Estoy de acuerdo con él en lo
 esencial y, sin embargo, sería deshonesto presentar el software libre
 como una solución mágica.</p>
 <p>Un programa libre no forma a nadie por sí solo, y los docentes
@@ -2232,7 +2255,7 @@ tiene aparato y conexión. Esa brecha existe, y la pandemia de 2020 la
 dejó a la vista de todos. Jan van Dijk ha mostrado que hay más capas: la
 brecha de uso, que depende de lo que cada uno sabe hacer con la
 tecnología, y la de apropiación, que tiene que ver con la capacidad de
-entenderla y aprovecharla con sentido crítico.<sup><span id="ref-07-15"><a href="#nota-07-15">15</a></span></sup> Dos alumnas con
+entenderla y aprovecharla con sentido crítico.<sup><span id="ref-07-16"><a href="#nota-07-16">16</a></span></sup> Dos alumnas con
 el mismo aparato pueden hacer cosas muy distintas, y esa diferencia la
 ponen el capital cultural, el acompañamiento y la escuela. Por eso los
 programas que reparten ordenadores sin proyecto pedagógico caen en una
@@ -2242,7 +2265,7 @@ por fracasos personales.</p>
 <p>A esto se suma la desigualdad que fabrican los propios sistemas. Ruha
 Benjamin ha mostrado que los algoritmos aprenden de datos que arrastran
 los prejuicios sociales y tienden a reproducirlos con apariencia de
-neutralidad.<sup><span id="ref-07-16"><a href="#nota-07-16">16</a></span></sup> En una escuela eso puede
+neutralidad.<sup><span id="ref-07-17"><a href="#nota-07-17">17</a></span></sup> En una escuela eso puede
 significar un sistema de predicción que penaliza a alumnos de ciertos
 barrios porque, en el pasado, alumnos parecidos sacaron peores notas. El
 algoritmo predice el futuro con el pasado, y al hacerlo ayuda a que el
@@ -2258,7 +2281,7 @@ más.</p>
 <p>La antropóloga Natasha Dow Schüll pasó años estudiando el diseño de
 las tragaperras de Las Vegas y mostró que estaban pensadas para meter al
 jugador en un estado de absorción que los propios jugadores llamaban «la
-zona», donde perdían la noción del tiempo.<sup><span id="ref-07-17"><a href="#nota-07-17">17</a></span></sup> Las recompensas variables, la
+zona», donde perdían la noción del tiempo.<sup><span id="ref-07-18"><a href="#nota-07-18">18</a></span></sup> Las recompensas variables, la
 respuesta inmediata y la ausencia de pausas son los mismos recursos que
 usan las redes sociales y, en versión más suave, muchas herramientas de
 gamificación escolar. La gamificación enseña que merece la pena lo que
@@ -2266,7 +2289,7 @@ tiene premio. Un chico que lee para sumar puntos aprende a sumar puntos,
 igual que el niño de Sandel al que pagaban por leer.</p>
 <p>El juego es otra cosa. Johan Huizinga lo definió en <em>Homo
 ludens</em> como una actividad libre, con reglas aceptadas libremente,
-que tiene su fin en sí misma.<sup><span id="ref-07-18"><a href="#nota-07-18">18</a></span></sup> Se juega por jugar, y por eso
+que tiene su fin en sí misma.<sup><span id="ref-07-19"><a href="#nota-07-19">19</a></span></sup> Se juega por jugar, y por eso
 abre un espacio donde las reglas del mundo ordinario quedan en suspenso.
 La gamificación copia la forma del juego y le quita lo esencial. Como el
 sofista que vendía apariencia de sabiduría, vende apariencia de
@@ -2309,9 +2332,12 @@ resistencia que valga la pena.</p>
 <p>En los últimos años muchos gobiernos han decidido actuar sobre el
 objeto más visible de todos, el teléfono móvil. El informe de la UNESCO
 de 2023 constataba que menos de uno de cada cuatro países lo había
-prohibido en las escuelas, y recomendaba hacerlo cuando no sirviera al
-aprendizaje. En Cataluña, donde vivo, el Departament d’Educació lo
-restringió en enero de 2024 y en junio de 2025 anunció su prohibición
+prohibido en las escuelas, y defendía que la tecnología, móviles
+incluidos, solo estuviera en el aula cuando sirviera al aprendizaje. El
+panorama cambió deprisa: a finales de 2024, según el seguimiento del
+propio equipo del informe, el 40 % de los sistemas educativos tenía ya
+alguna prohibición. En Cataluña, donde vivo, el Departament d’Educació
+lo restringió en enero de 2024 y en junio de 2025 anunció su prohibición
 total en todas las etapas obligatorias a partir del curso siguiente, en
 las aulas y fuera de ellas, junto con la retirada progresiva de pizarras
 digitales y tabletas en la educación infantil.<sup><span id="ref-08-2"><a href="#nota-08-2">2</a></span></sup></p>
@@ -2332,7 +2358,7 @@ a las 23:59 y el mensaje a las familias a las nueve y veinte de la noche
 siguen ahí, y lo que la escuela ha sacado de la clase vuelve a entrar en
 casa a través de la propia escuela. La prohibición del móvil ataca la
 parte del problema que se ve y se puede confiscar. La infraestructura,
-que no se ve, no se discute.</p>
+que no se ve, apenas se discute.</p>
 <p>Ahí está, me parece, la diferencia entre una política sobre aparatos
 y una política sobre el tiempo. La primera pregunta qué objetos entran
 en el aula. La segunda pregunta qué partes de la vida de un niño le
@@ -2368,22 +2394,23 @@ ocurrió en Inglaterra en agosto de 2020.</p>
 <p>Con los exámenes suspendidos por la pandemia, el organismo que regula
 las calificaciones, Ofqual, decidió que las notas finales de
 bachillerato no serían las que proponían los profesores, que consideraba
-demasiado generosas, sino las que calculara un algoritmo. El modelo
-tomaba como punto de partida los resultados históricos de cada centro en
-cada asignatura y ajustaba a ellos las notas de los alumnos de ese año.
-Cuando se publicaron los resultados, casi el 40 % de las notas
-propuestas por los docentes había bajado al menos un grado. Los centros
-con muy pocos alumnos por asignatura, muchos de ellos privados,
-conservaban con más frecuencia las notas de sus profesores, porque el
-modelo no podía aplicarse con fiabilidad a grupos tan pequeños. Una
-alumna brillante de un instituto con malos resultados en el pasado podía
-ver su nota rebajada por lo que habían hecho otros antes que
-ella.<sup><span id="ref-08-6"><a href="#nota-08-6">6</a></span></sup></p>
+infladas respecto de años anteriores, sino las que calculara un modelo
+estadístico. El modelo tomaba como punto de partida los resultados
+históricos de cada centro en cada asignatura y ajustaba a ellos las
+notas de los alumnos de ese año. Cuando se publicaron los resultados de
+A level en Inglaterra, el 39 % de las notas propuestas por los docentes
+había bajado al menos un grado. En las asignaturas con cinco alumnos o
+menos se mantenía la nota del profesor, porque el modelo no podía
+aplicarse con fiabilidad a grupos tan pequeños, y esos grupos abundaban
+en los centros privados. Una alumna brillante de un instituto con malos
+resultados en el pasado podía ver su nota rebajada por lo que habían
+hecho otros antes que ella.<sup><span id="ref-08-6"><a href="#nota-08-6">6</a></span></sup></p>
 <p>Los estudiantes salieron a la calle. Frente al Ministerio de
 Educación, en Londres, corearon un lema que dio la vuelta al mundo y que
 aquí traduzco con decoro: «al diablo con el algoritmo». En pocos días el
-Gobierno rectificó, y el 17 de agosto anunció que se usarían las notas
-de los profesores.</p>
+Gobierno rectificó: el 17 de agosto anunció que cada estudiante
+recibiría la nota propuesta por su centro o la calculada, la que fuera
+más alta.</p>
 <p>El episodio condensa casi todo lo que este libro ha intentado decir.
 Muestra un algoritmo que predice el futuro con el pasado y convierte el
 origen en destino. Muestra un poder que se presentaba como técnico y
@@ -2733,347 +2760,288 @@ ti.</p>
 <h1 class="unnumbered">Notas</h1>
 <section id="el-sello-en-la-cera-1" class="level2 unnumbered">
 <h2 class="unnumbered">1. El sello en la cera</h2>
-<p><span id="nota-01-1"><a href="#ref-01-1">1</a></span>. Platón,
-<em>Teeteto</em>, 191c-d.</p>
-<p><span id="nota-01-2"><a href="#ref-01-2">2</a></span>. Aristóteles,
-<em>Política</em>, I, 2, 1252b29-30.</p>
-<p><span id="nota-01-3"><a href="#ref-01-3">3</a></span>. Aristóteles,
-<em>Ética a Nicómaco</em>, II, 1, 1103a33-b2.</p>
-<p><span id="nota-01-4"><a href="#ref-01-4">4</a></span>. Émile
-Durkheim, <em>Educación y sociología</em>, cap. 1.</p>
-<p><span id="nota-01-5"><a href="#ref-01-5">5</a></span>. Platón,
-<em>Apología de Sócrates</em>, 38a.</p>
-<p><span id="nota-01-6"><a href="#ref-01-6">6</a></span>. Aristóteles,
-<em>Política</em>, I, 13, 1260a12-13.</p>
+<p><span id="nota-01-1"><a href="#ref-01-1">1</a></span>. Platón (ca.
+369 a. e. c./1988), <em>Teeteto</em>, 191c-d.</p>
+<p><span id="nota-01-2"><a href="#ref-01-2">2</a></span>. Aristóteles
+(ca. 335-323 a. e. c./1988), <em>Política</em>, I, 2, 1252b29-30.</p>
+<p><span id="nota-01-3"><a href="#ref-01-3">3</a></span>. Aristóteles
+(ca. 335-323 a. e. c./1985), <em>Ética nicomáquea</em>, II, 1,
+1103a33-b2.</p>
+<p><span id="nota-01-4"><a href="#ref-01-4">4</a></span>. Durkheim
+(1922/1975), cap. 1.</p>
+<p><span id="nota-01-5"><a href="#ref-01-5">5</a></span>. Platón (ca.
+399-390 a. e. c./1981), <em>Apología</em>, 38a.</p>
+<p><span id="nota-01-6"><a href="#ref-01-6">6</a></span>. Aristóteles
+(ca. 335-323 a. e. c./1988), <em>Política</em>, I, 13, 1260a12-13.</p>
 <p><span id="nota-01-7"><a href="#ref-01-7">7</a></span>. Diógenes
-Laercio, <em>Vidas de los filósofos ilustres</em>, VI, 96-98.</p>
-<p><span id="nota-01-8"><a href="#ref-01-8">8</a></span>. Platón,
-<em>Banquete</em>, 201d-212a.</p>
+Laercio (ca. siglo III/2007), VI, 96-98.</p>
+<p><span id="nota-01-8"><a href="#ref-01-8">8</a></span>. Platón (ca.
+385-370 a. e. c./1986a), <em>Banquete</em>, 201d-212a.</p>
 </section>
 <section id="una-red-sin-dueño-1" class="level2 unnumbered">
 <h2 class="unnumbered">2. Una red sin dueño</h2>
-<p><span id="nota-02-1"><a href="#ref-02-1">1</a></span>. «El juego de
-Michel Foucault» (1977), en <em>Dits et écrits</em>, III, n.º 206. Cito
-la versión castellana incluida en Giorgio Agamben, <em>¿Qué es un
-dispositivo?</em>, Buenos Aires, Adriana Hidalgo, 2014.</p>
-<p><span id="nota-02-2"><a href="#ref-02-2">2</a></span>. Michel
-Foucault, <em>Historia de la sexualidad, 1. La voluntad de saber</em>,
-cap. IV, «Método».</p>
-<p><span id="nota-02-3"><a href="#ref-02-3">3</a></span>. Michel
-Foucault, <em>Vigilar y castigar</em>, tercera parte, cap. 1, «Los
-cuerpos dóciles».</p>
-<p><span id="nota-02-4"><a href="#ref-02-4">4</a></span>. Agamben,
-<em>¿Qué es un dispositivo?</em>, op. cit.</p>
-<p><span id="nota-02-5"><a href="#ref-02-5">5</a></span>. Giorgio
-Agamben, <em>El Reino y la Gloria</em>, Valencia, Pre-Textos, 2008, cap.
-2.</p>
+<p><span id="nota-02-1"><a href="#ref-02-1">1</a></span>. Foucault
+(1977/1985). Cito la traducción incluida en Agamben (2006/2014).</p>
+<p><span id="nota-02-2"><a href="#ref-02-2">2</a></span>. Foucault
+(1976/2008), cap. IV, «Método».</p>
+<p><span id="nota-02-3"><a href="#ref-02-3">3</a></span>. Foucault
+(1975/2002), tercera parte, cap. 1, «Los cuerpos dóciles».</p>
+<p><span id="nota-02-4"><a href="#ref-02-4">4</a></span>. Agamben
+(2006/2014).</p>
+<p><span id="nota-02-5"><a href="#ref-02-5">5</a></span>. Agamben
+(2007/2008), cap. 2.</p>
 <p><span id="nota-02-6"><a href="#ref-02-6">6</a></span>. Constitución
-española (1978), art. 27.2; Ley 20.370, General de Educación (Chile,
-2009), art. 2.</p>
-<p><span id="nota-02-7"><a href="#ref-02-7">7</a></span>. Gert Biesta,
-<em>Beyond Learning</em>, Boulder, Paradigm, 2006, cap. 1.</p>
-<p><span id="nota-02-8"><a href="#ref-02-8">8</a></span>. Giorgio
-Agamben, «Elogio de la profanación», en <em>Profanaciones</em>,
-Barcelona, Anagrama, 2005.</p>
-<p><span id="nota-02-9"><a href="#ref-02-9">9</a></span>. Gilles
-Deleuze, «¿Qué es un dispositivo?», en <em>Michel Foucault,
-filósofo</em>, Barcelona, Gedisa, 1990.</p>
+Española (1978), art. 27.2; Ley 20.370 (2009), art. 2.</p>
+<p><span id="nota-02-7"><a href="#ref-02-7">7</a></span>. Biesta (2006),
+cap. 1, y Biesta (2010).</p>
+<p><span id="nota-02-8"><a href="#ref-02-8">8</a></span>. Agamben
+(2005), «Elogio de la profanación».</p>
+<p><span id="nota-02-9"><a href="#ref-02-9">9</a></span>. Deleuze
+(1989/1990).</p>
 </section>
 <section id="el-alma-prisión-del-cuerpo-1" class="level2 unnumbered">
 <h2 class="unnumbered">3. El alma, prisión del cuerpo</h2>
-<p><span id="nota-03-1"><a href="#ref-03-1">1</a></span>. Immanuel Kant,
-<em>Pedagogía</em>, introducción (Ak. IX, 441-442). Las lecciones las
-publicó en 1803 su alumno Friedrich Theodor Rink, y los especialistas
-discuten hasta qué punto reproducen fielmente las palabras de Kant.</p>
-<p><span id="nota-03-2"><a href="#ref-03-2">2</a></span>. Platón,
-<em>Fedón</em>, 65a-d.</p>
-<p><span id="nota-03-3"><a href="#ref-03-3">3</a></span>. Aristóteles,
-<em>Acerca del alma</em>, II, 1, 412a27-b9, y II, 2, 414a19-22.</p>
-<p><span id="nota-03-4"><a href="#ref-03-4">4</a></span>. Carta de
-Isabel de Bohemia a Descartes de 6/16 de mayo de 1643 y respuesta de
-Descartes de 28 de junio de 1643.</p>
-<p><span id="nota-03-5"><a href="#ref-03-5">5</a></span>. Michel
-Foucault, <em>Vigilar y castigar</em>, tercera parte, cap. 1, «Los
-cuerpos dóciles», donde está también la fórmula sobre utilidad y
-obediencia.</p>
-<p><span id="nota-03-6"><a href="#ref-03-6">6</a></span>. Ibíd., primera
-parte, cap. 1, «El cuerpo de los condenados».</p>
-<p><span id="nota-03-7"><a href="#ref-03-7">7</a></span>. Nancy Fraser,
-«Foucault on Modern Power: Empirical Insights and Normative Confusions»,
-<em>Praxis International</em>, 1 (3), 1981, pp. 272-287. La crítica de
-Habermas está en <em>El discurso filosófico de la modernidad</em>, caps.
-IX y X.</p>
-<p><span id="nota-03-8"><a href="#ref-03-8">8</a></span>. Pier Paolo
-Pasolini, <em>Cartas luteranas</em>, sección «Gennariello».</p>
-<p><span id="nota-03-9"><a href="#ref-03-9">9</a></span>. Baruch
-Spinoza, <em>Ética</em>, III, proposición 2, escolio.</p>
-<p><span id="nota-03-10"><a href="#ref-03-10">10</a></span>. Baruch
-Spinoza, <em>Tratado teológico-político</em>, prefacio.</p>
-<p><span id="nota-03-11"><a href="#ref-03-11">11</a></span>. Étienne de
-La Boétie, <em>Discurso de la servidumbre voluntaria</em>.</p>
-<p><span id="nota-03-12"><a href="#ref-03-12">12</a></span>. Gert
-Biesta, «What is Education For?», <em>European Journal of
-Education</em>, 50 (1), 2015, pp. 75-87.</p>
+<p><span id="nota-03-1"><a href="#ref-03-1">1</a></span>. Kant
+(1803/1983), introducción; en alemán, Kant (1803/1923), pp. 441-442. Las
+lecciones las publicó en 1803 su alumno Friedrich Theodor Rink, y los
+especialistas discuten hasta qué punto reproducen fielmente las palabras
+de Kant.</p>
+<p><span id="nota-03-2"><a href="#ref-03-2">2</a></span>. Platón (ca.
+385-370 a. e. c./1986a), <em>Fedón</em>, 65a-d.</p>
+<p><span id="nota-03-3"><a href="#ref-03-3">3</a></span>. Aristóteles
+(ca. 350 a. e. c./1978), II, 1, 412a27-b9, y II, 2, 414a19-22.</p>
+<p><span id="nota-03-4"><a href="#ref-03-4">4</a></span>. Descartes
+(1643-1649/1999): carta de Isabel de Bohemia de 6/16 de mayo de 1643 y
+respuesta de Descartes de 28 de junio de 1643.</p>
+<p><span id="nota-03-5"><a href="#ref-03-5">5</a></span>. Foucault
+(1975/2002), tercera parte, cap. 1, donde está también la fórmula sobre
+utilidad y obediencia.</p>
+<p><span id="nota-03-6"><a href="#ref-03-6">6</a></span>. Foucault
+(1975/2002), primera parte, cap. 1.</p>
+<p><span id="nota-03-7"><a href="#ref-03-7">7</a></span>. Fraser (1981).
+La crítica de Habermas, en Habermas (1985/2008), caps. IX y X.</p>
+<p><span id="nota-03-8"><a href="#ref-03-8">8</a></span>. Pasolini
+(1976/1997), sección «Gennariello».</p>
+<p><span id="nota-03-9"><a href="#ref-03-9">9</a></span>. Spinoza
+(1677/2011), III, proposición 2, escolio.</p>
+<p><span id="nota-03-10"><a href="#ref-03-10">10</a></span>. Spinoza
+(1670/2014), prefacio.</p>
+<p><span id="nota-03-11"><a href="#ref-03-11">11</a></span>. La Boétie
+(1576/2008).</p>
+<p><span id="nota-03-12"><a href="#ref-03-12">12</a></span>. Biesta
+(2015).</p>
 </section>
 <section id="escultores-de-sí-mismos-1" class="level2 unnumbered">
 <h2 class="unnumbered">4. Escultores de sí mismos</h2>
-<p><span id="nota-04-1"><a href="#ref-04-1">1</a></span>. Giovanni Pico
-della Mirandola, <em>Discurso sobre la dignidad del hombre</em>
-(1486).</p>
-<p><span id="nota-04-2"><a href="#ref-04-2">2</a></span>. Hans-Georg
-Gadamer, <em>Verdad y método</em>, primera parte, cap. 1, sobre el
-concepto de formación.</p>
-<p><span id="nota-04-3"><a href="#ref-04-3">3</a></span>. Jean-Jacques
-Rousseau, <em>Emilio, o De la educación</em>, libro V.</p>
-<p><span id="nota-04-4"><a href="#ref-04-4">4</a></span>. Christine de
-Pizan, <em>La ciudad de las damas</em>, primera parte, caps. 1-2.</p>
-<p><span id="nota-04-5"><a href="#ref-04-5">5</a></span>. Mary
-Wollstonecraft, <em>Vindicación de los derechos de la mujer</em>, caps.
-5 y 12.</p>
-<p><span id="nota-04-6"><a href="#ref-04-6">6</a></span>. Immanuel Kant,
-«Respuesta a la pregunta: ¿Qué es la Ilustración?» (1784). La paradoja
-de la libertad bajo coacción está en la introducción a la
-<em>Pedagogía</em>.</p>
-<p><span id="nota-04-7"><a href="#ref-04-7">7</a></span>. Michel
-Foucault, <em>Nacimiento de la biopolítica</em>, lección del 14 de marzo
-de 1979.</p>
-<p><span id="nota-04-8"><a href="#ref-04-8">8</a></span>. Byung-Chul
-Han, <em>La sociedad del cansancio</em>, Barcelona, Herder, 2012.</p>
-<p><span id="nota-04-9"><a href="#ref-04-9">9</a></span>. Paul Black y
-Dylan Wiliam, «Inside the Black Box», <em>Phi Delta Kappan</em>, 80 (2),
-1998, pp. 139-148.</p>
-<p><span id="nota-04-10"><a href="#ref-04-10">10</a></span>. Engin
-Atasay, «Neoliberal schooling and subjectivity: learning to desire
-lack», <em>Subjectivity</em>, 7 (3), 2014, pp. 288-307.</p>
-<p><span id="nota-04-11"><a href="#ref-04-11">11</a></span>. Stephen J.
-Ball, «The teacher’s soul and the terrors of performativity»,
-<em>Journal of Education Policy</em>, 18 (2), 2003, pp. 215-228.</p>
+<p><span id="nota-04-1"><a href="#ref-04-1">1</a></span>. Pico della
+Mirandola (1496/1988).</p>
+<p><span id="nota-04-2"><a href="#ref-04-2">2</a></span>. Gadamer
+(1960/1977), primera parte, cap. 1, sobre el concepto de formación.</p>
+<p><span id="nota-04-3"><a href="#ref-04-3">3</a></span>. Rousseau
+(1762/2011), libro V.</p>
+<p><span id="nota-04-4"><a href="#ref-04-4">4</a></span>. Pizan (ca.
+1405/1995), primera parte, caps. 1-2.</p>
+<p><span id="nota-04-5"><a href="#ref-04-5">5</a></span>. Wollstonecraft
+(1792/2018), caps. 5 y 12.</p>
+<p><span id="nota-04-6"><a href="#ref-04-6">6</a></span>. Kant
+(1784/2004). La paradoja de la libertad bajo coacción, en Kant
+(1803/1983), introducción.</p>
+<p><span id="nota-04-7"><a href="#ref-04-7">7</a></span>. Foucault
+(2004/2007), lección del 14 de marzo de 1979.</p>
+<p><span id="nota-04-8"><a href="#ref-04-8">8</a></span>. Han
+(2010/2012).</p>
+<p><span id="nota-04-9"><a href="#ref-04-9">9</a></span>. Black y Wiliam
+(1998).</p>
+<p><span id="nota-04-10"><a href="#ref-04-10">10</a></span>. Atasay
+(2014).</p>
+<p><span id="nota-04-11"><a href="#ref-04-11">11</a></span>. Ball
+(2003).</p>
 <p><span id="nota-04-12"><a href="#ref-04-12">12</a></span>. Entrevistas
-semiestructuradas realizadas por el autor en febrero de 2025 a cinco
-especialistas y cuatro docentes de secundaria de Cataluña y Chile. Las
-personas entrevistadas dieron su consentimiento informado y se citan por
-su perfil, sin nombres.</p>
+semiestructuradas realizadas por el autor en febrero de 2025, para su
+investigación doctoral, a cinco especialistas y cuatro docentes de
+secundaria de Cataluña y Chile. Las personas entrevistadas dieron su
+consentimiento informado y se citan por su perfil, sin nombres. Como
+establece APA 7 para los participantes de una investigación propia, no
+figuran en la lista de referencias.</p>
 </section>
 <section id="ser-visto-1" class="level2 unnumbered">
 <h2 class="unnumbered">5. Ser visto</h2>
 <p><span id="nota-05-1"><a href="#ref-05-1">1</a></span>. Agustín de
-Hipona, <em>Del maestro</em>, en <em>Obras de San Agustín</em>, t. III,
-Madrid, BAC.</p>
-<p><span id="nota-05-2"><a href="#ref-05-2">2</a></span>. Michel
-Foucault, <em>Seguridad, territorio, población</em>, lecciones de
-febrero de 1978.</p>
-<p><span id="nota-05-3"><a href="#ref-05-3">3</a></span>. Michel
-Foucault, <em>Vigilar y castigar</em>, tercera parte, cap. 3, «El
-panoptismo».</p>
-<p><span id="nota-05-4"><a href="#ref-05-4">4</a></span>. Ibíd., tercera
-parte, cap. 2, «Los medios del buen encauzamiento».</p>
-<p><span id="nota-05-5"><a href="#ref-05-5">5</a></span>. Ben
-Williamson, <em>Big Data in Education</em>, Londres, SAGE, 2017.</p>
+Hipona (ca. 389/1947).</p>
+<p><span id="nota-05-2"><a href="#ref-05-2">2</a></span>. Foucault
+(2004/2006), lecciones de febrero de 1978.</p>
+<p><span id="nota-05-3"><a href="#ref-05-3">3</a></span>. Foucault
+(1975/2002), tercera parte, cap. 3, «El panoptismo».</p>
+<p><span id="nota-05-4"><a href="#ref-05-4">4</a></span>. Foucault
+(1975/2002), tercera parte, cap. 2, «Los medios del buen
+encauzamiento».</p>
+<p><span id="nota-05-5"><a href="#ref-05-5">5</a></span>. Williamson
+(2017).</p>
 <p><span id="nota-05-6"><a href="#ref-05-6">6</a></span>. Entrevistas
 realizadas por el autor en febrero de 2025 (véanse las notas del
 capítulo 4). Hablan un profesor de historia de un liceo público chileno,
 un sociólogo de una universidad chilena y una filósofa de una
 universidad chilena.</p>
-<p><span id="nota-05-7"><a href="#ref-05-7">7</a></span>. Kimberly
-Arnold y Matthew Pistilli, «Course Signals at Purdue: Using Learning
-Analytics to Increase Student Success», <em>Proceedings of the 2nd
-International Conference on Learning Analytics and Knowledge</em>, ACM,
-2012. Las críticas de Michael Caulfield y Alfred Essa se publicaron en
-sus blogs en 2013 y las recogió la prensa universitaria estadounidense
-(<em>Inside Higher Ed</em>, 2013).</p>
+<p><span id="nota-05-7"><a href="#ref-05-7">7</a></span>. La afirmación
+institucional, en Purdue University (2013); el sistema, en Arnold y
+Pistilli (2012). Las críticas, en Caulfield (2013a, 2013b) y Feldstein
+(2013); la simulación de Alfred Essa la recoge Straumsheim (2013). Es un
+dato institucional, no un efecto demostrado.</p>
 <p><span id="nota-05-8"><a href="#ref-05-8">8</a></span>. Georgia State
-University, <em>Complete College Report</em> (varios años), y la
-descripción del sistema GPS Advising en la web de su Office of Student
-Success. Son datos de la propia institución, no evaluaciones
-independientes.</p>
-<p><span id="nota-05-9"><a href="#ref-05-9">9</a></span>. Datatilsynet,
-decisión de 14 de julio de 2022 sobre el municipio de Helsingør, y
-decisión de 30 de enero de 2024 sobre el uso de Google Workspace y
-Chromebooks en cincuenta y tres municipios daneses.</p>
-<p><span id="nota-05-10"><a href="#ref-05-10">10</a></span>. Decisión de
-ejecución (UE) 2023/1795 de la Comisión, de 10 de julio de 2023;
-Tribunal General, asunto T-553/23, <em>Latombe c. Comisión</em>,
-sentencia de 3 de septiembre de 2025. Los acuerdos anteriores se
-anularon en las sentencias <em>Schrems</em> (C-362/14, 2015) y
-<em>Schrems II</em> (C-311/18, 2020).</p>
-<p><span id="nota-05-11"><a href="#ref-05-11">11</a></span>. Gilles
-Deleuze, «Post-scriptum sobre las sociedades de control», en
-<em>Conversaciones</em>, Valencia, Pre-Textos, 1999.</p>
-<p><span id="nota-05-12"><a href="#ref-05-12">12</a></span>. Shoshana
-Zuboff, <em>La era del capitalismo de la vigilancia</em>, Barcelona,
-Paidós, 2020, primera parte.</p>
-<p><span id="nota-05-13"><a href="#ref-05-13">13</a></span>. Reglamento
-(UE) 2024/1689, de Inteligencia Artificial, art. 5.1.f y anexo III,
-punto 3. El aplazamiento de las obligaciones para los sistemas de alto
-riesgo procede de la modificación aprobada en 2026 dentro del llamado
-paquete Ómnibus Digital.</p>
-<p><span id="nota-05-14"><a href="#ref-05-14">14</a></span>. Hannah
-Arendt, «La crisis en la educación», en <em>Entre el pasado y el
-futuro</em>, Barcelona, Península.</p>
+University (s. f., 2017) y NPR (2016). Son datos y valoraciones de la
+propia institución, no evaluaciones independientes.</p>
+<p><span id="nota-05-9"><a href="#ref-05-9">9</a></span>. Rossman et
+al. (2021, 2023). El ensayo, con estudiantes de bajos ingresos o primera
+generación de once universidades asignados al azar, evaluó un
+asesoramiento proactivo intensificado y apoyado en analítica, no el
+sistema de Georgia State como tal. Un estudio de caso anterior e
+independiente, pero descriptivo, atribuye la mejora de Georgia State a
+la suma de muchas iniciativas (Kurzweil y Wu, 2015).</p>
+<p><span id="nota-05-10"><a href="#ref-05-10">10</a></span>.
+Datatilsynet (2022a, 2022b, 2022c) para Helsingør (expediente
+2020-431-0061), y Datatilsynet (2024a, 2024b) para los cincuenta y tres
+municipios.</p>
+<p><span id="nota-05-11"><a href="#ref-05-11">11</a></span>. Decisión de
+Ejecución (UE) 2023/1795 (2023); Tribunal General de la Unión Europea
+(2025), asunto T-553/23; recurso de casación C-703/25 P (Tribunal de
+Justicia de la Unión Europea, 2025). Los acuerdos anteriores se anularon
+en Tribunal de Justicia de la Unión Europea (2015), asunto C-362/14, y
+Tribunal de Justicia de la Unión Europea (2020), asunto C-311/18.</p>
+<p><span id="nota-05-12"><a href="#ref-05-12">12</a></span>. Deleuze
+(1990/1995), «Post-scriptum sobre las sociedades de control».</p>
+<p><span id="nota-05-13"><a href="#ref-05-13">13</a></span>. Zuboff
+(2019/2020), primera parte.</p>
+<p><span id="nota-05-14"><a href="#ref-05-14">14</a></span>. Reglamento
+(UE) 2024/1689 (2024), art. 5.1.f y anexo III, punto 3. El aplazamiento
+procede del Reglamento (UE) 2026/1744 (2026), en vigor desde el 27 de
+julio de 2026.</p>
+<p><span id="nota-05-15"><a href="#ref-05-15">15</a></span>. Arendt
+(1961/1996), «La crisis en la educación».</p>
 </section>
 <section id="la-memoria-fuera-de-nosotros-1" class="level2 unnumbered">
 <h2 class="unnumbered">6. La memoria fuera de nosotros</h2>
-<p><span id="nota-06-1"><a href="#ref-06-1">1</a></span>. Platón,
-<em>Fedro</em>, 274c-275b.</p>
-<p><span id="nota-06-2"><a href="#ref-06-2">2</a></span>. Jacques
-Derrida, «La farmacia de Platón», en <em>La diseminación</em>, Madrid,
-Fundamentos, 1975.</p>
-<p><span id="nota-06-3"><a href="#ref-06-3">3</a></span>. Bernard
-Stiegler, <em>La técnica y el tiempo</em>, Hondarribia, Hiru, 2002, y
-<em>Lo que hace que la vida merezca ser vivida. De la farmacología</em>,
-Avarigani, 2015.</p>
-<p><span id="nota-06-4"><a href="#ref-06-4">4</a></span>. Jan Amos
-Comenio, <em>Didáctica magna</em>, caps. XIII y XIV.</p>
-<p><span id="nota-06-5"><a href="#ref-06-5">5</a></span>. Gilbert
-Simondon, <em>El modo de existencia de los objetos técnicos</em>, Buenos
-Aires, Prometeo, 2007, introducción.</p>
-<p><span id="nota-06-6"><a href="#ref-06-6">6</a></span>. Martin
-Heidegger, «La pregunta por la técnica», en <em>Conferencias y
-artículos</em>, Barcelona, Ediciones del Serbal, 1994, y
-<em>Serenidad</em>, Barcelona, Ediciones del Serbal.</p>
-<p><span id="nota-06-7"><a href="#ref-06-7">7</a></span>. OCDE,
-<em>Students, Computers and Learning: Making the Connection</em>, París,
-OECD Publishing, 2015.</p>
-<p><span id="nota-06-8"><a href="#ref-06-8">8</a></span>. OCDE, <em>PISA
-2022 Results (Volume II): Learning During – and From – Disruption</em>,
-París, OECD Publishing, 2023.</p>
-<p><span id="nota-06-9"><a href="#ref-06-9">9</a></span>. UNESCO,
-<em>Informe de seguimiento de la educación en el mundo 2023. La
-tecnología en la educación: ¿una herramienta en los términos de
-quién?</em>, París, UNESCO, 2023.</p>
-<p><span id="nota-06-10"><a href="#ref-06-10">10</a></span>. UNESCO,
-datos de seguimiento de los cierres escolares por la COVID-19, 2020;
-UNICEF, <em>Remote Learning Reachability</em> (ficha informativa), Nueva
-York, agosto de 2020, con datos de cien países.</p>
-<p><span id="nota-06-11"><a href="#ref-06-11">11</a></span>. Weixin
-Liang et al., «GPT detectors are biased against non-native English
-writers», <em>Patterns</em>, 4 (7), 2023.</p>
-<p><span id="nota-06-12"><a href="#ref-06-12">12</a></span>. Vanderbilt
-University, «Guidance on AI Detection and Why We’re Disabling Turnitin’s
-AI Detector», 16 de agosto de 2023.</p>
-<p><span id="nota-06-13"><a href="#ref-06-13">13</a></span>. Hamsa
-Bastani et al., «Generative AI without guardrails can harm learning:
-Evidence from high school mathematics», <em>Proceedings of the National
-Academy of Sciences</em>, 122 (26), 2025.</p>
-<p><span id="nota-06-14"><a href="#ref-06-14">14</a></span>. UNESCO,
-<em>Guidance for Generative AI in Education and Research</em>, París,
-UNESCO, 2023.</p>
-<p><span id="nota-06-15"><a href="#ref-06-15">15</a></span>. Kate
-Crawford, <em>Atlas de inteligencia artificial</em>, Buenos Aires, Fondo
-de Cultura Económica, 2022.</p>
+<p><span id="nota-06-1"><a href="#ref-06-1">1</a></span>. Platón (ca.
+385-370 a. e. c./1986a), <em>Fedro</em>, 274c-275b.</p>
+<p><span id="nota-06-2"><a href="#ref-06-2">2</a></span>. Derrida
+(1972/1975), «La farmacia de Platón».</p>
+<p><span id="nota-06-3"><a href="#ref-06-3">3</a></span>. Stiegler
+(1994/2002) y Stiegler (2010/2015).</p>
+<p><span id="nota-06-4"><a href="#ref-06-4">4</a></span>. Comenio
+(1657/1986), caps. XIII y XIV.</p>
+<p><span id="nota-06-5"><a href="#ref-06-5">5</a></span>. Simondon
+(1958/2007), introducción.</p>
+<p><span id="nota-06-6"><a href="#ref-06-6">6</a></span>. Heidegger
+(1954/1994), «La pregunta por la técnica», y Heidegger (1959/1989).</p>
+<p><span id="nota-06-7"><a href="#ref-06-7">7</a></span>. OECD (2015),
+p. 3. Los datos son de PISA 2012 y muestran asociaciones, no efectos
+causales.</p>
+<p><span id="nota-06-8"><a href="#ref-06-8">8</a></span>. OECD (2023a,
+2023b), con datos de PISA 2022 para alumnos de quince años; la
+comparación del ocio digital en la escuela, en OECD (2024). Todas las
+diferencias están ajustadas por perfil socioeconómico.</p>
+<p><span id="nota-06-9"><a href="#ref-06-9">9</a></span>. UNESCO
+(2023a), mensajes clave y recomendaciones.</p>
+<p><span id="nota-06-10"><a href="#ref-06-10">10</a></span>. Sobre los
+cierres, United Nations (2020); sobre el alcance de la enseñanza a
+distancia, UNICEF (2020a, 2020b). Es una estimación del alcance
+potencial que UNICEF considera optimista.</p>
+<p><span id="nota-06-11"><a href="#ref-06-11">11</a></span>. Liang et
+al. (2023). La muestra es pequeña y los detectores son de 2023.</p>
+<p><span id="nota-06-12"><a href="#ref-06-12">12</a></span>. Coley
+(2023).</p>
+<p><span id="nota-06-13"><a href="#ref-06-13">13</a></span>. Bastani et
+al. (2025). Experimento de campo aleatorizado por aulas, con unos
+cincuenta grupos de 9.º a 11.º grado.</p>
+<p><span id="nota-06-14"><a href="#ref-06-14">14</a></span>. Miao y
+Holmes (2023) y UNESCO (2023b). La guía propone la edad mínima; no la
+impone.</p>
+<p><span id="nota-06-15"><a href="#ref-06-15">15</a></span>. Crawford
+(2021/2022).</p>
 </section>
 <section id="lo-que-no-tiene-precio-1" class="level2 unnumbered">
 <h2 class="unnumbered">7. Lo que no tiene precio</h2>
-<p><span id="nota-07-1"><a href="#ref-07-1">1</a></span>. Cicerón,
-<em>Sobre los deberes</em>, I, 150-151.</p>
+<p><span id="nota-07-1"><a href="#ref-07-1">1</a></span>. Cicerón (44 a.
+e. c./2001), I, 150-151.</p>
 <p><span id="nota-07-2"><a href="#ref-07-2">2</a></span>. El
 <em>Generallandschulreglement</em> de Federico II (1763). Algunos
 territorios alemanes, como Württemberg o Zweibrücken, habían establecido
 antes formas de escolarización obligatoria.</p>
-<p><span id="nota-07-3"><a href="#ref-07-3">3</a></span>. Paulo Freire,
-<em>Pedagogía del oprimido</em>, cap. 2.</p>
-<p><span id="nota-07-4"><a href="#ref-07-4">4</a></span>. Juan Pablo
-Valenzuela, Cristián Bellei y Danae de los Ríos, «Socioeconomic school
-segregation in a market-oriented educational system. The case of Chile»,
-<em>Journal of Education Policy</em>, 29 (2), 2014.</p>
-<p><span id="nota-07-5"><a href="#ref-07-5">5</a></span>. Ley 21.728,
-promulgada el 31 de enero de 2025. Las cifras de beneficiarios y de
-docentes fallecidos proceden de la información oficial y de prensa de
-ese año.</p>
-<p><span id="nota-07-6"><a href="#ref-07-6">6</a></span>. Ley 20.845 de
-Inclusión Escolar (2015), Ley 20.903 que crea el Sistema de Desarrollo
-Profesional Docente (2016) y Ley 21.040 que crea el Sistema de Educación
-Pública (2017).</p>
-<p><span id="nota-07-7"><a href="#ref-07-7">7</a></span>. Centro de
-Investigación Avanzada en Educación (CIAE), Universidad de Chile,
-estudio sobre segregación escolar 2015-2024, julio de 2026. Para una
-lectura crítica del efecto del Sistema de Admisión Escolar, véanse los
-análisis de Libertad y Desarrollo (2025).</p>
-<p><span id="nota-07-8"><a href="#ref-07-8">8</a></span>. Sobre el
-estado de los servicios locales de educación pública y del proyecto de
-ley que crea el Financiamiento para la Educación Superior (FES),
-aprobado por la Cámara de Diputados en agosto de 2025, uso información
-oficial y de prensa actualizada a octubre de 2026. Son cifras que
-cambian deprisa y conviene revisarlas.</p>
-<p><span id="nota-07-9"><a href="#ref-07-9">9</a></span>. Michael J.
-Sandel, <em>Lo que el dinero no puede comprar</em>, Barcelona, Debate,
-2013, cap. 2.</p>
-<p><span id="nota-07-10"><a href="#ref-07-10">10</a></span>. Google,
-<em>Google Workspace for Education Terms of Service</em> y <em>Google
-Workspace for Education Privacy Notice</em>, versiones vigentes en
-2026.</p>
-<p><span id="nota-07-11"><a href="#ref-07-11">11</a></span>. Pablo
-Rivera-Vargas et al. (incluido el autor), <em>Plataformas digitales
-BigTech del sistema educativo catalán y derechos de la infancia:
-amenazas y retos. Informe final del proyecto edDIT</em>, aFFaC y
-Esbrina, Universitat de Barcelona, 2023. Las entrevistas de 2025 se
-describen en las notas del capítulo 4.</p>
-<p><span id="nota-07-12"><a href="#ref-07-12">12</a></span>. Respuesta
-del Ministerio de Educación Nacional a la pregunta escrita n.º 971 del
-diputado Philippe Latombe, <em>Journal officiel</em>, 15 de noviembre de
-2022.</p>
-<p><span id="nota-07-13"><a href="#ref-07-13">13</a></span>.
-Ayuntamiento de Barcelona, «Suite educativa DD: Digitalización
-Democrática», web de Innovación Democrática, y materiales de Xnet sobre
-el proyecto (2020-2023).</p>
-<p><span id="nota-07-14"><a href="#ref-07-14">14</a></span>. Richard M.
-Stallman, <em>Software libre para una sociedad libre</em>, Madrid,
-Traficantes de Sueños, 2004.</p>
-<p><span id="nota-07-15"><a href="#ref-07-15">15</a></span>. Jan van
-Dijk, <em>The Digital Divide</em>, Cambridge, Polity, 2020.</p>
-<p><span id="nota-07-16"><a href="#ref-07-16">16</a></span>. Ruha
-Benjamin, <em>Race After Technology</em>, Cambridge, Polity, 2019.</p>
-<p><span id="nota-07-17"><a href="#ref-07-17">17</a></span>. Natasha Dow
-Schüll, <em>Addiction by Design: Machine Gambling in Las Vegas</em>,
-Princeton, Princeton University Press, 2012.</p>
-<p><span id="nota-07-18"><a href="#ref-07-18">18</a></span>. Johan
-Huizinga, <em>Homo ludens</em>, Madrid, Alianza, cap. 1.</p>
+<p><span id="nota-07-3"><a href="#ref-07-3">3</a></span>. Freire
+(1970/2005), cap. 2.</p>
+<p><span id="nota-07-4"><a href="#ref-07-4">4</a></span>. Valenzuela et
+al. (2014).</p>
+<p><span id="nota-07-5"><a href="#ref-07-5">5</a></span>. Ley 21.728
+(2025). Las cifras de beneficiarios y el calendario de pagos, en
+Meganoticias (2025); la cifra de docentes fallecidos es del Colegio de
+Profesores.</p>
+<p><span id="nota-07-6"><a href="#ref-07-6">6</a></span>. Ley 20.845
+(2015), Ley 20.903 (2016) y Ley 21.040 (2017).</p>
+<p><span id="nota-07-7"><a href="#ref-07-7">7</a></span>. El Mostrador
+(2026) y Universidad de Chile (2026). Cito la presentación pública del
+estudio; el informe completo no estaba disponible cuando cerré el
+libro.</p>
+<p><span id="nota-07-8"><a href="#ref-07-8">8</a></span>. Sobre los
+servicios locales, Ministerio de Educación de Chile (2026) y Diario
+Estrategia (2026); sobre el crédito, The Clinic (2025), con datos de la
+Tesorería de junio de 2025. Son cifras que cambian deprisa.</p>
+<p><span id="nota-07-9"><a href="#ref-07-9">9</a></span>. Sandel
+(2012/2013), cap. 2.</p>
+<p><span id="nota-07-10"><a href="#ref-07-10">10</a></span>. Comunidad
+de Madrid (s. f.).</p>
+<p><span id="nota-07-11"><a href="#ref-07-11">11</a></span>. Google (s.
+f.-a, s. f.-b), condiciones vigentes en 2026. Es la descripción
+contractual del propio proveedor.</p>
+<p><span id="nota-07-12"><a href="#ref-07-12">12</a></span>.
+Rivera-Vargas et al. (2023), del que soy coautor. Las entrevistas de
+2025 se describen en las notas del capítulo 4.</p>
+<p><span id="nota-07-13"><a href="#ref-07-13">13</a></span>. Ministère
+de l’Éducation nationale (2022).</p>
+<p><span id="nota-07-14"><a href="#ref-07-14">14</a></span>. Ajuntament
+de Barcelona (s. f.).</p>
+<p><span id="nota-07-15"><a href="#ref-07-15">15</a></span>. Stallman
+(2002/2004).</p>
+<p><span id="nota-07-16"><a href="#ref-07-16">16</a></span>. van Dijk
+(2020).</p>
+<p><span id="nota-07-17"><a href="#ref-07-17">17</a></span>. Benjamin
+(2019).</p>
+<p><span id="nota-07-18"><a href="#ref-07-18">18</a></span>. Schüll
+(2012).</p>
+<p><span id="nota-07-19"><a href="#ref-07-19">19</a></span>. Huizinga
+(1938/2012), cap. 1.</p>
 </section>
 <section id="tiempo-libre-1" class="level2 unnumbered">
 <h2 class="unnumbered">8. Tiempo libre</h2>
-<p><span id="nota-08-1"><a href="#ref-08-1">1</a></span>. Jan
-Masschelein y Maarten Simons, <em>Defensa de la escuela. Una cuestión
-pública</em>, Buenos Aires, Miño y Dávila, 2014.</p>
-<p><span id="nota-08-2"><a href="#ref-08-2">2</a></span>. UNESCO,
-<em>Informe de seguimiento de la educación en el mundo 2023</em>, op.
-cit.; Departament d’Educació de la Generalitat de Catalunya,
-instrucciones de enero de 2024 y anuncio de junio de 2025 dentro del Pla
-de Digitalització Responsable.</p>
-<p><span id="nota-08-3"><a href="#ref-08-3">3</a></span>. Proyecto
-USMOV, <em>Jóvenes y móviles en el aula. Discursos y dinámicas de
-prohibición, promoción e indeterminación</em> (Agencia Estatal de
-Investigación, PID2019-108041RB-I00, 2020-2022), informe de trabajo de
-campo de los centros de Barcelona.</p>
-<p><span id="nota-08-4"><a href="#ref-08-4">4</a></span>. Michel
-Foucault, <em>Historia de la sexualidad, 1. La voluntad de saber</em>,
-cap. IV, «Método».</p>
-<p><span id="nota-08-5"><a href="#ref-08-5">5</a></span>. Michel
-Foucault, «¿Qué es la crítica?», conferencia ante la Sociedad Francesa
-de Filosofía, 27 de mayo de 1978.</p>
-<p><span id="nota-08-6"><a href="#ref-08-6">6</a></span>. Ofqual,
-<em>Awarding GCSE, AS, A level, advanced extension awards and extended
-project qualifications in summer 2020: interim report</em>, agosto de
-2020, y la cobertura de <em>The Guardian</em> y la BBC entre el 13 y el
-17 de agosto de 2020.</p>
-<p><span id="nota-08-7"><a href="#ref-08-7">7</a></span>. Michel
-Foucault, <em>Seguridad, territorio, población</em>, lección del 1 de
-marzo de 1978.</p>
-<p><span id="nota-08-8"><a href="#ref-08-8">8</a></span>. Michel de
-Certeau, <em>La invención de lo cotidiano. 1. Artes de hacer</em>,
-México, Universidad Iberoamericana.</p>
-<p><span id="nota-08-9"><a href="#ref-08-9">9</a></span>. Nel Noddings,
-<em>The Challenge to Care in Schools</em>, Nueva York, Teachers College
-Press, 1992.</p>
-<p><span id="nota-08-10"><a href="#ref-08-10">10</a></span>. Walter
-Benjamin, «El narrador», sección 8.</p>
-<p><span id="nota-08-11"><a href="#ref-08-11">11</a></span>. bell hooks,
-<em>Enseñar a transgredir. La educación como práctica de la
-libertad</em>, Madrid, Capitán Swing, 2021, introducción.</p>
-<p><span id="nota-08-12"><a href="#ref-08-12">12</a></span>. Marina
-Garcés, <em>Un mundo común</em>, Barcelona, Bellaterra, 2013, y
-<em>Escuela de aprendices</em>, Barcelona, Galaxia Gutenberg, 2020.</p>
+<p><span id="nota-08-1"><a href="#ref-08-1">1</a></span>. Masschelein y
+Simons (2012/2014).</p>
+<p><span id="nota-08-2"><a href="#ref-08-2">2</a></span>. UNESCO
+(2023a); Global Education Monitoring Report (2025), para el dato de
+2024; sobre Cataluña, VilaWeb (2025).</p>
+<p><span id="nota-08-3"><a href="#ref-08-3">3</a></span>. USMOV (s. f.).
+El proyecto, financiado por la Agencia Estatal de Investigación
+(PID2019-108041RB-I00), estudió el uso del móvil en institutos españoles
+entre 2020 y 2022.</p>
+<p><span id="nota-08-4"><a href="#ref-08-4">4</a></span>. Foucault
+(1976/2008), cap. IV, «Método».</p>
+<p><span id="nota-08-5"><a href="#ref-08-5">5</a></span>. Foucault
+(1990/1995). Es la conferencia pronunciada ante la Sociedad Francesa de
+Filosofía el 27 de mayo de 1978.</p>
+<p><span id="nota-08-6"><a href="#ref-08-6">6</a></span>. Ofqual (2020)
+y Department for Education y Ofqual (2020). La rebaja se mide respecto
+de la nota propuesta por el centro.</p>
+<p><span id="nota-08-7"><a href="#ref-08-7">7</a></span>. Foucault
+(2004/2006), lección del 1 de marzo de 1978.</p>
+<p><span id="nota-08-8"><a href="#ref-08-8">8</a></span>. Certeau
+(1980/2000).</p>
+<p><span id="nota-08-9"><a href="#ref-08-9">9</a></span>. Noddings
+(2005).</p>
+<p><span id="nota-08-10"><a href="#ref-08-10">10</a></span>. Benjamin
+(1936/2008), sección VIII.</p>
+<p><span id="nota-08-11"><a href="#ref-08-11">11</a></span>. hooks
+(1994/2021), introducción.</p>
+<p><span id="nota-08-12"><a href="#ref-08-12">12</a></span>. Garcés
+(2013, 2020).</p>
 <p><span id="nota-08-13"><a href="#ref-08-13">13</a></span>. Reglamento
-(UE) 2016/679, General de Protección de Datos, art. 22.</p>
+(UE) 2016/679 (2016), art. 22.</p>
 </section>
 </section>
 <section id="glosario" class="level1 unnumbered">
@@ -3124,10 +3092,14 @@ su traducción latina, <em>dispositio</em>, viene «dispositivo».</p>
 <p><strong><em>Paideia</em></strong> (1). Palabra griega que designaba a
 la vez la educación de los jóvenes, la cultura de un pueblo y el ideal
 de ser humano al que aspiraba esa cultura.</p>
-<p><strong>Pedagogía de la huella</strong> (prólogo, 2, 5 y 6). Nombre
-que doy a la lección que la escuela de las plataformas enseña sin
-decirlo: que hay que dejar rastro de cada paso (entregar, conectarse,
-completar) y que lo que no deja rastro no cuenta.</p>
+<p><strong>Pedagogía de la huella</strong> (prólogo, 2, 4 y 5). Nombre
+que doy a una inversión, no a cualquier enseñanza que pide trabajos o
+guarda registros. La escuela siempre produjo evidencias para conversar
+sobre lo aprendido y registró actividad para organizarse. Hay pedagogía
+de la huella cuando lo que puede registrarse empieza a decidir qué se
+reconoce como aprendizaje, el registro se convierte en criterio para
+valorar a la persona y producir rastros pasa a ser una obligación
+permanente.</p>
 <p><strong>Performatividad</strong> (4). En el sentido de Stephen Ball,
 una cultura de trabajo en la que se juzga a las personas, sobre todo a
 los docentes, por los resultados que pueden exhibir.</p>
@@ -3151,217 +3123,470 @@ de los dispositivos; en Gert Biesta, en cambio, el momento en que
 alguien actúa por sí mismo y se sale del molde.</p>
 </section>
 <section id="bibliografia" class="level1 unnumbered">
-<h1 class="unnumbered">Bibliografía comentada</h1>
-<p>Las notas al final del libro dan la referencia exacta de cada cita y
-de cada dato. Aquí reúno, capítulo por capítulo, las obras que de verdad
-han dado forma al argumento, con una línea sobre lo que encontré en
-ellas, y al final los informes, leyes y documentos en los que me apoyo
-para los datos. Los clásicos griegos se citan por la numeración habitual
+<h1 class="unnumbered">Bibliografía</h1>
+<p>Las notas citan con el sistema autor-año de APA 7, con el año de la
+edición original y el de la edición utilizada cuando no coinciden. Las
+obras clásicas griegas y latinas indican además la numeración canónica
 (Stephanus para Platón, Bekker para Aristóteles), que permite encontrar
-el pasaje en cualquier edición.</p>
-<section id="para-empezar" class="level2">
-<h2>Para empezar</h2>
+el pasaje en cualquier edición. Las citas de las entrevistas de mi
+investigación no figuran en la lista, como establece APA 7 para los
+participantes de una investigación propia.</p>
+<section id="lecturas-comentadas" class="level2">
+<h2>Lecturas comentadas</h2>
+<p>Las obras que de verdad han dado forma al argumento, con una línea
+sobre lo que encontré en ellas.</p>
 <ul>
-<li>Selwyn, Neil, <em>Education and Technology: Key Issues and
-Debates</em>, 3.ª ed., Londres, Bloomsbury, 2022. El mapa más sobrio de
-los debates sobre tecnología educativa: escéptico sin ser
-tecnófobo.</li>
-<li>Williamson, Ben, <em>Big Data in Education: The Digital Future of
-Learning, Policy and Practice</em>, Londres, SAGE, 2017. Cómo los datos
-pasaron a gobernar la educación, del aula al ministerio.</li>
+<li><strong>Para empezar.</strong> Selwyn (2022): el mapa más sobrio de
+los debates sobre tecnología educativa, escéptico sin ser tecnófobo.
+Williamson (2017): cómo los datos pasaron a gobernar la educación, del
+aula al ministerio.</li>
+<li><strong>Capítulo 1.</strong> Platón, <em>Teeteto</em>,
+<em>Apología</em> y <em>Banquete</em>: la cera, el examen y el deseo.
+Durkheim (1922/1975): la definición más franca de la escuela como taller
+social.</li>
+<li><strong>Capítulo 2.</strong> Agamben (2006/2014): la definición de
+Foucault y la genealogía de la palabra en un texto breve. Agamben
+(2007/2008): la <em>oikonomía</em> teológica, exigente pero decisiva.
+Biesta (2006, 2010): la mejor crítica que conozco del lenguaje del
+aprendizaje.</li>
+<li><strong>Capítulo 3.</strong> Foucault (1975/2002): de ahí sale casi
+todo lo que este libro dice sobre disciplina, examen y alma. Fraser
+(1981): la objeción más seria a Foucault. Pasolini (1976/1997): la
+educación que dan las cosas.</li>
+<li><strong>Capítulo 4.</strong> Foucault (2004/2007): el curso donde
+aparece el empresario de sí mismo. Wollstonecraft (1792/2018): la
+respuesta a Rousseau. Ball (2003): lo que la cultura del rendimiento
+hace con quien enseña.</li>
+<li><strong>Capítulo 5.</strong> Deleuze (1990/1995): cinco páginas que
+anticiparon la escuela de las plataformas. Zuboff (2019/2020): un modelo
+de negocio que conviene no aplicar a ciegas. Arendt (1961/1996): por qué
+lo que crece necesita un lugar oculto. Rossman et al. (2023): la
+evaluación independiente que obliga a matizar el entusiasmo por la
+analítica.</li>
+<li><strong>Capítulo 6.</strong> Derrida (1972/1975): el
+<em>pharmakon</em> como clave de lectura de toda técnica. Simondon
+(1958/2007): una cultura técnica para entender lo que usamos. UNESCO
+(2023a): el balance más completo de la evidencia sobre tecnología
+educativa.</li>
+<li><strong>Capítulo 7.</strong> Freire (1970/2005): la educación
+bancaria. Sandel (2012/2013): por qué algunos bienes se estropean al
+venderse. Rivera-Vargas et al. (2023): cómo entran las plataformas
+corporativas en escuelas concretas.</li>
+<li><strong>Capítulo 8.</strong> Masschelein y Simons (2012/2014): la
+escuela como tiempo suspendido. hooks (1994/2021): el aula como lugar de
+libertad y de cuidado. Garcés (2013, 2020): pensar desde la
+coimplicación y defender una escuela de aprendices.</li>
 </ul>
 </section>
-<section id="el-sello-en-la-cera-2" class="level2">
-<h2>1. El sello en la cera</h2>
+<section id="referencias" class="level2">
+<h2>Referencias</h2>
 <ul>
-<li>Platón, <em>Teeteto</em>, <em>Apología de Sócrates</em>,
-<em>Banquete</em> y <em>República</em>. La cera, el examen, el deseo y
-el sistema: cuatro maneras de pensar qué es formar a alguien.</li>
-<li>Aristóteles, <em>Política</em>, libros I y VIII. La ciudad que
-existe para vivir bien y la educación como su asunto más serio.</li>
-<li>Durkheim, Émile, <em>Educación y sociología</em>. La definición más
-franca de la escuela como taller social.</li>
-<li>Diógenes Laercio, <em>Vidas de los filósofos ilustres</em>, libro
-VI. Donde sobrevive la respuesta de Hiparquia.</li>
-</ul>
-</section>
-<section id="una-red-sin-dueño-2" class="level2">
-<h2>2. Una red sin dueño</h2>
-<ul>
-<li>Agamben, Giorgio, <em>¿Qué es un dispositivo?</em>, Buenos Aires,
-Adriana Hidalgo, 2014. Incluye la definición de Foucault y la genealogía
-de la palabra en un texto breve y accesible.</li>
-<li>Agamben, Giorgio, <em>El Reino y la Gloria</em>, Valencia,
-Pre-Textos, 2008. La <em>oikonomía</em> teológica como origen del
-gobierno sin fundamento. Exigente, pero decisivo.</li>
-<li>Biesta, Gert, <em>Beyond Learning</em>, Boulder, Paradigm, 2006, y
-<em>Good Education in an Age of Measurement</em>, Boulder, Paradigm,
-2010. La mejor crítica que conozco del lenguaje del aprendizaje.</li>
-</ul>
-</section>
-<section id="el-alma-prisión-del-cuerpo-2" class="level2">
-<h2>3. El alma, prisión del cuerpo</h2>
-<ul>
-<li>Foucault, Michel, <em>Vigilar y castigar</em>, Buenos Aires, Siglo
-XXI, 2002. La obra de la que sale casi todo lo que este libro dice sobre
-disciplina, examen y alma.</li>
-<li>Fraser, Nancy, «Foucault on Modern Power: Empirical Insights and
-Normative Confusions», <em>Praxis International</em>, 1 (3), 1981. La
-objeción más seria a Foucault, y la que obliga a decir desde dónde se
-critica.</li>
-<li>Pasolini, Pier Paolo, <em>Cartas luteranas</em>, Madrid, Trotta. La
-educación que dan las cosas, escrita para un muchacho inventado.</li>
-<li>La Boétie, Étienne de, <em>Discurso de la servidumbre
-voluntaria</em>. Breve, del siglo XVI y todavía incómodo.</li>
-</ul>
-</section>
-<section id="escultores-de-sí-mismos-2" class="level2">
-<h2>4. Escultores de sí mismos</h2>
-<ul>
-<li>Foucault, Michel, <em>Nacimiento de la biopolítica</em>, Buenos
-Aires, Fondo de Cultura Económica. El curso donde aparece el empresario
-de sí mismo.</li>
-<li>Wollstonecraft, Mary, <em>Vindicación de los derechos de la
-mujer</em>, ed. de Isabel Burdiel, Madrid, Cátedra, 2018. La respuesta a
-Rousseau y la defensa de una misma escuela para todos.</li>
-<li>Han, Byung-Chul, <em>La sociedad del cansancio</em>, Barcelona,
-Herder, 2012. Un diagnóstico brillante que conviene leer con
-cautela.</li>
-<li>Ball, Stephen J., «The teacher’s soul and the terrors of
-performativity», <em>Journal of Education Policy</em>, 18 (2), 2003,
-pp. 215-228. Lo que la cultura del rendimiento hace con quien
-enseña.</li>
-</ul>
-</section>
-<section id="ser-visto-2" class="level2">
-<h2>5. Ser visto</h2>
-<ul>
-<li>Foucault, Michel, <em>Seguridad, territorio, población</em>, México,
-Fondo de Cultura Económica, 2006. El poder pastoral y las
-contraconductas.</li>
-<li>Deleuze, Gilles, «Post-scriptum sobre las sociedades de control», en
-<em>Conversaciones</em>, Valencia, Pre-Textos, 1999. Cinco páginas que
-anticiparon la escuela de las plataformas.</li>
-<li>Zuboff, Shoshana, <em>La era del capitalismo de la vigilancia</em>,
-Barcelona, Paidós, 2020. El modelo de negocio de la predicción, que
-conviene no aplicar a ciegas a toda tecnología escolar.</li>
-<li>Arendt, Hannah, «La crisis en la educación», en <em>Entre el pasado
-y el futuro</em>, Barcelona, Península. Por qué lo que crece necesita un
-lugar oculto.</li>
-</ul>
-</section>
-<section id="la-memoria-fuera-de-nosotros-2" class="level2">
-<h2>6. La memoria fuera de nosotros</h2>
-<ul>
-<li>Derrida, Jacques, «La farmacia de Platón», en <em>La
-diseminación</em>, Madrid, Fundamentos, 1975. El <em>pharmakon</em> como
-clave de lectura de toda técnica.</li>
-<li>Stiegler, Bernard, <em>Lo que hace que la vida merezca ser vivida.
-De la farmacología</em>, trad. de Nadia Cortés, Avarigani, 2015. La
-memoria técnica y el riesgo de proletarizar el pensamiento.</li>
-<li>Simondon, Gilbert, <em>El modo de existencia de los objetos
-técnicos</em>, Buenos Aires, Prometeo, 2007. La propuesta de una cultura
-técnica que nos permita entender lo que usamos.</li>
-<li>Crawford, Kate, <em>Atlas de inteligencia artificial</em>, Buenos
-Aires, Fondo de Cultura Económica, 2022. La materialidad de la
-inteligencia artificial: minerales, energía y trabajo.</li>
-</ul>
-</section>
-<section id="lo-que-no-tiene-precio-2" class="level2">
-<h2>7. Lo que no tiene precio</h2>
-<ul>
-<li>Freire, Paulo, <em>Pedagogía del oprimido</em>. La educación
-bancaria, una metáfora que resultó profecía.</li>
-<li>Sandel, Michael J., <em>Lo que el dinero no puede comprar</em>,
-Barcelona, Debate, 2013. Por qué algunos bienes se estropean al
-venderse.</li>
-<li>Stallman, Richard M., <em>Software libre para una sociedad
-libre</em>, Madrid, Traficantes de Sueños, 2004. El argumento clásico a
-favor del software libre en la escuela.</li>
-<li>van Dijk, Jan, <em>The Digital Divide</em>, Cambridge, Polity, 2020.
-Las brechas que quedan cuando todos tienen aparato.</li>
-<li>Schüll, Natasha Dow, <em>Addiction by Design</em>, Princeton,
-Princeton University Press, 2012. Las tragaperras como laboratorio del
-diseño que retiene.</li>
-<li>Huizinga, Johan, <em>Homo ludens</em>, Madrid, Alianza. El juego
-como actividad libre, que no sirve para nada fuera de sí.</li>
-</ul>
-</section>
-<section id="tiempo-libre-2" class="level2">
-<h2>8. Tiempo libre</h2>
-<ul>
-<li>Masschelein, Jan, y Maarten Simons, <em>Defensa de la escuela. Una
-cuestión pública</em>, Buenos Aires, Miño y Dávila, 2014. La escuela
-como tiempo suspendido.</li>
-<li>Foucault, Michel, «¿Qué es la crítica?» (1978). El arte de no ser
-gobernado de tal modo.</li>
-<li>hooks, bell, <em>Enseñar a transgredir</em>, trad. de Marta Malo,
-Madrid, Capitán Swing, 2021. El aula como lugar de libertad y de
-cuidado.</li>
-<li>Garcés, Marina, <em>Un mundo común</em>, Barcelona, Bellaterra,
-2013, y <em>Escuela de aprendices</em>, Barcelona, Galaxia Gutenberg,
-2020. Pensar desde la coimplicación y defender una escuela de
-aprendices.</li>
-<li>Noddings, Nel, <em>The Challenge to Care in Schools</em>, Nueva
-York, Teachers College Press, 1992. Una escuela organizada en torno al
-cuidado.</li>
-</ul>
-</section>
-<section id="informes-leyes-y-documentos" class="level2">
-<h2>Informes, leyes y documentos</h2>
-<ul>
-<li>OCDE, <em>Students, Computers and Learning: Making the
-Connection</em>, París, OECD Publishing, 2015.</li>
-<li>OCDE, <em>PISA 2022 Results (Volume II): Learning During – and From
-– Disruption</em>, París, OECD Publishing, 2023.</li>
-<li>UNESCO, <em>Informe de seguimiento de la educación en el mundo 2023.
-La tecnología en la educación: ¿una herramienta en los términos de
-quién?</em>, París, UNESCO, 2023.</li>
-<li>UNESCO, <em>Guidance for Generative AI in Education and
-Research</em>, París, UNESCO, 2023.</li>
-<li>UNICEF, <em>Remote Learning Reachability</em>, Nueva York, agosto de
-2020.</li>
-<li>Arnold, Kimberly, y Matthew Pistilli, «Course Signals at Purdue:
-Using Learning Analytics to Increase Student Success», <em>LAK ’12</em>,
-ACM, 2012.</li>
-<li>Georgia State University, <em>Complete College Report</em> y
-materiales de GPS Advising.</li>
-<li>Liang, Weixin, et al., «GPT detectors are biased against non-native
-English writers», <em>Patterns</em>, 4 (7), 2023.</li>
-<li>Vanderbilt University, «Guidance on AI Detection and Why We’re
-Disabling Turnitin’s AI Detector», 16 de agosto de 2023.</li>
-<li>Bastani, Hamsa, et al., «Generative AI without guardrails can harm
-learning: Evidence from high school mathematics», <em>PNAS</em>, 122
-(26), 2025.</li>
-<li>Ofqual, <em>Awarding GCSE, AS, A level, advanced extension awards
-and extended project qualifications in summer 2020: interim report</em>,
-agosto de 2020.</li>
-<li>Datatilsynet (autoridad danesa de protección de datos), decisiones
-de 14 de julio de 2022 (Helsingør) y de 30 de enero de 2024 (cincuenta y
-tres municipios).</li>
-<li>Unión Europea: Reglamento (UE) 2016/679, General de Protección de
-Datos; Reglamento (UE) 2024/1689, de Inteligencia Artificial; Decisión
-de ejecución (UE) 2023/1795 (Marco de Privacidad de Datos UE-EE. UU.);
-Tribunal General, asunto T-553/23, <em>Latombe c. Comisión</em>, 3 de
-septiembre de 2025.</li>
-<li>Francia: respuesta ministerial a la pregunta escrita n.º 971 de
-Philippe Latombe, <em>Journal officiel</em>, 15 de noviembre de
-2022.</li>
-<li>Chile: Ley 20.845 de Inclusión Escolar (2015); Ley 20.903 del
-Sistema de Desarrollo Profesional Docente (2016); Ley 21.040 del Sistema
-de Educación Pública (2017); Ley 21.728 sobre la deuda histórica docente
-(2025).</li>
-<li>Valenzuela, Juan Pablo, Cristián Bellei y Danae de los Ríos,
-«Socioeconomic school segregation in a market-oriented educational
-system. The case of Chile», <em>Journal of Education Policy</em>, 29
-(2), 2014.</li>
-<li>Generalitat de Catalunya, Departament d’Educació, instrucciones
-sobre teléfonos móviles (enero de 2024) y Pla de Digitalització
-Responsable (junio de 2025).</li>
-<li>Google, <em>Google Workspace for Education Terms of Service</em> y
-aviso de privacidad para Education.</li>
-<li>Ayuntamiento de Barcelona y Xnet, materiales del proyecto de
-Digitalización Democrática de la Educación.</li>
+<li>Agamben, G. (2005). <em>Profanaciones</em> (E. Dobry, Trad.).
+Anagrama.</li>
+<li>Agamben, G. (2008). <em>El Reino y la Gloria: Por una genealogía
+teológica de la economía y del gobierno. Homo sacer II, 2</em> (A.
+Gimeno Cuspinera, Trad.). Pre-Textos. (Obra original publicada en
+2007)</li>
+<li>Agamben, G. (2014). <em>¿Qué es un dispositivo? Seguido de El amigo
+y de La Iglesia y el Reino</em> (M. Ruvituso, Trad.). Adriana Hidalgo.
+(Obra original publicada en 2006)</li>
+<li>Agustín de Hipona. (1947). Del maestro. En <em>Obras de San Agustín:
+Tomo III. Obras filosóficas</em>. Biblioteca de Autores Cristianos.
+(Obra original escrita ca. 389)</li>
+<li>Ajuntament de Barcelona. (s. f.). <em>Suite educativa DD:
+Digitalización democrática</em>.
+https://ajuntament.barcelona.cat/innovaciodemocratica/es/suite-educativa-dd-digitalizacion-democratica</li>
+<li>Arendt, H. (1996). <em>Entre el pasado y el futuro: Ocho ejercicios
+sobre la reflexión política</em> (A. Poljak, Trad.). Península. (Obra
+original publicada en 1961)</li>
+<li>Aristóteles. (1978). <em>Acerca del alma</em> (T. Calvo Martínez,
+Trad.). Gredos. (Obra original escrita ca. 350 a. e. c.)</li>
+<li>Aristóteles. (1985). <em>Ética nicomáquea. Ética eudemia</em> (J.
+Pallí Bonet, Trad.). Gredos. (Obra original escrita ca. 335-323 a. e.
+c.)</li>
+<li>Aristóteles. (1988). <em>Política</em> (M. García Valdés, Trad.).
+Gredos. (Obra original escrita ca. 335-323 a. e. c.)</li>
+<li>Arnold, K. E., y Pistilli, M. D. (2012). Course Signals at Purdue:
+Using learning analytics to increase student success. En S. Dawson, C.
+Haythornthwaite, S. Buckingham Shum, D. Gašević y R. Ferguson (Eds.),
+<em>LAK ’12: Proceedings of the 2nd International Conference on Learning
+Analytics and Knowledge</em> (pp. 267-270). Association for Computing
+Machinery. https://doi.org/10.1145/2330601.2330666</li>
+<li>Atasay, E. (2014). Neoliberal schooling and subjectivity: Learning
+to desire lack. <em>Subjectivity</em>, <em>7</em>(3), 288-307.
+https://doi.org/10.1057/sub.2014.12</li>
+<li>Ball, S. J. (2003). The teacher’s soul and the terrors of
+performativity. <em>Journal of Education Policy</em>, <em>18</em>(2),
+215-228. https://doi.org/10.1080/0268093022000043065</li>
+<li>Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., y Mariman,
+R. (2025). Generative AI without guardrails can harm learning: Evidence
+from high school mathematics. <em>Proceedings of the National Academy of
+Sciences</em>, <em>122</em>(26), Artículo e2422633122.
+https://doi.org/10.1073/pnas.2422633122</li>
+<li>Benjamin, R. (2019). <em>Race after technology: Abolitionist tools
+for the New Jim Code</em>. Polity.</li>
+<li>Benjamin, W. (2008). <em>El narrador</em> (P. Oyarzún Robles, Ed. y
+Trad.). Metales Pesados. (Obra original publicada en 1936)</li>
+<li>Biesta, G. (2006). <em>Beyond learning: Democratic education for a
+human future</em>. Paradigm.</li>
+<li>Biesta, G. (2010). <em>Good education in an age of measurement:
+Ethics, politics, democracy</em>. Paradigm.</li>
+<li>Biesta, G. (2015). What is education for? On good education, teacher
+judgement, and educational professionalism. <em>European Journal of
+Education</em>, <em>50</em>(1), 75-87.
+https://doi.org/10.1111/ejed.12109</li>
+<li>Black, P., y Wiliam, D. (1998). Inside the black box: Raising
+standards through classroom assessment. <em>Phi Delta Kappan</em>,
+<em>80</em>(2), 139-144, 146-148.</li>
+<li>Caulfield, M. (2013a, 26 de septiembre). <em>Why the Course Signals
+math does not add up</em>. Hapgood.
+https://hapgood.us/2013/09/26/why-the-course-signals-math-does-not-add-up/</li>
+<li>Caulfield, M. (2013b, 26 de septiembre). <em>A simple, less
+mathematical way to understand the Course Signals issue</em>. Hapgood.
+https://hapgood.us/2013/09/26/a-simple-less-mathematical-way-to-understand-the-course-signals-issue/</li>
+<li>Certeau, M. de (2000). <em>La invención de lo cotidiano: Vol. 1.
+Artes de hacer</em> (L. Giard, Ed.; A. Pescador, Trad.). Universidad
+Iberoamericana. (Obra original publicada en 1980)</li>
+<li>Cicerón. (2001). <em>Sobre los deberes</em> (J. Guillén Cabañero,
+Trad.). Alianza. (Obra original escrita en 44 a. e. c.)</li>
+<li>Coley, M. (2023, 16 de agosto). <em>Guidance on AI detection and why
+we’re disabling Turnitin’s AI detector</em>. Vanderbilt University,
+Brightspace Support.
+https://www.vanderbilt.edu/brightspace/2023/08/16/guidance-on-ai-detection-and-why-were-disabling-turnitins-ai-detector/</li>
+<li>Comenio, J. A. (1986). <em>Didáctica magna</em> (S. López Peces,
+Trad.). Akal. (Obra original publicada en 1657)</li>
+<li>Comunidad de Madrid. (s. f.). <em>EducaMadrid</em>.
+https://www.comunidad.madrid/servicios/educacion/educamadrid</li>
+<li>Constitución Española. (1978). <em>Boletín Oficial del Estado</em>,
+311, de 29 de diciembre de 1978.
+https://www.boe.es/eli/es/c/1978/12/27/(1)/con</li>
+<li>Crawford, K. (2022). <em>Atlas de inteligencia artificial: Poder,
+política y costos planetarios</em> (F. Díaz Klaassen, Trad.). Fondo de
+Cultura Económica. (Obra original publicada en 2021)</li>
+<li>Datatilsynet. (2022a, 14 de julio). <em>Datatilsynet nedlægger
+behandlingsforbud i Chromebook-sag</em> (expediente 2020-431-0061).
+https://www.datatilsynet.dk/afgoerelser/afgoerelser/2022/jul/datatilsynet-nedlaegger-behandlingsforbud-i-chromebook-sag-</li>
+<li>Datatilsynet. (2022b, 18 de agosto). <em>Datatilsynet fastholder
+forbud i Chromebook-sag</em>.
+https://www.datatilsynet.dk/afgoerelser/afgoerelser/2022/aug/datatilsynet-fastholder-forbud-i-chromebook-sag</li>
+<li>Datatilsynet. (2022c, 8 de septiembre). <em>Chromebooks:
+Datatilsynet suspenderer forbud og giver påbud om lovliggørelse</em>.
+https://www.datatilsynet.dk/presse-og-nyheder/nyhedsarkiv/2022/sep/chromebooks-datatilsynet-suspenderer-forbud-og-giver-paabud-om-lovliggoerelse-</li>
+<li>Datatilsynet. (2024a, 30 de enero). <em>Datatilsynet udsteder påbud
+til 53 kommuner i den landsdækkende Chromebook-sag</em>.
+https://www.lovguiden.dk/dokument/datatilsynet/30-01-2024-datatilsynet-udsteder-paabud-til-53-kommuner-i-den-landsdaekkende-chromebook-sag</li>
+<li>Datatilsynet. (2024b, julio). <em>Chromebook-sagen: Kommunerne
+efterlever Datatilsynets seneste påbud</em>.
+https://www.datatilsynet.dk/presse-og-nyheder/nyhedsarkiv/2024/jul/chromebook-sagen-kommunerne-efterlever-datatilsynets-seneste-paabud-</li>
+<li>Decisión de Ejecución (UE) 2023/1795 de la Comisión. (2023, 10 de
+julio). Relativa a la adecuación del nivel de protección de los datos
+personales en el marco de privacidad de datos UE-EE. UU. <em>Diario
+Oficial de la Unión Europea</em>, L 231.
+http://data.europa.eu/eli/dec_impl/2023/1795/oj</li>
+<li>Deleuze, G. (1990). ¿Qué es un dispositivo? En <em>Michel Foucault,
+filósofo</em> (A. L. Bixio, Trad.). Gedisa. (Obra original publicada en
+1989)</li>
+<li>Deleuze, G. (1995). <em>Conversaciones 1972-1990</em> (J. L. Pardo,
+Trad.). Pre-Textos. (Obra original publicada en 1990)</li>
+<li>Department for Education, y Ofqual. (2020, 17 de agosto). <em>GCSE
+and A level students to receive centre assessment grades</em> [Nota de
+prensa].
+https://www.gov.uk/government/news/gcse-and-a-level-students-to-receive-centre-assessment-grades</li>
+<li>Derrida, J. (1975). <em>La diseminación</em> (J. Martín Arancibia,
+Trad.). Fundamentos. (Obra original publicada en 1972)</li>
+<li>Descartes, R. (1999). <em>Correspondencia con Isabel de Bohemia y
+otras cartas</em> (M. T. Gallego Urrutia, Trad.). Alba. (Cartas
+originales escritas entre 1643 y 1649)</li>
+<li>Diario Estrategia. (2026). <em>Proyecto que ajusta la instalación de
+los SLEP pasa a la Sala</em>.
+https://www.diarioestrategia.cl/texto-diario/mostrar/6038115/proyecto-ajusta-instalacion-slep-pasa-sala</li>
+<li>Diógenes Laercio. (2007). <em>Vidas y opiniones de los filósofos
+ilustres</em> (C. García Gual, Trad.). Alianza. (Obra original escrita
+ca. siglo III)</li>
+<li>Durkheim, É. (1975). <em>Educación y sociología</em> (J. Muls de
+Liarás, Trad.). Península. (Obra original publicada en 1922)</li>
+<li>El Mostrador. (2026, 15 de julio). <em>Estudio del CIAE vincula Ley
+de Inclusión y SAE con histórica baja de segregación escolar</em>.
+https://www.elmostrador.cl/noticias/pais/2026/07/15/estudio-del-ciae-vincula-ley-de-inclusion-y-sae-con-historica-baja-de-segregacion-escolar/</li>
+<li>Feldstein, M. (2013, 3 de noviembre). Course Signals effectiveness
+data appears to be meaningless (and why you should care).
+<em>e-Literate</em>.
+https://eliterate.us/course-signals-effectiveness-data-appears-meaningless-care/</li>
+<li>Foucault, M. (1985). El juego de Michel Foucault. En J. Varela y F.
+Álvarez-Uría (Eds. y Trads.), <em>Saber y verdad</em>. La Piqueta. (Obra
+original publicada en 1977)</li>
+<li>Foucault, M. (1995). ¿Qué es la crítica? [Crítica y Aufklärung] (J.
+de la Higuera, Trad.). <em>Daimon. Revista de Filosofía</em>, (11),
+5-26. https://revistas.um.es/daimon/article/view/7261 (Obra original
+publicada en 1990)</li>
+<li>Foucault, M. (2002). <em>Vigilar y castigar: Nacimiento de la
+prisión</em> (A. Garzón del Camino, Trad.). Siglo XXI. (Obra original
+publicada en 1975)</li>
+<li>Foucault, M. (2006). <em>Seguridad, territorio, población: Curso en
+el Collège de France (1977-1978)</em> (M. Senellart, Ed.; H. Pons,
+Trad.). Fondo de Cultura Económica. (Obra original publicada en
+2004)</li>
+<li>Foucault, M. (2007). <em>Nacimiento de la biopolítica: Curso en el
+Collège de France (1978-1979)</em> (M. Senellart, Ed.; H. Pons, Trad.).
+Fondo de Cultura Económica. (Obra original publicada en 2004)</li>
+<li>Foucault, M. (2008). <em>Historia de la sexualidad 1: La voluntad de
+saber</em> (U. Guiñazú, Trad.; 2.ª ed. rev.). Siglo XXI. (Obra original
+publicada en 1976)</li>
+<li>Fraser, N. (1981). Foucault on modern power: Empirical insights and
+normative confusions. <em>Praxis International</em>, <em>1</em>(3),
+272-287.</li>
+<li>Freire, P. (2005). <em>Pedagogía del oprimido</em> (J. Mellado,
+Trad.). Siglo XXI. (Obra original publicada en 1970)</li>
+<li>Gadamer, H.-G. (1977). <em>Verdad y método: Fundamentos de una
+hermenéutica filosófica</em> (A. Agud Aparicio y R. de Agapito, Trads.).
+Sígueme. (Obra original publicada en 1960)</li>
+<li>Garcés, M. (2013). <em>Un mundo común</em>. Bellaterra.</li>
+<li>Garcés, M. (2020). <em>Escuela de aprendices</em>. Galaxia
+Gutenberg.</li>
+<li>Georgia State University. (s. f.). <em>GPS Advising</em>.
+https://success.gsu.edu/gps-advising/</li>
+<li>Georgia State University. (2017, 16 de marzo). <em>Georgia State
+national leader in driving student success through data</em>.
+https://news.gsu.edu/2017/03/16/georgia-state-student-success-data/</li>
+<li>Global Education Monitoring Report. (2025, 23 de enero). <em>To ban
+or not to ban? Monitoring countries’ regulations on smartphone use in
+school</em>. World Education Blog.
+https://world-education-blog.org/2025/01/23/to-ban-or-not-to-ban-monitoring-countries-regulations-on-smartphone-use-in-school/</li>
+<li>Google. (s. f.-a). <em>Google Workspace for Education terms of
+service</em>.
+https://workspace.google.com/terms/education_terms.html</li>
+<li>Google. (s. f.-b). <em>Google Workspace for Education privacy
+notice</em>.
+https://workspace.google.com/terms/education_privacy.html</li>
+<li>Habermas, J. (2008). <em>El discurso filosófico de la
+modernidad</em> (M. Jiménez Redondo, Trad.). Katz. (Obra original
+publicada en 1985)</li>
+<li>Han, B.-C. (2012). <em>La sociedad del cansancio</em> (A. Saratxaga
+Arregi, Trad.). Herder. (Obra original publicada en 2010)</li>
+<li>Heidegger, M. (1989). <em>Serenidad</em> (Y. Zimmermann, Trad.).
+Ediciones del Serbal. (Obra original publicada en 1959)</li>
+<li>Heidegger, M. (1994). <em>Conferencias y artículos</em> (E. Barjau,
+Trad.). Ediciones del Serbal. (Obra original publicada en 1954)</li>
+<li>hooks, b. (2021). <em>Enseñar a transgredir: La educación como
+práctica de la libertad</em> (M. Malo, Trad.). Capitán Swing. (Obra
+original publicada en 1994)</li>
+<li>Huizinga, J. (2012). <em>Homo ludens</em> (E. Imaz, Trad.; 3.ª ed.).
+Alianza. (Obra original publicada en 1938)</li>
+<li>Kant, I. (1923). Über Pädagogik (P. Natorp, Ed.). En Königlich
+Preußische Akademie der Wissenschaften (Ed.), <em>Kant’s gesammelte
+Schriften: Bd. 9</em> (pp. 437-499). Walter de Gruyter. (Obra original
+publicada en 1803)</li>
+<li>Kant, I. (1983). <em>Pedagogía</em> (M. Fernández Enguita, Ed.; L.
+Luzuriaga y J. L. Pascual, Trads.). Akal. (Obra original publicada en
+1803)</li>
+<li>Kant, I. (2004). <em>¿Qué es la Ilustración? Y otros escritos de
+ética, política y filosofía de la historia</em> (R. R. Aramayo, Ed. y
+Trad.). Alianza. (Obra original publicada en 1784)</li>
+<li>Kurzweil, M., y Wu, D. D. (2015, 23 de abril). <em>Building a
+pathway to student success at Georgia State University</em>. Ithaka S+R.
+https://doi.org/10.18665/sr.221053</li>
+<li>La Boétie, É. de (2008). <em>Discurso de la servidumbre
+voluntaria</em> (P. Lomba, Ed. y Trad.). Trotta. (Obra original
+publicada en 1576)</li>
+<li>Ley 20.370. (2009, 12 de septiembre). Establece la Ley General de
+Educación. <em>Diario Oficial de la República de Chile</em>.
+https://www.bcn.cl/leychile</li>
+<li>Ley 20.845. (2015, 8 de junio). De inclusión escolar que regula la
+admisión de los y las estudiantes, elimina el financiamiento compartido
+y prohíbe el lucro en establecimientos educacionales que reciben aportes
+del Estado. <em>Diario Oficial de la República de Chile</em>.
+https://www.bcn.cl/leychile</li>
+<li>Ley 20.903. (2016, 1 de abril). Crea el Sistema de Desarrollo
+Profesional Docente y modifica otras normas. <em>Diario Oficial de la
+República de Chile</em>. https://www.bcn.cl/leychile</li>
+<li>Ley 21.040. (2017, 24 de noviembre). Crea el Sistema de Educación
+Pública. <em>Diario Oficial de la República de Chile</em>.
+https://www.bcn.cl/leychile</li>
+<li>Ley 21.728. (2025). [Ley que da solución a la denominada deuda
+histórica docente, promulgada el 31 de enero de 2025]. <em>Diario
+Oficial de la República de Chile</em>. https://www.bcn.cl/leychile</li>
+<li>Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., y Zou, J. (2023). GPT
+detectors are biased against non-native English writers.
+<em>Patterns</em>, <em>4</em>(7), Artículo 100779.
+https://doi.org/10.1016/j.patter.2023.100779</li>
+<li>Masschelein, J., y Simons, M. (2014). <em>Defensa de la escuela: Una
+cuestión pública</em> (A. F. Rodríguez Esteban, Trad.). Miño y Dávila.
+(Obra original publicada en 2012)</li>
+<li>Meganoticias. (2025, 31 de enero). <em>¿Cómo será el proceso de
+pago?: Presidente Boric promulga ley que da solución a deuda histórica
+docente</em>.
+https://www.meganoticias.cl/nacional/474482-deuda-historica-ley-presidente-boric-proceso-de-pago-brk-31-01-2025.html</li>
+<li>Miao, F., y Holmes, W. (2023). <em>Guidance for generative AI in
+education and research</em>. UNESCO.
+https://doi.org/10.54675/EWZM9535</li>
+<li>Ministère de l’Éducation nationale. (2022, 15 de noviembre). Réponse
+à la question écrite n.º 971 de M. Philippe Latombe. <em>Journal
+officiel de la République française</em>, Assemblée nationale.
+https://questions.assemblee-nationale.fr/q16/16-971QE.htm</li>
+<li>Ministerio de Educación de Chile. (2026). <em>Más del 50 % del nuevo
+Sistema de Educación Pública instalado: 10 SLEP inician su
+administración educacional</em>.
+https://www.mineduc.cl/mas-del-50-del-nuevo-sistema-de-educacion-publica-instalado-10-slep-inician-su-administracion-educacional/</li>
+<li>Noddings, N. (2005). <em>The challenge to care in schools: An
+alternative approach to education</em> (2.ª ed.). Teachers College
+Press.</li>
+<li>NPR. (2016, 30 de octubre). <em>How one university used big data to
+boost graduation rates</em>.
+https://www.npr.org/sections/ed/2016/10/30/499200614/how-one-university-used-big-data-to-boost-graduation-rates</li>
+<li>OECD. (2015). <em>Students, computers and learning: Making the
+connection</em>. OECD Publishing.
+https://doi.org/10.1787/9789264239555-en</li>
+<li>OECD. (2023a). <em>PISA 2022 results (Volume II): Learning during –
+and from – disruption</em>. OECD Publishing.
+https://doi.org/10.1787/a97db61c-en</li>
+<li>OECD. (2023b, 5 de diciembre). <em>Decline in educational
+performance only partly attributable to the COVID-19 pandemic</em>
+[Comunicado de prensa].
+https://www.oecd.org/en/about/news/press-releases/2023/12/decline-in-educational-performance-only-partly-attributable-to-the-covid-19-pandemic.html</li>
+<li>OECD. (2024). <em>Students, digital devices and success</em>. OECD
+Publishing.
+https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/05/students-digital-devices-and-success_621829ff/9e4c0624-en.pdf</li>
+<li>Ofqual. (2020, 13 de agosto). <em>Awarding GCSE, AS, A level,
+advanced extension awards and extended project qualifications in summer
+2020: Interim report</em> (Ofqual/20/6656/1).
+https://www.gov.uk/government/publications/awarding-gcse-as-a-levels-in-summer-2020-interim-report</li>
+<li>Pasolini, P. P. (1997). <em>Cartas luteranas</em> (J. Torrell, A.
+Giménez Merino y J.-R. Capella, Trads.). Trotta. (Obra original
+publicada en 1976)</li>
+<li>Pico della Mirandola, G. (1988). <em>Discurso sobre la dignidad del
+hombre</em> (P. J. Quetglas, Trad.). PPU. (Obra original publicada en
+1496)</li>
+<li>Pizan, C. de (1995). <em>La ciudad de las damas</em> (M.-J.
+Lemarchand, Ed. y Trad.). Siruela. (Obra original escrita ca. 1405)</li>
+<li>Platón. (1981). <em>Diálogos I: Apología, Critón, Eutifrón, Ion,
+Lisis, Cármides, Hipias menor, Hipias mayor, Laques, Protágoras</em> (J.
+Calonge Ruiz, Trad.). Gredos. (Obra original escrita ca. 399-390 a. e.
+c.)</li>
+<li>Platón. (1986a). <em>Diálogos III: Fedón, Banquete, Fedro</em> (C.
+García Gual, M. Martínez Hernández y E. Lledó Íñigo, Trads.). Gredos.
+(Obra original escrita ca. 385-370 a. e. c.)</li>
+<li>Platón. (1988). <em>Diálogos V: Parménides, Teeteto, Sofista,
+Político</em> (Á. Vallejo Campos, Trad.). Gredos. (Obra original escrita
+ca. 369 a. e. c.)</li>
+<li>Purdue University. (2013, 25 de septiembre). Purdue software boosts
+graduation rate 21 percent. <em>Purdue Today</em>.
+https://www.purdue.edu/uns/PurdueToday/archive/2013/09-September/130925PurdueToday.htm</li>
+<li>Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo.
+(2016, 27 de abril). Reglamento general de protección de datos.
+<em>Diario Oficial de la Unión Europea</em>, L 119, 1-88.
+http://data.europa.eu/eli/reg/2016/679/oj</li>
+<li>Reglamento (UE) 2024/1689 del Parlamento Europeo y del Consejo.
+(2024, 13 de junio). Reglamento de Inteligencia Artificial. <em>Diario
+Oficial de la Unión Europea</em>, L, 2024/1689.
+http://data.europa.eu/eli/reg/2024/1689/oj</li>
+<li>Reglamento (UE) 2026/1744 del Parlamento Europeo y del Consejo.
+(2026, 8 de julio). Por el que se modifican, entre otros, el Reglamento
+(UE) 2024/1689 [Ómnibus Digital sobre IA]. <em>Diario Oficial de la
+Unión Europea</em>, L, 2026/1744.
+http://data.europa.eu/eli/reg/2026/1744/oj</li>
+<li>Rivera-Vargas, P., Jacovkis, J., Herrera-Urizar, G.,
+Calderón-Garrido, D., Miño-Puigcercós, R., Parcerisa, L., Folguera, S.,
+Moreno, A., Massot, B., Passerón, E., Alonso Cano, C., Gasull-Figueras,
+L., y Rilo-Borredà, C. (2023). <em>Plataformas digitales BigTech del
+sistema educativo catalán y derechos de la infancia: Amenazas y retos.
+Informe final del proyecto edDIT</em>. aFFaC y Esbrina, Universitat de
+Barcelona. http://diposit.ub.edu/dspace/handle/2445/192941</li>
+<li>Rossman, D., Alamuddin, R., Kurzweil, M., y Karon, J. (2021, 24 de
+junio). <em>MAAPS advising experiment: Evaluation findings after four
+years</em>. Ithaka S+R.
+https://sr.ithaka.org/wp-content/uploads/2021/06/SR_Report-MAAPS-Evaluation-Findings-After-Four-Years-062421.pdf</li>
+<li>Rossman, D., Kurzweil, M., y Lewis, B. (2023, 16 de mayo). <em>MAAPS
+advising experiment: Evaluation findings after six years</em>. Ithaka
+S+R.
+https://sr.ithaka.org/publications/maaps-advising-experiment-evaluation-6-years/</li>
+<li>Rousseau, J.-J. (2011). <em>Emilio, o De la educación</em> (M.
+Armiño, Trad.; 3.ª ed.). Alianza. (Obra original publicada en 1762)</li>
+<li>Sandel, M. J. (2013). <em>Lo que el dinero no puede comprar: Los
+límites morales del mercado</em> (J. Chamorro Mielke, Trad.). Debate.
+(Obra original publicada en 2012)</li>
+<li>Schüll, N. D. (2012). <em>Addiction by design: Machine gambling in
+Las Vegas</em>. Princeton University Press.</li>
+<li>Selwyn, N. (2022). <em>Education and technology: Key issues and
+debates</em> (3.ª ed.). Bloomsbury Academic.</li>
+<li>Simondon, G. (2007). <em>El modo de existencia de los objetos
+técnicos</em> (M. Martínez y P. Rodríguez, Trads.). Prometeo. (Obra
+original publicada en 1958)</li>
+<li>Spinoza, B. (2011). <em>Ética demostrada según el orden
+geométrico</em> (V. Peña, Trad.). Alianza. (Obra original publicada en
+1677)</li>
+<li>Spinoza, B. (2014). <em>Tratado teológico-político</em> (A.
+Domínguez, Trad.). Alianza. (Obra original publicada en 1670)</li>
+<li>Stallman, R. M. (2004). <em>Software libre para una sociedad
+libre</em> (J. Rowan, D. Sanz Paratcha y L. Trinidad, Trads.).
+Traficantes de Sueños. (Obra original publicada en 2002)</li>
+<li>Stiegler, B. (2002). <em>La técnica y el tiempo I: El pecado de
+Epimeteo</em> (B. Morales Bastos, Trad.). Argitaletxe Hiru. (Obra
+original publicada en 1994)</li>
+<li>Stiegler, B. (2015). <em>Lo que hace que la vida merezca ser vivida:
+De la farmacología</em> (N. Cortés, Trad.). Avarigani. (Obra original
+publicada en 2010)</li>
+<li>Straumsheim, C. (2013, 6 de noviembre). Researchers cast doubt about
+early warning systems’ effect on retention. <em>Inside Higher Ed</em>.
+https://www.insidehighered.com/news/2013/11/06/researchers-cast-doubt-about-early-warning-systems-effect-retention</li>
+<li>The Clinic. (2025, 26 de septiembre). <em>El 66 % de los deudores
+del CAE se encuentran morosos por más de tres cuotas impagas y en más de
+la mitad de los casos el Estado tuvo que hacerse cargo de la deuda</em>.
+https://www.theclinic.cl/2025/09/26/el-66-de-los-deudores-del-cae-se-encuentran-morosos-por-mas-de-tres-cuotas-impagas-y-en-mas-de-la-mitad-de-los-casos-el-estado-tuvo-que-hacerse-cargo-de-la-deuda/</li>
+<li>Tribunal de Justicia de la Unión Europea. (2015, 6 de octubre).
+<em>Sentencia Schrems</em> (C-362/14).
+https://curia.europa.eu/juris/liste.jsf?num=C-362/14</li>
+<li>Tribunal de Justicia de la Unión Europea. (2020, 16 de julio).
+<em>Sentencia Facebook Ireland y Schrems</em> (C-311/18).
+https://curia.europa.eu/juris/liste.jsf?num=C-311/18</li>
+<li>Tribunal de Justicia de la Unión Europea. (2025). <em>Recurso de
+casación interpuesto el 31 de octubre de 2025 por Philippe Latombe
+contra la sentencia del Tribunal General en el asunto T-553/23</em>
+(C-703/25 P). https://curia.europa.eu/juris/liste.jsf?num=C-703/25</li>
+<li>Tribunal General de la Unión Europea. (2025, 3 de septiembre).
+<em>Sentencia Latombe/Comisión</em> (T-553/23).
+https://curia.europa.eu/juris/liste.jsf?num=T-553/23</li>
+<li>UNESCO. (2023a). <em>Global education monitoring report 2023:
+Technology in education: A tool on whose terms?</em>
+https://doi.org/10.54676/UZQV8501</li>
+<li>UNESCO. (2023b, 7 de septiembre). <em>UNESCO: Governments must
+quickly regulate generative AI in schools</em> [Comunicado de prensa].
+https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools</li>
+<li>UNICEF. (2020a). <em>COVID-19: Are children able to continue
+learning during school closures? A global analysis of the potential
+reach of remote learning policies using data from 100 countries</em>.
+https://data.unicef.org/resources/remote-learning-reachability-factsheet/</li>
+<li>UNICEF. (2020b, 27 de agosto). <em>COVID-19: At least a third of the
+world’s schoolchildren unable to access remote learning during school
+closures, new report says</em> [Comunicado de prensa].
+https://www.unicef.org/press-releases/covid-19-least-third-worlds-schoolchildren-unable-access-remote-learning-during</li>
+<li>United Nations. (2020). <em>Policy brief: Education during COVID-19
+and beyond</em>.
+https://www.un.org/development/desa/dspd/wp-content/uploads/sites/22/2020/08/sg_policy_brief_covid-19_and_education_august_2020.pdf</li>
+<li>Universidad de Chile. (2026). <em>Expertos debaten baja de la
+segregación escolar y modificaciones al SAE</em>.
+https://uchile.cl/noticias/242425/expertos-debaten-baja-de-la-segregacion-escolar-y-modificaciones-al-sae</li>
+<li>USMOV. (s. f.). <em>Trabajo de campo: El uso de los móviles en los
+centros del Estado español. Centros de Barcelona</em> [Informe inédito
+del proyecto Jóvenes y móviles en el aula, PID2019-108041RB-I00].</li>
+<li>Valenzuela, J. P., Bellei, C., y de los Ríos, D. (2014).
+Socioeconomic school segregation in a market-oriented educational
+system. The case of Chile. <em>Journal of Education Policy</em>,
+<em>29</em>(2), 217-241.
+https://doi.org/10.1080/02680939.2013.806995</li>
+<li>van Dijk, J. (2020). <em>The digital divide</em>. Polity.</li>
+<li>VilaWeb. (2025). <em>Prohibició total: Educació elimina els mòbils,
+les tauletes i els rellotges intel·ligents de les aules de
+Catalunya</em>.
+https://www.vilaweb.cat/noticies/prohibicio-total-educacio-elimina-mobils-tauletes-rellotges/</li>
+<li>Williamson, B. (2017). <em>Big data in education: The digital future
+of learning, policy and practice</em>. SAGE.</li>
+<li>Wollstonecraft, M. (2018). <em>Vindicación de los derechos de la
+mujer</em> (I. Burdiel, Ed.; C. Martínez Gimeno, Trad.). Cátedra. (Obra
+original publicada en 1792)</li>
+<li>Zuboff, S. (2020). <em>La era del capitalismo de la vigilancia: La
+lucha por un futuro humano frente a las nuevas fronteras del poder</em>
+(A. Santos Mosquera, Trad.). Paidós. (Obra original publicada en
+2019)</li>
 </ul>
 <hr />
 <p>Algunas de las ideas de este libro las trabajé antes en una

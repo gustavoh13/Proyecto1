@@ -3,7 +3,7 @@
 *Escuela, datos y libertad en la era de las plataformas*
 Gustavo Herrera Urízar
 
-Ensayo de filosofía para público culto. Unas 25.000 palabras de texto principal, con notas finales, glosario y bibliografía comentada.
+Ensayo de filosofía para público culto. Unas 27.500 palabras de texto principal, con notas finales en APA 7, glosario y bibliografía (lecturas comentadas y referencias).
 
 > La escuela no ha sido sustituida por las plataformas: se ha vuelto uno de los lugares donde las plataformas aprenden a formar sujetos.
 
@@ -24,9 +24,9 @@ Cada capítulo toma un tema y lo sigue a través de las épocas, de Sócrates a 
 | `libro/08-tiempo-libre.md` | 8. Tiempo libre | Prohibición del móvil, crítica y contraconductas, Ofqual 2020, cuidado, *edutropía* en cuatro direcciones |
 | `libro/09-epilogo.md` | Epílogo. Conócete a ti mismo, otra vez | Idea-fuerza y cierre en Delfos |
 | `libro/10-glosario.md` | Glosario | Conceptos clave, incluidos *pedagogía de la huella* y *plataforma educativa* |
-| `libro/11-lecturas.md` | Bibliografía comentada | Obras decisivas por capítulo e informes y leyes citados |
+| `libro/11-lecturas.md` | Bibliografía | Lecturas comentadas por capítulo y lista de referencias en APA 7 |
 
-Material editorial en `editorial/`: sinopsis, contracubierta, índice comentado y subtítulos alternativos (`sinopsis.md`), y lo que queda pendiente para el autor (`notas-para-el-autor.md`).
+Material editorial en `editorial/`: sinopsis, contracubierta, índice comentado y subtítulos alternativos (`sinopsis.md`), lo que queda pendiente para el autor (`notas-para-el-autor.md`) y los informes de auditoría documental (`auditoria/`).
 
 ## Versiones compiladas
 
@@ -49,7 +49,11 @@ Requiere `pandoc` y `python3`; el PDF se genera con Chromium en modo headless. E
 - **Casos verificables.** Purdue y Georgia State, Helsingør, Vanderbilt y los detectores de IA, el experimento de Bastani, Ofqual 2020, Francia 2021-2022, el proyecto DD de Barcelona, la prohibición del móvil en Cataluña y las reformas chilenas. Donde encaja una escena propia del autor hay un comentario invisible `<!-- ESCENA DEL AUTOR -->`.
 - **Objeciones con peso.** La crítica de Fraser a Foucault; la evaluación formativa; los defensores de la analítica; las pruebas estandarizadas; y, con más espacio, las tres objeciones que pedía la revisión: no idealizar la escuela anterior (cap. 3), las comunidades que eligen herramientas digitales por accesibilidad, continuidad, colaboración o falta de recursos (cap. 6) y los límites del software libre (cap. 7).
 - **Generalizaciones matizadas.** «Cuando el producto es gratis…», la «providencia» algorítmica y el «precio cero» se aplican solo a los modelos a los que corresponden, distinguiendo plataformas públicas, académicas, cooperativas y corporativas.
-- **Notas.** Notas finales reducidas y agrupadas por capítulo, y bibliografía comentada en lugar de la lista alfabética.
+- **Notas.** Notas finales reducidas y agrupadas por capítulo, con citas autor-año en APA 7 y localizador; lista de referencias en APA 7 precedida de lecturas comentadas.
+- **Pedagogía de la huella, delimitada.** El capítulo 2 distingue tres operaciones (evidencia para conversar, registro para gestionar, registro como sustituto y criterio de valor); el concepto designa solo la tercera.
+- **Fines.** La tesis no es que la escuela carezca de fines, sino que la gestión los desplaza y los sustrae a la discusión (fines declarados, objetivos administrativos y orientaciones incorporadas).
+- **Desde dónde se habla.** El prólogo distingue el registro del profesor, el del investigador y el del ensayista; las escenas compuestas se presentan como tales. Las escenas situadas proceden del trabajo de campo del autor (entrevistas de 2025, proyectos edDIT y USMOV).
+- **Trazabilidad.** Cada cifra se ha auditado por fuente, localizador, tipo de fuente, población y alcance causal (`editorial/auditoria/`).
 - **Estilo.** Sin rayas largas para los incisos, sin conectores repetidos ni fórmulas en serie.
 
 ## Correcciones respecto de la tesis

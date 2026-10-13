@@ -70,26 +70,26 @@ Antes de seguir quiero salir al paso de una tentación. Al contraponer la escuel
 
 La comparación no sirve, por tanto, para echar de menos nada. Sirve para ver qué ha cambiado en la forma del poder. A la niña de Kant la obligaban a estar sentada. El alumno de hoy, en buena medida, se obliga solo. Lo empuja menos la mirada del maestro que su propio deseo de rendir, de mejorar, de no quedarse atrás. Si se me permite leer a La Boétie desde hoy, su servidumbre voluntaria encuentra aquí una forma especialmente acabada, una servidumbre que se vive como libertad, y para entenderla hay que seguir la historia de una idea que nació para liberar.
 
-[^c3-kant]: Immanuel Kant, *Pedagogía*, introducción (Ak. IX, 441-442). Las lecciones las publicó en 1803 su alumno Friedrich Theodor Rink, y los especialistas discuten hasta qué punto reproducen fielmente las palabras de Kant.
+[^c3-kant]: Kant (1803/1983), introducción; en alemán, Kant (1803/1923), pp. 441-442. Las lecciones las publicó en 1803 su alumno Friedrich Theodor Rink, y los especialistas discuten hasta qué punto reproducen fielmente las palabras de Kant.
 
-[^c3-fedon]: Platón, *Fedón*, 65a-d.
+[^c3-fedon]: Platón (ca. 385-370 a. e. c./1986a), *Fedón*, 65a-d.
 
-[^c3-deanima]: Aristóteles, *Acerca del alma*, II, 1, 412a27-b9, y II, 2, 414a19-22.
+[^c3-deanima]: Aristóteles (ca. 350 a. e. c./1978), II, 1, 412a27-b9, y II, 2, 414a19-22.
 
-[^c3-isabel]: Carta de Isabel de Bohemia a Descartes de 6/16 de mayo de 1643 y respuesta de Descartes de 28 de junio de 1643.
+[^c3-isabel]: Descartes (1643-1649/1999): carta de Isabel de Bohemia de 6/16 de mayo de 1643 y respuesta de Descartes de 28 de junio de 1643.
 
-[^c3-ejercicio]: Michel Foucault, *Vigilar y castigar*, tercera parte, cap. 1, «Los cuerpos dóciles», donde está también la fórmula sobre utilidad y obediencia.
+[^c3-ejercicio]: Foucault (1975/2002), tercera parte, cap. 1, donde está también la fórmula sobre utilidad y obediencia.
 
-[^c3-almaprision]: Ibíd., primera parte, cap. 1, «El cuerpo de los condenados».
+[^c3-almaprision]: Foucault (1975/2002), primera parte, cap. 1.
 
-[^c3-fraser]: Nancy Fraser, «Foucault on Modern Power: Empirical Insights and Normative Confusions», *Praxis International*, 1 (3), 1981, pp. 272-287. La crítica de Habermas está en *El discurso filosófico de la modernidad*, caps. IX y X.
+[^c3-fraser]: Fraser (1981). La crítica de Habermas, en Habermas (1985/2008), caps. IX y X.
 
-[^c3-pasolini]: Pier Paolo Pasolini, *Cartas luteranas*, sección «Gennariello».
+[^c3-pasolini]: Pasolini (1976/1997), sección «Gennariello».
 
-[^c3-spinozacuerpo]: Baruch Spinoza, *Ética*, III, proposición 2, escolio.
+[^c3-spinozacuerpo]: Spinoza (1677/2011), III, proposición 2, escolio.
 
-[^c3-spinozatp]: Baruch Spinoza, *Tratado teológico-político*, prefacio.
+[^c3-spinozatp]: Spinoza (1670/2014), prefacio.
 
-[^c3-boetie]: Étienne de La Boétie, *Discurso de la servidumbre voluntaria*.
+[^c3-boetie]: La Boétie (1576/2008).
 
-[^c3-biesta3]: Gert Biesta, «What is Education For?», *European Journal of Education*, 50 (1), 2015, pp. 75-87.
+[^c3-biesta3]: Biesta (2015).

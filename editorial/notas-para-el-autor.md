@@ -43,6 +43,10 @@ Siguen siendo bienvenidos **dos episodios tuyos como profesor**, con una decisi�
 - Cataluña: aplicación de la prohibición del móvil.
 - Barcelona: estado actual del proyecto DD.
 
+## Referencias pendientes de cotejo
+
+La lista completa está al final de `auditoria-referencias.md`, y el detalle en `editorial/auditoria/`. Lo principal: paginación de algunos capítulos, tres años de edición, dos traductores, el texto literal de la Constitución española y de la ley chilena (se parafrasean) y el número oficial del Reglamento (UE) 2026/1744 en EUR-Lex.
+
 ## Otras tareas
 
 - Ediciones de los clásicos: en la lista de referencias se proponen ediciones de referencia (Gredos y otras). Si usaste otras, cámbialas.

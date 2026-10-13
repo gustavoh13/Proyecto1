@@ -18,7 +18,7 @@ En el siglo XX Paulo Freire denunció la «educación bancaria», en la que el m
 
 Chile fue uno de los primeros laboratorios. A comienzos de los ochenta, en plena dictadura y con el asesoramiento de economistas formados en Chicago, se traspasó la educación pública a los municipios, se introdujo una subvención por alumno que seguía al estudiante allí donde fuera y se animó la creación de colegios privados subvencionados, muchos con fines de lucro. Poco después se creó una prueba nacional estandarizada cuyos resultados acabarían publicándose para que las familias pudieran «elegir». La educación se convirtió en mercado y las familias, en clientela.
 
-Las consecuencias llegaron con los años y tienen cifras. A comienzos de este siglo la segregación socioeconómica de las escuelas chilenas estaba entre las más altas de los países de la OCDE: los niños pobres y los niños ricos estudiaban, cada vez más, en colegios distintos.[^c7-segregacion] En 2005 se creó el Crédito con Aval del Estado para financiar los estudios superiores a través de los bancos, y una generación entera aprendió a entrar en la vida adulta con una deuda. Y los profesores pagaron su propia parte. Cuando la educación pasó a los municipios en 1981, los nuevos empleadores dejaron de aplicar a los docentes un reajuste salarial que les correspondía. Esa «deuda histórica» tardó más de cuarenta años en reconocerse: la ley que la repara se promulgó en enero de 2025, prevé pagos a unos cincuenta y siete mil docentes hasta 2031 y llega tarde para más de veinte mil que murieron esperándola.[^c7-deudahistorica] Pocas imágenes dicen mejor lo que significa precarizar una profesión.
+Las consecuencias llegaron con los años y tienen cifras. A comienzos de este siglo la segregación socioeconómica de las escuelas chilenas estaba entre las más altas de los países de la OCDE: los niños pobres y los niños ricos estudiaban, cada vez más, en colegios distintos.[^c7-segregacion] En 2005 se creó el Crédito con Aval del Estado para financiar los estudios superiores a través de los bancos, y una generación entera aprendió a entrar en la vida adulta con una deuda. Y los profesores pagaron su propia parte. Cuando la educación pasó a los municipios en 1981, los nuevos empleadores dejaron de aplicar a los docentes un reajuste salarial que les correspondía. Esa «deuda histórica» tardó más de cuarenta años en reconocerse: la ley que la repara se promulgó en enero de 2025, prevé pagos a unos cincuenta y siete mil docentes hasta 2031 y, según el Colegio de Profesores, llega tarde para más de veinte mil que murieron esperándola.[^c7-deudahistorica] Pocas imágenes dicen mejor lo que significa precarizar una profesión.
 
 Crecí dentro de ese experimento y sé que el neoliberalismo, además de un paquete de políticas, es una forma de vida. Uno aprende a pensar el futuro como una deuda, los estudios como una inversión y el fracaso como una culpa privada. De ahí salieron las movilizaciones de 2006 y de 2011.
 
@@ -28,7 +28,7 @@ La historia chilena tiene una segunda parte que hay que contar con cuidado, porq
 
 Las movilizaciones consiguieron leyes. La Ley de Inclusión Escolar de 2015 prohibió el lucro, la selección de alumnos y, de forma gradual, el copago en los colegios que reciben dinero público, y puso en marcha un sistema centralizado de admisión que hoy organiza el acceso a la gran mayoría de las plazas escolares del país. La ley de carrera docente de 2016 subió los salarios iniciales y aumentó el tiempo no lectivo de los profesores hasta el 35 % de su jornada, aunque ató la progresión profesional a evaluaciones que muchos docentes viven como una nueva forma de control. En 2017 otra ley empezó a sacar la educación pública de los municipios para trasladarla a setenta servicios locales dependientes de un sistema nacional.[^c7-chile]
 
-Los resultados son reales y parciales. Un estudio del Centro de Investigación Avanzada en Educación de la Universidad de Chile, publicado en 2026, estima que la segregación escolar cayó en torno a un 10 % entre 2015 y 2024 y alcanzó su nivel más bajo en dos décadas, y relaciona esa caída con el nuevo sistema de admisión; otros centros de estudio discuten que el efecto pueda atribuirse a la ley, y todos coinciden en que la segregación sigue siendo alta.[^c7-ciae] El traspaso a los servicios locales avanza más despacio de lo previsto: a mediados de 2026 funcionaban treinta y seis de los setenta, el calendario original, que debía terminar en 2025, ya se había alargado, y el Congreso discutía cuando terminé este libro una propuesta para extenderlo hasta 2040. La reforma del crédito universitario, que pretende sustituir el sistema bancario por un fondo público, seguía detenida en el Senado mientras más de medio millón de deudores tenían la garantía estatal ya ejecutada por impago.[^c7-cae]
+Los resultados son reales y parciales. Un estudio del Centro de Investigación Avanzada en Educación de la Universidad de Chile, presentado en julio de 2026 con datos de 2,7 millones de estudiantes, estima que la segregación escolar se redujo cerca de un 10 % desde 2015 hasta sus niveles más bajos en veinte años, y asocia esa reducción sobre todo a dos políticas: la subvención preferente para alumnos vulnerables, vigente desde 2008, y la Ley de Inclusión Escolar. Es una asociación estadística sólida, no una prueba concluyente. El efecto del sistema de admisión sigue en discusión, el Gobierno impulsa en 2026 una reforma de ese mismo sistema, y nadie discute que la segregación sigue siendo alta.[^c7-ciae] El traspaso a los servicios locales avanza más despacio de lo previsto. Desde enero de 2026 funcionan treinta y seis de los setenta servicios que preveía la ley, y el calendario se ha alargado varias veces; cuando terminé este libro, el Senado discutía un proyecto para reprogramar los servicios pendientes con un límite en 2030. La reforma del crédito universitario seguía sin resolverse: a mediados de 2025, dos de cada tres deudores estaban en mora y, en más de la mitad de los casos, el Estado había tenido que hacerse cargo de la deuda.[^c7-cae]
 
 Lo que una generación había aprendido a ver como natural resultó ser una decisión política que otra generación pudo empezar a deshacer. El mercado, sin embargo, deja sedimentos: hábitos, expectativas, instituciones y deudas que no se disuelven con una ley. Es una lección que no hay que olvidar cuando se habla de plataformas.
 
@@ -48,7 +48,7 @@ Michael Sandel ha mostrado que algunos bienes se estropean al convertirse en mer
 
 En el entorno digital la mercantilización toma formas nuevas y, a primera vista, paradójicas, porque muchas veces sale gratis. Grandes empresas tecnológicas ofrecen sus herramientas a las escuelas por nada o casi nada, y para una administración con poco presupuesto la oferta es difícil de rechazar.
 
-Se repite mucho que cuando el producto es gratis, el producto eres tú. La frase tiene su parte de verdad, aunque «gratis» no significa lo mismo en todas partes. Hay plataformas públicas, como EducaMadrid, que una administración mantiene con dinero de los impuestos, en servidores propios y con programas mayoritariamente libres; su coste es real, aunque la familia no lo vea, y no tiene otro negocio que el servicio. Hay infraestructuras académicas, como los campus virtuales que muchas universidades gestionan por su cuenta. Hay iniciativas cooperativas y comunitarias que ofrecen servicios a escuelas a cambio de cuotas modestas y con reglas que deciden sus miembros. Y hay suites corporativas gratuitas para la educación, como Google Workspace for Education o Microsoft 365, cuyo precio cero forma parte de una estrategia comercial.
+Se repite mucho que cuando el producto es gratis, el producto eres tú. La frase tiene su parte de verdad, aunque «gratis» no significa lo mismo en todas partes. Hay plataformas públicas, como EducaMadrid, que una administración mantiene con dinero de los impuestos, en servidores propios y con programas mayoritariamente libres;[^c7-educamadrid] su coste es real, aunque la familia no lo vea, y no tiene otro negocio que el servicio. Hay infraestructuras académicas, como los campus virtuales que muchas universidades gestionan por su cuenta. Hay iniciativas cooperativas y comunitarias que ofrecen servicios a escuelas a cambio de cuotas modestas y con reglas que deciden sus miembros. Y hay suites corporativas gratuitas para la educación, como Google Workspace for Education o Microsoft 365, cuyo precio cero forma parte de una estrategia comercial.
 
 Incluso entre estas últimas hay que ser preciso. Google distingue en sus contratos educativos entre servicios principales, como Gmail, Drive o Classroom, en los que se compromete a no mostrar publicidad ni usar los datos para fines publicitarios, y servicios adicionales, como YouTube o Maps, que se rigen por condiciones más generales.[^c7-google] La empresa no gana dinero vendiendo anuncios a los alumnos en Classroom. Lo que obtiene es otra cosa, y el caso danés del capítulo 5 ayuda a verlo: el uso de las huellas para mantener y mejorar sus productos y, sobre todo, el hábito. Millones de niños aprenden a trabajar y comunicarse dentro de un ecosistema concreto, y cuando terminen la escuela seguirán en él porque les parecerá lo natural. La escuela presta su autoridad y su público, como dije al principio, y la empresa cobra en costumbre.
 
@@ -98,38 +98,40 @@ Lo que no tiene precio, pensaban los romanos, es lo que hace libre a una persona
 
 Al mercado le cuesta soportar lo que no sirve para nada, y de todo lo que la escuela ha convertido en mercancía hay un bien que arrastra a los demás: el tiempo para pensar sin rendir, para equivocarse sin que quede registrado, para jugar sin puntos, para hablar sin un objetivo. Los griegos lo llamaban *skholé*.
 
-[^c7-officiis]: Cicerón, *Sobre los deberes*, I, 150-151.
+[^c7-officiis]: Cicerón (44 a. e. c./2001), I, 150-151.
 
 [^c7-prusia]: El *Generallandschulreglement* de Federico II (1763). Algunos territorios alemanes, como Württemberg o Zweibrücken, habían establecido antes formas de escolarización obligatoria.
 
-[^c7-freire]: Paulo Freire, *Pedagogía del oprimido*, cap. 2.
+[^c7-freire]: Freire (1970/2005), cap. 2.
 
-[^c7-segregacion]: Juan Pablo Valenzuela, Cristián Bellei y Danae de los Ríos, «Socioeconomic school segregation in a market-oriented educational system. The case of Chile», *Journal of Education Policy*, 29 (2), 2014.
+[^c7-segregacion]: Valenzuela et al. (2014).
 
-[^c7-deudahistorica]: Ley 21.728, promulgada el 31 de enero de 2025. Las cifras de beneficiarios y de docentes fallecidos proceden de la información oficial y de prensa de ese año.
+[^c7-deudahistorica]: Ley 21.728 (2025). Las cifras de beneficiarios y el calendario de pagos, en Meganoticias (2025); la cifra de docentes fallecidos es del Colegio de Profesores.
 
-[^c7-chile]: Ley 20.845 de Inclusión Escolar (2015), Ley 20.903 que crea el Sistema de Desarrollo Profesional Docente (2016) y Ley 21.040 que crea el Sistema de Educación Pública (2017).
+[^c7-chile]: Ley 20.845 (2015), Ley 20.903 (2016) y Ley 21.040 (2017).
 
-[^c7-ciae]: Centro de Investigación Avanzada en Educación (CIAE), Universidad de Chile, estudio sobre segregación escolar 2015-2024, julio de 2026. Para una lectura crítica del efecto del Sistema de Admisión Escolar, véanse los análisis de Libertad y Desarrollo (2025).
+[^c7-ciae]: El Mostrador (2026) y Universidad de Chile (2026). Cito la presentación pública del estudio; el informe completo no estaba disponible cuando cerré el libro.
 
-[^c7-cae]: Sobre el estado de los servicios locales de educación pública y del proyecto de ley que crea el Financiamiento para la Educación Superior (FES), aprobado por la Cámara de Diputados en agosto de 2025, uso información oficial y de prensa actualizada a octubre de 2026. Son cifras que cambian deprisa y conviene revisarlas.
+[^c7-cae]: Sobre los servicios locales, Ministerio de Educación de Chile (2026) y Diario Estrategia (2026); sobre el crédito, The Clinic (2025), con datos de la Tesorería de junio de 2025. Son cifras que cambian deprisa.
 
-[^c7-sandel]: Michael J. Sandel, *Lo que el dinero no puede comprar*, Barcelona, Debate, 2013, cap. 2.
+[^c7-educamadrid]: Comunidad de Madrid (s. f.).
 
-[^c7-google]: Google, *Google Workspace for Education Terms of Service* y *Google Workspace for Education Privacy Notice*, versiones vigentes en 2026.
+[^c7-sandel]: Sandel (2012/2013), cap. 2.
 
-[^c7-eddit]: Pablo Rivera-Vargas et al. (incluido el autor), *Plataformas digitales BigTech del sistema educativo catalán y derechos de la infancia: amenazas y retos. Informe final del proyecto edDIT*, aFFaC y Esbrina, Universitat de Barcelona, 2023. Las entrevistas de 2025 se describen en las notas del capítulo 4.
+[^c7-google]: Google (s. f.-a, s. f.-b), condiciones vigentes en 2026. Es la descripción contractual del propio proveedor.
 
-[^c7-francia]: Respuesta del Ministerio de Educación Nacional a la pregunta escrita n.º 971 del diputado Philippe Latombe, *Journal officiel*, 15 de noviembre de 2022.
+[^c7-eddit]: Rivera-Vargas et al. (2023), del que soy coautor. Las entrevistas de 2025 se describen en las notas del capítulo 4.
 
-[^c7-dd]: Ayuntamiento de Barcelona, «Suite educativa DD: Digitalización Democrática», web de Innovación Democrática, y materiales de Xnet sobre el proyecto (2020-2023).
+[^c7-francia]: Ministère de l'Éducation nationale (2022).
 
-[^c7-stallman]: Richard M. Stallman, *Software libre para una sociedad libre*, Madrid, Traficantes de Sueños, 2004.
+[^c7-dd]: Ajuntament de Barcelona (s. f.).
 
-[^c7-vandijk]: Jan van Dijk, *The Digital Divide*, Cambridge, Polity, 2020.
+[^c7-stallman]: Stallman (2002/2004).
 
-[^c7-benjamin]: Ruha Benjamin, *Race After Technology*, Cambridge, Polity, 2019.
+[^c7-vandijk]: van Dijk (2020).
 
-[^c7-schull]: Natasha Dow Schüll, *Addiction by Design: Machine Gambling in Las Vegas*, Princeton, Princeton University Press, 2012.
+[^c7-benjamin]: Benjamin (2019).
 
-[^c7-huizinga]: Johan Huizinga, *Homo ludens*, Madrid, Alianza, cap. 1.
+[^c7-schull]: Schüll (2012).
+
+[^c7-huizinga]: Huizinga (1938/2012), cap. 1.

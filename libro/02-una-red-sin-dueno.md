@@ -116,20 +116,20 @@ Los dispositivos se parecen a una versión secular de lo sagrado. Separan activi
 
 Queda pendiente algo que este capítulo ha dado por supuesto. Si el dispositivo produce a su sujeto, el sujeto tiene que ser algo que se puede producir. Durante siglos la filosofía pensó lo contrario, que había un alma anterior a cualquier relación, y la escuela, sin decirlo, tomó partido en esa discusión cada día.
 
-[^c2-entrevista]: «El juego de Michel Foucault» (1977), en *Dits et écrits*, III, n.º 206. Cito la versión castellana incluida en Giorgio Agamben, *¿Qué es un dispositivo?*, Buenos Aires, Adriana Hidalgo, 2014.
+[^c2-entrevista]: Foucault (1977/1985). Cito la traducción incluida en Agamben (2006/2014).
 
-[^c2-sinautor]: Michel Foucault, *Historia de la sexualidad, 1. La voluntad de saber*, cap. IV, «Método».
+[^c2-sinautor]: Foucault (1976/2008), cap. IV, «Método».
 
-[^c2-senal]: Michel Foucault, *Vigilar y castigar*, tercera parte, cap. 1, «Los cuerpos dóciles».
+[^c2-senal]: Foucault (1975/2002), tercera parte, cap. 1, «Los cuerpos dóciles».
 
-[^c2-agamben]: Agamben, *¿Qué es un dispositivo?*, op. cit.
+[^c2-agamben]: Agamben (2006/2014).
 
-[^c2-reino]: Giorgio Agamben, *El Reino y la Gloria*, Valencia, Pre-Textos, 2008, cap. 2.
+[^c2-reino]: Agamben (2007/2008), cap. 2.
 
-[^c2-fines]: Constitución española (1978), art. 27.2; Ley 20.370, General de Educación (Chile, 2009), art. 2.
+[^c2-fines]: Constitución Española (1978), art. 27.2; Ley 20.370 (2009), art. 2.
 
-[^c2-biesta]: Gert Biesta, *Beyond Learning*, Boulder, Paradigm, 2006, cap. 1.
+[^c2-biesta]: Biesta (2006), cap. 1, y Biesta (2010).
 
-[^c2-profanar]: Giorgio Agamben, «Elogio de la profanación», en *Profanaciones*, Barcelona, Anagrama, 2005.
+[^c2-profanar]: Agamben (2005), «Elogio de la profanación».
 
-[^c2-fuga]: Gilles Deleuze, «¿Qué es un dispositivo?», en *Michel Foucault, filósofo*, Barcelona, Gedisa, 1990.
+[^c2-fuga]: Deleuze (1989/1990).
