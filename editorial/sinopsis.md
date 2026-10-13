@@ -7,7 +7,7 @@ Ensayo · unas 27.500 palabras (texto principal) · notas finales, glosario y bi
 
 ## Idea-fuerza
 
-La escuela no ha sido sustituida por las plataformas: se ha vuelto uno de los lugares donde las plataformas aprenden a formar sujetos. Entre la nota, el algoritmo, el ranking, la notificación y la inteligencia artificial generativa se redefine qué significa aprender, ser libre, fracasar y conocerse a uno mismo.
+La escuela no ha sido sustituida por las plataformas: se ha vuelto uno de los lugares donde las plataformas aprenden a formar sujetos. Entre la nota, el algoritmo, el *ranking*, la notificación y la inteligencia artificial generativa se redefine qué significa aprender, ser libre, fracasar y conocerse a uno mismo.
 
 ## Texto de contracubierta
 

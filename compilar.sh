@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Compila el libro en PDF, EPUB, DOCX, HTML y un Markdown único.
-# Las notas al pie de cada capítulo se convierten en notas finales,
-# agrupadas por capítulo, antes del glosario y la bibliografía.
+# En PDF, EPUB y HTML las notas al pie de cada capítulo se convierten en
+# notas finales agrupadas por capítulo; el DOCX usa notas al pie de Word.
 set -euo pipefail
 cd "$(dirname "$0")"
 mkdir -p salida
@@ -23,8 +23,14 @@ pandoc libro/metadata.yaml "${FUENTES[@]}" \
   --toc --toc-depth=1 --split-level=1 \
   -o salida/el-alma-en-la-plataforma.epub
 
-pandoc libro/metadata.yaml "${FUENTES[@]}" \
-  --toc --toc-depth=1 \
+# DOCX para la editorial: notas al pie nativas de Word (numeración continua)
+# y plantilla de manuscrito (Times New Roman 12, interlineado 1,5, A4)
+python3 herramientas/plantilla_word.py estilos/plantilla.docx
+python3 herramientas/fuentes_docx.py "$TMP/docx" "${CAPITULOS[@]}" "${APENDICES[@]}"
+DOCX=("$TMP/docx/indice.md")
+for c in "${CAPITULOS[@]}" "${APENDICES[@]}"; do DOCX+=("$TMP/docx/$(basename "$c")"); done
+pandoc libro/metadata.yaml "${DOCX[@]}" \
+  --reference-doc=estilos/plantilla.docx \
   -o salida/el-alma-en-la-plataforma.docx
 
 pandoc libro/metadata.yaml "${FUENTES[@]}" \

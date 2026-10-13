@@ -30,7 +30,7 @@ Material editorial en `editorial/`: sinopsis, contracubierta, índice comentado 
 
 ## Versiones compiladas
 
-En `salida/`: PDF maquetado (A5), EPUB, DOCX (para revisar con control de cambios), HTML y un Markdown único.
+En `salida/`: PDF maquetado (A5), EPUB, HTML, un Markdown único y un DOCX de manuscrito para la editorial (A4, Times New Roman 12, interlineado 1,5, notas al pie nativas de Word con numeración continua, índice fijo y números de página). Si la editorial prefiere notas finales, Word las convierte de una vez desde Referencias > Notas al pie > Convertir.
 
 Para regenerarlas después de editar los capítulos:
 
@@ -38,7 +38,7 @@ Para regenerarlas después de editar los capítulos:
 ./compilar.sh
 ```
 
-Requiere `pandoc` y `python3`; el PDF se genera con Chromium en modo headless. El script `herramientas/notas_finales.py` convierte las notas al pie de cada capítulo en notas finales agrupadas por capítulo, con la numeración reiniciada en cada uno. En los archivos de `libro/` las notas siguen escritas como notas al pie (`[^c3-kant]`), que es lo más cómodo para editar.
+Requiere `pandoc` y `python3`; el PDF se genera con Chromium en modo headless. La plantilla de Word la genera `herramientas/plantilla_word.py`. El script `herramientas/notas_finales.py` convierte las notas al pie de cada capítulo en notas finales agrupadas por capítulo, con la numeración reiniciada en cada uno. En los archivos de `libro/` las notas siguen escritas como notas al pie (`[^c3-kant]`), que es lo más cómodo para editar.
 
 ## Decisiones editoriales
 

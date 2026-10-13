@@ -30,7 +30,7 @@ Basta mirar lo que registra una plataforma escolar corriente: la asistencia y la
 
 La diferencia con el examen de toda la vida es de naturaleza. El examen tenía fecha, y uno sabía cuándo lo estaban mirando. La huella digital se produce todo el tiempo, sin aviso, y en buena parte la produce el propio alumno con gestos que no vive como evaluación: abrir un documento, volver atrás en un vídeo, entregar a última hora. El panóptico necesitaba una torre. La pedagogía de la huella solo necesita que cada gesto pase por la plataforma.
 
-Esa mirada no se queda en la pantalla del alumno. Llega a las instituciones, y ahí se ve con más claridad cómo un registro cambia de función. Tres de las entrevistas que hice en 2025 no describen un mismo caso. Leídas juntas, permiten reconocer tres desplazamientos del registro.[^c5-entrevistas]
+Esa mirada no se queda en la pantalla del alumno. Llega a las instituciones, y ahí se ve con más claridad cómo un registro cambia de función. Tres de las personas que entrevisté en 2025 hablaban de casos distintos, y sus testimonios, leídos juntos, dibujan tres desplazamientos del registro.[^c5-entrevistas]
 
 En Chile, el libro de clases en papel, donde cada profesor anota la asistencia, los contenidos tratados y las calificaciones, ha ido dejando paso a sistemas digitales. Un profesor de un liceo público lo resumió así: «El ministerio nos impone plataformas para reemplazar los libros de clases físicos, pero en realidad seguimos rindiendo cuentas del mismo modo, solo que ahora de forma digital». El primer desplazamiento es ese: una decisión que parece técnica, un simple cambio de soporte, deja intacto el sentido del registro.
 
@@ -40,7 +40,7 @@ Lo que se enfrenta aquí son dos usos del mismo registro: en un sitio, un trámi
 
 El tercer desplazamiento afecta a los alumnos, y una filósofa chilena lo formuló con precisión: «transformar datos educativos extremadamente íntimos en etiquetas de riesgo personal cambia la perspectiva de la persona». Y añadió una comparación que no he podido olvidar. Muchas veces, dijo, se entiende que los datos de aprendizaje son «como tomarte la presión, pero no es así». La tensión arterial no cambia porque el paciente la mire. Un dato de aprendizaje convertido en etiqueta, en cambio, transforma cómo miran al alumno sus profesores y cómo se mira él.
 
-Son tres desplazamientos distintos, que no tienen por qué darse juntos. Lo que comparten es que el registro se aleja de una conversación sobre lo aprendido. No hace falta suponer mala fe en nadie. Basta con que el registro esté siempre disponible y la conversación no.
+Son tres desplazamientos distintos, que no tienen por qué darse juntos. Lo que comparten es que el registro se aleja de una conversación sobre lo aprendido. No hace falta suponer mala fe en nadie. Basta con que el registro esté siempre disponible, pese de inmediato en las decisiones, y la conversación llegue tarde, tenga poco tiempo o no modifique nada.
 
 <!-- ESCENA DEL AUTOR: si tienes una junta de evaluación real mediada por una tabla o un panel, este es su lugar. Qué se proyectaba, quién hablaba primero, qué dato decidió algo y qué quedó sin decir. Sin nombres de alumnos ni de centro. -->
 
@@ -80,7 +80,7 @@ La tecnología educativa presenta todo esto con una palabra seductora, personali
 
 Shoshana Zuboff llama capitalismo de la vigilancia al modelo de negocio de las empresas que convierten la experiencia humana en datos de comportamiento, usan una parte para mejorar sus servicios y aprovechan el resto, lo que ella llama excedente conductual, para fabricar predicciones que se venden a terceros.[^c5-zuboff] El diagnóstico no se puede aplicar sin más a cualquier plataforma. Las versiones educativas de las grandes suites, por ejemplo, prometen por contrato no usar los datos de los servicios principales para publicidad, y un aula virtual pública no vende nada a nadie. El riesgo, en esos casos, es más sutil que la publicidad: es el uso de las huellas para mejorar y extender productos propios, la creación de hábitos que atan a una marca y la acumulación de un conocimiento sobre la infancia sobre el que las instituciones públicas tienen muy poco control. El poder pastoral quería conocer las almas para salvarlas. Las plataformas comerciales las conocen para anticiparlas, y anticiparlas es ya empezar a orientarlas.
 
-La Unión Europea ha trazado aquí una línea significativa. Desde febrero de 2025 el Reglamento de Inteligencia Artificial prohíbe los sistemas que infieren las emociones de las personas en los centros educativos, salvo por razones médicas o de seguridad, y clasifica como de alto riesgo los que deciden admisiones, evalúan resultados de aprendizaje o vigilan a los alumnos durante los exámenes, aunque las obligaciones para estos últimos se han aplazado hasta diciembre de 2027.[^c5-aiact] El legislador europeo llegó a la misma conclusión que este capítulo por otro camino: hay una parte del alumno que la escuela no tiene derecho a leer.
+La Unión Europea ha empezado a trazar aquí una línea. Desde febrero de 2025 el Reglamento de Inteligencia Artificial prohíbe los sistemas que infieren las emociones de las personas en los centros educativos, salvo por razones médicas o de seguridad, y clasifica como de alto riesgo los que deciden admisiones, evalúan resultados de aprendizaje o vigilan a los alumnos durante los exámenes, aunque las obligaciones para estos últimos se han aplazado hasta diciembre de 2027.[^c5-aiact] Lo que esa línea sugiere es que hay inferencias y decisiones sobre los alumnos que la escuela no puede delegar ni tratar como si fueran datos educativos ordinarios.
 
 Hay otro efecto que toca el centro de la educación. Un sistema que se adapta a nuestras preferencias tiende a mostrarnos lo que ya nos gusta y lo que ya sabemos hacer. Educar consiste muchas veces en lo contrario, en poner a alguien delante de lo que no conoce y no esperaba. Si cada alumno vive una escuela ajustada a su perfil, puede debilitarse lo que tienen en común.
 
@@ -122,7 +122,7 @@ La técnica, de todos modos, hace algo más que mirar. Desde hace mucho es tambi
 
 [^c5-zuboff]: Zuboff (2019/2020), primera parte.
 
-[^c5-aiact]: Reglamento (UE) 2024/1689 (2024), art. 5.1.f y anexo III, punto 3. El aplazamiento procede del Reglamento (UE) 2026/1744 (2026), que modifica las fechas de aplicación del art. 113 del Reglamento de IA; se publicó en el *Diario Oficial* el 24 de julio de 2026 y entró en vigor el 27 de julio.
+[^c5-aiact]: Reglamento (UE) 2024/1689 (2024), art. 5.1.f y anexo III, punto 3. El aplazamiento procede del Reglamento (UE) 2026/1744 (2026), que modifica las fechas de aplicación del art. 113 del Reglamento de Inteligencia Artificial; se publicó en el *Diario Oficial* el 24 de julio de 2026 y entró en vigor el 27 de julio.
 
 [^c5-arendtcrisis]: Arendt (1961/1996), «La crisis en la educación».
 

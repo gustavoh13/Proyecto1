@@ -12,7 +12,7 @@ Foucault nunca dedicó un libro al dispositivo. Usó mucho la palabra desde medi
 
 Poco después añade que un dispositivo surge en un momento histórico para responder a una urgencia, que por eso tiene una función estratégica, y que siempre está metido en un juego de poder, ligado a los saberes que produce y que a su vez lo limitan.
 
-Con esas frases en la cabeza, entremos en un aula. Encontramos el currículo oficial, los libros de texto, las circulares de la administración. Encontramos también los pupitres orientados hacia el mismo punto, la tarima que levanta al que habla, el timbre que trocea la jornada en bloques de cincuenta minutos, el boletín de notas, el reglamento de convivencia. Y hoy, además, la pantalla interactiva, la plataforma, la cuenta corporativa de cada alumno. La tarima es solo madera. Lo que convierte todo eso en dispositivo es el hilo que va de la madera al currículo, del currículo al examen, del examen al boletín, del boletín a la familia, de la familia a la elección de centro y de ahí al ranking.
+Con esas frases en la cabeza, entremos en un aula. Encontramos el currículo oficial, los libros de texto, las circulares de la administración. Encontramos también los pupitres orientados hacia el mismo punto, la tarima que levanta al que habla, el timbre que trocea la jornada en bloques de cincuenta minutos, el boletín de notas, el reglamento de convivencia. Y hoy, además, la pantalla interactiva, la plataforma, la cuenta corporativa de cada alumno. La tarima es solo madera. Lo que convierte todo eso en dispositivo es el hilo que va de la madera al currículo, del currículo al examen, del examen al boletín, del boletín a la familia, de la familia a la elección de centro y de ahí al *ranking*.
 
 * * *
 
@@ -34,7 +34,7 @@ La notificación se parece de un modo inquietante a aquella Señal: el sonido, l
 
 * * *
 
-Ahora puedo precisar lo que en el prólogo llamé plataforma educativa. Es la forma que adopta el dispositivo escolar cuando buena parte de sus hilos pasan por un mismo programa. Lo que antes estaba repartido entre la tarima, el boletín, la agenda, el tablón de anuncios y el despacho del tutor se reúne en una sola interfaz, con un mismo inicio de sesión. Y esa interfaz hace, con mayor o menor intensidad según el caso, cuatro cosas.
+Una plataforma educativa es, vista así, la forma que adopta el dispositivo escolar cuando buena parte de sus hilos pasan por un mismo programa. Lo que antes estaba repartido entre la tarima, el boletín, la agenda, el tablón de anuncios y el despacho del tutor se reúne en una sola interfaz, con un mismo inicio de sesión. Y esa interfaz hace, con mayor o menor intensidad según el caso, cuatro cosas.
 
 Ordena el tiempo. Pone plazos con hora y minuto, envía recordatorios, marca en rojo lo que se ha retrasado. Su reloj ya no coincide con el del timbre. Una tarea que vence a las 23:59 extiende la jornada escolar hasta la medianoche, y un mensaje del profesor a las diez de la noche convierte el domingo en tiempo disponible para la escuela.
 
@@ -44,7 +44,7 @@ Organiza las relaciones. Por la plataforma pasan los mensajes entre el docente y
 
 Y convierte la actividad en medida. Porcentajes de entrega, minutos de conexión, puntuaciones, insignias, medias del grupo. Lo que se mide invita a comparar, y en muchos usos la comparación termina en clasificación sin que nadie la haya pedido.
 
-Tiempo, visibilidad, relación y medida no son inventos de la era digital. La escuela disciplinaria también ordenaba el tiempo con el timbre, hacía visibles a los alumnos con la disposición de los pupitres, organizaba las relaciones con la tarima y medía con el examen. Lo nuevo es que ahora las cuatro operaciones se hacen a la vez, de forma continua, en un mismo sitio y quedan registradas. Esa reunión crea las condiciones de lo que llamo pedagogía de la huella, un concepto que necesita límites porque se presta a una objeción evidente.
+Tiempo, visibilidad, relación y medida no son inventos de la era digital. La escuela disciplinaria también ordenaba el tiempo con el timbre, hacía visibles a los alumnos con la disposición de los pupitres, organizaba las relaciones con la tarima y medía con el examen. Lo nuevo es que ahora las cuatro operaciones se hacen a la vez, de forma continua, en un mismo sitio y quedan registradas. Esa reunión crea las condiciones de lo que llamo pedagogía de la huella.
 
 * * *
 
@@ -58,7 +58,7 @@ La segunda consiste en registrar actividad para gestionar o seguir un proceso. L
 
 La tercera es la que me interesa. Ocurre cuando el registro deja de acompañar al aprendizaje y empieza a sustituirlo, y cuando se convierte además en criterio para valorar a la persona. El porcentaje de entregas pasa a decir si alguien es responsable; los minutos de conexión, si se esfuerza; la falta de rastro, que no ha hecho nada. Lo que no puede registrarse no se niega, pero deja de pesar en las decisiones.
 
-No llamo pedagogía de la huella a cualquier enseñanza que pide trabajos o conserva registros. La expresión designa una inversión: el momento en que lo que puede registrarse empieza a determinar qué se reconoce como aprendizaje, y la producción de evidencias se convierte en una obligación permanente. Cuando escribo en este libro que lo que no deja rastro no cuenta, me refiero a esa tercera operación, que es una tendencia y no el retrato de todas las escuelas.
+No llamo pedagogía de la huella a cualquier enseñanza que pide trabajos o conserva registros. La expresión designa una inversión: el momento en que lo que puede registrarse empieza a determinar qué se reconoce como aprendizaje, y la producción de evidencias se convierte en una obligación permanente. Que lo que no deja rastro no cuente describe esa tercera operación: una tendencia, no el retrato de todas las escuelas.
 
 Las plataformas no inventaron la tercera operación. Los exámenes de alto impacto y las clasificaciones de centros ya empujaban en esa dirección. Lo que hacen las plataformas es abaratarla. El registro se produce solo, sin esfuerzo administrativo, a cada momento, y llega ya convertido en gráfico. Para pasar de la segunda operación a la tercera nadie tiene que tomar una decisión explícita; basta con que el dato esté disponible antes que la conversación. La misma plataforma puede servir también a la primera: una profesora que usa los comentarios de un documento compartido para discutir un borrador con su alumna hace lo que siempre hicieron los buenos maestros con un lápiz rojo. La frontera separa la huella que alguien lee de la huella que solo se cuenta, y atraviesa tanto el papel como la pantalla.
 

@@ -6,10 +6,11 @@ description: |
   ensayo sobre lo que la nota, el algoritmo, el ranking, la notificación
   y la inteligencia artificial hacen con nuestra manera de aprender, de
   ser libres, de fracasar y de conocernos.
-lang: es
+lang: es-ES
 rights: © Gustavo Herrera Urízar. Todos los derechos reservados.
 subtitle: Escuela, datos y libertad en la era de las plataformas
 title: El alma en la plataforma
+toc-title: Índice
 ---
 
 # Prólogo. Una inquietud {#prólogo.-una-inquietud .unnumbered}
@@ -47,9 +48,8 @@ que a mí me parece decisivo. La escuela sigue ahí, con sus edificios,
 sus horarios y su autoridad, y precisamente por eso resulta tan valiosa
 para las plataformas. Les ofrece algo que no podrían conseguir solas:
 millones de niños que tienen que estar allí, durante diez o doce años,
-haciendo lo que se les pide porque se lo pide la escuela. En ningún otro
-lugar se aprende un hábito con tanta constancia ni con tanta
-legitimidad.
+haciendo lo que se les pide porque se lo pide la escuela. Pocos lugares
+enseñan hábitos con tanta constancia, continuidad y legitimidad pública.
 
 Uso una palabra deliberadamente antigua, alma, sin suponer una sustancia
 separada del cuerpo. Me interesa porque durante siglos nombró aquello
@@ -231,18 +231,19 @@ compañía de otros. Aristóteles añadía que nadie nace con ella: uno se
 hace justo haciendo cosas justas, igual que se hace citarista tocando la
 cítara.[^3]
 
-En ningún currículo actual aparece la *areté*. Ocupan su sitio palabras
-como competencias, empleabilidad o éxito. Algo, sin embargo, ha
-resistido: la escuela sigue sirviendo a un proyecto de sociedad y sigue
-decidiendo qué tipo de persona merece la pena formar. Lo que ha cambiado
-es el lugar donde lo dice. Las leyes siguen declarando fines generosos,
-como el pleno desarrollo de la personalidad o la formación de ciudadanos
-críticos, pero lo que orienta la vida diaria de muchas escuelas aparece
-en otra parte, en los indicadores y en las clasificaciones, con el
-aspecto de una cuestión técnica. Platón y Aristóteles sabían que estaban
-formando almas. Nosotros creemos a menudo que solo desarrollamos
-competencias, y esa distancia entre lo que declaramos y lo que hacemos
-me inquieta más que cualquier ideal confesado, por discutible que fuera.
+La *areté* rara vez aparece con ese nombre en los currículos actuales.
+Ocupan su sitio palabras como competencias, empleabilidad o éxito. Algo,
+sin embargo, ha resistido: la escuela sigue sirviendo a un proyecto de
+sociedad y sigue decidiendo qué tipo de persona merece la pena formar.
+Lo que ha cambiado es el lugar donde lo dice. Las leyes siguen
+declarando fines generosos, como el pleno desarrollo de la personalidad
+o la formación de ciudadanos críticos, pero lo que orienta la vida
+diaria de muchas escuelas aparece en otra parte, en los indicadores y en
+las clasificaciones, con el aspecto de una cuestión técnica. Platón y
+Aristóteles sabían que estaban formando almas. Nosotros creemos a menudo
+que solo desarrollamos competencias, y esa distancia entre lo que
+declaramos y lo que hacemos me inquieta más que cualquier ideal
+confesado, por discutible que fuera.
 
 ------------------------------------------------------------------------
 
@@ -435,7 +436,7 @@ plataforma, la cuenta corporativa de cada alumno. La tarima es solo
 madera. Lo que convierte todo eso en dispositivo es el hilo que va de la
 madera al currículo, del currículo al examen, del examen al boletín, del
 boletín a la familia, de la familia a la elección de centro y de ahí al
-ranking.
+*ranking*.
 
 ------------------------------------------------------------------------
 
@@ -501,13 +502,12 @@ Acompaña al alumno a casa, a su cuarto, a la cama.
 
 ------------------------------------------------------------------------
 
-Ahora puedo precisar lo que en el prólogo llamé plataforma educativa. Es
-la forma que adopta el dispositivo escolar cuando buena parte de sus
-hilos pasan por un mismo programa. Lo que antes estaba repartido entre
-la tarima, el boletín, la agenda, el tablón de anuncios y el despacho
-del tutor se reúne en una sola interfaz, con un mismo inicio de sesión.
-Y esa interfaz hace, con mayor o menor intensidad según el caso, cuatro
-cosas.
+Una plataforma educativa es, vista así, la forma que adopta el
+dispositivo escolar cuando buena parte de sus hilos pasan por un mismo
+programa. Lo que antes estaba repartido entre la tarima, el boletín, la
+agenda, el tablón de anuncios y el despacho del tutor se reúne en una
+sola interfaz, con un mismo inicio de sesión. Y esa interfaz hace, con
+mayor o menor intensidad según el caso, cuatro cosas.
 
 Ordena el tiempo. Pone plazos con hora y minuto, envía recordatorios,
 marca en rojo lo que se ha retrasado. Su reloj ya no coincide con el del
@@ -543,8 +543,7 @@ timbre, hacía visibles a los alumnos con la disposición de los pupitres,
 organizaba las relaciones con la tarima y medía con el examen. Lo nuevo
 es que ahora las cuatro operaciones se hacen a la vez, de forma
 continua, en un mismo sitio y quedan registradas. Esa reunión crea las
-condiciones de lo que llamo pedagogía de la huella, un concepto que
-necesita límites porque se presta a una objeción evidente.
+condiciones de lo que llamo pedagogía de la huella.
 
 ------------------------------------------------------------------------
 
@@ -580,9 +579,8 @@ No llamo pedagogía de la huella a cualquier enseñanza que pide trabajos
 o conserva registros. La expresión designa una inversión: el momento en
 que lo que puede registrarse empieza a determinar qué se reconoce como
 aprendizaje, y la producción de evidencias se convierte en una
-obligación permanente. Cuando escribo en este libro que lo que no deja
-rastro no cuenta, me refiero a esa tercera operación, que es una
-tendencia y no el retrato de todas las escuelas.
+obligación permanente. Que lo que no deja rastro no cuente describe esa
+tercera operación: una tendencia, no el retrato de todas las escuelas.
 
 Las plataformas no inventaron la tercera operación. Los exámenes de alto
 impacto y las clasificaciones de centros ya empujaban en esa dirección.
@@ -1015,10 +1013,10 @@ lo que ningún dispositivo puede fabricar a voluntad. Una plataforma
 puede medir la calificación y empujar la socialización. Puede incluso
 registrar el gesto con que alguien se sale del guion: una respuesta
 inesperada queda anotada como cualquier otra. Lo que el registro no
-basta para captar es su significado educativo, que depende de una
-historia, de una relación y de un juicio que no estaban previstos entre
-los datos. Ningún registro sustituye el juicio de alguien que mire y
-responda de lo que ve.
+alcanza a captar es el significado educativo de ese gesto, que depende
+de una historia, de una relación y de un juicio que no estaban previstos
+entre los datos. Ningún registro sustituye el juicio de alguien que mire
+y responda de lo que ve.
 
 ------------------------------------------------------------------------
 
@@ -1183,17 +1181,14 @@ Más tarde, la apropiación, el momento en que el alumno hace suya esa
 interpretación, la discute o la ignora. Y al final, la relación consigo
 mismo, lo que el alumno termina creyendo que el número dice de él.
 
-La escena que sigue es una composición: no describe a ninguna alumna
-concreta, pero cada uno de sus elementos existe en plataformas y centros
-reales.
-
-Clara está en primero de bachillerato. Un martes por la noche abre la
-aplicación del instituto y ve que su media de matemáticas ha bajado de
-6,8 a 6,1. No ha hecho un examen peor: una tarea que no subió a tiempo
-figura con un cero automático. Hasta aquí, el registro ya incorpora una
-primera interpretación: no entregar equivale a obtener un cero. Algunas
-decisiones llegan incorporadas al registro, y por eso cuesta
-reconocerlas como decisiones.
+Clara no existe, aunque cada elemento de su historia existe en
+plataformas y centros reales. Está en primero de bachillerato. Un martes
+por la noche abre la aplicación del instituto y ve que su media de
+matemáticas ha bajado de 6,8 a 6,1. No ha hecho un examen peor: una
+tarea que no subió a tiempo figura con un cero automático. Hasta aquí,
+el registro ya incorpora una primera interpretación: no entregar
+equivale a obtener un cero. Algunas decisiones llegan incorporadas al
+registro, y por eso cuesta reconocerlas como decisiones.
 
 El miércoles, el panel de la tutora la pinta en ámbar. El color no lo ha
 elegido la tutora. Lo produce una regla configurada a principio de
@@ -1359,14 +1354,14 @@ mi investigación.[^41] Una docente universitaria que antes fue maestra
 me explicó que en Moodle puede ver si sus alumnos han entrado o no,
 «pero creo que hay un riesgo en valorar la calidad académica del
 profesorado por aspectos numéricos irrelevantes, como la cantidad de
-feedback dado». Un profesor de secundaria catalán lo dijo a propósito de
-la formación permanente: «Mucha gente hace formación solo para tener
+*feedback* dado». Un profesor de secundaria catalán lo dijo a propósito
+de la formación permanente: «Mucha gente hace formación solo para tener
 puntos... tengo certificaciones digitales que nunca me sirvieron en el
 aula». La primera describe un riesgo: que la actividad registrada en la
 plataforma acabe sirviendo para juzgar a quien enseña. El segundo, una
 práctica que ya ocurre: formarse por los puntos que da la formación más
 que por lo que enseña. Entre el riesgo y la práctica se ve la pendiente
-hacia la tercera operación del capítulo 2.
+que lleva del registro al juicio sobre la persona.
 
 ```{=html}
 <!-- ESCENA DEL AUTOR: lugar para una experiencia propia como docente con este tipo de rastros (subir evidencias, plazos de corrección en la plataforma, mensajes de familias fuera de horario). Solo si es real y se puede contar sin identificar a nadie. -->
@@ -1499,9 +1494,9 @@ gesto pase por la plataforma.
 
 Esa mirada no se queda en la pantalla del alumno. Llega a las
 instituciones, y ahí se ve con más claridad cómo un registro cambia de
-función. Tres de las entrevistas que hice en 2025 no describen un mismo
-caso. Leídas juntas, permiten reconocer tres desplazamientos del
-registro.[^47]
+función. Tres de las personas que entrevisté en 2025 hablaban de casos
+distintos, y sus testimonios, leídos juntos, dibujan tres
+desplazamientos del registro.[^47]
 
 En Chile, el libro de clases en papel, donde cada profesor anota la
 asistencia, los contenidos tratados y las calificaciones, ha ido dejando
@@ -1539,7 +1534,8 @@ cambio, transforma cómo miran al alumno sus profesores y cómo se mira
 Son tres desplazamientos distintos, que no tienen por qué darse juntos.
 Lo que comparten es que el registro se aleja de una conversación sobre
 lo aprendido. No hace falta suponer mala fe en nadie. Basta con que el
-registro esté siempre disponible y la conversación no.
+registro esté siempre disponible, pese de inmediato en las decisiones, y
+la conversación llegue tarde, tenga poco tiempo o no modifique nada.
 
 ```{=html}
 <!-- ESCENA DEL AUTOR: si tienes una junta de evaluación real mediada por una tabla o un panel, este es su lugar. Qué se proyectaba, quién hablaba primero, qué dato decidió algo y qué quedó sin decir. Sin nombres de alumnos ni de centro. -->
@@ -1706,16 +1702,16 @@ públicas tienen muy poco control. El poder pastoral quería conocer las
 almas para salvarlas. Las plataformas comerciales las conocen para
 anticiparlas, y anticiparlas es ya empezar a orientarlas.
 
-La Unión Europea ha trazado aquí una línea significativa. Desde febrero
-de 2025 el Reglamento de Inteligencia Artificial prohíbe los sistemas
-que infieren las emociones de las personas en los centros educativos,
-salvo por razones médicas o de seguridad, y clasifica como de alto
-riesgo los que deciden admisiones, evalúan resultados de aprendizaje o
-vigilan a los alumnos durante los exámenes, aunque las obligaciones para
-estos últimos se han aplazado hasta diciembre de 2027.[^55] El
-legislador europeo llegó a la misma conclusión que este capítulo por
-otro camino: hay una parte del alumno que la escuela no tiene derecho a
-leer.
+La Unión Europea ha empezado a trazar aquí una línea. Desde febrero de
+2025 el Reglamento de Inteligencia Artificial prohíbe los sistemas que
+infieren las emociones de las personas en los centros educativos, salvo
+por razones médicas o de seguridad, y clasifica como de alto riesgo los
+que deciden admisiones, evalúan resultados de aprendizaje o vigilan a
+los alumnos durante los exámenes, aunque las obligaciones para estos
+últimos se han aplazado hasta diciembre de 2027.[^55] Lo que esa línea
+sugiere es que hay inferencias y decisiones sobre los alumnos que la
+escuela no puede delegar ni tratar como si fueran datos educativos
+ordinarios.
 
 Hay otro efecto que toca el centro de la educación. Un sistema que se
 adapta a nuestras preferencias tiende a mostrarnos lo que ya nos gusta y
@@ -1967,11 +1963,11 @@ se parece menos a un depósito de memoria que a un interlocutor.
 Vista desde la pedagogía de la huella, esta técnica tiene algo de
 paradoja. Allí donde la escuela se había acostumbrado a reconocer el
 aprendizaje por sus rastros (la tarea entregada, el texto subido, el
-ejercicio resuelto), es decir, allí donde había llegado a la tercera
-operación que distinguí en el capítulo 2, la técnica nueva golpea en el
-centro. La inteligencia artificial generativa produce esos rastros sin
-que nadie haya recorrido el camino que se suponía detrás. La huella se
-ha independizado del paso. Una escuela que había aprendido a leer sobre
+ejercicio resuelto), es decir, allí donde el rastro había empezado a
+ocupar el lugar del aprendizaje, la técnica nueva golpea en el centro.
+La inteligencia artificial generativa produce esos rastros sin que nadie
+haya recorrido el camino que se suponía detrás. La huella se ha
+independizado del paso. Una escuela que había aprendido a leer sobre
 todo huellas se encuentra de pronto con que ya no puede fiarse de ellas.
 
 La primera reacción fue buscar otra máquina que vigilara a la máquina.
@@ -2203,7 +2199,7 @@ que no hay que olvidar cuando se habla de plataformas.
 Lo que en Chile fue brutal, en otros países llegó poco a poco. Un
 mercado educativo necesita una moneda común para comparar a los
 proveedores, y esa moneda son los resultados de las pruebas
-estandarizadas publicados en rankings. A escala internacional, el
+estandarizadas publicados en *rankings*. A escala internacional, el
 informe PISA de la OCDE ha alimentado la idea de que la calidad de un
 sistema educativo se puede reducir a una cifra y comparar entre países.
 Cada tres años sus resultados traen titulares alarmados, reformas con
@@ -2233,7 +2229,7 @@ personales. Es el mismo gesto del empresario de sí mismo, ahora a escala
 de institución.
 
 Ninguna asignatura enseña estas cosas. Se aprenden en la forma de la
-escuela, en sus rituales de evaluación, en sus rankings y en sus
+escuela, en sus rituales de evaluación, en sus *rankings* y en sus
 premios. Lo que ese currículo oculto transmite es un sentido común: que
 el éxito depende del esfuerzo de cada uno, que la competencia saca lo
 mejor de las personas, que lo que no se puede medir no existe, que
@@ -2425,12 +2421,11 @@ futuro con el pasado, y al hacerlo ayuda a que el futuro se le parezca.
 Queda una forma de mercantilización que se disfraza de lo contrario de
 un mercado, el juego. La gamificación lleva a la escuela puntos,
 niveles, insignias, clasificaciones y premios, y se presenta como una
-manera de motivar. No me refiero a cualquier práctica que use elementos
-de juego, que muchos maestros han usado siempre con sentido, sino a una
-gamificación que organiza la actividad mediante recompensas externas,
-clasificaciones y presión por completar: aplicaciones que dan y quitan
-puntos por la conducta o que convierten las preguntas de clase en
-concursos con ranking.
+manera de motivar. Me refiero aquí a las formas de gamificación que
+organizan la actividad mediante recompensas externas, clasificaciones,
+insignias y presión por completar, no a cualquier uso pedagógico del
+juego: aplicaciones que dan y quitan puntos por la conducta o que
+convierten las preguntas de clase en concursos con clasificación.
 
 La antropóloga Natasha Dow Schüll pasó años estudiando el diseño de las
 tragaperras de Las Vegas y mostró que estaban pensadas para meter al
@@ -2747,7 +2742,7 @@ da título a este capítulo, y la que las prohibiciones del móvil no
 alcanzan.
 
 La segunda es el cuidado. Significa devolver la evaluación a su función
-formativa, que la investigación respalda, y apartarla del ranking.
+formativa, que la investigación respalda, y apartarla del *ranking*.
 Significa también que ninguna decisión importante sobre un alumno, una
 nota, una alerta o una derivación, la tome un sistema automático sin que
 una persona la revise y pueda explicarla. El reglamento europeo de
@@ -2814,19 +2809,19 @@ alguien use el suyo como le haga falta.
 Un conflicto parecido aparece entre la privacidad y el cuidado. Si la
 escuela deja de registrar las ausencias en la plataforma para no
 acumular datos, puede perder la señal que le habría permitido llamar a
-tiempo a una familia. Para estos casos propongo un criterio que se
-deriva de las tres operaciones del capítulo 2: cada huella que la
-escuela recoja debería tener un lector, un propósito y una fecha de
-caducidad. Un lector, es decir, alguien concreto que la mira para hacer
-algo por ese alumno. Un propósito que se pueda explicar al alumno y a su
-familia. Y una fecha a partir de la cual el registro desaparece en lugar
-de acumularse en un perfil. Un registro que nadie lee no protege a
-nadie, y uno que no caduca acaba convirtiéndose en juicio. La fórmula no
-obliga a borrar sin más: un expediente académico o un registro que la
-ley manda conservar tienen sus propias razones y sus propios plazos. La
-conservación de cada registro debe justificarse por su finalidad, por
-las obligaciones que lo rigen y por el tiempo durante el que sigue
-siendo necesario. Lo que se rechaza es acumular por defecto.
+tiempo a una familia. Para estos casos propongo un criterio sencillo:
+cada huella que la escuela recoja debería tener un lector, un propósito
+y una fecha de caducidad. Un lector, es decir, alguien concreto que la
+mira para hacer algo por ese alumno. Un propósito que se pueda explicar
+al alumno y a su familia. Y una fecha a partir de la cual el registro
+desaparece en lugar de acumularse en un perfil. Un registro que nadie
+lee no protege a nadie, y uno que no caduca acaba convirtiéndose en
+juicio. La fórmula no obliga a borrar sin más: un expediente académico o
+un registro que la ley manda conservar tienen sus propias razones y sus
+propios plazos. La conservación de cada registro debe justificarse por
+su finalidad, por las obligaciones que lo rigen y por el tiempo durante
+el que sigue siendo necesario. Lo que se rechaza es acumular por
+defecto.
 
 El tercer conflicto es el más prosaico y quizá el más decisivo.
 Cualquier transición tecnológica, también hacia herramientas libres o
@@ -2901,7 +2896,7 @@ La escuela que presta a las plataformas su público, su autoridad y su
 tiempo recibe a cambio herramientas que de verdad ayudan, y también una
 manera de entender la educación que casi nadie ha elegido.
 
-Entre la nota, el algoritmo, el ranking, la notificación y la
+Entre la nota, el algoritmo, el *ranking*, la notificación y la
 inteligencia artificial generativa se están redefiniendo cuatro palabras
 que la escuela ha tenido largamente a su cargo. Aprender se parece cada
 vez más a dejar huella: entregar, completar, conectarse, producir el
@@ -3679,9 +3674,9 @@ libertad.
 
 [^55]: Reglamento (UE) 2024/1689 (2024), art. 5.1.f y anexo III, punto
     3. El aplazamiento procede del Reglamento (UE) 2026/1744 (2026), que
-    modifica las fechas de aplicación del art. 113 del Reglamento de IA;
-    se publicó en el *Diario Oficial* el 24 de julio de 2026 y entró en
-    vigor el 27 de julio.
+    modifica las fechas de aplicación del art. 113 del Reglamento de
+    Inteligencia Artificial; se publicó en el *Diario Oficial* el 24 de
+    julio de 2026 y entró en vigor el 27 de julio.
 
 [^56]: Arendt (1961/1996), «La crisis en la educación».
 
