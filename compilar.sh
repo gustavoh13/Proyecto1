@@ -36,6 +36,29 @@ pandoc libro/metadata.yaml "${DOCX[@]}" "${LECTURA[@]}" \
   --reference-doc=estilos/plantilla.docx \
   -o salida/el-alma-en-la-plataforma.docx
 
+# PDF del manuscrito (A4, el mismo formato que el DOCX), para los formularios
+# de envío que piden PDF. Se convierte una vez con LibreOffice para saber en
+# qué página empieza cada capítulo y otra con esos números en el índice.
+if command -v soffice >/dev/null; then
+  MS="$TMP/manuscrito"
+  mkdir -p "$MS"
+  cp salida/el-alma-en-la-plataforma.docx "$MS/el-alma-en-la-plataforma-manuscrito.docx"
+  soffice --headless --convert-to pdf --outdir "$MS" "$MS/el-alma-en-la-plataforma-manuscrito.docx" >/dev/null 2>&1
+  python3 herramientas/paginas_pdf.py "$MS/el-alma-en-la-plataforma-manuscrito.pdf" "${CAPITULOS[@]}" "${APENDICES[@]}" > "$MS/paginas.tsv"
+  python3 herramientas/fuentes_docx.py "$MS/fuentes" --paginas "$MS/paginas.tsv" "${CAPITULOS[@]}" "${APENDICES[@]}"
+  DOCX_MS=("$MS/fuentes/indice.md")
+  for c in "${CAPITULOS[@]}" "${APENDICES[@]}"; do DOCX_MS+=("$MS/fuentes/$(basename "$c")"); done
+  pandoc libro/metadata.yaml "${DOCX_MS[@]}" "${LECTURA[@]}" \
+    --reference-doc=estilos/plantilla.docx \
+    -o "$MS/el-alma-en-la-plataforma-manuscrito.docx"
+  soffice --headless --convert-to pdf --outdir "$MS" "$MS/el-alma-en-la-plataforma-manuscrito.docx" >/dev/null 2>&1
+  python3 herramientas/paginas_pdf.py "$MS/el-alma-en-la-plataforma-manuscrito.pdf" "${CAPITULOS[@]}" "${APENDICES[@]}" \
+    | cmp -s - "$MS/paginas.tsv" || echo "Aviso: la paginación del manuscrito cambió al añadir los números al índice."
+  cp "$MS/el-alma-en-la-plataforma-manuscrito.pdf" salida/
+else
+  echo "Aviso: sin LibreOffice (soffice) no se genera el PDF del manuscrito."
+fi
+
 # PDF. Chromium no parte palabras en español: si una línea justificada
 # queda estirada, se añade partición a la palabra que no cupo y se repite.
 pandoc libro/metadata.yaml "${FUENTES[@]}" "${LECTURA[@]}" \

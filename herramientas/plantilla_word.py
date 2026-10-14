@@ -80,7 +80,8 @@ def ajustar_estilos(xml):
             '<w:rPr><w:spacing w:val="60" /></w:rPr></w:style>'
             '<w:style w:type="paragraph" w:customStyle="1" w:styleId="Indice">'
             '<w:name w:val="Indice" /><w:basedOn w:val="Normal" /><w:qFormat />'
-            '<w:pPr><w:spacing w:before="0" w:after="120" /></w:pPr></w:style></w:styles>')
+            '<w:pPr><w:tabs><w:tab w:val="right" w:leader="dot" w:pos="8787" /></w:tabs>'
+            '<w:spacing w:before="0" w:after="120" /></w:pPr></w:style></w:styles>')
     # Enlaces sin color ni subrayado (índice y referencias internas)
     xml = estilo(xml, "Hyperlink", rpr='<w:color w:val="000000" />')
     # Cualquier fuente de tema que quede pasa a Times New Roman
