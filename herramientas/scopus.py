@@ -4,7 +4,8 @@ resultados en CSV.
 
 La consulta usa la sintaxis de la búsqueda avanzada de Scopus, por ejemplo
 TITLE-ABS-KEY("learning analytics") AND PUBYEAR > 2015. Los resultados se
-recorren con cursor, así que no hay tope de 5000 como con start/count.
+recorren con cursor si la clave lo admite (suscripción institucional); si no,
+por posición, con el tope de 5000 resultados que fija la API.
 
 La clave se lee de la variable SCOPUS_API_KEY y, si existe, el token
 institucional de SCOPUS_INSTTOKEN (hace falta para consultar desde fuera de
@@ -14,6 +15,7 @@ la cabecera X-ELS-APIKey sin prefijo; entonces la añade el proxy y la
 variable no hace falta. Solo usa la biblioteca estándar.
 
 Uso: scopus.py 'CONSULTA' [-o resultados.csv] [-n MAX] [--vista STANDARD|COMPLETE]
+                 [--orden=-citedby-count]
 """
 import argparse
 import csv
@@ -28,11 +30,17 @@ import urllib.request
 URL = "https://api.elsevier.com/content/search/scopus"
 # Máximo de registros por petición que admite cada vista
 POR_PAGINA = {"STANDARD": 200, "COMPLETE": 25}
+# Límites de una clave sin suscripción institucional, que no admite cursor
+SIN_CURSOR, TOPE_SIN_CURSOR = 25, 5000
 COLUMNAS = [
     "eid", "doi", "titulo", "autores", "primer_autor", "revista", "issn",
     "eissn", "volumen", "numero", "paginas", "fecha", "anio", "tipo",
     "citas", "acceso_abierto", "palabras_clave", "resumen", "enlace",
 ]
+
+
+class SinCursor(Exception):
+    """La clave no admite el cursor (solo con suscripción institucional)."""
 
 
 def pedir(params, cabeceras, intentos=4):
@@ -47,6 +55,9 @@ def pedir(params, cabeceras, intentos=4):
             if (e.code == 429 or e.code >= 500) and intento < intentos - 1:
                 time.sleep(2 ** (intento + 1))
                 continue
+            if e.code in (400, 403) and "cursor" in params and (
+                    "cursor" in cuerpo or "maximum number allowed" in cuerpo):
+                raise SinCursor
             motivo = {
                 401: "la clave no es válida o falta el token institucional",
                 403: "la clave no tiene permiso para esta vista o consulta"
@@ -97,6 +108,7 @@ def main():
     p.add_argument("-n", "--max", type=int, default=0, help="máximo de registros (0 = todos)")
     p.add_argument("--vista", choices=POR_PAGINA, default="STANDARD",
                    help="COMPLETE añade todos los autores, palabras clave y resumen")
+    p.add_argument("--orden", help="orden de Scopus, p. ej. --orden=-citedby-count (más citados) o --orden=-coverDate")
     args = p.parse_args()
 
     cabeceras = {"Accept": "application/json"}
@@ -106,34 +118,61 @@ def main():
     if os.environ.get("SCOPUS_INSTTOKEN"):
         cabeceras["X-ELS-Insttoken"] = os.environ["SCOPUS_INSTTOKEN"]
 
-    params = {"query": args.consulta, "view": args.vista, "cursor": "*",
-              "count": POR_PAGINA[args.vista]}
+    params = {"query": args.consulta, "view": args.vista, "cursor": "*"}
+    if args.orden:
+        params["sort"] = args.orden
+    pagina, tope = POR_PAGINA[args.vista], 0
     escritos = total = 0
+    # Con paginación por posición el orden puede variar entre peticiones y
+    # repetir algún registro
+    vistos = set()
     with open(args.salida, "w", newline="", encoding="utf-8-sig") as f:
         w = csv.DictWriter(f, fieldnames=COLUMNAS)
         w.writeheader()
         while True:
+            params["count"] = pagina
             if args.max:
-                params["count"] = min(POR_PAGINA[args.vista], args.max - escritos)
-            datos, cabeceras_resp = pedir(params, cabeceras)
+                params["count"] = min(pagina, args.max - escritos)
+            if tope:
+                params["count"] = min(params["count"], tope - escritos)
+            try:
+                datos, cabeceras_resp = pedir(params, cabeceras)
+            except SinCursor:
+                # Sin suscripción: paginación por posición, 25 por petición y
+                # como mucho los primeros 5000 resultados
+                del params["cursor"]
+                params["start"], pagina, tope = 0, SIN_CURSOR, TOPE_SIN_CURSOR
+                continue
             res = datos["search-results"]
             total = int(res.get("opensearch:totalResults", 0))
             entradas = [e for e in res.get("entry", []) if "error" not in e]
             if args.max:
                 entradas = entradas[: args.max - escritos]
             for e in entradas:
-                w.writerow(fila(e))
+                if e.get("eid") not in vistos:
+                    vistos.add(e.get("eid"))
+                    w.writerow(fila(e))
             escritos += len(entradas)
             print(f"\r{escritos} de {total} registros", end="", file=sys.stderr)
-            siguiente = res.get("cursor", {}).get("@next")
-            if not entradas or not siguiente or escritos >= total or (args.max and escritos >= args.max):
+            if not entradas or escritos >= total or (args.max and escritos >= args.max):
                 break
-            params["cursor"] = siguiente
+            if tope:
+                if escritos >= tope:
+                    break
+                params["start"] = escritos
+            else:
+                siguiente = res.get("cursor", {}).get("@next")
+                if not siguiente:
+                    break
+                params["cursor"] = siguiente
             # La API admite unas pocas peticiones por segundo por clave
             time.sleep(0.2)
     print(file=sys.stderr)
     restantes = cabeceras_resp.get("X-RateLimit-Remaining")
-    print(f"Guardados {escritos} registros en {args.salida}"
+    if tope and total > tope and escritos >= tope:
+        print(f"Aviso: sin suscripción institucional la API solo entrega los primeros"
+              f" {tope} de {total} resultados.", file=sys.stderr)
+    print(f"Guardados {len(vistos)} registros en {args.salida}"
           + (f" (quedan {restantes} peticiones de la cuota semanal)" if restantes else ""),
           file=sys.stderr)
 

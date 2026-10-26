@@ -54,7 +54,9 @@ Ajustes del PDF que hace `compilar.sh` por su cuenta:
 python3 herramientas/scopus.py 'TITLE-ABS-KEY("learning analytics") AND PUBYEAR > 2015' -o salida/scopus.csv
 ```
 
-La consulta usa la sintaxis de la búsqueda avanzada de Scopus. `-n 100` limita el número de registros y `--vista COMPLETE` añade todos los autores, las palabras clave y el resumen (requiere acceso institucional). Necesita la clave de [dev.elsevier.com](https://dev.elsevier.com) en la variable `SCOPUS_API_KEY` y, desde fuera de la red de la universidad, el token institucional en `SCOPUS_INSTTOKEN`. En Claude Code en la nube, la clave se guarda mejor como secreto de red del entorno (sitio `api.elsevier.com`, cabecera `X-ELS-APIKey` sin prefijo): el proxy la añade a cada petición y la variable no hace falta.
+La consulta usa la sintaxis de la búsqueda avanzada de Scopus. `-n 100` limita el número de registros, `--orden=-citedby-count` ordena por citas (los más citados primero) y `--vista COMPLETE` añade todos los autores, las palabras clave y el resumen (requiere acceso institucional). Necesita la clave de [dev.elsevier.com](https://dev.elsevier.com) en la variable `SCOPUS_API_KEY` y, desde fuera de la red de la universidad, el token institucional en `SCOPUS_INSTTOKEN`. En Claude Code en la nube, la clave se guarda mejor como secreto de red del entorno (sitio `api.elsevier.com`, cabecera `X-ELS-APIKey` sin prefijo): el proxy la añade a cada petición y la variable no hace falta. Sin suscripción institucional la API solo entrega los primeros 5000 resultados de cada búsqueda; para no perder los importantes conviene ordenar por citas o acotar la consulta (por ejemplo, por años).
+
+`salida/scopus-analitica-aprendizaje.csv` reúne los 4988 trabajos más citados sobre analítica del aprendizaje publicados desde 2015 (consulta `TITLE-ABS-KEY("learning analytics" OR "analítica del aprendizaje") AND PUBYEAR > 2014`, 12 400 resultados en total, descargados el 26 de octubre de 2026).
 
 ## Decisiones editoriales
 
