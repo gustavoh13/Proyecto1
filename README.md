@@ -46,6 +46,16 @@ Ajustes del PDF que hace `compilar.sh` por su cuenta:
 - **Enlaces internos.** `herramientas/destinos_pdf.py` corrige la posición de los destinos de las llamadas de nota y de sus retornos, que Chromium calcula sin los márgenes de la página.
 - **URL.** Las URL de la bibliografía son enlaces activos en todas las versiones. En el PDF, `estilos/cortes-url.lua` solo permite cortarlas después de una barra o antes de un punto o un guion, nunca en mitad de una palabra o de un número.
 
+## Búsquedas en Scopus
+
+`herramientas/scopus.py` consulta la Scopus Search API y guarda los resultados en CSV (DOI, título, autores, revista, año, citas, palabras clave, resumen y enlace), por ejemplo para localizar o actualizar referencias:
+
+```bash
+python3 herramientas/scopus.py 'TITLE-ABS-KEY("learning analytics") AND PUBYEAR > 2015' -o salida/scopus.csv
+```
+
+La consulta usa la sintaxis de la búsqueda avanzada de Scopus. `-n 100` limita el número de registros y `--vista COMPLETE` añade todos los autores, las palabras clave y el resumen (requiere acceso institucional). Necesita la clave de [dev.elsevier.com](https://dev.elsevier.com) en la variable `SCOPUS_API_KEY` y, desde fuera de la red de la universidad, el token institucional en `SCOPUS_INSTTOKEN`. En Claude Code en la nube, ambas se guardan como secretos del entorno y el dominio `api.elsevier.com` debe estar entre los permitidos.
+
 ## Decisiones editoriales
 
 - **Ensayo original.** El libro se presenta como ensayo, no como tesis adaptada. El origen doctoral se menciona en una sola línea al final de la bibliografía.
