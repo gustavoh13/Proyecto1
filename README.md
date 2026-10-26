@@ -54,7 +54,7 @@ Ajustes del PDF que hace `compilar.sh` por su cuenta:
 python3 herramientas/scopus.py 'TITLE-ABS-KEY("learning analytics") AND PUBYEAR > 2015' -o salida/scopus.csv
 ```
 
-La consulta usa la sintaxis de la búsqueda avanzada de Scopus. `-n 100` limita el número de registros y `--vista COMPLETE` añade todos los autores, las palabras clave y el resumen (requiere acceso institucional). Necesita la clave de [dev.elsevier.com](https://dev.elsevier.com) en la variable `SCOPUS_API_KEY` y, desde fuera de la red de la universidad, el token institucional en `SCOPUS_INSTTOKEN`. En Claude Code en la nube, ambas se guardan como secretos del entorno y el dominio `api.elsevier.com` debe estar entre los permitidos.
+La consulta usa la sintaxis de la búsqueda avanzada de Scopus. `-n 100` limita el número de registros y `--vista COMPLETE` añade todos los autores, las palabras clave y el resumen (requiere acceso institucional). Necesita la clave de [dev.elsevier.com](https://dev.elsevier.com) en la variable `SCOPUS_API_KEY` y, desde fuera de la red de la universidad, el token institucional en `SCOPUS_INSTTOKEN`. En Claude Code en la nube, la clave se guarda mejor como secreto de red del entorno (sitio `api.elsevier.com`, cabecera `X-ELS-APIKey` sin prefijo): el proxy la añade a cada petición y la variable no hace falta.
 
 ## Decisiones editoriales
 

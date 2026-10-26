@@ -8,8 +8,10 @@ recorren con cursor, así que no hay tope de 5000 como con start/count.
 
 La clave se lee de la variable SCOPUS_API_KEY y, si existe, el token
 institucional de SCOPUS_INSTTOKEN (hace falta para consultar desde fuera de
-la red de la universidad). El entorno debe permitir el dominio
-api.elsevier.com. Solo usa la biblioteca estándar.
+la red de la universidad). En Claude Code en la nube la clave puede
+guardarse como secreto de red del entorno, con el sitio api.elsevier.com y
+la cabecera X-ELS-APIKey sin prefijo; entonces la añade el proxy y la
+variable no hace falta. Solo usa la biblioteca estándar.
 
 Uso: scopus.py 'CONSULTA' [-o resultados.csv] [-n MAX] [--vista STANDARD|COMPLETE]
 """
@@ -97,10 +99,10 @@ def main():
                    help="COMPLETE añade todos los autores, palabras clave y resumen")
     args = p.parse_args()
 
-    clave = os.environ.get("SCOPUS_API_KEY")
-    if not clave:
-        sys.exit("Falta la variable SCOPUS_API_KEY.")
-    cabeceras = {"X-ELS-APIKey": clave, "Accept": "application/json"}
+    cabeceras = {"Accept": "application/json"}
+    # Sin la variable, la clave la añade el proxy (secreto de red del entorno)
+    if os.environ.get("SCOPUS_API_KEY"):
+        cabeceras["X-ELS-APIKey"] = os.environ["SCOPUS_API_KEY"]
     if os.environ.get("SCOPUS_INSTTOKEN"):
         cabeceras["X-ELS-Insttoken"] = os.environ["SCOPUS_INSTTOKEN"]
 
