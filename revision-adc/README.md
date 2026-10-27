@@ -18,7 +18,10 @@ Education* (documento: https://claude.ai/artifact/2E3hPj2qi66jQdQ7CPinNj, pesta�
 | `04-metadatos.csv` | Primer autor, número de autores, volumen, número y páginas |
 | `07-analisis.json` | Resultados: tendencias por periodo, crecimiento, coocurrencias, países, robustez |
 | `figuras-y-tablas.xlsx` | Figuras como gráficos editables, tablas con fórmulas y suplementos S1 y S2 |
-| `manuscrito-review-of-education.docx` | Exportación en Word del manuscrito |
+| `manuscrito-review-of-education.docx` | Manuscrito anónimo para la revisión por pares (A4, doble espacio) |
+| `pagina-de-titulo.docx` | Página de título con autor y declaraciones; se sube como «File not for review» |
+| `carta-al-editor.docx` | Carta de presentación |
+| `formato_docx.py` | Pone un .docx exportado en A4, a doble espacio, con número de página y sin datos del autor en las propiedades |
 | `09-crossref.json` | Autores, revista, volumen, número y páginas de cada estudio según Crossref (con doi.org y OpenAlex de respaldo) |
 | `autores_crossref.py` | Genera `09-crossref.json` (necesita acceso a api.crossref.org) |
 | `referencias.py` | Referencias APA 7 de los estudios citados y su forma en el texto |
@@ -34,6 +37,8 @@ python3 revision-adc/analisis.py revision-adc/03-codificacion.csv revision-adc/0
 python3 revision-adc/autores_crossref.py revision-adc/04-metadatos.csv revision-adc/09-crossref.json
 python3 revision-adc/libro_excel.py revision-adc revision-adc/figuras-y-tablas.xlsx
 python3 revision-adc/referencias.py revision-adc/04-metadatos.csv revision-adc/09-crossref.json citados.txt > referencias.md
+# Tras exportar cada pestaña del documento a Word:
+python3 revision-adc/formato_docx.py manuscrito.docx revision-adc/manuscrito-review-of-education.docx "Título"
 ```
 
 Los scripts usan la Scopus Search API y la Abstract Retrieval API, con la clave guardada
