@@ -423,20 +423,27 @@ def main():
     cabecera(ws, 3, ["Practice", "What learners do", "Examples"])
     practicas = [
         ("Critical analysis of digital texts", "Read memes, videos, teaching materials or AI outputs for representation, bias and ideology",
-         "Elmore & Coleman (2019); Ho & Hafner (2025); Van Poucke (2024); Weninger & Xu (2026)"),
+         "Political memes in middle school (Elmore & Coleman, 2019); diversity in airline safety videos (Ho & Hafner, 2025); "
+         "ideological bias in chatbot answers (Van Poucke, 2024); visual bias in AI images (Weninger & Xu, 2026)"),
         ("Media production and multimodal composing", "Produce video, stories, posters or multimodal texts that answer dominant narratives",
-         "Watt (2019); Noble & Gachago (2022); de los Ríos (2018); Damaskinidis et al. (2026)"),
+         "Video production in elementary teacher education (Watt, 2019); digital storytelling on District Six (Noble & Gachago, 2022); "
+         "bilingual Vine making (de los Ríos, 2018); translating a poster campaign on cyberbullying (Damaskinidis et al., 2026)"),
         ("Virtual exchange", "Work with peers in other countries and examine how platforms shape the exchange",
-         "Hauck (2019); Bilki et al. (2023); Satar et al. (2023); Ketzer-Nöltge & Markovic (2022)"),
+         "Hauck (2019); ELT teacher education (Bilki et al., 2023); multimodal representation (Satar et al., 2023); "
+         "a COIL project with pre-service teachers (Ketzer-Nöltge & Markovic, 2022)"),
         ("Designed modules and inquiry", "Follow a sequence built around a game, a controversy or a writing task",
-         "Jiménez Torras et al. (2026); Gerlach et al. (2025); Spracklin & Espina (2025); Lo et al. (2024)"),
+         "Co-designing a module with indie video games (Jiménez Torras et al., 2026); conspiracy theories in English classes "
+         "(Gerlach et al., 2025); reflection notebooks on misinformation (Spracklin & Espina, 2025); rating classroom tools for "
+         "privacy with future primary teachers (Castañeda & Villar-Onrubia, 2023)"),
         ("Civic action", "Use digital tools to investigate and act on local or political issues",
-         "Kwon & de los Ríos (2019); Abowitz & Mamlok (2020); Fernández (2026); Tanksley (2024)")]
+         "Civic interrogation in a ninth-grade ethnic studies course (Kwon & de los Ríos, 2019); student activism after the "
+         "Parkland shooting (Abowitz & Mamlok, 2020); university digital activism in Peru (Fernández, 2026); Black students "
+         "resisting AI-mediated racism (Tanksley, 2024)")]
     for i, fila in enumerate(practicas, 4):
         for j, v in enumerate(fila, 1):
             c = ws.cell(i, j, v)
             c.font, c.alignment = NORMAL, Alignment(wrap_text=True, vertical="top")
-    anchos(ws, [34, 60, 60])
+    anchos(ws, [34, 50, 90])
 
     ws = wb.create_sheet("Table7_Most_cited")
     titulo(ws, "Table 7. The ten most cited studies", "Scopus citations on 27 October 2026. Per year: citations / (2026 − year + 1).")
