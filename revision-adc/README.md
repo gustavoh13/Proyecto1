@@ -21,6 +21,11 @@ Education* (documento: https://claude.ai/artifact/2E3hPj2qi66jQdQ7CPinNj, pesta�
 | `manuscrito-review-of-education.docx` | Manuscrito anónimo para la revisión por pares (A4, doble espacio) |
 | `pagina-de-titulo.docx` | Página de título con autor y declaraciones; se sube como «File not for review» |
 | `carta-al-editor.docx` | Carta de presentación |
+| `10-muestra-validacion.csv` | Sorteo de los 40 estudios en acceso abierto que se leen a texto completo, con las reservas |
+| `11-textos-abiertos.csv` | Enlaces de acceso abierto (OpenAlex) y estado de la descarga de cada texto |
+| `manual-de-codificacion.md` | Definiciones y reglas para codificar los textos completos |
+| `validacion/para-codificar/` | Planillas de los dos codificadores y manual en Word; los PDF descargados van en `textos/`, que no se sube |
+| `muestra_validacion.py`, `textos_abiertos.py`, `planillas_validacion.py`, `validacion.py` | Sorteo, descarga, planillas y análisis de la validación |
 | `formato_docx.py` | Pone un .docx exportado en A4, a doble espacio, con número de página y sin datos del autor en las propiedades |
 | `09-crossref.json` | Autores, revista, volumen, número y páginas de cada estudio según Crossref (con doi.org y OpenAlex de respaldo) |
 | `autores_crossref.py` | Genera `09-crossref.json` (necesita acceso a api.crossref.org) |
@@ -37,6 +42,13 @@ python3 revision-adc/analisis.py revision-adc/03-codificacion.csv revision-adc/0
 python3 revision-adc/autores_crossref.py revision-adc/04-metadatos.csv revision-adc/09-crossref.json
 python3 revision-adc/libro_excel.py revision-adc revision-adc/figuras-y-tablas.xlsx
 python3 revision-adc/referencias.py revision-adc/04-metadatos.csv revision-adc/09-crossref.json citados.txt > referencias.md
+# Validación a texto completo:
+python3 revision-adc/muestra_validacion.py revision-adc/03-codificacion.csv revision-adc/10-muestra-validacion.csv 40
+python3 revision-adc/textos_abiertos.py revision-adc/10-muestra-validacion.csv revision-adc/11-textos-abiertos.csv revision-adc/validacion/descargas
+python3 revision-adc/planillas_validacion.py revision-adc/10-muestra-validacion.csv revision-adc/11-textos-abiertos.csv revision-adc/validacion/descargas revision-adc/validacion/para-codificar
+# Cuando estén las dos planillas y, después, el consenso:
+python3 revision-adc/validacion.py acuerdo A.xlsx B.xlsx consenso.xlsx revision-adc/12-acuerdo.json
+python3 revision-adc/validacion.py contraste consenso.xlsx revision-adc/03-codificacion.csv revision-adc/13-validacion.json
 # Tras exportar cada pestaña del documento a Word:
 python3 revision-adc/formato_docx.py manuscrito.docx revision-adc/manuscrito-review-of-education.docx "Título"
 ```
@@ -46,6 +58,14 @@ como secreto de red del entorno (cabecera `X-ELS-APIKey`). `analisis.py` necesit
 y `scipy`.
 
 ## Alcance y límites
+
+Un informe externo (27 de octubre de 2026) pidió una revisión mayor: sin leer los textos
+completos, los códigos de los diccionarios muestran vocabulario, no categorías. Por eso se
+leen a texto completo 40 estudios sorteados entre los 77 en acceso abierto (no hay acceso
+institucional a los demás), estratificados por periodo en proporción al corpus. Dos personas
+codifican por separado con el manual; `validacion.py` calcula el acuerdo y, con el consenso,
+la precisión y la sensibilidad de cada diccionario. Hasta entonces, el manuscrito lleva
+marcadas como pendientes las secciones de validación.
 
 La clave de Scopus disponible no devuelve el texto de los resúmenes, pero sí permite
 buscar dentro de ellos. La fase 1 cribó por título y revista; la fase 2, independiente

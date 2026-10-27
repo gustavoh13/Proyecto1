@@ -1,1 +1,6 @@
 __pycache__/
+
+# Textos completos descargados para la validación (no se redistribuyen)
+revision-adc/validacion/descargas/
+revision-adc/validacion/para-codificar/textos/
+revision-adc/validacion/*.zip
