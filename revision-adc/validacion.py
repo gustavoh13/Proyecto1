@@ -96,9 +96,22 @@ def contraste(ruta_consenso, ruta_cod, ruta_json):
     if pendientes:
         sys.exit(f"Faltan decisiones de elegibilidad en {len(pendientes)} estudios: resuelve el consenso antes.")
     elegibles = [e for e in leidos if c[e]["Elegible"] == "Sí"]
+
+    def periodo(e):
+        return next(p for p, i, f in PERIODOS if i <= int(cod[e]["anio"]) <= f)
+
+    def reparto(clave):
+        # Elegibles sobre leídos, según un atributo de 03-codificacion.csv o el periodo
+        grupos = Counter(clave(e) for e in leidos)
+        return {g: {"leidos": n, "elegibles": sum(clave(e) == g for e in elegibles)} for g, n in grupos.items()}
+
     resultado = {
         "leidos": len(leidos), "elegibles": len(elegibles),
         "no_elegibles": dict(Counter(c[e]["Motivo de exclusión"] for e in leidos if c[e]["Elegible"] == "No")),
+        "elegibilidad_por_periodo": reparto(periodo),
+        "elegibilidad_por_via_de_inclusion": reparto(lambda e: cod[e]["regla"]),
+        "elegibilidad_por_idioma": reparto(lambda e: cod[e]["idioma"]),
+        "elegibilidad_si_el_diccionario_marca_ia": reparto(lambda e: cod[e]["tema: Inteligencia artificial"] == "1"),
         "categorias": {}, "evaluacion": dict(Counter(c[e]["Evaluación de resultados"] or "(vacío)" for e in elegibles)),
     }
     for v in CATEGORIAS:
@@ -111,8 +124,6 @@ def contraste(ruta_consenso, ruta_cod, ruta_json):
             "precision": round(vp / (vp + fp), 3) if vp + fp else None,
             "sensibilidad": round(vp / (vp + fn), 3) if vp + fn else None, "acuerdo": po, "kappa": k}
     # Tres dimensiones: frecuencia, combinaciones y reparto por periodo
-    def periodo(e):
-        return next(p for p, i, f in PERIODOS if i <= int(cod[e]["anio"]) <= f)
     sigla = {"dimensión: Textual": "Txt", "dimensión: Infraestructural": "Inf", "dimensión: Transformadora": "Tra"}
     marca = {e: "+".join(sigla[d] for d in DIMENSIONES if c[e][d] == "Sí") or "ninguna" for e in elegibles}
     resultado["dimensiones"] = {

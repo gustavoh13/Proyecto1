@@ -4,6 +4,54 @@
  "no_elegibles": {
   "La ADC no es el foco": 13
  },
+ "elegibilidad_por_periodo": {
+  "2016–2019": {
+   "leidos": 2,
+   "elegibles": 2
+  },
+  "2020–2023": {
+   "leidos": 10,
+   "elegibles": 7
+  },
+  "2024–2026": {
+   "leidos": 26,
+   "elegibles": 16
+  }
+ },
+ "elegibilidad_por_via_de_inclusion": {
+  "acuerdo entre fases": {
+   "leidos": 25,
+   "elegibles": 20
+  },
+  "discrepancia: el título nombra la ADC": {
+   "leidos": 3,
+   "elegibles": 2
+  },
+  "discrepancia: título digital y dos indicios de resumen o palabras clave": {
+   "leidos": 10,
+   "elegibles": 3
+  }
+ },
+ "elegibilidad_por_idioma": {
+  "inglés": {
+   "leidos": 28,
+   "elegibles": 17
+  },
+  "español": {
+   "leidos": 10,
+   "elegibles": 8
+  }
+ },
+ "elegibilidad_si_el_diccionario_marca_ia": {
+  "false": {
+   "leidos": 27,
+   "elegibles": 20
+  },
+  "true": {
+   "leidos": 11,
+   "elegibles": 5
+  }
+ },
  "categorias": {
   "nivel: Infantil y primaria": {
    "texto_completo": 1,

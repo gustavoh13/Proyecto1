@@ -25,6 +25,7 @@ PROPIOS = {
 }
 SIGLAS = {"ai", "cdl", "efl", "elt", "coil", "l2", "esl", "eap", "dei", "cdls", "ict", "he", "k-12", "3wai", "ii"}
 REVISTAS = {
+    "Reading and Writing South Africa": "Reading & Writing",
     "Journal of Adolescent and Adult Literacy": "Journal of Adolescent & Adult Literacy",
     "Recall": "ReCALL", "Triplec": "tripleC: Communication, Capitalism & Critique",
     "International Journal of Tesol Studies": "International Journal of TESOL Studies",
@@ -70,11 +71,19 @@ AUTORES_MANUALES = {
     # Primera página del artículo (Interciencia no deposita los autores en Crossref)
     ("Salazar-Jiménez", "2026"): [("Salazar-Jiménez", "Rodrigo"), ("Orellana Fonseca", "Cristian"),
                                   ("Fuentes Rodríguez", "Carolina")],
+    # Primera página del artículo (Crossref quita el guion del primer apellido y altera el orden)
+    ("López-Fernández", "2026"): [("López-Fernández", "Raúl"), ("George-Reyes", "Carlos Enrique"),
+                                  ("Sorhegui-Ortega", "Rafael Antonio"), ("Sandoval-Benítez", "Luisa Fernanda")],
 }
 # Artículos escritos en español: APA 7 da el título original y, entre corchetes, su
 # traducción. El original sale de Crossref (Interciencia, de la primera página) y la
 # traducción, del título en inglés que publica la revista.
 TITULOS_ORIGINALES = {
+    ("López-Fernández", "2026"): (
+        "Inteligencia artificial en la universidad: Análisis de género de las perspectivas éticas y regulatorias"
+        " en cinco escenarios internacionales",
+        "Artificial intelligence in higher education: A gender analysis of ethical and regulatory perspectives"
+        " across five international scenarios"),
     ("Escribano-Muñoz", "2024"): (
         "Confluencias entre pensamiento crítico y redes sociales en el ámbito educativo. Mapeo de experiencias"
         " y detección de desafíos a través de una revisión sistemática",
@@ -103,7 +112,7 @@ TITULOS_ORIGINALES = {
 }
 # Páginas que Scopus registra mal. Comunicar 70: Crossref y OpenAlex dan 47–57, y
 # los artículos vecinos (C70-2022-03 y -05) ocupan las páginas 35–45 y 59–68.
-PAGINAS = {("Mesquita-Romero", "2022"): "47-57"}
+PAGINAS = {("Mesquita-Romero", "2022"): "47-57", ("López-Fernández", "2026"): "1"}
 # Correcciones de apellidos que Scopus separa mal
 APELLIDOS = {("Urízar", "2026"): ("Herrera Urízar", "G."), ("G. Stewart", "2021"): ("Stewart", "O. G.")}
 
@@ -224,6 +233,9 @@ def main():
         if not pag and vol and cr.get("paginas"):
             pag = cr["paginas"]
         pag = pag.replace("-", "–")
+        if pag and "–" not in pag:
+            # Sin intervalo de páginas es un número de artículo (APA 7: «Article»)
+            pag = f"Article {pag}"
         if pag:
             loc += f", {pag}"
         doi = f" https://doi.org/{m['doi']}" if m["doi"] else ""
