@@ -19,6 +19,7 @@ Education* (documento: https://claude.ai/artifact/2E3hPj2qi66jQdQ7CPinNj, pesta�
 | `07-analisis.json` | Resultados: tendencias por periodo, crecimiento, coocurrencias, países, robustez |
 | `figuras-y-tablas.xlsx` | Figuras como gráficos editables, tablas con fórmulas y suplementos S1 y S2 |
 | `manuscrito-review-of-education.docx` | Exportación en Word del manuscrito |
+| `autores_crossref.py` | Completa con Crossref los coautores y verifica las referencias (necesita acceso a api.crossref.org) |
 
 ## Cómo se reproduce
 
@@ -42,7 +43,8 @@ La clave de Scopus disponible no devuelve el texto de los resúmenes, pero sí p
 buscar dentro de ellos. La fase 1 cribó por título y revista; la fase 2, independiente
 del título, usó búsquedas en los resúmenes y las palabras clave. Las dos fases coinciden
 en el 80 % de los registros (κ = 0,51) y las 94 discrepancias se resolvieron con la regla
-descrita en el artículo. Los códigos de `03-codificacion.csv` indican que los términos de
+descrita en el artículo. Una segunda persona leyó los resúmenes de las 94 discrepancias y de
+75 registros con acuerdo (20 %) y confirmó las 169 decisiones. Los códigos de `03-codificacion.csv` indican que los términos de
 cada categoría aparecen en el título, el resumen o las palabras clave, no que se haya
 leído el texto. Scopus solo da el primer autor de cada estudio, así que las referencias
 marcan los coautores pendientes.

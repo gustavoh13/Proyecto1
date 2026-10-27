@@ -147,7 +147,9 @@ def main():
              ("Disagreement: included, title names CDL", 22), ("Disagreement: included, two indicators", 28),
              ("Disagreement: excluded, insufficient evidence", 38), ("Disagreement: excluded, context or type", 6),
              ("Excluded: CDL not the focus", 320), ("Excluded: outside formal education", 12),
-             ("Excluded: book reviews", 2)]
+             ("Excluded: book reviews", 2),
+             ("Second reviewer: disputed records read", 94), ("Second reviewer: agreed records sampled (20%)", 75),
+             ("Second reviewer: decisions confirmed", 169)]
     for i, (a, b) in enumerate(pasos, 4):
         ws.cell(i, 1, a).font = NORMAL
         ws.cell(i, 2, b).font = ENTRADA
@@ -162,6 +164,9 @@ def main():
     ws.cell(f + 3, 1, "Cohen's kappa").font = NORMAL
     c = ws.cell(f + 3, 2, "=((B10+B11)/B4-((B6*B8+B7*B9)/B4^2))/(1-(B6*B8+B7*B9)/B4^2)")
     c.number_format, c.font = "0.00", NORMAL
+    ws.cell(f + 4, 1, "Second reviewer: agreement with final decisions").font = NORMAL
+    c = ws.cell(f + 4, 2, "=B21/(B19+B20)")
+    c.number_format, c.font = "0.0%", NORMAL
     anchos(ws, [48, 12])
 
     # Figura 2: producción anual
@@ -480,6 +485,38 @@ def main():
     ws.freeze_panes = "A4"
     ws.auto_filter.ref = f"A3:O{3 + len(sel)}"
     anchos(ws, [5, 20, 6, 70, 32, 26, 10, 8, 8, 8, 8, 8, 10, 40, 12])
+
+    # S3: lista de verificación PRISMA-ScR
+    ws = wb.create_sheet("S3_PRISMA-ScR")
+    titulo(ws, "Supplementary file S3. PRISMA-ScR checklist", "Where each item (Tricco et al., 2018) is reported in the manuscript.")
+    cabecera(ws, 3, ["No.", "Section", "Item", "Reported in"])
+    items = [
+        ("Title", "Identify the report as a scoping review", "Title"),
+        ("Abstract", "Structured summary", "Abstract"),
+        ("Introduction", "Rationale", "Introduction, paragraphs 1–4"),
+        ("Introduction", "Objectives", "Introduction, RQ1–RQ4"),
+        ("Methods", "Protocol and registration", "Method, Design (no protocol registered; data and code openly available)"),
+        ("Methods", "Eligibility criteria", "Method, Eligibility criteria; Table 1"),
+        ("Methods", "Information sources", "Method, Information source and search"),
+        ("Methods", "Full search strategy", "Appendix A1"),
+        ("Methods", "Selection of sources of evidence", "Method, Selection of sources; Table 2; verification by a second reviewer"),
+        ("Methods", "Data charting process", "Method, Charting the data"),
+        ("Methods", "Data items", "Method, Charting the data; Appendix A3"),
+        ("Methods", "Critical appraisal of individual sources (optional)", "Method, Analysis: not carried out"),
+        ("Methods", "Synthesis of results", "Method, Analysis"),
+        ("Results", "Selection of sources of evidence", "Results, Selection; Figure 1"),
+        ("Results", "Characteristics of sources of evidence", "Results; Table 3; Figures 2–3; S1"),
+        ("Results", "Critical appraisal within sources (optional)", "Not applicable"),
+        ("Results", "Results of individual sources of evidence", "S1; Tables 6–7"),
+        ("Results", "Synthesis of results", "Results, RQ1–RQ4; Tables 3–7; Figures 2–5"),
+        ("Discussion", "Summary of evidence", "Discussion"),
+        ("Discussion", "Limitations", "Limitations"),
+        ("Discussion", "Conclusions", "Conclusion"),
+        ("Funding", "Funding", "Title page, Declarations")]
+    for i, (a, b, c3) in enumerate(items, 4):
+        for j, v in enumerate((i - 3, a, b, c3), 1):
+            ws.cell(i, j, v).font = NORMAL
+    anchos(ws, [6, 14, 50, 70])
 
     wb.save(sys.argv[2])
 
