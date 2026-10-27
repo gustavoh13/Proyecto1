@@ -1,0 +1,950 @@
+{
+ "n": 135,
+ "por_anio": [
+  [
+   [
+    "2016",
+    "inglés"
+   ],
+   2
+  ],
+  [
+   [
+    "2017",
+    "inglés"
+   ],
+   2
+  ],
+  [
+   [
+    "2018",
+    "inglés"
+   ],
+   7
+  ],
+  [
+   [
+    "2019",
+    "inglés"
+   ],
+   7
+  ],
+  [
+   [
+    "2020",
+    "español"
+   ],
+   1
+  ],
+  [
+   [
+    "2020",
+    "inglés"
+   ],
+   7
+  ],
+  [
+   [
+    "2021",
+    "inglés"
+   ],
+   9
+  ],
+  [
+   [
+    "2022",
+    "español"
+   ],
+   1
+  ],
+  [
+   [
+    "2022",
+    "inglés"
+   ],
+   6
+  ],
+  [
+   [
+    "2023",
+    "inglés"
+   ],
+   11
+  ],
+  [
+   [
+    "2024",
+    "español"
+   ],
+   2
+  ],
+  [
+   [
+    "2024",
+    "inglés"
+   ],
+   6
+  ],
+  [
+   [
+    "2025",
+    "español"
+   ],
+   3
+  ],
+  [
+   [
+    "2025",
+    "inglés"
+   ],
+   19
+  ],
+  [
+   [
+    "2026",
+    "español"
+   ],
+   12
+  ],
+  [
+   [
+    "2026",
+    "inglés"
+   ],
+   40
+  ]
+ ],
+ "crecimiento_2016_2025": {
+  "tasa_anual": 0.20648641872165374,
+  "ic95": [
+   0.11020840106469132,
+   0.31111373068684256
+  ],
+  "dispersion": 1.0407270664230608,
+  "p": 9.691159640506017e-06
+ },
+ "categorias": {
+  "nivel: Infantil y primaria": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    2,
+    3,
+    5
+   ],
+   "total": 10,
+   "z": -0.7963856571063708,
+   "p": 0.42580791223036696
+  },
+  "nivel: Secundaria": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    8,
+    7,
+    14
+   ],
+   "total": 29,
+   "z": -2.2604261714950806,
+   "p": 0.02379481372146561
+  },
+  "nivel: Universidad": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    6,
+    11,
+    38
+   ],
+   "total": 55,
+   "z": 1.4450212135354237,
+   "p": 0.1484519271285072
+  },
+  "nivel: Formación docente": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    5,
+    14,
+    20
+   ],
+   "total": 39,
+   "z": -0.9222816356656147,
+   "p": 0.35638169050136714
+  },
+  "diseño: Revisión de literatura": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    0,
+    1,
+    11
+   ],
+   "total": 12,
+   "z": 2.2360759517608377,
+   "p": 0.02534679641305592
+  },
+  "diseño: Teórico o conceptual": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    3,
+    6,
+    18
+   ],
+   "total": 27,
+   "z": 0.6589815621676384,
+   "p": 0.5099076086037155
+  },
+  "diseño: Cualitativo": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    6,
+    9,
+    48
+   ],
+   "total": 63,
+   "z": 2.913989271620091,
+   "p": 0.0035684216961083958
+  },
+  "diseño: Cuantitativo": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    1,
+    7,
+    23
+   ],
+   "total": 31,
+   "z": 2.080606602844415,
+   "p": 0.037469929040654
+  },
+  "diseño: Diseño o intervención": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    4,
+    9,
+    13
+   ],
+   "total": 26,
+   "z": -1.0105481051331493,
+   "p": 0.31223276435502434
+  },
+  "marco: Pedagogía crítica (Freire)": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    1,
+    3,
+    12
+   ],
+   "total": 16,
+   "z": 1.2658377041248303,
+   "p": 0.20557119322304318
+  },
+  "marco: Multiliteracidades y nuevos estudios de literacidad": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    9,
+    6,
+    15
+   ],
+   "total": 30,
+   "z": -2.3696176494493026,
+   "p": 0.017806488921492683
+  },
+  "marco: Alfabetización mediática": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    9,
+    5,
+    11
+   ],
+   "total": 25,
+   "z": -3.0387562708515876,
+   "p": 0.0023755696020104277
+  },
+  "marco: Ciudadanía digital": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    1,
+    12,
+    8
+   ],
+   "total": 21,
+   "z": -0.9770603659656676,
+   "p": 0.3285392678621013
+  },
+  "marco: Perspectivas críticas de raza, género y decolonialidad": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    2,
+    4,
+    14
+   ],
+   "total": 20,
+   "z": 0.8494260448242276,
+   "p": 0.39564426580766854
+  },
+  "tema: Inteligencia artificial": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    0,
+    2,
+    35
+   ],
+   "total": 37,
+   "z": 4.689820888614091,
+   "p": 2.734442996395066e-06
+  },
+  "tema: Desinformación y posverdad": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    1,
+    2,
+    5
+   ],
+   "total": 8,
+   "z": 0.10524991442282529,
+   "p": 0.9161775046491517
+  },
+  "tema: Redes sociales": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    4,
+    6,
+    17
+   ],
+   "total": 27,
+   "z": 0.059907414742510816,
+   "p": 0.9522293743933815
+  },
+  "tema: Algoritmos, datos y plataformas": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    1,
+    6,
+    26
+   ],
+   "total": 33,
+   "z": 2.6082959603740328,
+   "p": 0.009099424193019876
+  },
+  "tema: Privacidad y vigilancia": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    1,
+    2,
+    5
+   ],
+   "total": 8,
+   "z": 0.10524991442282529,
+   "p": 0.9161775046491517
+  },
+  "tema: Discurso de odio y radicalización": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    1,
+    1,
+    1
+   ],
+   "total": 3,
+   "z": -1.1560169708283372,
+   "p": 0.24767421542517154
+  },
+  "tema: Lenguas extranjeras": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    0,
+    3,
+    14
+   ],
+   "total": 17,
+   "z": 2.1454553366159774,
+   "p": 0.03191645878162133
+  },
+  "tema: Producción digital del alumnado": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    1,
+    1,
+    6
+   ],
+   "total": 8,
+   "z": 0.612704858961446,
+   "p": 0.5400715091283177
+  },
+  "idioma: español": {
+   "n": [
+    18,
+    35,
+    82
+   ],
+   "x": [
+    0,
+    2,
+    17
+   ],
+   "total": 19,
+   "z": 2.7537608646021097,
+   "p": 0.005891479804997559
+  }
+ },
+ "sin_nivel": 30,
+ "sin_diseno": 34,
+ "coocurrencias": {
+  "marco: Pedagogía crítica (Freire)": {
+   "tema: Inteligencia artificial": 4,
+   "tema: Desinformación y posverdad": 0,
+   "tema: Redes sociales": 3,
+   "tema: Algoritmos, datos y plataformas": 5,
+   "tema: Privacidad y vigilancia": 1,
+   "tema: Discurso de odio y radicalización": 0,
+   "tema: Lenguas extranjeras": 0,
+   "tema: Producción digital del alumnado": 0
+  },
+  "marco: Multiliteracidades y nuevos estudios de literacidad": {
+   "tema: Inteligencia artificial": 6,
+   "tema: Desinformación y posverdad": 1,
+   "tema: Redes sociales": 7,
+   "tema: Algoritmos, datos y plataformas": 6,
+   "tema: Privacidad y vigilancia": 0,
+   "tema: Discurso de odio y radicalización": 1,
+   "tema: Lenguas extranjeras": 4,
+   "tema: Producción digital del alumnado": 8
+  },
+  "marco: Alfabetización mediática": {
+   "tema: Inteligencia artificial": 4,
+   "tema: Desinformación y posverdad": 2,
+   "tema: Redes sociales": 6,
+   "tema: Algoritmos, datos y plataformas": 6,
+   "tema: Privacidad y vigilancia": 0,
+   "tema: Discurso de odio y radicalización": 2,
+   "tema: Lenguas extranjeras": 0,
+   "tema: Producción digital del alumnado": 1
+  },
+  "marco: Ciudadanía digital": {
+   "tema: Inteligencia artificial": 3,
+   "tema: Desinformación y posverdad": 1,
+   "tema: Redes sociales": 3,
+   "tema: Algoritmos, datos y plataformas": 8,
+   "tema: Privacidad y vigilancia": 0,
+   "tema: Discurso de odio y radicalización": 1,
+   "tema: Lenguas extranjeras": 2,
+   "tema: Producción digital del alumnado": 2
+  },
+  "marco: Perspectivas críticas de raza, género y decolonialidad": {
+   "tema: Inteligencia artificial": 7,
+   "tema: Desinformación y posverdad": 1,
+   "tema: Redes sociales": 4,
+   "tema: Algoritmos, datos y plataformas": 8,
+   "tema: Privacidad y vigilancia": 2,
+   "tema: Discurso de odio y radicalización": 0,
+   "tema: Lenguas extranjeras": 1,
+   "tema: Producción digital del alumnado": 2
+  }
+ },
+ "paises": [
+  [
+   "United States",
+   32
+  ],
+  [
+   "Spain",
+   27
+  ],
+  [
+   "Canada",
+   8
+  ],
+  [
+   "United Kingdom",
+   8
+  ],
+  [
+   "Hong Kong",
+   7
+  ],
+  [
+   "Australia",
+   5
+  ],
+  [
+   "Indonesia",
+   4
+  ],
+  [
+   "China",
+   4
+  ],
+  [
+   "Turkey",
+   4
+  ],
+  [
+   "Singapore",
+   3
+  ],
+  [
+   "Sweden",
+   3
+  ],
+  [
+   "Germany",
+   3
+  ],
+  [
+   "South Africa",
+   2
+  ],
+  [
+   "South Korea",
+   2
+  ],
+  [
+   "Peru",
+   2
+  ],
+  [
+   "Chile",
+   2
+  ],
+  [
+   "Thailand",
+   2
+  ],
+  [
+   "Greece",
+   2
+  ],
+  [
+   "Austria",
+   1
+  ],
+  [
+   "Ecuador",
+   1
+  ],
+  [
+   "United Arab Emirates",
+   1
+  ],
+  [
+   "Ukraine",
+   1
+  ],
+  [
+   "Oman",
+   1
+  ],
+  [
+   "Pakistan",
+   1
+  ],
+  [
+   "India",
+   1
+  ],
+  [
+   "Iran",
+   1
+  ],
+  [
+   "Mexico",
+   1
+  ],
+  [
+   "Kuwait",
+   1
+  ],
+  [
+   "Saudi Arabia",
+   1
+  ],
+  [
+   "Taiwan",
+   1
+  ],
+  [
+   "Finland",
+   1
+  ],
+  [
+   "Italy",
+   1
+  ],
+  [
+   "Colombia",
+   1
+  ],
+  [
+   "Ireland",
+   1
+  ],
+  [
+   "Norway",
+   1
+  ]
+ ],
+ "revistas": [
+  [
+   "System",
+   8
+  ],
+  [
+   "Journal of Adolescent and Adult Literacy",
+   7
+  ],
+  [
+   "Computers and Composition",
+   6
+  ],
+  [
+   "Pedagogies",
+   5
+  ],
+  [
+   "Edutec",
+   4
+  ],
+  [
+   "Digital Education Review",
+   3
+  ],
+  [
+   "Pedagogy Culture and Society",
+   3
+  ],
+  [
+   "International Journal of Tesol Studies",
+   3
+  ],
+  [
+   "English Teaching",
+   3
+  ],
+  [
+   "Teaching and Teacher Education",
+   2
+  ],
+  [
+   "Language Teaching Research",
+   2
+  ],
+  [
+   "Journal of English for Academic Purposes",
+   2
+  ]
+ ],
+ "citas": {
+  "total": 1646,
+  "mediana": 4.0
+ },
+ "acceso_abierto": 77,
+ "robustez": {
+  "nivel: Infantil y primaria": {
+   "amplio": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     2,
+     3,
+     5
+    ],
+    "total": 10,
+    "z": -0.7963856571063708,
+    "p": 0.42580791223036696
+   },
+   "estricto": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     1,
+     3,
+     3
+    ],
+    "total": 7,
+    "z": -0.7124863878411749,
+    "p": 0.47616363767176917
+   }
+  },
+  "nivel: Secundaria": {
+   "amplio": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     8,
+     7,
+     14
+    ],
+    "total": 29,
+    "z": -2.2604261714950806,
+    "p": 0.02379481372146561
+   },
+   "estricto": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     1,
+     7,
+     8
+    ],
+    "total": 16,
+    "z": -0.2169222963684627,
+    "p": 0.8282689013035293
+   }
+  },
+  "nivel: Universidad": {
+   "amplio": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     6,
+     11,
+     38
+    ],
+    "total": 55,
+    "z": 1.4450212135354237,
+    "p": 0.1484519271285072
+   },
+   "estricto": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     4,
+     9,
+     28
+    ],
+    "total": 41,
+    "z": 1.188872909502094,
+    "p": 0.23448968193831965
+   }
+  },
+  "nivel: Formación docente": {
+   "amplio": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     5,
+     14,
+     20
+    ],
+    "total": 39,
+    "z": -0.9222816356656147,
+    "p": 0.35638169050136714
+   },
+   "estricto": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     5,
+     9,
+     13
+    ],
+    "total": 27,
+    "z": -1.437777953820308,
+    "p": 0.15049706655245268
+   }
+  },
+  "tema: Inteligencia artificial": {
+   "amplio": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     0,
+     2,
+     35
+    ],
+    "total": 37,
+    "z": 4.689820888614091,
+    "p": 2.734442996395066e-06
+   },
+   "estricto": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     0,
+     0,
+     22
+    ],
+    "total": 22,
+    "z": 3.7535399401648406,
+    "p": 0.0001743547363982179
+   }
+  },
+  "tema: Algoritmos, datos y plataformas": {
+   "amplio": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     1,
+     6,
+     26
+    ],
+    "total": 33,
+    "z": 2.6082959603740328,
+    "p": 0.009099424193019876
+   },
+   "estricto": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     1,
+     3,
+     26
+    ],
+    "total": 30,
+    "z": 3.1061204323862497,
+    "p": 0.001895594953881837
+   }
+  },
+  "tema: Redes sociales": {
+   "amplio": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     4,
+     6,
+     17
+    ],
+    "total": 27,
+    "z": 0.059907414742510816,
+    "p": 0.9522293743933815
+   },
+   "estricto": {
+    "n": [
+     18,
+     35,
+     82
+    ],
+    "x": [
+     4,
+     2,
+     12
+    ],
+    "total": 18,
+    "z": -0.18798097032675037,
+    "p": 0.8508915687239409
+   }
+  }
+ }
+}

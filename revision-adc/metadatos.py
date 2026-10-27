@@ -2,7 +2,9 @@
 """Añade volumen, número, páginas y número de artículo a los estudios incluidos.
 
 La clave sin suscripción solo da el primer autor; estos campos sí están
-disponibles en la Abstract Retrieval API.
+disponibles en la Abstract Retrieval API. El número de autores sale de la
+Search API y sirve para escribir bien las citas en el texto (APA 7: un autor,
+dos autores o «et al.» a partir de tres).
 
 Uso: metadatos.py 03-codificacion.csv 04-metadatos.csv
 """
@@ -10,6 +12,7 @@ import csv
 import json
 import sys
 import time
+import urllib.parse
 import urllib.request
 
 CAMPOS = "dc:creator,prism:volume,prism:issueIdentifier,prism:pageRange,article-number"
@@ -32,6 +35,12 @@ def main():
             "volumen": c.get("prism:volume") or "", "numero": c.get("prism:issueIdentifier") or "",
             "paginas": c.get("prism:pageRange") or "", "articulo": c.get("article-number") or "",
         })
+        consulta = urllib.parse.urlencode({"query": f"EID({f['eid']})", "field": "author-count"})
+        req = urllib.request.Request(f"https://api.elsevier.com/content/search/scopus?{consulta}",
+                                     headers={"Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            entrada = json.load(r)["search-results"]["entry"][0]
+        salida[-1]["n_autores"] = (entrada.get("author-count") or {}).get("$", "")
         time.sleep(0.15)
     with open(sys.argv[2], "w", newline="", encoding="utf-8-sig") as s:
         w = csv.DictWriter(s, fieldnames=list(salida[0]))
