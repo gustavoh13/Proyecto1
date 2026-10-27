@@ -145,7 +145,8 @@ def main():
         ("S1_Included", "Supplementary file S1: the 135 included studies with bibliographic data and codes (1 = code present)."),
         ("S2_Screening", "The 469 records with both screening passes, the indicators and the final decision."),
         ("Authors", "Full author lists come from Crossref, checked against ORCID and the journal page where Crossref was"
-                    " wrong or empty. Five studies still show only the first author and the number of co-authors."),
+                    " wrong or empty. Four studies that are not cited in the article still show only the first author and"
+                    " the number of co-authors."),
     ]
     for i, (a, b) in enumerate(filas, 3):
         ws.cell(i, 1, a).font = NEGRITA

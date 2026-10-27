@@ -54,8 +54,9 @@ leído el texto.
 Scopus solo da el primer autor de cada estudio; los demás salen de Crossref. Donde
 Crossref se equivoca o no tiene el artículo, `referencias.py` fija los autores a mano y
 dice de dónde salen (ORCID o la página de la revista): Jiménez Torras et al. (2026),
-González-Villa y Gewerc (2026), Stewart et al. (2021) y Ketzer-Nöltge y Markovic (2022).
-También corrige las páginas de Mesquita-Romero et al. (2022), que Scopus da como 41–51
-(son 47–57). Quedan sin coautores cinco estudios: Salazar-Jiménez et al. (2026), el único
-citado en el artículo, y Bilenko et al. (2026), Hendrix-Soto (2023), Muñoz-Saavedra (2025)
-y Zhang (2025), que solo figuran en el suplemento S1.
+González-Villa y Gewerc (2026), Stewart et al. (2021), Ketzer-Nöltge y Markovic (2022) y
+Salazar-Jiménez et al. (2026). También corrige las páginas de Mesquita-Romero et al. (2022),
+que Scopus da como 41–51 (son 47–57), y da el título original de los seis estudios citados
+que están en español, con la traducción entre corchetes. Quedan sin coautores cuatro
+estudios que no se citan en el artículo y solo figuran en el suplemento S1: Bilenko et al.
+(2026), Hendrix-Soto (2023), Muñoz-Saavedra (2025) y Zhang (2025).

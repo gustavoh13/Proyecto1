@@ -67,6 +67,39 @@ AUTORES_MANUALES = {
     ("González-Villa", "2026"): [("González-Villa", "Ángela"), ("Gewerc", "Adriana")],
     ("G. Stewart", "2021"): [("Stewart", "Olivia G."), ("Hsieh", "Betina"), ("Smith", "Anna"),
                              ("Pandya", "Jessica Zacher")],
+    # Primera página del artículo (Interciencia no deposita los autores en Crossref)
+    ("Salazar-Jiménez", "2026"): [("Salazar-Jiménez", "Rodrigo"), ("Orellana Fonseca", "Cristian"),
+                                  ("Fuentes Rodríguez", "Carolina")],
+}
+# Artículos escritos en español: APA 7 da el título original y, entre corchetes, su
+# traducción. El original sale de Crossref (Interciencia, de la primera página) y la
+# traducción, del título en inglés que publica la revista.
+TITULOS_ORIGINALES = {
+    ("Escribano-Muñoz", "2024"): (
+        "Confluencias entre pensamiento crítico y redes sociales en el ámbito educativo. Mapeo de experiencias"
+        " y detección de desafíos a través de una revisión sistemática",
+        "Confluences between critical thinking and social media in the educational world. Mapping experiences"
+        " and detecting challenges through a systematic review"),
+    ("Fernández", "2026"): (
+        "Activismo digital y alfabetización crítica: Agencia universitaria para la justicia sociolingüística en Perú",
+        "Digital activism and critical literacy: University agency for sociolinguistic justice in Peru"),
+    ("González-Villa", "2026"): (
+        "Prácticas adolescentes de negociación de la privacidad en Instagram: La necesidad de alfabetización"
+        " digital crítica en la escuela",
+        "Adolescent practices of privacy negotiation on Instagram: The need for critical digital literacy in schools"),
+    ("Moreno-González", "2026"): (
+        "Entre la protección y la participación: Experiencias del alumnado de educación primaria en contextos"
+        " de plataformización escolar",
+        "Between protection and participation: Primary school students' experiences in contexts of educational"
+        " platformization"),
+    ("Regueira", "2026"): (
+        "Mirarse para ser vistas: Autovigilancia de género y retos de alfabetización digital crítica para una"
+        " adolescencia plataformizada",
+        "Looking to be seen: Gendered self-surveillance and the challenges of critical digital literacy in a"
+        " platformized adolescence"),
+    ("Salazar-Jiménez", "2026"): (
+        "Formación inicial docente y ciudadanía digital: Tensiones y desafíos en la enseñanza de las ciencias sociales",
+        "Initial teacher education and digital citizenship: Tensions and challenges in social studies education"),
 }
 # Páginas que Scopus registra mal. Comunicar 70: Crossref y OpenAlex dan 47–57, y
 # los artículos vecinos (C70-2022-03 y -05) ocupan las páginas 35–45 y 59–68.
@@ -198,6 +231,8 @@ def main():
         for a, b in TITULOS.items():
             titulo = titulo.replace(a, b)
         fin = "" if titulo.endswith(("?", "!")) else "."
+        if (apellido, anio) in TITULOS_ORIGINALES:
+            titulo, fin = "{} [{}]".format(*TITULOS_ORIGINALES[(apellido, anio)]), "."
         primero = lista[0][0] if lista else ap
         salida.append((primero.lower().replace("ö", "o").replace("ü", "u"),
                        f"{nombres} ({anio}). {titulo}{fin} *{revista}*{loc}.{doi}"))
