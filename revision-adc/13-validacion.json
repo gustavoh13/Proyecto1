@@ -1,0 +1,291 @@
+{
+ "leidos": 38,
+ "elegibles": 25,
+ "no_elegibles": {
+  "La ADC no es el foco": 13
+ },
+ "categorias": {
+  "nivel: Infantil y primaria": {
+   "texto_completo": 1,
+   "diccionario": 5,
+   "vp": 1,
+   "fp": 4,
+   "fn": 0,
+   "precision": 0.2,
+   "sensibilidad": 1.0,
+   "acuerdo": 0.84,
+   "kappa": 0.286
+  },
+  "nivel: Secundaria": {
+   "texto_completo": 5,
+   "diccionario": 6,
+   "vp": 5,
+   "fp": 1,
+   "fn": 0,
+   "precision": 0.833,
+   "sensibilidad": 1.0,
+   "acuerdo": 0.96,
+   "kappa": 0.884
+  },
+  "nivel: Universidad": {
+   "texto_completo": 5,
+   "diccionario": 8,
+   "vp": 5,
+   "fp": 3,
+   "fn": 0,
+   "precision": 0.625,
+   "sensibilidad": 1.0,
+   "acuerdo": 0.88,
+   "kappa": 0.694
+  },
+  "nivel: Formación docente": {
+   "texto_completo": 10,
+   "diccionario": 10,
+   "vp": 8,
+   "fp": 2,
+   "fn": 2,
+   "precision": 0.8,
+   "sensibilidad": 0.8,
+   "acuerdo": 0.84,
+   "kappa": 0.667
+  },
+  "diseño: Revisión de literatura": {
+   "texto_completo": 2,
+   "diccionario": 3,
+   "vp": 1,
+   "fp": 2,
+   "fn": 1,
+   "precision": 0.333,
+   "sensibilidad": 0.5,
+   "acuerdo": 0.88,
+   "kappa": 0.336
+  },
+  "diseño: Teórico o conceptual": {
+   "texto_completo": 2,
+   "diccionario": 4,
+   "vp": 1,
+   "fp": 3,
+   "fn": 1,
+   "precision": 0.25,
+   "sensibilidad": 0.5,
+   "acuerdo": 0.84,
+   "kappa": 0.254
+  },
+  "diseño: Cualitativo": {
+   "texto_completo": 17,
+   "diccionario": 14,
+   "vp": 13,
+   "fp": 1,
+   "fn": 4,
+   "precision": 0.929,
+   "sensibilidad": 0.765,
+   "acuerdo": 0.8,
+   "kappa": 0.582
+  },
+  "diseño: Cuantitativo": {
+   "texto_completo": 7,
+   "diccionario": 6,
+   "vp": 4,
+   "fp": 2,
+   "fn": 3,
+   "precision": 0.667,
+   "sensibilidad": 0.571,
+   "acuerdo": 0.8,
+   "kappa": 0.481
+  },
+  "diseño: Diseño o intervención": {
+   "texto_completo": 10,
+   "diccionario": 7,
+   "vp": 5,
+   "fp": 2,
+   "fn": 5,
+   "precision": 0.714,
+   "sensibilidad": 0.5,
+   "acuerdo": 0.72,
+   "kappa": 0.386
+  },
+  "marco: Pedagogía crítica (Freire)": {
+   "texto_completo": 6,
+   "diccionario": 4,
+   "vp": 2,
+   "fp": 2,
+   "fn": 4,
+   "precision": 0.5,
+   "sensibilidad": 0.333,
+   "acuerdo": 0.76,
+   "kappa": 0.257
+  },
+  "marco: Multiliteracidades y nuevos estudios de literacidad": {
+   "texto_completo": 3,
+   "diccionario": 3,
+   "vp": 2,
+   "fp": 1,
+   "fn": 1,
+   "precision": 0.667,
+   "sensibilidad": 0.667,
+   "acuerdo": 0.92,
+   "kappa": 0.621
+  },
+  "marco: Alfabetización mediática": {
+   "texto_completo": 2,
+   "diccionario": 2,
+   "vp": 1,
+   "fp": 1,
+   "fn": 1,
+   "precision": 0.5,
+   "sensibilidad": 0.5,
+   "acuerdo": 0.92,
+   "kappa": 0.457
+  },
+  "marco: Ciudadanía digital": {
+   "texto_completo": 3,
+   "diccionario": 2,
+   "vp": 2,
+   "fp": 0,
+   "fn": 1,
+   "precision": 1.0,
+   "sensibilidad": 0.667,
+   "acuerdo": 0.96,
+   "kappa": 0.779
+  },
+  "marco: Perspectivas críticas de raza, género y decolonialidad": {
+   "texto_completo": 4,
+   "diccionario": 3,
+   "vp": 3,
+   "fp": 0,
+   "fn": 1,
+   "precision": 1.0,
+   "sensibilidad": 0.75,
+   "acuerdo": 0.96,
+   "kappa": 0.834
+  },
+  "tema: Inteligencia artificial": {
+   "texto_completo": 5,
+   "diccionario": 5,
+   "vp": 5,
+   "fp": 0,
+   "fn": 0,
+   "precision": 1.0,
+   "sensibilidad": 1.0,
+   "acuerdo": 1.0,
+   "kappa": 1.0
+  },
+  "tema: Desinformación y posverdad": {
+   "texto_completo": 6,
+   "diccionario": 1,
+   "vp": 1,
+   "fp": 0,
+   "fn": 5,
+   "precision": 1.0,
+   "sensibilidad": 0.167,
+   "acuerdo": 0.8,
+   "kappa": 0.233
+  },
+  "tema: Redes sociales": {
+   "texto_completo": 7,
+   "diccionario": 7,
+   "vp": 6,
+   "fp": 1,
+   "fn": 1,
+   "precision": 0.857,
+   "sensibilidad": 0.857,
+   "acuerdo": 0.92,
+   "kappa": 0.802
+  },
+  "tema: Algoritmos, datos y plataformas": {
+   "texto_completo": 11,
+   "diccionario": 9,
+   "vp": 6,
+   "fp": 3,
+   "fn": 5,
+   "precision": 0.667,
+   "sensibilidad": 0.545,
+   "acuerdo": 0.68,
+   "kappa": 0.338
+  },
+  "tema: Privacidad y vigilancia": {
+   "texto_completo": 7,
+   "diccionario": 1,
+   "vp": 1,
+   "fp": 0,
+   "fn": 6,
+   "precision": 1.0,
+   "sensibilidad": 0.143,
+   "acuerdo": 0.76,
+   "kappa": 0.194
+  },
+  "tema: Discurso de odio y radicalización": {
+   "texto_completo": 1,
+   "diccionario": 0,
+   "vp": 0,
+   "fp": 0,
+   "fn": 1,
+   "precision": null,
+   "sensibilidad": 0.0,
+   "acuerdo": 0.96,
+   "kappa": 0.0
+  },
+  "tema: Lenguas extranjeras": {
+   "texto_completo": 6,
+   "diccionario": 3,
+   "vp": 3,
+   "fp": 0,
+   "fn": 3,
+   "precision": 1.0,
+   "sensibilidad": 0.5,
+   "acuerdo": 0.88,
+   "kappa": 0.603
+  },
+  "tema: Producción digital del alumnado": {
+   "texto_completo": 5,
+   "diccionario": 1,
+   "vp": 1,
+   "fp": 0,
+   "fn": 4,
+   "precision": 1.0,
+   "sensibilidad": 0.2,
+   "acuerdo": 0.84,
+   "kappa": 0.286
+  }
+ },
+ "evaluacion": {
+  "0 Ninguna": 16,
+  "2 Medida cuantitativa sin comparación": 4,
+  "1 Evidencia cualitativa": 5
+ },
+ "dimensiones": {
+  "frecuencia": {
+   "dimensión: Textual": 18,
+   "dimensión: Infraestructural": 14,
+   "dimensión: Transformadora": 9
+  },
+  "combinaciones": {
+   "Txt": 9,
+   "Txt+Inf+Tra": 4,
+   "Inf": 4,
+   "Inf+Tra": 3,
+   "Txt+Inf": 3,
+   "Txt+Tra": 2
+  },
+  "por_periodo": {
+   "2016–2019": {
+    "n": 2,
+    "dimensión: Textual": 2,
+    "dimensión: Infraestructural": 1,
+    "dimensión: Transformadora": 2
+   },
+   "2020–2023": {
+    "n": 7,
+    "dimensión: Textual": 5,
+    "dimensión: Infraestructural": 3,
+    "dimensión: Transformadora": 1
+   },
+   "2024–2026": {
+    "n": 16,
+    "dimensión: Textual": 11,
+    "dimensión: Infraestructural": 10,
+    "dimensión: Transformadora": 6
+   }
+  }
+ }
+}
