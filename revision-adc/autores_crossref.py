@@ -5,7 +5,9 @@ Scopus solo da el primer autor. Para cada DOI de 04-metadatos.csv (y de las
 referencias teóricas con DOI) se consulta api.crossref.org y se guardan todos
 los autores, la revista, el volumen, el número, las páginas y el año. Los
 estudios sin DOI se buscan por título (query.bibliographic) y solo se aceptan
-si el título devuelto coincide.
+si el título devuelto coincide. Se descartan las «autorías» que en realidad son
+instituciones. Si Crossref no tiene autores, se prueba con doi.org (que también
+resuelve DOI de mEDRA y DataCite) y después con OpenAlex.
 
 Uso: autores_crossref.py 04-metadatos.csv 09-crossref.json
 """
@@ -49,11 +51,57 @@ def normal(t):
     return re.sub(r"[^a-z0-9]+", " ", t).strip()
 
 
+INSTITUCION = re.compile(r"universit|institut|college|school|faculty|department|ministr|council|centre|center", re.I)
+
+
+def personas(lista):
+    """Autores personales: descarta entradas sin nombre de pila que son instituciones."""
+    salida = []
+    for a in lista or []:
+        familia = a.get("family") or a.get("name") or a.get("literal") or ""
+        if not a.get("given") and (INSTITUCION.search(familia) or "," in familia):
+            continue
+        salida.append({"family": familia, "given": a.get("given", "")})
+    return salida
+
+
+def por_doi_org(doi):
+    req = urllib.request.Request(f"https://doi.org/{doi}", headers={
+        "Accept": "application/vnd.citationstyles.csl+json", "User-Agent": AGENTE})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.load(r)
+    except (urllib.error.URLError, ValueError):
+        return None
+
+
+def por_openalex(doi, titulo):
+    if doi:
+        url = f"https://api.openalex.org/works/doi:{urllib.parse.quote(doi)}"
+    else:
+        url = "https://api.openalex.org/works?" + urllib.parse.urlencode({"search": titulo, "per-page": 1})
+    req = urllib.request.Request(url, headers={"User-Agent": AGENTE})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            w = json.load(r)
+    except (urllib.error.URLError, ValueError):
+        return None
+    if "results" in w:
+        w = (w["results"] or [None])[0]
+        if not w or normal(w.get("title"))[:60] != normal(titulo)[:60]:
+            return None
+    nombres = []
+    for a in w.get("authorships", []):
+        completo = (a.get("author") or {}).get("display_name", "")
+        partes = completo.rsplit(" ", 1)
+        nombres.append({"family": partes[-1], "given": partes[0] if len(partes) > 1 else "", "completo": completo})
+    return nombres
+
+
 def ficha(m):
     anio = (m.get("published-print") or m.get("published-online") or m.get("issued") or {}).get("date-parts", [[None]])[0][0]
     return {
-        "autores": [{"family": a.get("family") or a.get("name", ""), "given": a.get("given", "")}
-                    for a in m.get("author", [])],
+        "autores": personas(m.get("author")),
         "titulo": (m.get("title") or [""])[0], "revista": (m.get("container-title") or [""])[0],
         "volumen": m.get("volume", ""), "numero": m.get("issue", ""), "paginas": m.get("page", ""),
         "articulo": m.get("article-number", ""), "anio": anio, "doi": m.get("DOI", ""),
@@ -72,11 +120,29 @@ def main():
             m = (res or {}).get("items", [None])[0] if res else None
             if m and normal((m.get("title") or [""])[0])[:60] != normal(f["titulo"])[:60]:
                 m = None
-        salida["corpus"][f["eid"]] = ficha(m) if m else None
+        datos = ficha(m) if m else None
+        if not datos or not datos["autores"]:
+            csl = por_doi_org(f["doi"]) if f["doi"] else None
+            autores = personas(csl.get("author")) if csl else []
+            fuente = "doi.org"
+            if not autores:
+                autores = por_openalex(f["doi"], f["titulo"]) or []
+                fuente = "OpenAlex"
+            if autores:
+                datos = datos or {"titulo": f["titulo"], "revista": f["revista"], "volumen": "", "numero": "",
+                                  "paginas": "", "articulo": "", "anio": f["anio"], "doi": f["doi"]}
+                datos["autores"], datos["fuente_autores"] = autores, fuente
+        salida["corpus"][f["eid"]] = datos
         time.sleep(0.1)
     for clave, doi in EXTERNAS.items():
         m = pedir(f"https://api.crossref.org/works/{urllib.parse.quote(doi)}")
-        salida["externas"][clave] = ficha(m) if m else None
+        if m:
+            salida["externas"][clave] = ficha(m)
+        else:
+            csl = por_doi_org(doi)
+            salida["externas"][clave] = {"autores": personas(csl.get("author")), "titulo": csl.get("title", ""),
+                                         "anio": (csl.get("issued") or {}).get("date-parts", [[None]])[0][0],
+                                         "doi": doi} if csl else None
     json.dump(salida, open(sys.argv[2], "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     vacios = [k for k, v in salida["corpus"].items() if not v]
     print(f"{len(meta) - len(vacios)} de {len(meta)} estudios con datos de Crossref; sin datos: {vacios}", file=sys.stderr)

@@ -3,8 +3,9 @@
 tablas con fórmulas y los materiales suplementarios S1 (estudios incluidos) y
 S2 (cribado de los 469 registros).
 
-Los datos salen de 03-codificacion.csv, 04-metadatos.csv, 06-seleccion-final.csv
-y 07-analisis.json, de modo que el libro se regenera si cambian.
+Los datos salen de 03-codificacion.csv, 04-metadatos.csv, 06-seleccion-final.csv,
+07-analisis.json y 09-crossref.json (autores), de modo que el libro se regenera
+si cambian.
 
 Uso: libro_excel.py DIR_DATOS salida.xlsx
 """
@@ -20,6 +21,8 @@ from openpyxl.comments import Comment
 from openpyxl.formatting.rule import ColorScaleRule
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
+
+import referencias
 
 FUENTE = "Arial"
 NEGRITA = Font(name=FUENTE, bold=True)
@@ -115,6 +118,19 @@ def main():
     cod = list(csv.DictReader(open(d / "03-codificacion.csv", encoding="utf-8-sig")))
     meta = {m["eid"]: m for m in csv.DictReader(open(d / "04-metadatos.csv", encoding="utf-8-sig"))}
     sel = list(csv.DictReader(open(d / "06-seleccion-final.csv", encoding="utf-8-sig")))
+    crossref = json.load(open(d / "09-crossref.json", encoding="utf-8"))["corpus"]
+    # Autores en APA 7 (S1) y cita en el texto (Table 7); sin lista completa, el primer
+    # autor de Scopus y el número de coautores
+    autoria, cita = {}, {}
+    for eid, m in meta.items():
+        lista = referencias.autores(m, crossref)
+        n = int(m["n_autores"] or 1)
+        if lista:
+            autoria[eid], cita[eid] = referencias.lista_apa(lista), referencias.cita(lista)
+        else:
+            autoria[eid] = f"{m['apellido']}, {m['iniciales']}" + (
+                f", [+{n - 1} co-author{'s' if n > 2 else ''}]" if n > 1 else "")
+            cita[eid] = m["apellido"] + (" et al." if n > 2 else " & [co-author]" if n == 2 else "")
     wb = Workbook()
 
     # Guía
@@ -128,7 +144,8 @@ def main():
         ("Tables", "Table1 to Table7 reproduce the tables of the manuscript. Percentages are formulas over the counts."),
         ("S1_Included", "Supplementary file S1: the 135 included studies with bibliographic data and codes (1 = code present)."),
         ("S2_Screening", "The 469 records with both screening passes, the indicators and the final decision."),
-        ("Placeholders", "Scopus returned only the first author of each study; co-authors still need to be completed."),
+        ("Authors", "Full author lists come from Crossref, checked against ORCID and the journal page where Crossref was"
+                    " wrong or empty. Five studies still show only the first author and the number of co-authors."),
     ]
     for i, (a, b) in enumerate(filas, 3):
         ws.cell(i, 1, a).font = NEGRITA
@@ -404,29 +421,28 @@ def main():
     cabecera(ws, 3, ["Practice", "What learners do", "Examples"])
     practicas = [
         ("Critical analysis of digital texts", "Read memes, videos, teaching materials or AI outputs for representation, bias and ideology",
-         "Elmore (2019); Ho (2025); Van Poucke (2024); Weninger (2026)"),
+         "Elmore & Coleman (2019); Ho & Hafner (2025); Van Poucke (2024); Weninger & Xu (2026)"),
         ("Media production and multimodal composing", "Produce video, stories, posters or multimodal texts that answer dominant narratives",
-         "Watt (2019); Noble (2022); de los Ríos (2018); Damaskinidis et al. (2026)"),
+         "Watt (2019); Noble & Gachago (2022); de los Ríos (2018); Damaskinidis et al. (2026)"),
         ("Virtual exchange", "Work with peers in other countries and examine how platforms shape the exchange",
-         "Hauck (2019); Bilki et al. (2023); Satar et al. (2023); Ketzer-Nöltge (2022)"),
+         "Hauck (2019); Bilki et al. (2023); Satar et al. (2023); Ketzer-Nöltge & Markovic (2022)"),
         ("Designed modules and inquiry", "Follow a sequence built around a game, a controversy or a writing task",
-         "Torras et al. (2026); Gerlach et al. (2025); Spracklin (2025); Lo et al. (2024)"),
+         "Jiménez Torras et al. (2026); Gerlach et al. (2025); Spracklin & Espina (2025); Lo et al. (2024)"),
         ("Civic action", "Use digital tools to investigate and act on local or political issues",
-         "Kwon (2019); Abowitz (2020); Fernández (2026); Tanksley (2024)")]
+         "Kwon & de los Ríos (2019); Abowitz & Mamlok (2020); Fernández (2026); Tanksley (2024)")]
     for i, fila in enumerate(practicas, 4):
         for j, v in enumerate(fila, 1):
             c = ws.cell(i, j, v)
             c.font, c.alignment = NORMAL, Alignment(wrap_text=True, vertical="top")
-    ws.cell(10, 1, "Two-author studies are listed by first author only here; see the manuscript for full citations.").font = NOTA
     anchos(ws, [34, 60, 60])
 
     ws = wb.create_sheet("Table7_Most_cited")
     titulo(ws, "Table 7. The ten most cited studies", "Scopus citations on 27 October 2026. Per year: citations / (2026 − year + 1).")
-    cabecera(ws, 3, ["First author", "Year", "Journal", "Title", "Citations", "Per year", "DOI"])
+    cabecera(ws, 3, ["Authors", "Year", "Journal", "Title", "Citations", "Per year", "DOI"])
     top = sorted(cod, key=lambda x: -int(x["citas"] or 0))[:10]
     for i, x in enumerate(top, 4):
         m = meta[x["eid"]]
-        for j, v in enumerate([m["apellido"], int(x["anio"]), x["revista"], x["titulo"]], 1):
+        for j, v in enumerate([cita[x["eid"]], int(x["anio"]), x["revista"], x["titulo"]], 1):
             ws.cell(i, j, v).font = NORMAL
         ws.cell(i, 5, int(x["citas"])).font = ENTRADA
         c = ws.cell(i, 6, f"=E{i}/(2026-B{i}+1)")
@@ -439,18 +455,20 @@ def main():
     ws.cell(16, 4, "Share of the ten most cited").font = NORMAL
     c = ws.cell(16, 5, "=E14/E15")
     c.number_format = "0.0%"
-    anchos(ws, [18, 7, 34, 70, 10, 9, 32])
+    anchos(ws, [26, 7, 34, 70, 10, 9, 32])
 
     # S1: estudios incluidos
     ws = wb.create_sheet("S1_Included")
     titulo(ws, "Supplementary file S1. The 135 included studies", "Codes: 1 = present in title, abstract or keywords (Appendix A3).")
     codigos = [k for k in cod[0] if k.split(":")[0] in ("nivel", "diseño", "marco", "tema")]
-    columnas = ["EID", "DOI", "Year", "First author", "Authors (n)", "Title", "Journal", "Volume", "Issue", "Pages / article",
+    columnas = ["EID", "DOI", "Year", "Authors", "Authors (n)", "Title", "Journal", "Volume", "Issue", "Pages / article",
                 "Language", "Countries", "Citations", "Open access"] + [ETIQUETAS[k] for k in codigos]
     cabecera(ws, 3, columnas)
-    for i, x in enumerate(sorted(cod, key=lambda x: (meta[x["eid"]]["apellido"].lower(), x["anio"])), 4):
+    # Orden de la lista de referencias: «Stewart, O. G., Hsieh» antes que «Stewart, O. G., & Rodgers»
+    for i, x in enumerate(sorted(cod, key=lambda x: (autoria[x["eid"]].lower().replace("& ", ""), x["anio"])), 4):
         m = meta[x["eid"]]
-        valores = [x["eid"], x["doi"], int(x["anio"]), f"{m['apellido']}, {m['iniciales']}", int(m["n_autores"] or 1),
+        lista = referencias.autores(m, crossref)
+        valores = [x["eid"], x["doi"], int(x["anio"]), autoria[x["eid"]], len(lista) if lista else int(m["n_autores"] or 1),
                    x["titulo"], x["revista"], m["volumen"], m["numero"], m["paginas"] or m["articulo"],
                    "Spanish" if x["idioma"] == "español" else "English", x["paises"], int(x["citas"] or 0),
                    "Yes" if x["acceso_abierto"] == "True" else "No"] + [1 if x[k] else None for k in codigos]
@@ -458,7 +476,7 @@ def main():
             ws.cell(i, j, v).font = NORMAL
     ws.freeze_panes = "A4"
     ws.auto_filter.ref = f"A3:{get_column_letter(len(columnas))}{3 + len(cod)}"
-    anchos(ws, [20, 28, 6, 22, 8, 60, 34, 8, 8, 12, 9, 26, 9, 9] + [12] * len(codigos))
+    anchos(ws, [20, 28, 6, 40, 8, 60, 34, 8, 8, 12, 9, 26, 9, 9] + [12] * len(codigos))
 
     # S2: cribado
     ws = wb.create_sheet("S2_Screening")
