@@ -35,7 +35,7 @@ SIN_CURSOR, TOPE_SIN_CURSOR = 25, 5000
 COLUMNAS = [
     "eid", "doi", "titulo", "autores", "primer_autor", "revista", "issn",
     "eissn", "volumen", "numero", "paginas", "fecha", "anio", "tipo",
-    "citas", "acceso_abierto", "palabras_clave", "resumen", "enlace",
+    "citas", "acceso_abierto", "paises", "instituciones", "palabras_clave", "resumen", "enlace",
 ]
 
 
@@ -78,6 +78,8 @@ def fila(e):
     nombres = "; ".join(a.get("authname", "") for a in autores) or e.get("dc:creator", "")
     enlace = next((l["@href"] for l in e.get("link", []) if l.get("@ref") == "scopus"), "")
     pagina = e.get("prism:pageRange") or ""
+    afiliaciones = e.get("affiliation") or []
+    paises = dict.fromkeys(a.get("affiliation-country") or "" for a in afiliaciones)
     return {
         "eid": e.get("eid", ""),
         "doi": e.get("prism:doi", ""),
@@ -95,6 +97,8 @@ def fila(e):
         "tipo": e.get("subtypeDescription", ""),
         "citas": e.get("citedby-count", ""),
         "acceso_abierto": e.get("openaccessFlag", ""),
+        "paises": "; ".join(p for p in paises if p),
+        "instituciones": "; ".join(a.get("affilname") or "" for a in afiliaciones),
         "palabras_clave": (e.get("authkeywords") or "").replace(" | ", "; "),
         "resumen": e.get("dc:description", ""),
         "enlace": enlace,
