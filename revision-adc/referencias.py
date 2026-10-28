@@ -25,6 +25,9 @@ PROPIOS = {
 }
 SIGLAS = {"ai", "cdl", "efl", "elt", "coil", "l2", "esl", "eap", "dei", "cdls", "ict", "he", "k-12", "3wai", "ii"}
 REVISTAS = {
+    "Llt Journal Journal on Language and Language Teaching": "LLT Journal: A Journal on Language and Language Teaching",
+    "Bellaterra Journal of Teaching and Learning Language and Literature":
+        "Bellaterra Journal of Teaching & Learning Language & Literature",
     "Reading and Writing South Africa": "Reading & Writing",
     "Journal of Adolescent and Adult Literacy": "Journal of Adolescent & Adult Literacy",
     "Recall": "ReCALL", "Triplec": "tripleC: Communication, Capitalism & Critique",
@@ -45,7 +48,7 @@ REVISTAS = {
     "Sustainability Switzerland": "Sustainability", "Information Switzerland": "Information",
 }
 # Revistas que numeran solo por número, sin volumen
-SOLO_NUMERO = {"Edutec", "Digital Education Review"}
+SOLO_NUMERO = {"Edutec", "Digital Education Review", "Centre for Applied Linguistics Research Journal"}
 # Títulos que la conversión automática no resuelve (nombres de escalas, campañas, siglas)
 TITULOS = {
     "comprehensive digital literacy scale (CDLS)": "Comprehensive Digital Literacy Scale (CDLS)",
@@ -71,6 +74,10 @@ AUTORES_MANUALES = {
     # Primera página del artículo (Interciencia no deposita los autores en Crossref)
     ("Salazar-Jiménez", "2026"): [("Salazar-Jiménez", "Rodrigo"), ("Orellana Fonseca", "Cristian"),
                                   ("Fuentes Rodríguez", "Carolina")],
+    # Crossref toma «I. De Costa» como apellido; Hendriwanto firma con un solo nombre
+    ("Hendriwanto", "2026"): [("Hendriwanto", ""), ("De Costa", "Peter I.")],
+    # Primera página del artículo (Scopus toma «Mata» como apellido)
+    ("Mata", "2021"): [("Castellví Mata", "Jordi"), ("Tosar Bacarizo", "Breogán"), ("Santisteban Fernández", "Antoni")],
     # Primera página del artículo (Crossref quita el guion del primer apellido y altera el orden)
     ("López-Fernández", "2026"): [("López-Fernández", "Raúl"), ("George-Reyes", "Carlos Enrique"),
                                   ("Sorhegui-Ortega", "Rafael Antonio"), ("Sandoval-Benítez", "Luisa Fernanda")],
@@ -79,6 +86,19 @@ AUTORES_MANUALES = {
 # traducción. El original sale de Crossref (Interciencia, de la primera página) y la
 # traducción, del título en inglés que publica la revista.
 TITULOS_ORIGINALES = {
+    ("Samaniego", "2026"): (
+        "Alfabetización digital crítica en el currículo de Educación Secundaria Obligatoria",
+        "Critical digital literacy in the curriculum of compulsory secondary education"),
+    ("Esteve-Mon", "2026"): (
+        "Competencia digital crítica, educación abierta y agencia para el aprendizaje: Análisis web del contexto"
+        " universitario español",
+        "Critical digital competence, open education and agency for learning: A web analysis of the Spanish"
+        " university context"),
+    ("Cajavilca", "2025"): (
+        "La alfabetización digital crítica como motor de la personalización del aprendizaje: Un análisis de los"
+        " porfolios de estudiantes universitarios",
+        "Critical digital literacy as a driver of personalized learning: An analysis of university students'"
+        " portfolios"),
     ("López-Fernández", "2026"): (
         "Inteligencia artificial en la universidad: Análisis de género de las perspectivas éticas y regulatorias"
         " en cinco escenarios internacionales",
@@ -224,7 +244,7 @@ def main():
         if revista in SOLO_NUMERO:
             # El número de Edutec y DER va en el DOI cuando Scopus lo registra como volumen
             enlace = re.search(r"\.(\d+)\.[\d-]+$", m["doi"])
-            loc = f", ({enlace.group(1) if enlace else (vol.group(0) if vol else num)})"
+            loc = f", ({enlace.group(1) if enlace else (num or (vol.group(0) if vol else ''))})"
         else:
             loc = (f", *{vol.group(0)}*" if vol else "") + (f"({num})" if num and vol else "")
             if vol and not num and re.search(r"\((\d+)", m["volumen"]):
