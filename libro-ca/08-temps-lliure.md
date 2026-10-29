@@ -18,7 +18,7 @@ Aquí rau, em sembla, la diferència entre una política sobre aparells i una po
 
 * * *
 
-Es pot resistir alguna cosa que fabrica els nostres propis desitjos? Si el poder ens governa a través de la llibertat, qualsevol rebel·lia podria ser una altra peça del mateix engranatge. És una versió pràctica de l'objecció de Fraser que vaig discutir al tercer capítol.
+Es pot fer resistència a alguna cosa que fabrica els nostres propis desitjos? Si el poder ens governa a través de la llibertat, qualsevol rebel·lia podria ser una altra peça del mateix engranatge. És una versió pràctica de l'objecció de Fraser que vaig discutir al tercer capítol.
 
 Foucault es va trobar moltes vegades amb aquest retret, i la seva resposta passava per desmuntar una imatge equivocada del poder. Ell el va pensar com una xarxa de forces que es mouen, es tensen, es desequilibren. En el primer volum de la *Historia de la sexualidad* va escriure que allà on hi ha poder hi ha resistència, i que aquesta no es troba mai en una posició d'exterioritat respecte del poder.[^c8-resistencia] No existeix un lloc pur del gran Rebuig. Hi ha resistències en plural, solitàries o concertades, espontànies o calculades. La conseqüència és menys descoratjadora del que sembla. Si la resistència no ve de fora, tampoc no cal buscar-la en un defora inabastable. És als llocs on la xarxa no acaba de tancar.
 
@@ -46,7 +46,7 @@ També hi ha resistències que s'apropien de la tecnologia per capgirar-la. A Xi
 
 * * *
 
-Seria deshonest tancar amb una celebració de les petites resistències, com si fossin suficients. L'asimetria de forces és enorme. El professor que es nega a fer servir la plataforma corporativa es pot quedar aïllat. La mare que no vol que el seu fill tingui un compte d'una gran empresa descobreix que, sense aquest compte, el nen no pot veure les seves tasques.
+Seria deshonest acabar amb una celebració de les petites resistències, com si fossin suficients. L'asimetria de forces és enorme. El professor que es nega a fer servir la plataforma corporativa es pot quedar aïllat. La mare que no vol que el seu fill tingui un compte d'una gran empresa descobreix que, sense aquest compte, el nen no pot veure les seves tasques.
 
 Hi ha un risc més subtil. Quan la resistència esdevé una elecció privada d'estil de vida (desconnectar-se, criar els fills sense pantalles, buscar una escola alternativa), acaba sent un privilegi de qui s'ho pot pagar, i deixa intacte el sistema per a tots els altres. La desconnexió corre el perill de convertir-se en un bé de luxe. L'empresari de si mateix també sap fer de la seva resistència un producte.
 
@@ -84,7 +84,7 @@ La segona és la cura. Vol dir retornar l'avaluació a la seva funció formativa
 
 La tercera és la privacitat. Recollir només les dades necessàries, saber on es guarden i durant quant de temps, i distingir, com va fer l'autoritat danesa, entre les dades que calen per prestar un servei i les que una empresa voldria per als seus propis fins. Preferir infraestructures públiques o cooperatives quan sigui possible, i exigir, quan no ho sigui, contractes que es puguin llegir i complir. Protegir, en definitiva, aquest lloc ocult que, segons Arendt, necessita tot el que creix.
 
-La quarta és la deliberació col·lectiva. Tornar a preguntar pels fins de l'escola als claustres, als consells escolars i als parlaments, i fer-ho també amb els fins que viatgen dins dels indicadors, perquè es discuteixin amb la mateixa serietat que els que s'escriuen a les lleis. Decidir en comú quines plataformes s'adopten i amb quines condicions. I conrear la cultura tècnica de què parlava Simondon, la que permet entendre el que es fa servir, començant aviat, implicant-hi les famílies i sense reduir-la a fer anar aplicacions. L'informe de la UNESCO del 2023 demana, amb altres paraules, una cosa molt semblant: que cap tecnologia no entri a les aules sense proves que serveix, sense regulació i sense docents preparats.
+La quarta és la deliberació col·lectiva. Tornar a preguntar pels fins de l'escola als claustres, als consells escolars i als parlaments, i fer-ho també amb els fins que viatgen dins dels indicadors, perquè es discuteixin amb la mateixa serietat que els que s'escriuen a les lleis. Decidir en comú quines plataformes s'adopten i amb quines condicions. I conrear la cultura tècnica de què parlava Simondon, la que permet entendre el que es fa servir, començant aviat, implicant-hi les famílies i sense reduir-la a fer anar aplicacions. L'informe de la UNESCO del 2023 demana, amb altres paraules, una cosa molt semblant: que cap tecnologia no entri a les aules sense proves que serveixi, sense regulació i sense docents preparats.
 
 Cap d'aquestes direccions no té sentit si es queda en unes poques escoles amb recursos. L'edutropia o és una lluita per la igualtat o es converteix en una pedagogia refinada per a elits.
 
