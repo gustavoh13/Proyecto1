@@ -1,0 +1,155 @@
+# Bibliografia {.unnumbered #bibliografia}
+
+Les notes citen cada obra per autor i any; quan hi ha traducció, el primer any és el de l'edició original. Les obres clàssiques indiquen, a més, la numeració canònica (Stephanus per a Plató, Bekker per a Aristòtil), que permet trobar el passatge en qualsevol edició.
+
+## Lectures comentades
+
+Les obres que de debò han donat forma a l'argument, amb una línia sobre el que hi vaig trobar.
+
+- **Per començar.** Selwyn (2022): el mapa més sobri dels debats sobre tecnologia educativa, escèptic sense ser tecnòfob. Williamson (2017): com les dades van passar a governar l'educació, de l'aula al ministeri.
+- **Capítol 1.** Plató, *Teetet*, *Apologia* i *Banquet*: la cera, l'examen i el desig. Durkheim (1922/1975): la definició més franca de l'escola com a taller social.
+- **Capítol 2.** Agamben (2006/2014): la definició de Foucault i la genealogia de la paraula en un text breu. Agamben (2007/2008): l'*oikonomia* teològica, exigent però decisiva. Biesta (2006, 2010): la millor crítica que conec del llenguatge de l'aprenentatge.
+- **Capítol 3.** Foucault (1975/2002): d'aquí surt gairebé tot el que aquest llibre diu sobre disciplina, examen i ànima. Fraser (1981): l'objecció més seriosa a Foucault. Pasolini (1976/1997): l'educació que donen les coses.
+- **Capítol 4.** Foucault (2004/2007): el curs on apareix l'empresari de si mateix. Wollstonecraft (1792/2018): la resposta a Rousseau. Ball (2003): el que la cultura del rendiment fa amb qui ensenya.
+- **Capítol 5.** Deleuze (1990/1995): cinc pàgines que van anticipar l'escola de les plataformes. Zuboff (2019/2020): un model de negoci que convé no aplicar a cegues. Arendt (1961/1996): per què el que creix necessita un lloc amagat. Rossman et al. (2023): l'avaluació independent que obliga a matisar l'entusiasme per l'analítica.
+- **Capítol 6.** Derrida (1972/1975): el *pharmakon* com a clau de lectura de tota tècnica. Simondon (1958/2007): una cultura tècnica per entendre el que fem servir. UNESCO (2023a): el balanç més complet de l'evidència sobre tecnologia educativa.
+- **Capítol 7.** Freire (1970/2005): l'educació bancària. Sandel (2012/2013): per què alguns béns es fan malbé quan es venen. Rivera-Vargas et al. (2023): com entren les plataformes corporatives en escoles concretes.
+- **Capítol 8.** Masschelein i Simons (2012/2014): l'escola com a temps suspès. hooks (1994/2021): l'aula com a lloc de llibertat i de cura. Garcés (2013, 2020): pensar des de la coimplicació i defensar una escola d'aprenents.
+
+## Referències
+
+- Agamben, G. (2005). *Profanaciones* (E. Dobry, Trad.). Anagrama.
+- Agamben, G. (2008). *El Reino y la Gloria: Por una genealogía teológica de la economía y del gobierno. Homo sacer II, 2* (A. Gimeno Cuspinera, Trad.). Pre-Textos. (Obra original publicada el 2007)
+- Agamben, G. (2014). *¿Qué es un dispositivo? Seguido de El amigo y de La Iglesia y el Reino* (M. Ruvituso, Trad.). Adriana Hidalgo. (Obra original publicada el 2006)
+- Agustí d'Hipona. (1947). Del maestro. A *Obras de San Agustín: Tomo III. Obras filosóficas*. Biblioteca de Autores Cristianos. (Obra original escrita ca. 389)
+- Ajuntament de Barcelona. (s. d.). *Suite educativa DD: Digitalización democrática*. https://ajuntament.barcelona.cat/innovaciodemocratica/es/suite-educativa-dd-digitalizacion-democratica
+- Arendt, H. (1996). *Entre el pasado y el futuro: Ocho ejercicios sobre la reflexión política* (A. Poljak, Trad.). Península. (Obra original publicada el 1961)
+- Aristòtil. (1978). *Acerca del alma* (T. Calvo Martínez, Trad.). Gredos. (Obra original escrita ca. 350 a. e. c.)
+- Aristòtil. (1985). *Ética nicomáquea. Ética eudemia* (J. Pallí Bonet, Trad.). Gredos. (Obra original escrita ca. 335-323 a. e. c.)
+- Aristòtil. (1988). *Política* (M. García Valdés, Trad.). Gredos. (Obra original escrita ca. 335-323 a. e. c.)
+- Arnold, K. E., i Pistilli, M. D. (2012). Course Signals at Purdue: Using learning analytics to increase student success. A S. Dawson, C. Haythornthwaite, S. Buckingham Shum, D. Gašević i R. Ferguson (Eds.), *LAK '12: Proceedings of the 2nd International Conference on Learning Analytics and Knowledge* (pp. 267-270). Association for Computing Machinery. https://doi.org/10.1145/2330601.2330666
+- Atasay, E. (2014). Neoliberal schooling and subjectivity: Learning to desire lack. *Subjectivity*, *7*(3), 288-307. https://doi.org/10.1057/sub.2014.12
+- Ball, S. J. (2003). The teacher's soul and the terrors of performativity. *Journal of Education Policy*, *18*(2), 215-228. https://doi.org/10.1080/0268093022000043065
+- Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., i Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. *Proceedings of the National Academy of Sciences*, *122*(26), Article e2422633122. https://doi.org/10.1073/pnas.2422633122
+- Benjamin, R. (2019). *Race after technology: Abolitionist tools for the New Jim Code*. Polity.
+- Benjamin, W. (2008). *El narrador* (P. Oyarzún Robles, Ed. i Trad.). Metales Pesados. (Obra original publicada el 1936)
+- Biesta, G. (2006). *Beyond learning: Democratic education for a human future*. Paradigm.
+- Biesta, G. (2010). *Good education in an age of measurement: Ethics, politics, democracy*. Paradigm.
+- Biesta, G. (2015). What is education for? On good education, teacher judgement, and educational professionalism. *European Journal of Education*, *50*(1), 75-87. https://doi.org/10.1111/ejed.12109
+- Black, P., i Wiliam, D. (1998). Inside the black box: Raising standards through classroom assessment. *Phi Delta Kappan*, *80*(2), 139-144, 146-148.
+- Caulfield, M. (2013a, 26 de setembre). *Why the Course Signals math does not add up*. Hapgood. https://hapgood.us/2013/09/26/why-the-course-signals-math-does-not-add-up/
+- Caulfield, M. (2013b, 26 de setembre). *A simple, less mathematical way to understand the Course Signals issue*. Hapgood. https://hapgood.us/2013/09/26/a-simple-less-mathematical-way-to-understand-the-course-signals-issue/
+- Certeau, M. de (2000). *La invención de lo cotidiano: Vol. 1. Artes de hacer* (L. Giard, Ed.; A. Pescador, Trad.). Universidad Iberoamericana. (Obra original publicada el 1980)
+- Ciceró. (2001). *Sobre los deberes* (J. Guillén Cabañero, Trad.). Alianza. (Obra original escrita el 44 a. e. c.)
+- Coley, M. (2023, 16 d'agost). *Guidance on AI detection and why we're disabling Turnitin's AI detector*. Vanderbilt University, Brightspace Support. https://www.vanderbilt.edu/brightspace/2023/08/16/guidance-on-ai-detection-and-why-were-disabling-turnitins-ai-detector/
+- Comenius, J. A. (1986). *Didáctica magna* (S. López Peces, Trad.). Akal. (Obra original publicada el 1657)
+- Comunidad de Madrid. (s. d.). *EducaMadrid*. https://www.comunidad.madrid/servicios/educacion/educamadrid
+- Constitución Española. (1978). *Boletín Oficial del Estado*, 311, de 29 de desembre de 1978. https://www.boe.es/eli/es/c/1978/12/27/(1)/con
+- Crawford, K. (2022). *Atlas de inteligencia artificial: Poder, política y costos planetarios* (F. Díaz Klaassen, Trad.). Fondo de Cultura Económica. (Obra original publicada el 2021)
+- Datatilsynet. (2022a, 14 de juliol). *Datatilsynet nedlægger behandlingsforbud i Chromebook-sag* (expedient 2020-431-0061). https://www.datatilsynet.dk/afgoerelser/afgoerelser/2022/jul/datatilsynet-nedlaegger-behandlingsforbud-i-chromebook-sag-
+- Datatilsynet. (2022b, 18 d'agost). *Datatilsynet fastholder forbud i Chromebook-sag*. https://www.datatilsynet.dk/afgoerelser/afgoerelser/2022/aug/datatilsynet-fastholder-forbud-i-chromebook-sag
+- Datatilsynet. (2022c, 8 de setembre). *Chromebooks: Datatilsynet suspenderer forbud og giver påbud om lovliggørelse*. https://www.datatilsynet.dk/presse-og-nyheder/nyhedsarkiv/2022/sep/chromebooks-datatilsynet-suspenderer-forbud-og-giver-paabud-om-lovliggoerelse-
+- Datatilsynet. (2024a, 30 de gener). *Datatilsynet udsteder påbud til 53 kommuner i den landsdækkende Chromebook-sag*. https://www.lovguiden.dk/dokument/datatilsynet/30-01-2024-datatilsynet-udsteder-paabud-til-53-kommuner-i-den-landsdaekkende-chromebook-sag
+- Datatilsynet. (2024b, juliol). *Chromebook-sagen: Kommunerne efterlever Datatilsynets seneste påbud*. https://www.datatilsynet.dk/presse-og-nyheder/nyhedsarkiv/2024/jul/chromebook-sagen-kommunerne-efterlever-datatilsynets-seneste-paabud-
+- Decisión de Ejecución (UE) 2023/1795 de la Comisión. (2023, 10 de juliol). Relativa a la adecuación del nivel de protección de los datos personales en el marco de privacidad de datos UE-EE. UU. *Diario Oficial de la Unión Europea*, L 231. http://data.europa.eu/eli/dec_impl/2023/1795/oj
+- Deleuze, G. (1990). ¿Qué es un dispositivo? A *Michel Foucault, filósofo* (A. L. Bixio, Trad.). Gedisa. (Obra original publicada el 1989)
+- Deleuze, G. (1995). *Conversaciones 1972-1990* (J. L. Pardo, Trad.). Pre-Textos. (Obra original publicada el 1990)
+- Department for Education, i Ofqual. (2020, 17 d'agost). *GCSE and A level students to receive centre assessment grades* [Nota de premsa]. https://www.gov.uk/government/news/gcse-and-a-level-students-to-receive-centre-assessment-grades
+- Derrida, J. (1975). *La diseminación* (J. Martín Arancibia, Trad.). Fundamentos. (Obra original publicada el 1972)
+- Descartes, R. (1999). *Correspondencia con Isabel de Bohemia y otras cartas* (M. T. Gallego Urrutia, Trad.). Alba. (Cartes originals escrites entre el 1643 i el 1649)
+- Diario Estrategia. (2026). *Proyecto que ajusta la instalación de los SLEP pasa a la Sala*. https://www.diarioestrategia.cl/texto-diario/mostrar/6038115/proyecto-ajusta-instalacion-slep-pasa-sala
+- Diògenes Laerci. (2007). *Vidas y opiniones de los filósofos ilustres* (C. García Gual, Trad.). Alianza. (Obra original escrita ca. segle III)
+- Durkheim, É. (1975). *Educación y sociología* (J. Muls de Liarás, Trad.). Península. (Obra original publicada el 1922)
+- El Mostrador. (2026, 15 de juliol). *Estudio del CIAE vincula Ley de Inclusión y SAE con histórica baja de segregación escolar*. https://www.elmostrador.cl/noticias/pais/2026/07/15/estudio-del-ciae-vincula-ley-de-inclusion-y-sae-con-historica-baja-de-segregacion-escolar/
+- Feldstein, M. (2013, 3 de novembre). Course Signals effectiveness data appears to be meaningless (and why you should care). *e-Literate*. https://eliterate.us/course-signals-effectiveness-data-appears-meaningless-care/
+- Foucault, M. (1985). El juego de Michel Foucault. A J. Varela i F. Álvarez-Uría (Eds. i Trads.), *Saber y verdad*. La Piqueta. (Obra original publicada el 1977)
+- Foucault, M. (1995). ¿Qué es la crítica? [Crítica y Aufklärung] (J. de la Higuera, Trad.). *Daimon. Revista de Filosofía*, (11), 5-26. https://revistas.um.es/daimon/article/view/7261 (Obra original publicada el 1990)
+- Foucault, M. (2002). *Vigilar y castigar: Nacimiento de la prisión* (A. Garzón del Camino, Trad.). Siglo XXI. (Obra original publicada el 1975)
+- Foucault, M. (2006). *Seguridad, territorio, población: Curso en el Collège de France (1977-1978)* (M. Senellart, Ed.; H. Pons, Trad.). Fondo de Cultura Económica. (Obra original publicada el 2004)
+- Foucault, M. (2007). *Nacimiento de la biopolítica: Curso en el Collège de France (1978-1979)* (M. Senellart, Ed.; H. Pons, Trad.). Fondo de Cultura Económica. (Obra original publicada el 2004)
+- Foucault, M. (2008). *Historia de la sexualidad 1: La voluntad de saber* (U. Guiñazú, Trad.; 2a ed. rev.). Siglo XXI. (Obra original publicada el 1976)
+- Fraser, N. (1981). Foucault on modern power: Empirical insights and normative confusions. *Praxis International*, *1*(3), 272-287.
+- Freire, P. (2005). *Pedagogía del oprimido* (J. Mellado, Trad.). Siglo XXI. (Obra original publicada el 1970)
+- Gadamer, H.-G. (1977). *Verdad y método: Fundamentos de una hermenéutica filosófica* (A. Agud Aparicio i R. de Agapito, Trads.). Sígueme. (Obra original publicada el 1960)
+- Garcés, M. (2013). *Un mundo común*. Bellaterra.
+- Garcés, M. (2020). *Escuela de aprendices*. Galaxia Gutenberg.
+- Georgia State University. (s. d.). *GPS Advising*. https://success.gsu.edu/gps-advising/
+- Georgia State University. (2017, 16 de març). *Georgia State national leader in driving student success through data*. https://news.gsu.edu/2017/03/16/georgia-state-student-success-data/
+- Global Education Monitoring Report. (2025, 23 de gener). *To ban or not to ban? Monitoring countries' regulations on smartphone use in school*. World Education Blog. https://world-education-blog.org/2025/01/23/to-ban-or-not-to-ban-monitoring-countries-regulations-on-smartphone-use-in-school/
+- Google. (s. d.-a). *Google Workspace for Education terms of service*. https://workspace.google.com/terms/education_terms.html
+- Google. (s. d.-b). *Google Workspace for Education privacy notice*. https://workspace.google.com/terms/education_privacy.html
+- Habermas, J. (2008). *El discurso filosófico de la modernidad* (M. Jiménez Redondo, Trad.). Katz. (Obra original publicada el 1985)
+- Han, B.-C. (2012). *La sociedad del cansancio* (A. Saratxaga Arregi, Trad.). Herder. (Obra original publicada el 2010)
+- Heidegger, M. (1989). *Serenidad* (Y. Zimmermann, Trad.). Ediciones del Serbal. (Obra original publicada el 1959)
+- Heidegger, M. (1994). *Conferencias y artículos* (E. Barjau, Trad.). Ediciones del Serbal. (Obra original publicada el 1954)
+- hooks, b. (2021). *Enseñar a transgredir: La educación como práctica de la libertad* (M. Malo, Trad.). Capitán Swing. (Obra original publicada el 1994)
+- Huizinga, J. (2012). *Homo ludens* (E. Imaz, Trad.; 3a ed.). Alianza. (Obra original publicada el 1938)
+- Kant, I. (1923). Über Pädagogik (P. Natorp, Ed.). A Königlich Preußische Akademie der Wissenschaften (Ed.), *Kant's gesammelte Schriften: Bd. 9* (pp. 437-499). Walter de Gruyter. (Obra original publicada el 1803)
+- Kant, I. (1983). *Pedagogía* (M. Fernández Enguita, Ed.; L. Luzuriaga i J. L. Pascual, Trads.). Akal. (Obra original publicada el 1803)
+- Kant, I. (2004). *¿Qué es la Ilustración? Y otros escritos de ética, política y filosofía de la historia* (R. R. Aramayo, Ed. i Trad.). Alianza. (Obra original publicada el 1784)
+- Kurzweil, M., i Wu, D. D. (2015, 23 d'abril). *Building a pathway to student success at Georgia State University*. Ithaka S+R. https://doi.org/10.18665/sr.221053
+- La Boétie, É. de (2008). *Discurso de la servidumbre voluntaria* (P. Lomba, Ed. i Trad.). Trotta. (Obra original publicada el 1576)
+- Ley 20.370. (2009, 12 de setembre). Establece la Ley General de Educación. *Diario Oficial de la República de Chile*. https://www.bcn.cl/leychile/navegar?idLey=20370
+- Ley 20.845. (2015, 8 de juny). De inclusión escolar que regula la admisión de los y las estudiantes, elimina el financiamiento compartido y prohíbe el lucro en establecimientos educacionales que reciben aportes del Estado. *Diario Oficial de la República de Chile*. https://www.bcn.cl/leychile/navegar?idLey=20845
+- Ley 20.903. (2016, 1 d'abril). Crea el Sistema de Desarrollo Profesional Docente y modifica otras normas. *Diario Oficial de la República de Chile*. https://www.bcn.cl/leychile/navegar?idLey=20903
+- Ley 21.040. (2017, 24 de novembre). Crea el Sistema de Educación Pública. *Diario Oficial de la República de Chile*. https://www.bcn.cl/leychile/navegar?idLey=21040
+- Ley 21.728. (2025). [Llei que dona solució a l'anomenat deute històric docent, promulgada el 31 de gener de 2025]. *Diario Oficial de la República de Chile*. https://www.bcn.cl/leychile/navegar?idLey=21728
+- Liang, W., Yuksekgonul, M., Mao, Y., Wu, E., i Zou, J. (2023). GPT detectors are biased against non-native English writers. *Patterns*, *4*(7), Article 100779. https://doi.org/10.1016/j.patter.2023.100779
+- Masschelein, J., i Simons, M. (2014). *Defensa de la escuela: Una cuestión pública* (A. F. Rodríguez Esteban, Trad.). Miño y Dávila. (Obra original publicada el 2012)
+- Meganoticias. (2025, 31 de gener). *¿Cómo será el proceso de pago?: Presidente Boric promulga ley que da solución a deuda histórica docente*. https://www.meganoticias.cl/nacional/474482-deuda-historica-ley-presidente-boric-proceso-de-pago-brk-31-01-2025.html
+- Miao, F., i Holmes, W. (2023). *Guidance for generative AI in education and research*. UNESCO. https://doi.org/10.54675/EWZM9535
+- Ministère de l'Éducation nationale. (2022, 15 de novembre). Réponse à la question écrite n.º 971 de M. Philippe Latombe. *Journal officiel de la République française*, Assemblée nationale. https://questions.assemblee-nationale.fr/q16/16-971QE.htm
+- Ministerio de Educación de Chile. (2026). *Más del 50 % del nuevo Sistema de Educación Pública instalado: 10 SLEP inician su administración educacional*. https://www.mineduc.cl/mas-del-50-del-nuevo-sistema-de-educacion-publica-instalado-10-slep-inician-su-administracion-educacional/
+- Noddings, N. (2005). *The challenge to care in schools: An alternative approach to education* (2a ed.). Teachers College Press.
+- NPR. (2016, 30 d'octubre). *How one university used big data to boost graduation rates*. https://www.npr.org/sections/ed/2016/10/30/499200614/how-one-university-used-big-data-to-boost-graduation-rates
+- OECD. (2015). *Students, computers and learning: Making the connection*. OECD Publishing. https://doi.org/10.1787/9789264239555-en
+- OECD. (2023a). *PISA 2022 results (Volume II): Learning during – and from – disruption*. OECD Publishing. https://doi.org/10.1787/a97db61c-en
+- OECD. (2023b, 5 de desembre). *Decline in educational performance only partly attributable to the COVID-19 pandemic* [Comunicat de premsa]. https://www.oecd.org/en/about/news/press-releases/2023/12/decline-in-educational-performance-only-partly-attributable-to-the-covid-19-pandemic.html
+- OECD. (2024). *Students, digital devices and success*. OECD Publishing. https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/05/students-digital-devices-and-success_621829ff/9e4c0624-en.pdf
+- Ofqual. (2020, 13 d'agost). *Awarding GCSE, AS, A level, advanced extension awards and extended project qualifications in summer 2020: Interim report* (Ofqual/20/6656/1). https://www.gov.uk/government/publications/awarding-gcse-as-a-levels-in-summer-2020-interim-report
+- Pasolini, P. P. (1997). *Cartas luteranas* (J. Torrell, A. Giménez Merino i J.-R. Capella, Trads.). Trotta. (Obra original publicada el 1976)
+- Pico della Mirandola, G. (1988). *Discurso sobre la dignidad del hombre* (P. J. Quetglas, Trad.). PPU. (Obra original publicada el 1496)
+- Pizan, C. de (1995). *La ciudad de las damas* (M.-J. Lemarchand, Ed. i Trad.). Siruela. (Obra original escrita ca. 1405)
+- Plató. (1981). *Diálogos I: Apología, Critón, Eutifrón, Ion, Lisis, Cármides, Hipias menor, Hipias mayor, Laques, Protágoras* (J. Calonge Ruiz, Trad.). Gredos. (Obra original escrita ca. 399-390 a. e. c.)
+- Plató. (1986a). *Diálogos III: Fedón, Banquete, Fedro* (C. García Gual, M. Martínez Hernández i E. Lledó Íñigo, Trads.). Gredos. (Obra original escrita ca. 385-370 a. e. c.)
+- Plató. (1988). *Diálogos V: Parménides, Teeteto, Sofista, Político* (Á. Vallejo Campos, Trad.). Gredos. (Obra original escrita ca. 369 a. e. c.)
+- Purdue University. (2013, 25 de setembre). Purdue software boosts graduation rate 21 percent. *Purdue Today*. https://www.purdue.edu/uns/PurdueToday/archive/2013/09-September/130925PurdueToday.htm
+- Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo. (2016, 27 d'abril). Reglamento general de protección de datos. *Diario Oficial de la Unión Europea*, L 119, 1-88. http://data.europa.eu/eli/reg/2016/679/oj
+- Reglamento (UE) 2024/1689 del Parlamento Europeo y del Consejo. (2024, 13 de juny). Reglamento de Inteligencia Artificial. *Diario Oficial de la Unión Europea*, L, 2024/1689. http://data.europa.eu/eli/reg/2024/1689/oj
+- Reglamento (UE) 2026/1744 del Parlamento Europeo y del Consejo. (2026, 8 de juliol). Por el que se modifican, entre otros, el Reglamento (UE) 2024/1689 [Òmnibus Digital sobre IA]. *Diario Oficial de la Unión Europea*, L, 2026/1744, de 24 de juliol de 2026. http://data.europa.eu/eli/reg/2026/1744/oj
+- Rivera-Vargas, P., Jacovkis, J., Herrera-Urizar, G., Calderón-Garrido, D., Miño-Puigcercós, R., Parcerisa, L., Folguera, S., Moreno, A., Massot, B., Passerón, E., Alonso Cano, C., Gasull-Figueras, L., i Rilo-Borredà, C. (2023). *Plataformas digitales BigTech del sistema educativo catalán y derechos de la infancia: Amenazas y retos. Informe final del proyecto edDIT*. aFFaC i Esbrina, Universitat de Barcelona. http://diposit.ub.edu/dspace/handle/2445/192941
+- Rossman, D., Alamuddin, R., Kurzweil, M., i Karon, J. (2021, 24 de juny). *MAAPS advising experiment: Evaluation findings after four years*. Ithaka S+R. https://sr.ithaka.org/wp-content/uploads/2021/06/SR_Report-MAAPS-Evaluation-Findings-After-Four-Years-062421.pdf
+- Rossman, D., Kurzweil, M., i Lewis, B. (2023, 16 de maig). *MAAPS advising experiment: Evaluation findings after six years*. Ithaka S+R. https://sr.ithaka.org/publications/maaps-advising-experiment-evaluation-6-years/
+- Rousseau, J.-J. (2011). *Emilio, o De la educación* (M. Armiño, Trad.; 3a ed.). Alianza. (Obra original publicada el 1762)
+- Sandel, M. J. (2013). *Lo que el dinero no puede comprar: Los límites morales del mercado* (J. Chamorro Mielke, Trad.). Debate. (Obra original publicada el 2012)
+- Schüll, N. D. (2012). *Addiction by design: Machine gambling in Las Vegas*. Princeton University Press.
+- Selwyn, N. (2022). *Education and technology: Key issues and debates* (3a ed.). Bloomsbury Academic.
+- Simondon, G. (2007). *El modo de existencia de los objetos técnicos* (M. Martínez i P. Rodríguez, Trads.). Prometeo. (Obra original publicada el 1958)
+- Spinoza, B. (2011). *Ética demostrada según el orden geométrico* (V. Peña, Trad.). Alianza. (Obra original publicada el 1677)
+- Spinoza, B. (2014). *Tratado teológico-político* (A. Domínguez, Trad.). Alianza. (Obra original publicada el 1670)
+- Stallman, R. M. (2004). *Software libre para una sociedad libre* (J. Rowan, D. Sanz Paratcha i L. Trinidad, Trads.). Traficantes de Sueños. (Obra original publicada el 2002)
+- Stiegler, B. (2002). *La técnica y el tiempo I: El pecado de Epimeteo* (B. Morales Bastos, Trad.). Argitaletxe Hiru. (Obra original publicada el 1994)
+- Stiegler, B. (2015). *Lo que hace que la vida merezca ser vivida: De la farmacología* (N. Cortés, Trad.). Avarigani. (Obra original publicada el 2010)
+- Straumsheim, C. (2013, 6 de novembre). Researchers cast doubt about early warning systems' effect on retention. *Inside Higher Ed*. https://www.insidehighered.com/news/2013/11/06/researchers-cast-doubt-about-early-warning-systems-effect-retention
+- The Clinic. (2025, 26 de setembre). *El 66 % de los deudores del CAE se encuentran morosos por más de tres cuotas impagas y en más de la mitad de los casos el Estado tuvo que hacerse cargo de la deuda*. https://www.theclinic.cl/2025/09/26/el-66-de-los-deudores-del-cae-se-encuentran-morosos-por-mas-de-tres-cuotas-impagas-y-en-mas-de-la-mitad-de-los-casos-el-estado-tuvo-que-hacerse-cargo-de-la-deuda/
+- Tribunal de Justicia de la Unión Europea. (2015, 6 d'octubre). *Sentencia Schrems* (C-362/14). https://curia.europa.eu/juris/liste.jsf?num=C-362/14
+- Tribunal de Justicia de la Unión Europea. (2020, 16 de juliol). *Sentencia Facebook Ireland y Schrems* (C-311/18). https://curia.europa.eu/juris/liste.jsf?num=C-311/18
+- Tribunal de Justicia de la Unión Europea. (2025). *Recurso de casación interpuesto el 31 de octubre de 2025 por Philippe Latombe contra la sentencia del Tribunal General en el asunto T-553/23* (C-703/25 P). *Diario Oficial de la Unión Europea*, C, 2025/6610. https://eur-lex.europa.eu/eli/C/2025/6610/oj
+- Tribunal General de la Unión Europea. (2025, 3 de setembre). *Sentencia Latombe/Comisión* (T-553/23). https://curia.europa.eu/juris/liste.jsf?num=T-553/23
+- UNESCO. (2023a). *Global education monitoring report 2023: Technology in education: A tool on whose terms?* https://doi.org/10.54676/UZQV8501
+- UNESCO. (2023b, 7 de setembre). *UNESCO: Governments must quickly regulate generative AI in schools* [Comunicat de premsa]. https://www.unesco.org/en/articles/unesco-governments-must-quickly-regulate-generative-ai-schools
+- UNICEF. (2020a). *COVID-19: Are children able to continue learning during school closures? A global analysis of the potential reach of remote learning policies using data from 100 countries*. https://data.unicef.org/resources/remote-learning-reachability-factsheet/
+- UNICEF. (2020b, 27 d'agost). *COVID-19: At least a third of the world's schoolchildren unable to access remote learning during school closures, new report says* [Comunicat de premsa]. https://www.unicef.org/press-releases/covid-19-least-third-worlds-schoolchildren-unable-access-remote-learning-during
+- United Nations. (2020). *Policy brief: Education during COVID-19 and beyond*. https://www.un.org/development/desa/dspd/wp-content/uploads/sites/22/2020/08/sg_policy_brief_covid-19_and_education_august_2020.pdf
+- Universidad de Chile. (2026). *Expertos debaten baja de la segregación escolar y modificaciones al SAE*. https://uchile.cl/noticias/242425/expertos-debaten-baja-de-la-segregacion-escolar-y-modificaciones-al-sae
+- USMOV. (s. d.). *Trabajo de campo: El uso de los móviles en los centros del Estado español. Centros de Barcelona* [Informe inèdit del projecte Jóvenes y móviles en el aula, PID2019-108041RB-I00].
+- Valenzuela, J. P., Bellei, C., i de los Ríos, D. (2014). Socioeconomic school segregation in a market-oriented educational system. The case of Chile. *Journal of Education Policy*, *29*(2), 217-241. https://doi.org/10.1080/02680939.2013.806995
+- van Dijk, J. (2020). *The digital divide*. Polity.
+- VilaWeb. (2025). *Prohibició total: Educació elimina els mòbils, les tauletes i els rellotges intel·ligents de les aules de Catalunya*. https://www.vilaweb.cat/noticies/prohibicio-total-educacio-elimina-mobils-tauletes-rellotges/
+- Williamson, B. (2017). *Big data in education: The digital future of learning, policy and practice*. SAGE.
+- Wollstonecraft, M. (2018). *Vindicación de los derechos de la mujer* (I. Burdiel, Ed.; C. Martínez Gimeno, Trad.). Cátedra. (Obra original publicada el 1792)
+- Zuboff, S. (2020). *La era del capitalismo de la vigilancia: La lucha por un futuro humano frente a las nuevas fronteras del poder* (A. Santos Mosquera, Trad.). Paidós. (Obra original publicada el 2019)
+
+* * *
+
+Algunes de les idees d'aquest llibre les vaig treballar abans en una recerca doctoral dirigida per Marina Garcés i Raquel Miño, amb la tutoria de Josep Maria Esquirol. Els agraeixo la lectura atenta i la llibertat.
