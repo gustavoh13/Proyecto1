@@ -98,7 +98,7 @@ El que no té preu, deia la vella distinció de les arts liberals, és el que fa
 
 Al mercat li costa suportar allò que no serveix per a res, i de tot el que l'escola ha convertit en mercaderia hi ha un bé que arrossega els altres: el temps per pensar sense rendir, per equivocar-se sense que quedi registrat, per jugar sense punts, per parlar sense un objectiu. Els grecs l'anomenaven *skholé*.
 
-[^c7-officiis]: Cicerón (44 a. e. c./2001), I, 150-151.
+[^c7-officiis]: Ciceró (44 a. e. c./2001), I, 150-151.
 
 [^c7-prusia]: El *Generallandschulreglement* de Frederic II (1763). Alguns territoris alemanys, com ara Württemberg o Zweibrücken, havien establert abans formes d'escolarització obligatòria.
 
