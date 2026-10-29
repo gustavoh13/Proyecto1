@@ -29,7 +29,9 @@ def main():
     primeras = [next((l.strip() for l in p.splitlines() if l.strip()), "") for p in paginas]
     desde = 2  # portada e índice
     for titulo in titulos:
-        n = next((i for i in range(desde, len(primeras)) if re.sub(r"\s+", " ", primeras[i]) == titulo), None)
+        # El PDF lleva comillas y apóstrofos tipográficos; el Markdown, rectos
+        buscado = titulo.replace("'", "\u2019")
+        n = next((i for i in range(desde, len(primeras)) if re.sub(r"\s+", " ", primeras[i]) in (titulo, buscado)), None)
         if n is None:
             sys.exit(f"No encuentro «{titulo}» en {pdf}")
         print(f"{titulo}\t{n + 1}")

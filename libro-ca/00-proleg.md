@@ -2,7 +2,7 @@
 
 Aquest llibre no va néixer d'una certesa. Va néixer d'unes quantes preguntes que se'm van anar quedant enganxades durant anys de classes, com li passa a qualsevol amb les preguntes d'alumnes que no va saber contestar. Què vol dir ensenyar? L'educació és bona per definició o ho donem per fet perquè no sabem imaginar una altra cosa? Què li passa a la voluntat d'algú quan la institució que li havia d'ensenyar a pensar es converteix en una cadena de producció? I què li passa quan aquesta cadena ja no és de ferro sinó de dades, i cap a la butxaca?
 
-Escric des de diversos llocs i prefereixo dir-ho d'entrada. Sóc professor de filosofia i fa més de deu anys que faig classe en escoles i universitats. Sóc xilè, d'un país que va servir de laboratori al neoliberalisme, on vam aprendre molt aviat a pensar el futur com un deute i el fracàs com una vergonya privada. Visc i investigo a Catalunya, i des d'aquí he vist que les mateixes lògiques recorren també els sistemes educatius europeus, amb un altre accent i amb altres resistències.
+Escric des de diversos llocs i prefereixo dir-ho d'entrada. Soc professor de filosofia i fa més de deu anys que faig classe en escoles i universitats. Soc xilè, d'un país que va servir de laboratori al neoliberalisme, on vam aprendre molt aviat a pensar el futur com un deute i el fracàs com una vergonya privada. Visc i investigo a Catalunya, i des d'aquí he vist que les mateixes lògiques recorren també els sistemes educatius europeus, amb un altre accent i amb altres resistències.
 
 * * *
 

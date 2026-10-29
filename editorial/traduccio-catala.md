@@ -114,3 +114,13 @@ Unión Europea: Reglament (UE) 2024/1689, Reglament d'intel·ligència artificia
 ## Comprobación
 
 `python3 herramientas/comparar_traduccion.py libro/ARCHIVO.md libro-ca/ARXIU.md` comprueba que la traducción conserva las claves de las notas, los encabezados, las pausas, los comentarios, las URL y el número de párrafos, y que no hay rayas.
+
+## Decisiones añadidas durante la traducción
+
+Para que las correcciones futuras sigan el mismo criterio:
+
+- **Ortografía:** la de la GIEC (2016), sin los acentos diacríticos suprimidos («soc», «dona», «venen»).
+- **Autores en notas y referencias:** los clásicos llevan su nombre catalán, igual en la nota y en la lista (Plató, Aristòtil, Ciceró, Agustí d'Hipona, Diògenes Laerci, Comenius). Las leyes e instituciones españolas y chilenas conservan su nombre oficial en castellano cuando son autor de una referencia (Ley 20.370, Constitución Española, Universidad de Chile, Ministerio de Educación de Chile, Comunidad de Madrid); en la prosa van en catalán. Los actos y tribunales de la UE van en catalán en los dos sitios (Reglament (UE) 2024/1689, Decisió d'Execució (UE) 2023/1795, Tribunal de Justícia de la Unió Europea).
+- **Títulos:** el informe de la UNESCO de 2023 se da en inglés, que es la edición citada, con la traducción catalana entre paréntesis. El artículo de Ball se cita en catalán en la prosa, como el original lo citaba en castellano, porque la frase siguiente comenta la palabra «ànima».
+- **Personajes de Rousseau:** Emili y Sofia (el título de la obra, *Emilio*, es el de la edición citada).
+- **Términos:** niños → infants (nen/nena cuando se oponen niños y niñas); dueño → amo; devolver (a la escuela) → retornar; fines → fins; subjetivación → subjectivació; performatividad → performativitat; empleabilidad → ocupabilitat; cuidado de sí → cura de si; ética del cuidado → ètica de la cura; medición → mesurament (para no confundirlo con la «mesura» de las cuatro operaciones); software libre → programari lliure; mercancía → mercaderia; abandono escolar → abandonament escolar; dividuo → dividu; dar clase → fer classe; subir (una tarea) → penjar; pasar asistencia → passar llista; rendición de cuentas → rendició de comptes.
