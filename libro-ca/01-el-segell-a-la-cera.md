@@ -22,7 +22,7 @@ Els grecs van anomenar *paideia* la formació de l'ànima. La paraula abraçava 
 
 L'excel·lència que es buscava s'anomenava *areté*, que traduïm malament com a «virtut». L'*areté* d'un ganivet és tallar bé, i la d'un cavall, córrer. La d'una persona era viure d'acord amb allò que la fa humana, i per a Aristòtil això volia dir viure segons la raó i en companyia d'altres. Aristòtil hi afegia que ningú no la té en néixer: un es fa just fent coses justes, igual que es fa citarista tocant la cítara.[^c1-citara]
 
-L'*areté* rarament apareix amb aquest nom en els currículums actuals. N'ocupen el lloc paraules com competències, ocupabilitat o èxit. Alguna cosa, però, ha resistit: l'escola continua servint un projecte de societat i continua decidint quina mena de persona val la pena formar. El que ha canviat és el lloc on ho diu. Les lleis continuen declarant finalitats generoses, com el ple desenvolupament de la personalitat o la formació de ciutadans crítics, però el que orienta la vida diària de moltes escoles apareix en una altra banda, en els indicadors i en les classificacions, amb l'aspecte d'una qüestió tècnica. Plató i Aristòtil sabien que formaven ànimes. Nosaltres sovint creiem que només desenvolupem competències, i aquesta distància entre el que declarem i el que fem m'inquieta més que qualsevol ideal confessat, per discutible que fos.
+L'*areté* rarament apareix amb aquest nom en els currículums actuals. N'ocupen el lloc paraules com competències, ocupabilitat o èxit. Alguna cosa, però, ha resistit: l'escola continua servint un projecte de societat i continua decidint quina mena de persona val la pena formar. El que ha canviat és el lloc on ho diu. Les lleis encara declaren finalitats generoses, com el ple desenvolupament de la personalitat o la formació de ciutadans crítics, però el que orienta la vida diària de moltes escoles apareix en una altra banda, en els indicadors i en les classificacions, amb l'aspecte d'una qüestió tècnica. Plató i Aristòtil sabien que formaven ànimes. Nosaltres sovint creiem que només desenvolupem competències, i aquesta distància entre el que declarem i el que fem m'inquieta més que qualsevol ideal confessat, per discutible que fos.
 
 * * *
 
@@ -54,7 +54,7 @@ Hipàrquia de Maronea va viure al segle IV abans de la nostra era. Es va unir al
 
 De Diotima de Mantinea no sabem si va existir. Al *Banquet*, quan li toca parlar de l'amor, Sòcrates diu que repeteix el que ella li va ensenyar, i el que li va ensenyar és una teoria de l'educació: *eros* és un ésser a qui falta alguna cosa i que desitja el que no té, i la vida filosòfica és un ascens mogut per aquest desig.[^c1-diotima] Per a Diotima, aprendre era desitjar.
 
-La idea és clau per entendre el que fan avui les plataformes. Tota educació treballa amb el desig. La diferència entre una que allibera i una altra que sotmet és cap a on l'adreça i qui en decideix la direcció.
+La idea és clau per entendre el que fan avui les plataformes. Tota educació treballa amb el desig. La diferència entre una que allibera i una altra que sotmet rau en la direcció cap a on l'adreça i en qui la decideix.
 
 * * *
 
