@@ -2,7 +2,7 @@
 """Añade puntos de partición (guiones blandos) a apariciones concretas de
 palabras en el HTML del libro.
 
-Chromium no trae diccionario de partición para el español, de modo que en
+Chromium no trae diccionario de partición para el español ni el catalán, de modo que en
 un texto justificado una palabra larga que no cabe al final de la línea
 obliga a estirar la anterior. compilar.sh detecta esas líneas
 (lineas_estiradas.py) y pasa aquí la palabra y el número de apariciones
@@ -11,14 +11,14 @@ resto del texto del PDF se pueda copiar y buscar sin caracteres invisibles.
 Las palabras se cuentan sobre el texto visible, como en el PDF, y nunca se
 parte el texto de una URL.
 
-Uso: guionado.py archivo.html objetivos.tsv
+Uso: guionado.py archivo.html objetivos.tsv [lengua]   (es por defecto; ca para el catalán)
      (objetivos.tsv: «palabra<TAB>n» por línea; se acumula entre pasadas)
 """
 import re
 import sys
 from pathlib import Path
 
-LETRAS = re.compile(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+")
+LETRAS = re.compile(r"[A-Za-zÁÀÉÈÍÏÓÒÚÜÑÇáàéèíïóòúüñç]+")
 PIEZAS = re.compile(r"<(style|script|title)\b.*?</\1>|<!--.*?-->|<[^>]+>", re.S | re.I)
 EN_LINEA = {"a", "span", "em", "strong", "i", "b", "sup", "sub", "wbr", "code", "small", "cite", "q", "abbr", "mark", "u", "s"}
 
@@ -38,7 +38,7 @@ def main():
     except ImportError:
         print("Aviso: pyphen no está instalado; el PDF se genera sin partición (pip install pyphen).")
         return
-    dic = pyphen.Pyphen(lang="es")
+    dic = pyphen.Pyphen(lang=sys.argv[3] if len(sys.argv) > 3 else "es")
     html = Path(html_ruta).read_text(encoding="utf-8")
     inicio = html.find("<body")
     # Texto visible: las etiquetas en línea no separan palabras; las de bloque, sí.

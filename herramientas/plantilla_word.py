@@ -6,7 +6,7 @@ manuscrito editorial: Times New Roman 12, interlineado 1,5, sangría de
 primera línea, títulos en negro, notas al pie a 10 puntos, A4 y número de
 página centrado en el pie.
 
-Uso: plantilla_word.py RUTA_SALIDA
+Uso: plantilla_word.py RUTA_SALIDA [idioma, por defecto es-ES]
 """
 import re
 import shutil
@@ -34,11 +34,11 @@ def estilo(xml, sid, ppr=None, rpr=None):
     return xml.replace(bloque, nuevo)
 
 
-def ajustar_estilos(xml):
+def ajustar_estilos(xml, idioma="es-ES"):
     # Valores por defecto: fuente, tamaño, idioma e interlineado 1,5
     xml = re.sub(r"<w:rPrDefault>.*?</w:rPrDefault>",
                  f'<w:rPrDefault><w:rPr>{RFONTS}<w:sz w:val="24" /><w:szCs w:val="24" />'
-                 '<w:lang w:val="es-ES" w:eastAsia="es-ES" w:bidi="ar-SA" /></w:rPr></w:rPrDefault>',
+                 f'<w:lang w:val="{idioma}" w:eastAsia="{idioma}" w:bidi="ar-SA" /></w:rPr></w:rPrDefault>',
                  xml, flags=re.S)
     xml = re.sub(r"<w:pPrDefault>.*?</w:pPrDefault>",
                  '<w:pPrDefault><w:pPr><w:spacing w:after="0" w:line="360" w:lineRule="auto" /></w:pPr></w:pPrDefault>',
@@ -112,6 +112,7 @@ SECCION = (
 
 def main():
     salida = Path(sys.argv[1])
+    idioma = sys.argv[2] if len(sys.argv) > 2 else "es-ES"
     with tempfile.TemporaryDirectory() as tmp:
         base = Path(tmp) / "base.docx"
         subprocess.run(["pandoc", "-o", str(base), "--print-default-data-file", "reference.docx"], check=True)
@@ -119,7 +120,7 @@ def main():
         with zipfile.ZipFile(base) as z:
             z.extractall(dir_x)
         estilos = dir_x / "word" / "styles.xml"
-        estilos.write_text(ajustar_estilos(estilos.read_text(encoding="utf-8")), encoding="utf-8")
+        estilos.write_text(ajustar_estilos(estilos.read_text(encoding="utf-8"), idioma), encoding="utf-8")
         (dir_x / "word" / "footer1.xml").write_text(PIE, encoding="utf-8")
         rels = dir_x / "word" / "_rels" / "document.xml.rels"
         r = rels.read_text(encoding="utf-8")

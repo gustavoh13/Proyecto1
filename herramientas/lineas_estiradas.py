@@ -15,7 +15,7 @@ import subprocess
 import sys
 
 UMBRAL = 0.6
-LETRAS = re.compile(r"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]+")
+LETRAS = re.compile(r"[A-Za-zÁÀÉÈÍÏÓÒÚÜÑÇáàéèíïóòúüñç]+")
 PALABRA_PDF = re.compile(r'<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="([\d.]+)">([^<]*)</word>')
 
 

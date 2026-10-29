@@ -6,7 +6,7 @@ desde 1, las sustituye por un superíndice enlazado y escribe en el directorio
 de salida una copia de cada capítulo sin definiciones más un archivo
 «notas.md» con todas las notas agrupadas por capítulo.
 
-Uso: notas_finales.py DIR_SALIDA capitulo1.md capitulo2.md ...
+Uso: notas_finales.py DIR_SALIDA [--titulo Notas] capitulo1.md capitulo2.md ...
 """
 import re
 import sys
@@ -61,13 +61,16 @@ def procesar(ruta, salida):
 def main():
     salida = Path(sys.argv[1])
     salida.mkdir(parents=True, exist_ok=True)
+    archivos, titulo_notas = sys.argv[2:], "Notas"
+    if archivos[:1] == ["--titulo"]:
+        titulo_notas, archivos = archivos[1], archivos[2:]
     bloques = []
-    for ruta in sys.argv[2:]:
+    for ruta in archivos:
         titulo, notas = procesar(ruta, salida)
         if notas:
             bloques.append(f"## {titulo} {{.unnumbered}}\n\n" + "\n\n".join(notas))
     (salida / "notas.md").write_text(
-        "# Notas {.unnumbered #notas}\n\n" + "\n\n".join(bloques) + "\n", encoding="utf-8"
+        f"# {titulo_notas} {{.unnumbered #notas}}\n\n" + "\n\n".join(bloques) + "\n", encoding="utf-8"
     )
 
 

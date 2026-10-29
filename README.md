@@ -26,23 +26,27 @@ Cada capítulo toma un tema y lo sigue a través de las épocas, de Sócrates a 
 | `libro/10-glosario.md` | Glosario | Conceptos clave, incluidos *pedagogía de la huella* y *plataforma educativa* |
 | `libro/11-lecturas.md` | Bibliografía | Lecturas comentadas por capítulo y lista de referencias en APA 7 |
 
+**Edició catalana.** *L'ànima a la plataforma. Escola, dades i llibertat en l'era de les plataformes* está en `libro-ca/`, un archivo por cada capítulo de `libro/`. Las decisiones de traducción (registro, glosario de términos, nombres propios y APA en catalán) están en `editorial/traduccio-catala.md`, y `herramientas/comparar_traduccion.py` comprueba que cada capítulo traducido conserva las notas, los encabezados, las pausas, las URL y el número de párrafos del original.
+
 Material editorial en `editorial/`: sinopsis, contracubierta, índice comentado y subtítulos alternativos (`sinopsis.md`), lo que queda pendiente para el autor (`notas-para-el-autor.md`) y los informes de auditoría documental (`auditoria/`).
 
 ## Versiones compiladas
 
-En `salida/`: PDF maquetado (A5), EPUB, HTML, un Markdown único y un DOCX de manuscrito para la editorial (A4, Times New Roman 12, interlineado 1,5, notas al pie nativas de Word con numeración continua, índice fijo y números de página). Si la editorial prefiere notas finales, Word las convierte de una vez desde Referencias > Notas al pie > Convertir. Para los formularios de envío que piden PDF está `el-alma-en-la-plataforma-manuscrito.pdf`, el mismo manuscrito convertido con LibreOffice y con los números de página en el índice.
+En `salida/`, para cada edición (`el-alma-en-la-plataforma.*` en castellano y `lanima-a-la-plataforma.*` en catalán): PDF maquetado (A5), EPUB, HTML, un Markdown único y un DOCX de manuscrito para la editorial (A4, Times New Roman 12, interlineado 1,5, notas al pie nativas de Word con numeración continua, índice fijo y números de página). Si la editorial prefiere notas finales, Word las convierte de una vez desde Referencias > Notas al pie > Convertir. Para los formularios de envío que piden PDF está `…-manuscrito.pdf`, el mismo manuscrito convertido con LibreOffice y con los números de página en el índice.
 
 Para regenerarlas después de editar los capítulos:
 
 ```bash
-./compilar.sh
+./compilar.sh        # las dos ediciones
+./compilar.sh es     # solo la castellana
+./compilar.sh ca     # solo la catalana
 ```
 
 Requiere `pandoc` y `python3` con `pyphen` y `pypdf` (`pip install pyphen pypdf`); el PDF se genera con Chromium en modo headless y el del manuscrito, con LibreOffice (`soffice`). La plantilla de Word la genera `herramientas/plantilla_word.py`. El script `herramientas/notas_finales.py` convierte las notas al pie de cada capítulo en notas finales agrupadas por capítulo, con la numeración reiniciada en cada uno. En los archivos de `libro/` las notas siguen escritas como notas al pie (`[^c3-kant]`), que es lo más cómodo para editar.
 
 Ajustes del PDF que hace `compilar.sh` por su cuenta:
 
-- **Partición de palabras.** Chromium no sabe partir palabras en español, y en un texto justificado una palabra larga que no cabe estira la línea anterior. `herramientas/lineas_estiradas.py` localiza esas líneas en el PDF y `herramientas/guionado.py` añade puntos de partición (con `pyphen`) solo a la palabra que no cupo; el ciclo se repite hasta que no queda ninguna. Así el resto del texto se puede copiar y buscar sin caracteres invisibles.
+- **Partición de palabras.** Chromium no sabe partir palabras en español ni en catalán, y en un texto justificado una palabra larga que no cabe estira la línea anterior. `herramientas/lineas_estiradas.py` localiza esas líneas en el PDF y `herramientas/guionado.py` añade puntos de partición (con `pyphen`) solo a la palabra que no cupo; el ciclo se repite hasta que no queda ninguna. Así el resto del texto se puede copiar y buscar sin caracteres invisibles.
 - **Enlaces internos.** `herramientas/destinos_pdf.py` corrige la posición de los destinos de las llamadas de nota y de sus retornos, que Chromium calcula sin los márgenes de la página.
 - **URL.** Las URL de la bibliografía son enlaces activos en todas las versiones. En el PDF, `estilos/cortes-url.lua` solo permite cortarlas después de una barra o antes de un punto o un guion, nunca en mitad de una palabra o de un número.
 
