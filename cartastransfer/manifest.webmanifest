@@ -1,0 +1,25 @@
+{
+ "name": "Hablemos: cartas conversacionales",
+ "short_name": "Hablemos",
+ "description": "Juego de cartas conversacionales de PlatFAMs para hablar en familia sobre la vida digital.",
+ "lang": "es",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "orientation": "portrait",
+ "background_color": "#16205C",
+ "theme_color": "#16205C",
+ "icons": [
+  {
+   "src": "icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}
