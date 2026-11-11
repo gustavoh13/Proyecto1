@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Verificador de referencias</title>
+<meta name="theme-color" content="#2536a7">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Referencias">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400;1,7..72,600&display=swap" rel="stylesheet">
+<style>
+/* Plan: la app toma la forma de una lista de referencias. Titulares en cursiva de libro con una
+   pasada de destacador, parrafos con sangria francesa, y una letra de interfaz hecha para leerse
+   facil. En telefono la navegacion va abajo, al alcance del pulgar; en pantalla ancha, arriba. */
+:root{
+  --paper:#f3f5fb; --surface:#ffffff; --ink:#141a2e; --muted:#4a536e; --line:#cdd3e2;
+  --accent:#2536a7; --accent-ink:#ffffff; --mark:#ffe45c;
+  --ok:#17683a; --ok-bg:#e1f3e7; --warn:#7a4b00; --warn-bg:#fdefc8; --bad:#a3211b; --bad-bg:#fde5e2; --err:#47506a; --err-bg:#e6e9f2;
+  --display:"Literata", Georgia, "Times New Roman", serif;
+  --body:"Atkinson Hyperlegible", Verdana, "Segoe UI", system-ui, sans-serif;
+  --scale:1;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]):not([data-mode="light"]){
+    color-scheme:dark;
+    --paper:#0f1220; --surface:#181c2e; --ink:#e8ebf7; --muted:#a8b0ca; --line:#333a58;
+    --accent:#a9b8ff; --accent-ink:#0f1220; --mark:#6b5a00;
+    --ok:#74d39b; --ok-bg:#14301f; --warn:#f0b95a; --warn-bg:#382a0c; --bad:#ff9189; --bad-bg:#3c1816; --err:#aab3cf; --err-bg:#242a40;
+  }
+}
+:root[data-theme="dark"]:not([data-mode="light"]), :root[data-mode="dark"]{
+  color-scheme:dark;
+  --paper:#0f1220; --surface:#181c2e; --ink:#e8ebf7; --muted:#a8b0ca; --line:#333a58;
+  --accent:#a9b8ff; --accent-ink:#0f1220; --mark:#6b5a00;
+  --ok:#74d39b; --ok-bg:#14301f; --warn:#f0b95a; --warn-bg:#382a0c; --bad:#ff9189; --bad-bg:#3c1816; --err:#aab3cf; --err-bg:#242a40;
+}
+:root[data-mode="light"]{color-scheme:light}
+:root[data-hc="light"]{
+  --paper:#ffffff; --surface:#ffffff; --ink:#000000; --muted:#1c1c1c; --line:#000000;
+  --accent:#0a1a8a; --accent-ink:#ffffff; --mark:#ffe45c;
+  --ok:#0b4d27; --ok-bg:#ffffff; --warn:#5c3800; --warn-bg:#ffffff; --bad:#7d0f0a; --bad-bg:#ffffff; --err:#1c1c1c; --err-bg:#ffffff;
+}
+:root[data-hc="dark"]{
+  --paper:#000000; --surface:#000000; --ink:#ffffff; --muted:#ebebeb; --line:#ffffff;
+  --accent:#c9d2ff; --accent-ink:#000000; --mark:#7a6800;
+  --ok:#8df0b3; --ok-bg:#000000; --warn:#ffd27a; --warn-bg:#000000; --bad:#ffb0aa; --bad-bg:#000000; --err:#ebebeb; --err-bg:#000000;
+}
+*{box-sizing:border-box}
+html{font-size:calc(100% * var(--scale));-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1rem;line-height:1.55}
+:root[data-space="wide"] body{line-height:1.85;letter-spacing:.035em;word-spacing:.14em}
+[hidden]{display:none !important}
+p{margin:0}
+a{color:var(--accent);text-underline-offset:.18em}
+.wrap{max-width:52rem;margin:0 auto;padding-left:max(1rem, env(safe-area-inset-left));padding-right:max(1rem, env(safe-area-inset-right))}
+.skip{position:absolute;left:1rem;top:-5rem;z-index:50;background:var(--ink);color:var(--paper);padding:.7rem 1rem;border-radius:.5rem;font-weight:700}
+.skip:focus{top:.5rem}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:.3rem}
+.ic{width:1.35em;height:1.35em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* cabecera */
+.app{padding-top:max(.9rem, env(safe-area-inset-top));padding-bottom:.6rem}
+.app .wrap{display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.6rem;min-width:0}
+.logo{width:2.4rem;height:2.4rem;border-radius:.6rem;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;flex:none}
+.logo .ic{width:1.5rem;height:1.5rem;stroke-width:2.4}
+h1{font-family:var(--display);font-weight:600;font-size:1.25rem;line-height:1.1;margin:0}
+.brand small{display:block;font-family:var(--body);font-weight:400;font-size:.85rem;color:var(--muted)}
+
+/* navegacion */
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--line);padding:.3rem max(.4rem, env(safe-area-inset-right)) calc(.3rem + env(safe-area-inset-bottom)) max(.4rem, env(safe-area-inset-left))}
+.nav ul{display:grid;grid-template-columns:repeat(4,1fr);gap:.25rem;list-style:none;margin:0 auto;padding:0;max-width:52rem}
+.nav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.1rem;min-height:3.3rem;padding:.25rem;border-radius:.75rem;color:var(--muted);text-decoration:none;font-size:.82rem;font-weight:700;text-align:center}
+.nav a:hover{color:var(--ink)}
+.nav a[aria-current="page"]{background:var(--accent);color:var(--accent-ink)}
+.count{font-variant-numeric:tabular-nums}
+main{padding-top:1rem;padding-bottom:7rem}
+@media (min-width:48rem){
+  .nav{position:static;border-top:0;background:none;padding:0}
+  .nav ul{display:flex;gap:.25rem;border-bottom:2px solid var(--line);padding:0 max(1rem, env(safe-area-inset-left))}
+  .nav a{flex-direction:row;gap:.5rem;min-height:2.9rem;padding:.5rem 1rem;font-size:1rem;border-radius:.6rem .6rem 0 0}
+  main{padding-bottom:3rem}
+}
+
+/* tipografia de contenido */
+.view{display:flex;flex-direction:column;gap:1.25rem}
+.display{font-family:var(--display);font-style:italic;font-weight:600;font-size:clamp(2rem, 8vw, 3.1rem);line-height:1.06;letter-spacing:-.012em;margin:.4rem 0 0;text-wrap:balance}
+.display mark{color:inherit;padding:0 .1em;background:linear-gradient(transparent 52%, var(--mark) 52%, var(--mark) 93%, transparent 93%) no-repeat left / 100% 100%}
+.display:focus{outline:none}
+.lead{font-size:1.1rem;max-width:36rem;padding-left:1.75rem;text-indent:-1.75rem;color:var(--ink)}
+h3{font-family:var(--body);font-size:1.1rem;font-weight:700;line-height:1.25;margin:0;display:flex;align-items:center;gap:.6rem;text-wrap:balance}
+h4{font-size:1rem;font-weight:700;margin:0}
+.step{display:inline-grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--ink);color:var(--paper);font-size:.95rem;font-weight:700;flex:none;font-variant-numeric:tabular-nums}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:.9rem;padding:1.1rem;display:flex;flex-direction:column;gap:.9rem}
+.hint{color:var(--muted);font-size:.92rem}
+.notice{display:flex;gap:.7rem;align-items:flex-start;background:var(--warn-bg);color:var(--ink);border:1px solid var(--warn);border-left-width:6px;border-radius:.7rem;padding:.8rem 1rem}
+.notice .ic{color:var(--warn);margin-top:.1rem}
+
+/* formularios */
+label, legend{font-weight:700}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{padding:0;margin-bottom:.4rem}
+textarea,input[type=text],select{width:100%;font:inherit;letter-spacing:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--muted);border-radius:.6rem;padding:.65rem .8rem;min-height:2.9rem}
+select{width:auto;max-width:100%}
+textarea{resize:vertical;line-height:1.5}
+#refs{min-height:13rem;font-family:var(--display);font-size:1.05rem}
+.field{display:flex;flex-direction:column;gap:.3rem;min-width:0}
+.field.wide{grid-column:1/-1}
+.grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(9.5rem, 1fr));gap:.9rem}
+.row{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+.check{display:flex;align-items:center;gap:.7rem;font-weight:400;min-height:2.75rem;cursor:pointer}
+.check input{width:1.4rem;height:1.4rem;accent-color:var(--accent);flex:none}
+button,.btn{font:inherit;letter-spacing:inherit;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:.45rem;min-height:2.75rem;padding:.5rem 1rem;border-radius:.65rem;border:1.5px solid var(--muted);background:var(--surface);color:var(--ink);cursor:pointer;text-decoration:none}
+button:hover,.btn:hover{border-color:var(--accent);color:var(--accent)}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+button.primary:hover{color:var(--accent-ink);filter:brightness(1.12)}
+button[disabled]{opacity:.5;cursor:not-allowed}
+button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.filebtn{position:relative;overflow:hidden}
+.filebtn input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.filebtn:focus-within{outline:3px solid var(--accent);outline-offset:3px}
+details summary{cursor:pointer;font-weight:700;min-height:2.75rem;display:flex;align-items:center}
+details .inner{display:flex;flex-direction:column;gap:.4rem;padding-top:.3rem}
+progress{width:100%;height:.6rem;accent-color:var(--accent)}
+.status{min-height:1.5em;font-weight:700}
+
+/* ajustes */
+#settings{border:2px solid var(--ink)}
+.seg{display:flex;flex-wrap:wrap;gap:.5rem}
+.sizer{display:flex;align-items:center;gap:.6rem}
+.sizer output{min-width:4.2rem;text-align:center;font-weight:700;font-variant-numeric:tabular-nums}
+
+/* fichas */
+.cards{display:flex;flex-direction:column;gap:.9rem;list-style:none;margin:0;padding:0}
+.card{background:var(--surface);border:1px solid var(--line);border-left:.45rem solid var(--line);border-radius:.9rem;padding:1rem 1.1rem;display:flex;flex-direction:column;gap:.7rem}
+.card.plain{border-left-width:1px}
+.card.s-ok{border-left-color:var(--ok)} .card.s-warn{border-left-color:var(--warn)} .card.s-bad{border-left-color:var(--bad)} .card.s-err{border-left-color:var(--err)}
+.top{display:flex;gap:.6rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.num{color:var(--muted);font-variant-numeric:tabular-nums;font-size:.92rem;font-weight:700}
+.pill{display:inline-flex;align-items:center;gap:.35rem;font-size:.92rem;font-weight:700;border-radius:999px;padding:.2rem .7rem .2rem .45rem;border:1.5px solid currentColor}
+.pill.s-ok{background:var(--ok-bg);color:var(--ok)} .pill.s-warn{background:var(--warn-bg);color:var(--warn)} .pill.s-bad{background:var(--bad-bg);color:var(--bad)} .pill.s-err,.pill.s-wait{background:var(--err-bg);color:var(--err)}
+.tag{font-size:.8rem;font-weight:700;border:1.5px dashed var(--muted);border-radius:.4rem;padding:.05rem .45rem;color:var(--muted)}
+.ref{font-family:var(--display);font-size:1.08rem;line-height:1.5;overflow-wrap:anywhere}
+:root[data-space="wide"] .ref{line-height:1.8}
+.ref.apa{padding-left:1.75rem;text-indent:-1.75rem}
+.notes{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:.25rem}
+.next{border-left:3px solid var(--mark);padding-left:.7rem;color:var(--ink)}
+.rec{border-top:1px dashed var(--muted);padding-top:.7rem;display:flex;flex-direction:column;gap:.15rem;overflow-wrap:anywhere}
+.k{color:var(--muted);font-size:.85rem;font-weight:700}
+.t{font-family:var(--display);font-size:1.1rem;line-height:1.35;overflow-wrap:anywhere}
+.meta{color:var(--muted);overflow-wrap:anywhere}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips button{border-radius:999px;padding:.35rem .85rem}
+.chips b{font-variant-numeric:tabular-nums}
+.legend{display:flex;flex-direction:column;gap:.7rem;margin:0;padding:0;list-style:none}
+.legend li{display:flex;gap:.7rem;align-items:flex-start}
+.legend .pill{flex:none}
+.preview{background:var(--paper);border:1.5px dashed var(--muted);border-radius:.7rem;padding:1rem}
+dl{margin:0;display:flex;flex-direction:column;gap:.8rem}
+dt{font-weight:700}
+dd{margin:0;max-width:36rem}
+ol.steps{margin:0;padding-left:1.3rem;display:flex;flex-direction:column;gap:.3rem;max-width:36rem}
+footer{color:var(--muted);font-size:.92rem;margin-top:1.5rem}
+footer p{max-width:36rem}
+
+@keyframes swipe{from{background-size:0 100%}to{background-size:100% 100%}}
+@keyframes rise{from{opacity:0;transform:translateY(.4rem)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: no-preference){
+  :root:not([data-motion="off"]) .view:not([hidden]) .display mark{animation:swipe .7s .15s ease-out both}
+  :root:not([data-motion="off"]) .card{animation:rise .25s ease-out both}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="app">
+  <div class="wrap">
+    <div class="brand">
+      <span class="logo"><svg class="ic" data-ic="apa" viewBox="0 0 24 24" aria-hidden="true"></svg></span>
+      <h1>Referencias <small>Verifica, busca y cita en APA 7</small></h1>
+    </div>
+    <div class="row">
+      <button type="button" id="install" hidden>Instalar app</button>
+      <button type="button" id="settings-btn" aria-expanded="false" aria-controls="settings"><svg class="ic" data-ic="sliders" viewBox="0 0 24 24" aria-hidden="true"></svg>Ajustes de lectura</button>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Secciones de la app">
+  <ul>
+    <li><a href="#verificar" id="nav-verificar"><svg class="ic" data-ic="ok" viewBox="0 0 24 24" aria-hidden="true"></svg>Verificar</a></li>
+    <li><a href="#buscar" id="nav-buscar"><svg class="ic" data-ic="search" viewBox="0 0 24 24" aria-hidden="true"></svg>Buscar</a></li>
+    <li><a href="#apa-7" id="nav-apa-7"><svg class="ic" data-ic="apa" viewBox="0 0 24 24" aria-hidden="true"></svg><span>APA 7 <span class="count" id="listcount"></span></span></a></li>
+    <li><a href="#ayuda" id="nav-ayuda"><svg class="ic" data-ic="help" viewBox="0 0 24 24" aria-hidden="true"></svg>Ayuda</a></li>
+  </ul>
+</nav>
+
+<main id="contenido" class="wrap">
+
+  <section class="panel" id="settings" aria-labelledby="h-settings" hidden style="margin-bottom:1.25rem">
+    <h3 id="h-settings" tabindex="-1">Ajustes de lectura</h3>
+    <p class="hint">Se guardan en este dispositivo y valen para toda la app.</p>
+    <div class="field">
+      <span id="l-size" style="font-weight:700">Tamaño del texto</span>
+      <div class="sizer" role="group" aria-labelledby="l-size">
+        <button type="button" id="size-down" aria-label="Achicar el texto">A−</button>
+        <output id="size-out" aria-live="polite">100 %</output>
+        <button type="button" id="size-up" aria-label="Agrandar el texto">A+</button>
+      </div>
+    </div>
+    <fieldset>
+      <legend>Colores</legend>
+      <div class="seg" id="mode-seg">
+        <button type="button" data-mode="auto" aria-pressed="true">Como el dispositivo</button>
+        <button type="button" data-mode="light" aria-pressed="false">Claro</button>
+        <button type="button" data-mode="dark" aria-pressed="false">Oscuro</button>
+      </div>
+    </fieldset>
+    <div>
+      <label class="check"><input type="checkbox" id="opt-hc"> Contraste alto</label>
+      <label class="check"><input type="checkbox" id="opt-space"> Más espacio entre letras y líneas</label>
+      <label class="check"><input type="checkbox" id="opt-motion"> Sin animaciones</label>
+    </div>
+    <div class="row">
+      <button type="button" id="prefs-reset">Volver a los valores iniciales</button>
+      <button type="button" class="primary" id="settings-close">Cerrar ajustes</button>
+    </div>
+  </section>
+
+  <div class="notice" id="demo-note" hidden>
+    <svg class="ic" data-ic="warn" viewBox="0 0 24 24" aria-hidden="true"></svg>
+    <p id="demo-text"></p>
+  </div>
+
+  <!-- ===================== VERIFICAR ===================== -->
+  <div class="view" id="view-verificar">
+    <h2 class="display" id="h-verificar" tabindex="-1">¿Existe <mark>esta cita</mark>?</h2>
+    <p class="lead">Pega tu lista de referencias. Cada una se compara con el registro de Crossref: DOI, título, autores y año.</p>
+
+    <section class="panel" aria-labelledby="h-in">
+      <h3 id="h-in"><span class="step" aria-hidden="true">1</span>Pega o sube tu lista</h3>
+      <div class="field">
+        <label for="refs">Referencias</label>
+        <textarea id="refs" spellcheck="false" aria-describedby="refs-hint exnote"></textarea>
+        <p class="hint" id="refs-hint">Una por línea, o separadas por una línea en blanco. Con Ctrl + Enter empieza la verificación.</p>
+        <p class="hint" id="exnote">Las tres citas que ves son ejemplos: dos reales y una inventada.</p>
+      </div>
+      <div class="row">
+        <label class="btn filebtn">Subir archivo .txt<input type="file" id="file" accept=".txt,.md,text/plain"></label>
+        <button type="button" id="load-ex">Cargar los ejemplos</button>
+        <button type="button" id="clear">Vaciar</button>
+      </div>
+      <details>
+        <summary>Usar también OpenAlex (opcional)</summary>
+        <div class="inner">
+          <label for="oakey">Clave de API de OpenAlex</label>
+          <input type="text" id="oakey" autocomplete="off" aria-describedby="oa-hint">
+          <p class="hint" id="oa-hint">OpenAlex pide una clave gratuita desde febrero de 2026. Se crea en <a href="https://openalex.org/settings/api" target="_blank" rel="noopener">openalex.org/settings/api</a> y queda guardada solo en este dispositivo. Con ella, las citas que Crossref no tiene se buscan también ahí.</p>
+        </div>
+      </details>
+    </section>
+
+    <section class="panel" aria-labelledby="h-run">
+      <h3 id="h-run"><span class="step" aria-hidden="true">2</span>Verifica</h3>
+      <div class="row">
+        <button class="primary" id="run" type="button"><svg class="ic" data-ic="ok" viewBox="0 0 24 24" aria-hidden="true"></svg>Verificar la lista</button>
+        <button id="stop" type="button" disabled>Detener</button>
+      </div>
+      <progress id="bar" max="100" value="0" aria-label="Avance de la verificación"></progress>
+      <p class="status" id="toast" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="h-out">
+      <h3 id="h-out"><span class="step" aria-hidden="true">3</span>Revisa el resultado</h3>
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por resultado"></div>
+      <ul class="legend" id="legend">
+        <li><span class="pill s-ok"><svg class="ic" data-ic="ok" viewBox="0 0 24 24" aria-hidden="true"></svg>Verificada</span><span>Hay un registro con el mismo título, autores y año.</span></li>
+        <li><span class="pill s-warn"><svg class="ic" data-ic="warn" viewBox="0 0 24 24" aria-hidden="true"></svg>Revisar</span><span>El trabajo existe, pero algo no calza: el DOI, el año, un autor o parte del título.</span></li>
+        <li><span class="pill s-bad"><svg class="ic" data-ic="bad" viewBox="0 0 24 24" aria-hidden="true"></svg>No encontrada</span><span>Ningún registro se parece. Puede ser inventada, o un libro, informe o ley que Crossref no tiene.</span></li>
+      </ul>
+      <div class="row" id="exports" hidden>
+        <button id="copy" type="button">Copiar informe</button>
+        <button id="csv" type="button">Descargar CSV</button>
+      </div>
+    </section>
+
+    <ol class="cards" id="list" aria-label="Resultado por cita"></ol>
+  </div>
+
+  <!-- ===================== BUSCAR ===================== -->
+  <div class="view" id="view-buscar" hidden>
+    <h2 class="display" id="h-buscar" tabindex="-1">Busca <mark>por tema</mark></h2>
+    <p class="lead">Todo lo que aparece acá es un registro de Crossref con DOI. Desde cada resultado copias la cita en APA 7 o la sumas a tu lista.</p>
+
+    <section class="panel" aria-labelledby="h-s">
+      <h3 id="h-s">Qué buscas</h3>
+      <div class="field">
+        <label for="sq">Tema, concepto o autor</label>
+        <input type="text" id="sq" value="platformization of education" aria-describedby="sq-hint" enterkeyhint="search">
+        <p class="hint" id="sq-hint">Rinde más con términos en el idioma de la literatura que buscas.</p>
+      </div>
+      <div class="grid">
+        <div class="field"><label for="sfrom">Desde el año</label><input type="text" id="sfrom" inputmode="numeric" maxlength="4" autocomplete="off"></div>
+        <div class="field"><label for="suntil">Hasta el año</label><input type="text" id="suntil" inputmode="numeric" maxlength="4" autocomplete="off"></div>
+        <div class="field"><label for="skind">Tipo de trabajo</label>
+          <select id="skind"><option value="all">Todos</option><option value="art" selected>Artículos de revista</option><option value="book">Libros y capítulos</option></select>
+        </div>
+      </div>
+      <div class="row"><button class="primary" id="sgo" type="button"><svg class="ic" data-ic="search" viewBox="0 0 24 24" aria-hidden="true"></svg>Buscar</button></div>
+      <p class="status" id="stoast" role="status" aria-live="polite"></p>
+    </section>
+    <ol class="cards" id="sres" aria-label="Resultados de la búsqueda"></ol>
+    <div class="row"><button id="smore" type="button" hidden>Cargar 20 más</button></div>
+  </div>
+
+  <!-- ===================== APA 7 ===================== -->
+  <div class="view" id="view-apa-7" hidden>
+    <h2 class="display" id="h-apa-7" tabindex="-1">Arma la cita en <mark>APA 7</mark></h2>
+    <p class="lead">Con el DOI se llena sola. También puedes escribir los datos a mano y mirar cómo queda mientras escribes.</p>
+
+    <section class="panel" aria-labelledby="h-b">
+      <h3 id="h-b">Datos de la referencia</h3>
+      <div class="field">
+        <label for="lang">Idioma de la cita</label>
+        <select id="lang" aria-describedby="lang-hint">
+          <option value="es">Español: “y”, “En”, “s. f.”</option>
+          <option value="en">Inglés: “&amp;”, “In”, “n.d.”</option>
+        </select>
+        <p class="hint" id="lang-hint">Vale también para las citas que copies desde Verificar y Buscar.</p>
+      </div>
+      <div class="field">
+        <label for="bdoi">Traer los datos con el DOI</label>
+        <div class="row"><input type="text" id="bdoi" autocomplete="off" style="flex:1;min-width:12rem" aria-describedby="bdoi-hint"><button id="bfetch" type="button">Traer datos</button></div>
+        <p class="hint" id="bdoi-hint">Ejemplo: 10.1080/17439884.2020.1761641</p>
+      </div>
+      <div class="grid">
+        <div class="field"><label for="f-kind">Tipo</label>
+          <select id="f-kind"><option value="article">Artículo de revista</option><option value="book">Libro</option><option value="chapter">Capítulo de libro</option><option value="other">Informe, tesis u otro</option></select>
+        </div>
+        <div class="field"><label for="f-year">Año</label><input type="text" id="f-year" inputmode="numeric" autocomplete="off"></div>
+        <div class="field wide"><label for="f-people">Autores, uno por línea</label>
+          <textarea id="f-people" rows="3" aria-describedby="people-hint"></textarea>
+          <p class="hint" id="people-hint">Personas como “Apellido, Nombre”. Instituciones sin coma: “UNESCO”.</p>
+        </div>
+        <div class="field wide"><label class="check"><input type="checkbox" id="f-edited"> Los autores son editores del libro (Ed.)</label></div>
+        <div class="field wide"><label for="f-title">Título</label><input type="text" id="f-title"></div>
+        <div class="field wide" data-for="article chapter"><label for="f-container" id="l-container">Revista</label><input type="text" id="f-container"></div>
+        <div class="field wide" data-for="chapter"><label for="f-editors">Editores del libro, uno por línea</label><textarea id="f-editors" rows="2"></textarea></div>
+        <div class="field" data-for="article"><label for="f-volume">Volumen</label><input type="text" id="f-volume"></div>
+        <div class="field" data-for="article"><label for="f-issue">Número</label><input type="text" id="f-issue"></div>
+        <div class="field" data-for="article chapter"><label for="f-pages">Páginas</label><input type="text" id="f-pages"></div>
+        <div class="field" data-for="book chapter"><label for="f-edition">Edición</label><input type="text" id="f-edition" aria-describedby="ed-hint"><p class="hint" id="ed-hint">Ejemplo: 2.ª ed.</p></div>
+        <div class="field wide" data-for="book chapter other"><label for="f-publisher">Editorial o institución</label><input type="text" id="f-publisher"></div>
+        <div class="field wide"><label for="f-doi">DOI o URL</label><input type="text" id="f-doi"></div>
+      </div>
+      <h4 id="h-prev">Así queda</h4>
+      <div class="preview" role="region" aria-labelledby="h-prev"><p class="ref apa" id="bprev"></p></div>
+      <p class="hint">APA 7 pide el título con mayúscula solo en la primera palabra y en los nombres propios. Los datos de Crossref llegan como los cargó la revista, así que conviene mirar eso antes de copiar.</p>
+      <div class="row">
+        <button class="primary" id="bcopy" type="button">Copiar cita</button>
+        <button id="badd" type="button">Agregar a mi lista</button>
+        <button id="bspeak" type="button" class="speak"><svg class="ic" data-ic="speak" viewBox="0 0 24 24" aria-hidden="true"></svg>Escuchar</button>
+        <button id="bclear" type="button">Vaciar campos</button>
+      </div>
+      <p class="status" id="btoast" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="h-l">
+      <h3 id="h-l">Mi lista de referencias</h3>
+      <p class="hint" id="lempty">Aquí se juntan las referencias que agregues desde Verificar, Buscar o este formulario. Quedan en orden alfabético y guardadas en este dispositivo.</p>
+      <ol class="cards" id="mylist"></ol>
+      <div class="row" id="lactions" hidden>
+        <button id="lcopy" type="button" class="primary">Copiar la lista</button>
+        <button id="ltxt" type="button">Descargar .txt</button>
+        <button id="lclear" type="button">Vaciar la lista</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ===================== AYUDA ===================== -->
+  <div class="view" id="view-ayuda" hidden>
+    <h2 class="display" id="h-ayuda" tabindex="-1">Cómo <mark>se usa</mark></h2>
+    <p class="lead">La app hace tres cosas: revisa si tus citas existen, busca trabajos por tema y escribe la referencia en APA 7.</p>
+    <div class="row"><button type="button" id="help-speak" class="speak"><svg class="ic" data-ic="speak" viewBox="0 0 24 24" aria-hidden="true"></svg>Escuchar esta página</button></div>
+
+    <div id="help-body" class="view">
+      <section class="panel" aria-labelledby="h-h1">
+        <h3 id="h-h1">Verificar una lista</h3>
+        <ol class="steps">
+          <li>Copia las referencias de tu documento y pégalas en la sección Verificar. También puedes subir un archivo de texto.</li>
+          <li>Aprieta “Verificar la lista”. La barra muestra el avance.</li>
+          <li>Lee el resultado de cada cita. Si dice “Revisar”, la ficha indica qué dato no calza y te muestra el registro correcto.</li>
+        </ol>
+      </section>
+      <section class="panel" aria-labelledby="h-h2">
+        <h3 id="h-h2">Buscar por tema</h3>
+        <ol class="steps">
+          <li>Escribe un tema o un autor en la sección Buscar. Puedes acotar por años y por tipo de trabajo.</li>
+          <li>En cada resultado eliges entre copiar la cita, sumarla a tu lista o corregirla en APA 7.</li>
+        </ol>
+      </section>
+      <section class="panel" aria-labelledby="h-h3">
+        <h3 id="h-h3">Armar una cita en APA 7</h3>
+        <ol class="steps">
+          <li>Pega el DOI y aprieta “Traer datos”, o llena los campos a mano.</li>
+          <li>Mira la vista previa y corrige las mayúsculas del título si hace falta.</li>
+          <li>Copia la cita o agrégala a tu lista. Al pegar en Word se mantienen las cursivas.</li>
+        </ol>
+      </section>
+      <section class="panel" aria-labelledby="h-h4">
+        <h3 id="h-h4">Glosario</h3>
+        <dl>
+          <div><dt>DOI</dt><dd>Código que identifica un trabajo publicado, por ejemplo 10.1080/17439884.2020.1761641. Si lo escribes después de https://doi.org/ llegas al trabajo.</dd></div>
+          <div><dt>Crossref</dt><dd>Registro donde las editoriales inscriben sus publicaciones con DOI. Esta app le pregunta a Crossref si cada cita existe.</dd></div>
+          <div><dt>OpenAlex</dt><dd>Otro catálogo abierto de publicaciones académicas. Es opcional y pide una clave gratuita.</dd></div>
+          <div><dt>APA 7</dt><dd>Séptima edición de las normas de la American Psychological Association para citar y escribir referencias.</dd></div>
+          <div><dt>Sangría francesa</dt><dd>Forma de las listas de referencias: la primera línea parte en el margen y las siguientes van corridas hacia la derecha.</dd></div>
+        </dl>
+      </section>
+      <section class="panel" aria-labelledby="h-h5">
+        <h3 id="h-h5">Lectura y teclado</h3>
+        <p>En “Ajustes de lectura” cambias el tamaño del texto, los colores, el contraste y el espacio entre letras. Toda la app se maneja con teclado: Tab avanza, Enter activa y Ctrl + Enter verifica la lista desde el cuadro de texto. Los botones “Escuchar” leen el contenido en voz alta cuando el dispositivo lo permite.</p>
+      </section>
+      <section class="panel" aria-labelledby="h-h6">
+        <h3 id="h-h6">Límites</h3>
+        <p>Crossref cubre bien artículos de revista y capítulos con DOI. Libros antiguos, informes, tesis, normativa y prensa suelen faltar. Por eso una cita “No encontrada” pide revisión manual y no prueba que sea falsa.</p>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <p>Lo que escribes se envía solo a api.crossref.org, doi.org y, si pones la clave, a api.openalex.org.</p>
+  </footer>
+</main>
+
+<script>
+/*CORE*/
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+let fetchImpl = (u, o) => fetch(u, o);
+
+function norm(s){
+  return String(s || '').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&')
+    .normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ').trim();
+}
+function splitRefs(text){
+  const t = String(text || '').replace(/\r/g, '').trim();
+  if (!t) return [];
+  const parts = /\n\s*\n/.test(t) ? t.split(/\n\s*\n/) : t.split(/\n/);
+  return parts
+    .map(p => p.replace(/\s*\n\s*/g, ' ').replace(/^\s*(\[\d+\]|\d+[.)])\s+/, '').replace(/\s+/g, ' ').trim())
+    .filter(p => p.length >= 20);
+}
+function extractDoi(ref){
+  const m = String(ref).match(/\b10\.\d{4,9}\/[^\s"“”<>]+/i);
+  if (!m) return null;
+  let d = m[0].replace(/[.,;:\]]+$/, '');
+  while (d.endsWith(')') && (d.split('(').length < d.split(')').length)) d = d.slice(0, -1).replace(/[.,;:\]]+$/, '');
+  return d;
+}
+function stripLinks(ref){
+  return ref.replace(/https?:\/\/\S+/gi, ' ').replace(/\b(doi:\s*)?10\.\d{4,9}\/\S+/gi, ' ');
+}
+function refYears(ref){
+  const out = [];
+  const re = /(?<!\d)(1[6-9]\d{2}|20\d{2})(?!\d)/g;
+  let m; const s = stripLinks(ref);
+  while ((m = re.exec(s))) out.push(+m[1]);
+  return out;
+}
+function guessTitle(ref){
+  const s = stripLinks(ref).trim();
+  const q = s.match(/[“"«]([^”"»]{15,})[”"»]/);
+  if (q) return q[1].trim();
+  const a = s.match(/\(\d{4}[a-z]?(?:,[^)]*)?\)\.?\s*(.+)$/);
+  if (a) {
+    const rest = a[1];
+    const cut = rest.search(/[.?!]\s/);
+    return (cut > 10 ? rest.slice(0, cut + 1) : rest).replace(/[.]$/, '').trim();
+  }
+  const segs = s.split(/\.\s+/).slice(0, 4).sort((x, y) => y.length - x.length);
+  return (segs[0] || s).trim();
+}
+function titleScore(title, refN){
+  const tn = norm(title);
+  if (!tn) return 0;
+  const words = tn.split(' ').filter(w => w.length > 2);
+  if ((' ' + refN + ' ').includes(' ' + tn + ' ')) return 1;
+  if (!words.length) return 0;
+  const set = new Set(refN.split(' '));
+  const hit = words.filter(w => set.has(w)).length;
+  const sc = hit / words.length;
+  return words.length < 4 ? Math.min(sc, 0.5) : sc;
+}
+function authorInRef(name, refN, fullName){
+  const set = new Set(refN.split(' '));
+  let toks = norm(name).split(' ').filter(Boolean);
+  if (!toks.length) return false;
+  if (fullName && toks.length > 1) toks = toks.slice(1);
+  if ((' ' + refN + ' ').includes(' ' + toks.join(' ') + ' ')) return true;
+  return toks.some(w => w.length > 3 && set.has(w));
+}
+function evaluate(rec, ref){
+  const refN = norm(stripLinks(ref));
+  const years = refYears(ref);
+  const score = titleScore(rec.title, refN);
+  const full = rec.source === 'OpenAlex';
+  let authorOk = null, firstOk = null;
+  if (rec.authors.length){
+    authorOk = rec.authors.slice(0, 8).some(a => authorInRef(a, refN, full));
+    firstOk = authorInRef(rec.authors[0], refN, full);
+  }
+  let yearOk = null;
+  if (years.length && rec.years.length){
+    yearOk = years.some(y => rec.years.some(r => Math.abs(r - y) <= 1));
+  }
+  const issues = [];
+  if (score < 0.85) issues.push('El título coincide solo en parte con el del registro.');
+  if (authorOk === false) issues.push('Ningún autor del registro (' + rec.authors.slice(0, 3).join(', ') + ') aparece en la cita.');
+  else if (firstOk === false && !full) issues.push('El primer autor del registro es ' + rec.authors[0] + ' y no aparece en la cita.');
+  if (yearOk === false) issues.push('Año distinto: la cita dice ' + years[0] + ' y el registro, ' + rec.years[0] + '.');
+  return { score, authorOk, yearOk, issues };
+}
+function clean(s){ return String(s || '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim(); }
+function fromCrossref(it){
+  const yrs = [];
+  for (const k of ['issued', 'published-print', 'published-online', 'published']){
+    const y = it[k] && it[k]['date-parts'] && it[k]['date-parts'][0] && it[k]['date-parts'][0][0];
+    if (y && !yrs.includes(y)) yrs.push(y);
+  }
+  const person = a => a.family ? { family: clean(a.family), given: clean(a.given) } : { name: clean(a.name) };
+  const auth = (it.author || []).map(person).filter(p => p.family || p.name);
+  const eds = (it.editor || []).map(person).filter(p => p.family || p.name);
+  const people = auth.length ? auth : eds;
+  return {
+    source: 'Crossref',
+    title: clean(it.title && it.title[0]),
+    subtitle: clean(it.subtitle && it.subtitle[0]),
+    authors: people.map(p => p.family || p.name),
+    people, editors: auth.length ? eds : [], editedBook: !auth.length && eds.length > 0,
+    years: yrs,
+    container: clean(it['container-title'] && it['container-title'][0]),
+    publisher: clean(it.publisher),
+    venue: clean(it['container-title'] && it['container-title'][0]) || clean(it.publisher),
+    volume: it.volume || '', issue: it.issue || '', page: it.page || '', articleNumber: it['article-number'] || '',
+    edition: it['edition-number'] || '',
+    cites: it['is-referenced-by-count'] || 0,
+    abstract: clean(it.abstract).replace(/^abstract\s*/i, ''),
+    doi: it.DOI || '',
+    type: it.type || ''
+  };
+}
+function fromOpenAlex(w){
+  return {
+    source: 'OpenAlex',
+    title: w.title || w.display_name || '',
+    subtitle: '',
+    authors: (w.authorships || []).map(a => a.author && a.author.display_name).filter(Boolean),
+    years: w.publication_year ? [w.publication_year] : [],
+    venue: (w.primary_location && w.primary_location.source && w.primary_location.source.display_name) || '',
+    doi: (w.doi || '').replace(/^https?:\/\/doi\.org\//i, ''),
+    type: w.type || ''
+  };
+}
+async function fetchJson(url){
+  for (let i = 0; i < 2; i++){
+    const ctl = new AbortController();
+    const timer = setTimeout(() => ctl.abort(), 20000);
+    try {
+      const r = await fetchImpl(url, { signal: ctl.signal });
+      clearTimeout(timer);
+      if (r.status === 404) return { status: 404, json: null };
+      if (r.status === 429 || r.status >= 500){
+        if (i === 0){ await sleep(2500); continue; }
+        return { status: r.status, json: null };
+      }
+      if (!r.ok) return { status: r.status, json: null };
+      return { status: 200, json: await r.json() };
+    } catch (e){
+      clearTimeout(timer);
+      if (i === 0){ await sleep(1200); continue; }
+      throw new Error('No hubo respuesta de ' + new URL(url).host + '. Revisa la conexión a internet.');
+    }
+  }
+}
+async function crossrefByDoi(doi){
+  const r = await fetchJson('https://api.crossref.org/works/' + encodeURIComponent(doi));
+  if (r.status === 404) return null;
+  if (r.status !== 200) throw new Error('Crossref respondió con error ' + r.status + '. Intenta de nuevo en un rato.');
+  return fromCrossref(r.json.message);
+}
+async function crossrefSearch(ref){
+  const q = stripLinks(ref).replace(/\s+/g, ' ').trim().slice(0, 400);
+  const r = await fetchJson('https://api.crossref.org/works?rows=5&query.bibliographic=' + encodeURIComponent(q));
+  if (r.status !== 200) throw new Error('Crossref respondió con error ' + r.status + '. Intenta de nuevo en un rato.');
+  return ((r.json.message && r.json.message.items) || []).map(fromCrossref);
+}
+function topicUrl(q, o){
+  const f = [];
+  if (/^\d{4}$/.test(o.from || '')) f.push('from-pub-date:' + o.from);
+  if (/^\d{4}$/.test(o.until || '')) f.push('until-pub-date:' + o.until);
+  if (o.kind === 'art') f.push('type:journal-article');
+  if (o.kind === 'book') f.push('type:book', 'type:monograph', 'type:edited-book', 'type:book-chapter');
+  return 'https://api.crossref.org/works?rows=20&offset=' + (o.offset || 0) + '&query=' + encodeURIComponent(q) +
+    (f.length ? '&filter=' + encodeURIComponent(f.join(',')) : '');
+}
+async function topicSearch(q, o){
+  const r = await fetchJson(topicUrl(q, o));
+  if (r.status !== 200) throw new Error('Crossref respondió con error ' + r.status + '. Intenta de nuevo en un rato.');
+  const m = r.json.message || {};
+  return { total: m['total-results'] || 0, items: (m.items || []).map(fromCrossref).filter(x => x.title) };
+}
+async function doiRegistered(doi){
+  try {
+    const r = await fetchJson('https://doi.org/api/handles/' + encodeURIComponent(doi).replace(/%2F/gi, '/'));
+    if (r.status === 404) return false;
+    if (r.status === 200) return r.json && r.json.responseCode === 1;
+    return null;
+  } catch (e){ return null; }
+}
+async function openalexByDoi(doi, key){
+  if (!key) return null;
+  try {
+    const r = await fetchJson('https://api.openalex.org/works/doi:' + encodeURIComponent(doi).replace(/%2F/gi, '/') + '?api_key=' + encodeURIComponent(key));
+    return r.status === 200 ? fromOpenAlex(r.json) : null;
+  } catch (e){ return null; }
+}
+async function openalexSearch(ref, key){
+  if (!key) return [];
+  const q = guessTitle(ref).replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, 200);
+  if (q.length < 8) return [];
+  try {
+    const r = await fetchJson('https://api.openalex.org/works?per-page=5&search=' + encodeURIComponent(q) + '&api_key=' + encodeURIComponent(key));
+    return r.status === 200 ? (r.json.results || []).map(fromOpenAlex) : [];
+  } catch (e){ return []; }
+}
+function pickBest(cands, ref){
+  let best = null;
+  for (const rec of cands){
+    const ev = evaluate(rec, ref);
+    const rank = ev.score + (ev.authorOk ? 0.05 : 0) + (ev.yearOk ? 0.02 : 0);
+    if (!best || rank > best.rank) best = { rec, ev, rank };
+  }
+  return best;
+}
+async function verify(ref, opts){
+  const key = (opts && opts.openalexKey) || '';
+  const doi = extractDoi(ref);
+  const out = { ref, doi, status: 'bad', notes: [], match: null, closest: null };
+  let doiProblem = null;
+  if (doi){
+    let rec = await crossrefByDoi(doi);
+    if (!rec) rec = await openalexByDoi(doi, key);
+    if (rec){
+      const ev = evaluate(rec, ref);
+      if (ev.score >= 0.6){
+        out.match = rec;
+        out.notes = ev.issues;
+        out.status = ev.issues.length ? 'warn' : 'ok';
+        if (out.status === 'ok') out.notes = ['El DOI existe y sus datos coinciden con la cita.'];
+        return out;
+      }
+      doiProblem = 'otro';
+      out.notes.push('El DOI existe, pero es de otro trabajo: “' + rec.title + '”' + (rec.years[0] ? ' (' + rec.years[0] + ')' : '') + '.');
+    } else {
+      const reg = await doiRegistered(doi);
+      if (reg === true){
+        out.status = 'warn';
+        out.notes.push('El DOI está registrado, pero Crossref no tiene sus datos (lo emitió otra agencia, como DataCite). Ábrelo y compara a mano.');
+        return out;
+      }
+      doiProblem = 'inexistente';
+      out.notes.push(reg === false ? 'El DOI de la cita no existe.' : 'Crossref no tiene ese DOI.');
+    }
+  }
+  let cands = await crossrefSearch(ref);
+  let best = pickBest(cands, ref);
+  if (key && (!best || best.ev.score < 0.85)){
+    const more = await openalexSearch(ref, key);
+    const b2 = pickBest(more, ref);
+    if (b2 && (!best || b2.rank > best.rank)) best = b2;
+  }
+  if (best && best.ev.score >= 0.6){
+    out.match = best.rec;
+    const sameDoi = doi && best.rec.doi && best.rec.doi.toLowerCase() === doi.toLowerCase();
+    if (doiProblem && best.rec.doi && !sameDoi) out.notes.push('El trabajo existe con otro DOI: ' + best.rec.doi + '.');
+    out.notes = out.notes.concat(best.ev.issues);
+    if (out.notes.length){ out.status = 'warn'; }
+    else {
+      out.status = 'ok';
+      out.notes.push(best.rec.doi ? 'La cita no trae DOI. El del registro es ' + best.rec.doi + '.' : 'Título, autores y año coinciden con el registro.');
+    }
+    return out;
+  }
+  out.status = 'bad';
+  if (!doi) out.notes.push('Ningún registro se parece a esta cita.');
+  else out.notes.push('Tampoco apareció un trabajo con ese título.');
+  if (best && best.ev.score >= 0.3) out.closest = best.rec;
+  return out;
+}
+
+/* ---------- APA 7 ---------- */
+function initials(given){
+  return String(given || '').replace(/\./g, '. ').trim().split(/\s+/).filter(Boolean)
+    .map(p => p.split('-').filter(Boolean).map(x => x[0].toUpperCase() + '.').join('-')).join(' ');
+}
+function personInv(p){ if (p.name) return p.name; const i = initials(p.given); return i ? p.family + ', ' + i : p.family; }
+function personDir(p){ if (p.name) return p.name; const i = initials(p.given); return i ? i + ' ' + p.family : p.family; }
+function joinPeople(list, es, inverted){
+  const n = list.length;
+  if (!n) return '';
+  if (n === 1) return list[0];
+  if (n === 2) return list[0] + (es ? ' y ' : (inverted ? ', & ' : ' & ')) + list[1];
+  if (inverted && n > 20) return list.slice(0, 19).join(', ') + ', . . . ' + list[n - 1];
+  return list.slice(0, -1).join(', ') + (es ? ' y ' : ', & ') + list[n - 1];
+}
+function parsePeople(text){
+  return String(text || '').split(/\n/).map(s => s.trim()).filter(Boolean).map(line => {
+    const i = line.indexOf(',');
+    return i < 0 ? { name: line } : { family: line.slice(0, i).trim(), given: line.slice(i + 1).trim() };
+  });
+}
+function kindOf(type){
+  if (type === 'journal-article') return 'article';
+  if (/chapter|book-section|book-part|proceedings-article|reference-entry/.test(type)) return 'chapter';
+  if (/book|monograph/.test(type)) return 'book';
+  return 'other';
+}
+function ordinalEd(n, es){
+  const k = parseInt(n, 10);
+  if (!k || k < 2) return '';
+  if (es) return k + '.ª ed.';
+  const s = (k % 100 >= 11 && k % 100 <= 13) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[k % 10] || 'th');
+  return k + s + ' ed.';
+}
+function toApaData(rec, lang){
+  const es = lang === 'es';
+  let title = rec.title || '';
+  if (rec.subtitle && !norm(title).includes(norm(rec.subtitle))) title += ': ' + rec.subtitle;
+  const kind = kindOf(rec.type);
+  return {
+    kind, people: rec.people || [], editors: rec.editors || [], editedBook: !!rec.editedBook,
+    year: rec.years && rec.years[0] ? String(rec.years[0]) : '',
+    title, container: kind === 'article' || kind === 'chapter' ? (rec.container || '') : '',
+    volume: rec.volume || '', issue: rec.issue || '',
+    pages: rec.page || (rec.articleNumber ? (es ? 'Artículo ' : 'Article ') + rec.articleNumber : ''),
+    edition: ordinalEd(rec.edition, es),
+    publisher: kind === 'article' ? '' : (rec.publisher || ''),
+    doi: rec.doi || ''
+  };
+}
+function apaSegs(d, lang){
+  const es = lang === 'es';
+  const seg = [];
+  const add = (t, i) => { if (t) seg.push({ t: String(t), i: !!i }); };
+  const dot = s => /[.?!]$/.test(s) ? s : s + '.';
+  const title = String(d.title || '').replace(/\s+/g, ' ').trim().replace(/\.$/, '');
+  const year = '(' + (String(d.year || '').trim() || (es ? 's. f.' : 'n.d.')) + ').';
+  const people = (d.people || []).map(personInv);
+  let auth = joinPeople(people, es, true);
+  if (auth && d.editedBook) auth += ' (' + (people.length > 1 ? 'Eds.' : 'Ed.') + ')';
+  const italicTitle = d.kind === 'book' || d.kind === 'other';
+  const pages = String(d.pages || '').trim().replace(/(\d)\s*-+\s*(\d)/g, '$1–$2');
+  const ed = String(d.edition || '').trim().replace(/^\(|\)$/g, '');
+  const container = String(d.container || '').trim();
+  const publisher = String(d.publisher || '').trim();
+  let titleUsed = false;
+  if (auth) add(dot(auth) + ' ' + year + ' ');
+  else if (title){ add(title, italicTitle); add((/[.?!]$/.test(title) ? '' : '.') + ' ' + year + ' '); titleUsed = true; }
+  else add(year + ' ');
+  if (d.kind === 'article'){
+    if (!titleUsed && title) add(dot(title) + ' ');
+    if (container){
+      add(container, true);
+      if (d.volume){ add(', '); add(String(d.volume).trim(), true); }
+      if (d.issue) add((d.volume ? '' : ', ') + '(' + String(d.issue).trim() + ')');
+      if (pages) add(', ' + pages);
+      add('. ');
+    }
+  } else if (d.kind === 'chapter'){
+    if (!titleUsed && title) add(dot(title) + ' ');
+    const eds = (d.editors || []).map(personDir);
+    if (container || eds.length){
+      add(es ? 'En ' : 'In ');
+      if (eds.length) add(joinPeople(eds, es, false) + ' (' + (eds.length > 1 ? 'Eds.' : 'Ed.') + '), ');
+      add(container, true);
+      const paren = [ed, pages ? (/[–,]/.test(pages) ? 'pp. ' : 'p. ') + pages : ''].filter(Boolean).join(', ');
+      if (paren) add(' (' + paren + ')');
+      add('. ');
+    }
+    if (publisher) add(dot(publisher) + ' ');
+  } else {
+    if (!titleUsed && title){
+      add(title, true);
+      if (ed) add(' (' + ed + ')');
+      add((/[?!]$/.test(title) && !ed ? '' : '.') + ' ');
+    }
+    if (publisher) add(dot(publisher) + ' ');
+  }
+  let link = String(d.doi || '').trim();
+  if (/^10\.\d{4,9}\//.test(link)) link = 'https://doi.org/' + link;
+  add(link);
+  if (seg.length) seg[seg.length - 1].t = seg[seg.length - 1].t.replace(/\s+$/, '');
+  return seg;
+}
+const segsText = segs => segs.map(s => s.t).join('');
+const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const segsHtml = segs => segs.map(s => s.i ? '<i>' + esc(s.t) + '</i>' : esc(s.t)).join('');
+
+/* ---------- registros de ejemplo (reales, para cuando no hay conexion con Crossref) ---------- */
+const DEMO_RECORDS = [
+  { type: 'journal-article', DOI: '10.1080/17439884.2020.1761641', title: ['Pandemic politics, pedagogies and practices: digital technologies and distance education during the coronavirus emergency'], author: [{ family: 'Williamson', given: 'Ben' }, { family: 'Eynon', given: 'Rebecca' }, { family: 'Potter', given: 'John' }], issued: { 'date-parts': [[2020]] }, 'container-title': ['Learning, Media and Technology'], volume: '45', issue: '2', page: '107-114' },
+  { type: 'journal-article', DOI: '10.1080/17508487.2020.1866050', title: ['Introduction: Critical studies of digital education platforms'], author: [{ family: 'Decuypere', given: 'Mathias' }, { family: 'Grimaldi', given: 'Emiliano' }, { family: 'Landri', given: 'Paolo' }], issued: { 'date-parts': [[2021]] }, 'container-title': ['Critical Studies in Education'], volume: '62', issue: '1', page: '1-16' },
+  { type: 'journal-article', DOI: '10.1080/17508487.2020.1861043', title: ['Paradoxes of freedom. An archaeological analysis of educational online platform interfaces'], author: [{ family: 'Grimaldi', given: 'Emiliano' }, { family: 'Ball', given: 'Stephen J.' }], issued: { 'date-parts': [[2021]] }, 'container-title': ['Critical Studies in Education'], volume: '62', issue: '1', page: '114-129' },
+  { type: 'journal-article', DOI: '10.1080/17439884.2020.1683748', title: ['Brave new platforms: a possible platform future for highly decentralised schooling'], author: [{ family: 'Hillman', given: 'T.' }, { family: 'Bergviken Rensfeldt', given: 'A.' }, { family: 'Ivarsson', given: 'J.' }], issued: { 'date-parts': [[2020]] }, 'container-title': ['Learning, Media and Technology'], volume: '45', issue: '1', page: '7-16' }
+];
+async function demoFetch(url){
+  const res = (status, body) => ({ status, ok: status === 200, json: async () => body });
+  const u = new URL(url);
+  if (u.host !== 'api.crossref.org') return res(404, { responseCode: 100 });
+  const m = u.pathname.match(/^\/works\/(.+)$/);
+  if (m){
+    const doi = decodeURIComponent(m[1]).toLowerCase();
+    const rec = DEMO_RECORDS.find(r => r.DOI.toLowerCase() === doi);
+    return rec ? res(200, { message: rec }) : res(404, {});
+  }
+  const bib = u.searchParams.get('query.bibliographic');
+  if (bib){
+    const refN = norm(bib);
+    const items = DEMO_RECORDS.slice().sort((a, b) => titleScore(b.title[0], refN) - titleScore(a.title[0], refN));
+    return res(200, { message: { items } });
+  }
+  const off = +(u.searchParams.get('offset') || 0);
+  return res(200, { message: { 'total-results': DEMO_RECORDS.length, items: off ? [] : DEMO_RECORDS } });
+}
+/*END CORE*/
+
+const $ = id => document.getElementById(id);
+const root = document.documentElement;
+const NS = 'http://www.w3.org/2000/svg';
+const ICONS = {
+  ok: '<circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.8 2.8L16 9.5"/>',
+  warn: '<path d="M12 4l9 15.5H3z"/><path d="M12 10v4.5M12 17.2v.1"/>',
+  bad: '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3M9 9l4 4M13 9l-4 4"/>',
+  err: '<circle cx="12" cy="12" r="9"/><path d="M6 6l12 12"/>',
+  wait: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  search: '<circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/>',
+  apa: '<path d="M4 6h16M8 10h12M4 14h16M8 18h9"/>',
+  help: '<circle cx="12" cy="12" r="9"/><path d="M9.6 9.5a2.5 2.5 0 1 1 3.6 2.2c-.8.5-1.2 1-1.2 1.9M12 16.8v.1"/>',
+  sliders: '<path d="M4 7h9M19 7h1M4 17h1M11 17h9"/><circle cx="16" cy="7" r="2.5"/><circle cx="8" cy="17" r="2.5"/>',
+  speak: '<path d="M5 10v4h3l4 3V7l-4 3z"/><path d="M15.5 9.5a3.5 3.5 0 0 1 0 5M18 7a7 7 0 0 1 0 10"/>'
+};
+function icon(name){ const s = document.createElementNS(NS, 'svg'); s.setAttribute('viewBox', '0 0 24 24'); s.setAttribute('aria-hidden', 'true'); s.setAttribute('class', 'ic'); s.innerHTML = ICONS[name] || ''; return s; }
+document.querySelectorAll('svg[data-ic]').forEach(s => { s.innerHTML = ICONS[s.dataset.ic] || ''; });
+
+const EXAMPLES = [
+  'Williamson, B., Eynon, R., & Potter, J. (2020). Pandemic politics, pedagogies and practices: Digital technologies and distance education during the coronavirus emergency. Learning, Media and Technology, 45(2), 107-114. https://doi.org/10.1080/17439884.2020.1761641',
+  'Decuypere, M., Grimaldi, E., & Landri, P. (2021). Introduction: Critical studies of digital education platforms. Critical Studies in Education, 62(1), 1-16.',
+  'Fuentes, P., & Molina, R. (2022). Algorithmic governance in Chilean primary classrooms: A longitudinal study. Journal of Critical EdTech Studies, 14(3), 201-219. https://doi.org/10.1234/jces.2022.14.3.201'
+].join('\n\n');
+const LABEL = { ok: 'Verificada', warn: 'Revisar', bad: 'No encontrada', err: 'Sin respuesta', wait: 'En cola' };
+const NEXT = {
+  ok: 'No hay nada que corregir en esta cita.',
+  warn: 'Compara tu cita con el registro de abajo y corrige el dato que difiere.',
+  bad: 'Búscala en la sección Buscar o en el catálogo de tu biblioteca. Si no aparece en ninguna parte, sácala de la lista.',
+  err: 'Revisa la conexión y aprieta “Reintentar”.'
+};
+const VIEWS = ['verificar', 'buscar', 'apa-7', 'ayuda'];
+const HOSTED = !!(window.claude && typeof window.claude.use === 'function');
+let DEMO = false;
+let items = [], filter = 'all', running = false, stopFlag = false, myList = [];
+let sState = { q: '', offset: 0, total: 0, items: [] };
+
+function store(k, v){ try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e){ return null; } }
+function el(tag, cls, text){ const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+function btn(text, fn, ic){ const b = el('button'); b.type = 'button'; if (ic) b.appendChild(icon(ic)); b.appendChild(document.createTextNode(text)); b.addEventListener('click', e => fn(e, b)); return b; }
+function say(id, msg){ $(id).textContent = msg; }
+function lang(){ return $('lang').value; }
+function fillSegs(node, segs){ node.textContent = ''; segs.forEach(s => node.appendChild(s.i ? el('i', null, s.t) : document.createTextNode(s.t))); }
+function doiLink(doi, text){ const a = el('a', null, text || 'https://doi.org/' + doi); a.href = 'https://doi.org/' + doi; a.target = '_blank'; a.rel = 'noopener'; return a; }
+function pill(st){ const p = el('span', 'pill s-' + st); p.appendChild(icon(st)); p.appendChild(document.createTextNode(LABEL[st])); return p; }
+
+/* ---------- copiar, descargar, escuchar ---------- */
+async function copyText(text){
+  try { await navigator.clipboard.writeText(text); return true; }
+  catch (e){
+    const ta = el('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+    let ok = false; try { ok = document.execCommand('copy'); } catch (e2){}
+    ta.remove(); return ok;
+  }
+}
+async function copyRich(html, text){
+  try {
+    if (window.ClipboardItem && navigator.clipboard && navigator.clipboard.write){
+      await navigator.clipboard.write([new ClipboardItem({ 'text/html': new Blob([html], { type: 'text/html' }), 'text/plain': new Blob([text], { type: 'text/plain' }) })]);
+      return true;
+    }
+  } catch (e){}
+  return copyText(text);
+}
+async function copySegs(segs, toastId){
+  const ok = await copyRich('<p>' + segsHtml(segs) + '</p>', segsText(segs));
+  say(toastId, ok ? 'Cita copiada, con las cursivas.' : 'No se pudo copiar. Selecciona el texto y cópialo a mano.');
+}
+async function saveFile(filename, data, mime, toastId){
+  if (HOSTED){
+    try {
+      const d = await window.claude.use('downloads');
+      if (d){ await d.save({ filename, data }); say(toastId, 'Archivo guardado.'); return; }
+    } catch (e){
+      say(toastId, e && e.code === 'declined' ? 'No se guardó el archivo.' : 'Desde aquí no se pudo guardar el archivo. Usa el botón de copiar.');
+      return;
+    }
+    say(toastId, 'Desde aquí no se pudo guardar el archivo. Usa el botón de copiar.');
+    return;
+  }
+  const url = URL.createObjectURL(new Blob([data], { type: mime }));
+  const a = el('a'); a.href = url; a.download = filename; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+  say(toastId, 'Archivo descargado.');
+}
+const canSpeak = 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+let speakingBtn = null;
+function stopSpeak(){ if (canSpeak) speechSynthesis.cancel(); if (speakingBtn){ speakingBtn.setAttribute('aria-pressed', 'false'); speakingBtn = null; } }
+function speak(text, b){
+  if (!canSpeak) return;
+  const same = speakingBtn === b;
+  stopSpeak();
+  if (same) return;
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'es-ES';
+  u.onend = u.onerror = () => { if (speakingBtn === b){ b.setAttribute('aria-pressed', 'false'); speakingBtn = null; } };
+  speakingBtn = b; b.setAttribute('aria-pressed', 'true');
+  speechSynthesis.speak(u);
+}
+if (!canSpeak) document.querySelectorAll('.speak').forEach(b => { b.hidden = true; });
+
+/* ---------- navegacion ---------- */
+function currentView(){ const v = (location.hash || '').slice(1); return VIEWS.includes(v) ? v : 'verificar'; }
+function route(moveFocus){
+  const v = currentView();
+  VIEWS.forEach(x => {
+    $('view-' + x).hidden = x !== v;
+    if (x === v) $('nav-' + x).setAttribute('aria-current', 'page'); else $('nav-' + x).removeAttribute('aria-current');
+  });
+  stopSpeak();
+  if (moveFocus){ window.scrollTo(0, 0); try { $('h-' + v).focus({ preventScroll: true }); } catch (e){} }
+}
+function go(v){ if (currentView() === v) route(true); else location.hash = v; }
+window.addEventListener('hashchange', () => route(true));
+
+/* ---------- ajustes de lectura ---------- */
+const SCALES = [1, 1.15, 1.3, 1.5];
+const DEFAULTS = { scale: 0, mode: 'auto', hc: false, space: false, motion: false };
+let prefs = Object.assign({}, DEFAULTS);
+try { Object.assign(prefs, JSON.parse(store('ref-prefs') || '{}')); } catch (e){}
+const mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+function applyPrefs(){
+  const i = Math.min(Math.max(prefs.scale | 0, 0), SCALES.length - 1);
+  root.style.setProperty('--scale', SCALES[i]);
+  $('size-out').textContent = Math.round(SCALES[i] * 100) + ' %';
+  $('size-down').disabled = i === 0; $('size-up').disabled = i === SCALES.length - 1;
+  if (prefs.mode === 'auto') root.removeAttribute('data-mode'); else root.setAttribute('data-mode', prefs.mode);
+  document.querySelectorAll('#mode-seg button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.mode === prefs.mode)));
+  const hostTheme = root.getAttribute('data-theme');
+  const dark = prefs.mode === 'dark' || (prefs.mode === 'auto' && (hostTheme === 'dark' || (hostTheme !== 'light' && mq && mq.matches)));
+  if (prefs.hc) root.setAttribute('data-hc', dark ? 'dark' : 'light'); else root.removeAttribute('data-hc');
+  if (prefs.space) root.setAttribute('data-space', 'wide'); else root.removeAttribute('data-space');
+  if (prefs.motion) root.setAttribute('data-motion', 'off'); else root.removeAttribute('data-motion');
+  $('opt-hc').checked = !!prefs.hc; $('opt-space').checked = !!prefs.space; $('opt-motion').checked = !!prefs.motion;
+  store('ref-prefs', JSON.stringify(prefs));
+}
+if (mq && mq.addEventListener) mq.addEventListener('change', applyPrefs);
+$('size-down').addEventListener('click', () => { prefs.scale = Math.max(0, (prefs.scale | 0) - 1); applyPrefs(); });
+$('size-up').addEventListener('click', () => { prefs.scale = Math.min(SCALES.length - 1, (prefs.scale | 0) + 1); applyPrefs(); });
+document.querySelectorAll('#mode-seg button').forEach(b => b.addEventListener('click', () => { prefs.mode = b.dataset.mode; applyPrefs(); }));
+$('opt-hc').addEventListener('change', e => { prefs.hc = e.target.checked; applyPrefs(); });
+$('opt-space').addEventListener('change', e => { prefs.space = e.target.checked; applyPrefs(); });
+$('opt-motion').addEventListener('change', e => { prefs.motion = e.target.checked; applyPrefs(); });
+$('prefs-reset').addEventListener('click', () => { prefs = Object.assign({}, DEFAULTS); applyPrefs(); });
+function toggleSettings(open){
+  const s = $('settings');
+  const show = open === undefined ? s.hidden : open;
+  s.hidden = !show; $('settings-btn').setAttribute('aria-expanded', String(show));
+  if (show){ s.scrollIntoView({ block: 'start' }); try { $('h-settings').focus({ preventScroll: true }); } catch (e){} }
+  else $('settings-btn').focus();
+}
+$('settings-btn').addEventListener('click', () => toggleSettings());
+$('settings-close').addEventListener('click', () => toggleSettings(false));
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('settings').hidden) toggleSettings(false); });
+
+/* ---------- conexion con Crossref ---------- */
+let probe = null;
+function checkCrossref(){
+  if (!probe) probe = (async () => {
+    const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 7000);
+    try { await fetch('https://api.crossref.org/works?rows=0', { signal: ctl.signal }); clearTimeout(t); return true; }
+    catch (e){ clearTimeout(t); return false; }
+  })();
+  return probe;
+}
+async function initConnection(){
+  const ok = await checkCrossref();
+  if (ok) return;
+  if (HOSTED){
+    DEMO = true; fetchImpl = demoFetch;
+    $('demo-text').textContent = 'Estás viendo la app dentro de Claude, donde no hay conexión con Crossref. Verificar y Buscar trabajan aquí con cuatro registros reales de ejemplo. APA 7, la lista y los ajustes de lectura funcionan completos. Con tus propias referencias se usa la versión publicada en la web.';
+  } else {
+    probe = null;
+    $('demo-text').textContent = 'No hay conexión con Crossref en este momento. Revisa tu internet y vuelve a intentar.';
+  }
+  $('demo-note').hidden = false;
+}
+
+/* ---------- lista ---------- */
+function saveList(){ store('vr-list', JSON.stringify(myList)); }
+function addToList(segs, toastId){
+  const text = segsText(segs);
+  if (!text.trim()) return;
+  if (myList.some(x => segsText(x) === text)){ say(toastId, 'Esa referencia ya estaba en tu lista.'); return; }
+  myList.push(segs);
+  myList.sort((a, b) => segsText(a).localeCompare(segsText(b), 'es', { sensitivity: 'base' }));
+  saveList(); renderList();
+  say(toastId, 'Agregada. Tu lista tiene ' + myList.length + (myList.length === 1 ? ' referencia.' : ' referencias.'));
+}
+function renderList(){
+  const ol = $('mylist'); ol.textContent = '';
+  myList.forEach((segs, i) => {
+    const li = el('li', 'card plain');
+    const p = el('p', 'ref apa'); fillSegs(p, segs); li.appendChild(p);
+    const row = el('div', 'row');
+    row.appendChild(btn('Copiar', () => copySegs(segs, 'btoast')));
+    const rm = btn('Quitar', () => { myList.splice(i, 1); saveList(); renderList(); say('btoast', 'Referencia quitada de la lista.'); });
+    rm.setAttribute('aria-label', 'Quitar de la lista: ' + segsText(segs).slice(0, 60));
+    row.appendChild(rm);
+    li.appendChild(row); ol.appendChild(li);
+  });
+  $('lempty').hidden = myList.length > 0;
+  $('lactions').hidden = myList.length === 0;
+  $('listcount').textContent = myList.length ? '(' + myList.length + ')' : '';
+}
+
+/* ---------- acciones sobre un registro ---------- */
+function recActions(rec, toastId){
+  const row = el('div', 'row');
+  row.appendChild(btn('Copiar en APA 7', () => copySegs(apaSegs(toApaData(rec, lang()), lang()), toastId)));
+  row.appendChild(btn('Agregar a mi lista', () => addToList(apaSegs(toApaData(rec, lang()), lang()), toastId)));
+  row.appendChild(btn('Corregir en APA 7', () => { fillForm(toApaData(rec, lang())); go('apa-7'); }));
+  return row;
+}
+function recLine(rec){
+  return [rec.authors.slice(0, 4).join(', ') + (rec.authors.length > 4 ? ' y otros' : ''), rec.years[0], rec.venue].filter(Boolean).join(' · ');
+}
+
+/* ---------- verificar ---------- */
+function statusOf(it){ return it.state === 'wait' ? 'wait' : it.result.status; }
+function recBlock(rec, label){
+  const b = el('div', 'rec');
+  b.appendChild(el('span', 'k', label + ' (' + rec.source + ')'));
+  b.appendChild(el('span', 't', rec.title || 'Sin título'));
+  const meta = recLine(rec);
+  if (meta) b.appendChild(el('span', 'meta', meta));
+  if (rec.doi) b.appendChild(doiLink(rec.doi));
+  return b;
+}
+function renderCard(it, i){
+  const st = statusOf(it);
+  const li = el('li', 'card s-' + st);
+  const top = el('div', 'top');
+  const left = el('span', 'row'); left.appendChild(el('span', 'num', 'Cita ' + (i + 1)));
+  if (DEMO) left.appendChild(el('span', 'tag', 'Ejemplo'));
+  top.appendChild(left); top.appendChild(pill(st));
+  li.appendChild(top);
+  li.appendChild(el('p', 'ref', it.ref));
+  if (it.state === 'done'){
+    const r = it.result;
+    if (r.notes.length){ const ul = el('ul', 'notes'); r.notes.forEach(n => ul.appendChild(el('li', null, n))); li.appendChild(ul); }
+    li.appendChild(el('p', 'next', NEXT[r.status]));
+    if (r.match) li.appendChild(recBlock(r.match, 'Registro encontrado'));
+    else if (r.closest) li.appendChild(recBlock(r.closest, 'Lo más parecido, sin ser lo mismo'));
+    const row = r.match && r.match.source === 'Crossref' ? recActions(r.match, 'toast') : el('div', 'row');
+    if (r.status === 'warn' && !r.match && r.doi) row.appendChild(doiLink(r.doi, 'Abrir el DOI'));
+    if (r.status === 'err') row.appendChild(btn('Reintentar', () => retry(i)));
+    if (canSpeak) row.appendChild(btn('Escuchar', (e, b) => speak('Cita ' + (i + 1) + '. ' + LABEL[r.status] + '. ' + r.notes.join(' ') + ' ' + NEXT[r.status], b), 'speak'));
+    if (row.childNodes.length) li.appendChild(row);
+  }
+  return li;
+}
+function render(){
+  const counts = { ok: 0, warn: 0, bad: 0, err: 0 };
+  items.forEach(it => { if (it.state === 'done') counts[it.result.status]++; });
+  const chips = $('chips'); chips.textContent = '';
+  if (items.length){
+    const mk = (key, label, n, ic) => {
+      const b = el('button'); b.type = 'button';
+      if (ic) b.appendChild(icon(ic));
+      b.appendChild(document.createTextNode(label + ' ')); b.appendChild(el('b', null, String(n)));
+      b.setAttribute('aria-pressed', String(filter === key));
+      b.addEventListener('click', () => { filter = key; render(); });
+      chips.appendChild(b);
+    };
+    mk('all', 'Todas', items.length);
+    mk('ok', 'Verificadas', counts.ok, 'ok');
+    mk('warn', 'Revisar', counts.warn, 'warn');
+    mk('bad', 'No encontradas', counts.bad, 'bad');
+    if (counts.err) mk('err', 'Sin respuesta', counts.err, 'err');
+  }
+  const done = items.filter(it => it.state === 'done').length;
+  $('exports').hidden = !done;
+  $('legend').hidden = items.length > 0;
+  $('bar').value = items.length ? Math.round(100 * done / items.length) : 0;
+  const list = $('list'); list.textContent = '';
+  items.forEach((it, i) => { if (filter === 'all' || statusOf(it) === filter) list.appendChild(renderCard(it, i)); });
+}
+async function runOne(i){
+  const it = items[i];
+  try { it.result = await verify(it.ref, { openalexKey: DEMO ? '' : $('oakey').value.trim() }); }
+  catch (e){ it.result = { ref: it.ref, doi: extractDoi(it.ref), status: 'err', notes: [e.message || 'No se pudo consultar.'], match: null, closest: null }; }
+  it.state = 'done';
+  render();
+}
+async function retry(i){ items[i].state = 'wait'; render(); await runOne(i); }
+async function run(){
+  if (running) return;
+  const refs = splitRefs($('refs').value);
+  if (!refs.length){ say('toast', 'Todavía no hay referencias. Pega al menos una o carga los ejemplos.'); $('refs').focus(); return; }
+  await initConnection();
+  if (DEMO && $('refs').value.trim() !== EXAMPLES){
+    say('toast', 'Dentro de Claude solo se pueden verificar las citas de ejemplo. Aprieta “Cargar los ejemplos” para probar, o usa la versión publicada con tus referencias.');
+    return;
+  }
+  store('vr-text', $('refs').value); store('vr-oakey', $('oakey').value.trim());
+  items = refs.map(ref => ({ ref, state: 'wait', result: null }));
+  filter = 'all'; running = true; stopFlag = false;
+  $('run').disabled = true; $('stop').disabled = false;
+  say('toast', 'Verificando ' + refs.length + (refs.length === 1 ? ' referencia.' : ' referencias.'));
+  render();
+  let next = 0;
+  const worker = async () => { while (!stopFlag && next < items.length){ const i = next++; await runOne(i); await sleep(150); } };
+  await Promise.all([worker(), worker(), worker()]);
+  running = false; $('run').disabled = false; $('stop').disabled = true;
+  const c = { ok: 0, warn: 0, bad: 0, err: 0 }; let done = 0;
+  items.forEach(it => { if (it.state === 'done'){ done++; c[it.result.status]++; } });
+  say('toast', stopFlag ? 'Detenido. Quedaron ' + (items.length - done) + ' sin revisar.'
+    : 'Listo. ' + c.ok + (c.ok === 1 ? ' verificada, ' : ' verificadas, ') + c.warn + ' para revisar y ' + c.bad + (c.bad === 1 ? ' no encontrada' : ' no encontradas') + (c.err ? ', ' + c.err + ' sin respuesta' : '') + '.');
+}
+function report(){
+  return items.filter(it => it.state === 'done').map(it => {
+    const r = it.result;
+    let s = (items.indexOf(it) + 1) + '. [' + LABEL[r.status] + '] ' + it.ref + '\n   ' + r.notes.join(' ');
+    if (r.match) s += '\n   Registro: ' + r.match.title + (r.match.years[0] ? ' (' + r.match.years[0] + ')' : '') + (r.match.doi ? ' https://doi.org/' + r.match.doi : '');
+    return s;
+  }).join('\n\n');
+}
+function csv(){
+  const q = v => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+  const rows = [['n', 'estado', 'cita', 'observaciones', 'titulo_registro', 'anio_registro', 'doi_registro', 'fuente'].join(',')];
+  items.forEach((it, i) => { if (it.state !== 'done') return; const r = it.result, m = r.match || {};
+    rows.push([i + 1, q(LABEL[r.status]), q(it.ref), q(r.notes.join(' ')), q(m.title), q(m.years && m.years[0]), q(m.doi), q(m.source)].join(',')); });
+  return '﻿' + rows.join('\r\n');
+}
+function setRefs(text){ $('refs').value = text; $('exnote').hidden = text.trim() !== EXAMPLES; }
+$('run').addEventListener('click', run);
+$('stop').addEventListener('click', () => { stopFlag = true; });
+$('clear').addEventListener('click', () => { if (running) return; setRefs(''); items = []; render(); say('toast', 'Cuadro vacío.'); $('refs').focus(); });
+$('load-ex').addEventListener('click', () => { if (running) return; setRefs(EXAMPLES); items = []; render(); say('toast', 'Ejemplos cargados: dos citas reales y una inventada.'); });
+$('refs').addEventListener('input', () => { $('exnote').hidden = $('refs').value.trim() !== EXAMPLES; });
+$('refs').addEventListener('keydown', e => { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)){ e.preventDefault(); run(); } });
+$('file').addEventListener('change', e => {
+  const f = e.target.files && e.target.files[0];
+  if (!f) return;
+  if (f.size > 2000000){ say('toast', 'El archivo pesa más de 2 MB. Sube solo la lista de referencias en texto.'); e.target.value = ''; return; }
+  const rd = new FileReader();
+  rd.onload = () => { setRefs(String(rd.result || '')); say('toast', 'Archivo cargado: ' + splitRefs($('refs').value).length + ' referencias.'); };
+  rd.onerror = () => say('toast', 'No se pudo leer el archivo. Prueba con un .txt.');
+  rd.readAsText(f); e.target.value = '';
+});
+$('copy').addEventListener('click', async () => say('toast', (await copyText(report())) ? 'Informe copiado.' : 'No se pudo copiar. Usa el CSV.'));
+$('csv').addEventListener('click', () => saveFile('referencias-verificadas.csv', csv(), 'text/csv;charset=utf-8', 'toast'));
+
+/* ---------- buscar ---------- */
+function renderSearch(){
+  const ol = $('sres'); ol.textContent = '';
+  sState.items.forEach(rec => {
+    const li = el('li', 'card plain');
+    if (DEMO){ const top = el('div', 'top'); top.appendChild(el('span', 'tag', 'Ejemplo')); li.appendChild(top); }
+    li.appendChild(el('p', 't', rec.title + (rec.subtitle && !norm(rec.title).includes(norm(rec.subtitle)) ? ': ' + rec.subtitle : '')));
+    const meta = [recLine(rec), rec.cites ? rec.cites + (rec.cites === 1 ? ' cita' : ' citas') + ' en Crossref' : ''].filter(Boolean).join(' · ');
+    if (meta) li.appendChild(el('p', 'meta', meta));
+    if (rec.abstract) li.appendChild(el('p', null, rec.abstract.length > 320 ? rec.abstract.slice(0, 320).replace(/\s+\S*$/, '') + '…' : rec.abstract));
+    if (rec.doi) li.appendChild(doiLink(rec.doi));
+    li.appendChild(recActions(rec, 'stoast'));
+    ol.appendChild(li);
+  });
+  $('smore').hidden = !(sState.items.length && sState.offset + 20 < sState.total);
+}
+async function doSearch(more){
+  const q = $('sq').value.trim();
+  if (q.length < 3){ say('stoast', 'Escribe al menos una palabra para buscar.'); $('sq').focus(); return; }
+  for (const id of ['sfrom', 'suntil']){
+    const v = $(id).value.trim(); const bad = v && !/^\d{4}$/.test(v);
+    $(id).setAttribute('aria-invalid', String(!!bad));
+    if (bad){ say('stoast', 'El año va con cuatro números, por ejemplo 2019.'); $(id).focus(); return; }
+  }
+  await initConnection();
+  if (!more) sState = { q, offset: 0, total: 0, items: [] }; else sState.offset += 20;
+  $('sgo').disabled = true; $('smore').disabled = true;
+  say('stoast', 'Buscando en Crossref.');
+  try {
+    const r = await topicSearch(sState.q, { from: $('sfrom').value.trim(), until: $('suntil').value.trim(), kind: $('skind').value, offset: sState.offset });
+    sState.total = r.total; sState.items = sState.items.concat(r.items);
+    say('stoast', DEMO ? 'Dentro de Claude no hay conexión con Crossref. Estos cuatro registros reales son ejemplos y no responden a tu búsqueda.'
+      : r.total ? 'Crossref tiene ' + r.total.toLocaleString('es-CL') + ' registros para esa búsqueda. Van ' + sState.items.length + ', ordenados por relevancia.'
+      : 'Sin resultados. Prueba con menos palabras o sin filtro de años.');
+  } catch (e){
+    if (more) sState.offset -= 20;
+    say('stoast', e.message || 'No se pudo consultar.');
+  }
+  $('sgo').disabled = false; $('smore').disabled = false;
+  renderSearch();
+}
+$('sgo').addEventListener('click', () => doSearch(false));
+$('smore').addEventListener('click', () => doSearch(true));
+$('sq').addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(false); });
+
+/* ---------- constructor APA 7 ---------- */
+const FIELDS = ['year', 'title', 'container', 'volume', 'issue', 'pages', 'edition', 'publisher', 'doi'];
+const FORM_EXAMPLE = { kind: 'article', people: [{ family: 'Williamson', given: 'Ben' }, { family: 'Eynon', given: 'Rebecca' }, { family: 'Potter', given: 'John' }], editors: [], editedBook: false, year: '2020', title: 'Pandemic politics, pedagogies and practices: Digital technologies and distance education during the coronavirus emergency', container: 'Learning, Media and Technology', volume: '45', issue: '2', pages: '107-114', edition: '', publisher: '', doi: '10.1080/17439884.2020.1761641' };
+function peopleText(list){ return (list || []).map(p => p.name ? p.name : p.family + (p.given ? ', ' + p.given : '')).join('\n'); }
+function fillForm(d){
+  $('f-kind').value = d.kind || 'article';
+  $('f-people').value = peopleText(d.people);
+  $('f-editors').value = peopleText(d.editors);
+  $('f-edited').checked = !!d.editedBook;
+  FIELDS.forEach(k => { $('f-' + k).value = d[k] || ''; });
+  syncForm();
+}
+function readForm(){
+  const d = { kind: $('f-kind').value, people: parsePeople($('f-people').value), editors: parsePeople($('f-editors').value), editedBook: $('f-edited').checked };
+  FIELDS.forEach(k => { d[k] = $('f-' + k).value.trim(); });
+  if (d.kind === 'article'){ d.publisher = ''; d.edition = ''; d.editors = []; }
+  if (d.kind === 'book' || d.kind === 'other'){ d.container = ''; d.volume = ''; d.issue = ''; d.pages = ''; d.editors = []; }
+  if (d.kind === 'other') d.edition = '';
+  if (d.kind === 'chapter'){ d.volume = ''; d.issue = ''; }
+  return d;
+}
+function syncForm(){
+  const kind = $('f-kind').value;
+  document.querySelectorAll('[data-for]').forEach(n => { n.hidden = !n.dataset.for.split(' ').includes(kind); });
+  $('l-container').textContent = kind === 'chapter' ? 'Título del libro' : 'Revista';
+  fillSegs($('bprev'), apaSegs(readForm(), lang()));
+}
+document.querySelectorAll('#view-apa-7 input, #view-apa-7 textarea, #view-apa-7 select').forEach(n => { if (n.id !== 'bdoi') n.addEventListener('input', syncForm); });
+$('f-kind').addEventListener('change', syncForm);
+$('f-edited').addEventListener('change', syncForm);
+$('lang').addEventListener('change', () => { store('vr-lang', lang()); syncForm(); });
+async function fetchDoi(){
+  const doi = extractDoi($('bdoi').value);
+  if (!doi){ say('btoast', 'Eso no parece un DOI. Tiene que empezar con 10.'); $('bdoi').focus(); return; }
+  $('bfetch').disabled = true; say('btoast', 'Consultando Crossref.');
+  try {
+    await initConnection();
+    const rec = await crossrefByDoi(doi);
+    if (rec){ fillForm(toApaData(rec, lang())); say('btoast', 'Datos cargados. Revisa las mayúsculas del título.'); }
+    else say('btoast', DEMO ? 'Dentro de Claude solo responden los cuatro DOI de ejemplo. Completa los campos a mano.' : 'Crossref no tiene ese DOI. Completa los campos a mano.');
+  } catch (e){ say('btoast', e.message || 'No se pudo consultar.'); }
+  $('bfetch').disabled = false;
+}
+$('bfetch').addEventListener('click', fetchDoi);
+$('bdoi').addEventListener('keydown', e => { if (e.key === 'Enter') fetchDoi(); });
+$('bcopy').addEventListener('click', () => copySegs(apaSegs(readForm(), lang()), 'btoast'));
+$('badd').addEventListener('click', () => addToList(apaSegs(readForm(), lang()), 'btoast'));
+$('bspeak').addEventListener('click', () => speak(segsText(apaSegs(readForm(), lang())), $('bspeak')));
+$('bclear').addEventListener('click', () => { fillForm({ kind: $('f-kind').value }); say('btoast', 'Campos vacíos.'); $('f-people').focus(); });
+$('lcopy').addEventListener('click', async () => {
+  const ok = await copyRich(myList.map(s => '<p>' + segsHtml(s) + '</p>').join(''), myList.map(segsText).join('\n\n'));
+  say('btoast', ok ? 'Lista copiada, con las cursivas.' : 'No se pudo copiar.');
+});
+$('ltxt').addEventListener('click', () => saveFile('mis-referencias.txt', myList.map(segsText).join('\n\n'), 'text/plain;charset=utf-8', 'btoast'));
+$('lclear').addEventListener('click', () => { myList = []; saveList(); renderList(); say('btoast', 'Lista vacía.'); });
+$('help-speak').addEventListener('click', () => speak($('help-body').innerText, $('help-speak')));
+
+/* ---------- app instalable ---------- */
+if (!HOSTED && 'serviceWorker' in navigator && location.protocol === 'https:'){
+  window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js').catch(() => {}); });
+}
+let installEvt = null;
+window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEvt = e; $('install').hidden = false; });
+$('install').addEventListener('click', async () => { if (!installEvt) return; installEvt.prompt(); try { await installEvt.userChoice; } catch (e){} installEvt = null; $('install').hidden = true; });
+
+(function init(){
+  applyPrefs();
+  const saved = store('vr-text');
+  setRefs(saved && saved.trim() ? saved : EXAMPLES);
+  const k = store('vr-oakey'); if (k) $('oakey').value = k;
+  const l = store('vr-lang'); if (l === 'en' || l === 'es') $('lang').value = l;
+  try { const raw = JSON.parse(store('vr-list') || '[]'); if (Array.isArray(raw)) myList = raw.filter(Array.isArray); } catch (e){ myList = []; }
+  fillForm(FORM_EXAMPLE);
+  render(); renderList(); route(false);
+  initConnection();
+})();
+</script>
+</body>
+</html>
