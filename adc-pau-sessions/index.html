@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sessions ADC-PAU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: one reading column (max 44rem), sticky brand bar on top, tab bar at the bottom.
+     Identity comes from the project logo: sky-to-sun gradient, Nunito wordmark. */
+  --bg:#f3f7f8; --surface:#ffffff; --ink:#12232c; --muted:#4a5f69; --line:#cbd8dd;
+  --accent:#006d88; --on-accent:#ffffff;
+  --sky:#00ccff; --sun:#ffd42a;
+  --c1:#6fdcff; --c2:#7fe0c0; --c3:#ffd95a; --c4:#ffb08a; --chip-ink:#12232c;
+  --ok:#0b6b3f; --warn:#8a4b00;
+  --display:"Nunito","Trebuchet MS",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible",Verdana,system-ui,sans-serif;
+  --lh:1.6; --ls:0; --ws:0;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0d181e; --surface:#15252d; --ink:#e8f1f4; --muted:#a6b9c1; --line:#2d434d;
+    --accent:#62d8f4; --on-accent:#08222b; --ok:#6fe0a8; --warn:#ffc370;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0d181e; --surface:#15252d; --ink:#e8f1f4; --muted:#a6b9c1; --line:#2d434d;
+  --accent:#62d8f4; --on-accent:#08222b; --ok:#6fe0a8; --warn:#ffc370;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{font-size:100%}
+html.s1{font-size:112.5%} html.s2{font-size:125%}
+html.airy{--lh:1.95; --ls:.03em; --ws:.12em}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:var(--lh);letter-spacing:var(--ls);word-spacing:var(--ws);padding-bottom:5.5rem}
+h1,h2,h3{font-family:var(--display);line-height:1.2;text-wrap:balance;letter-spacing:0;margin:0}
+h1{font-weight:900;font-size:1.9rem}
+h2{font-weight:900;font-size:1.3rem}
+h3{font-weight:700;font-size:1.08rem}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1:focus{outline:none}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--bg);padding:.6rem 1rem;z-index:20}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:44rem;margin:0 auto;padding:0 16px}
+
+/* brand bar */
+.bar{position:sticky;top:0;z-index:10;background:var(--surface);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+.logo{display:flex;align-items:center;color:var(--ink);text-decoration:none}
+.logo svg{height:36px;width:auto;display:block}
+.btn{font:inherit;font-family:var(--display);font-weight:700;min-height:44px;padding:.45rem 1rem;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;letter-spacing:0}
+.btn.solid{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.sun{background:var(--sun);border-color:var(--sun);color:var(--chip-ink)}
+.btn[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.btn.small{min-height:44px;padding:.3rem .8rem;font-size:.95rem}
+
+/* reading tools */
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px 0 4px}
+.tools .group{display:flex;gap:6px;align-items:center}
+.tools .lbl{font-size:.85rem;color:var(--muted);margin-right:2px}
+
+main{display:block}
+.view{display:flex;flex-direction:column;gap:1.5rem;padding:1rem 0 2rem}
+.eyebrow{align-self:flex-start;font-family:var(--display);font-weight:700;font-size:.9rem;padding:.2rem .75rem;border-radius:999px;color:var(--chip-ink);letter-spacing:0}
+.k1{background:var(--c1)} .k2{background:var(--c2)} .k3{background:var(--c3)} .k4{background:var(--c4)}
+.lead{font-size:1.2rem;color:var(--muted);max-width:34rem}
+.head{display:flex;flex-direction:column;gap:.6rem}
+.rule{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--sky),var(--sun));width:7rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.1rem;display:flex;flex-direction:column;gap:.9rem}
+.note{border-left:6px solid var(--sun);background:var(--surface);padding:.9rem 1rem;border-radius:0 12px 12px 0;display:flex;flex-direction:column;gap:.3rem}
+.note b{font-family:var(--display)}
+.muted{color:var(--muted)}
+.small{font-size:.92rem}
+ul.plain,ol.plain{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:.5rem}
+.stack{display:flex;flex-direction:column;gap:.8rem}
+
+/* home session list */
+.sessions{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:620px){.sessions{grid-template-columns:1fr 1fr}}
+.sess{display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem;text-decoration:none;color:var(--ink);min-height:6rem}
+.sess:hover{border-color:var(--ink)}
+.num{width:3rem;height:3rem;border-radius:50%;display:grid;place-items:center;font-family:var(--display);font-weight:900;font-size:1.4rem;color:var(--chip-ink)}
+.sess .t{font-family:var(--display);font-weight:900;font-size:1.1rem;line-height:1.25}
+.sess .q{color:var(--muted);font-size:.95rem}
+
+/* C1 post */
+.post{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:1rem;display:flex;flex-direction:column;gap:.6rem}
+.post .who{font-family:var(--display);font-weight:700;font-size:.95rem;color:var(--muted)}
+.post .txt{font-size:1.15rem;line-height:1.9;display:flex;flex-wrap:wrap;gap:.5rem .4rem}
+.seg{font:inherit;color:var(--ink);background:transparent;border:0;border-bottom:3px dashed var(--accent);padding:.15rem .1rem;cursor:pointer;border-radius:4px 4px 0 0}
+.seg[aria-pressed="true"]{background:var(--sun);color:var(--chip-ink);border-bottom-style:solid;border-bottom-color:var(--chip-ink)}
+.found{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.6rem}
+.found li{border-left:6px solid var(--c1);padding:.1rem 0 .1rem .8rem}
+.found b{font-family:var(--display);display:block}
+
+/* quiz */
+.qz{display:flex;flex-direction:column;gap:.6rem;padding-top:.9rem;border-top:1px solid var(--line)}
+.qz:first-of-type{border-top:0;padding-top:0}
+.quote{font-size:1.1rem;font-style:italic}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.fb{min-height:1.5rem}
+.fb.yes{color:var(--ok)} .fb.no{color:var(--warn)}
+
+/* feed simulator */
+.feed{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+@media (min-width:520px){.feed{grid-template-columns:repeat(4,1fr)}}
+.tile{font:inherit;font-family:var(--display);font-weight:700;font-size:.95rem;min-height:4.2rem;border-radius:12px;border:2px solid transparent;color:var(--chip-ink);cursor:pointer;padding:.4rem;letter-spacing:0}
+.tile:hover{border-color:var(--ink)}
+.t-mus{background:var(--c1)} .t-esp{background:var(--c2)} .t-cui{background:var(--c3)} .t-joc{background:var(--c4)}
+.t-hum{background:var(--surface);border-color:var(--line);color:var(--ink)}
+.t-pol{background:repeating-linear-gradient(135deg,var(--ink) 0 10px,color-mix(in srgb,var(--ink) 82%,var(--bg)) 10px 20px);color:var(--bg)}
+.bars{display:flex;flex-direction:column;gap:6px}
+.barrow{display:grid;grid-template-columns:7.5rem 1fr 2rem;gap:8px;align-items:center;font-size:.92rem}
+.track{height:12px;background:var(--bg);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.fill{height:100%;background:var(--accent);border-radius:6px 0 0 6px;transition:width .3s}
+.fill.pol{background:var(--ink)}
+.barrow .n{text-align:right;font-variant-numeric:tabular-nums}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+
+/* forms */
+label.f,fieldset.f{display:flex;flex-direction:column;gap:.4rem;border:0;padding:0;margin:0;min-width:0}
+fieldset.f legend,label.f>span{font-family:var(--display);font-weight:700;padding:0}
+textarea,input[type=text]{font:inherit;color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:10px;padding:.6rem .7rem;width:100%;line-height:1.5}
+textarea{min-height:5.5rem;resize:vertical}
+textarea:focus,input[type=text]:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 35%,transparent)}
+.choice{display:flex;flex-wrap:wrap;gap:8px}
+.choice label{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;padding:.3rem .9rem;border:2px solid var(--line);border-radius:999px;cursor:pointer;background:var(--surface)}
+.choice input{accent-color:var(--accent);width:1.1rem;height:1.1rem;margin:0}
+.choice label:has(input:checked){border-color:var(--ink);background:var(--sun);color:var(--chip-ink)}
+.choice label:has(input:focus-visible){outline:3px solid var(--accent);outline-offset:3px}
+.check{display:flex;gap:.6rem;align-items:flex-start;min-height:44px}
+.check input{width:1.25rem;height:1.25rem;margin:.2rem 0 0;accent-color:var(--accent);flex:none}
+.step{font-family:var(--display);font-weight:900;color:var(--muted);font-size:.9rem}
+
+/* piece preview */
+.piece{border-radius:16px;padding:4px;background:linear-gradient(135deg,var(--sky),var(--sun))}
+.piece .in{background:var(--surface);border-radius:13px;padding:1.2rem;min-height:9rem;display:flex;flex-direction:column;gap:.8rem;justify-content:center}
+.piece .big{font-family:var(--display);font-weight:900;font-size:1.35rem;line-height:1.25;overflow-wrap:anywhere;white-space:pre-wrap}
+.piece .shot{border-left:4px solid var(--line);padding-left:.7rem;white-space:pre-wrap;overflow-wrap:anywhere}
+.piece .shot b{font-family:var(--display);display:block;font-size:.85rem;color:var(--muted)}
+.piece .sig{font-size:.9rem;color:var(--muted);text-align:right}
+.piece .empty{color:var(--muted);font-style:italic}
+
+
+/* illustrations and animated explainers */
+.art{border-radius:14px;overflow:hidden;border:1px solid var(--line);background:color-mix(in srgb,var(--kc) 26%,var(--surface))}
+.art svg{display:block;width:100%;height:auto;max-height:210px}
+.a0{--kc:var(--sky)} .a1{--kc:var(--c1)} .a2{--kc:var(--c2)} .a3{--kc:var(--c3)} .a4{--kc:var(--c4)}
+svg .i-ink{fill:var(--ink)} svg .i-sur{fill:var(--surface)} svg .i-bg{fill:var(--bg)} svg .i-line{fill:var(--line)}
+svg .i-sun{fill:var(--sun)} svg .i-sky{fill:var(--sky)} svg .i-c1{fill:var(--c1)} svg .i-c2{fill:var(--c2)} svg .i-c3{fill:var(--c3)} svg .i-c4{fill:var(--c4)} svg .i-chip{fill:var(--chip-ink)}
+svg .s-ink{stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+svg .s-chip{stroke:var(--chip-ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;fill:none}
+svg .nf{fill:none}
+svg text{font-family:var(--display);font-weight:700;font-size:13px;fill:var(--ink);letter-spacing:0}
+svg text.on-chip{fill:var(--chip-ink)}
+.sess{grid-template-columns:auto 1fr auto}
+.sess .ic{width:2.2rem;height:2.2rem;color:var(--muted)}
+.sess .ic svg{width:100%;height:100%;display:block}
+.player{margin:0;display:flex;flex-direction:column;gap:.7rem}
+.player .stage{border-radius:12px;background:var(--bg);border:1px solid var(--line);overflow:hidden}
+.player .stage svg{display:block;width:100%;height:auto;max-height:260px}
+.player [data-from]{opacity:.13;transition:opacity .6s}
+.player [data-from].on{opacity:1}
+.player [data-st]{opacity:.4;transition:opacity .4s}
+.player [data-st].now{opacity:1}
+.player [data-st].now .ring{stroke-width:5}
+.player .cap{min-height:3.3em;font-size:1.05rem}
+.net{border-radius:12px;background:var(--bg);border:1px solid var(--line)}
+.net svg{display:block;width:100%;height:auto;max-height:240px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:12px}
+summary{cursor:pointer;padding:.8rem 1rem;font-family:var(--display);font-weight:700;min-height:44px;list-style-position:inside}
+details>div{padding:0 1rem 1rem;display:flex;flex-direction:column;gap:.5rem}
+details.edu{border-style:dashed}
+
+/* pause */
+.breath{display:flex;flex-direction:column;align-items:center;gap:1rem;padding:1rem 0}
+.orb{width:9rem;height:9rem;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--sky),var(--sun));transform:scale(.7);transition:transform 4s ease-in-out}
+.orb.in{transform:scale(1)}
+.orb.out{transition-duration:6s}
+.tel{font-family:var(--display);font-weight:900;font-size:1.5rem;font-variant-numeric:tabular-nums}
+.pager{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+
+/* tab bar */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--surface);border-top:1px solid var(--line)}
+.tabs ul{list-style:none;margin:0 auto;padding:6px 8px;display:grid;grid-template-columns:repeat(5,1fr);gap:4px;max-width:44rem}
+.tabs a{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:52px;border-radius:10px;text-decoration:none;color:var(--muted);font-family:var(--display);font-weight:700;font-size:.78rem;line-height:1.15;text-align:center;letter-spacing:0}
+.tabs a .d{width:1.6rem;height:1.6rem;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:.9rem;color:var(--chip-ink);margin-bottom:2px}
+.tabs a .d.h{background:linear-gradient(135deg,var(--sky),var(--sun))}
+.tabs a[aria-current="page"]{color:var(--ink);background:var(--bg);box-shadow:inset 0 3px 0 var(--ink)}
+.logos{display:flex;flex-wrap:wrap;gap:20px 28px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;align-self:flex-start}
+.logos img{height:44px;width:auto;max-width:100%;display:block}
+footer{color:var(--muted);font-size:.88rem;border-top:1px solid var(--line);padding:1rem 0;display:flex;flex-direction:column;gap:.6rem}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.orb{transform:scale(.9)}}
+</style>
+</head>
+<body>
+<a class="skip" href="#view" id="skip">Ves al contingut</a>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="#inici" id="logoLink" aria-label="ADC-PAU, inici">
+      <svg viewBox="0 0 449.67131 118.66248" role="img" aria-hidden="true" focusable="false"><defs><linearGradient id="lg" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.4553256,0,0,1.4553256,-340.2528,-326.05678)" x1="275.05896" y1="595.65405" x2="297.39111" y2="621.34674"><stop offset="0" stop-color="#00ccff"/><stop offset="1" stop-color="#ffd42a"/></linearGradient></defs><g transform="translate(-57.30743,-242.37502)"><g transform="matrix(1.9009253,0,0,1.9009253,-25.468409,-765.34064)"><path fill="currentColor" d="m 120.34477,576.83342 c 2.23005,0 3.04488,-0.94349 4.07414,-3.25931 l 1.37234,-3.25932 h 13.509 l 1.37234,3.25932 c 0.98637,2.27294 2.01563,3.25931 4.28857,3.25931 2.61603,0 4.07414,-1.97274 2.74468,-4.8032 L 137.0273,549.04349 c -1.02925,-2.23006 -2.53025,-3.21643 -4.46011,-3.21643 -1.97274,0 -3.47374,0.98637 -4.503,3.21643 l -10.67854,22.98673 c -1.28657,2.74469 0.25732,4.8032 2.95912,4.8032 z m 12.22242,-22.38634 4.15991,9.82083 h -8.36271 l 4.11703,-9.82083 z m 30.12895,22.00037 c 10.507,0 16.51099,-5.53226 16.51099,-15.13865 0,-9.56351 -6.00399,-15.09577 -16.51099,-15.09577 h -8.4056 c -2.65891,0 -4.11702,1.45811 -4.11702,4.07414 v 22.08614 c 0,2.61602 1.45811,4.07414 4.11702,4.07414 z M 158.06448,552.603 h 4.11703 c 5.96111,0 8.83446,2.78757 8.83446,8.7058 0,5.91822 -2.83046,8.74868 -8.83446,8.74868 h -4.11703 z m 39.60664,24.31619 c 2.87335,0 6.08977,-0.77194 8.1054,-1.92986 3.81683,-2.05851 1.37234,-8.01962 -2.87334,-6.08976 -1.62966,0.81482 -3.43086,1.15791 -4.93186,1.15791 -5.36071,0 -8.01962,-3.08777 -8.01962,-8.74868 0,-5.61803 2.65891,-8.7058 8.01962,-8.7058 1.8012,0 3.47375,0.38597 5.18917,1.24368 3.73106,1.8012 6.43286,-4.15991 2.35872,-6.30419 -2.14429,-1.15792 -5.23206,-1.8012 -7.84809,-1.8012 -10.03525,0 -16.03925,6.13265 -16.03925,15.56751 0,9.47774 6.004,15.61039 16.03925,15.61039 z"/><path fill="currentColor" d="m 215.2559,575.11682 c 0.80984,0 1.19548,-0.4242 1.19548,-1.23404 V 563.7405 h 7.90558 c 5.78457,0 8.9468,-2.93085 8.9468,-8.02127 0,-5.12899 -3.16223,-8.02127 -8.9468,-8.02127 h -9.0625 c -0.77127,0 -1.19547,0.4242 -1.19547,1.23404 v 24.95078 c 0,0.80984 0.4242,1.23404 1.15691,1.23404 z m 1.19548,-25.37498 h 7.71276 c 4.4734,0 6.74866,2.04388 6.74866,5.97739 0,3.89494 -2.27526,5.93882 -6.74866,5.93882 h -7.71276 z m 16.01263,25.37498 c 0.53989,0 0.96409,-0.30851 1.31117,-1.07979 l 2.73803,-6.40159 h 14.57711 l 2.73803,6.40159 c 0.30851,0.65559 0.73272,1.07979 1.42686,1.07979 0.9641,0 1.23405,-0.69415 0.80984,-1.65824 l -10.83642,-24.91222 c -0.30851,-0.77127 -0.84841,-1.07979 -1.42686,-1.07979 -0.57846,0 -1.07979,0.30852 -1.42686,1.07979 l -10.83643,24.91222 c -0.38564,0.92553 -0.0771,1.65824 0.92553,1.65824 z m 11.37632,-24.48801 6.40159,14.96275 h -12.84175 l 6.36303,-14.96275 z m 25.65356,24.56514 c 6.94148,0 10.60505,-3.77926 10.60505,-10.91356 v -15.61834 c 0,-0.77127 -0.42421,-1.19548 -1.15692,-1.19548 -0.77127,0 -1.19548,0.42421 -1.19548,1.19548 v 15.42552 c 0,6.01596 -2.81515,8.9468 -8.25265,8.9468 -5.4375,0 -8.25265,-2.93084 -8.25265,-8.9468 v -15.42552 c 0,-0.77127 -0.4242,-1.19548 -1.19548,-1.19548 -0.73271,0 -1.15691,0.42421 -1.15691,1.19548 v 15.61834 c 0,7.1343 3.66356,10.91356 10.60504,10.91356 z"/><ellipse fill="url(#lg)" cx="76.520767" cy="561.33026" rx="32.975742" ry="31.211767"/><g transform="matrix(0.49492559,0,0,0.49492559,-34.62463,232.92748)" fill="none" stroke="#f9f9f9" stroke-width="5.66929" stroke-linecap="round" stroke-linejoin="round"><path transform="translate(-114.02097)" d="m 382.75,645.45278 -5.78761,0.0704 a 20.017579,20.017579 14.876533 0 1 -10.38795,-2.75947 l -3.52704,-2.07342 a 16.907559,16.907559 174.36057 0 0 -19.82218,1.95736 l -17.68013,15.76826 a 6.9769408,6.9769408 93.991096 0 0 -0.67807,9.71854 10.067961,10.067961 177.67846 0 0 14.3355,-0.58117 l 13.04363,-11.40681"/><path d="m 180.41081,647.5429 c 0,0 3.93184,-0.52833 7.75,-1.55178 5.21287,-1.39678 10.58048,-7.28583 17.44454,-7.38389 8.75,-0.125 17.65402,9.34244 17.65402,9.34244"/><path transform="translate(-114.02097)" d="m 348.89144,659.0802 14.58292,10.20263 a 6.3296614,6.3296614 78.51602 0 1 1.73615,8.54566 57.344953,57.344953 131.07198 0 1 -11.80933,13.55066 l -5.89412,4.93041 a 11.87612,11.87612 177.59018 0 1 -14.44749,0.60801 l -18.27572,-12.84092 a 27.732119,27.732119 18.320443 0 0 -15.19397,-5.03094 l -4.72635,-0.12774"/><path d="m 243.30624,687.77205 c 0,0 11.66053,-6.97761 15.37284,-6.80083 h 10.04995"/></g></g></g></svg>
+    </a>
+    <a class="btn sun" href="#pausa" id="pauseBtn">Pausa</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="tools" role="group" id="tools" aria-label="Eines de lectura">
+    <div class="group" role="group" id="langGroup" aria-label="Llengua">
+      <button class="btn small" id="lca" type="button" lang="ca" aria-pressed="true">Català</button>
+      <button class="btn small" id="les" type="button" lang="es" aria-pressed="false">Castellano</button>
+    </div>
+    <div class="group">
+      <button class="btn small" id="smaller" type="button">A−</button>
+      <button class="btn small" id="bigger" type="button">A+</button>
+    </div>
+    <button class="btn small" id="airy" type="button" aria-pressed="false">Més espai</button>
+    <button class="btn small" id="listen" type="button" aria-pressed="false" hidden>Escolta</button>
+  </div>
+
+  <main id="view" tabindex="-1"></main>
+
+  <footer>
+    <div class="logos"><img src="img/ub.png" alt="Universitat de Barcelona" width="640" height="193"><img src="img/icip.png" alt="ICIP, Institut Català Internacional per la Pau" width="369" height="130"></div>
+    <span id="foot1"></span>
+    <span id="foot2"></span>
+  </footer>
+</div>
+
+<nav class="tabs" id="tabs" aria-label="Sessions"><ul id="tablist"></ul></nav>
+<div class="sr" aria-live="polite" id="live"></div>
+
+<script>
+"use strict";
+/* ---------- state (memory only: nothing is stored or sent) ---------- */
+let lang = "ca";
+const S = {
+  c1found: [], quiz: {},
+  feed: null,
+  c3: { what:"", who:"", tone:"", fmt:"text", text:"", top:"", bottom:"", g1:"", g2:"", g3:"", sign:"anon", name:"", checks:{} },
+  c4: { want:[], n1:"", n2:"", n3:"" }
+};
+const L = (ca, es) => ({ ca, es });
+const t = o => (o && typeof o === "object" && "ca" in o) ? o[lang] : o;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;" }[c]));
+const $ = id => document.getElementById(id);
+
+/* ---------- shared copy ---------- */
+const UI = {
+  skip: L(`Ves al contingut`, `Ir al contenido`),
+  pause: L(`Pausa`, `Pausa`),
+  tools: L(`Eines de lectura`, `Herramientas de lectura`),
+  langLbl: L(`Llengua`, `Lengua`),
+  smaller: L(`Lletra més petita`, `Letra más pequeña`),
+  bigger: L(`Lletra més gran`, `Letra más grande`),
+  airy: L(`Més espai`, `Más espacio`),
+  listen: L(`Escolta`, `Escuchar`),
+  stop: L(`Atura la veu`, `Parar la voz`),
+  sessions: L(`Sessions`, `Sesiones`),
+  session: L(`Sessió`, `Sesión`),
+  home: L(`Inici`, `Inicio`),
+  note: L(`Abans de començar`, `Antes de empezar`),
+  close: L(`Tancament`, `Cierre`),
+  edu: L(`Per a qui condueix la sessió`, `Para quien conduce la sesión`),
+  eduTime: L(`Proposta de temps per a 90 minuts: 10 d'acollida i acords, 60 d'activitats, 15 de tancament i 5 de marge.`,
+             `Propuesta de tiempos para 90 minutos: 10 de acogida y acuerdos, 60 de actividades, 15 de cierre y 5 de margen.`),
+  eduStim: L(`Aquesta app no conté cap exemple real de discurs d'odi. Els estímuls reals els tria l'equip amb els educadors i es mostren projectats o en paper, mai als mòbils.`,
+             `Esta app no contiene ningún ejemplo real de discurso de odio. Los estímulos reales los elige el equipo con los educadores y se muestran proyectados o en papel, nunca en los móviles.`),
+  prev: L(`Anterior`, `Anterior`), next: L(`Següent`, `Siguiente`),
+  nosave: L(`No es desa. S'esborra quan tanques la pàgina.`, `No se guarda. Se borra al cerrar la página.`),
+  foot1: L(`Projecte ADC-PAU, Alfabetització Digital Crítica per a la Pau. Universitat de Barcelona, amb finançament de l'ICIP (R-ICIP 2026).`,
+           `Proyecto ADC-PAU, Alfabetización Digital Crítica para la Paz. Universitat de Barcelona, con financiación del ICIP (R-ICIP 2026).`),
+  foot2: L(`Esborrany de treball per a la sessió de codisseny. Aquesta pàgina no recull ni envia cap dada.`,
+           `Borrador de trabajo para la sesión de codiseño. Esta página no recoge ni envía ningún dato.`)
+};
+
+const SESS = [
+  { id:"sessio-1", k:1, tab:L(`Llegir`,`Leer`), name:L(`Lectura ideològica`,`Lectura ideológica`), q:L(`Qui parla i què vol que sentis?`,`¿Quién habla y qué quiere que sientas?`) },
+  { id:"sessio-2", k:2, tab:L(`Entendre`,`Entender`), name:L(`Com funciona el feed`,`Cómo funciona el feed`), q:L(`Per què et surt el que et surt?`,`¿Por qué te sale lo que te sale?`) },
+  { id:"sessio-3", k:3, tab:L(`Respondre`,`Responder`), name:L(`Creació i contranarrativa`,`Creación y contranarrativa`), q:L(`Què hi vols respondre tu?`,`¿Qué quieres responder tú?`) },
+  { id:"sessio-4", k:4, tab:L(`Cuidar`,`Cuidar`), name:L(`Cura i comunitat`,`Cuidado y comunidad`), q:L(`Amb qui comptes?`,`¿Con quién cuentas?`) }
+];
+
+/* ---------- illustrations (original drawings, inline SVG, theme-aware) ---------- */
+const ICON = {
+  1:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="20" r="11"/><path d="M29 29l11 11"/></svg>`,
+  2:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 30l6-13M28 15l7 11M17 34h16"/><circle cx="12" cy="34" r="5"/><circle cx="24" cy="12" r="5"/><circle cx="38" cy="30" r="5"/></svg>`,
+  3:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10h32v22H22l-9 8v-8H8z"/></svg>`,
+  4:`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="6"/><circle cx="32" cy="16" r="6"/><path d="M6 40c0-8 4-13 10-13s8 3 8 3 2-3 8-3 10 5 10 13"/></svg>`
+};
+const ART = {
+  1:`<svg viewBox="0 0 320 160"><rect x="40" y="30" width="196" height="100" rx="12" class="i-sur s-ink"/><circle cx="62" cy="52" r="9" class="i-c1 s-ink"/><rect x="80" y="47" width="72" height="9" rx="4" class="i-line"/><rect x="54" y="74" width="164" height="9" rx="4" class="i-line"/><rect x="54" y="90" width="70" height="13" rx="4" class="i-sun"/><rect x="130" y="92" width="60" height="9" rx="4" class="i-line"/><rect x="54" y="110" width="120" height="9" rx="4" class="i-line"/><path d="M252 122l30 28" class="nf" stroke="var(--ink)" stroke-width="10" stroke-linecap="round"/><circle cx="228" cy="98" r="36" class="i-sur" stroke="var(--ink)" stroke-width="6"/><rect x="204" y="78" width="48" height="12" rx="5" class="i-line"/><rect x="204" y="96" width="48" height="18" rx="5" class="i-sun"/></svg>`,
+  2:`<svg viewBox="0 0 320 170"><path d="M40 78q24-24 48 0q-24 24-48 0z" class="i-sur s-ink"/><circle cx="64" cy="78" r="7" class="i-ink"/><path d="M96 78h18m-7-6l7 6-7 6" class="nf s-ink"/><rect x="122" y="14" width="76" height="128" rx="13" class="i-ink"/><rect x="129" y="25" width="62" height="106" rx="6" class="i-sur"/><rect x="135" y="31" width="50" height="28" rx="5" class="i-sky"/><rect x="135" y="64" width="50" height="28" rx="5" class="i-sun"/><rect x="135" y="97" width="50" height="28" rx="5" class="i-c4"/><path d="M206 78h18m-7-6l7 6-7 6" class="nf s-ink"/><rect x="236" y="84" width="12" height="16" rx="3" class="i-ink"/><rect x="254" y="70" width="12" height="30" rx="3" class="i-ink"/><rect x="272" y="50" width="12" height="50" rx="3" class="i-ink"/><path d="M262 116q-100 62-196-10m12 0l-12 0 2 12" class="nf s-ink" stroke-dasharray="1 9"/></svg>`,
+  3:`<svg viewBox="0 0 320 170"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00ccff"/><stop offset="1" stop-color="#ffd42a"/></linearGradient></defs><path d="M36 24h96a8 8 0 0 1 8 8v36a8 8 0 0 1-8 8H70l-14 12v-12H36a8 8 0 0 1-8-8V32a8 8 0 0 1 8-8z" class="i-ink" opacity=".85"/><rect x="42" y="40" width="82" height="7" rx="3" class="i-bg" opacity=".7"/><rect x="42" y="54" width="56" height="7" rx="3" class="i-bg" opacity=".7"/><path d="M130 66h142a10 10 0 0 1 10 10v50a10 10 0 0 1-10 10h-22v16l-20-16H130a10 10 0 0 1-10-10V76a10 10 0 0 1 10-10z" fill="url(#g3)" class="s-ink"/><rect x="138" y="86" width="112" height="10" rx="4" class="i-chip"/><rect x="138" y="106" width="78" height="10" rx="4" class="i-chip"/><g transform="translate(268 46) rotate(38)"><rect x="-7" y="-36" width="14" height="46" rx="2" class="i-sun s-ink"/><path d="M-7 10l7 13 7-13z" class="i-ink s-ink"/></g></svg>`,
+  4:`<svg viewBox="0 0 320 160"><path d="M160 44c-15-11-20-20-13-27 5-5 11-2 13 3 2-5 8-8 13-3 7 7 2 16-13 27z" class="i-c4 s-ink"/><path d="M112 118h22M186 118h22" class="nf s-ink"/><circle cx="88" cy="74" r="16" class="i-sky s-ink"/><path d="M62 140c0-24 10-40 26-40s26 16 26 40z" class="i-sky s-ink"/><circle cx="160" cy="74" r="16" class="i-sun s-ink"/><path d="M134 140c0-24 10-40 26-40s26 16 26 40z" class="i-sun s-ink"/><circle cx="232" cy="74" r="16" class="i-c2 s-ink"/><path d="M206 140c0-24 10-40 26-40s26 16 26 40z" class="i-c2 s-ink"/></svg>`
+};
+function hero(){
+  const xs = [48, 123, 197, 272];
+  return `<svg viewBox="0 0 320 132"><defs><linearGradient id="g0" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00ccff"/><stop offset="1" stop-color="#ffd42a"/></linearGradient></defs><rect x="48" y="51" width="224" height="8" rx="4" fill="url(#g0)"/>` +
+    SESS.map((s,i) => `<circle cx="${xs[i]}" cy="55" r="31" class="i-c${s.k} s-ink"/><g transform="translate(${xs[i]-19} 36) scale(.79)" style="color:var(--chip-ink)">${ICON[s.k].replace(/<\/?svg[^>]*>/g, m => m.startsWith("</") ? "</g>" : `<g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">`)}</g><text x="${xs[i]}" y="112" text-anchor="middle">${t(s.tab)}</text>`).join("") + `</svg>`;
+}
+
+/* ---------- animated explainers: short silent sequences with captions ---------- */
+function svgSpread(){
+  const cx = 160, cy = 100, r2 = [], r3 = [];
+  for (let i = 0; i < 5; i++) { const a = (90 + i * 72) * Math.PI / 180; r2.push([cx + 70 * Math.cos(a), cy + 48 * Math.sin(a)]); }
+  for (let i = 0; i < 16; i++) { const a = (101 + i * 22.5) * Math.PI / 180; r3.push([cx + 136 * Math.cos(a), cy + 84 * Math.sin(a)]); }
+  const near = p => r2.reduce((b, q) => (Math.hypot(q[0]-p[0], q[1]-p[1]) < Math.hypot(b[0]-p[0], b[1]-p[1]) ? q : b), r2[0]);
+  const f = n => n.toFixed(1);
+  return `<svg viewBox="0 0 320 200" aria-hidden="true">
+   <g data-from="3">${r3.map(p => { const q = near(p); return `<path d="M${f(q[0])} ${f(q[1])}L${f(p[0])} ${f(p[1])}" class="nf" stroke="var(--line)" stroke-width="2"/>`; }).join("")}${r3.map(p => `<circle cx="${f(p[0])}" cy="${f(p[1])}" r="7" class="i-c4 s-ink" stroke-width="2"/>`).join("")}</g>
+   <g data-from="2">${r2.map(p => `<path d="M${cx} ${cy}L${f(p[0])} ${f(p[1])}" class="nf" stroke="var(--muted)" stroke-width="2.5"/>`).join("")}${r2.map(p => `<circle cx="${f(p[0])}" cy="${f(p[1])}" r="10" class="i-c3 s-ink"/>`).join("")}</g>
+   <g data-from="1"><path d="M160 54v-11M141 57l-8-8M179 57l8-8" class="nf" stroke="var(--c4)" stroke-width="5" stroke-linecap="round"/></g>
+   <rect x="138" y="60" width="44" height="22" rx="7" class="i-sur s-ink"/><rect x="146" y="68" width="28" height="6" rx="3" class="i-line"/>
+   <circle cx="${cx}" cy="${cy}" r="13" class="i-c1 s-ink"/></svg>`;
+}
+function svgLoop(){
+  const P = [[80,56],[240,56],[240,146],[80,146]], C = ["c1","c2","c3","c4"];
+  const lab = [L(`Mires`,`Miras`), L(`Mesura`,`Mide`), L(`Recomana`,`Recomienda`), L(`Cobra`,`Cobra`)];
+  const ic = (i, x, y) => [
+    `<path d="M${x-7} ${y-11}L${x+12} ${y}L${x-7} ${y+11}z" class="i-chip"/>`,
+    `<circle cx="${x}" cy="${y+2}" r="11" class="s-chip"/><path d="M${x} ${y+2}v-7M${x} ${y+2}l5 3M${x-3} ${y-13}h6" class="s-chip"/>`,
+    `<rect x="${x-13}" y="${y-12}" width="17" height="12" rx="2" class="s-chip"/><rect x="${x-4}" y="${y-1}" width="17" height="12" rx="2" class="i-chip"/>`,
+    `<text x="${x}" y="${y+8}" text-anchor="middle" class="on-chip" style="font-size:23px;font-weight:900">€</text>`][i];
+  const arrows = [
+    [1, `M114 56h88m-9-7l9 7-9 7`], [2, `M240 90v20m-7-9l7 9 7-9`], [3, `M206 146h-88m9-7l-9 7 9 7`], [3, `M80 112v-20m-7 9l7-9 7 9`]];
+  return `<svg viewBox="0 0 320 200" aria-hidden="true">` +
+    arrows.map(a => `<path data-from="${a[0]}" d="${a[1]}" class="nf s-ink"/>`).join("") +
+    P.map((p,i) => `<g data-st="${i}"><circle class="ring i-${C[i]} s-ink" cx="${p[0]}" cy="${p[1]}" r="27"/>${ic(i, p[0], p[1])}<text x="${p[0]}" y="${i < 2 ? p[1] - 36 : p[1] + 46}" text-anchor="middle">${t(lab[i])}</text></g>`).join("") + `</svg>`;
+}
+const PL = {
+  spread:{ svg:svgSpread, steps:[
+    L(`Algú publica un missatge contra un grup.`,`Alguien publica un mensaje contra un grupo.`),
+    L(`El missatge està fet per provocar ràbia o riure. Per això crida l'atenció.`,`El mensaje está hecho para provocar rabia o risa. Por eso llama la atención.`),
+    L(`Unes quantes persones el comparteixen. Algunes ho fan per criticar-lo, i també el mouen.`,`Unas cuantas personas lo comparten. Algunas lo hacen para criticarlo, y también lo mueven.`),
+    L(`En poques hores arriba a gent que no sap qui l'ha fet ni per què.`,`En pocas horas llega a gente que no sabe quién lo ha hecho ni por qué.`)] },
+  loop:{ svg:svgLoop, steps:[
+    L(`Mires un vídeo fins al final.`,`Miras un vídeo hasta el final.`),
+    L(`La plataforma mesura quanta estona t'hi has quedat i si has comentat.`,`La plataforma mide cuánto rato te has quedado y si has comentado.`),
+    L(`Et recomana més vídeos com aquell.`,`Te recomienda más vídeos como ese.`),
+    L(`Hi passes més estona, veus més anuncis i la plataforma cobra. I torna a començar.`,`Pasas más rato, ves más anuncios y la plataforma cobra. Y vuelve a empezar.`)] }
+};
+S.pl = { spread:0, loop:0 };
+let plTimer = null, plPlaying = null;
+function player(id){
+  return `<figure class="player" data-pl="${id}"><div class="stage">${PL[id].svg()}</div><figcaption class="cap" id="cap-${id}" aria-live="polite"></figcaption>
+  <div class="row"><button type="button" class="btn small" data-plb="prev" aria-label="${t(L(`Pas anterior`,`Paso anterior`))}"><span aria-hidden="true">←</span></button>
+  <button type="button" class="btn small solid" data-plb="play"></button>
+  <button type="button" class="btn small" data-plb="next" aria-label="${t(L(`Pas següent`,`Paso siguiente`))}"><span aria-hidden="true">→</span></button></div></figure>`;
+}
+function paintPl(id){
+  const f = document.querySelector(`[data-pl="${id}"]`); if (!f) return;
+  const st = S.pl[id], n = PL[id].steps.length;
+  f.querySelectorAll("[data-from]").forEach(e => e.classList.toggle("on", +e.dataset.from <= st));
+  f.querySelectorAll("[data-st]").forEach(e => e.classList.toggle("now", +e.dataset.st === st));
+  $("cap-" + id).textContent = `${st + 1} / ${n}. ${t(PL[id].steps[st])}`;
+  f.querySelector('[data-plb="play"]').textContent = plPlaying === id ? t(L(`Pausa l'animació`,`Pausar la animación`)) : (st === n - 1 ? t(L(`Torna a veure-la`,`Volver a verla`)) : t(L(`Reprodueix`,`Reproducir`)));
+}
+function plStop(){ if (plTimer) clearInterval(plTimer); plTimer = null; const was = plPlaying; plPlaying = null; if (was) paintPl(was); }
+function plPlay(id){
+  plStop(); const n = PL[id].steps.length; if (S.pl[id] === n - 1) S.pl[id] = 0;
+  plPlaying = id; paintPl(id);
+  plTimer = setInterval(() => {
+    if (!document.querySelector(`[data-pl="${id}"]`)) { plStop(); return; }
+    if (S.pl[id] < n - 1) S.pl[id]++;
+    if (S.pl[id] === n - 1) plStop(); else paintPl(id);
+  }, 3500);
+}
+function netSvg(){
+  return `<svg viewBox="0 0 320 196" role="img" aria-label="${t(L(`Esquema de la teva xarxa de suport, amb tu al centre`,`Esquema de tu red de apoyo, contigo en el centro`))}"><defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00ccff"/><stop offset="1" stop-color="#ffd42a"/></linearGradient></defs>
+  <path d="M160 100L76 44M160 100L244 44M160 100V168" class="nf s-ink"/>
+  <circle cx="160" cy="100" r="25" fill="url(#g4)" class="s-ink"/><text x="160" y="105" text-anchor="middle" class="on-chip">${t(L(`Jo`,`Yo`))}</text>
+  <rect x="12" y="28" width="128" height="32" rx="16" class="i-c1 s-ink"/><text id="net1" x="76" y="49" text-anchor="middle" class="on-chip"></text>
+  <rect x="180" y="28" width="128" height="32" rx="16" class="i-c2 s-ink"/><text id="net2" x="244" y="49" text-anchor="middle" class="on-chip"></text>
+  <rect x="96" y="154" width="128" height="32" rx="16" class="i-c3 s-ink"/><text id="net3" x="160" y="175" text-anchor="middle" class="on-chip"></text></svg>`;
+}
+function paintNet(){
+  const d = [L(`Amic o amiga`,`Amigo o amiga`), L(`Persona adulta`,`Persona adulta`), L(`Un lloc`,`Un lugar`)];
+  ["n1","n2","n3"].forEach((k,i) => { const el = $("net" + (i+1)); if (!el) return; const v = S.c4[k].trim(); el.textContent = v ? (v.length > 15 ? v.slice(0,14) + "…" : v) : t(d[i]); });
+}
+
+/* ---------- view builders ---------- */
+function head(s){
+  return `<div class="head"><p class="eyebrow k${s.k}">${t(UI.session)} ${s.k} · 90 min</p>
+  <h1 tabindex="-1" id="h1">${t(s.name)}</h1><div class="rule" aria-hidden="true"></div><p class="lead">${t(s.q)}</p><div class="art a${s.k}" aria-hidden="true">${ART[s.k]}</div></div>`;
+}
+function note(txt){ return `<aside class="note"><b>${t(UI.note)}</b><p>${t(txt)}</p></aside>`; }
+function closing(txt){ return `<section class="card" aria-labelledby="cl"><h2 id="cl">${t(UI.close)}</h2><p>${t(txt)}</p></section>`; }
+function edu(extra){
+  return `<details class="edu"><summary>${t(UI.edu)}</summary><div class="small"><p>${t(UI.eduTime)}</p><p>${t(extra)}</p><p>${t(UI.eduStim)}</p></div></details>`;
+}
+function pager(i){
+  const p = i === 0 ? { id:"inici", n:t(UI.home) } : { id:SESS[i-1].id, n:t(SESS[i-1].name) };
+  const n = i === 3 ? { id:"inici", n:t(UI.home) } : { id:SESS[i+1].id, n:t(SESS[i+1].name) };
+  return `<nav class="pager" aria-label="${t(UI.sessions)}"><a class="btn" href="#${p.id}"><span aria-hidden="true">←</span> ${p.n}</a><a class="btn solid" href="#${n.id}">${n.n} <span aria-hidden="true">→</span></a></nav>`;
+}
+
+/* ----- home ----- */
+function vHome(){
+  const agree = [
+    L(`Parlem de missatges i d'idees, no de persones.`, `Hablamos de mensajes y de ideas, no de personas.`),
+    L(`No diem noms ni comptes de ningú.`, `No decimos nombres ni cuentas de nadie.`),
+    L(`Pots no respondre, demanar una pausa o sortir quan vulguis.`, `Puedes no responder, pedir una pausa o salir cuando quieras.`),
+    L(`El que es diu aquí es queda aquí. Només si algú corre perill, les persones adultes avisaran per protegir-lo.`,
+      `Lo que se dice aquí se queda aquí. Solo si alguien corre peligro, las personas adultas avisarán para protegerlo.`)
+  ];
+  return `<div class="head"><h1 tabindex="-1" id="h1">${t(L(`Llegir, entendre, respondre, cuidar-nos`,`Leer, entender, responder, cuidarnos`))}</h1>
+  <div class="rule" aria-hidden="true"></div>
+  <p class="lead">${t(L(`Quatre sessions per mirar amb calma el que ens arriba per les xarxes i decidir què en fem.`,`Cuatro sesiones para mirar con calma lo que nos llega por las redes y decidir qué hacemos con ello.`))}</p><div class="art a0" aria-hidden="true">${hero()}</div></div>
+  <section aria-labelledby="hs"><h2 id="hs" class="sr">${t(UI.sessions)}</h2><div class="sessions">
+  ${SESS.map(s => `<a class="sess" href="#${s.id}"><span class="num k${s.k}" aria-hidden="true">${s.k}</span><span><span class="sr">${t(UI.session)} ${s.k}: </span><span class="t">${t(s.name)}</span><br><span class="q">${t(s.q)}</span></span><span class="ic">${ICON[s.k]}</span></a>`).join("")}
+  </div></section>
+  <section class="card" aria-labelledby="ha"><h2 id="ha">${t(L(`Acords del grup`,`Acuerdos del grupo`))}</h2><ul class="plain">${agree.map(a => `<li>${t(a)}</li>`).join("")}</ul></section>
+  <aside class="note"><b>${t(L(`Aquesta app no desa res`,`Esta app no guarda nada`))}</b>
+  <p>${t(L(`El que escrius es queda en aquesta pantalla i s'esborra quan tanques la pàgina. Ningú més ho veu, tampoc l'equip de recerca.`,`Lo que escribes se queda en esta pantalla y se borra al cerrar la página. Nadie más lo ve, tampoco el equipo de investigación.`))}</p></aside>
+  <section class="card" aria-labelledby="hp"><h2 id="hp">${t(L(`Si alguna cosa et remou`,`Si algo te remueve`))}</h2>
+  <p>${t(L(`El botó groc “Pausa” és a dalt de totes les pantalles.`,`El botón amarillo “Pausa” está arriba en todas las pantallas.`))}</p>
+  <div><a class="btn sun" href="#pausa">${t(L(`Obre la pausa`,`Abrir la pausa`))}</a></div></section>`;
+}
+
+/* ----- session 1 ----- */
+const FIVE = [
+  [L(`Qui ho diu?`,`¿Quién lo dice?`), L(`Una persona, un compte anònim, una pàgina que vol vendre alguna cosa.`,`Una persona, una cuenta anónima, una página que quiere vender algo.`)],
+  [L(`De qui parla i com l'anomena?`,`¿De quién habla y cómo lo nombra?`), L(`Fixa't en les paraules que tria per al “nosaltres” i per al “ells”.`,`Fíjate en las palabras que elige para el “nosotros” y para el “ellos”.`)],
+  [L(`Què vol que sentis?`,`¿Qué quiere que sientas?`), L(`Ràbia, por, fàstic, riure. L'emoció sol arribar abans que l'argument.`,`Rabia, miedo, asco, risa. La emoción suele llegar antes que el argumento.`)],
+  [L(`Què deixa fora?`,`¿Qué deja fuera?`), L(`Les dades, el context, la versió de l'altra part.`,`Los datos, el contexto, la versión de la otra parte.`)],
+  [L(`Què vol que facis?`,`¿Qué quiere que hagas?`), L(`Compartir, comentar, seguir un compte, assenyalar algú.`,`Compartir, comentar, seguir una cuenta, señalar a alguien.`)]
+];
+const SEGS = [
+  { tx:L(`Els de Riudeport`,`Los de Riudeport`), n:L(`Nosaltres i ells`,`Nosotros y ellos`), ex:L(`Posa tot un grup dins d'una sola etiqueta, com si fossin una sola persona.`,`Mete a todo un grupo dentro de una sola etiqueta, como si fueran una sola persona.`) },
+  { tx:L(`sempre fan trampes.`,`siempre hacen trampas.`), n:L(`Generalització`,`Generalización`), ex:L(`“Sempre” i “tots” converteixen un cas en una regla.`,`“Siempre” y “todos” convierten un caso en una regla.`) },
+  { tx:L(`Són així i no canviaran mai.`,`Son así y no van a cambiar nunca.`), n:L(`“Són així”`,`“Son así”`), ex:L(`Diu que el problema és com són, i deixa de banda què ha fet algú en concret. Amb això ja no hi ha res a parlar.`,`Dice que el problema es cómo son, y deja de lado qué ha hecho alguien en concreto. Con eso ya no queda nada que hablar.`) },
+  { tx:L(`Tothom ho sap.`,`Todo el mundo lo sabe.`), n:L(`Una prova que no prova res`,`Una prueba que no prueba nada`), ex:L(`No dona cap dada ni cap font. Demana que t'ho creguis perquè sí.`,`No da ningún dato ni ninguna fuente. Pide que te lo creas porque sí.`) },
+  { tx:L(`Comparteix si tu també n'estàs fart.`,`Comparte si tú también estás harto.`), n:L(`Crida a moure'l`,`Llamada a moverlo`), ex:L(`El missatge necessita que el reenviïs. Sense tu no arriba enlloc.`,`El mensaje necesita que lo reenvíes. Sin ti no llega a ninguna parte.`) }
+];
+const TRICKS = [L(`Humor com a escut`,`Humor como escudo`), L(`Xifra sense font`,`Cifra sin fuente`), L(`Víctima invertida`,`Víctima invertida`)];
+const QUIZ = [
+  { q:L(`“Era broma, no us ho prengueu tot tan a pit.”`,`“Era broma, no os lo toméis todo tan a pecho.”`), a:0, ex:L(`La broma permet dir-ho i, si algú es queixa, fer-se enrere.`,`La broma permite decirlo y, si alguien se queja, echarse atrás.`) },
+  { q:L(`“El 80 % dels aldarulls els provoquen els de Riudeport.”`,`“El 80 % de los disturbios los provocan los de Riudeport.”`), a:1, ex:L(`Un número sona a prova. Pregunta d'on surt.`,`Un número suena a prueba. Pregunta de dónde sale.`) },
+  { q:L(`“A nosaltres ja no ens deixen ni animar el nostre equip.”`,`“A nosotros ya no nos dejan ni animar a nuestro equipo.”`), a:2, ex:L(`Qui ataca es presenta com a perseguit, i l'atac passa per defensa.`,`Quien ataca se presenta como perseguido, y el ataque pasa por defensa.`) }
+];
+function vS1(){
+  const s = SESS[0];
+  return head(s) + note(L(`Avui llegim missatges de xarxes amb lupa. Els exemples d'aquesta app són inventats i parlen d'equips que no existeixen. Els exemples reals els porta l'equip i els mirem junts a la pantalla de l'aula.`,
+    `Hoy leemos mensajes de redes con lupa. Los ejemplos de esta app son inventados y hablan de equipos que no existen. Los ejemplos reales los trae el equipo y los miramos juntos en la pantalla del aula.`)) +
+  `<section class="card" aria-labelledby="a10"><h2 id="a10">${t(L(`Com viatja un missatge`,`Cómo viaja un mensaje`))}</h2>${player("spread")}</section>
+   <section class="card" aria-labelledby="a11"><h2 id="a11">${t(L(`Cinc preguntes per a qualsevol missatge`,`Cinco preguntas para cualquier mensaje`))}</h2>
+   <ol class="plain">${FIVE.map(f => `<li><h3>${t(f[0])}</h3><p class="muted">${t(f[1])}</p></li>`).join("")}</ol></section>
+   <section class="card" aria-labelledby="a12"><h2 id="a12">${t(L(`Desmunta el missatge`,`Desmonta el mensaje`))}</h2>
+   <p>${t(L(`Toca cada tros subratllat per veure quina peça és.`,`Toca cada trozo subrayado para ver qué pieza es.`))}</p>
+   <div class="post"><span class="who">${t(L(`Penya Vallnova (compte inventat)`,`Peña Vallnova (cuenta inventada)`))}</span>
+   <p class="txt">${SEGS.map((g,i) => `<button type="button" class="seg" data-seg="${i}" aria-pressed="${S.c1found.includes(i)}">${t(g.tx)}</button>`).join(" ")}</p></div>
+   <p id="segCount" class="small muted" aria-live="polite"></p>
+   <ul class="found" id="segList"></ul>
+   <p id="segEnd"></p></section>
+   <section class="card" aria-labelledby="a13"><h2 id="a13">${t(L(`Quin truc és?`,`¿Qué truco es?`))}</h2>
+   ${QUIZ.map((q,i) => `<div class="qz"><p class="quote" id="qq${i}">${t(q.q)}</p><div class="opts" role="group" aria-labelledby="qq${i}">${TRICKS.map((o,j) => `<button type="button" class="btn small" data-q="${i}" data-o="${j}" aria-pressed="${S.quiz[i]===j}">${t(o)}</button>`).join("")}</div><p class="fb" id="fb${i}" aria-live="polite"></p></div>`).join("")}</section>` +
+  closing(L(`Quina de les cinc preguntes et faràs la propera vegada que un missatge et faci enfadar?`,`¿Cuál de las cinco preguntas te harás la próxima vez que un mensaje te haga enfadar?`)) +
+  edu(L(`Després de “Desmunta el missatge”, projecta un dels estímuls seleccionats i apliqueu-hi les cinc preguntes en grups de tres.`,`Después de “Desmonta el mensaje”, proyecta uno de los estímulos seleccionados y aplicadle las cinco preguntas en grupos de tres.`)) + pager(0);
+}
+function paintS1(){
+  paintPl("spread");
+  const n = S.c1found.length;
+  $("segCount").textContent = t(L(`Has trobat ${n} de 5 peces.`,`Has encontrado ${n} de 5 piezas.`));
+  $("segList").innerHTML = S.c1found.map(i => `<li><b>${t(SEGS[i].n)}</b>${t(SEGS[i].ex)}</li>`).join("");
+  $("segEnd").textContent = n === 5 ? t(L(`Ara canvia “Riudeport” per un grup real de persones. Les peces són les mateixes. El mal que fan és molt més gran.`,`Ahora cambia “Riudeport” por un grupo real de personas. Las piezas son las mismas. El daño que hacen es mucho mayor.`)) : "";
+  QUIZ.forEach((q,i) => {
+    const el = $("fb"+i); if (S.quiz[i] === undefined) { el.textContent = ""; el.className = "fb"; return; }
+    const ok = S.quiz[i] === q.a;
+    el.className = "fb " + (ok ? "yes" : "no");
+    el.textContent = (ok ? t(L(`Sí. `,`Sí. `)) : t(L(`No ben bé: és “${t(TRICKS[q.a])}”. `,`No del todo: es “${t(TRICKS[q.a])}”. `))) + t(q.ex);
+  });
+}
+
+/* ----- session 2 ----- */
+const TOP = [
+  { id:"mus", n:L(`Música`,`Música`) }, { id:"esp", n:L(`Esports`,`Deportes`) }, { id:"cui", n:L(`Cuina`,`Cocina`) },
+  { id:"joc", n:L(`Videojocs`,`Videojuegos`) }, { id:"hum", n:L(`Humor`,`Humor`) }, { id:"pol", n:L(`Polèmica`,`Polémica`) }
+];
+const SLOTS = 12;
+function feedInit(){ S.feed = { w:{ mus:1, esp:1, cui:1, joc:1, hum:1, pol:1 }, taps:0, polTaps:0, muted:false }; }
+function feedCounts(){
+  const w = S.feed.w, tot = TOP.reduce((a,x) => a + w[x.id], 0);
+  const raw = TOP.map(x => ({ id:x.id, r:w[x.id] / tot * SLOTS }));
+  raw.forEach(x => { x.c = Math.floor(x.r); x.f = x.r - x.c; });
+  let left = SLOTS - raw.reduce((a,x) => a + x.c, 0);
+  [...raw].sort((a,b) => b.f - a.f).slice(0, left).forEach(x => x.c++);
+  return raw;
+}
+function feedOrder(counts){
+  const pool = counts.map(x => ({ id:x.id, c:x.c })).sort((a,b) => b.c - a.c), out = [];
+  while (out.length < SLOTS) { let any = false; for (const p of pool) if (p.c > 0) { out.push(p.id); p.c--; any = true; } if (!any) break; }
+  return out;
+}
+function vS2(){
+  if (!S.feed) feedInit();
+  const s = SESS[1];
+  return head(s) + note(L(`Avui no mirem cap missatge d'odi. Mirem la màquina que decideix què et surt.`,`Hoy no miramos ningún mensaje de odio. Miramos la máquina que decide qué te sale.`)) +
+  `<section class="card" aria-labelledby="a21"><h2 id="a21">${t(L(`Entrena un feed`,`Entrena un feed`))}</h2>
+   <p>${t(L(`Això és un feed de mentida amb 12 vídeos. Toca els que miraries i observa què passa amb la resta.`,`Esto es un feed de mentira con 12 vídeos. Toca los que mirarías y observa qué pasa con el resto.`))}</p>
+   <p class="small muted">${t(L(`Regla de la màquina: el que provoca més comentaris puja sol, encara que tu no el toquis.`,`Regla de la máquina: lo que provoca más comentarios sube solo, aunque tú no lo toques.`))}</p>
+   <div class="feed" id="feed"></div>
+   <div class="bars" id="bars"></div>
+   <p id="feedMsg" aria-live="polite"></p>
+   <div class="row"><button type="button" class="btn small" id="mute" aria-pressed="false">${t(L(`Marca “No m'interessa” a Polèmica`,`Marcar “No me interesa” en Polémica`))}</button>
+   <button type="button" class="btn small" id="reset">${t(L(`Torna a començar`,`Volver a empezar`))}</button></div></section>
+   <section class="card" aria-labelledby="a22"><h2 id="a22">${t(L(`Què hi guanya la plataforma?`,`¿Qué gana la plataforma?`))}</h2>
+   ${player("loop")}
+   <p>${t(L(`Les xarxes són gratis perquè venen la teva atenció als anunciants. Com més estona hi passes, més cobren. El que enfada o espanta reté molt bé, i per això circula tant.`,`Las redes son gratis porque venden tu atención a los anunciantes. Cuanto más rato pasas, más cobran. Lo que enfada o asusta retiene muy bien, y por eso circula tanto.`))}</p>
+   <h3>${t(L(`Gestos que canvien el teu feed`,`Gestos que cambian tu feed`))}</h3>
+   <ul class="plain"><li>${t(L(`Passar de llarg sense comentar. Comentar per criticar també el fa pujar.`,`Pasar de largo sin comentar. Comentar para criticar también lo hace subir.`))}</li>
+   <li>${t(L(`Marcar “No m'interessa”.`,`Marcar “No me interesa”.`))}</li>
+   <li>${t(L(`Denunciar el contingut a la mateixa plataforma.`,`Denunciar el contenido en la misma plataforma.`))}</li></ul>
+   <h3>${t(L(`Per parlar-ne`,`Para hablarlo`))}</h3>
+   <p>${t(L(`Has notat mai que, després de mirar una cosa, te'n surt molta més del mateix? Què era?`,`¿Has notado que, después de mirar algo, te sale mucho más de lo mismo? ¿Qué era?`))}</p></section>` +
+  closing(L(`Què has vist avui de la màquina que no sabies?`,`¿Qué has visto hoy de la máquina que no sabías?`)) +
+  edu(L(`El simulador exagera una sola regla per fer-la visible. Convé dir-ho al grup i preguntar quines altres regles creuen que hi ha.`,`El simulador exagera una sola regla para hacerla visible. Conviene decirlo al grupo y preguntar qué otras reglas creéis que hay.`)) + pager(1);
+}
+function paintS2(focusIdx){
+  paintPl("loop");
+  const counts = feedCounts(), order = feedOrder(counts), f = S.feed;
+  const name = id => t(TOP.find(x => x.id === id).n);
+  $("feed").innerHTML = order.map((id,i) => `<button type="button" class="tile t-${id}" data-top="${id}" data-i="${i}" aria-label="${t(L(`Mira`,`Mirar`))}: ${name(id)}">${name(id)}</button>`).join("");
+  $("bars").innerHTML = counts.map(x => `<div class="barrow"><span>${name(x.id)}</span><span class="track" aria-hidden="true"><span class="fill ${x.id==='pol'?'pol':''}" style="display:block;width:${x.c / SLOTS * 100}%"></span></span><span class="n">${x.c}</span></div>`).join("");
+  const pol = counts.find(x => x.id === "pol").c;
+  let msg = "";
+  if (f.taps === 0) msg = t(L(`Cada tema ocupa 2 llocs de 12.`,`Cada tema ocupa 2 huecos de 12.`));
+  else if (f.muted) msg = t(L(`Has dit a la màquina que no t'interessa. Polèmica ocupa ${pol} de 12 llocs i ja no puja sola.`,`Le has dicho a la máquina que no te interesa. Polémica ocupa ${pol} de 12 huecos y ya no sube sola.`));
+  else msg = t(L(`Has tocat ${f.taps} vídeos, ${f.polTaps} de Polèmica. Polèmica ocupa ${pol} de 12 llocs.`,`Has tocado ${f.taps} vídeos, ${f.polTaps} de Polémica. Polémica ocupa ${pol} de 12 huecos.`));
+  $("feedMsg").textContent = msg;
+  $("mute").setAttribute("aria-pressed", f.muted);
+  if (focusIdx !== undefined) { const b = $("feed").querySelector(`[data-i="${focusIdx}"]`); if (b) b.focus(); }
+}
+
+/* ----- session 3 ----- */
+const WHO = [L(`A qui dubta i encara escolta`,`A quien duda y todavía escucha`), L(`A qui rep l'atac i necessita suport`,`A quien recibe el ataque y necesita apoyo`), L(`A la meva gent, perquè no ho deixi passar`,`A mi gente, para que no lo deje pasar`)];
+const TONE = [L(`Humor`,`Humor`), L(`Una dada amb font`,`Un dato con fuente`), L(`Una història`,`Una historia`), L(`Suport`,`Apoyo`)];
+const FMT = [["text", L(`Text curt`,`Texto corto`)], ["mem", L(`Mem`,`Meme`)], ["guio", L(`Guió de vídeo`,`Guion de vídeo`)]];
+const SIGN = [["anon", L(`Anònima`,`Anónima`)], ["pseu", L(`Amb pseudònim`,`Con seudónimo`)], ["nom", L(`Amb el meu nom`,`Con mi nombre`)]];
+const CHECKS = [
+  L(`No repeteix el missatge d'odi. Repetir-lo li dona més abast.`,`No repite el mensaje de odio. Repetirlo le da más alcance.`),
+  L(`No assenyala cap persona ni cap compte.`,`No señala a ninguna persona ni a ninguna cuenta.`),
+  L(`No hi ha dades personals de ningú.`,`No hay datos personales de nadie.`),
+  L(`L'entendria algú que no ha estat a la sessió.`,`La entendería alguien que no ha estado en la sesión.`)
+];
+function radios(name, list, cur){
+  return `<div class="choice">${list.map((o,i) => { const v = Array.isArray(o) ? o[0] : String(i), lb = Array.isArray(o) ? o[1] : o;
+    return `<label><input type="radio" name="${name}" id="${name}-${v}" value="${v}" ${cur===v?"checked":""}> ${t(lb)}</label>`; }).join("")}</div>`;
+}
+function vS3(){
+  const s = SESS[2], c = S.c3;
+  return head(s) + note(L(`Avui crees. No cal copiar el missatge al qual respons, i no hi posis noms ni comptes de ningú. Pots fer-ho en solitari, en parella o dir-ho en veu alta i que algú ho escrigui.`,
+    `Hoy creas. No hace falta copiar el mensaje al que respondes, y no pongas nombres ni cuentas de nadie. Puedes hacerlo a solas, en pareja o decirlo en voz alta y que alguien lo escriba.`)) +
+  `<form class="card" id="f3" aria-labelledby="a31" novalidate><h2 id="a31">${t(L(`Taller de la peça`,`Taller de la pieza`))}</h2>
+   <p class="small muted">${t(UI.nosave)}</p>
+   <label class="f"><span><span class="step">1 · </span>${t(L(`A què respons?`,`¿A qué respondes?`))}</span>
+     <span class="small muted" id="h31">${t(L(`Explica-ho amb paraules teves, sense copiar-ho.`,`Explícalo con tus palabras, sin copiarlo.`))}</span>
+     <textarea id="what" data-k="what" aria-describedby="h31">${esc(c.what)}</textarea></label>
+   <fieldset class="f"><legend><span class="step">2 · </span>${t(L(`A qui parles?`,`¿A quién le hablas?`))}</legend>
+     <span class="small muted">${t(L(`Qui escampa odi poques vegades canvia per un missatge. Qui mira en silenci, sí.`,`Quien difunde odio pocas veces cambia por un mensaje. Quien mira en silencio, sí.`))}</span>${radios("who", WHO, c.who)}</fieldset>
+   <fieldset class="f"><legend><span class="step">3 · </span>${t(L(`Quin to tries?`,`¿Qué tono eliges?`))}</legend>${radios("tone", TONE, c.tone)}</fieldset>
+   <fieldset class="f"><legend><span class="step">4 · </span>${t(L(`Quin format?`,`¿Qué formato?`))}</legend>${radios("fmt", FMT, c.fmt)}</fieldset>
+   <div id="fx-text" class="stack"><label class="f"><span>${t(L(`El teu text`,`Tu texto`))}</span><textarea id="text" data-k="text" maxlength="400">${esc(c.text)}</textarea></label></div>
+   <div id="fx-mem" class="stack"><label class="f"><span>${t(L(`Frase de dalt`,`Frase de arriba`))}</span><input type="text" id="top" data-k="top" maxlength="80" value="${esc(c.top)}"></label>
+     <label class="f"><span>${t(L(`Frase de baix`,`Frase de abajo`))}</span><input type="text" id="bottom" data-k="bottom" maxlength="80" value="${esc(c.bottom)}"></label></div>
+   <div id="fx-guio" class="stack"><label class="f"><span>${t(L(`Inici: què es veu i què es diu`,`Inicio: qué se ve y qué se dice`))}</span><textarea id="g1" data-k="g1">${esc(c.g1)}</textarea></label>
+     <label class="f"><span>${t(L(`Mig`,`Medio`))}</span><textarea id="g2" data-k="g2">${esc(c.g2)}</textarea></label>
+     <label class="f"><span>${t(L(`Final`,`Final`))}</span><textarea id="g3" data-k="g3">${esc(c.g3)}</textarea></label></div>
+   <fieldset class="f"><legend><span class="step">5 · </span>${t(L(`Com la signes?`,`¿Cómo la firmas?`))}</legend>${radios("sign", SIGN, c.sign)}
+     <label class="f" id="nameWrap"><span class="small">${t(L(`Nom o pseudònim`,`Nombre o seudónimo`))}</span><input type="text" id="name" data-k="name" maxlength="40" autocomplete="off" value="${esc(c.name)}"></label></fieldset>
+   </form>
+   <section class="card" aria-labelledby="a32"><h2 id="a32">${t(L(`Així queda`,`Así queda`))}</h2>
+   <div class="piece"><div class="in" id="piece"></div></div>
+   <h3>${t(L(`Abans de donar-la per bona`,`Antes de darla por buena`))}</h3>
+   <div class="stack">${CHECKS.map((k,i) => `<label class="check"><input type="checkbox" id="ck${i}" data-ck="${i}" ${c.checks[i]?"checked":""}> <span>${t(k)}</span></label>`).join("")}</div>
+   <div class="row"><button type="button" class="btn solid" id="copy">${t(L(`Copia el text`,`Copiar el texto`))}</button>
+   <button type="button" class="btn" id="wipe">${t(L(`Esborra-ho tot`,`Borrar todo`))}</button></div>
+   <p id="copyMsg" class="small" aria-live="polite"></p>
+   <textarea id="copyBox" readonly hidden aria-label="${t(L(`Text de la peça`,`Texto de la pieza`))}"></textarea>
+   <p class="small muted">${t(L(`La peça és teva. Per ensenyar-la fora del grup, l'equip et demanarà més endavant una autorització a part, i pots dir que no.`,`La pieza es tuya. Para mostrarla fuera del grupo, el equipo te pedirá más adelante una autorización aparte, y puedes decir que no.`))}</p></section>` +
+  closing(L(`Llegeix la teva peça a algú del grup. Què n'ha entès?`,`Léele tu pieza a alguien del grupo. ¿Qué ha entendido?`)) +
+  edu(L(`Les peces no surten d'aquesta pantalla. Si un jove vol conservar la seva, la copia ell mateix. La difusió requereix el consentiment específic del document 06.`,`Las piezas no salen de esta pantalla. Si un joven quiere conservar la suya, la copia él mismo. La difusión requiere el consentimiento específico del documento 06.`)) + pager(2);
+}
+function pieceText(){
+  const c = S.c3; let body = "";
+  if (c.fmt === "text") body = c.text.trim();
+  else if (c.fmt === "mem") body = [c.top.trim(), c.bottom.trim()].filter(Boolean).join("\n");
+  else body = [[t(L(`Inici`,`Inicio`)), c.g1], [t(L(`Mig`,`Medio`)), c.g2], [t(L(`Final`,`Final`)), c.g3]].filter(x => x[1].trim()).map(x => x[0] + ": " + x[1].trim()).join("\n");
+  const sig = c.sign !== "anon" && c.name.trim() ? "\n" + c.name.trim() : "";
+  return body ? body + sig : "";
+}
+function paintS3(){
+  const c = S.c3;
+  ["text","mem","guio"].forEach(f => { $("fx-"+f).hidden = c.fmt !== f; });
+  $("nameWrap").hidden = c.sign === "anon";
+  const p = $("piece"); p.textContent = "";
+  const add = (cls, txt, lab) => { const d = document.createElement("div"); d.className = cls; if (lab) { const b = document.createElement("b"); b.textContent = lab; d.appendChild(b); } d.appendChild(document.createTextNode(txt)); p.appendChild(d); };
+  let any = false;
+  if (c.fmt === "text" && c.text.trim()) { add("big", c.text.trim()); any = true; }
+  if (c.fmt === "mem") { if (c.top.trim()) { add("big", c.top.trim()); any = true; } if (c.bottom.trim()) { add("big", c.bottom.trim()); any = true; } }
+  if (c.fmt === "guio") [[L(`Inici`,`Inicio`), c.g1], [L(`Mig`,`Medio`), c.g2], [L(`Final`,`Final`), c.g3]].forEach(x => { if (x[1].trim()) { add("shot", x[1].trim(), t(x[0])); any = true; } });
+  if (!any) add("empty", t(L(`Aquí apareixerà la teva peça quan comencis a escriure.`,`Aquí aparecerá tu pieza cuando empieces a escribir.`)));
+  else if (c.sign !== "anon" && c.name.trim()) add("sig", c.name.trim());
+}
+
+/* ----- session 4 ----- */
+const WANT = [L(`Riure`,`Reír`), L(`Sentir-me part d'un grup`,`Sentirme parte de un grupo`), L(`Que m'escoltin`,`Que me escuchen`), L(`Entendre què passa al món`,`Entender qué pasa en el mundo`), L(`Desconnectar`,`Desconectar`), L(`Aprendre coses`,`Aprender cosas`)];
+const CASES = [
+  { s:L(`Al grup de classe algú envia un mem que es riu d'un col·lectiu. Uns quants hi posen rialles.`,`En el grupo de clase alguien envía un meme que se ríe de un colectivo. Varios ponen risas.`),
+    o:[[L(`No hi dic res`,`No digo nada`), L(`És el més habitual. El silenci estalvia la discussió, però qui rep la burla el llegeix com que ningú hi està en contra.`,`Es lo más habitual. El silencio ahorra la discusión, pero quien recibe la burla lo lee como que nadie está en contra.`)],
+       [L(`Escric en privat a qui s'ha pogut sentir malament`,`Le escribo en privado a quien se ha podido sentir mal`), L(`Costa poc i canvia molt per a qui ho rep. No cal enfrontar-se amb ningú.`,`Cuesta poco y cambia mucho para quien lo recibe. No hace falta enfrentarse con nadie.`)],
+       [L(`Dic al grup que a mi no em fa gràcia`,`Digo en el grupo que a mí no me hace gracia`), L(`Una sola veu sol animar-ne d'altres. Parla del mem, no de qui l'ha enviat.`,`Una sola voz suele animar a otras. Habla del meme, no de quien lo ha enviado.`)],
+       [L(`En parlo amb una persona adulta de confiança`,`Lo hablo con una persona adulta de confianza`), L(`Bona opció si es repeteix o si va contra algú del grup.`,`Buena opción si se repite o si va contra alguien del grupo.`)]] },
+  { s:L(`Un amic comparteix cada cop més vídeos d'un canal que culpa un grup de persones de tot.`,`Un amigo comparte cada vez más vídeos de un canal que culpa de todo a un grupo de personas.`),
+    o:[[L(`Li pregunto què li agrada d'aquell canal`,`Le pregunto qué le gusta de ese canal`), L(`Preguntar obre conversa. Sovint hi busca companyia o respostes, més que les idees.`,`Preguntar abre conversación. Muchas veces busca compañía o respuestas, más que las ideas.`)],
+       [L(`Li envio dades perquè vegi que s'equivoca`,`Le envío datos para que vea que se equivoca`), L(`Les dades ajuden poc si se sent atacat. Funcionen millor després d'escoltar-lo.`,`Los datos ayudan poco si se siente atacado. Funcionan mejor después de escucharlo.`)],
+       [L(`Deixo de parlar-li`,`Dejo de hablarle`), L(`S'entén, sobretot si el que comparteix et fa mal. També el deixa més sol amb el canal.`,`Se entiende, sobre todo si lo que comparte te hace daño. También lo deja más solo con el canal.`)],
+       [L(`Ho comento a algú adult si em preocupa`,`Se lo comento a alguien adulto si me preocupa`), L(`Si veus que s'aïlla o parla de fer mal a algú, no t'ho quedis.`,`Si ves que se aísla o habla de hacerle daño a alguien, no te lo guardes.`)]] }
+];
+function vS4(){
+  const s = SESS[3], c = S.c4;
+  return head(s) + note(L(`Avui parlem de com ens sentim a les xarxes i de qui tenim a prop. Comparteix només el que vulguis.`,`Hoy hablamos de cómo nos sentimos en las redes y de a quién tenemos cerca. Comparte solo lo que quieras.`)) +
+  `<section class="card" aria-labelledby="a41"><h2 id="a41">${t(L(`Què hi busquem?`,`¿Qué buscamos ahí?`))}</h2>
+   <p>${t(L(`Marca el que tu busques quan obres una xarxa.`,`Marca lo que tú buscas cuando abres una red.`))}</p>
+   <div class="choice" role="group" aria-labelledby="a41">${WANT.map((w,i) => `<label><input type="checkbox" data-want="${i}" id="w${i}" ${c.want.includes(i)?"checked":""}> ${t(w)}</label>`).join("")}</div>
+   <p id="wantMsg" aria-live="polite"></p></section>
+   <section class="card" aria-labelledby="a42"><h2 id="a42">${t(L(`Què faries?`,`¿Qué harías?`))}</h2>
+   <p class="small muted">${t(L(`No hi ha una resposta bona. Obre cada opció i parleu-ne.`,`No hay una respuesta buena. Abre cada opción y habladlo.`))}</p>
+   ${CASES.map(k => `<div class="stack"><h3>${t(k.s)}</h3>${k.o.map(o => `<details><summary>${t(o[0])}</summary><div><p>${t(o[1])}</p></div></details>`).join("")}</div>`).join("")}</section>
+   <section class="card" aria-labelledby="a43"><h2 id="a43">${t(L(`La meva xarxa de suport`,`Mi red de apoyo`))}</h2>
+   <p class="small muted">${t(UI.nosave)} ${t(L(`També pots pensar-ho sense escriure-ho.`,`También puedes pensarlo sin escribirlo.`))}</p>
+   <div class="net">${netSvg()}</div>
+   <label class="f"><span>${t(L(`Algú de la meva edat amb qui puc parlar`,`Alguien de mi edad con quien puedo hablar`))}</span><input type="text" id="n1" data-n="n1" autocomplete="off" value="${esc(c.n1)}"></label>
+   <label class="f"><span>${t(L(`Una persona adulta de confiança`,`Una persona adulta de confianza`))}</span><input type="text" id="n2" data-n="n2" autocomplete="off" value="${esc(c.n2)}"></label>
+   <label class="f"><span>${t(L(`Un lloc on estic bé`,`Un lugar donde estoy bien`))}</span><input type="text" id="n3" data-n="n3" autocomplete="off" value="${esc(c.n3)}"></label></section>` +
+  closing(L(`Digues una cosa que t'emportes d'aquestes quatre sessions.`,`Di una cosa que te llevas de estas cuatro sesiones.`)) +
+  edu(L(`Reserva els últims minuts per si algú vol parlar en privat. Recorda al grup on és la persona referent de benestar.`,`Reserva los últimos minutos por si alguien quiere hablar en privado. Recuérdale al grupo dónde está la persona referente de bienestar.`)) + pager(3);
+}
+function paintS4(){
+  const c = S.c4; paintNet();
+  $("wantMsg").textContent = c.want.length === 0 ? "" :
+    t(L(`Els grups que escampen odi ofereixen això mateix: un “nosaltres”, algú que t'escolta, respostes fàcils. On més trobes el que has marcat, fora de la pantalla?`,
+        `Los grupos que difunden odio ofrecen eso mismo: un “nosotros”, alguien que te escucha, respuestas fáciles. ¿Dónde más encuentras lo que has marcado, fuera de la pantalla?`));
+}
+
+/* ----- pause ----- */
+let breathTimer = null;
+function vPause(){
+  return `<div class="head"><h1 tabindex="-1" id="h1">${t(L(`Fes una pausa`,`Haz una pausa`))}</h1><div class="rule" aria-hidden="true"></div>
+  <p class="lead">${t(L(`Pots deixar el mòbil, sortir de l'aula o quedar-te en silenci. No has de donar explicacions.`,`Puedes dejar el móvil, salir del aula o quedarte en silencio. No tienes que dar explicaciones.`))}</p></div>
+  <section class="card" aria-labelledby="p1"><h2 id="p1">${t(L(`Respira amb el cercle`,`Respira con el círculo`))}</h2>
+  <div class="breath"><div class="orb" id="orb" aria-hidden="true"></div><p id="breathTxt" aria-live="polite">${t(L(`Quatre segons per agafar aire, sis per deixar-lo anar.`,`Cuatro segundos para coger aire, seis para soltarlo.`))}</p>
+  <button type="button" class="btn solid" id="breathBtn" aria-pressed="false">${t(L(`Comença`,`Empezar`))}</button></div></section>
+  <section class="card" aria-labelledby="p2"><h2 id="p2">${t(L(`Si vols parlar`,`Si quieres hablar`))}</h2>
+  <p>${t(L(`A la sessió hi ha una persona de l'equip atenta a com esteu. Busca-la o fes-li un senyal. També pots parlar amb el teu tutor o tutora, o amb qui tinguis confiança al centre.`,`En la sesión hay una persona del equipo atenta a cómo estáis. Búscala o hazle una señal. También puedes hablar con tu tutor o tutora, o con quien tengas confianza en el centro.`))}</p></section>
+  <section class="card" aria-labelledby="p3"><h2 id="p3">${t(L(`Si algú et fa mal, dins o fora de les xarxes`,`Si alguien te hace daño, dentro o fuera de las redes`))}</h2>
+  <p><span class="tel"><a href="tel:116111">116 111</a></span><br>${t(L(`Infància Respon, per a menors d'edat.`,`Infància Respon, para menores de edad.`))}</p>
+  <p><span class="tel"><a href="tel:112">112</a></span><br>${t(L(`Emergències, si hi ha perill ara mateix.`,`Emergencias, si hay peligro ahora mismo.`))}</p></section>
+  <section class="card" aria-labelledby="p4"><h2 id="p4">${t(L(`Dubtes sobre el projecte`,`Dudas sobre el proyecto`))}</h2>
+  <p>${t(L(`Pots escriure al responsable, Gustavo Herrera Urízar:`,`Puedes escribir al responsable, Gustavo Herrera Urízar:`))} <a href="mailto:gustavo.herrera@ub.edu">gustavo.herrera@ub.edu</a></p>
+  <p class="small muted">${t(L(`Participar és voluntari. Pots deixar-ho quan vulguis i no passa res.`,`Participar es voluntario. Puedes dejarlo cuando quieras y no pasa nada.`))}</p></section>
+  <div><a class="btn" href="#inici"><span aria-hidden="true">←</span> ${t(L(`Torna a l'inici`,`Volver al inicio`))}</a></div>`;
+}
+function stopBreath(){ if (breathTimer) { clearTimeout(breathTimer); breathTimer = null; } }
+function breathe(on){
+  stopBreath(); const orb = $("orb"), tx = $("breathTxt"), btn = $("breathBtn"); if (!orb) return;
+  btn.setAttribute("aria-pressed", on); btn.textContent = on ? t(L(`Atura`,`Parar`)) : t(L(`Comença`,`Empezar`));
+  if (!on) { orb.className = "orb"; tx.textContent = t(L(`Quatre segons per agafar aire, sis per deixar-lo anar.`,`Cuatro segundos para coger aire, seis para soltarlo.`)); return; }
+  const inn = () => { if (!$("orb")) return; orb.className = "orb in"; tx.textContent = t(L(`Agafa aire`,`Coge aire`)); breathTimer = setTimeout(out, 4000); };
+  const out = () => { if (!$("orb")) return; orb.className = "orb out"; tx.textContent = t(L(`Deixa'l anar`,`Suéltalo`)); breathTimer = setTimeout(inn, 6000); };
+  inn();
+}
+
+/* ---------- router ---------- */
+const ROUTES = { "inici":[vHome,null], "sessio-1":[vS1,paintS1], "sessio-2":[vS2,paintS2], "sessio-3":[vS3,paintS3], "sessio-4":[vS4,paintS4], "pausa":[vPause,null] };
+function route(){ const h = (location.hash || "").replace("#",""); return ROUTES[h] ? h : "inici"; }
+function chrome(){
+  document.documentElement.lang = lang;
+  $("skip").textContent = t(UI.skip);
+  $("pauseBtn").textContent = t(UI.pause);
+  $("logoLink").setAttribute("aria-label", "ADC-PAU, " + t(UI.home).toLowerCase());
+  $("tools").setAttribute("aria-label", t(UI.tools));
+  $("langGroup").setAttribute("aria-label", t(UI.langLbl));
+  $("lca").setAttribute("aria-pressed", lang === "ca"); $("les").setAttribute("aria-pressed", lang === "es");
+  $("smaller").setAttribute("aria-label", t(UI.smaller)); $("bigger").setAttribute("aria-label", t(UI.bigger));
+  $("airy").textContent = t(UI.airy);
+  $("listen").textContent = speaking() ? t(UI.stop) : t(UI.listen);
+  $("tabs").setAttribute("aria-label", t(UI.sessions));
+  $("foot1").textContent = t(UI.foot1); $("foot2").textContent = t(UI.foot2);
+  const r = route();
+  $("tablist").innerHTML = `<li><a href="#inici" ${r==="inici"?'aria-current="page"':""}><span class="d h" aria-hidden="true"></span>${t(UI.home)}</a></li>` +
+    SESS.map(s => `<li><a href="#${s.id}" ${r===s.id?'aria-current="page"':""} aria-label="${t(UI.session)} ${s.k}: ${t(s.name)}"><span class="d k${s.k}" aria-hidden="true">${s.k}</span>${t(s.tab)}</a></li>`).join("");
+}
+function render(moveFocus){
+  stopBreath(); stopSpeak(); if (plTimer) clearInterval(plTimer); plTimer = null; plPlaying = null;
+  const r = route(), [build, paint] = ROUTES[r];
+  $("view").innerHTML = `<div class="view">${build()}</div>`;
+  if (paint) paint();
+  chrome();
+  document.title = (r === "inici" ? "" : ($("h1").textContent + " · ")) + "Sessions ADC-PAU";
+  if (moveFocus) { window.scrollTo(0, 0); const h = $("h1"); if (h) h.focus({ preventScroll:true }); }
+}
+
+/* ---------- speech ---------- */
+function speaking(){ return "speechSynthesis" in window && window.speechSynthesis.speaking; }
+function stopSpeak(){ if ("speechSynthesis" in window) { try { window.speechSynthesis.cancel(); } catch (e) {} } const b = $("listen"); if (b) { b.setAttribute("aria-pressed", "false"); b.textContent = t(UI.listen); } }
+function speak(){
+  if (!("speechSynthesis" in window)) return;
+  if (speaking()) { stopSpeak(); return; }
+  try {
+    const u = new SpeechSynthesisUtterance($("view").innerText);
+    u.lang = lang === "ca" ? "ca-ES" : "es-ES"; u.rate = 0.95;
+    u.onend = u.onerror = () => stopSpeak();
+    window.speechSynthesis.speak(u);
+    $("listen").setAttribute("aria-pressed", "true"); $("listen").textContent = t(UI.stop);
+  } catch (e) { stopSpeak(); }
+}
+
+/* ---------- events ---------- */
+let size = 0;
+function setSize(n){ size = Math.max(0, Math.min(2, n)); document.documentElement.classList.toggle("s1", size === 1); document.documentElement.classList.toggle("s2", size === 2); }
+$("smaller").addEventListener("click", () => setSize(size - 1));
+$("bigger").addEventListener("click", () => setSize(size + 1));
+$("airy").addEventListener("click", e => { const on = document.documentElement.classList.toggle("airy"); e.currentTarget.setAttribute("aria-pressed", on); });
+$("lca").addEventListener("click", () => { lang = "ca"; render(false); });
+$("les").addEventListener("click", () => { lang = "es"; render(false); });
+if ("speechSynthesis" in window) { $("listen").hidden = false; $("listen").addEventListener("click", speak); }
+window.addEventListener("hashchange", () => render(true));
+
+$("view").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  if (b.dataset.seg !== undefined) { const i = +b.dataset.seg; if (!S.c1found.includes(i)) S.c1found.push(i); b.setAttribute("aria-pressed", "true"); paintS1(); return; }
+  if (b.dataset.q !== undefined) { const q = +b.dataset.q; S.quiz[q] = +b.dataset.o; b.parentNode.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); paintS1(); return; }
+  if (b.dataset.top) { const f = S.feed, id = b.dataset.top; f.w[id] += 1.5; f.taps++; if (id === "pol") { f.polTaps++; f.muted = false; } if (!f.muted) f.w.pol += 0.8; paintS2(+b.dataset.i); return; }
+  if (b.dataset.plb) { const id = b.closest("[data-pl]").dataset.pl, n = PL[id].steps.length, k = b.dataset.plb;
+    if (k === "play") { if (plPlaying === id) plStop(); else plPlay(id); }
+    else { plStop(); S.pl[id] = Math.max(0, Math.min(n - 1, S.pl[id] + (k === "next" ? 1 : -1))); paintPl(id); }
+    return; }
+  if (b.id === "mute") { S.feed.muted = true; S.feed.w.pol = 0.3; paintS2(); return; }
+  if (b.id === "reset") { feedInit(); paintS2(); return; }
+  if (b.id === "breathBtn") { breathe(b.getAttribute("aria-pressed") !== "true"); return; }
+  if (b.id === "wipe") { S.c3 = { what:"", who:"", tone:"", fmt:"text", text:"", top:"", bottom:"", g1:"", g2:"", g3:"", sign:"anon", name:"", checks:{} }; render(false); $("what").focus(); $("live").textContent = t(L(`Tot esborrat.`,`Todo borrado.`)); return; }
+  if (b.id === "copy") {
+    const txt = pieceText(), msg = $("copyMsg"), box = $("copyBox");
+    if (!txt) { msg.textContent = t(L(`Encara no hi ha res escrit.`,`Todavía no hay nada escrito.`)); return; }
+    const fallback = () => { box.hidden = false; box.value = txt; box.focus(); box.select(); msg.textContent = t(L(`No s'ha pogut copiar sol. El text és aquí sota, seleccionat: copia'l a mà.`,`No se ha podido copiar automáticamente. El texto está aquí abajo, seleccionado: cópialo a mano.`)); };
+    try { navigator.clipboard.writeText(txt).then(() => { msg.textContent = t(L(`Copiat. Enganxa'l on vulguis guardar-lo.`,`Copiado. Pégalo donde quieras guardarlo.`)); }, fallback); } catch (err) { fallback(); }
+  }
+});
+$("view").addEventListener("input", e => {
+  const el = e.target;
+  if (el.dataset.k) { S.c3[el.dataset.k] = el.value; paintS3(); }
+  else if (el.dataset.n) { S.c4[el.dataset.n] = el.value; paintNet(); }
+});
+$("view").addEventListener("change", e => {
+  const el = e.target;
+  if (el.type === "radio" && ["who","tone","fmt","sign"].includes(el.name)) { S.c3[el.name] = el.value; paintS3(); }
+  else if (el.dataset.ck !== undefined) { S.c3.checks[el.dataset.ck] = el.checked; }
+  else if (el.dataset.want !== undefined) { const i = +el.dataset.want; S.c4.want = el.checked ? [...S.c4.want, i] : S.c4.want.filter(x => x !== i); paintS4(); }
+});
+$("view").addEventListener("submit", e => e.preventDefault());
+
+render(false);
+</script>
+</body>
+</html>
