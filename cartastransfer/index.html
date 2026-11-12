@@ -7,6 +7,7 @@
 <meta name="description" content="Juego de cartas conversacionales de PlatFAMs para hablar en familia sobre la vida digital.">
 <meta name="theme-color" content="#16205C">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="license" href="LICENSE">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="mobile-web-app-capable" content="yes">
@@ -145,6 +146,11 @@ h3{font-family:var(--display);font-weight:800;font-size:1.15rem}
 .seg button[aria-pressed="true"]{background:var(--tinta);color:#fff}
 h1:focus,h2:focus{outline:none}
 label{display:block}
+.pie-inicio{display:flex;flex-direction:column;gap:10px;margin-top:8px;padding-top:14px;border-top:2px solid rgba(255,255,255,.18)}
+img.logos{display:block;width:100%;height:auto;background:#fff;border-radius:10px;padding:6px}
+.dialogo h3{margin-top:6px}
+.dialogo a{color:#1D2C8F;text-decoration:underline;text-underline-offset:2px;overflow-wrap:anywhere}
+.chica{font-size:.95rem;line-height:1.45}
 canvas#fiesta{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
 @keyframes entra{from{transform:translateY(30px) rotate(-3deg) scale(.92);opacity:.2}to{transform:none;opacity:1}}
 @keyframes crece{from{transform:scaleX(.1)}to{transform:none}}
@@ -160,6 +166,9 @@ canvas#fiesta{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
 <div id="capa"></div>
 <div id="voz" class="sr" role="status" aria-live="polite"></div>
 <script>
+/* Hablemos: cartas conversacionales. Código: © 2026 Gustavo Herrera Urízar (Universitat de Barcelona).
+   SPDX-License-Identifier: GPL-3.0-or-later
+   Textos e ilustraciones de las cartas: Miño-Puigcercós et al. (2026), CC BY-NC-SA 4.0. */
 "use strict";
 /* ---------- Contenido: las seis áreas del mazo en castellano ----------
    Situaciones, preguntas e ilustraciones: texto literal e imágenes del mazo "Tarjetas familiares
@@ -359,7 +368,7 @@ function suena(n){
   }catch(e){}
 }
 const SON_DE={area:"area",sorpresa:"area",ayuda:"toque",cierra:"toque",aj:"toque",inicio:"toque",otra:"atras",atras:"atras",quita:"quita",partir:"carta",avotar:"toque",
-  saltavoto:"salta",veo:"toque",novota:"salta",apregs:"carta",otrapersona:"toque",hablado:"punto",salta:"salta",depalabra:"acuerdo",sinacuerdo:"salta",copia:"toque",musica:"toque"};
+  saltavoto:"salta",creditos:"toque",veo:"toque",novota:"salta",apregs:"carta",otrapersona:"toque",hablado:"punto",salta:"salta",depalabra:"acuerdo",sinacuerdo:"salta",copia:"toque",musica:"toque"};
 /* ---------- Música: una melodía original en bucle para el inicio y otra por área, generadas en el teléfono ---------- */
 const HZ=n=>440*Math.pow(2,(n-69)/12);
 const PISTAS={
@@ -435,7 +444,7 @@ function comoSeJuega(){
 const V={
  inicio(){
   const ac=lee(K_AC),hechas=lee(K_AR);
-  return '<div class="cuerpo"><h1 tabindex="-1">Hablemos</h1><p>Situaciones reales de familias de algunos países de Europa para conversar sobre la vida digital. Se juega con un solo teléfono al centro de la mesa.</p><div>'+botonMusica()+'</div>'
+  return '<div class="cuerpo"><h1 tabindex="-1">Hablemos</h1><p>Situaciones reales de familias de Noruega, Reino Unido, España, Estonia, Rumanía y Polonia para conversar sobre la vida digital. Se juega con un solo teléfono al centro de la mesa.</p><div>'+botonMusica()+'</div>'
   +'<img class="fam" src="img/familia.png" alt="La familia Fernández, protagonista de las cartas: Carmen, Teresa, Antonio, Ana, Olga, Juan, Luis y Felipe">'
   +'<div class="panel"><h2 class="sub">Antes de empezar</h2><ul class="simple"><li>Para 2 a 8 personas de cualquier edad.</li><li>Cada carta toma unos 10 minutos.</li><li>No hay respuestas correctas o incorrectas.</li><li>Se puede pasar cualquier voto o pregunta.</li><li>Los puntos son de toda la familia: nadie pierde.</li></ul>'
   +'<button class="btn sec" data-a="ayuda" style="margin-top:12px">Cómo se juega y ajustes de lectura</button></div>'
@@ -443,7 +452,10 @@ const V={
   +'<div class="areas">'+AREAS.map((a,k)=>'<button class="area" style="background:'+a.color+';color:'+a.tinta+'" data-a="area" data-k="'+k+'"><span class="j">'+a.juego+'</span><span class="n">'+a.nombre+'</span><span class="c">'+a.cartas.length+' cartas'+(hechas.includes(a.id)?' · ya jugada':'')+'</span>'+(hechas.includes(a.id)?'<span class="hecho" aria-hidden="true">✓</span>':'')+'</button>').join("")+'</div>'
   +'<button class="btn sec" data-a="sorpresa">Sorpresa: 3 cartas al azar, unos 30 minutos</button>'
   +(ac.length?'<div class="panel"><h2 class="sub">Nuestros acuerdos</h2><ul class="lista" style="margin-top:8px">'+ac.map(a=>'<li>'+esc(a)+'</li>').join("")+'</ul></div>':'')
-  +'<p class="nota">Esta app no guarda ni envía datos fuera de este teléfono. Textos e ilustraciones de “Tarjetas familiares conversacionales de PlatFAMs: Hablemos” (Miño-Puigcercós et al., 2026), con licencia CC BY-NC-SA 4.0. Diseño de las cartas: Sarc Estudio Creativo. Los títulos y las votaciones son un añadido de la app. Más recursos en digitalfamilies.eu.</p></div>';
+  +'<footer class="pie-inicio"><p class="nota">Esta app no guarda ni envía datos fuera de este teléfono.</p>'
+  +'<p class="nota">Cartas del proyecto PlatFAMs (Miño-Puigcercós et al., 2026), con apoyo de la Facultat d’Educació de la Universitat de Barcelona (TRANSFER 2026).</p>'
+  +'<img class="logos" src="img/financiacion.png" alt="Logos de financiación: Ministerio de Ciencia, Innovación y Universidades; Financiado por la Unión Europea, NextGenerationEU; Plan de Recuperación, Transformación y Resiliencia; Agencia Estatal de Investigación">'
+  +'<button class="btn sec" data-a="creditos">Créditos, financiación y licencias</button></footer></div>';
  },
  jugadores(){
   const libres=SUGERIDOS.filter(n=>!S.jug.includes(n));
@@ -523,7 +535,27 @@ const D={
   +'<p>Sonidos al tocar los botones y al sumar puntos</p>'+seg("sonido",["Sin sonido","Con sonido"])
   +'<p>Música de fondo (una melodía para el inicio y otra para cada área; baja de volumen al conversar y se detiene con “Escuchar”)</p>'+seg("musica",["Sin música","Con música"])
   +(puedeHablar?'<p class="nota">El botón “Escuchar” lee en voz alta la situación, la votación o la pregunta.</p>':'')
-  +'<button class="btn" data-a="cierra">Entendido</button>';
+  +'<button class="btn" data-a="cierra">Entendido</button><button class="btn sec" data-a="creditos">Créditos, financiación y licencias</button>';
+ },
+ creditos(){
+  return '<h2 tabindex="-1">Créditos</h2>'
+  +'<h3>Esta app</h3><p>Hablemos es la versión digital de las cartas conversacionales de PlatFAMs, para jugar en familia sin el mazo impreso. Desarrollo de la app: Gustavo Herrera Urízar (Universitat de Barcelona). Programada con ayuda de Claude, un asistente de inteligencia artificial de Anthropic; el contenido de las cartas es el del mazo original.</p>'
+  +'<h3>El proyecto PlatFAMs</h3><p>PlatFAMs (Platforming Families: tracing digital transformations in everyday life across generations) estudió cómo viven las plataformas digitales familias de tres generaciones en Noruega, Reino Unido, España, Estonia, Rumanía y Polonia. Las situaciones de las cartas salen de lo que contaron esas familias. Más información en <a href="https://digitalfamilies.eu/" target="_blank" rel="noopener">digitalfamilies.eu</a>.</p>'
+  +'<h3>Autoría de las cartas</h3><p class="chica">Raquel Miño-Puigcercós, Ola Erstad, Kristinn Hegna, Maja Nordtug, Victoria de Leon Born, Paula Lozano-Mulet, Mariya Stoilova, Bogumiła Mateja-Jaworska, Sonia Livingstone, Moisès Esteban-Guitart, Pau Jarne Soler, Marisa Lyons Longworth, Judith Jacovkis, Gustavo Herrera-Urízar, Carlota Rodríguez-Silva, Veronika Kalmus, Signe Opermann, Elisabeth Staksrud, Seffetullah Kuldas, Oana Negru-Subtirica, Pablo Rivera, Lluís Parcerisa, Sara Malo Cerrato, Antonio Membrive Ruiz, Mariana Largo, Andra Siibak, Jo Fosby Jaavall, Oana Benga, Maris Männiste, Kaidi Meus, Georgiana Susa-Erdogan, Ionut Mone, Flavia Medrea, Iulia Domocus, Xavier Giró Gràcia y Ole Smørdal.</p>'
+  +'<h3>Universidades</h3><ul class="simple chica"><li><b>Universidad de Oslo</b> (Noruega). Departamento de Educación y Departamento de Medios y Comunicación.</li><li><b>Escuela de Economía y Ciencias Políticas de Londres</b> (Reino Unido). Departamento de Medios y Comunicación.</li><li><b>Universidad de Barcelona</b> (Cataluña, España). Departamento de Didáctica y Organización Educativa.</li><li><b>Universidad de Girona</b> (Cataluña, España). Instituto de Investigación Educativa.</li><li><b>Universidad de Tartu</b> (Estonia). Departamento de Psicología.</li><li><b>Universidad Babeș-Bolyai</b> (Rumanía). Departamento de Psicología.</li><li><b>Universidad Adam Mickiewicz</b> (Polonia). Departamento de Teoría e Investigación en Prácticas Sociales.</li></ul>'
+  +'<h3>Diseño de las cartas</h3><p>Sarc Estudio Creativo (diseño y dirección creativa).</p>'
+  +'<h3>Financiación</h3><p class="chica">Este material forma parte de las actividades de transferencia del proyecto PlatFAMs (PCI2022-135025-2), financiado por el MCIN/AEI/10.13039/501100011033 y por la Unión Europea “NextGenerationEU”/PRTR, y ha contado además con el apoyo de la Facultat d’Educació de la Universitat de Barcelona a través de la convocatoria TRANSFER 2026.</p>'
+  +'<img class="logos" src="img/financiacion.png" alt="Logos de financiación: Ministerio de Ciencia, Innovación y Universidades; Financiado por la Unión Europea, NextGenerationEU; Plan de Recuperación, Transformación y Resiliencia; Agencia Estatal de Investigación">'
+  +'<p class="chica">Las opiniones y puntos de vista expresados son solo de los autores y autoras y no reflejan necesariamente los de la Unión Europea ni los de la Agencia Ejecutiva del Consejo Europeo de Investigación. Ni la Unión Europea ni la autoridad que concede la ayuda pueden ser responsables de ellos.</p>'
+  +'<h3>Licencias</h3><ul class="simple chica">'
+  +'<li><b>Textos e ilustraciones de las cartas:</b> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)</a>. Se pueden copiar y adaptar citando la fuente, sin fines comerciales y con la misma licencia.</li>'
+  +'<li><b>Títulos de las situaciones y votaciones</b>, añadidos por la app: son una adaptación de las cartas y se comparten con la misma licencia CC BY-NC-SA 4.0.</li>'
+  +'<li><b>Código de la app:</b> © 2026 Gustavo Herrera Urízar (Universitat de Barcelona), con <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">licencia GNU GPL versión 3 o posterior</a>. Se puede usar, estudiar, modificar y redistribuir, siempre con la misma licencia.</li>'
+  +'<li><b>Tipografías:</b> Baloo 2 y Atkinson Hyperlegible, con licencia SIL Open Font License 1.1.</li>'
+  +'<li><b>Música y sonidos:</b> generados por la propia app.</li></ul>'
+  +'<h3>Cómo citar</h3><p class="chica">Miño-Puigcercós, R., et al. (2026). <i>Tarjetas familiares conversacionales de PlatFAMs: Hablemos</i>. Dipòsit Digital de la Universitat de Barcelona. <a href="https://hdl.handle.net/2445/231128" target="_blank" rel="noopener">https://hdl.handle.net/2445/231128</a></p>'
+  +'<p class="chica">Herrera Urízar, G. (2026). <i>Hablemos: cartas conversacionales</i> [Aplicación web]. Universitat de Barcelona. <a href="https://gustavoh13.github.io/Proyecto1/cartastransfer/" target="_blank" rel="noopener">https://gustavoh13.github.io/Proyecto1/cartastransfer/</a></p>'
+  +'<button class="btn" data-a="cierra">Cerrar</button>';
  },
  salir(){
   return '<h2 tabindex="-1">¿Volver al inicio?</h2><p>Se termina esta partida y se pierden sus puntos. Los acuerdos que ya guardaron se mantienen.</p>'
@@ -541,7 +573,7 @@ function pinta(foco){
   if(foco){const h=app.querySelector("h1,h2");if(h)h.focus({preventScroll:true})}
   musica();
 }
-function abre(v){velo=v;calla();capa.innerHTML='<div class="velo"><div class="dialogo" role="dialog" aria-modal="true" aria-label="'+(v==="ayuda"?"Ayuda y ajustes":"Confirmar salida")+'">'+D[v]()+'</div></div>';
+function abre(v){velo=v;calla();capa.innerHTML='<div class="velo"><div class="dialogo" role="dialog" aria-modal="true" aria-label="'+({ayuda:"Ayuda y ajustes",creditos:"Créditos, financiación y licencias",salir:"Confirmar salida"})[v]+'">'+D[v]()+'</div></div>';
   app.inert=true;const h=capa.querySelector("h2");if(h)h.focus()}
 function cierra(){velo="";capa.innerHTML="";app.inert=false;const h=app.querySelector("h1,h2");if(h)h.focus({preventScroll:true})}
 function agrega(n){n=n.trim();if(!n||S.jug.length>=8||S.jug.includes(n))return;S.jug.push(n);suena("suma");voz.textContent=n+" se suma al juego.";pinta();const i=document.getElementById("nombre");if(i)i.focus()}
@@ -624,6 +656,7 @@ document.addEventListener("click",e=>{
   if(a==="area")nueva("area",+b.dataset.k);
   else if(a==="sorpresa")nueva("mix");
   else if(a==="ayuda")abre("ayuda");
+  else if(a==="creditos"){abre("creditos");capa.querySelector(".velo").scrollTop=0}
   else if(a==="musica"){A.musica=!A.musica;ajusta();pinta();const m=app.querySelector('[data-a="musica"]');if(m)m.focus()}
   else if(a==="cierra")cierra();
   else if(a==="aj"){A[b.dataset.k]=b.dataset.k==="letra"?+b.dataset.v:b.dataset.v==="1";ajusta();if(b.dataset.k==="sonido")suena("punto");
@@ -656,7 +689,7 @@ document.addEventListener("visibilitychange",()=>{if(!ctx)return;try{if(document
 document.addEventListener("keydown",e=>{
   if(!velo)return;
   if(e.key==="Escape"){cierra();return}
-  if(e.key==="Tab"){const f=[...capa.querySelectorAll("button")];if(!f.length)return;const pr=f[0],ul=f[f.length-1];
+  if(e.key==="Tab"){const f=[...capa.querySelectorAll("button,a[href]")];if(!f.length)return;const pr=f[0],ul=f[f.length-1];
     if(e.shiftKey&&(document.activeElement===pr||!capa.contains(document.activeElement))){e.preventDefault();ul.focus()}
     else if(!e.shiftKey&&document.activeElement===ul){e.preventDefault();pr.focus()}}
 });
