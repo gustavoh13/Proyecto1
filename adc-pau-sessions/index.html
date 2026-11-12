@@ -196,6 +196,14 @@ details.edu{border-style:dashed}
 .tabs a[aria-current="page"]{color:var(--ink);background:var(--bg);box-shadow:inset 0 3px 0 var(--ink)}
 .logos{display:flex;flex-wrap:wrap;gap:20px 28px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;align-self:flex-start}
 .logos img{height:44px;width:auto;max-width:100%;display:block}
+.cred dl{margin:0;display:grid;grid-template-columns:1fr;gap:.2rem 1rem}
+@media (min-width:560px){.cred dl{grid-template-columns:11rem 1fr}}
+.cred dt{font-family:var(--display);font-weight:700;color:var(--muted);font-size:.95rem}
+.cred dd{margin:0 0 .6rem}
+.lic{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:560px){.lic{grid-template-columns:1fr 1fr}}
+.lic .card{border-top:6px solid var(--kc)}
+.cite{font-size:.95rem;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.8rem;overflow-wrap:anywhere}
 footer{color:var(--muted);font-size:.88rem;border-top:1px solid var(--line);padding:1rem 0;display:flex;flex-direction:column;gap:.6rem}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.orb{transform:scale(.9)}}
@@ -233,6 +241,7 @@ footer{color:var(--muted);font-size:.88rem;border-top:1px solid var(--line);padd
     <div class="logos"><img src="img/ub.png" alt="Universitat de Barcelona" width="640" height="193"><img src="img/icip.png" alt="ICIP, Institut Català Internacional per la Pau" width="369" height="130"></div>
     <span id="foot1"></span>
     <span id="foot2"></span>
+    <span id="foot3"></span>
   </footer>
 </div>
 
@@ -680,8 +689,49 @@ function breathe(on){
   inn();
 }
 
+/* ----- credits and licences ----- */
+function vCredits(){
+  const row = (dt, dd) => `<dt>${t(dt)}</dt><dd>${dd}</dd>`;
+  return `<div class="head"><h1 tabindex="-1" id="h1">${t(L(`Crèdits i llicència`,`Créditos y licencia`))}</h1><div class="rule" aria-hidden="true"></div>
+  <p class="lead">${t(L(`Qui ha fet aquesta app, qui la finança i com la pots reutilitzar.`,`Quién ha hecho esta app, quién la financia y cómo puedes reutilizarla.`))}</p></div>
+  <section class="card cred" aria-labelledby="cr1"><h2 id="cr1">${t(L(`El projecte`,`El proyecto`))}</h2>
+  <p lang="ca"><i>Alfabetització Digital Crítica per a la Pau (ADC-PAU): Disseny i validació d'un marc pedagògic anti-(neo)feixista amb joves a Catalunya</i></p>
+  <dl>
+  ${row(L(`Investigador principal`,`Investigador principal`), `Gustavo Herrera Urízar`)}
+  ${row(L(`Equip`,`Equipo`), `Carlota Rodríguez Silva<br>Martí Manzano Moliner<br>Cristina Domènech Vea`)}
+  ${row(L(`Institució`,`Institución`), t(L(`Departament de Didàctica i Organització Educativa, Facultat d'Educació, Universitat de Barcelona. Grup de recerca Esbrina (2021 SGR 00610).`,`Departamento de Didáctica y Organización Educativa, Facultad de Educación, Universitat de Barcelona. Grupo de investigación Esbrina (2021 SGR 00610).`)))}
+  ${row(L(`Contacte`,`Contacto`), `<a href="mailto:gustavo.herrera@ub.edu">gustavo.herrera@ub.edu</a>`)}
+  </dl></section>
+  <section class="card cred" aria-labelledby="cr2"><h2 id="cr2">${t(L(`Finançament`,`Financiación`))}</h2>
+  <p>${t(L(`Projecte finançat per l'Institut Català Internacional per la Pau (ICIP) en la convocatòria de subvencions a treballs de recerca en l'àmbit de la pau R-ICIP 2026.`,`Proyecto financiado por el Institut Català Internacional per la Pau (ICIP) en la convocatoria de subvenciones a trabajos de investigación en el ámbito de la paz R-ICIP 2026.`))}</p>
+  <dl>
+  ${row(L(`Expedient`,`Expediente`), `ICI04426000003`)}
+  ${row(L(`Import concedit`,`Importe concedido`), `8.420,00 €`)}
+  </dl>
+  <p class="small muted">${t(L(`Els continguts d'aquesta app són responsabilitat de l'equip del projecte i no representen necessàriament la posició de l'ICIP.`,`Los contenidos de esta app son responsabilidad del equipo del proyecto y no representan necesariamente la posición del ICIP.`))}</p></section>
+  <section class="card cred" aria-labelledby="cr3"><h2 id="cr3">${t(L(`L'app`,`La app`))}</h2>
+  <dl>
+  ${row(L(`Versió`,`Versión`), t(L(`Esborrany 0.3, novembre de 2026, per a la sessió de codisseny`,`Borrador 0.3, noviembre de 2026, para la sesión de codiseño`)))}
+  ${row(L(`Disseny i programació`,`Diseño y programación`), t(L(`Equip ADC-PAU, amb l'assistència de Claude (Anthropic)`,`Equipo ADC-PAU, con la asistencia de Claude (Anthropic)`)))}
+  ${row(L(`Il·lustracions`,`Ilustraciones`), t(L(`Originals d'aquesta app`,`Originales de esta app`)))}
+  ${row(L(`Tipografies`,`Tipografías`), `Atkinson Hyperlegible (Braille Institute) i Nunito, SIL Open Font License 1.1`)}
+  </dl></section>
+  <section aria-labelledby="cr4" class="stack"><h2 id="cr4">${t(L(`Llicències`,`Licencias`))}</h2>
+  <div class="lic">
+   <div class="card a1"><h3>${t(L(`Codi`,`Código`))}</h3><p><a rel="license" href="https://opensource.org/license/mit">MIT</a></p>
+   <p class="small">${t(L(`Pots usar, copiar, modificar i distribuir el codi, també amb finalitats comercials, sempre que mantinguis l'avís de copyright i de llicència.`,`Puedes usar, copiar, modificar y distribuir el código, también con fines comerciales, siempre que mantengas el aviso de copyright y de licencia.`))}</p></div>
+   <div class="card a3"><h3>${t(L(`Continguts`,`Contenidos`))}</h3><p><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.${lang}">Creative Commons BY-SA 4.0</a></p>
+   <p class="small">${t(L(`Textos, activitats i il·lustracions. Pots compartir-los i adaptar-los si cites el projecte ADC-PAU i publiques les adaptacions amb la mateixa llicència. És la llicència prevista per a la Guia ADC-PAU.`,`Textos, actividades e ilustraciones. Puedes compartirlos y adaptarlos si citas el proyecto ADC-PAU y publicas las adaptaciones con la misma licencia. Es la licencia prevista para la Guía ADC-PAU.`))}</p></div>
+  </div>
+  <p class="small muted">${t(L(`Els logotips de la Universitat de Barcelona, de l'ICIP i del projecte ADC-PAU no estan coberts per aquestes llicències i no es poden reutilitzar sense permís dels seus titulars.`,`Los logotipos de la Universitat de Barcelona, del ICIP y del proyecto ADC-PAU no están cubiertos por estas licencias y no se pueden reutilizar sin permiso de sus titulares.`))}</p>
+  <p class="small muted">© 2026 ${t(L(`Equip ADC-PAU, Universitat de Barcelona`,`Equipo ADC-PAU, Universitat de Barcelona`))}</p></section>
+  <section class="card" aria-labelledby="cr5"><h2 id="cr5">${t(L(`Com citar-la`,`Cómo citarla`))}</h2>
+  <p class="cite">Herrera Urízar, G., Rodríguez Silva, C., Manzano Moliner, M. i Domènech Vea, C. (2026). <i>Sessions ADC-PAU</i> [${t(L(`aplicació web`,`aplicación web`))}]. Universitat de Barcelona; Institut Català Internacional per la Pau. CC BY-SA 4.0.</p></section>
+  <div><a class="btn" href="#inici"><span aria-hidden="true">←</span> ${t(L(`Torna a l'inici`,`Volver al inicio`))}</a></div>`;
+}
+
 /* ---------- router ---------- */
-const ROUTES = { "inici":[vHome,null], "sessio-1":[vS1,paintS1], "sessio-2":[vS2,paintS2], "sessio-3":[vS3,paintS3], "sessio-4":[vS4,paintS4], "pausa":[vPause,null] };
+const ROUTES = { "inici":[vHome,null], "sessio-1":[vS1,paintS1], "sessio-2":[vS2,paintS2], "sessio-3":[vS3,paintS3], "sessio-4":[vS4,paintS4], "pausa":[vPause,null], "credits":[vCredits,null] };
 function route(){ const h = (location.hash || "").replace("#",""); return ROUTES[h] ? h : "inici"; }
 function chrome(){
   document.documentElement.lang = lang;
@@ -696,6 +746,7 @@ function chrome(){
   $("listen").textContent = speaking() ? t(UI.stop) : t(UI.listen);
   $("tabs").setAttribute("aria-label", t(UI.sessions));
   $("foot1").textContent = t(UI.foot1); $("foot2").textContent = t(UI.foot2);
+  $("foot3").innerHTML = `<a href="#credits">${t(L(`Crèdits i llicència`,`Créditos y licencia`))}</a> · ${t(L(`Codi`,`Código`))} MIT · ${t(L(`Continguts`,`Contenidos`))} CC BY-SA 4.0`;
   const r = route();
   $("tablist").innerHTML = `<li><a href="#inici" ${r==="inici"?'aria-current="page"':""}><span class="d h" aria-hidden="true"></span>${t(UI.home)}</a></li>` +
     SESS.map(s => `<li><a href="#${s.id}" ${r===s.id?'aria-current="page"':""} aria-label="${t(UI.session)} ${s.k}: ${t(s.name)}"><span class="d k${s.k}" aria-hidden="true">${s.k}</span>${t(s.tab)}</a></li>`).join("");
