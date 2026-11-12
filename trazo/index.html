@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+<!--
+  Trazo · Proyecto CRITERIA (REDICE26-4122), Universitat de Barcelona
+  © 2026 Gustavo Herrera Urízar
+  Código: GPL-3.0-or-later · Contenidos: CC BY 4.0
+-->
 <head>
 <meta charset="utf-8">
+<meta name="author" content="Gustavo Herrera Urízar">
+<meta name="description" content="Revisión de señales de estilo de IAG y declaración de uso según la tríada del proyecto CRITERIA (Universitat de Barcelona).">
+<link rel="license" href="https://www.gnu.org/licenses/gpl-3.0.html">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Trazo criterIA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -222,6 +230,10 @@ th,td{text-align:left;padding:12px 14px;border-bottom:1.5px solid var(--line);ve
 thead th{font-family:var(--display);background:var(--ink);color:var(--paper)}
 tbody th{font-weight:700;width:46%}
 tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+.creditos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.creditos .card{gap:10px}
+.pie{display:flex;flex-direction:column;gap:6px}
+#cita{max-width:68ch;overflow-wrap:anywhere;padding-left:2em;text-indent:-2em}
 </style>
 </head>
 <body>
@@ -255,6 +267,7 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
     <li><a href="#declarar" data-v="declarar">2. Declarar</a></li>
     <li><a href="#detectores" data-v="detectores">Detectores</a></li>
     <li><a href="#transparencia" data-v="transparencia">Por qué transparentar</a></li>
+    <li><a href="#creditos" data-v="creditos">Créditos</a></li>
   </ul>
 </nav>
 
@@ -486,9 +499,76 @@ tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
     <p><a href="#declarar">Ir al formulario de declaración</a></p>
   </div>
 </section>
+<!-- ============ CRÉDITOS ============ -->
+<section class="vista" id="v-creditos" aria-labelledby="h-cred" hidden>
+  <h2 id="h-cred">Créditos</h2>
+
+  <div class="creditos">
+    <article class="card f1" aria-labelledby="h-c-aut">
+      <h3 id="h-c-aut">Autoría</h3>
+      <p><b>Gustavo Herrera Urízar</b>, investigador principal del proyecto CRITERIA. Departamento de Didáctica y Organización Educativa, Facultad de Educación, Universitat de Barcelona.</p>
+      <p><a href="https://orcid.org/0000-0003-3546-8976">ORCID 0000-0003-3546-8976</a></p>
+    </article>
+
+    <article class="card f2" aria-labelledby="h-c-pro">
+      <h3 id="h-c-pro">Proyecto</h3>
+      <p><b>CRITERIA.</b> Trazabilidad y criterio profesional en el uso de IAG en el portafolio docente digital. Código REDICE26-4122.</p>
+      <p>La declaración de la pestaña “Declarar” usa la tríada Intención, Interacción y Criterio y las preguntas de relato de proceso del proyecto.</p>
+      <p>Equipo: Joan Anton Sánchez, Carles Lindín, Lluís Parcerisa, Pablo Rivera y Ezequiel Passeron.</p>
+    </article>
+
+    <article class="card f3" aria-labelledby="h-c-fin">
+      <h3 id="h-c-fin">Financiamiento</h3>
+      <p>Convocatoria REDICE-26 de ayudas a proyectos de investigación en docencia universitaria, del Programa de Investigación en Docencia Universitaria (REDICE) del Institut de Desenvolupament Professional (IDP), Universitat de Barcelona.</p>
+      <p><a href="https://www.ub.edu/idp/web/ca/redice26">Convocatoria REDICE-26</a></p>
+    </article>
+
+    <article class="card f4" aria-labelledby="h-c-iag">
+      <h3 id="h-c-iag">Uso de IAG en esta app</h3>
+      <p>El código y los textos se redactaron con Claude (Anthropic) a partir de las indicaciones del autor, que revisó el resultado y decidió qué incluir. Las reglas y los umbrales del porcentaje no están validados empíricamente.</p>
+    </article>
+  </div>
+
+  <div class="card" aria-labelledby="h-c-lic">
+    <h3 id="h-c-lic">Licencias</h3>
+    <div class="tabla" tabindex="0" role="region" aria-label="Licencias de la app">
+      <table>
+        <thead><tr><th scope="col">Parte</th><th scope="col">Licencia</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Código (HTML, CSS y JavaScript)</th><td><a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL 3.0 o posterior</a>. Puedes usarlo, estudiarlo, modificarlo y redistribuirlo. Las versiones modificadas que publiques deben mantener la misma licencia y su código abierto.</td></tr>
+          <tr><th scope="row">Contenidos (textos explicativos, guía de detectores, formulario y plantilla de declaración)</th><td><a href="https://creativecommons.org/licenses/by/4.0/deed.es">Creative Commons Atribución 4.0 Internacional (CC BY 4.0)</a>. Puedes copiarlos y adaptarlos citando la autoría.</td></tr>
+          <tr><th scope="row">Lo que tú escribes o revisas</th><td>Es tuyo. Ni el texto que pegas ni tu declaración quedan sujetos a estas licencias.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>© 2026 Gustavo Herrera Urízar. Código fuente en <a href="https://github.com/gustavoh13/Proyecto1/tree/gh-pages/trazo">GitHub</a>.</p>
+    <details>
+      <summary>Componentes de terceros</summary>
+      <ul class="pts">
+        <li><a href="https://github.com/mwilliamson/mammoth.js">mammoth.js</a>, para leer .docx (licencia BSD de 2 cláusulas).</li>
+        <li><a href="https://github.com/mozilla/pdf.js">pdf.js</a> de Mozilla, para leer .pdf (licencia Apache 2.0).</li>
+        <li>Tipografías Atkinson Hyperlegible (Braille Institute) y Bricolage Grotesque, servidas por Google Fonts (SIL Open Font License 1.1).</li>
+      </ul>
+    </details>
+  </div>
+
+  <div class="card" aria-labelledby="h-c-cit">
+    <h3 id="h-c-cit">Cómo citar</h3>
+    <p id="cita">Herrera Urízar, G. (2026). <i>Trazo: revisión de señales de estilo de IAG y declaración de uso</i> [Aplicación web]. Proyecto CRITERIA (REDICE26-4122), Universitat de Barcelona. https://gustavoh13.github.io/Proyecto1/trazo/</p>
+    <div class="fila">
+      <button type="button" id="b-cita">Copiar cita</button>
+      <span class="estado" id="estado-c" role="status" aria-live="polite"></span>
+    </div>
+  </div>
+</section>
+
 </main>
 
-<footer><div class="wrap">Trazo es una herramienta de apoyo. Sus marcas son orientativas y no identifican autoría. Declaración basada en la tríada Intención, Interacción y Criterio del proyecto CRITERIA (REDICE-26, UB).</div></footer>
+<footer><div class="wrap pie">
+  <p>Trazo es una herramienta de apoyo: sus marcas son orientativas y no identifican autoría.</p>
+  <p>Proyecto CRITERIA (REDICE26-4122), financiado por la convocatoria REDICE-26 del Institut de Desenvolupament Professional, Universitat de Barcelona. © 2026 Gustavo Herrera Urízar.</p>
+  <p>Código bajo <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL 3.0 o posterior</a>, contenidos bajo <a href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a>. <a href="#creditos">Créditos completos</a>.</p>
+</div></footer>
 
 <script>
 "use strict";
@@ -796,8 +876,14 @@ $("b-borrar").addEventListener("click", e => {
   $("f-decl").reset(); actualizarDecl(); $("estado-d").textContent = "Formulario borrado.";
 });
 
+$("b-cita").addEventListener("click", async () => {
+  const t = $("cita").textContent.replace(/\s+/g, " ").trim();
+  try{ await navigator.clipboard.writeText(t); $("estado-c").textContent = "Cita copiada."; }
+  catch(e){ const s = window.getSelection(), r = document.createRange(); r.selectNodeContents($("cita")); s.removeAllRanges(); s.addRange(r); $("estado-c").textContent = "La cita quedó seleccionada: cópiala desde el menú."; }
+});
+
 /* ---------- Navegación y ajustes ---------- */
-const VISTAS = ["revisar","declarar","detectores","transparencia"];
+const VISTAS = ["revisar","declarar","detectores","transparencia","creditos"];
 function ruta(foco){
   const h = location.hash.replace("#",""), v = VISTAS.includes(h) ? h : "revisar";
   for(const x of VISTAS) $("v-" + x).hidden = (x !== v);
