@@ -6,9 +6,15 @@ Miño-Puigcercós, R., et al. (2026). *Tarjetas familiares conversacionales de P
 
 Miño-Puigcercós, R., et al. (2026). *Targetes familiars conversacionals de PlatFAMs: Parlem-ne*. Dipòsit Digital de la Universitat de Barcelona. https://hdl.handle.net/2445/231126
 
+Los textos en inglés provienen de:
+
+Miño Puigcercós, R., et al. (2026). *PlatFAMs Conversational Family Cards: Let’s Talk About IT* (1.0). Zenodo. https://doi.org/10.5281/zenodo.18713343
+
+Ese mazo está publicado con licencia **Creative Commons Attribution 4.0 International (CC BY 4.0)**: https://creativecommons.org/licenses/by/4.0/
+
 Diseño de las cartas: Sarc Estudio Creativo.
 
-Se distribuyen con la licencia **Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)**: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es
+Los mazos en castellano y catalán, y las ilustraciones que usa la app, se distribuyen con la licencia **Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)**: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es
 
 Los títulos de las situaciones y las votaciones (preguntas y opciones de voto) son un añadido de la app. Como adaptan el contenido de las cartas, se comparten con la misma licencia CC BY-NC-SA 4.0.
 
