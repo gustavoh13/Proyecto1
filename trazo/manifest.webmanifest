@@ -1,0 +1,19 @@
+{
+ "id": "./",
+ "name": "Trazo criterIA",
+ "short_name": "Trazo",
+ "description": "Revisión de señales de estilo de IAG en castellano y catalán, y declaración de uso según la tríada de CRITERIA. Revisió de senyals d’estil d’IAG en castellà i català.",
+ "lang": "es",
+ "dir": "ltr",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#0b4a45",
+ "theme_color": "#0b4a45",
+ "categories": ["education", "productivity"],
+ "icons": [
+  {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+  {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+  {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+ ]
+}
