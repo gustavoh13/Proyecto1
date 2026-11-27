@@ -4,6 +4,8 @@ Los textos y las ilustraciones de las cartas (carpeta `img/` y los textos de las
 
 Miño-Puigcercós, R., et al. (2026). *Tarjetas familiares conversacionales de PlatFAMs: Hablemos*. Dipòsit Digital de la Universitat de Barcelona. https://hdl.handle.net/2445/231128
 
+Miño-Puigcercós, R., et al. (2026). *Targetes familiars conversacionals de PlatFAMs: Parlem-ne*. Dipòsit Digital de la Universitat de Barcelona. https://hdl.handle.net/2445/231126
+
 Diseño de las cartas: Sarc Estudio Creativo.
 
 Se distribuyen con la licencia **Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)**: https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es

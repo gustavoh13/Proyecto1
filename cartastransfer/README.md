@@ -1,6 +1,6 @@
-# Hablemos: cartas conversacionales
+# Hablemos / Parlem-ne: cartas conversacionales
 
-App web para jugar en familia con las cartas conversacionales de PlatFAMs, sin el mazo impreso. Se abre en https://gustavoh13.github.io/Proyecto1/cartastransfer/ y se puede añadir a la pantalla de inicio del teléfono; después de la primera visita funciona sin conexión.
+App web bilingüe (castellano y catalán) para jugar en familia con las cartas conversacionales de PlatFAMs, sin el mazo impreso. Se abre en https://gustavoh13.github.io/Proyecto1/cartastransfer/ y se puede añadir a la pantalla de inicio del teléfono; después de la primera visita funciona sin conexión.
 
 La app no guarda ni envía datos fuera del teléfono. Las tipografías y las imágenes están alojadas en esta misma carpeta.
 
@@ -8,6 +8,7 @@ La app no guarda ni envía datos fuera del teléfono. Las tipografías y las im�
 
 - Desarrollo de la app: Gustavo Herrera Urízar (Universitat de Barcelona), con ayuda de Claude (Anthropic).
 - Cartas: Miño-Puigcercós, R., et al. (2026). *Tarjetas familiares conversacionales de PlatFAMs: Hablemos*. https://hdl.handle.net/2445/231128
+- Cartas en catalán: Miño-Puigcercós, R., et al. (2026). *Targetes familiars conversacionals de PlatFAMs: Parlem-ne*. https://hdl.handle.net/2445/231126
 - Diseño de las cartas: Sarc Estudio Creativo.
 - Proyecto: PlatFAMs (Platforming Families: tracing digital transformations in everyday life across generations), https://digitalfamilies.eu/
 

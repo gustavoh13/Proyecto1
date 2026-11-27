@@ -147,6 +147,7 @@ h3{font-family:var(--display);font-weight:800;font-size:1.15rem}
 h1:focus,h2:focus{outline:none}
 label{display:block}
 .instalar{box-shadow:inset 0 0 0 3px var(--amarillo)}
+.botones{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .pie-inicio{display:flex;flex-direction:column;gap:10px;margin-top:8px;padding-top:14px;border-top:2px solid rgba(255,255,255,.18)}
 img.logos{display:block;width:100%;height:auto;background:#fff;border-radius:10px;padding:6px}
 .dialogo h3{margin-top:6px}
@@ -172,7 +173,7 @@ canvas#fiesta{position:fixed;inset:0;width:100%;height:100%;pointer-events:none}
    SPDX-License-Identifier: GPL-3.0-or-later
    Textos e ilustraciones de las cartas: Miño-Puigcercós et al. (2026), CC BY-NC-SA 4.0. */
 "use strict";
-/* ---------- Contenido: las seis áreas del mazo en castellano ----------
+/* ---------- Contenido: las seis áreas del mazo (castellano; el catalán va en CA, más abajo) ----------
    Situaciones, preguntas e ilustraciones: texto literal e imágenes del mazo "Tarjetas familiares
    conversacionales de PlatFAMs: Hablemos" (CC BY-NC-SA 4.0; diseño de Sarc Estudio Creativo).
    Los títulos y las votaciones ("titulo", "vota", "ops") son un añadido de esta app. */
@@ -312,17 +313,546 @@ const AREAS=[
   pregs:["¿Qué piensas de acceder a plataformas digitales para aprender algo, como los idiomas?", "¿Qué piensas de las empresas que hay detrás de estas plataformas?", "¿Qué piensas de que sean sólo los padres quienes tomen estas decisiones?", "¿Habría que hablar previamente de cuáles son las plataformas que queremos usar conjuntamente y de su uso?"]}
 ]}
 ];
+const NOMCA={"Carmen": "Júlia", "Teresa": "Rosalía", "Luis": "Arnau", "Antonio": "Anton", "Ana": "Anna", "Olga": "Olga", "Juan": "Jan", "Felipe": "Felip"};
+/* Textos en catalán: situaciones y preguntas literales del mazo "Targetes familiars conversacionals de PlatFAMs: Parlem-ne"
+   (CC BY-NC-SA 4.0). Títulos y votaciones: traducción de los añadidos de la app. */
+const CA={
+"6 y 7": {
+"n": "6 i 7",
+"titulo": "Tres mòbils al sofà",
+"sit": "La Júlia, la seva mare, la Rosalía, i el seu pare, l’Arnau, estan asseguts al sofà de la sala d’estar, cadascun passant l’estona amb el seu mòbil.\nUna amiga de la Júlia acaba de descobrir que algunes de les seves amigues tenen un grup de xat en una aplicació de missatgeria instantània (p. ex., WhatsApp) sense ella, i la Júlia intenta consolar-la per missatge. La Rosalía està frustrada perquè l’han afegit a un altre grup de xat per organitzar una festa d’aniversari. Com que no pot anar-hi, es pregunta si pot sortir del grup immediatament. L’Arnau, ha rebut informació sobre una propera celebració escolar i dubta amb qui compartir-la: només amb la família més propera o també amb els avis.",
+"vota": "T’afegeixen a un grup de xat que no t’interessa. Què fas?",
+"ops": [
+"En surto de seguida",
+"El silencio i m’hi quedo",
+"Aviso i després en surto",
+"M’hi quedo per compromís"
+],
+"pregs": [
+"Quin és el propòsit de tenir grups de conversa diferents?",
+"Si t’afegeixen a molts xats diferents, et molesta o prefereixes que t’hi incloguin?",
+"Què en penses del fet què cadascú faci servir el seu mòbil quan estem junts? Ens apropa o ens distreu?"
+],
+"quien": [
+"Carmen",
+"Teresa",
+"Luis"
+]
+},
+"8 y 9": {
+"n": "8 i 9",
+"titulo": "La videotrucada de cada setmana",
+"sit": "A l’Anna se li ha acudit que podrien fer una videotrucada de mitja hora amb tota la família cada dilluns. Per fer-ho, suggereix utilitzar una nova aplicació que ha descobert que té moltes funcions divertides, com fons animats, pensant que seria millor per al seu fill, en Felip, perquè s’avorreix fàcilment quan fan trucades llargues. L’avi, l’Anton, passa molta estona intentant esbrinar com fer funcionar l’aplicació, però no ho aconsegueix, i se sent incòmode. No vol demanar ajuda a la resta de la família, perquè sap que no tindran temps o paciència per explicar-li com fer-la funcionar.",
+"vota": "Si fossis l’Anton, què faries?",
+"ops": [
+"Demano ajuda encara que em costi",
+"Continuo provant-ho sol",
+"Proposo trucar per telèfon",
+"Em salto la videotrucada"
+],
+"pregs": [
+"Què et sembla la idea de fer videotrucades regulars amb tota la família?",
+"T’agrada experimentar amb noves aplicacions?",
+"Et costa demanar ajuda a altres persones quan tens problemes amb alguna nova aplicació o dispositiu digital? Per què?",
+"En una situació com aquesta, com creus que es pot arribar a una solució per a tota la família?"
+],
+"quien": [
+"Antonio",
+"Ana",
+"Felipe"
+]
+},
+"10 y 11": {
+"n": "10 i 11",
+"titulo": "El ball de l’àvia Olga",
+"sit": "L’àvia, l’Olga, està ballant de forma estrafolària a la cuina. La resta de la família, que està de visita, riuen amb ella, i alguns graven el moment amb el mòbil. Més tard, el pare, l’Arnau, comparteix el vídeo que ha gravat a les seves xarxes socials, per mostrar com s’estima la seva família. Quan la mare, la Rosalía, veu la publicació es pregunta com se sentiria l’Olga si pogués veure el vídeo publicat a les xarxes socials.",
+"vota": "Abans de penjar el vídeo, l’Arnau hauria de…",
+"ops": [
+"Demanar permís a l’Olga",
+"Enviar-lo només al xat familiar",
+"Penjar-lo: és un bon record",
+"No penjar-lo"
+],
+"pregs": [
+"Com comparteixes moments importants o especials de la teva vida amb altres persones?",
+"Comparteixes coses divertides sobre la teva família a les xarxes socials? Com creus que això pot fer sentir als altres membres de la família?",
+"Creus que és important pensar en quina plataforma utilitzar per compartir imatges personals? Per què?",
+"Com et sentiries si veiessis un vídeo com aquest, però d’una altra família que no coneixes?"
+],
+"quien": [
+"Teresa",
+"Luis",
+"Olga"
+]
+},
+"12 y 13": {
+"n": "12 i 13",
+"titulo": "La Júlia guanya la lliga",
+"sit": "L’equip de bàsquet de la Júlia ha guanyat la lliga. Està molt contenta i, tot i que sap que tothom està a la feina o ocupat, vol explicar-ho a la família de seguida, o sigui que li envia un missatge al seu pare dient que té grans notícies.\nLa Júlia veu que el seu pare ha llegit el missatge de seguida, i al cap de pocs minuts li respon amb una icona de polze amunt. També envia un missatge a la seva tieta, que tot i que veu que està connectada, no li respon al moment, i també n’envia un als avis. El seu avi li truca immediatament, però la Júlia no té ganes de parlar amb ell en aquell moment i preferiria que simplement li hagués respost al missatge. Se sent una mica trista per no agafar-li la trucada.",
+"vota": "Una bona notícia, com prefereixes explicar-la?",
+"ops": [
+"Per missatge",
+"Per trucada",
+"En persona",
+"Depèn de qui"
+],
+"pregs": [
+"Acostumes a mirar si la gent ha vist els teus missatges o està en línia? Per què?",
+"Com t’agrada compartir notícies importants? Prefereixes missatges, trucades o fer-ho en persona?",
+"Si estiguessis en la situació de la Júlia, com reaccionaries?"
+],
+"quien": [
+"Carmen"
+]
+},
+"15 y 16": {
+"n": "15 i 16",
+"titulo": "Les notes de la Júlia",
+"sit": "La Júlia acaba de saber que ha aprovat els exàmens amb excel·lents. Se’n sent molt orgullosa, i penja una foto per celebrar-ho a Instagram amb el missatge “Per fi ho he aconseguit!”.\nLa seva àvia, l’Olga, que no està a les xarxes socials, s’assabenta de la notícia per un veí que ha vist la publicació de la Júlia. Més tard, al vespre, l’Olga li pregunta: “Per què no m’ho has dit a mi primer?” La Júlia se sent una mica culpable, però es defensa dient: “Volia compartir-ho ràpidament! Tothom penja coses a internet”.\nLa mare de la Júlia, la Rosalía, intenta calmar-les, però no veu clar qui té raó.",
+"vota": "Qui té més raó?",
+"ops": [
+"L’Olga",
+"La Júlia",
+"Totes dues",
+"Cap: va ser un malentès"
+],
+"pregs": [
+"Com prefereixes assabentar-te de notícies importants d’altres membres de la família?",
+"Com prefereixes compartir les teves pròpies notícies?",
+"Quines notícies creus que és millor compartir en privat abans de publicar-les?",
+"Què podríem fer perquè tothom se sentís més inclòs i tingut en compte en una situació similar?"
+],
+"quien": [
+"Carmen",
+"Teresa",
+"Olga"
+]
+},
+"17 y 18": {
+"n": "17 i 18",
+"titulo": "El sopar interromput",
+"sit": "Al sopar de la família Fernández, tothom xerra a taula. En Jan i l’avi, l’Anton, riuen mentre juguen amb l’assistent virtual (p. ex., Alexa) a un joc de preguntes i respostes. El pare, l’Arnau, seu al seu costat i intenta explicar a tothom una història divertida de la feina. Mentrestant, la mare, la Rosalía, mira repetidament el mòbil perquè no li paren d’arribar missatges de la feina. Intenta estar al cas, però els altres segueixen la conversa sense ella.\nL’Arnau s’atura a mitja història perquè veu que els altres no li fan cas. La Rosalía està atabalada, intentant prestar atenció a la família, però alhora responent als missatges de feina. En Jan i l’avi aturen el joc una mica decebuts.",
+"vota": "Als nostres àpats, la tecnologia hauria d’estar…",
+"ops": [
+"Fora de la taula",
+"Només per a urgències",
+"Permesa si la fem servir junts",
+"Sense normes"
+],
+"pregs": [
+"Què fa que et sentis inclòs/a durant el temps que comparteixes amb la família (els àpats, converses familiars...)?",
+"Et sembla que hi ha missatges que requereixen una resposta immediata?",
+"Quins tipus d’interrupcions degudes a les tecnologies (missatges, trucades, mirar les xarxes...) et semblen bé i quines no?",
+"T’agradaria que la família posés normes de comportament amb la tecnologia als àpats? Per què? Quines podrien ser?"
+],
+"quien": [
+"Teresa",
+"Luis",
+"Antonio",
+"Juan"
+]
+},
+"19 y 20": {
+"n": "19 i 20",
+"titulo": "La reunió per videotrucada",
+"sit": "En Jan va a la reunió de famílies i mestres amb l’avi, l’Anton, mentre que el seu pare, l’Arnau, hi participa per videotrucada des de la feina. La connexió es talla constantment, i l’Arnau es perd parts de la conversa. En Jan està content que el seu pare hagi fet l’esforç de ser-hi, però alhora li agradaria poder parlar amb ell cara a cara, com fan altres famílies.",
+"vota": "Participar per videotrucada en un moment important és…",
+"ops": [
+"Ser-hi present",
+"Millor que res",
+"No és el mateix",
+"Depèn del moment"
+],
+"pregs": [
+"Què creus que significa “estar present” en moments importants?",
+"Et sembla que participar en una conversa per videotrucada pot ser adequat en alguns casos? En quins creus que ho és i en quins no?",
+"Si algú només pot participar per videotrucada, què podria ajudar a fer que se senti més part de la conversa?",
+"En esdeveniments escolars o familiars importants, com t’agradaria que hi participés la teva família?"
+],
+"quien": [
+"Luis",
+"Antonio",
+"Juan"
+]
+},
+"21 y 22": {
+"n": "21 i 22",
+"titulo": "Després de la discussió",
+"sit": "Després d’una discussió sobre les feines de casa, la Júlia, de 16 anys, se’n va a la seva habitació i s’estira al llit a mirar vídeos al mòbil en comptes de fer el que li han demanat. La seva mare, la Rosalía, se sent frustrada. Vol que faci les feines de casa, però també pensa que potser si la pressiona ara mateix empitjorarà les coses.\nEs queda aturada al llindar de la porta, sense saber si donar-li una mica d’espai o insistir que es posi a treballar. L’àvia, l’Olga, que ha sentit la discussió des de la sala d’estar, es pregunta en silenci si refugiar-se en el mòbil ajuda la Júlia a relaxar-se o si li impedeix parlar del que realment la preocupa. Es pregunta si hauria d’enviar-li un missatge per assegurar-se que està bé.",
+"vota": "Després d’una discussió, què necessites tu?",
+"ops": [
+"Espai",
+"Parlar amb algú",
+"Distreure’m una estona",
+"Que em vinguin a buscar"
+],
+"pregs": [
+"Què necessites després d’una discussió? Que et donin espai, parlar amb algú, distreure’t, o alguna altra cosa? Per què?",
+"Quan et sents malament, creus que utilitzar la tecnologia t’ajuda a sentir-te millor? Per què?",
+"Com pots fer saber als altres que necessites temps per estar sol/a?",
+"Com t’agradaria que algú es posés en contacte amb tu després d’una discussió?"
+],
+"quien": [
+"Carmen",
+"Teresa",
+"Olga"
+]
+},
+"24 y 25": {
+"n": "24 i 25",
+"titulo": "La festa de la Júlia",
+"sit": "La Júlia té 16 anys i ha anat a una festa. Va acceptar tornar a casa a les onze de la nit, ja és més tard i encara no ha tornat. La Rosalía, la seva mare, està preocupada i està considerant utilitzar una aplicació per rastrejar la ubicació de la Júlia.",
+"vota": "Si fossis la Rosalía, què faries?",
+"ops": [
+"Instal·lo l’aplicació sense dir-li-ho",
+"Primer li pregunto a la Júlia",
+"La truco i m’espero",
+"Hi confio i no faig res"
+],
+"pregs": [
+"Com creus que se sentiria la Júlia si la seva mare decidís rastrejar la seva ubicació sense el seu consentiment?",
+"Has parlat mai amb familiars o amics de la possibilitat d’utilitzar aplicacions de geolocalització per saber on són en qualsevol moment?",
+"Si saps on són els altres en tot moment, vol dir això que els propietaris de la plataforma també ho saben? Si és així, com et fa sentir això?",
+"Com a família, voldries que tinguéssiu un acord sobre com utilitzar aquestes aplicacions?"
+],
+"quien": [
+"Carmen",
+"Teresa"
+]
+},
+"26 y 27": {
+"n": "26 i 27",
+"titulo": "En Felip surt amb els amics",
+"sit": "En Felip té 11 anys. Quan surt a passejar amb amics pel barri mentre està de visita a casa de la seva àvia, ella vol rastrejar-lo a través d’una aplicació al seu telèfon. En Felip no vol que la seva àvia el segueixi.",
+"vota": "Amb qui estàs més d’acord?",
+"ops": [
+"Amb l’àvia",
+"Amb en Felip",
+"Una mica amb tots dos",
+"Depèn d’on vagi"
+],
+"pregs": [
+"Per què creus que l’àvia d’en Felip vol seguir-lo?",
+"Per què creus que en Felip no vol ser rastrejat?",
+"Què creus que sent en Felip quan el segueixen?"
+],
+"quien": [
+"Felipe"
+]
+},
+"28 y 29": {
+"n": "28 i 29",
+"titulo": "El compte que demana l’escola",
+"sit": "L’Arnau fa tot el possible per evitar utilitzar els serveis d’una gran empresa multinacional tecnològica, però l’escola ha exigit al seu fill de 8 anys, en Jan, que es creï un compte en una plataforma digital d’una d’aquestes empreses per poder accedir a l’aplicació educativa que utilitza el centre.",
+"vota": "Si fossis l’Arnau, què faries?",
+"ops": [
+"Creo el compte i ja està",
+"Primer en parlo amb l’escola",
+"Demano una alternativa",
+"M’ajunto amb altres famílies"
+],
+"pregs": [
+"Per què creus que l’Arnau no vol utilitzar els serveis d’una gran empresa multinacional tecnològica (p. ex., Google)?",
+"Creus que les escoles han de poder exigir als menors que s’obrin comptes per fer ús dels serveis d’empreses multinacionals (p. ex., Google Classroom)?",
+"Què creus que poden fer les famílies? I els centres educatius?"
+],
+"quien": [
+"Luis",
+"Juan"
+]
+},
+"30 y 31": {
+"n": "30 i 31",
+"titulo": "L’alerta del parc",
+"sit": "L’Arnau ha configurat una zona de seguretat en una aplicació de geolocalització vinculada al dispositiu que porta el seu fill Jan, de manera que rep una alerta al telèfon si el nen surt del parc infantil que tenen a prop de casa.\nL’Arnau pensa que això és molt pràctic, perquè així pot dedicar el temps a fer coses a casa mentre en Jan juga al parc. Creu que utilitzant l’aplicació en Jan està més segur.",
+"vota": "Per a tu, l’alerta de zona de seguretat és…",
+"ops": [
+"Cura",
+"Control",
+"Totes dues coses",
+"Depèn de si en Jan ho sap"
+],
+"pregs": [
+"Com creus que afecta a la relació entre l’Arnau i en Jan l’ús de la plataforma de geolocalització?",
+"Què faries tu en aquesta situació?"
+],
+"quien": [
+"Luis",
+"Juan"
+]
+},
+"32 y 33": {
+"n": "32 i 33",
+"titulo": "On és l’àvia Olga?",
+"sit": "L’àvia, l’Olga, té Alzheimer, i els seus dos fills, l’Arnau i l’Anna, consideren necessari poder saber on és en tot moment. Tanmateix, l’Arnau es mostra reticent a utilitzar una aplicació de geolocalització (p. ex., Google Maps).",
+"vota": "Qui hauria de decidir?",
+"ops": [
+"L’Olga",
+"L’Arnau i l’Anna",
+"Tota la família junta",
+"Qui la cuida cada dia"
+],
+"pregs": [
+"Per què creus que l’Arnau no vol utilitzar geolocalització?",
+"Qui consideres que hauria de prendre la decisió en aquesta situació?"
+],
+"quien": [
+"Luis",
+"Ana",
+"Olga"
+]
+},
+"35 y 36": {
+"n": "35 i 36",
+"titulo": "Pel·lícula, vídeo o conversa?",
+"sit": "A la tarda, l’avi, l’Anton, cuida el seu net petit, en Jan. Quan el pare d’en Jan, l’Arnau, torna a casa de la feina, l’Anton suggereix que tots tres mirin una pel·lícula de quan era jove, que fa poc que ha aconseguit trobar al catàleg d’una plataforma d’estríming. En Jan preferiria que veiessin junts l’últim vídeo del seu creador de continguts preferit (p. ex., Youtuber), però l’Arnau diu que, com que tenen tan poques oportunitats de passar un vespre junts, seria millor poder xerrar una estona.",
+"vota": "Què triaries tu per a aquell vespre?",
+"ops": [
+"La pel·lícula antiga",
+"El vídeo del creador preferit",
+"Xerrar",
+"Una mica de cada cosa"
+],
+"pregs": [
+"Per què creus que l’Arnau prefereix xerrar en comptes de veure alguna cosa junts? Per què creus que l’avi vol veure una pel·lícula antiga? I per què creus que el net vol veure el seu creador de continguts preferit amb el seu pare i el seu avi?",
+"Com podrien arribar a un acord sobre com passar temps junts?",
+"Què és el més important per a la teva família quan passeu temps junts?"
+],
+"quien": [
+"Luis",
+"Antonio",
+"Juan"
+]
+},
+"37 y 38": {
+"n": "37 i 38",
+"titulo": "Consola o joc de taula",
+"sit": "La família decideix dedicar temps a jugar junts un dimecres després de l’escola. En Felip suggereix que juguin a un videojoc multijugador a la consola del menjador (p. ex., la Switch). La seva mare, l’Anna, creu que seria millor jugar a un joc de taula perquè creu que és una millor opció per compartir temps en família.",
+"vota": "Per jugar en família, què prefereixes?",
+"ops": [
+"Videojoc",
+"Joc de taula",
+"Tots dos, per torns",
+"Que triï qui no va triar l’última vegada"
+],
+"pregs": [
+"Els jocs poden ser tant digitals com analògics. Creus que l’un és millor que l’altre quan es tracta de passar temps junts en família? Per què?",
+"Com a família, en quins moments escolliríeu jugar a jocs analògics i en quins a jocs digitals?"
+],
+"quien": [
+"Ana",
+"Felipe"
+]
+},
+"39 y 40": {
+"n": "39 i 40",
+"titulo": "El compte de vídeos de la mare",
+"sit": "Fa uns anys, quan en Felip volia veure vídeos a internet (p. ex., a YouTube) sobre el seu videojoc preferit, la seva mare li va permetre començar a utilitzar el seu compte a la plataforma.\nAra, però, això comença a ser una molèstia, perquè la plataforma, en comptes de suggerir-li vídeos dels seus canals de ioga preferits, li recomana vídeos similars als que veu el seu fill. Per això es planteja si el seu fill d’11 anys hauria de tenir el seu propi compte.",
+"vota": "L’accés dels nens, nenes i adolescents a les plataformes de vídeo hauria d’estar…",
+"ops": [
+"Prohibit",
+"Regulat",
+"Permès",
+"Depèn de l’edat"
+],
+"pregs": [
+"Quina opció creus que és més segura? Quina és més còmoda? Per què?",
+"Quins consideres que són els avantatges i desavantatges de què la mare pugui assabentar-se dels continguts que veu el seu fill?",
+"Quins penses que són els avantatges i desavantatges de permetre que el fill s’obri el seu propi compte?",
+"Com s’hauria de gestionar l’accés dels nens, nenes i adolescents a les plataformes digitals, com les de vídeo? Hauria d’estar prohibit, regulat o permès?"
+],
+"quien": [
+"Felipe"
+]
+},
+"41 y 42": {
+"n": "41 i 42",
+"titulo": "La música del cotxe",
+"sit": "L’Arnau, la Rosalía, la Júlia i en Jan han sortit de vacances amb el cotxe. La Júlia connecta el seu compte de música en línia (p. ex., Spotify) als altaveus del cotxe i posa música rap. A la seva mare també li agrada, però l’Arnau (que és el que condueix) i en Jan no la suporten.\nTotes dues suggereixen que pare i fill es posin auriculars per escoltar la seva música o pòdcasts preferits.",
+"vota": "Qui hauria de triar la música del cotxe?",
+"ops": [
+"Qui condueix",
+"Una cançó cadascú",
+"Ho votem entre tots",
+"Cadascú amb els seus auriculars"
+],
+"pregs": [
+"Creus que és una bona solució? Quins avantatges i desavantatges hi veus?",
+"Quina altra solució creus que hi ha per a aquesta situació? Com podrien arribar a un acord?",
+"Qui creus que hauria de decidir què s’escolta al cotxe, i com?"
+],
+"quien": [
+"Carmen",
+"Teresa",
+"Luis",
+"Juan"
+]
+},
+"44 y 45": {
+"n": "44 i 45",
+"titulo": "El compte de salut de la Júlia",
+"sit": "La Júlia ha fet 16 anys i, a partir d’ara, la plataforma de salut (p. ex., La meva salut) li ha assignat el control sobre el seu compte. Això vol dir que els seus pares ja no poden accedir a les seves dades de salut.\nLa Júlia voldria que els seus pares hi continuessin tenint accés i poder demanar-li cites al metge.\nTot i això, la seva mare, la Rosalía, creu que la Júlia hauria de fer-ho ella mateixa ara que la plataforma ha establert que en sigui responsable.",
+"vota": "Qui hauria de demanar les cites mèdiques de la Júlia?",
+"ops": [
+"La Júlia sola",
+"Els seus pares, com abans",
+"La Júlia, amb ajuda al principi",
+"El que decideixi la Júlia"
+],
+"pregs": [
+"Els desitjos dels membres de la família i el que les plataformes suggereixen que haurien de fer no necessàriament coincideixen. Com creus que la família pot gestionar-ho?"
+],
+"quien": [
+"Carmen",
+"Teresa"
+]
+},
+"46 y 47": {
+"n": "46 i 47",
+"titulo": "Seguir-se a l’aplicació d’exercici",
+"sit": "L’avi, l’Anton, el pare, l’Arnau, i la filla, la Júlia, utilitzen una plataforma de fitness que els permet compartir activitats.\nL’Arnau i la Júlia se segueixen mútuament i poden veure dades com la distància o la velocitat mitjana de les seves rutes. Fill i neta volen seguir a l’avi, i que ell els segueixi també, però l’Anton prefereix quedar-ne al marge.",
+"vota": "T’agradaria que la teva família veiés les teves dades d’exercici?",
+"ops": [
+"Sí, em motiva",
+"Només algunes dades",
+"No, són meves",
+"Només si jo veig les seves"
+],
+"pregs": [
+"Quins creus que poden ser els avantatges i desavantatges de seguir-se mútuament a les plataformes de fitness?",
+"Per què creus que l’Anton no vol seguir ni ser seguit pel seu fill i la seva neta?"
+],
+"quien": [
+"Carmen",
+"Luis",
+"Antonio"
+]
+},
+"48 y 49": {
+"n": "48 i 49",
+"titulo": "El xat per cuidar l’Olga",
+"sit": "Quan l’Olga va començar a mostrar símptomes d’Alzheimer, la família va voler crear un grup de xat per coordinar-se millor, i poder compartir responsabilitats.\nLa família, però, no es posa d’acord en quina plataforma haurien d’utilitzar.",
+"vota": "On compartiries informació de salut de la família?",
+"ops": [
+"Al xat de sempre",
+"En una aplicació més privada",
+"Per telèfon o en persona",
+"En una llibreta a casa"
+],
+"pregs": [
+"Quina plataforma penses que podria ser una bona opció per compartir informació relacionada amb la salut, i quines plataformes caldria evitar? Per què?"
+],
+"quien": [
+"Olga"
+]
+},
+"51 y 52": {
+"n": "51 i 52",
+"titulo": "L’Olga torna a trucar a l’Anna",
+"sit": "A la mare de l’Anna, l’Olga, no li agrada que la tecnologia s’hagi convertit en una part tan important del seu dia a dia, perquè la fa sentir insegura i li costa adaptar-s’hi.\nL’Olga sovint truca a l’Anna perquè l’ajudi a fer coses com entrar al compte del banc, configurar el telèfon o demanar una cita al metge. L’Anna, però, està molt enfeinada; està divorciada, té un fill en custòdia compartida i té una feina a temps complet. A vegades, se sent desbordada i s’enfada quan la seva mare sovint li demana ajuda.",
+"vota": "Qui hauria d’ajudar l’Olga amb la tecnologia?",
+"ops": [
+"L’Anna, és la seva filla",
+"Tota la família, per torns",
+"Una altra persona de confiança",
+"Un taller o servei del barri"
+],
+"pregs": [
+"Com creus que se sent l’Olga quan truca a l’Anna?",
+"Per què creus que a l’Olga no li agrada que tantes coses s’hagin digitalitzat?",
+"Per què creus que l’Anna de vegades s’enfada quan l’Olga li truca per demanar-li ajuda?",
+"Qui creus que hauria d’ajudar l’Olga a fer servir la tecnologia que necessita per al seu dia a dia?"
+],
+"quien": [
+"Ana",
+"Olga"
+]
+},
+"53 y 54": {
+"n": "53 i 54",
+"titulo": "El primer mòbil d’en Felip",
+"sit": "Fins ara, en Felip havia utilitzat la tauleta familiar amb un compte que els seus pares podien supervisar. Ara, que ha fet 11 anys, demana el seu propi telèfon mòbil i crear el seu compte personal per accedir a vídeos (p. ex., YouTube) i poder veure contingut sense que els seus pares vegin què mira.",
+"vota": "Què en penses del que demana en Felip?",
+"ops": [
+"Sí al mòbil i al compte",
+"Mòbil sí, amb compte supervisat",
+"Encara no",
+"Que en parlin i posin normes"
+],
+"pregs": [
+"Què en penses de la proposta d’en Felip?",
+"Què creus que es pot fer perquè en Felip tingui privacitat quan navegui per internet, però que la seva família li pugui donar suport?"
+],
+"quien": [
+"Felipe"
+]
+},
+"55 y 56": {
+"n": "55 i 56",
+"titulo": "Els deures de reciclatge",
+"sit": "En Felip està fent els deures a casa. Estudia el reciclatge i la conservació de la fauna salvatge. La seva mestra utilitza una aplicació per facilitar la comunicació entre l’escola i la família. Ha demanat a les famílies que identifiquin les pràctiques de reciclatge que fan a casa durant una setmana.",
+"vota": "Les aplicacions per comunicar-se amb l’escola…",
+"ops": [
+"Ajuden molt",
+"Ajuden, però n’hi ha massa",
+"Prefereixo parlar en persona",
+"Depèn de quines dades demanen"
+],
+"pregs": [
+"Què en penses de les pràctiques digitals que suposen una col·laboració entre l’escola i la família?",
+"Com creus que les famílies poden donar suport a l’escola?",
+"Utilitzes plataformes digitals per comunicar-te amb l’escola? Què en penses? Quins consideres que són els principals punts forts i les possibles limitacions d’aquestes plataformes segons la teva experiència?"
+],
+"quien": [
+"Felipe"
+]
+},
+"57 y 58": {
+"n": "57 i 58",
+"titulo": "Anglès a la tauleta",
+"sit": "La família Fernández ha comprat recentment una tauleta d’ús comú. El pare, l’Arnau, ha descobert una plataforma d’aprenentatge d’idiomes (p. ex., Duolingo). Estan molt interessats a aprendre anglès, i han decidit utilitzar-la amb la seva filla Júlia. S’ho passen molt bé aprenent junts, tot i que la Júlia hagués preferit utilitzar una altra aplicació amb una altra mena d’activitats.",
+"vota": "Qui hauria de triar les aplicacions per aprendre?",
+"ops": [
+"Els adults",
+"Qui la farà servir",
+"Tota la família",
+"L’escola"
+],
+"pregs": [
+"Què en penses d’accedir a plataformes per aprendre alguna cosa, com els idiomes?",
+"Què en penses de les empreses que hi ha darrere?",
+"Què penses que siguin només els pares els qui prenguin aquestes decisions?",
+"Caldria parlar prèviament de quines són les plataformes que volem fer servir conjuntament i del seu ús?"
+],
+"quien": [
+"Carmen",
+"Luis"
+]
+}
+};
+const AREA_CA={com:["Joc 01","Comunicació"],int:["Joc 02","Intimitat"],vig:["Joc 03","Vigilància"],str:["Joc 04","Estríming i jocs"],sal:["Joc 05","Salut"],apr:["Joc 06","Aprenentatge"]};
 const FORMAS=[
  '<svg viewBox="0 0 40 40"><path fill="#141A3C" d="M20 2l5.3 11.4 12.3 1.5-9.1 8.5 2.4 12.2L20 29.5 9.1 35.6l2.4-12.2-9.1-8.5 12.3-1.5z"/></svg>',
  '<svg viewBox="0 0 40 40"><path fill="#141A3C" d="M28 3a17 17 0 1 0 9 26A14 14 0 0 1 28 3z"/></svg>',
  '<svg viewBox="0 0 40 40"><path fill="#141A3C" d="M20 2c8 10 13 16 13 23a13 13 0 0 1-26 0C7 18 12 12 20 2z"/></svg>',
  '<svg viewBox="0 0 40 40"><path fill="#141A3C" d="M20 2l15.6 9v18L20 38 4.4 29V11z"/></svg>'];
-const SUGERIDOS=["Mamá","Papá","Abuela","Abuelo"];
-const K_AC="hablemos-acuerdos",K_AR="hablemos-areas",K_AJ="hablemos-ajustes";
-const PASOS=["Leer","Votar","Conversar","Acordar"];
+const K_AC="hablemos-acuerdos",K_AR="hablemos-areas",K_AJ="hablemos-ajustes",K_LG="hablemos-idioma";
 /* Enlace al cuestionario voluntario (Microsoft Forms). Mientras esté vacío, la app no muestra el botón. */
 const FORMS_URL="";
 const PASO_DE={situacion:1,pase:2,voto:2,resultado:2,pregunta:3,acuerdo:4};
+
+/* ---------- Idioma: castellano (es) o catalán (ca) ---------- */
+let LG="es";
+try{const g=localStorage.getItem(K_LG);LG=g==="ca"||g==="es"?g:((navigator.language||"").toLowerCase().startsWith("ca")?"ca":"es")}catch(e){LG=(navigator.language||"").toLowerCase().startsWith("ca")?"ca":"es"}
+const L=(es,ca)=>LG==="ca"?ca:es;
+const nom=p=>LG==="ca"?NOMCA[p]:p;
+const anom=a=>L(a.nombre,AREA_CA[a.id][1]);
+const ajuego=a=>L(a.juego,AREA_CA[a.id][0]);
+const cc=c=>LG==="ca"?Object.assign({},c,CA[c.n]):c;
+const PASOS=()=>L(["Leer","Votar","Conversar","Acordar"],["Llegir","Votar","Conversar","Acordar"]);
+const SUGERIDOS=()=>L(["Mamá","Papá","Abuela","Abuelo"],["Mare","Pare","Àvia","Avi"]);
+const MED={dist:["Opiniones distintas","Opinions diferents"],ac:["Familia con acuerdo","Família amb acord"],area:["Área completa","Àrea completa"],mazo:["Mazo completo","Joc complet"],mesa:["Mesa conversadora","Taula conversadora"]};
+function idioma(){document.documentElement.lang=LG;document.title=L("Hablemos: cartas conversacionales","Parlem-ne: cartes conversacionals")}
 
 /* ---------- Estado ---------- */
 let S={pantalla:"inicio",jug:[],modo:"",orden:[],i:0,votos:[],q:0,empieza:"",prem:{},pts:0,acuerdos:[],medallas:[],reg:[],tipoAc:"no"};
@@ -371,7 +901,7 @@ function suena(n){
   }catch(e){}
 }
 const SON_DE={area:"area",sorpresa:"area",ayuda:"toque",cierra:"toque",aj:"toque",inicio:"toque",otra:"atras",atras:"atras",quita:"quita",partir:"carta",avotar:"toque",
-  saltavoto:"salta",creditos:"toque",instalar:"toque",veo:"toque",novota:"salta",apregs:"carta",otrapersona:"toque",hablado:"punto",salta:"salta",depalabra:"acuerdo",sinacuerdo:"salta",copia:"toque",musica:"toque"};
+  saltavoto:"salta",creditos:"toque",instalar:"toque",veo:"toque",novota:"salta",apregs:"carta",otrapersona:"toque",hablado:"punto",salta:"salta",depalabra:"acuerdo",sinacuerdo:"salta",copia:"toque",musica:"toque",idioma:"toque"};
 /* ---------- Música: una melodía original en bucle para el inicio y otra por área, generadas en el teléfono ---------- */
 const HZ=n=>440*Math.pow(2,(n-69)/12);
 const PISTAS={
@@ -411,146 +941,183 @@ function musica(){
     if(!mus.reloj)mus.reloj=setInterval(compas,100);
   }catch(e){}
 }
-function botonMusica(){return '<button class="mini" data-a="musica" aria-pressed="'+A.musica+'" aria-label="Música de fondo">Música: '+(A.musica?"sí":"no")+'</button>'}
+function botonMusica(){return '<button class="mini" data-a="musica" aria-pressed="'+A.musica+'" aria-label="'+L("Música de fondo","Música de fons")+'">'+L("Música: ","Música: ")+(A.musica?L("sí","sí"):L("no","no"))+'</button>'}
+function botonIdioma(){return LG==="ca"
+  ?'<button class="mini" data-a="idioma" lang="es" aria-label="Cambiar a castellano">Castellano</button>'
+  :'<button class="mini" data-a="idioma" lang="ca" aria-label="Canviar a català">Català</button>'}
 function calla(){hablando=false;if(puedeHablar){try{speechSynthesis.cancel()}catch(e){}}}
 function habla(t,b){
-  if(hablando){calla();musica();b.textContent="Escuchar";return}
-  try{const u=new SpeechSynthesisUtterance(t);u.lang="es-ES";u.rate=.92;u.onend=u.onerror=()=>{hablando=false;musica();if(b.isConnected)b.textContent="Escuchar"};
-    speechSynthesis.cancel();speechSynthesis.speak(u);hablando=true;musica();b.textContent="Detener la lectura"}catch(e){b.textContent="Este teléfono no puede leer en voz alta"}
+  const oir=L("Escuchar","Escoltar");
+  if(hablando){calla();musica();b.textContent=oir;return}
+  try{const u=new SpeechSynthesisUtterance(t);u.lang=L("es-ES","ca-ES");u.rate=.92;
+    const v=speechSynthesis.getVoices().find(x=>x.lang&&x.lang.toLowerCase().startsWith(LG));if(v)u.voice=v;
+    u.onend=u.onerror=()=>{hablando=false;musica();if(b.isConnected)b.textContent=oir};
+    speechSynthesis.cancel();speechSynthesis.speak(u);hablando=true;musica();b.textContent=L("Detener la lectura","Atura la lectura")}catch(e){b.textContent=L("Este teléfono no puede leer en voz alta","Aquest telèfon no pot llegir en veu alta")}
 }
 function ir(p){S.pantalla=p;clearInterval(tick);calla();pinta(true);window.scrollTo(0,0)}
-function premio(k,v,msg){S.prem[k]=v;S.pts=Object.values(S.prem).reduce((a,b)=>a+b,0);if(v&&msg)voz.textContent=msg+" La familia lleva "+S.pts+" puntos."}
+function premio(k,v,msg){S.prem[k]=v;S.pts=Object.values(S.prem).reduce((a,b)=>a+b,0);if(v&&msg)voz.textContent=msg+" "+L("La familia lleva ","La família porta ")+S.pts+L(" puntos."," punts.")}
 function medalla(m){if(!S.medallas.includes(m))S.medallas.push(m)}
 const par=()=>S.orden[S.i];
 const area=()=>AREAS[par()[0]];
-const carta=()=>area().cartas[par()[1]];
+const carta=()=>cc(area().cartas[par()[1]]);
 const validos=()=>S.votos.filter(v=>v>=0);
 function hayAtras(){return S.pantalla!=="situacion"||S.i===0}
 function barra(){
-  const n=PASO_DE[S.pantalla];
-  return '<nav class="top" aria-label="Navegación de la partida">'+(hayAtras()?'<button class="mini" data-a="atras">← Atrás</button>':'')
-  +'<button class="mini" data-a="inicio">Inicio</button><button class="mini" data-a="ayuda">Ayuda</button>'
-  +'<div class="puntos" aria-label="Puntos de la familia: '+S.pts+'">'+S.pts+' pts</div></nav>'
-  +'<div class="fila-etq"><p class="paso"><b>Carta '+(S.i+1)+' de '+S.orden.length+'</b> · Paso '+n+' de 4: '+PASOS[n-1]+'</p>'+botonMusica()+'</div>'
-  +'<div class="pasos" aria-hidden="true">'+PASOS.map((_,k)=>'<i class="'+(k<n-1?"ya":k===n-1?"ok":"")+'"></i>').join("")+'</div>';
+  const n=PASO_DE[S.pantalla],P=PASOS();
+  return '<nav class="top" aria-label="'+L("Navegación de la partida","Navegació de la partida")+'">'+(hayAtras()?'<button class="mini" data-a="atras">← '+L("Atrás","Enrere")+'</button>':'')
+  +'<button class="mini" data-a="inicio">'+L("Inicio","Inici")+'</button><button class="mini" data-a="ayuda">'+L("Ayuda","Ajuda")+'</button>'
+  +'<div class="puntos" aria-label="'+L("Puntos de la familia: ","Punts de la família: ")+S.pts+'">'+S.pts+' '+L("pts","punts")+'</div></nav>'
+  +'<div class="fila-etq"><p class="paso"><b>'+L("Carta ","Carta ")+(S.i+1)+L(" de "," de ")+S.orden.length+'</b> · '+L("Paso ","Pas ")+n+L(" de 4: "," de 4: ")+P[n-1]+'</p><span class="botones">'+botonIdioma()+botonMusica()+'</span></div>'
+  +'<div class="pasos" aria-hidden="true">'+P.map((_,k)=>'<i class="'+(k<n-1?"ya":k===n-1?"ok":"")+'"></i>').join("")+'</div>';
 }
-function escuchar(){return puedeHablar?'<button class="mini osc" data-a="escucha">Escuchar</button>':''}
-function personas(c){return '<ul class="gente" aria-label="Personas que aparecen en esta situación">'+c.quien.map(p=>'<li class="pers"><b aria-hidden="true" style="background:'+FAMILIA[p][1]+'">'+p[0]+'</b>'+p+'</li>').join("")+'</ul>'}
+function escuchar(){return puedeHablar?'<button class="mini osc" data-a="escucha">'+L("Escuchar","Escoltar")+'</button>':''}
+function personas(c){return '<ul class="gente" aria-label="'+L("Personas que aparecen en esta situación","Persones que apareixen en aquesta situació")+'">'+c.quien.map(p=>'<li class="pers"><b aria-hidden="true" style="background:'+FAMILIA[p][1]+'">'+nom(p)[0]+'</b>'+nom(p)+'</li>').join("")+'</ul>'}
 function comoSeJuega(){
-  return '<ol class="guia"><li><b>Lean.</b> Alguien lee la situación en voz alta, o tocan “Escuchar”. Miren juntos la ilustración.</li>'
+  return L('<ol class="guia"><li><b>Lean.</b> Alguien lee la situación en voz alta, o tocan “Escuchar”. Miren juntos la ilustración.</li>'
   +'<li><b>Voten.</b> Cada persona elige una respuesta en secreto y pasa el teléfono. Quien no quiera votar, pasa.</li>'
   +'<li><b>Conversen.</b> La app elige quién parte en cada pregunta. Después opina el resto.</li>'
-  +'<li><b>Acuerden.</b> Si de la conversación sale un acuerdo para la casa, lo anotan o lo dejan de palabra.</li></ol>';
+  +'<li><b>Acuerden.</b> Si de la conversación sale un acuerdo para la casa, lo anotan o lo dejan de palabra.</li></ol>',
+  '<ol class="guia"><li><b>Llegiu.</b> Algú llegeix la situació en veu alta, o toqueu “Escoltar”. Mireu junts la il·lustració.</li>'
+  +'<li><b>Voteu.</b> Cada persona tria una resposta en secret i passa el telèfon. Qui no vulgui votar, passa.</li>'
+  +'<li><b>Converseu.</b> L’app tria qui comença a cada pregunta. Després opina la resta.</li>'
+  +'<li><b>Acordeu.</b> Si de la conversa en surt un acord per a casa, l’anoteu o el deixeu de paraula.</li></ol>');
 }
+const ALT_LOGOS=()=>L("Logos de financiación: Ministerio de Ciencia, Innovación y Universidades; Financiado por la Unión Europea, NextGenerationEU; Plan de Recuperación, Transformación y Resiliencia; Agencia Estatal de Investigación",
+  "Logotips de finançament: Ministeri de Ciència, Innovació i Universitats; Finançat per la Unió Europea, NextGenerationEU; Pla de Recuperació, Transformació i Resiliència; Agència Estatal d’Investigació");
 
 /* ---------- Pantallas ---------- */
 const V={
  inicio(){
   const ac=lee(K_AC),hechas=lee(K_AR);
-  return '<div class="cuerpo"><h1 tabindex="-1">Hablemos</h1><p>Situaciones reales de familias de Noruega, Reino Unido, España, Estonia, Rumanía y Polonia para conversar sobre la vida digital. Se juega con un solo teléfono al centro de la mesa.</p><div>'+botonMusica()+'</div>'
-  +'<img class="fam" src="img/familia.png" alt="La familia Fernández, protagonista de las cartas: Carmen, Teresa, Antonio, Ana, Olga, Juan, Luis y Felipe">'
-  +'<div class="panel"><h2 class="sub">Antes de empezar</h2><ul class="simple"><li>Para 2 a 8 personas de cualquier edad.</li><li>Cada carta toma unos 10 minutos.</li><li>No hay respuestas correctas o incorrectas.</li><li>Se puede pasar cualquier voto o pregunta.</li><li>Los puntos son de toda la familia: nadie pierde.</li></ul>'
-  +'<button class="btn sec" data-a="ayuda" style="margin-top:12px">Cómo se juega y ajustes de lectura</button></div>'
-  +(INST.tipo?'<div class="panel instalar"><h2 class="sub">Instálala en este computador</h2><p>Queda como una aplicación más de tu Mac o Windows, con su propio ícono y ventana. Funciona sin conexión.</p><button class="btn" data-a="instalar" style="margin-top:12px">Instalar la app</button><p class="nota" id="aviso-instalar" role="status"></p></div>':'')
-  +'<h2 class="sub">Elijan un área'+(hechas.length?' · '+hechas.length+' de 6 jugadas':'')+'</h2>'
-  +'<div class="areas">'+AREAS.map((a,k)=>'<button class="area" style="background:'+a.color+';color:'+a.tinta+'" data-a="area" data-k="'+k+'"><span class="j">'+a.juego+'</span><span class="n">'+a.nombre+'</span><span class="c">'+a.cartas.length+' cartas'+(hechas.includes(a.id)?' · ya jugada':'')+'</span>'+(hechas.includes(a.id)?'<span class="hecho" aria-hidden="true">✓</span>':'')+'</button>').join("")+'</div>'
-  +'<button class="btn sec" data-a="sorpresa">Sorpresa: 3 cartas al azar, unos 30 minutos</button>'
-  +(ac.length?'<div class="panel"><h2 class="sub">Nuestros acuerdos</h2><ul class="lista" style="margin-top:8px">'+ac.map(a=>'<li>'+esc(a)+'</li>').join("")+'</ul></div>':'')
-  +'<footer class="pie-inicio"><p class="nota">Esta app no guarda ni envía datos fuera de este teléfono.</p>'
-  +'<p class="nota">Cartas del proyecto PlatFAMs (Miño-Puigcercós et al., 2026), con apoyo de la Facultat d’Educació de la Universitat de Barcelona (TRANSFER 2026).</p>'
-  +'<img class="logos" src="img/financiacion.png" alt="Logos de financiación: Ministerio de Ciencia, Innovación y Universidades; Financiado por la Unión Europea, NextGenerationEU; Plan de Recuperación, Transformación y Resiliencia; Agencia Estatal de Investigación">'
-  +'<button class="btn sec" data-a="creditos">Créditos, financiación y licencias</button></footer></div>';
+  return '<div class="cuerpo"><h1 tabindex="-1">'+L("Hablemos","Parlem-ne")+'</h1><p>'+L("Situaciones reales de familias de Noruega, Reino Unido, España, Estonia, Rumanía y Polonia para conversar sobre la vida digital. Se juega con un solo teléfono al centro de la mesa.",
+    "Situacions reals de famílies de Noruega, el Regne Unit, Espanya, Estònia, Romania i Polònia per conversar sobre la vida digital. Es juga amb un sol telèfon al mig de la taula.")+'</p><div class="botones">'+botonIdioma()+botonMusica()+'</div>'
+  +'<img class="fam" src="'+L("img/familia.png","img/familia_ca.png")+'" alt="'+L("La familia Fernández, protagonista de las cartas: Carmen, Teresa, Antonio, Ana, Olga, Juan, Luis y Felipe","La família Fernández, protagonista de les cartes: Júlia, Rosalía, Anton, Anna, Olga, Jan, Arnau i Felip")+'">'
+  +'<div class="panel"><h2 class="sub">'+L("Antes de empezar","Abans de començar")+'</h2>'+L('<ul class="simple"><li>Para 2 a 8 personas de cualquier edad.</li><li>Cada carta toma unos 10 minutos.</li><li>No hay respuestas correctas o incorrectas.</li><li>Se puede pasar cualquier voto o pregunta.</li><li>Los puntos son de toda la familia: nadie pierde.</li></ul>',
+    '<ul class="simple"><li>Per a 2 a 8 persones de qualsevol edat.</li><li>Cada carta dura uns 10 minuts.</li><li>No hi ha respostes correctes o incorrectes.</li><li>Es pot passar qualsevol vot o pregunta.</li><li>Els punts són de tota la família: ningú no perd.</li></ul>')
+  +'<button class="btn sec" data-a="ayuda" style="margin-top:12px">'+L("Cómo se juega y ajustes de lectura","Com es juga i ajustos de lectura")+'</button></div>'
+  +(INST.tipo?'<div class="panel instalar"><h2 class="sub">'+L("Instálala en este computador","Instal·la-la en aquest ordinador")+'</h2><p>'+L("Queda como una aplicación más de tu Mac o Windows, con su propio ícono y ventana. Funciona sin conexión.","Queda com una aplicació més del teu Mac o Windows, amb la seva icona i finestra. Funciona sense connexió.")+'</p><button class="btn" data-a="instalar" style="margin-top:12px">'+L("Instalar la app","Instal·lar l’app")+'</button><p class="nota" id="aviso-instalar" role="status"></p></div>':'')
+  +'<h2 class="sub">'+L("Elijan un área","Trieu una àrea")+(hechas.length?' · '+hechas.length+L(" de 6 jugadas"," de 6 jugades"):'')+'</h2>'
+  +'<div class="areas">'+AREAS.map((a,k)=>'<button class="area" style="background:'+a.color+';color:'+a.tinta+'" data-a="area" data-k="'+k+'"><span class="j">'+ajuego(a)+'</span><span class="n">'+anom(a)+'</span><span class="c">'+a.cartas.length+L(" cartas"," cartes")+(hechas.includes(a.id)?L(" · ya jugada"," · ja jugada"):'')+'</span>'+(hechas.includes(a.id)?'<span class="hecho" aria-hidden="true">✓</span>':'')+'</button>').join("")+'</div>'
+  +'<button class="btn sec" data-a="sorpresa">'+L("Sorpresa: 3 cartas al azar, unos 30 minutos","Sorpresa: 3 cartes a l’atzar, uns 30 minuts")+'</button>'
+  +(ac.length?'<div class="panel"><h2 class="sub">'+L("Nuestros acuerdos","Els nostres acords")+'</h2><ul class="lista" style="margin-top:8px">'+ac.map(a=>'<li>'+esc(a)+'</li>').join("")+'</ul></div>':'')
+  +'<footer class="pie-inicio"><p class="nota">'+L("Esta app no guarda ni envía datos fuera de este teléfono.","Aquesta app no desa ni envia dades fora d’aquest telèfon.")+'</p>'
+  +'<p class="nota">'+L("Cartas del proyecto PlatFAMs (Miño-Puigcercós et al., 2026), con apoyo de la Facultat d’Educació de la Universitat de Barcelona (TRANSFER 2026).","Cartes del projecte PlatFAMs (Miño-Puigcercós et al., 2026), amb el suport de la Facultat d’Educació de la Universitat de Barcelona (TRANSFER 2026).")+'</p>'
+  +'<img class="logos" src="img/financiacion.png" alt="'+ALT_LOGOS()+'">'
+  +'<button class="btn sec" data-a="creditos">'+L("Créditos, financiación y licencias","Crèdits, finançament i llicències")+'</button></footer></div>';
  },
  jugadores(){
-  const libres=SUGERIDOS.filter(n=>!S.jug.includes(n));
-  return '<nav class="top" aria-label="Navegación"><button class="mini" data-a="otra">← Volver a las áreas</button><button class="mini" data-a="ayuda">Ayuda</button>'+botonMusica()+'</nav>'
-  +'<div class="cuerpo"><div><span class="etq">'+(S.modo==="mix"?"Sorpresa":area().juego+' · '+area().nombre)+'</span></div><h2 tabindex="-1">¿Quiénes juegan?</h2>'
-  +'<p>Anoten a cada persona, de 2 a 8. Pueden escribir un nombre y tocar “Sumar”, o tocar uno de la lista. Para quitar a alguien, toquen su nombre.</p>'
-  +'<div class="chips" role="group" aria-label="Personas anotadas">'+(S.jug.length?S.jug.map((j,k)=>'<button class="chip" data-a="quita" data-k="'+k+'" aria-label="Quitar a '+esc(j)+'">'+esc(j)+'<span class="x" aria-hidden="true">✕</span></button>').join(""):'<span class="nota">Todavía no hay nadie anotado.</span>')+'</div>'
-  +'<form class="fila" id="f-nombre"><label class="sr" for="nombre">Nombre de quien juega</label><input type="text" id="nombre" maxlength="14" placeholder="Nombre" autocomplete="off"><button class="btn" type="submit">Sumar</button></form>'
-  +(libres.length&&S.jug.length<8?'<div class="chips" role="group" aria-label="Nombres sugeridos">'+libres.map(n=>'<button class="chip mas" data-a="pon" data-n="'+n+'">+ '+n+'</button>').join("")+'</div>':'')
-  +'<div class="pie">'+(S.jug.length<2?'<p class="nota centro">Falta anotar al menos '+(2-S.jug.length)+(S.jug.length===1?' persona':' personas')+' para empezar.</p>':'')
-  +'<button class="btn" data-a="partir"'+(S.jug.length<2?" disabled":"")+'>Sacar la primera carta</button></div></div>';
+  const libres=SUGERIDOS().filter(n=>!S.jug.includes(n));
+  return '<nav class="top" aria-label="'+L("Navegación","Navegació")+'"><button class="mini" data-a="otra">← '+L("Volver a las áreas","Tornar a les àrees")+'</button><button class="mini" data-a="ayuda">'+L("Ayuda","Ajuda")+'</button>'+botonIdioma()+botonMusica()+'</nav>'
+  +'<div class="cuerpo"><div><span class="etq">'+(S.modo==="mix"?L("Sorpresa","Sorpresa"):ajuego(area())+' · '+anom(area()))+'</span></div><h2 tabindex="-1">'+L("¿Quiénes juegan?","Qui hi juga?")+'</h2>'
+  +'<p>'+L("Anoten a cada persona, de 2 a 8. Pueden escribir un nombre y tocar “Sumar”, o tocar uno de la lista. Para quitar a alguien, toquen su nombre.","Apunteu cada persona, de 2 a 8. Podeu escriure un nom i tocar “Afegir”, o tocar-ne un de la llista. Per treure algú, toqueu el seu nom.")+'</p>'
+  +'<div class="chips" role="group" aria-label="'+L("Personas anotadas","Persones apuntades")+'">'+(S.jug.length?S.jug.map((j,k)=>'<button class="chip" data-a="quita" data-k="'+k+'" aria-label="'+L("Quitar a ","Treure ")+esc(j)+'">'+esc(j)+'<span class="x" aria-hidden="true">✕</span></button>').join(""):'<span class="nota">'+L("Todavía no hay nadie anotado.","Encara no hi ha ningú apuntat.")+'</span>')+'</div>'
+  +'<form class="fila" id="f-nombre"><label class="sr" for="nombre">'+L("Nombre de quien juega","Nom de qui juga")+'</label><input type="text" id="nombre" maxlength="14" placeholder="'+L("Nombre","Nom")+'" autocomplete="off"><button class="btn" type="submit">'+L("Sumar","Afegir")+'</button></form>'
+  +(libres.length&&S.jug.length<8?'<div class="chips" role="group" aria-label="'+L("Nombres sugeridos","Noms suggerits")+'">'+libres.map(n=>'<button class="chip mas" data-a="pon" data-n="'+n+'">+ '+n+'</button>').join("")+'</div>':'')
+  +'<div class="pie">'+(S.jug.length<2?'<p class="nota centro">'+(S.jug.length===1?L("Falta anotar al menos 1 persona para empezar.","Falta apuntar almenys 1 persona per començar."):L("Falta anotar al menos 2 personas para empezar.","Falta apuntar almenys 2 persones per començar."))+'</p>':'')
+  +'<button class="btn" data-a="partir"'+(S.jug.length<2?" disabled":"")+'>'+L("Sacar la primera carta","Treure la primera carta")+'</button></div></div>';
  },
  situacion(){
   const c=carta();
-  return barra()+'<div class="cuerpo"><article class="carta"><div class="fila-etq"><span class="etq">Situación</span>'+escuchar()+'</div><h2 tabindex="-1">'+c.titulo+'</h2>'
-  +'<img class="ilu" src="'+c.img+'" alt="Ilustración de la carta: '+c.titulo+'">'
+  return barra()+'<div class="cuerpo"><article class="carta"><div class="fila-etq"><span class="etq">'+L("Situación","Situació")+'</span>'+escuchar()+'</div><h2 tabindex="-1">'+c.titulo+'</h2>'
+  +'<img class="ilu" src="'+c.img+'" alt="'+L("Ilustración de la carta: ","Il·lustració de la carta: ")+esc(c.titulo)+'">'
   +'<p class="sit">'+c.sit.split("\n").join('</p><p class="sit">')+'</p>'+personas(c)
-  +'<span class="num">Cartas '+c.n+' · '+area().nombre+'</span></article>'
-  +'<p class="centro">Léanla en voz alta y miren la ilustración. Cuando todos la entiendan, pasen a votar.</p>'
-  +'<div class="pie"><button class="btn" data-a="avotar">Ahora votamos</button><button class="btn sec" data-a="saltavoto">Saltar la votación e ir a las preguntas</button></div></div>';
+  +'<span class="num">'+L("Cartas ","Cartes ")+c.n+' · '+anom(area())+'</span></article>'
+  +'<p class="centro">'+L("Léanla en voz alta y miren la ilustración. Cuando todos la entiendan, pasen a votar.","Llegiu-la en veu alta i mireu la il·lustració. Quan tothom l’entengui, passeu a votar.")+'</p>'
+  +'<div class="pie"><button class="btn" data-a="avotar">'+L("Ahora votamos","Ara votem")+'</button><button class="btn sec" data-a="saltavoto">'+L("Saltar la votación e ir a las preguntas","Saltar la votació i anar a les preguntes")+'</button></div></div>';
  },
  pase(){
-  const j=S.jug[S.votos.length];
-  return barra()+'<div class="cuerpo centro" style="justify-content:center"><p>Voto '+(S.votos.length+1)+' de '+S.jug.length+'</p><h2 tabindex="-1">Pásenle el teléfono a <span class="turno">'+esc(j)+'</span></h2><p>El voto es secreto: que nadie más mire la pantalla. Si '+esc(j)+' necesita ayuda para leer, que elija a alguien de confianza.</p>'
-  +'<div class="pie"><button class="btn" data-a="veo">Soy '+esc(j)+', quiero votar</button></div></div>';
+  const j=esc(S.jug[S.votos.length]);
+  return barra()+'<div class="cuerpo centro" style="justify-content:center"><p>'+L("Voto ","Vot ")+(S.votos.length+1)+L(" de "," de ")+S.jug.length+'</p><h2 tabindex="-1">'+L("Pásenle el teléfono a ","Passeu el telèfon a ")+'<span class="turno">'+j+'</span></h2><p>'
+  +L("El voto es secreto: que nadie más mire la pantalla. Si "+j+" necesita ayuda para leer, que elija a alguien de confianza.","El vot és secret: que ningú més no miri la pantalla. Si "+j+" necessita ajuda per llegir, que triï algú de confiança.")+'</p>'
+  +'<div class="pie"><button class="btn" data-a="veo">'+L("Soy "+j+", quiero votar","Soc "+j+", vull votar")+'</button></div></div>';
  },
  voto(){
   const c=carta();
-  return barra()+'<div class="cuerpo"><div class="fila-etq"><p class="nota">Vota '+esc(S.jug[S.votos.length])+'</p>'+escuchar()+'</div><h2 class="preg" tabindex="-1">'+c.vota+'</h2>'
+  return barra()+'<div class="cuerpo"><div class="fila-etq"><p class="nota">'+L("Vota ","Vota ")+esc(S.jug[S.votos.length])+'</p>'+escuchar()+'</div><h2 class="preg" tabindex="-1">'+c.vota+'</h2>'
   +'<div class="opc">'+c.ops.map((o,k)=>'<button class="op c'+k+'" data-a="vota" data-k="'+k+'"><span aria-hidden="true">'+FORMAS[k]+'</span><span>'+o+'</span></button>').join("")+'</div>'
-  +'<p class="nota centro">No hay respuestas correctas. Toquen una opción.</p><div class="pie"><button class="btn sec" data-a="novota">Prefiero no votar esta vez</button></div></div>';
+  +'<p class="nota centro">'+L("No hay respuestas correctas. Toquen una opción.","No hi ha respostes correctes. Toqueu una opció.")+'</p><div class="pie"><button class="btn sec" data-a="novota">'+L("Prefiero no votar esta vez","Prefereixo no votar aquesta vegada")+'</button></div></div>';
  },
  resultado(){
   const c=carta(),dist=new Set(validos()).size,sin=S.jug.filter((_,x)=>S.votos[x]<0);
   const filas=c.ops.map((o,k)=>{const q=S.jug.filter((_,x)=>S.votos[x]===k);
-    return '<li class="r c'+k+(q.length?"":" cero")+'" style="animation-delay:'+(k*.12)+'s"><span class="t"><span aria-hidden="true" class="fm">'+FORMAS[k]+'</span>'+o+'</span><span class="q">'+(q.length?q.map(n=>'<span>'+esc(n)+'</span>').join(""):'<span>Sin votos</span>')+'</span></li>'}).join("");
-  const premio=dist>1?'<div class="premio">+200 por pensar distinto<small>Hay '+dist+' opiniones en la mesa. De ahí sale la conversación.</small></div>'
-    :'<div class="premio">+100 por coincidir<small>Votaron lo mismo. ¿Por las mismas razones?</small></div>';
-  return barra()+'<div class="cuerpo"><h2 tabindex="-1">Así votó la familia</h2><p>'+c.vota+'</p><ul class="res">'+filas+'</ul>'
-  +(sin.length?'<p class="nota">No votaron esta vez: '+sin.map(esc).join(", ")+'.</p>':'')+premio
-  +'<div class="pie"><button class="btn" data-a="apregs">Conversar las preguntas</button></div></div>';
+    return '<li class="r c'+k+(q.length?"":" cero")+'" style="animation-delay:'+(k*.12)+'s"><span class="t"><span aria-hidden="true" class="fm">'+FORMAS[k]+'</span>'+o+'</span><span class="q">'+(q.length?q.map(n=>'<span>'+esc(n)+'</span>').join(""):'<span>'+L("Sin votos","Sense vots")+'</span>')+'</span></li>'}).join("");
+  const premio=dist>1?'<div class="premio">'+L("+200 por pensar distinto","+200 per pensar diferent")+'<small>'+L("Hay "+dist+" opiniones en la mesa. De ahí sale la conversación.","Hi ha "+dist+" opinions a la taula. D’aquí surt la conversa.")+'</small></div>'
+    :'<div class="premio">'+L("+100 por coincidir","+100 per coincidir")+'<small>'+L("Votaron lo mismo. ¿Por las mismas razones?","Heu votat el mateix. Per les mateixes raons?")+'</small></div>';
+  return barra()+'<div class="cuerpo"><h2 tabindex="-1">'+L("Así votó la familia","Així ha votat la família")+'</h2><p>'+c.vota+'</p><ul class="res">'+filas+'</ul>'
+  +(sin.length?'<p class="nota">'+L("No votaron esta vez: ","No han votat aquesta vegada: ")+sin.map(esc).join(", ")+'.</p>':'')+premio
+  +'<div class="pie"><button class="btn" data-a="apregs">'+L("Conversar las preguntas","Conversar les preguntes")+'</button></div></div>';
  },
  pregunta(){
   const c=carta(),p=c.pregs[S.q];
-  return barra()+'<div class="cuerpo"><article class="carta conq"><div class="fila-etq"><span class="etq">Pregunta '+(S.q+1)+' de '+c.pregs.length+'</span>'+escuchar()+'</div>'
+  return barra()+'<div class="cuerpo"><article class="carta conq"><div class="fila-etq"><span class="etq">'+L("Pregunta ","Pregunta ")+(S.q+1)+L(" de "," de ")+c.pregs.length+'</span>'+escuchar()+'</div>'
   +'<h2 class="preg'+(p.length>150?" larga":"")+'" tabindex="-1">'+p+'</h2>'+(A.tiempo?'<div class="reloj" aria-hidden="true"><i></i></div>':'')
-  +(c.imgq?'<img class="ilu" src="'+c.imgq+'" alt="Ilustración de la carta de preguntas: '+c.titulo+'">':'')+'</article>'
-  +'<div class="centro"><p>Parte respondiendo</p><p class="turno" id="ruleta" aria-live="polite">'+esc(S.empieza||"…")+'</p>'
-  +'<p class="nota">Después opina el resto, de a una persona. Se puede responder hablando, con un ejemplo o con un gesto.</p><button class="mini" data-a="otrapersona">Que parta otra persona</button></div>'
-  +'<div class="pie"><button class="btn" data-a="hablado">Ya lo conversamos (+100)</button><button class="btn sec" data-a="salta">Pasar esta pregunta</button></div></div>';
+  +(c.imgq?'<img class="ilu" src="'+c.imgq+'" alt="'+L("Ilustración de la carta de preguntas: ","Il·lustració de la carta de preguntes: ")+esc(c.titulo)+'">':'')+'</article>'
+  +'<div class="centro"><p>'+L("Parte respondiendo","Comença responent")+'</p><p class="turno" id="ruleta" aria-live="polite">'+esc(S.empieza||"…")+'</p>'
+  +'<p class="nota">'+L("Después opina el resto, de a una persona. Se puede responder hablando, con un ejemplo o con un gesto.","Després opina la resta, d’una en una. Es pot respondre parlant, amb un exemple o amb un gest.")+'</p><button class="mini" data-a="otrapersona">'+L("Que parta otra persona","Que comenci una altra persona")+'</button></div>'
+  +'<div class="pie"><button class="btn" data-a="hablado">'+L("Ya lo conversamos (+100)","Ja ho hem parlat (+100)")+'</button><button class="btn sec" data-a="salta">'+L("Pasar esta pregunta","Passar aquesta pregunta")+'</button></div></div>';
  },
  acuerdo(){
-  return barra()+'<div class="cuerpo"><h2 tabindex="-1">¿Quedamos en algo?</h2><p>Un acuerdo es algo concreto que la familia decide hacer en la casa. Vale 300 puntos, escrito o de palabra. Si lo escriben, queda guardado solo en este teléfono.</p>'
-  +'<label for="txt-acuerdo"><b>Nuestro acuerdo</b> (opcional)</label><textarea id="txt-acuerdo" maxlength="200" placeholder="Por ejemplo: pedimos permiso antes de subir una foto de otra persona"></textarea><p class="nota" id="aviso-acuerdo" role="status"></p>'
-  +'<div class="pie"><button class="btn" data-a="acuerda">Guardar el acuerdo escrito</button><button class="btn sec" data-a="depalabra">Lo acordamos de palabra</button><button class="btn sec" data-a="sinacuerdo">Hoy no hay acuerdo, y está bien</button></div></div>';
+  return barra()+'<div class="cuerpo"><h2 tabindex="-1">'+L("¿Quedamos en algo?","Ens posem d’acord en alguna cosa?")+'</h2><p>'+L("Un acuerdo es algo concreto que la familia decide hacer en la casa. Vale 300 puntos, escrito o de palabra. Si lo escriben, queda guardado solo en este teléfono.","Un acord és una cosa concreta que la família decideix fer a casa. Val 300 punts, escrit o de paraula. Si l’escriviu, queda desat només en aquest telèfon.")+'</p>'
+  +'<label for="txt-acuerdo"><b>'+L("Nuestro acuerdo","El nostre acord")+'</b> '+L("(opcional)","(opcional)")+'</label><textarea id="txt-acuerdo" maxlength="200" placeholder="'+L("Por ejemplo: pedimos permiso antes de subir una foto de otra persona","Per exemple: demanem permís abans de penjar una foto d’una altra persona")+'"></textarea><p class="nota" id="aviso-acuerdo" role="status"></p>'
+  +'<div class="pie"><button class="btn" data-a="acuerda">'+L("Guardar el acuerdo escrito","Desar l’acord escrit")+'</button><button class="btn sec" data-a="depalabra">'+L("Lo acordamos de palabra","Ho acordem de paraula")+'</button><button class="btn sec" data-a="sinacuerdo">'+L("Hoy no hay acuerdo, y está bien","Avui no hi ha acord, i està bé")+'</button></div></div>';
  },
  final(){
-  const m=S.medallas.map(x=>'<li class="chip">'+x+'</li>').join("");
-  return '<div class="cuerpo centro"><div><span class="etq">'+(S.modo==="mix"?"Sorpresa":AREAS[S.orden[0][0]].nombre)+' · terminado</span></div><h2 tabindex="-1">Puntos de la familia</h2><p class="grande" id="cuenta" aria-label="'+S.pts+' puntos">0</p>'
-  +(m?'<ul class="chips" style="justify-content:center;list-style:none;padding:0" aria-label="Medallas">'+m+'</ul>':'')
-  +(S.acuerdos.length?'<div class="panel" style="text-align:left"><h2 class="sub">Acuerdos de hoy</h2><ul class="lista" style="margin-top:8px">'+S.acuerdos.map(a=>'<li>'+esc(a)+'</li>').join("")+'</ul></div>'
-    :'<p>Hoy no quedaron acuerdos escritos. Conversar ya cuenta.</p>')
-  +'<div class="panel" style="text-align:left"><h2 class="sub">Resumen de la partida</h2><p class="nota">No incluye los nombres de quienes jugaron. Queda solo en este teléfono, salvo que ustedes lo copien y lo compartan.</p>'
-  +'<pre class="resumen" id="resumen" tabindex="0">'+esc(resumen())+'</pre><button class="btn sec" data-a="copia">Copiar el resumen</button></div>'
-  +(FORMS_URL?'<div class="panel" style="text-align:left"><h2 class="sub">¿Nos cuentan cómo les fue?</h2><p>Es voluntario. Un cuestionario breve de la Universitat de Barcelona, sin nombres, para mejorar el juego. Si quieren, copien el resumen y péguenlo en la primera pregunta.</p>'
-    +'<a class="btn" style="margin-top:12px;text-align:center;text-decoration:none" href="'+FORMS_URL+'" target="_blank" rel="noopener">Abrir el cuestionario</a></div>':'')
-  +'<div class="pie"><button class="btn" data-a="otra">Volver al inicio y elegir otra área</button></div></div>';
+  const m=S.medallas.map(x=>'<li class="chip">'+(MED[x]?L(MED[x][0],MED[x][1]):esc(x))+'</li>').join("");
+  return '<div class="cuerpo centro"><div><span class="etq">'+(S.modo==="mix"?L("Sorpresa","Sorpresa"):anom(AREAS[S.orden[0][0]]))+L(" · terminado"," · acabat")+'</span></div><div class="botones" style="justify-content:center">'+botonIdioma()+'</div><h2 tabindex="-1">'+L("Puntos de la familia","Punts de la família")+'</h2><p class="grande" id="cuenta" aria-label="'+S.pts+L(" puntos"," punts")+'">0</p>'
+  +(m?'<ul class="chips" style="justify-content:center;list-style:none;padding:0" aria-label="'+L("Medallas","Medalles")+'">'+m+'</ul>':'')
+  +(S.acuerdos.length?'<div class="panel" style="text-align:left"><h2 class="sub">'+L("Acuerdos de hoy","Acords d’avui")+'</h2><ul class="lista" style="margin-top:8px">'+S.acuerdos.map(a=>'<li>'+esc(a)+'</li>').join("")+'</ul></div>'
+    :'<p>'+L("Hoy no quedaron acuerdos escritos. Conversar ya cuenta.","Avui no hi ha acords escrits. Conversar ja compta.")+'</p>')
+  +'<div class="panel" style="text-align:left"><h2 class="sub">'+L("Resumen de la partida","Resum de la partida")+'</h2><p class="nota">'+L("No incluye los nombres de quienes jugaron. Queda solo en este teléfono, salvo que ustedes lo copien y lo compartan.","No inclou els noms de qui ha jugat. Queda només en aquest telèfon, llevat que el copieu i el compartiu.")+'</p>'
+  +'<pre class="resumen" id="resumen" tabindex="0">'+esc(resumen())+'</pre><button class="btn sec" data-a="copia">'+L("Copiar el resumen","Copiar el resum")+'</button></div>'
+  +(FORMS_URL?'<div class="panel" style="text-align:left"><h2 class="sub">'+L("¿Nos cuentan cómo les fue?","Ens expliqueu com us ha anat?")+'</h2><p>'+L("Es voluntario. Un cuestionario breve de la Universitat de Barcelona, sin nombres, para mejorar el juego. Si quieren, copien el resumen y péguenlo en la primera pregunta.","És voluntari. Un qüestionari breu de la Universitat de Barcelona, sense noms, per millorar el joc. Si voleu, copieu el resum i enganxeu-lo a la primera pregunta.")+'</p>'
+    +'<a class="btn" style="margin-top:12px;text-align:center;text-decoration:none" href="'+FORMS_URL+'" target="_blank" rel="noopener">'+L("Abrir el cuestionario","Obrir el qüestionari")+'</a></div>':'')
+  +'<div class="pie"><button class="btn" data-a="otra">'+L("Volver al inicio y elegir otra área","Tornar a l’inici i triar una altra àrea")+'</button></div></div>';
  }
 };
+const AUTORIA="Raquel Miño-Puigcercós, Ola Erstad, Kristinn Hegna, Maja Nordtug, Victoria de Leon Born, Paula Lozano-Mulet, Mariya Stoilova, Bogumiła Mateja-Jaworska, Sonia Livingstone, Moisès Esteban-Guitart, Pau Jarne Soler, Marisa Lyons Longworth, Judith Jacovkis, Gustavo Herrera-Urízar, Carlota Rodríguez-Silva, Veronika Kalmus, Signe Opermann, Elisabeth Staksrud, Seffetullah Kuldas, Oana Negru-Subtirica, Pablo Rivera, Lluís Parcerisa, Sara Malo Cerrato, Antonio Membrive Ruiz, Mariana Largo, Andra Siibak, Jo Fosby Jaavall, Oana Benga, Maris Männiste, Kaidi Meus, Georgiana Susa-Erdogan, Ionut Mone, Flavia Medrea, Iulia Domocus, Xavier Giró Gràcia ";
 const D={
  ayuda(){
   const seg=(k,ops)=>'<div class="seg" role="group">'+ops.map((o,x)=>'<button data-a="aj" data-k="'+k+'" data-v="'+x+'" aria-pressed="'+(Number(A[k])===x)+'">'+o+'</button>').join("")+'</div>';
-  return '<h2 tabindex="-1">Cómo se juega</h2>'+comoSeJuega()
-  +'<h3>Reglas de la mesa</h3><ul class="simple"><li>No hay respuestas correctas o incorrectas.</li><li>Se escucha sin interrumpir.</li><li>Nadie está obligado a responder: se puede pasar.</li><li>Los botones “Atrás” e “Inicio” están arriba en todas las pantallas.</li></ul>'
-  +'<h3>Instalar en Mac o Windows</h3><ul class="simple"><li>En Chrome o Edge: botón “Instalar” en la barra de direcciones, o en el menú, “Instalar Hablemos”.</li><li>En Safari (Mac): menú Archivo, “Añadir al Dock”.</li><li>En el teléfono: “Añadir a pantalla de inicio”.</li></ul>'
-  +'<h3>Ajustes de lectura</h3><p id="l-letra">Tamaño de la letra</p>'+seg("letra",["Normal","Grande","Muy grande"])
-  +'<p>Barra de tiempo en las preguntas (dura un minuto y medio, y no quita puntos)</p>'+seg("tiempo",["Sin barra","Con barra"])
-  +'<p>Sonidos al tocar los botones y al sumar puntos</p>'+seg("sonido",["Sin sonido","Con sonido"])
-  +'<p>Música de fondo (una melodía para el inicio y otra para cada área; baja de volumen al conversar y se detiene con “Escuchar”)</p>'+seg("musica",["Sin música","Con música"])
-  +(puedeHablar?'<p class="nota">El botón “Escuchar” lee en voz alta la situación, la votación o la pregunta.</p>':'')
-  +'<button class="btn" data-a="cierra">Entendido</button><button class="btn sec" data-a="creditos">Créditos, financiación y licencias</button>';
+  return '<h2 tabindex="-1">'+L("Cómo se juega","Com es juga")+'</h2>'+comoSeJuega()
+  +'<h3>'+L("Reglas de la mesa","Normes de la taula")+'</h3>'+L('<ul class="simple"><li>No hay respuestas correctas o incorrectas.</li><li>Se escucha sin interrumpir.</li><li>Nadie está obligado a responder: se puede pasar.</li><li>Los botones “Atrás” e “Inicio” están arriba en todas las pantallas.</li></ul>',
+    '<ul class="simple"><li>No hi ha respostes correctes o incorrectes.</li><li>S’escolta sense interrompre.</li><li>Ningú no està obligat a respondre: es pot passar.</li><li>Els botons “Enrere” i “Inici” són a dalt a totes les pantalles.</li></ul>')
+  +'<h3>'+L("Idioma","Idioma")+'</h3><div class="seg" role="group"><button data-a="idioma" data-v="es" lang="es" aria-pressed="'+(LG==="es")+'">Castellano</button><button data-a="idioma" data-v="ca" lang="ca" aria-pressed="'+(LG==="ca")+'">Català</button></div>'
+  +'<h3>'+L("Instalar en Mac o Windows","Instal·lar en Mac o Windows")+'</h3>'+L('<ul class="simple"><li>En Chrome o Edge: botón “Instalar” en la barra de direcciones, o en el menú, “Instalar Hablemos”.</li><li>En Safari (Mac): menú Archivo, “Añadir al Dock”.</li><li>En el teléfono: “Añadir a pantalla de inicio”.</li></ul>',
+    '<ul class="simple"><li>A Chrome o Edge: botó “Instal·lar” a la barra d’adreces, o al menú, “Instal·lar Hablemos”.</li><li>A Safari (Mac): menú Arxiu, “Afegeix al Dock”.</li><li>Al telèfon: “Afegeix a la pantalla d’inici”.</li></ul>')
+  +'<h3>'+L("Ajustes de lectura","Ajustos de lectura")+'</h3><p id="l-letra">'+L("Tamaño de la letra","Mida de la lletra")+'</p>'+seg("letra",L(["Normal","Grande","Muy grande"],["Normal","Gran","Molt gran"]))
+  +'<p>'+L("Barra de tiempo en las preguntas (dura un minuto y medio, y no quita puntos)","Barra de temps a les preguntes (dura un minut i mig, i no treu punts)")+'</p>'+seg("tiempo",L(["Sin barra","Con barra"],["Sense barra","Amb barra"]))
+  +'<p>'+L("Sonidos al tocar los botones y al sumar puntos","Sons en tocar els botons i en sumar punts")+'</p>'+seg("sonido",L(["Sin sonido","Con sonido"],["Sense so","Amb so"]))
+  +'<p>'+L("Música de fondo (una melodía para el inicio y otra para cada área; baja de volumen al conversar y se detiene con “Escuchar”)","Música de fons (una melodia per a l’inici i una altra per a cada àrea; baixa de volum quan converseu i s’atura amb “Escoltar”)")+'</p>'+seg("musica",L(["Sin música","Con música"],["Sense música","Amb música"]))
+  +(puedeHablar?'<p class="nota">'+L("El botón “Escuchar” lee en voz alta la situación, la votación o la pregunta.","El botó “Escoltar” llegeix en veu alta la situació, la votació o la pregunta. En català, cal que el dispositiu tingui una veu catalana.")+'</p>':'')
+  +'<button class="btn" data-a="cierra">'+L("Entendido","Entesos")+'</button><button class="btn sec" data-a="creditos">'+L("Créditos, financiación y licencias","Crèdits, finançament i llicències")+'</button>';
  },
  creditos(){
+  if(LG==="ca")return '<h2 tabindex="-1">Crèdits</h2>'
+  +'<h3>Aquesta app</h3><p>Parlem-ne és la versió digital de les cartes conversacionals de PlatFAMs, per jugar en família sense el joc imprès. Desenvolupament de l’app: Gustavo Herrera Urízar (Universitat de Barcelona). Programada amb l’ajuda de Claude, un assistent d’intel·ligència artificial d’Anthropic; el contingut de les cartes és el del joc original.</p>'
+  +'<h3>El projecte PlatFAMs</h3><p>Les cartes estan basades en situacions recollides de famílies de Noruega, Espanya, el Regne Unit, Estònia, Romania i Polònia, i van sorgir del treball de camp realitzat dins del projecte de recerca europeu PlatFAMs (Platforming Families: Tracing digital transformations in everyday life across generations). Més informació a <a href="https://digitalfamilies.eu/" target="_blank" rel="noopener">digitalfamilies.eu</a>.</p>'
+  +'<h3>Autoria de les cartes</h3><p class="chica">'+AUTORIA+'i Ole Smørdal.</p>'
+  +'<h3>Universitats</h3><ul class="simple chica"><li><b>Universitat d’Oslo</b> (Noruega). Departament d’Educació i Departament de Mitjans i Comunicació.</li><li><b>Escola d’Economia i Ciències Polítiques de Londres</b> (Regne Unit). Departament de Mitjans i Comunicació.</li><li><b>Universitat de Barcelona</b> (Catalunya, Espanya). Departament de Didàctica i Organització Educativa.</li><li><b>Universitat de Girona</b> (Catalunya, Espanya). Institut d’Investigació Educativa.</li><li><b>Universitat de Tartu</b> (Estònia). Departament de Psicologia.</li><li><b>Universitat Babeș-Bolyai</b> (Romania). Departament de Psicologia.</li><li><b>Universitat Adam Mickiewicz</b> (Polònia). Departament de Teoria i Recerca en Pràctiques Socials.</li></ul>'
+  +'<h3>Disseny de les cartes</h3><p>Sarc Estudi Creatiu (disseny i direcció creativa).</p>'
+  +'<h3>Finançament</h3><p class="chica">Aquest projecte ha rebut finançament de la Unió Europea, programa de recerca i innovació Horizon 2020 sota l’acord de subvenció núm. 101004509. El projecte PCI2022-135025-2 ha rebut finançament del MCIN/AEI/10.13039/501100011033 i de la Unió Europea “NextGenerationEU”/PRTR. Aquest material forma part de les activitats de transferència del projecte PlatFAMs (PCI2022-135025-2), finançat pel MCIN/AEI/10.13039/501100011033 i per la Unió Europea “NextGenerationEU”/PRTR, i ha comptat addicionalment amb el suport de la Facultat d’Educació de la Universitat de Barcelona a través de la convocatòria TRANSFER 2026.</p>'
+  +'<img class="logos" src="img/financiacion.png" alt="'+ALT_LOGOS()+'">'
+  +'<p class="chica">Les opinions i els punts de vista expressats són només dels autors i autores i no reflecteixen necessàriament els de la Unió Europea ni els de l’Agència Executiva del Consell Europeu de Recerca. Ni la Unió Europea ni l’autoritat que concedeix l’ajut no en poden ser responsables.</p>'
+  +'<h3>Llicències</h3><ul class="simple chica">'
+  +'<li><b>Textos i il·lustracions de les cartes:</b> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca" target="_blank" rel="noopener">Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)</a>. Es poden copiar i adaptar citant-ne la font, sense finalitats comercials i amb la mateixa llicència.</li>'
+  +'<li><b>Títols de les situacions i votacions</b>, afegits per l’app: són una adaptació de les cartes i es comparteixen amb la mateixa llicència CC BY-NC-SA 4.0.</li>'
+  +'<li><b>Codi de l’app:</b> © 2026 Gustavo Herrera Urízar (Universitat de Barcelona), amb <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">llicència GNU GPL versió 3 o posterior</a>. Es pot utilitzar, estudiar, modificar i redistribuir, sempre amb la mateixa llicència.</li>'
+  +'<li><b>Tipografies:</b> Baloo 2 i Atkinson Hyperlegible, amb llicència SIL Open Font License 1.1.</li>'
+  +'<li><b>Música i sons:</b> generats per la mateixa app.</li></ul>'
+  +'<h3>Com citar</h3><p class="chica">Miño-Puigcercós, R., et al. (2026). <i>Targetes familiars conversacionals de PlatFAMs: Parlem-ne</i>. Dipòsit Digital de la Universitat de Barcelona. <a href="https://hdl.handle.net/2445/231126" target="_blank" rel="noopener">https://hdl.handle.net/2445/231126</a></p>'
+  +'<p class="chica">Herrera Urízar, G. (2026). <i>Hablemos / Parlem-ne: cartes conversacionals</i> [Aplicació web]. Universitat de Barcelona. <a href="https://gustavoh13.github.io/Proyecto1/cartastransfer/" target="_blank" rel="noopener">https://gustavoh13.github.io/Proyecto1/cartastransfer/</a></p>'
+  +'<button class="btn" data-a="cierra">Tancar</button>';
   return '<h2 tabindex="-1">Créditos</h2>'
   +'<h3>Esta app</h3><p>Hablemos es la versión digital de las cartas conversacionales de PlatFAMs, para jugar en familia sin el mazo impreso. Desarrollo de la app: Gustavo Herrera Urízar (Universitat de Barcelona). Programada con ayuda de Claude, un asistente de inteligencia artificial de Anthropic; el contenido de las cartas es el del mazo original.</p>'
   +'<h3>El proyecto PlatFAMs</h3><p>PlatFAMs (Platforming Families: tracing digital transformations in everyday life across generations) estudió cómo viven las plataformas digitales familias de tres generaciones en Noruega, Reino Unido, España, Estonia, Rumanía y Polonia. Las situaciones de las cartas salen de lo que contaron esas familias. Más información en <a href="https://digitalfamilies.eu/" target="_blank" rel="noopener">digitalfamilies.eu</a>.</p>'
-  +'<h3>Autoría de las cartas</h3><p class="chica">Raquel Miño-Puigcercós, Ola Erstad, Kristinn Hegna, Maja Nordtug, Victoria de Leon Born, Paula Lozano-Mulet, Mariya Stoilova, Bogumiła Mateja-Jaworska, Sonia Livingstone, Moisès Esteban-Guitart, Pau Jarne Soler, Marisa Lyons Longworth, Judith Jacovkis, Gustavo Herrera-Urízar, Carlota Rodríguez-Silva, Veronika Kalmus, Signe Opermann, Elisabeth Staksrud, Seffetullah Kuldas, Oana Negru-Subtirica, Pablo Rivera, Lluís Parcerisa, Sara Malo Cerrato, Antonio Membrive Ruiz, Mariana Largo, Andra Siibak, Jo Fosby Jaavall, Oana Benga, Maris Männiste, Kaidi Meus, Georgiana Susa-Erdogan, Ionut Mone, Flavia Medrea, Iulia Domocus, Xavier Giró Gràcia y Ole Smørdal.</p>'
+  +'<h3>Autoría de las cartas</h3><p class="chica">'+AUTORIA+'y Ole Smørdal.</p>'
   +'<h3>Universidades</h3><ul class="simple chica"><li><b>Universidad de Oslo</b> (Noruega). Departamento de Educación y Departamento de Medios y Comunicación.</li><li><b>Escuela de Economía y Ciencias Políticas de Londres</b> (Reino Unido). Departamento de Medios y Comunicación.</li><li><b>Universidad de Barcelona</b> (Cataluña, España). Departamento de Didáctica y Organización Educativa.</li><li><b>Universidad de Girona</b> (Cataluña, España). Instituto de Investigación Educativa.</li><li><b>Universidad de Tartu</b> (Estonia). Departamento de Psicología.</li><li><b>Universidad Babeș-Bolyai</b> (Rumanía). Departamento de Psicología.</li><li><b>Universidad Adam Mickiewicz</b> (Polonia). Departamento de Teoría e Investigación en Prácticas Sociales.</li></ul>'
   +'<h3>Diseño de las cartas</h3><p>Sarc Estudio Creativo (diseño y dirección creativa).</p>'
   +'<h3>Financiación</h3><p class="chica">Este material forma parte de las actividades de transferencia del proyecto PlatFAMs (PCI2022-135025-2), financiado por el MCIN/AEI/10.13039/501100011033 y por la Unión Europea “NextGenerationEU”/PRTR, y ha contado además con el apoyo de la Facultat d’Educació de la Universitat de Barcelona a través de la convocatoria TRANSFER 2026.</p>'
-  +'<img class="logos" src="img/financiacion.png" alt="Logos de financiación: Ministerio de Ciencia, Innovación y Universidades; Financiado por la Unión Europea, NextGenerationEU; Plan de Recuperación, Transformación y Resiliencia; Agencia Estatal de Investigación">'
+  +'<img class="logos" src="img/financiacion.png" alt="'+ALT_LOGOS()+'">'
   +'<p class="chica">Las opiniones y puntos de vista expresados son solo de los autores y autoras y no reflejan necesariamente los de la Unión Europea ni los de la Agencia Ejecutiva del Consejo Europeo de Investigación. Ni la Unión Europea ni la autoridad que concede la ayuda pueden ser responsables de ellos.</p>'
   +'<h3>Licencias</h3><ul class="simple chica">'
   +'<li><b>Textos e ilustraciones de las cartas:</b> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es" target="_blank" rel="noopener">Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)</a>. Se pueden copiar y adaptar citando la fuente, sin fines comerciales y con la misma licencia.</li>'
@@ -559,15 +1126,16 @@ const D={
   +'<li><b>Tipografías:</b> Baloo 2 y Atkinson Hyperlegible, con licencia SIL Open Font License 1.1.</li>'
   +'<li><b>Música y sonidos:</b> generados por la propia app.</li></ul>'
   +'<h3>Cómo citar</h3><p class="chica">Miño-Puigcercós, R., et al. (2026). <i>Tarjetas familiares conversacionales de PlatFAMs: Hablemos</i>. Dipòsit Digital de la Universitat de Barcelona. <a href="https://hdl.handle.net/2445/231128" target="_blank" rel="noopener">https://hdl.handle.net/2445/231128</a></p>'
-  +'<p class="chica">Herrera Urízar, G. (2026). <i>Hablemos: cartas conversacionales</i> [Aplicación web]. Universitat de Barcelona. <a href="https://gustavoh13.github.io/Proyecto1/cartastransfer/" target="_blank" rel="noopener">https://gustavoh13.github.io/Proyecto1/cartastransfer/</a></p>'
+  +'<p class="chica">Herrera Urízar, G. (2026). <i>Hablemos / Parlem-ne: cartas conversacionales</i> [Aplicación web]. Universitat de Barcelona. <a href="https://gustavoh13.github.io/Proyecto1/cartastransfer/" target="_blank" rel="noopener">https://gustavoh13.github.io/Proyecto1/cartastransfer/</a></p>'
   +'<button class="btn" data-a="cierra">Cerrar</button>';
  },
  salir(){
-  return '<h2 tabindex="-1">¿Volver al inicio?</h2><p>Se termina esta partida y se pierden sus puntos. Los acuerdos que ya guardaron se mantienen.</p>'
-  +'<button class="btn" data-a="cierra">Seguir jugando</button><button class="btn sec" data-a="otra">Sí, volver al inicio</button>';
+  return '<h2 tabindex="-1">'+L("¿Volver al inicio?","Tornar a l’inici?")+'</h2><p>'+L("Se termina esta partida y se pierden sus puntos. Los acuerdos que ya guardaron se mantienen.","S’acaba aquesta partida i se’n perden els punts. Els acords que ja heu desat es mantenen.")+'</p>'
+  +'<button class="btn" data-a="cierra">'+L("Seguir jugando","Continuar jugant")+'</button><button class="btn sec" data-a="otra">'+L("Sí, volver al inicio","Sí, tornar a l’inici")+'</button>';
  }
 };
 function pinta(foco){
+  idioma();
   const jugando=S.orden.length&&S.pantalla!=="inicio";
   const ar=jugando&&!(S.modo==="mix"&&(S.pantalla==="jugadores"||S.pantalla==="final"))?area():AREAS[2];
   app.style.setProperty("--area",ar.color);app.style.setProperty("--area-tinta",ar.tinta);
@@ -578,10 +1146,10 @@ function pinta(foco){
   if(foco){const h=app.querySelector("h1,h2");if(h)h.focus({preventScroll:true})}
   musica();
 }
-function abre(v){velo=v;calla();capa.innerHTML='<div class="velo"><div class="dialogo" role="dialog" aria-modal="true" aria-label="'+({ayuda:"Ayuda y ajustes",creditos:"Créditos, financiación y licencias",salir:"Confirmar salida"})[v]+'">'+D[v]()+'</div></div>';
+function abre(v){velo=v;calla();capa.innerHTML='<div class="velo"><div class="dialogo" role="dialog" aria-modal="true" aria-label="'+({ayuda:L("Ayuda y ajustes","Ajuda i ajustos"),creditos:L("Créditos, financiación y licencias","Crèdits, finançament i llicències"),salir:L("Confirmar salida","Confirmar la sortida")})[v]+'">'+D[v]()+'</div></div>';
   app.inert=true;const h=capa.querySelector("h2");if(h)h.focus()}
 function cierra(){velo="";capa.innerHTML="";app.inert=false;const h=app.querySelector("h1,h2");if(h)h.focus({preventScroll:true})}
-function agrega(n){n=n.trim();if(!n||S.jug.length>=8||S.jug.includes(n))return;S.jug.push(n);suena("suma");voz.textContent=n+" se suma al juego.";pinta();const i=document.getElementById("nombre");if(i)i.focus()}
+function agrega(n){n=n.trim();if(!n||S.jug.length>=8||S.jug.includes(n))return;S.jug.push(n);suena("suma");voz.textContent=n+L(" se suma al juego."," s’afegeix al joc.");pinta();const i=document.getElementById("nombre");if(i)i.focus()}
 function gira(){
   const el=document.getElementById("ruleta");let k=0;
   const otros=S.jug.filter(j=>j!==el.dataset.antes),fin=(otros.length?otros:S.jug)[Math.floor(Math.random()*(otros.length||S.jug.length))];
@@ -614,30 +1182,31 @@ function nueva(modo,k){
 function cierraVoto(){
   const v=validos();
   if(!v.length){premio("c"+S.i+"v",0);S.q=0;S.empieza="";ir("pregunta");return}
-  const distinto=new Set(v).size>1;if(distinto)medalla("Opiniones distintas");
-  premio("c"+S.i+"v",50*v.length+(distinto?200:100),"Votación terminada.");ir("resultado");setTimeout(()=>suena("resultado"),260);
+  const distinto=new Set(v).size>1;if(distinto)medalla("dist");
+  premio("c"+S.i+"v",50*v.length+(distinto?200:100),L("Votación terminada.","Votació acabada."));ir("resultado");setTimeout(()=>suena("resultado"),260);
 }
 function anota(){ /* registro de la carta recién jugada, sin nombres de personas */
   const c=carta(),v=validos();let hab=0;
   c.pregs.forEach((_,q)=>{if(S.prem["c"+S.i+"q"+q])hab++});
-  S.reg.push({n:c.n,titulo:c.titulo,area:area().nombre,vota:c.vota,votos:c.ops.map((o,k)=>[o,v.filter(x=>x===k).length]),sin:S.votos.length?S.votos.length-v.length:S.jug.length,hab:hab,de:c.pregs.length,ac:S.tipoAc});
+  S.reg.push({k:par(),votos:c.ops.map((o,k)=>v.filter(x=>x===k).length),sin:S.votos.length?S.votos.length-v.length:S.jug.length,hab:hab,de:c.pregs.length,ac:S.tipoAc});
 }
-function resumen(){
-  const f=new Date(),L=["Hablemos: resumen de la partida","Fecha: "+f.getDate()+"/"+(f.getMonth()+1)+"/"+f.getFullYear(),
-    "Área: "+(S.modo==="mix"?"Sorpresa (cartas de varias áreas)":AREAS[S.orden[0][0]].nombre),"Personas que jugaron: "+S.jug.length,""];
-  S.reg.forEach(r=>{L.push("Cartas "+r.n+" ("+r.area+"): "+r.titulo);
-    L.push("  Votación “"+r.vota+"”: "+(r.sin===S.jug.length?"no se votó":r.votos.map(x=>x[0]+" "+x[1]).join("; ")+(r.sin?"; sin votar "+r.sin:"")));
-    L.push("  Preguntas conversadas: "+r.hab+" de "+r.de);
-    L.push("  Acuerdo: "+({escrito:"sí, escrito",palabra:"sí, de palabra",no:"no"})[r.ac]);});
-  L.push("");if(S.acuerdos.length){L.push("Acuerdos escritos:");S.acuerdos.forEach(a=>L.push("  • "+a))}
-  L.push("Puntos de la familia: "+S.pts);
-  return L.join("\n");
+function resumen(){ /* se arma en el idioma activo, a partir de lo registrado */
+  const f=new Date(),Lr=[L("Hablemos: resumen de la partida","Parlem-ne: resum de la partida"),L("Fecha: ","Data: ")+f.getDate()+"/"+(f.getMonth()+1)+"/"+f.getFullYear(),
+    L("Área: ","Àrea: ")+(S.modo==="mix"?L("Sorpresa (cartas de varias áreas)","Sorpresa (cartes de diverses àrees)"):anom(AREAS[S.orden[0][0]])),L("Personas que jugaron: ","Persones que han jugat: ")+S.jug.length,""];
+  S.reg.forEach(r=>{const a=AREAS[r.k[0]],c=cc(a.cartas[r.k[1]]);
+    Lr.push(L("Cartas ","Cartes ")+c.n+" ("+anom(a)+"): "+c.titulo);
+    Lr.push(L("  Votación “","  Votació “")+c.vota+"”: "+(r.sin===S.jug.length?L("no se votó","no s’ha votat"):c.ops.map((o,k)=>o+" "+r.votos[k]).join("; ")+(r.sin?L("; sin votar ","; sense votar ")+r.sin:"")));
+    Lr.push(L("  Preguntas conversadas: ","  Preguntes conversades: ")+r.hab+L(" de "," de ")+r.de);
+    Lr.push(L("  Acuerdo: ","  Acord: ")+({escrito:L("sí, escrito","sí, escrit"),palabra:L("sí, de palabra","sí, de paraula"),no:"no"})[r.ac]);});
+  Lr.push("");if(S.acuerdos.length){Lr.push(L("Acuerdos escritos:","Acords escrits:"));S.acuerdos.forEach(a=>Lr.push("  • "+a))}
+  Lr.push(L("Puntos de la familia: ","Punts de la família: ")+S.pts);
+  return Lr.join("\n");
 }
 function tras(){ /* después del acuerdo: siguiente carta o cierre */
   anota();S.tipoAc="no";
   if(S.i<S.orden.length-1){S.i++;S.votos=[];S.q=0;S.empieza="";ir("situacion");return}
-  if(S.modo==="area"){suma_a(K_AR,area().id);medalla("Área completa");if(lee(K_AR).length===AREAS.length)medalla("Mazo completo")}
-  if(S.pts>=1500)medalla("Mesa conversadora");
+  if(S.modo==="area"){suma_a(K_AR,area().id);medalla("area");if(lee(K_AR).length===AREAS.length)medalla("mazo")}
+  if(S.pts>=1500)medalla("mesa");
   ir("final");
 }
 function atras(){
@@ -652,14 +1221,26 @@ function atras(){
 function textoParaOir(){
   const c=carta();
   if(S.pantalla==="situacion")return c.titulo+". "+c.sit;
-  if(S.pantalla==="voto")return c.vota+" Opciones: "+c.ops.join(". ")+".";
+  if(S.pantalla==="voto")return c.vota+" "+L("Opciones: ","Opcions: ")+c.ops.join(". ")+".";
   return c.pregs[S.q];
+}
+function cambiaIdioma(v){
+  const antes=LG;LG=v||(LG==="ca"?"es":"ca");if(LG===antes)return;
+  try{localStorage.setItem(K_LG,LG)}catch(e){}
+  calla();
+  /* los nombres sugeridos ya anotados se pasan al otro idioma */
+  const de=LG==="ca"?["Mamá","Papá","Abuela","Abuelo"]:["Mare","Pare","Àvia","Avi"],a=SUGERIDOS();
+  S.jug=S.jug.map(j=>{const k=de.indexOf(j);return k>=0&&!S.jug.includes(a[k])?a[k]:j});
+  if(velo){const v=velo;cierra();pinta();abre(v)}else pinta(true);
+  voz.textContent=L("Idioma: castellano.","Idioma: català.");
+  const m=(velo?capa:app).querySelector('[data-a="idioma"]');if(m&&!velo)m.focus();
 }
 document.addEventListener("click",e=>{
   const b=e.target.closest("[data-a]");if(!b||b.disabled)return;const a=b.dataset.a;
   if(a==="vota")suena("voto"+b.dataset.k);else if(SON_DE[a])suena(SON_DE[a]);
   if(a==="area")nueva("area",+b.dataset.k);
   else if(a==="sorpresa")nueva("mix");
+  else if(a==="idioma")cambiaIdioma(b.dataset.v);
   else if(a==="ayuda")abre("ayuda");
   else if(a==="instalar")instala(b);
   else if(a==="creditos"){abre("creditos");capa.querySelector(".velo").scrollTop=0}
@@ -672,7 +1253,7 @@ document.addEventListener("click",e=>{
   else if(a==="atras")atras();
   else if(a==="escucha")habla(textoParaOir(),b);
   else if(a==="pon")agrega(b.dataset.n);
-  else if(a==="quita"){const n=S.jug.splice(+b.dataset.k,1)[0];voz.textContent="Se quitó a "+n+".";pinta(true)}
+  else if(a==="quita"){const n=S.jug.splice(+b.dataset.k,1)[0];voz.textContent=L("Se quitó a ","S’ha tret ")+n+".";pinta(true)}
   else if(a==="partir")ir("situacion");
   else if(a==="avotar"){S.votos=[];ir("pase")}
   else if(a==="saltavoto"){S.votos=[];premio("c"+S.i+"v",0);S.q=0;S.empieza="";ir("pregunta")}
@@ -680,15 +1261,15 @@ document.addEventListener("click",e=>{
   else if(a==="vota"||a==="novota"){S.votos.push(a==="vota"?+b.dataset.k:-1);if(S.votos.length<S.jug.length)ir("pase");else cierraVoto()}
   else if(a==="apregs"){S.q=0;S.empieza="";ir("pregunta")}
   else if(a==="otrapersona"){const el=document.getElementById("ruleta");el.dataset.antes=S.empieza;S.empieza="";gira()}
-  else if(a==="hablado"||a==="salta"){premio("c"+S.i+"q"+S.q,a==="hablado"?100:0,"Suman 100 puntos.");
+  else if(a==="hablado"||a==="salta"){premio("c"+S.i+"q"+S.q,a==="hablado"?100:0,L("Suman 100 puntos.","Sumeu 100 punts."));
     if(S.q<carta().pregs.length-1){S.q++;S.empieza="";ir("pregunta")}else ir("acuerdo")}
   else if(a==="acuerda"){const t=document.getElementById("txt-acuerdo"),v=t.value.trim();
-    if(!v){suena("aviso");document.getElementById("aviso-acuerdo").textContent="Escriban el acuerdo en el recuadro, o elijan “Lo acordamos de palabra”.";t.focus();return}
-    suena("acuerdo");S.tipoAc="escrito";S.acuerdos.push(v);suma_a(K_AC,v);premio("c"+S.i+"a",300,"Acuerdo guardado.");medalla("Familia con acuerdo");tras()}
-  else if(a==="depalabra"){S.tipoAc="palabra";premio("c"+S.i+"a",300,"Acuerdo de palabra.");medalla("Familia con acuerdo");tras()}
+    if(!v){suena("aviso");document.getElementById("aviso-acuerdo").textContent=L("Escriban el acuerdo en el recuadro, o elijan “Lo acordamos de palabra”.","Escriviu l’acord al requadre, o trieu “Ho acordem de paraula”.");t.focus();return}
+    suena("acuerdo");S.tipoAc="escrito";S.acuerdos.push(v);suma_a(K_AC,v);premio("c"+S.i+"a",300,L("Acuerdo guardado.","Acord desat."));medalla("ac");tras()}
+  else if(a==="depalabra"){S.tipoAc="palabra";premio("c"+S.i+"a",300,L("Acuerdo de palabra.","Acord de paraula."));medalla("ac");tras()}
   else if(a==="sinacuerdo"){S.tipoAc="no";premio("c"+S.i+"a",0);tras()}
   else if(a==="copia"){const t=resumen();
-    (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{b.textContent="Resumen copiado"}).catch(()=>{b.textContent="No se pudo copiar. Mantengan el dedo sobre el texto para seleccionarlo."})}
+    (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>{b.textContent=L("Resumen copiado","Resum copiat")}).catch(()=>{b.textContent=L("No se pudo copiar. Mantengan el dedo sobre el texto para seleccionarlo.","No s’ha pogut copiar. Mantingueu el dit sobre el text per seleccionar-lo.")})}
 });
 ["pointerdown","keydown"].forEach(ev=>document.addEventListener(ev,()=>{if(!gesto){gesto=true;musica()}},true));
 document.addEventListener("visibilitychange",()=>{if(!ctx)return;try{if(document.hidden)ctx.suspend();else{ctx.resume();musica()}}catch(e){}});
@@ -725,24 +1306,26 @@ window.addEventListener("beforeinstallprompt",e=>{ /* Chrome y Edge, en la versi
 window.addEventListener("appinstalled",()=>{INST.tipo=null;INST.pwa=null;if(S.pantalla==="inicio"&&!velo)pinta()});
 async function instala(b){
   const aviso=document.getElementById("aviso-instalar");
+  const ok=L("Listo. Busca “Hablemos” entre tus aplicaciones.","Fet. Busca “Hablemos” entre les teves aplicacions."),no=L("No se instaló. Puedes volver a intentarlo cuando quieras.","No s’ha instal·lat. Pots tornar-ho a provar quan vulguis."),err=L("No se pudo instalar desde aquí. Revisa las instrucciones en “Ayuda”.","No s’ha pogut instal·lar des d’aquí. Mira les instruccions a “Ajuda”.");
   try{
     if(INST.tipo==="claude"){
       const r=await INST.desk.install.request();
-      if(r==="installed"){aviso.textContent="Listo. Busca “Hablemos” entre tus aplicaciones.";b.disabled=true}
-      else if(r==="cancelled")aviso.textContent="No se instaló. Puedes volver a intentarlo cuando quieras.";
-      else aviso.textContent="No se pudo instalar desde aquí. Revisa las instrucciones en “Ayuda”.";
+      if(r==="installed"){aviso.textContent=ok;b.disabled=true}
+      else if(r==="cancelled")aviso.textContent=no;
+      else aviso.textContent=err;
     }else if(INST.tipo==="pwa"&&INST.pwa){
       INST.pwa.prompt();const r=await INST.pwa.userChoice;
-      aviso.textContent=r.outcome==="accepted"?"Listo. Busca “Hablemos” entre tus aplicaciones.":"No se instaló. Puedes volver a intentarlo cuando quieras.";
+      aviso.textContent=r.outcome==="accepted"?ok:no;
       if(r.outcome==="accepted"){INST.tipo=null;INST.pwa=null;b.disabled=true}
     }
-  }catch(e){aviso.textContent="No se pudo instalar desde aquí. Revisa las instrucciones en “Ayuda”."}
+  }catch(e){aviso.textContent=err}
 }
 escritorio();
+if(puedeHablar){try{speechSynthesis.getVoices();speechSynthesis.addEventListener("voiceschanged",()=>{})}catch(e){}}
 
 /* ---------- Arranque (conserva la partida si la página se actualiza) ---------- */
 function arranca(d){
-  if(d&&d.pantalla&&V[d.pantalla]&&d.prem&&Array.isArray(d.reg)&&Array.isArray(d.orden)&&(d.pantalla==="inicio"||(d.orden.length&&Array.isArray(d.orden[0]))))S=d;
+  if(d&&d.pantalla&&V[d.pantalla]&&d.prem&&Array.isArray(d.reg)&&d.reg.every(r=>Array.isArray(r.k))&&Array.isArray(d.orden)&&(d.pantalla==="inicio"||(d.orden.length&&Array.isArray(d.orden[0]))))S=d;
   ajusta();pinta();
 }
 if(window.claude&&window.claude.hot){window.claude.hot.snapshot(()=>S);
