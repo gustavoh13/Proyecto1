@@ -147,6 +147,7 @@ h3{font-family:var(--display);font-weight:800;font-size:1.15rem}
 h1:focus,h2:focus{outline:none}
 label{display:block}
 .instalar{box-shadow:inset 0 0 0 3px var(--amarillo)}
+.instalar a{color:#fff;text-decoration:underline;overflow-wrap:anywhere}
 .lg select{font-family:var(--display);font-weight:800;font-size:.95rem;min-height:44px;padding:8px 34px 8px 12px;border-radius:12px;border:0;color:#fff;cursor:pointer;-webkit-appearance:none;appearance:none;
   background:rgba(255,255,255,.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 12px center/12px 8px}
 .lg select:focus-visible{outline:4px solid var(--amarillo);outline-offset:3px}
@@ -1511,17 +1512,48 @@ function comoSeJuega(){
 const ALT_LOGOS=()=>L("Logos de financiación: Ministerio de Ciencia, Innovación y Universidades; Financiado por la Unión Europea, NextGenerationEU; Plan de Recuperación, Transformación y Resiliencia; Agencia Estatal de Investigación",
   "Logotips de finançament: Ministeri de Ciència, Innovació i Universitats; Finançat per la Unió Europea, NextGenerationEU; Pla de Recuperació, Transformació i Resiliència; Agència Estatal d’Investigació","Funding logos: Spanish Ministry of Science, Innovation and Universities; Funded by the European Union, NextGenerationEU; Recovery, Transformation and Resilience Plan; State Research Agency");
 
+/* ---------- Recuadro para instalar la app ---------- */
+const GH="https://gustavoh13.github.io/Proyecto1/cartastransfer/";
+function entorno(){
+  const ua=navigator.userAgent||"",ios=/iPad|iPhone|iPod/.test(ua)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1),
+    android=/Android/.test(ua),edge=/Edg\//.test(ua),firefox=/Firefox\/|FxiOS/.test(ua),
+    chrome=/Chrome\/|CriOS/.test(ua)&&!edge,safari=/Safari\//.test(ua)&&!/Chrome|Chromium|CriOS|Edg|FxiOS/.test(ua);
+  return {ios,android,edge,firefox,chrome,safari,claude:!!(window.claude&&window.claude.use)};
+}
+function instalada(){try{return matchMedia("(display-mode: standalone)").matches||navigator.standalone===true||!!(INST.desk&&INST.desk.window)}catch(e){return false}}
+function pasosInstalar(){
+  const e=entorno();
+  if(e.claude)return L("Desde esta vista de Claude no se puede instalar. Dos opciones: ábrela en la aplicación de escritorio de Claude (Mac o Windows) y usa “Instalar la app”, o ábrela en Chrome, Edge o Safari desde este enlace: ",
+    "Des d’aquesta vista de Claude no es pot instal·lar. Dues opcions: obre-la a l’aplicació d’escriptori de Claude (Mac o Windows) i fes servir “Instal·lar l’app”, o obre-la a Chrome, Edge o Safari des d’aquest enllaç: ",
+    "It can’t be installed from this Claude view. Two options: open it in the Claude desktop app (Mac or Windows) and use “Install the app”, or open it in Chrome, Edge or Safari from this link: ")+'<a href="'+GH+'" target="_blank" rel="noopener">'+GH.replace("https://","")+'</a>';
+  if(e.ios)return L("En iPhone o iPad: en Safari, toca el botón Compartir y luego “Añadir a pantalla de inicio”.","A l’iPhone o l’iPad: a Safari, toca el botó Compartir i després “Afegeix a la pantalla d’inici”.","On iPhone or iPad: in Safari, tap the Share button, then “Add to Home Screen”.");
+  if(e.android)return L("En Android: abre el menú ⋮ del navegador y elige “Instalar aplicación” o “Añadir a pantalla de inicio”.","A Android: obre el menú ⋮ del navegador i tria “Instal·la l’aplicació” o “Afegeix a la pantalla d’inici”.","On Android: open the browser’s ⋮ menu and choose “Install app” or “Add to Home screen”.");
+  if(e.firefox)return L("Firefox no instala aplicaciones web. Abre este enlace en Chrome, Edge o Safari: ","Firefox no instal·la aplicacions web. Obre aquest enllaç a Chrome, Edge o Safari: ","Firefox doesn’t install web apps. Open this link in Chrome, Edge or Safari: ")+'<a href="'+GH+'" target="_blank" rel="noopener">'+GH.replace("https://","")+'</a>';
+  if(e.safari)return L("En Safari (Mac): menú Archivo y luego “Añadir al Dock”.","A Safari (Mac): menú Arxiu i després “Afegeix al Dock”.","In Safari (Mac): File menu, then “Add to Dock”.");
+  if(e.edge)return L("En Edge: menú ⋯, “Aplicaciones” y luego “Instalar este sitio como una aplicación”. También puede aparecer un ícono de instalar en la barra de direcciones.","A Edge: menú ⋯, “Aplicacions” i després “Instal·la aquest lloc com a aplicació”. També pot aparèixer una icona d’instal·lar a la barra d’adreces.","In Edge: ⋯ menu, “Apps”, then “Install this site as an app”. An install icon may also appear in the address bar.");
+  return L("En Chrome: menú ⋮, “Transmitir, guardar y compartir” y luego “Instalar página como aplicación”. También puede aparecer un ícono de instalar en la barra de direcciones.","A Chrome: menú ⋮, “Emet, desa i comparteix” i després “Instal·la la pàgina com a aplicació”. També pot aparèixer una icona d’instal·lar a la barra d’adreces.","In Chrome: ⋮ menu, “Cast, save and share”, then “Install page as app”. An install icon may also appear in the address bar.");
+}
+function panelInstalar(){
+  if(instalada())return "";
+  return '<div class="panel instalar"><h2 class="sub">'+L("Instálala en tu teléfono o computador","Instal·la-la al teu telèfon o ordinador","Install it on your phone or computer")+'</h2><p>'
+  +L("Queda como una aplicación más, con su propio ícono y ventana, y funciona sin conexión.","Queda com una aplicació més, amb la seva icona i finestra, i funciona sense connexió.","It becomes an app like any other, with its own icon and window, and works offline.")+'</p>'
+  +(INST.tipo?'<button class="btn" data-a="instalar" style="margin-top:12px">'+L("Instalar la app","Instal·lar l’app","Install the app")+'</button><p class="nota" id="aviso-instalar" role="status"></p>'
+    :'<p class="nota" style="margin-top:8px">'+pasosInstalar()+'</p>')
+  +'</div>';
+}
+
 /* ---------- Pantallas ---------- */
 const V={
  inicio(){
   const ac=lee(K_AC),hechas=lee(K_AR);
   return '<div class="cuerpo"><h1 tabindex="-1">'+L("Hablemos","Parlem-ne","Let’s Talk About IT")+'</h1><p>'+L("Situaciones reales de familias de Noruega, Reino Unido, España, Estonia, Rumanía y Polonia para conversar sobre la vida digital. Se juega con un solo teléfono al centro de la mesa.",
     "Situacions reals de famílies de Noruega, el Regne Unit, Espanya, Estònia, Romania i Polònia per conversar sobre la vida digital. Es juga amb un sol telèfon al mig de la taula.","Real situations from families in Norway, the United Kingdom, Spain, Estonia, Romania and Poland, to talk about digital life. You play with one phone in the middle of the table.")+'</p><p class="trilingue"><span class="tri-ico" aria-hidden="true">ES · CA · EN</span>'+L("App trilingüe: pueden jugar en castellano, catalán o inglés. Cambien el idioma cuando quieran, incluso a mitad de la partida.","App trilingüe: podeu jugar en castellà, català o anglès. Canvieu l’idioma quan vulgueu, fins i tot a mitja partida.","Trilingual app: play in Spanish, Catalan or English. Switch language whenever you like, even in the middle of a game.")+'</p><div class="botones">'+botonIdioma()+botonMusica()+'</div>'
+  +panelInstalar()
   +'<img class="fam" src="'+L("img/familia.png","img/familia_ca.png","img/familia_en.png")+'" alt="'+L("La familia Fernández, protagonista de las cartas: Carmen, Teresa, Antonio, Ana, Olga, Juan, Luis y Felipe","La família Fernández, protagonista de les cartes: Júlia, Rosalía, Anton, Anna, Olga, Jan, Arnau i Felip","The Fernandez family, the characters on the cards: Sophia, Rosalía, Anton, Anna, Olga, Jan, Alexander and Philip")+'">'
   +'<div class="panel"><h2 class="sub">'+L("Antes de empezar","Abans de començar","Before you start")+'</h2>'+L('<ul class="simple"><li>Para 2 a 8 personas de cualquier edad.</li><li>Cada carta toma unos 10 minutos.</li><li>No hay respuestas correctas o incorrectas.</li><li>Se puede pasar cualquier voto o pregunta.</li><li>Los puntos son de toda la familia: nadie pierde.</li></ul>',
     '<ul class="simple"><li>Per a 2 a 8 persones de qualsevol edat.</li><li>Cada carta dura uns 10 minuts.</li><li>No hi ha respostes correctes o incorrectes.</li><li>Es pot passar qualsevol vot o pregunta.</li><li>Els punts són de tota la família: ningú no perd.</li></ul>',"<ul class=\"simple\"><li>For 2 to 8 people of any age.</li><li>Each card takes about 10 minutes.</li><li>There are no right or wrong answers.</li><li>Anyone can skip a vote or a question.</li><li>Points belong to the whole family: nobody loses.</li></ul>")
   +'<button class="btn sec" data-a="ayuda" style="margin-top:12px">'+L("Cómo se juega y ajustes de lectura","Com es juga i ajustos de lectura","How to play and reading settings")+'</button></div>'
-  +(INST.tipo?'<div class="panel instalar"><h2 class="sub">'+L("Instálala en este computador","Instal·la-la en aquest ordinador","Install it on this computer")+'</h2><p>'+L("Queda como una aplicación más de tu Mac o Windows, con su propio ícono y ventana. Funciona sin conexión.","Queda com una aplicació més del teu Mac o Windows, amb la seva icona i finestra. Funciona sense connexió.","It becomes an app on your Mac or Windows computer, with its own icon and window. It works offline.")+'</p><button class="btn" data-a="instalar" style="margin-top:12px">'+L("Instalar la app","Instal·lar l’app","Install the app")+'</button><p class="nota" id="aviso-instalar" role="status"></p></div>':'')
+  
   +'<h2 class="sub">'+L("Elijan un área","Trieu una àrea","Choose a topic")+(hechas.length?' · '+hechas.length+L(" de 6 jugadas"," de 6 jugades"," of 6 played"):'')+'</h2>'
   +'<div class="areas">'+AREAS.map((a,k)=>'<button class="area" style="background:'+a.color+';color:'+a.tinta+'" data-a="area" data-k="'+k+'"><span class="j">'+ajuego(a)+'</span><span class="n">'+anom(a)+'</span><span class="c">'+a.cartas.length+L(" cartas"," cartes"," cards")+(hechas.includes(a.id)?L(" · ya jugada"," · ja jugada"," · played"):'')+'</span>'+(hechas.includes(a.id)?'<span class="hecho" aria-hidden="true">✓</span>':'')+'</button>').join("")+'</div>'
   +'<button class="btn sec" data-a="sorpresa">'+L("Sorpresa: 3 cartas al azar, unos 30 minutos","Sorpresa: 3 cartes a l’atzar, uns 30 minuts","Surprise: 3 random cards, about 30 minutes")+'</button>'
@@ -1844,6 +1876,7 @@ async function escritorio(){
       return;
     }
     if(d&&d.install&&(await d.install.state())==="available"){INST.tipo="claude";if(S.pantalla==="inicio"&&!velo)pinta()}
+    else if(d&&d.install&&(await d.install.state())==="installed"){if(S.pantalla==="inicio"&&!velo)pinta()}
   }catch(e){}
 }
 window.addEventListener("beforeinstallprompt",e=>{ /* Chrome y Edge, en la versión publicada en GitHub */
